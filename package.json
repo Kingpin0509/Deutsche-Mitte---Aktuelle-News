@@ -31,7 +31,7 @@
         "angular2-google-maps": "^0.17.0",
         "angularfire2": "^4.0.0-rc.0",
         "chart.js": "^2.5.0",
-        "cordova-android": "^6.2.3",
+        "cordova-android": "^6.1.2",
         "cordova-plugin-console": "1.0.5",
         "cordova-plugin-device": "1.1.4",
         "cordova-plugin-email": "1.2.6",
