@@ -1,7 +1,7 @@
 {
     "name": "deutschemittenews",
     "author": "Michael Humann",
-    "version": "1.0.0",
+    "version": "1.2.0",
     "homepage": "http://westweedtzerecords.biz",
     "private": true,
     "scripts": {
@@ -31,7 +31,7 @@
         "angular2-google-maps": "^0.17.0",
         "angularfire2": "^4.0.0-rc.0",
         "chart.js": "^2.5.0",
-        "cordova-android": "^6.1.2",
+        "cordova-android": "^6.2.3",
         "cordova-plugin-console": "1.0.5",
         "cordova-plugin-device": "1.1.4",
         "cordova-plugin-email": "1.2.6",
@@ -49,6 +49,7 @@
         "ng2-translate": "5.0.0",
         "phonegap-plugin-barcodescanner": "6.0.5",
         "rxjs": "5.1.1",
+        "save": "^2.3.0",
         "sw-toolbox": "3.6.0",
         "zone.js": "0.8.10"
     },
