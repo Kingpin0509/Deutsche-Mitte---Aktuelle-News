@@ -46,7 +46,7 @@ export class MyApp {
 		) {
 		this.initializeApp();
 
-		this.translate.setDefaultLang('en');
+		this.translate.setDefaultLang('de');
 		storage.get('language').then((value) => {
 			if (value) {
 				this.translate.use(value);
