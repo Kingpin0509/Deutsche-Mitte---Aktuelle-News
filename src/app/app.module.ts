@@ -18,7 +18,6 @@ import { RangesModule } from '../pages/ranges/ranges.module';
 import { ActionSheetModule } from '../pages/action-sheet/action-sheet.module';
 import { FacebookConnectModule } from '../pages/facebook-connect/facebook-connect.module';
 import { LoginModule } from '../pages/login/login.module';
-import { BarcodeScannerModule } from '../pages/barcode-scanner/barcode-scanner.module';
 import { ChartsModule } from '../pages/charts/charts.module';
 import { FirebaseModule } from '../pages/firebase/firebase.module';
 // Module Example: Use the PlaceholderModule for any new App Module
@@ -49,7 +48,6 @@ import { MyApp } from './app.component';
     ActionSheetModule,
     FacebookConnectModule,
     LoginModule,
-    BarcodeScannerModule,
     ChartsModule,
     FirebaseModule,
     PlaceholderModule

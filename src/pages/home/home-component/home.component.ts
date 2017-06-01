@@ -10,7 +10,6 @@ import { YoutubeChannelComponent } from '../../youtube/youtube-channel/youtube-c
 //import { WordpressMenus } from '../../wordpress/wordpress-menus/wordpress-menus.component';
 // import { SlidesComponent } from '../../slides/slides-component/slides.component';
 //import { YoutubeVideosComponent } from '../../youtube/youtube-videos/youtube-videos.component';
-//import { BarcodeScannerComponent } from '../../barcode-scanner/barcode-scanner-component/barcode-scanner.component';
 //import { ChartsComponent } from '../../charts/charts-component/charts.component';
 //import { FirebaseHomeComponent } from '../../firebase/firebase-home/firebase-home.component';
 
@@ -40,7 +39,6 @@ export class HomeComponent {
 //	      { title: 'Firebase', component: FirebaseHomeComponent, icon: 'flame', note: 'Firebase' },
 //	      { title: 'SLIDES', component: SlidesComponent, icon: 'images', note: 'Welcome Tour' },
 //	      { title: 'CHARTS', component: ChartsComponent, icon: 'pie', note: 'Chart.js' },
-//	      { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode', note: '' }
 	    ];
 
 	    this.events.subscribe('navigationEvent',(object) => {
