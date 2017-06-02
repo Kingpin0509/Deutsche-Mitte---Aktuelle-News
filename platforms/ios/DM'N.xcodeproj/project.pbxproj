@@ -16,24 +16,24 @@
 		3047A5131AB8059700498E2A /* build-release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5101AB8059700498E2A /* build-release.xcconfig */; };
 		3047A5141AB8059700498E2A /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5111AB8059700498E2A /* build.xcconfig */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		CFEB6FCCB6324BB6B2184F3E /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 62168D84F67C4B47B908E192 /* CDVLogger.m */; };
-		FFCF2A0953D84E468480E96C /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A7B461157F48C4A80AC1CD /* CDVDevice.m */; };
-		42F065F2750C4D73AFC821EC /* APPEmailComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5E932586DE4FE394DB83BE /* APPEmailComposer.m */; };
-		1D616988700A4BD097FE8031 /* APPEmailComposerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A7DB1543364D68971BF1B0 /* APPEmailComposerImpl.m */; };
-		6E9EBB2647634234B98E922C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5A958B3BF8A480883B3AAF8 /* MessageUI.framework */; };
-		439DEFDA46A946F9BE77A38B /* FacebookConnectPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D61D7A43E94E7D9E88DDD1 /* FacebookConnectPlugin.m */; };
-		7AE62C961C0141DDBD435D29 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC56834E0C8498DB1DA631C /* Bolts.framework */; };
-		FF0A755B69D64404B333EA96 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F36421EB6C4745AFB7A857F5 /* FBSDKCoreKit.framework */; };
-		2FA08D1896044CBA968EF883 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BC8C66E30A4177A84EF6B0 /* FBSDKLoginKit.framework */; };
-		52792689C6F642C0997E157F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A68FBFCF1D4BE488503ED4 /* FBSDKShareKit.framework */; };
-		A9FC6CC0C9E64CE6B6D65E79 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 827E8789EC214287A227DA33 /* CDVInAppBrowser.m */; };
-		3B296151574548E7979C4F07 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE16183D9FF4EEFB3E403E9 /* CDVSplashScreen.m */; };
-		CCBD9FF2732B42A981EEB257 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F231FDC3FD774B88B92D9F5B /* CDVViewController+SplashScreen.m */; };
-		11D89278D7E3418C98815505 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 656F4759C1A946D199A0F1F7 /* CDVStatusBar.m */; };
-		5899C099183943C6921576A3 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = BC765A75BA6A458DBFF18E8D /* NSString+URLEncoding.m */; };
-		94E29BB7FBF94E2BBC203783 /* SocialSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E155F043654473686380D67 /* SocialSharing.m */; };
-		666C7A83D14F4D08B560BA30 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EB6360AF304563803A995D /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		4E8754097BFE4EAEAA282880 /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8784D7B5EA034078B5B5E435 /* IonicKeyboard.m */; };
+		05D5FD4CCE294228B04F2CF5 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 71450F8A633541DB99A3B5A0 /* CDVLogger.m */; };
+		B24A055E9FFD43A7AF6C039A /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EA789AE80B4C32BD2C0B8A /* CDVDevice.m */; };
+		6CDEF9C093E64F579ACC994D /* APPEmailComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = B6468DE81E18413CB52EB775 /* APPEmailComposer.m */; };
+		244A4689C606459EB1722193 /* APPEmailComposerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B89F9C412704ACCA2D9B17A /* APPEmailComposerImpl.m */; };
+		606D8A69BECB485882D3FA88 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06278AB532D4F74AB9E345E /* MessageUI.framework */; };
+		B9C63E63F4C6444A8EADF678 /* FacebookConnectPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C3D81F8F5A434D90D05E31 /* FacebookConnectPlugin.m */; };
+		151A6CD80E714EBAAA1BAC6E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A23D6AB7304D828D697C47 /* Bolts.framework */; };
+		82A6C6052FB7440F975C1050 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8143375F348142C5BBD35EA2 /* FBSDKCoreKit.framework */; };
+		9F24EB2FC4A240078565DADE /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240AE78CEFF5487EA3DF5F7F /* FBSDKLoginKit.framework */; };
+		98B2B355C9854166AF261AE7 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96101533360F490F8BF43F17 /* FBSDKShareKit.framework */; };
+		39B6B40DAEF6429692BBE724 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F5DB779BD04817BED5F71E /* CDVInAppBrowser.m */; };
+		0D4EE3BCEF9C4FF584307006 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 403685C681EF4BAC93DD4D60 /* CDVSplashScreen.m */; };
+		B46D1FBA96734249A6165D5B /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB06AF8273446E2A0EE4A1F /* CDVViewController+SplashScreen.m */; };
+		A387D984BCE74B719FB4F98C /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C88F0BC3CB428D9BBD14AE /* CDVStatusBar.m */; };
+		5741F8BDC7204115BD1755B3 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = F0945C52DF8147ECA6BBE9F0 /* NSString+URLEncoding.m */; };
+		D7D682DE34BD46B68DAC5794 /* SocialSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = B87BC5E4F57F45C4931C1F81 /* SocialSharing.m */; };
+		591F6BAB544E4C3EBF6410B0 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3CE86DF3164360AA2CC212 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		5F2EDD383D0B4DE097C4BD85 /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 901189B20D004473A5CB4EAE /* IonicKeyboard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,36 +74,36 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "DM'N/config.xml"; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		62168D84F67C4B47B908E192 /* CDVLogger.m */ = {isa = PBXFileReference; name = "CDVLogger.m"; path = "cordova-plugin-console/CDVLogger.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		F5899D5C4CCA495B85C7F018 /* CDVLogger.h */ = {isa = PBXFileReference; name = "CDVLogger.h"; path = "cordova-plugin-console/CDVLogger.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		97A7B461157F48C4A80AC1CD /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		9E2040A12D5C40959D3299E6 /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		AC5E932586DE4FE394DB83BE /* APPEmailComposer.m */ = {isa = PBXFileReference; name = "APPEmailComposer.m"; path = "cordova-plugin-email/APPEmailComposer.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		29A7DB1543364D68971BF1B0 /* APPEmailComposerImpl.m */ = {isa = PBXFileReference; name = "APPEmailComposerImpl.m"; path = "cordova-plugin-email/APPEmailComposerImpl.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		905F8784BE794627AF25C76F /* APPEmailComposer.h */ = {isa = PBXFileReference; name = "APPEmailComposer.h"; path = "cordova-plugin-email/APPEmailComposer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		2F522B08C4CA4D4E9FE29C34 /* APPEmailComposerImpl.h */ = {isa = PBXFileReference; name = "APPEmailComposerImpl.h"; path = "cordova-plugin-email/APPEmailComposerImpl.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		E5A958B3BF8A480883B3AAF8 /* MessageUI.framework */ = {isa = PBXFileReference; name = "MessageUI.framework"; path = "System/Library/Frameworks/MessageUI.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		03D61D7A43E94E7D9E88DDD1 /* FacebookConnectPlugin.m */ = {isa = PBXFileReference; name = "FacebookConnectPlugin.m"; path = "cordova-plugin-facebook4/FacebookConnectPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		FE26D6942DBA415FADC35DDB /* FacebookConnectPlugin.h */ = {isa = PBXFileReference; name = "FacebookConnectPlugin.h"; path = "cordova-plugin-facebook4/FacebookConnectPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		8AC56834E0C8498DB1DA631C /* Bolts.framework */ = {isa = PBXFileReference; name = "Bolts.framework"; path = "DM'N/Plugins/cordova-plugin-facebook4/Bolts.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		F36421EB6C4745AFB7A857F5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; name = "FBSDKCoreKit.framework"; path = "DM'N/Plugins/cordova-plugin-facebook4/FBSDKCoreKit.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		19BC8C66E30A4177A84EF6B0 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; name = "FBSDKLoginKit.framework"; path = "DM'N/Plugins/cordova-plugin-facebook4/FBSDKLoginKit.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		88A68FBFCF1D4BE488503ED4 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; name = "FBSDKShareKit.framework"; path = "DM'N/Plugins/cordova-plugin-facebook4/FBSDKShareKit.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		827E8789EC214287A227DA33 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		5B02F6DA679F45BFB57B3C51 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		0AE16183D9FF4EEFB3E403E9 /* CDVSplashScreen.m */ = {isa = PBXFileReference; name = "CDVSplashScreen.m"; path = "cordova-plugin-splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		F231FDC3FD774B88B92D9F5B /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		0BDFB62DABFB4C43AEA53F3E /* CDVSplashScreen.h */ = {isa = PBXFileReference; name = "CDVSplashScreen.h"; path = "cordova-plugin-splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		B7F8FB11230549308AFDC067 /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		656F4759C1A946D199A0F1F7 /* CDVStatusBar.m */ = {isa = PBXFileReference; name = "CDVStatusBar.m"; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		5173534C1AEF4281BDD7967E /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		BC765A75BA6A458DBFF18E8D /* NSString+URLEncoding.m */ = {isa = PBXFileReference; name = "NSString+URLEncoding.m"; path = "cordova-plugin-x-socialsharing/NSString+URLEncoding.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		5E155F043654473686380D67 /* SocialSharing.m */ = {isa = PBXFileReference; name = "SocialSharing.m"; path = "cordova-plugin-x-socialsharing/SocialSharing.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		A82A6A8264104499A89DD779 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; name = "NSString+URLEncoding.h"; path = "cordova-plugin-x-socialsharing/NSString+URLEncoding.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		8D46D6DF1BAB470D8310CF9B /* SocialSharing.h */ = {isa = PBXFileReference; name = "SocialSharing.h"; path = "cordova-plugin-x-socialsharing/SocialSharing.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		94EB6360AF304563803A995D /* Social.framework */ = {isa = PBXFileReference; name = "Social.framework"; path = "System/Library/Frameworks/Social.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		8784D7B5EA034078B5B5E435 /* IonicKeyboard.m */ = {isa = PBXFileReference; name = "IonicKeyboard.m"; path = "ionic-plugin-keyboard/IonicKeyboard.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		2EDA5F1E79834522B3E24F93 /* IonicKeyboard.h */ = {isa = PBXFileReference; name = "IonicKeyboard.h"; path = "ionic-plugin-keyboard/IonicKeyboard.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		71450F8A633541DB99A3B5A0 /* CDVLogger.m */ = {isa = PBXFileReference; name = "CDVLogger.m"; path = "cordova-plugin-console/CDVLogger.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		21C0ED55A63E445F9BE2DD5D /* CDVLogger.h */ = {isa = PBXFileReference; name = "CDVLogger.h"; path = "cordova-plugin-console/CDVLogger.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		72EA789AE80B4C32BD2C0B8A /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		6FFDD318ACC845F3813222E3 /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B6468DE81E18413CB52EB775 /* APPEmailComposer.m */ = {isa = PBXFileReference; name = "APPEmailComposer.m"; path = "cordova-plugin-email/APPEmailComposer.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		7B89F9C412704ACCA2D9B17A /* APPEmailComposerImpl.m */ = {isa = PBXFileReference; name = "APPEmailComposerImpl.m"; path = "cordova-plugin-email/APPEmailComposerImpl.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		C52C20B8FCCE4EDF8F71002E /* APPEmailComposer.h */ = {isa = PBXFileReference; name = "APPEmailComposer.h"; path = "cordova-plugin-email/APPEmailComposer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0D7B334048724319A9DA9753 /* APPEmailComposerImpl.h */ = {isa = PBXFileReference; name = "APPEmailComposerImpl.h"; path = "cordova-plugin-email/APPEmailComposerImpl.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A06278AB532D4F74AB9E345E /* MessageUI.framework */ = {isa = PBXFileReference; name = "MessageUI.framework"; path = "System/Library/Frameworks/MessageUI.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		D6C3D81F8F5A434D90D05E31 /* FacebookConnectPlugin.m */ = {isa = PBXFileReference; name = "FacebookConnectPlugin.m"; path = "cordova-plugin-facebook4/FacebookConnectPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		290D6A8E1E6444198343C362 /* FacebookConnectPlugin.h */ = {isa = PBXFileReference; name = "FacebookConnectPlugin.h"; path = "cordova-plugin-facebook4/FacebookConnectPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F2A23D6AB7304D828D697C47 /* Bolts.framework */ = {isa = PBXFileReference; name = "Bolts.framework"; path = "DM'N/Plugins/cordova-plugin-facebook4/Bolts.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		8143375F348142C5BBD35EA2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; name = "FBSDKCoreKit.framework"; path = "DM'N/Plugins/cordova-plugin-facebook4/FBSDKCoreKit.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		240AE78CEFF5487EA3DF5F7F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; name = "FBSDKLoginKit.framework"; path = "DM'N/Plugins/cordova-plugin-facebook4/FBSDKLoginKit.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		96101533360F490F8BF43F17 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; name = "FBSDKShareKit.framework"; path = "DM'N/Plugins/cordova-plugin-facebook4/FBSDKShareKit.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		88F5DB779BD04817BED5F71E /* CDVInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		225B36A160804A8490D92668 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		403685C681EF4BAC93DD4D60 /* CDVSplashScreen.m */ = {isa = PBXFileReference; name = "CDVSplashScreen.m"; path = "cordova-plugin-splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		3AB06AF8273446E2A0EE4A1F /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		7FB803AC554F4833B0128E9A /* CDVSplashScreen.h */ = {isa = PBXFileReference; name = "CDVSplashScreen.h"; path = "cordova-plugin-splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4CD75D90093F4301AC8AA928 /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		24C88F0BC3CB428D9BBD14AE /* CDVStatusBar.m */ = {isa = PBXFileReference; name = "CDVStatusBar.m"; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		C24089CC0EB24AAFBCBFAB70 /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F0945C52DF8147ECA6BBE9F0 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; name = "NSString+URLEncoding.m"; path = "cordova-plugin-x-socialsharing/NSString+URLEncoding.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		B87BC5E4F57F45C4931C1F81 /* SocialSharing.m */ = {isa = PBXFileReference; name = "SocialSharing.m"; path = "cordova-plugin-x-socialsharing/SocialSharing.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		607AB215B314418C8E7C1C6A /* NSString+URLEncoding.h */ = {isa = PBXFileReference; name = "NSString+URLEncoding.h"; path = "cordova-plugin-x-socialsharing/NSString+URLEncoding.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A742BE4A13F84856B986C14E /* SocialSharing.h */ = {isa = PBXFileReference; name = "SocialSharing.h"; path = "cordova-plugin-x-socialsharing/SocialSharing.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		BE3CE86DF3164360AA2CC212 /* Social.framework */ = {isa = PBXFileReference; name = "Social.framework"; path = "System/Library/Frameworks/Social.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		901189B20D004473A5CB4EAE /* IonicKeyboard.m */ = {isa = PBXFileReference; name = "IonicKeyboard.m"; path = "ionic-plugin-keyboard/IonicKeyboard.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		7F76CE3EBCD3460C868DF9BE /* IonicKeyboard.h */ = {isa = PBXFileReference; name = "IonicKeyboard.h"; path = "ionic-plugin-keyboard/IonicKeyboard.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +112,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
-				6E9EBB2647634234B98E922C /* MessageUI.framework in Frameworks */,
-				7AE62C961C0141DDBD435D29 /* Bolts.framework in Frameworks */,
-				FF0A755B69D64404B333EA96 /* FBSDKCoreKit.framework in Frameworks */,
-				2FA08D1896044CBA968EF883 /* FBSDKLoginKit.framework in Frameworks */,
-				52792689C6F642C0997E157F /* FBSDKShareKit.framework in Frameworks */,
-				666C7A83D14F4D08B560BA30 /* Social.framework in Frameworks */,
+				606D8A69BECB485882D3FA88 /* MessageUI.framework in Frameworks */,
+				151A6CD80E714EBAAA1BAC6E /* Bolts.framework in Frameworks */,
+				82A6C6052FB7440F975C1050 /* FBSDKCoreKit.framework in Frameworks */,
+				9F24EB2FC4A240078565DADE /* FBSDKLoginKit.framework in Frameworks */,
+				98B2B355C9854166AF261AE7 /* FBSDKShareKit.framework in Frameworks */,
+				591F6BAB544E4C3EBF6410B0 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,12 +188,12 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E5A958B3BF8A480883B3AAF8 /* MessageUI.framework */,
-				8AC56834E0C8498DB1DA631C /* Bolts.framework */,
-				F36421EB6C4745AFB7A857F5 /* FBSDKCoreKit.framework */,
-				19BC8C66E30A4177A84EF6B0 /* FBSDKLoginKit.framework */,
-				88A68FBFCF1D4BE488503ED4 /* FBSDKShareKit.framework */,
-				94EB6360AF304563803A995D /* Social.framework */,
+				A06278AB532D4F74AB9E345E /* MessageUI.framework */,
+				F2A23D6AB7304D828D697C47 /* Bolts.framework */,
+				8143375F348142C5BBD35EA2 /* FBSDKCoreKit.framework */,
+				240AE78CEFF5487EA3DF5F7F /* FBSDKLoginKit.framework */,
+				96101533360F490F8BF43F17 /* FBSDKShareKit.framework */,
+				BE3CE86DF3164360AA2CC212 /* Social.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -219,30 +219,30 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				62168D84F67C4B47B908E192 /* CDVLogger.m */,
-				F5899D5C4CCA495B85C7F018 /* CDVLogger.h */,
-				97A7B461157F48C4A80AC1CD /* CDVDevice.m */,
-				9E2040A12D5C40959D3299E6 /* CDVDevice.h */,
-				AC5E932586DE4FE394DB83BE /* APPEmailComposer.m */,
-				29A7DB1543364D68971BF1B0 /* APPEmailComposerImpl.m */,
-				905F8784BE794627AF25C76F /* APPEmailComposer.h */,
-				2F522B08C4CA4D4E9FE29C34 /* APPEmailComposerImpl.h */,
-				03D61D7A43E94E7D9E88DDD1 /* FacebookConnectPlugin.m */,
-				FE26D6942DBA415FADC35DDB /* FacebookConnectPlugin.h */,
-				827E8789EC214287A227DA33 /* CDVInAppBrowser.m */,
-				5B02F6DA679F45BFB57B3C51 /* CDVInAppBrowser.h */,
-				0AE16183D9FF4EEFB3E403E9 /* CDVSplashScreen.m */,
-				F231FDC3FD774B88B92D9F5B /* CDVViewController+SplashScreen.m */,
-				0BDFB62DABFB4C43AEA53F3E /* CDVSplashScreen.h */,
-				B7F8FB11230549308AFDC067 /* CDVViewController+SplashScreen.h */,
-				656F4759C1A946D199A0F1F7 /* CDVStatusBar.m */,
-				5173534C1AEF4281BDD7967E /* CDVStatusBar.h */,
-				BC765A75BA6A458DBFF18E8D /* NSString+URLEncoding.m */,
-				5E155F043654473686380D67 /* SocialSharing.m */,
-				A82A6A8264104499A89DD779 /* NSString+URLEncoding.h */,
-				8D46D6DF1BAB470D8310CF9B /* SocialSharing.h */,
-				8784D7B5EA034078B5B5E435 /* IonicKeyboard.m */,
-				2EDA5F1E79834522B3E24F93 /* IonicKeyboard.h */,
+				71450F8A633541DB99A3B5A0 /* CDVLogger.m */,
+				21C0ED55A63E445F9BE2DD5D /* CDVLogger.h */,
+				72EA789AE80B4C32BD2C0B8A /* CDVDevice.m */,
+				6FFDD318ACC845F3813222E3 /* CDVDevice.h */,
+				B6468DE81E18413CB52EB775 /* APPEmailComposer.m */,
+				7B89F9C412704ACCA2D9B17A /* APPEmailComposerImpl.m */,
+				C52C20B8FCCE4EDF8F71002E /* APPEmailComposer.h */,
+				0D7B334048724319A9DA9753 /* APPEmailComposerImpl.h */,
+				D6C3D81F8F5A434D90D05E31 /* FacebookConnectPlugin.m */,
+				290D6A8E1E6444198343C362 /* FacebookConnectPlugin.h */,
+				88F5DB779BD04817BED5F71E /* CDVInAppBrowser.m */,
+				225B36A160804A8490D92668 /* CDVInAppBrowser.h */,
+				403685C681EF4BAC93DD4D60 /* CDVSplashScreen.m */,
+				3AB06AF8273446E2A0EE4A1F /* CDVViewController+SplashScreen.m */,
+				7FB803AC554F4833B0128E9A /* CDVSplashScreen.h */,
+				4CD75D90093F4301AC8AA928 /* CDVViewController+SplashScreen.h */,
+				24C88F0BC3CB428D9BBD14AE /* CDVStatusBar.m */,
+				C24089CC0EB24AAFBCBFAB70 /* CDVStatusBar.h */,
+				F0945C52DF8147ECA6BBE9F0 /* NSString+URLEncoding.m */,
+				B87BC5E4F57F45C4931C1F81 /* SocialSharing.m */,
+				607AB215B314418C8E7C1C6A /* NSString+URLEncoding.h */,
+				A742BE4A13F84856B986C14E /* SocialSharing.h */,
+				901189B20D004473A5CB4EAE /* IonicKeyboard.m */,
+				7F76CE3EBCD3460C868DF9BE /* IonicKeyboard.h */,
 			);
 			name = Plugins;
 			path = "DM'N/Plugins";
@@ -355,18 +355,18 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				CFEB6FCCB6324BB6B2184F3E /* CDVLogger.m in Sources */,
-				FFCF2A0953D84E468480E96C /* CDVDevice.m in Sources */,
-				42F065F2750C4D73AFC821EC /* APPEmailComposer.m in Sources */,
-				1D616988700A4BD097FE8031 /* APPEmailComposerImpl.m in Sources */,
-				439DEFDA46A946F9BE77A38B /* FacebookConnectPlugin.m in Sources */,
-				A9FC6CC0C9E64CE6B6D65E79 /* CDVInAppBrowser.m in Sources */,
-				3B296151574548E7979C4F07 /* CDVSplashScreen.m in Sources */,
-				CCBD9FF2732B42A981EEB257 /* CDVViewController+SplashScreen.m in Sources */,
-				11D89278D7E3418C98815505 /* CDVStatusBar.m in Sources */,
-				5899C099183943C6921576A3 /* NSString+URLEncoding.m in Sources */,
-				94E29BB7FBF94E2BBC203783 /* SocialSharing.m in Sources */,
-				4E8754097BFE4EAEAA282880 /* IonicKeyboard.m in Sources */,
+				05D5FD4CCE294228B04F2CF5 /* CDVLogger.m in Sources */,
+				B24A055E9FFD43A7AF6C039A /* CDVDevice.m in Sources */,
+				6CDEF9C093E64F579ACC994D /* APPEmailComposer.m in Sources */,
+				244A4689C606459EB1722193 /* APPEmailComposerImpl.m in Sources */,
+				B9C63E63F4C6444A8EADF678 /* FacebookConnectPlugin.m in Sources */,
+				39B6B40DAEF6429692BBE724 /* CDVInAppBrowser.m in Sources */,
+				0D4EE3BCEF9C4FF584307006 /* CDVSplashScreen.m in Sources */,
+				B46D1FBA96734249A6165D5B /* CDVViewController+SplashScreen.m in Sources */,
+				A387D984BCE74B719FB4F98C /* CDVStatusBar.m in Sources */,
+				5741F8BDC7204115BD1755B3 /* NSString+URLEncoding.m in Sources */,
+				D7D682DE34BD46B68DAC5794 /* SocialSharing.m in Sources */,
+				5F2EDD383D0B4DE097C4BD85 /* IonicKeyboard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

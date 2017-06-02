@@ -13,6 +13,9 @@
         "cordova-plugin-device": {
             "PACKAGE_NAME": "de.dm.news"
         },
+        "cordova-plugin-email": {
+            "PACKAGE_NAME": "de.dm.news"
+        },
         "cordova-plugin-facebook4": {
             "APP_ID": "131001554119757",
             "APP_NAME": "IonicFrameworkApp",
@@ -34,9 +37,6 @@
             "PACKAGE_NAME": "de.dm.news"
         },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "de.dm.news"
-        },
-        "cordova-plugin-email": {
             "PACKAGE_NAME": "de.dm.news"
         }
     },

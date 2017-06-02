@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { NavController, Events, MenuController } from 'ionic-angular';
-import { WordpressHome } from '../../wordpress/wordpress-home/wordpress-home.component';
 import { WordpressPosts } from '../../wordpress/wordpress-posts/wordpress-posts.component';
 import { WordpressCategories } from '../../wordpress/wordpress-categories/wordpress-categories.component';
 import { WordpressTags } from '../../wordpress/wordpress-tags/wordpress-tags.component';
-import { FeedCategoriesComponent } from '../../feeds/feed-categories/feed-categories.component';
-import { FeedCategoryComponent } from '../../feeds/feed-category/feed-category.component';
 import { YoutubeChannelComponent } from '../../youtube/youtube-channel/youtube-channel.component';
+//import { FeedCategoriesComponent } from '../../feeds/feed-categories/feed-categories.component';
+//import { FeedCategoryComponent } from '../../feeds/feed-category/feed-category.component';
+//import { WordpressHome } from '../../wordpress/wordpress-home/wordpress-home.component';
 //import { WordpressMenus } from '../../wordpress/wordpress-menus/wordpress-menus.component';
-// import { SlidesComponent } from '../../slides/slides-component/slides.component';
+//import { SlidesComponent } from '../../slides/slides-component/slides.component';
 //import { YoutubeVideosComponent } from '../../youtube/youtube-videos/youtube-videos.component';
 //import { ChartsComponent } from '../../charts/charts-component/charts.component';
 //import { FirebaseHomeComponent } from '../../firebase/firebase-home/firebase-home.component';
