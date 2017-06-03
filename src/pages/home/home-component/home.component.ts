@@ -26,9 +26,9 @@ export class HomeComponent {
 
 	ngOnInit() {
 		this.pages = [
-			{ title: 'POSTS', component: WordpressPosts, icon: 'paper', note: 'Wordpress' },
-			{ title: 'CATEGORIES', component: WordpressCategories, icon: 'bookmarks', note: 'Wordpress' },
-			{ title: 'TAGS', component: WordpressTags, icon: 'bookmark', note: 'Wordpress' },
+			{ title: 'POSTS', component: WordpressPosts, icon: 'paper', note: 'DM Webseite' },
+			{ title: 'CATEGORIES', component: WordpressCategories, icon: 'bookmarks', note: 'DM Webseite' },
+			{ title: 'TAGS', component: WordpressTags, icon: 'bookmark', note: 'DM Webseite' },
 			{ title: 'YOUTUBE_CHANNEL', component: YoutubeChannelComponent, icon: 'logo-youtube', note: 'Youtube' },
 			//   	  { title: 'LOGIN', component: WordpressHome, icon: 'log-in', note: 'Wordpress' },
 			//   	  { title: 'FEEDS', component: FeedCategoriesComponent, icon: 'logo-rss', note: 'RSS (YQL)' },

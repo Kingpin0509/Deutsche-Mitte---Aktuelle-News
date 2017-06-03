@@ -11,22 +11,26 @@ export class SlidesComponent {
 
   slides = [
     {
-      title: "Welcome to the Ionic 2 App",
-      description: "",
+      title: "Herzlich Willkommen",
+      description: "Mit dieser App bleibst du stets Informiert über die neuesten Entwicklungen bei der Deutschen Mitte",
       image: "assets/img/ica-slidebox-img-1.png",
     },
     {
-      title: "What is Ionic 2 App?",
-      description: "",
+      title: "Inoffizielle App",
+      description: "Verantwortlich für diese App ist ausschließlich der Entwickler, nicht die Partei",
       image: "assets/img/ica-slidebox-img-2.png",
     },
     {
-      title: "What is Ionic 2 App Features?",
-      description: "",
+      title: "Immer griffbereit",
+      description: "Aktuelle Beiträge der DM Homepage, sowie die neuesten Uploads auf dem Youtubekanal der Partei",
       image: "assets/img/ica-slidebox-img-3.png",
-    }
+    },
+    {
+      title: "DU bist die Veränderungen",
+      description: "Der Wunsch nach Veränderung bleibt bedeutungslos, ohne den Willen zur Tat",
+      image: "assets/img/ica-slidebox-img-4.png",
+    },
   ];
-
   openPage() {
     this.nav.setRoot(TabsComponent);
   }
