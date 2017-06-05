@@ -12,7 +12,8 @@ export class SlidesComponent {
   slides = [
     {
       title: "Herzlich Willkommen",
-      description: "Mit dieser App bleibst du stets Informiert über die neuesten Entwicklungen bei der Deutschen Mitte",
+      description: "Diese App stellt dir stets aktuelle Informationen bereit, über die Partei",
+      description1: "-Deutsche Mitte-",
       image: "assets/img/ica-slidebox-img-1.png",
     },
     {
@@ -22,12 +23,13 @@ export class SlidesComponent {
     },
     {
       title: "Immer griffbereit",
-      description: "Aktuelle Beiträge der DM Homepage, sowie die neuesten Uploads auf dem Youtubekanal der Partei",
+      description: "Aktuelle Beiträge und Artikel von der Internetseite der Partei, sowie die neuesten Videos auf Youtube",
       image: "assets/img/ica-slidebox-img-3.png",
     },
     {
-      title: "DU bist die Veränderungen",
-      description: "Der Wunsch nach Veränderung bleibt bedeutungslos, ohne den Willen zur Tat",
+      title: "Wunsch nach Wandel?",
+      description: "Den Wandel aktiv unterstützen zu können bedingt, sich zuvor umfassendes Wissen erarbeitet zu haben",
+      description1: "Der Wunsch nach Veränderung bleibt bedeutungslos, ohne den Willen zur Tat. Und der Wille zur Tat bleibt nutzlos, ohne das Wissen",
       image: "assets/img/ica-slidebox-img-4.png",
     },
   ];
