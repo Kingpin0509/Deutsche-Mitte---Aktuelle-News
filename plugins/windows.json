@@ -1,0 +1,48 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "DM'N"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "DM'N"
+        },
+        "cordova-plugin-email": {
+            "PACKAGE_NAME": "DM'N"
+        },
+        "cordova-plugin-facebook4": {
+            "APP_ID": "131001554119757",
+            "APP_NAME": "IonicFrameworkApp",
+            "PACKAGE_NAME": "DM'N"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "DM'N"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "DM'N"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "DM'N"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "DM'N"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "DM'N"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "DM'N"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "DM'N"
+        }
+    }
+}
