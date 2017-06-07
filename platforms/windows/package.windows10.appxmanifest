@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Package IgnorableNamespaces="uap mp" xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10">
-    <Identity Name="de.dm.news" Publisher="CN=$username$" Version="1.35.0.0" />
-    <mp:PhoneIdentity PhoneProductId="e49e2250-4a4f-11e7-9b55-cbfd0259011a" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+    <Identity Name="17701WestWeedtzeDevelopme.DMN" Publisher="CN=$username$" Version="1.35.0.0" />
+    <mp:PhoneIdentity PhoneProductId="e40ec830-4b8f-11e7-abd7-afeb6202883a" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
     <Properties>
         <DisplayName>DM'N</DisplayName>
-        <PublisherDisplayName>Michael Humann</PublisherDisplayName>
+        <PublisherDisplayName>West Weedtze Development - Michael Humann</PublisherDisplayName>
         <Logo>images\StoreLogo.png</Logo>
         <Description>Stets aktuelle Nachrichten über die "Deutsche Mitte"</Description>
     </Properties>
@@ -15,7 +15,7 @@
         <Resource Language="x-generate" />
     </Resources>
     <Applications>
-        <Application Id="de.dm.news" StartPage="ms-appx-web://de.dm.news/www/index.html">
+        <Application Id="de.dm.news" StartPage="ms-appx-web://17701westweedtzedevelopme.dmn/www/index.html">
             <uap:VisualElements BackgroundColor="#464646" Description="Stets aktuelle Nachrichten über die &quot;Deutsche Mitte&quot;" DisplayName="DM'N" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
                 <uap:SplashScreen Image="images\splashscreen.png" />
                 <uap:DefaultTile ShortName="DM'N" Square310x310Logo="images\Square310x310Logo.png" Square71x71Logo="images\Square71x71Logo.png" Wide310x150Logo="images\Wide310x150Logo.png" />

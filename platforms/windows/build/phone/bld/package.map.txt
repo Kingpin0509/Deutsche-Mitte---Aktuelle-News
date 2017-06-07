@@ -1,5 +1,5 @@
 [Files]
-"U:\OneDrive\DM'N ionic2app - 1.10.0\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\phone\release\anycpu\AppxManifest.xml" "AppxManifest.xml"
+"U:\OneDrive\DM'N ionic2app - 1.10.0\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\phone\debug\anycpu\AppxManifest.xml" "AppxManifest.xml"
 "U:\OneDrive\DM'N ionic2app - 1.10.0\Deutsche-Mitte---Aktuelle-News\platforms\windows\images\SplashScreen.scale-100.png" "images\SplashScreen.scale-100.png"
 "U:\OneDrive\DM'N ionic2app - 1.10.0\Deutsche-Mitte---Aktuelle-News\platforms\windows\images\SplashScreenPhone.scale-240.png" "images\SplashScreenPhone.scale-240.png"
 "U:\OneDrive\DM'N ionic2app - 1.10.0\Deutsche-Mitte---Aktuelle-News\platforms\windows\images\Square150x150Logo.scale-100.png" "images\Square150x150Logo.scale-100.png"
@@ -89,4 +89,4 @@
 "U:\OneDrive\DM'N ionic2app - 1.10.0\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\WinJS\js\base.js" "www\WinJS\js\base.js"
 "U:\OneDrive\DM'N ionic2app - 1.10.0\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\index.html" "www\index.html"
 "U:\OneDrive\DM'N ionic2app - 1.10.0\Deutsche-Mitte---Aktuelle-News\platforms\windows\config.xml" "config.xml"
-"U:\OneDrive\DM'N ionic2app - 1.10.0\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\phone\release\anycpu\resources.pri" "resources.pri"
+"U:\OneDrive\DM'N ionic2app - 1.10.0\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\phone\debug\anycpu\resources.pri" "resources.pri"
