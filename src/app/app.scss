@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/v2/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -15,13 +13,34 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 img {
-	max-width: 100%;
-	height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
-video, audio { 
-	width:100%;
-	max-width:100%;
-	box-sizing: border-box;
-	display: inline-block;
+video,
+audio {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.toolbar-background {
+    background: #ff8b00;
+}
+
+dm-light {
+    background: #005397;
+}
+
+dm-dark {
+    background: #00498a,
+}
+
+dmo-light {
+    background: #ff8b00,
+}
+
+dmo-dark {
+    background: #FA7D09
 }
