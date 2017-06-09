@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, Events, MenuController } from 'ionic-angular';
 import { WordpressPosts } from '../../wordpress/wordpress-posts/wordpress-posts.component';
 import { WordpressCategories } from '../../wordpress/wordpress-categories/wordpress-categories.component';
-import { WordpressTags } from '../../wordpress/wordpress-tags/wordpress-tags.component';
+//import { WordpressTags } from '../../wordpress/wordpress-tags/wordpress-tags.component';
 import { YoutubeChannelComponent } from '../../youtube/youtube-channel/youtube-channel.component';
 //import { FeedCategoriesComponent } from '../../feeds/feed-categories/feed-categories.component';
 //import { FeedCategoryComponent } from '../../feeds/feed-category/feed-category.component';
@@ -28,8 +28,8 @@ export class HomeComponent {
 		this.pages = [
 			{ title: 'POSTS', component: WordpressPosts, icon: 'paper', note: 'DM Webseite' },
 			{ title: 'CATEGORIES', component: WordpressCategories, icon: 'bookmarks', note: 'DM Webseite' },
-			{ title: 'TAGS', component: WordpressTags, icon: 'bookmark', note: 'DM Webseite' },
-			{ title: 'YOUTUBE_CHANNEL', component: YoutubeChannelComponent, icon: 'logo-youtube', note: 'Youtube' },
+			//{ title: 'TAGS', component: WordpressTags, icon: 'bookmark', note: 'DM Webseite' },
+			{ title: 'YOUTUBE_HOME', component: YoutubeChannelComponent, icon: 'logo-youtube', note: 'Youtube' },
 			//   	  { title: 'LOGIN', component: WordpressHome, icon: 'log-in', note: 'Wordpress' },
 			//   	  { title: 'FEEDS', component: FeedCategoriesComponent, icon: 'logo-rss', note: 'RSS (YQL)' },
 			//   	  { title: 'FEED_CATEGORY', component: FeedCategoryComponent, icon: 'logo-rss', note: 'RSS (YQL)' },

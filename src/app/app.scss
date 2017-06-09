@@ -26,7 +26,32 @@ audio {
 }
 
 .toolbar-background {
-    background: #ff8b00;
+    background: #005397;
+}
+
+.toolbar-title {
+    color: #dddddd;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bar-button {
+    color: #aaaaaa;
+    background-color: transparent;
+}
+
+.bar-buttons {
+    color: #dddddd;
+    background-color: transparent;
+}
+
+.tab-button-icon {
+    min-width: 2.4rem;
+    font-size: 2.4rem;
+    color: rgba(140, 140, 140, 0.8);
 }
 
 dm-light {

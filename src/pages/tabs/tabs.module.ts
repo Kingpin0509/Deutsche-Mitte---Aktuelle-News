@@ -8,14 +8,14 @@ import { TabsComponent } from './tabs-component/tabs.component';
     TabsComponent
   ],
   imports: [
-  	CommonModule,
-  	SharedModule
+    CommonModule,
+    SharedModule
   ],
   exports: [
     TabsComponent
   ],
-  entryComponents:[
-  	TabsComponent
+  entryComponents: [
+    TabsComponent
   ]
 })
-export class TabsModule {}
+export class TabsModule { }
