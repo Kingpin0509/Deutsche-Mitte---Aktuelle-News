@@ -20,7 +20,7 @@ export class SettingsComponent implements OnInit {
 	        if(value) {
 	        	this.language = value;
 	        } else {
-	        	this.language = 'en';
+	        	this.language = 'de';
 	        }
 	    });
 	}
