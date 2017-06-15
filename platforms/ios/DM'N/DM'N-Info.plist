@@ -70,8 +70,6 @@
     </array>
     <key>NSAppTransportSecurity</key>
     <dict>
-      <key>NSAllowsArbitraryLoads</key>
-      <true/>
       <key>NSExceptionDomains</key>
       <dict>
         <key>m.facebook.com</key>
@@ -91,6 +89,8 @@
           <true/>
         </dict>
       </dict>
+      <key>NSAllowsArbitraryLoads</key>
+      <true/>
     </dict>
   </dict>
 </plist>
