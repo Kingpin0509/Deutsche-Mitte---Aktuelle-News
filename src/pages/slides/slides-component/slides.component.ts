@@ -12,25 +12,31 @@ export class SlidesComponent {
   slides = [
     {
       title: "Herzlich Willkommen",
-      description: "Diese App stellt dir stets aktuelle Informationen bereit, über die Partei",
+      description: "Diese App stellt ihnen stets aktuelle Informationen bereit, über die Partei",
       description1: "-Deutsche Mitte-",
-      image: "assets/img/ica-slidebox-img-1.png",
+      image: "assets/img/ica-slidebox-img-6.png",
+    },
+    {
+      title: "SCHREIBEN SIE MIT UNS GESCHICHTE!!!",
+      description: "",
+      image: "assets/img/ica-slidebox-img-3.png",
+    },
+    {
+      title: "Wir haben nur diese eine Chance",
+      description: "Machen Sie mit !",
+      description1: "Kommen Sie in die Deutsche Mitte",
+      image: "assets/img/ica-slidebox-img-7.png",
+    },
+    {
+      title: "Zum Kennenlernen",
+      description: "Besuchen sie unseren online Stammtisch",
+      description1: " www.dm-stammtisch.de",
+      image: "assets/img/ica-slidebox-img-4.png",
     },
     {
       title: "Inoffizielle App",
       description: "Verantwortlich für diese App ist ausschließlich der Entwickler, nicht die Partei",
       image: "assets/img/ica-slidebox-img-2.png",
-    },
-    {
-      title: "Immer griffbereit",
-      description: "Aktuelle Beiträge und Artikel von der Internetseite der Partei, sowie die neuesten Videos auf Youtube",
-      image: "assets/img/ica-slidebox-img-3.png",
-    },
-    {
-      title: "Wunsch nach Wandel?",
-      description: "Den Wandel aktiv unterstützen zu können bedingt, sich zuvor umfassendes Wissen erarbeitet zu haben",
-      description1: "Der Wunsch nach Veränderung bleibt bedeutungslos, ohne den Willen zur Tat. Und der Wille zur Tat bleibt nutzlos, ohne das Wissen",
-      image: "assets/img/ica-slidebox-img-4.png",
     },
   ];
   openPage() {

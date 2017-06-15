@@ -25,7 +25,7 @@ export class WordpressCategories implements OnInit {
 
 	getCategories() {
 		let loader = this.loadingController.create({
-			content: "Please wait"
+			content: "Bitte warten"
 		});
 		loader.present();
 		

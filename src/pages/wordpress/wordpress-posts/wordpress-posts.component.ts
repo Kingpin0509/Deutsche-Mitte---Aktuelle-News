@@ -47,7 +47,7 @@ export class WordpressPosts implements OnInit {
 
 		let query = this.createQuery();
 		let loader = this.loadingController.create({
-			content: "Please wait",
+			content: "Bitte warten",
       duration: 10000
 		});
 
@@ -68,10 +68,10 @@ export class WordpressPosts implements OnInit {
 
 		let query = this.createQuery();
 	  	let loader = this.loadingController.create({
-			content: "Please wait"
+			content: "Bitte warten"
 		});
 		let toast = this.toastController.create({
-			message: "There are no more posts.",
+			message: "Keine weiteren Beiträge.",
       duration: 2000
 		});
 
@@ -109,9 +109,9 @@ export class WordpressPosts implements OnInit {
 	    if(newPost) {
 			this.favoritePosts.push(post);
 			this.storage.set('wordpress.favorite', JSON.stringify(this.favoritePosts));
-			message = "This post has been saved to your list";
+			message = "Beitrag wurde zu deinen Favoriten hinzugefügt";
 	    } else {
-	    	message = "This post is already in your list";
+	    	message = "Beitrag wurde bereits zu deinen Favoriten hinzugefügt";
 	    }
 		let toast = this.toastController.create({
 			message: message,

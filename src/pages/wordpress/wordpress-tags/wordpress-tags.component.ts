@@ -25,7 +25,7 @@ export class WordpressTags implements OnInit {
 
 	getTags() {
 		let loader = this.loadingController.create({
-			content: "Please wait"
+			content: "Bitte warten"
 		});
 		loader.present();
 		
