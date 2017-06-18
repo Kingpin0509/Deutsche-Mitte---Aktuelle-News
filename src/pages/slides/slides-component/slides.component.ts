@@ -17,8 +17,14 @@ export class SlidesComponent {
       image: "assets/img/ica-slidebox-img-6.png",
     },
     {
+      title: "Zum Kennenlernen",
+      description: "Schauen sie gern in unseren online Stammtisch vorbei. Oder kommen sie persönlich zu unseren Stammtischtreffen in jeder größeren Stadt",
+      description1: " www.dm-stammtisch.de",
+      image: "assets/img/ica-slidebox-img-4.png",
+    },
+    {
       title: "SCHREIBEN SIE MIT UNS GESCHICHTE!!!",
-      description: "",
+      description: "Sind Sie Zuschauer - oder Teil der notwendigen und überfälligen Veränderung?",
       image: "assets/img/ica-slidebox-img-3.png",
     },
     {
@@ -26,12 +32,6 @@ export class SlidesComponent {
       description: "Machen Sie mit !",
       description1: "Kommen Sie in die Deutsche Mitte",
       image: "assets/img/ica-slidebox-img-7.png",
-    },
-    {
-      title: "Zum Kennenlernen",
-      description: "Besuchen sie unseren online Stammtisch",
-      description1: " www.dm-stammtisch.de",
-      image: "assets/img/ica-slidebox-img-4.png",
     },
     {
       title: "Inoffizielle App",
