@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="de.dm.news" version="1.37.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="de.dm.news" version="1.38.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>DM'N</name>
     <description>Stets aktuelle Nachrichten über die "Deutsche Mitte"</description>
     <author email="kingpin0509@gmail.com" href="http://westweedtzerecords.biz">Michael Humann</author>
@@ -95,6 +95,6 @@
     <plugin name="cordova-plugin-x-socialsharing" spec="5.1.5" />
     <plugin name="ionic-plugin-keyboard" spec="~2.2.1" />
     <engine name="ios" spec="~4.4.0" />
-    <engine name="android" spec="~6.2.3" />
     <engine name="windows" spec="~5.0.0" />
+    <engine name="android" spec="~6.2.3" />
 </widget>

@@ -9,7 +9,7 @@ import { Config } from './app.config';
 // import { DatetimeComponent } from '../pages/datetime/datetime-component/datetime.component';
 // import { RangesComponent } from '../pages/ranges/ranges-component/ranges.component';
 // import { ActionSheetComponent } from '../pages/action-sheet/action-sheet-component/action-sheet.component';
-// import { PlaceholderComponent } from '../pages/placeholder/placeholder-component/placeholder.component';
+ import { PlaceholderComponent } from '../pages/placeholder/placeholder-component/placeholder.component';
 // import { FacebookConnectComponent } from '../pages/facebook-connect/facebook-connect-component/facebook-connect.component';
 //import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';
 // import { LoginComponent } from '../pages/login/login-component/login.component';
@@ -60,6 +60,7 @@ export class MyApp {
 		this.pages = [
 		  { title: 'HOME', component: TabsComponent, icon: 'home' },
 		  { title: 'ABOUT', component: AboutComponent, icon: 'information-circle' },
+  	      { title: 'PLACEHOLDER', component: PlaceholderComponent, icon: 'logo-buffer' },
 		  { title: 'POSTS', component: WordpressPosts, icon: 'paper' },
 	      { title: 'CATEGORIES', component: WordpressCategories, icon: 'bookmarks' },
 	      { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
@@ -72,7 +73,6 @@ export class MyApp {
 //	      { title: 'DATETIME', component: DatetimeComponent, icon: 'clock'},
 //	      { title: 'RANGES', component: RangesComponent, icon: 'sunny'},
 //	      { title: 'ACTION_SHEET', component: ActionSheetComponent, icon: 'create'},
-//	      { title: 'PLACEHOLDER', component: PlaceholderComponent, icon: 'logo-buffer' },
 //	      { title: 'Facebook Connect', component: FacebookConnectComponent, icon: 'logo-facebook' },
 //	      { title: 'LOGIN', component: LoginComponent, icon: 'log-in' }
 		];
