@@ -22,6 +22,7 @@ import { ChartsModule } from '../pages/charts/charts.module';
 import { FirebaseModule } from '../pages/firebase/firebase.module';
 // Module Example: Use the PlaceholderModule for any new App Module
 import { PlaceholderModule } from '../pages/placeholder/placeholder.module';
+import { StammtischeModule } from '../pages/stammtische/stammtische.module';
 
 import { MyApp } from './app.component';
 
@@ -50,7 +51,8 @@ import { MyApp } from './app.component';
     LoginModule,
     ChartsModule,
     FirebaseModule,
-    PlaceholderModule
+    PlaceholderModule,
+    StammtischeModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

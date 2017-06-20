@@ -10,6 +10,7 @@ import { Config } from './app.config';
 // import { RangesComponent } from '../pages/ranges/ranges-component/ranges.component';
 // import { ActionSheetComponent } from '../pages/action-sheet/action-sheet-component/action-sheet.component';
  import { PlaceholderComponent } from '../pages/placeholder/placeholder-component/placeholder.component';
+import { StammtischeComponent } from '../pages/stammtische/stammtische-component/stammtische.component';
 // import { FacebookConnectComponent } from '../pages/facebook-connect/facebook-connect-component/facebook-connect.component';
 //import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';
 // import { LoginComponent } from '../pages/login/login-component/login.component';
@@ -68,6 +69,7 @@ export class MyApp {
   	      { title: 'YOUTUBE_CHANNEL', component: YoutubeChannelComponent, icon: 'logo-youtube'},
 		  { title: 'GOOGLE_MAPS', component: GoogleMapsComponent, icon: 'pin' },
 	      { title: 'SETTINGS', component: SettingsComponent, icon: 'options'},
+  	      { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'logo-buffer' },
 //		  { title: 'PAGES', component: WordpressPages, icon: 'document' },
 //	      { title: 'GRID', component: GridComponent, icon: 'grid'},
 //	      { title: 'DATETIME', component: DatetimeComponent, icon: 'clock'},

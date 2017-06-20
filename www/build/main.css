@@ -24956,6 +24956,40 @@ dmo-dark {
   color: #000000;
 }
 
+.stammtisch-page .toolbar-background {
+  background: #fff;
+  border-color: transparent;
+}
+
+.stammtisch-page .slide-zoom {
+  height: 100%;
+}
+
+.stammtisch-page .slide-title {
+  margin-top: 2.8rem;
+}
+
+.stammtisch-page .slide-image {
+  max-height: 90%;
+  max-width: 90%;
+  margin: 18px 0;
+}
+
+.stammtisch-page b {
+  font-weight: 500;
+}
+
+.stammtisch-page p {
+  padding: 0 40px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #60646B;
+}
+
+.stammtisch-page p b {
+  color: #000000;
+}
+
 .page-welcome .splash-bg {
   position: relative;
   background: url("../../../assets/img/splashbg.png") no-repeat transparent;
