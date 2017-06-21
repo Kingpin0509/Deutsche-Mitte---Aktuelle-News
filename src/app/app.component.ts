@@ -17,7 +17,7 @@ import { StammtischeComponent } from '../pages/stammtische/stammtische-component
 import { TabsComponent } from '../pages/tabs/tabs-component/tabs.component';
 import { AboutComponent } from '../pages/about/about-component/about.component';
 import { SettingsComponent } from '../pages/settings/settings-component/settings.component';
-import { GoogleMapsComponent } from '../pages/google-maps/google-maps-component/google-maps.component';
+//import { GoogleMapsComponent } from '../pages/google-maps/google-maps-component/google-maps.component';
 import { WordpressMenus } from '../pages/wordpress/wordpress-menus/wordpress-menus.component';
 import { WordpressPosts } from '../pages/wordpress/wordpress-posts/wordpress-posts.component';
 import { WordpressFavorites } from '../pages/wordpress/wordpress-favorites/wordpress-favorites.component';
@@ -67,9 +67,9 @@ export class MyApp {
 	      { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
 		  { title: 'FAVORITES', component: WordpressFavorites, icon: 'thumbs-up' },
   	      { title: 'YOUTUBE_CHANNEL', component: YoutubeChannelComponent, icon: 'logo-youtube'},
-		  { title: 'GOOGLE_MAPS', component: GoogleMapsComponent, icon: 'pin' },
+//		  { title: 'GOOGLE_MAPS', component: GoogleMapsComponent, icon: 'pin' },
 	      { title: 'SETTINGS', component: SettingsComponent, icon: 'options'},
-  	      { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'logo-buffer' },
+  	      { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' },
 //		  { title: 'PAGES', component: WordpressPages, icon: 'document' },
 //	      { title: 'GRID', component: GridComponent, icon: 'grid'},
 //	      { title: 'DATETIME', component: DatetimeComponent, icon: 'clock'},
