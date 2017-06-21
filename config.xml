@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="de.dm.news" version="1.38.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>DM'N</name>
+    <name>DM - Aktuell</name>
     <description>Stets aktuelle Nachrichten über die "Deutsche Mitte"</description>
     <author email="kingpin0509@gmail.com" href="http://westweedtzerecords.biz">Michael Humann</author>
     <content src="index.html" />
