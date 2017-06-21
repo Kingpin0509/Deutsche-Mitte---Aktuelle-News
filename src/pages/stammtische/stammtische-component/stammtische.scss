@@ -1,4 +1,4 @@
-.stammtisch-page {
+.stammtische-page {
     .toolbar-background {
         background: #fff;
         border-color: transparent;
@@ -10,7 +10,8 @@
         margin-top: 2.8rem;
     }
     .map-frame {
-        height: 700px;
+        min-height: 700px;
+        min-width: 80%;
         max-height: 90%;
         max-width: 90%;
         margin: 18px 0;

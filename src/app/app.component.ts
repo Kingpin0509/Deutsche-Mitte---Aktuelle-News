@@ -9,7 +9,7 @@ import { Config } from './app.config';
 // import { DatetimeComponent } from '../pages/datetime/datetime-component/datetime.component';
 // import { RangesComponent } from '../pages/ranges/ranges-component/ranges.component';
 // import { ActionSheetComponent } from '../pages/action-sheet/action-sheet-component/action-sheet.component';
- import { PlaceholderComponent } from '../pages/placeholder/placeholder-component/placeholder.component';
+import { PlaceholderComponent } from '../pages/placeholder/placeholder-component/placeholder.component';
 import { StammtischeComponent } from '../pages/stammtische/stammtische-component/stammtische.component';
 // import { FacebookConnectComponent } from '../pages/facebook-connect/facebook-connect-component/facebook-connect.component';
 //import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';

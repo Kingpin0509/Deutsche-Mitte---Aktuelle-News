@@ -1,7 +1,7 @@
 {
     "name": "dmn",
     "author": "Michael Humann",
-    "version": "1.35.0",
+    "version": "1.38.0",
     "homepage": "http://westweedtzerecords.biz",
     "private": true,
     "scripts": {
