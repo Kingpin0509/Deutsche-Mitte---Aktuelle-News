@@ -8,6 +8,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { SocialSharing } from '@ionic-native/social-sharing';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { Facebook } from '@ionic-native/facebook';
 import { EmailComposer } from '@ionic-native/email-composer';
 
@@ -17,8 +18,6 @@ import { TruncatePipe } from './pipes/truncate.pipe';
 import { TrimHtmlPipe } from './pipes/trim-html.pipe';
 
 import { Config } from '../app.config';
-
-import { MyApp } from '../app.component';
 
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, './assets/translations', '.json');
@@ -31,7 +30,7 @@ export function createTranslateLoader(http: Http) {
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule,
     IonicStorageModule.forRoot(),
     CommonModule,
     HttpModule,
@@ -54,6 +53,7 @@ export function createTranslateLoader(http: Http) {
     SplashScreen,
     InAppBrowser,
     SocialSharing,
+    BarcodeScanner,
     Facebook,
     EmailComposer,
     Config

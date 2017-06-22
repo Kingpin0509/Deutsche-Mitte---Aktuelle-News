@@ -15,6 +15,7 @@ export class WordpressPosts implements OnInit {
 	pageCount: number;
 	category: any;
 	tag: any;
+	author: any;
 	search: string;
 	hideSearchbar: boolean;
 	favoritePosts: any;
@@ -30,6 +31,7 @@ export class WordpressPosts implements OnInit {
 	ngOnInit() {
 		this.category = this.navParams.get('category');
 		this.tag = this.navParams.get('tag');
+		this.author = this.navParams.get('author');
 		this.hideSearchbar = true;
 		this.search = '';
 		this.favoritePosts = [];
@@ -47,7 +49,7 @@ export class WordpressPosts implements OnInit {
 
 		let query = this.createQuery();
 		let loader = this.loadingController.create({
-			content: "Bitte warten",
+			content: "Bitte warten...",
       duration: 10000
 		});
 
@@ -59,6 +61,11 @@ export class WordpressPosts implements OnInit {
 		});
 	}
 
+	getAuthorPosts(author) {
+		this.author = author;
+		this.getPosts();
+	}
+
 	searchPosts() {
     	this.getPosts();
 	}
@@ -68,7 +75,7 @@ export class WordpressPosts implements OnInit {
 
 		let query = this.createQuery();
 	  	let loader = this.loadingController.create({
-			content: "Bitte warten"
+			content: "Bitte warten..."
 		});
 		let toast = this.toastController.create({
 			message: "Keine weiteren Beiträge.",
@@ -135,6 +142,9 @@ export class WordpressPosts implements OnInit {
 	}
 	if(this.tag) {
 		query['tags'] = this.tag.id;
+	}
+	if(this.author) {
+		query['author'] = this.author;
 	}
 	return query;
 	}

@@ -8,7 +8,7 @@
         <ion-title *ngIf="!category">{{'POSTS' | translate}}</ion-title>
         <ion-title *ngIf="category">{{category.name}} <span *ngIf="category.count">({{category.count}})</span></ion-title>
         <ion-buttons end>
-            <button (click)="toggleSearchbar()" ion-button icon-only>
+            <button (tap)="toggleSearchbar()" ion-button icon-only>
 	        <ion-icon name="search"></ion-icon>
 	      </button>
         </ion-buttons>
@@ -29,7 +29,7 @@
             <ion-avatar item-left>
                 <img [src]="post['_embedded'].author[0].avatar_urls[96]">
             </ion-avatar>
-            <h2>{{post['_embedded'].author[0].name}}</h2>
+            <h2 (click)="getAuthorPosts(post.author)">{{post['_embedded'].author[0].name}}</h2>
         </ion-item>
         <ion-card-content>
             <p>{{post.content.rendered | trimHTML | truncate: 100 }}</p>
