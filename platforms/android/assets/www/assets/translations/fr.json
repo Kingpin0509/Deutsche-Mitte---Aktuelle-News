@@ -1,6 +1,5 @@
 {
     "MENU": "Menu (fr)",
-    "STAMMTISCHE": "Stammtische (fr)",
     "HOME": "Home (fr)",
     "ABOUT": "About (fr)",
     "POSTS": "Posts (fr)",
@@ -9,6 +8,7 @@
     "CATEGORY": "Category (fr)",
     "FAVORITES": "Favorite Posts (fr)",
     "PAGES": "Pages (fr)",
+    "PAGE": "Page (fr)",
     "MENUS": "Menus (fr)",
     "GOOGLE_MAPS": "Google Maps (fr)",
     "SLIDES": "Slides (fr)",
@@ -23,7 +23,6 @@
     "BARCODE_SCANNER": "Barcode Scanner (fr)",
     "YOUTUBE_VIDEOS": "Youtube Videos (fr)",
     "YOUTUBE_CHANNEL": "Youtube Channel (fr)",
-    "YOUTUBE_HOME": "Video Clips (fr)",
     "CHARTS": "Charts (fr)",
     "HOME_TITLE": "Welcome to the Ionic Framework App (fr)",
     "HOME_MESSAGE": "Use the Ionic Framework App to get you up and running with mobile apps faster than ever before. (fr)",
