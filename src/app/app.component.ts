@@ -51,7 +51,7 @@ export class MyApp {
 		});
 
 		this.pages = [
-		  { title: 'HOME', component: TabsComponent, icon: 'home' },
+		{ title: 'HOME', component: TabsComponent, icon: 'home' },
 	    { title: 'SETTINGS', component: SettingsComponent, icon: 'settings'},
 	    { title: 'GRID', component: GridComponent, icon: 'grid'},
 	    { title: 'DATETIME', component: DatetimeComponent, icon: 'clock'},
