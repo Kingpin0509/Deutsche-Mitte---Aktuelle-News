@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Package IgnorableNamespaces="uap mp" xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10">
-    <Identity Name="de.dm.news" Publisher="CN=$username$" Version="1.37.0.0" />
-    <mp:PhoneIdentity PhoneProductId="dc48b1d0-5173-11e7-a6d7-d1fc9c12dfe5" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+    <Identity Name="de.dm.news" Publisher="CN=$username$" Version="1.38.0.0" />
+    <mp:PhoneIdentity PhoneProductId="bd533990-56ef-11e7-91cf-bf844cbb4afa" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
     <Properties>
-        <DisplayName>DM'N</DisplayName>
+        <DisplayName>DM - Aktuell</DisplayName>
         <PublisherDisplayName>Michael Humann</PublisherDisplayName>
         <Logo>images\StoreLogo.png</Logo>
         <Description>Stets aktuelle Nachrichten über die "Deutsche Mitte"</Description>
@@ -16,9 +16,9 @@
     </Resources>
     <Applications>
         <Application Id="de.dm.news" StartPage="ms-appx-web://de.dm.news/www/index.html">
-            <uap:VisualElements BackgroundColor="#464646" Description="Stets aktuelle Nachrichten über die &quot;Deutsche Mitte&quot;" DisplayName="DM'N" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
+            <uap:VisualElements BackgroundColor="#464646" Description="Stets aktuelle Nachrichten über die &quot;Deutsche Mitte&quot;" DisplayName="DM - Aktuell" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
                 <uap:SplashScreen Image="images\splashscreen.png" />
-                <uap:DefaultTile ShortName="DM'N" Square310x310Logo="images\Square310x310Logo.png" Square71x71Logo="images\Square71x71Logo.png" Wide310x150Logo="images\Wide310x150Logo.png" />
+                <uap:DefaultTile ShortName="DM - Aktuell" Square310x310Logo="images\Square310x310Logo.png" Square71x71Logo="images\Square71x71Logo.png" Wide310x150Logo="images\Wide310x150Logo.png" />
                 <uap:InitialRotationPreference>
                     <uap:Rotation Preference="portrait" />
                     <uap:Rotation Preference="landscape" />
