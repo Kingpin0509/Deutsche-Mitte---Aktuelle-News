@@ -117,7 +117,7 @@
                     ],
                     "/manifest/application": [
                         {
-                            "xml": "<provider android:authorities=\"com.ionicframework.ionic2app.sharing.provider\" android:exported=\"false\" android:grantUriPermissions=\"true\" android:name=\"nl.xservices.plugins.FileProvider\"><meta-data android:name=\"android.support.FILE_PROVIDER_PATHS\" android:resource=\"@xml/sharing_paths\" /></provider>",
+                            "xml": "<provider android:authorities=\"de.dm.news.sharing.provider\" android:exported=\"false\" android:grantUriPermissions=\"true\" android:name=\"nl.xservices.plugins.FileProvider\"><meta-data android:name=\"android.support.FILE_PROVIDER_PATHS\" android:resource=\"@xml/sharing_paths\" /></provider>",
                             "count": 1
                         },
                         {
@@ -135,11 +135,11 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<string name=\"fb_app_id\">1404779196200190</string>",
+                            "xml": "<string name=\"fb_app_id\">131001554119757</string>",
                             "count": 1
                         },
                         {
-                            "xml": "<string name=\"fb_app_name\">Ionic2App</string>",
+                            "xml": "<string name=\"fb_app_name\">IonicFrameworkApp</string>",
                             "count": 1
                         }
                     ]
@@ -149,42 +149,42 @@
     },
     "installed_plugins": {
         "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.ionicframework.ionic2app"
+            "PACKAGE_NAME": "de.dm.news"
         },
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.ionicframework.ionic2app"
+            "PACKAGE_NAME": "de.dm.news"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.ionicframework.ionic2app"
+            "PACKAGE_NAME": "de.dm.news"
         },
         "cordova-plugin-email": {
-            "PACKAGE_NAME": "com.ionicframework.ionic2app"
+            "PACKAGE_NAME": "de.dm.news"
         },
         "cordova-plugin-facebook4": {
-            "APP_ID": "1404779196200190",
-            "APP_NAME": "Ionic2App",
-            "PACKAGE_NAME": "com.ionicframework.ionic2app"
+            "APP_ID": "131001554119757",
+            "APP_NAME": "IonicFrameworkApp",
+            "PACKAGE_NAME": "de.dm.news"
         },
         "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.ionicframework.ionic2app"
+            "PACKAGE_NAME": "de.dm.news"
         },
         "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.ionicframework.ionic2app"
+            "PACKAGE_NAME": "de.dm.news"
         },
         "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.ionicframework.ionic2app"
+            "PACKAGE_NAME": "de.dm.news"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.ionic2app"
+            "PACKAGE_NAME": "de.dm.news"
         },
         "cordova-plugin-x-socialsharing": {
-            "PACKAGE_NAME": "com.ionicframework.ionic2app"
+            "PACKAGE_NAME": "de.dm.news"
         },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.ionic2app"
+            "PACKAGE_NAME": "de.dm.news"
         },
         "phonegap-plugin-barcodescanner": {
-            "PACKAGE_NAME": "com.ionicframework.ionic2app"
+            "PACKAGE_NAME": "de.dm.news"
         }
     },
     "dependent_plugins": {},

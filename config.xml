@@ -95,4 +95,7 @@
         <variable name="APP_NAME" value="IonicFrameworkApp" />
     </plugin>
     <plugin name="cordova-plugin-email" spec="1.2.6" />
+    <engine name="android" spec="~6.2.3" />
+    <engine name="ios" spec="~4.4.0" />
+    <engine name="windows" spec="~5.0.0" />
 </widget>
