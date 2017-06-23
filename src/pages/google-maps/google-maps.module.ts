@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '../../app/shared/shared.module';
 import { GoogleMapsComponent } from './google-maps-component/google-maps.component';
-import { AgmCoreModule } from 'angular2-google-maps/core';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [

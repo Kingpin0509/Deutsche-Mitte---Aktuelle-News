@@ -4,7 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { SharedModule } from './shared/shared.module'
 import { HomeModule } from '../pages/home/home.module';
 import { TabsModule } from '../pages/tabs/tabs.module';
-import { GoogleMapsModule } from '../pages/google-maps/google-maps.module';
+// import { GoogleMapsModule } from '../pages/google-maps/google-maps.module';
 import { WordpressModule } from '../pages/wordpress/wordpress.module';
 import { SlidesModule } from '../pages/slides/slides.module';
 import { GridModule } from '../pages/grid/grid.module';
@@ -35,7 +35,7 @@ import { MyApp } from './app.component';
     SharedModule,
     HomeModule,
     TabsModule,
-    GoogleMapsModule,
+    // GoogleMapsModule,
     WordpressModule,
     SlidesModule,
     GridModule,
