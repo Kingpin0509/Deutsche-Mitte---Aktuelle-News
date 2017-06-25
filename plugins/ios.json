@@ -45,7 +45,7 @@
             "PACKAGE_NAME": "de.dm.news"
         },
         "phonegap-plugin-barcodescanner": {
-            "CAMERA_USAGE_DESCRIPTION": "Zum Scannen der DM Mitgliedskarte. Noch nicht Aktiv.",
+            "CAMERA_USAGE_DESCRIPTION": " ",
             "PACKAGE_NAME": "de.dm.news"
         }
     }
