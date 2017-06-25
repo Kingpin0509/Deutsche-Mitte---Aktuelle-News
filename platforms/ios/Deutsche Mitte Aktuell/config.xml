@@ -52,9 +52,6 @@
     <feature name="Keyboard">
         <param name="ios-package" onload="true" value="IonicKeyboard" />
     </feature>
-    <feature name="BarcodeScanner">
-        <param name="ios-package" value="CDVBarcodeScanner" />
-    </feature>
     <name>Deutsche Mitte Aktuell</name>
     <description>Stets alles aktuelle über die Partei "Deutsche Mitte"</description>
     <author email="kingpin0509@gmail.com" href="http://westweedtzerecords.biz">Michael Humann</author>

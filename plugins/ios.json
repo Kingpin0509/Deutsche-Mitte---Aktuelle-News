@@ -43,10 +43,6 @@
     "dependent_plugins": {
         "cordova-plugin-compat": {
             "PACKAGE_NAME": "de.dm.news"
-        },
-        "phonegap-plugin-barcodescanner": {
-            "CAMERA_USAGE_DESCRIPTION": " ",
-            "PACKAGE_NAME": "de.dm.news"
         }
     }
 }
