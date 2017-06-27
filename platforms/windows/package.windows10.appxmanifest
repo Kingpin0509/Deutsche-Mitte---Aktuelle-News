@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Package IgnorableNamespaces="uap mp" xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10">
     <Identity Name="17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino" Publisher="CN=$username$" Version="1.45.0.0" />
-    <mp:PhoneIdentity PhoneProductId="0c101ca0-5b60-11e7-a360-9b75b582b207" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+    <mp:PhoneIdentity PhoneProductId="a430a520-5b67-11e7-807b-1d04cadc5564" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
     <Properties>
         <DisplayName>Deutsche Mitte Aktuell</DisplayName>
         <PublisherDisplayName>West Weedtze Development - Michael Humann</PublisherDisplayName>
