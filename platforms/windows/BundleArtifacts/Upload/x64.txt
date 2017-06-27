@@ -1,0 +1,1 @@
+MainPackage=C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\Release\x64\win10\Upload\CordovaApp.Windows10_1.4.1.0_x64.appx
