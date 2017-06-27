@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-    <Identity Name="de.dm.news" Publisher="CN=$username$" Version="1.42.0.0" />
-    <mp:PhoneIdentity PhoneProductId="ceecefc0-59b0-11e7-b6e1-19c27d3ac01e" PhonePublisherId="db093ed5-53b1-45f7-af72-751e8f36ab80" />
+    <Identity Name="de.dm.news" Publisher="CN=$username$" Version="1.45.0.0" />
+    <mp:PhoneIdentity PhoneProductId="44dda160-5b56-11e7-ad3a-9335d6cd843e" PhonePublisherId="db093ed5-53b1-45f7-af72-751e8f36ab80" />
     <Properties>
         <DisplayName>Deutsche Mitte Aktuell</DisplayName>
         <PublisherDisplayName>Michael Humann</PublisherDisplayName>
