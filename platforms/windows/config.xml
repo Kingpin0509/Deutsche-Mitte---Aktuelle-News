@@ -12,6 +12,11 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <icon src="resources/winrt/icon/Square150x150Logo.scale-100.png" target="Square150x150Logo" />
+    <icon src="resources/winrt/icon/StoreLogo.scale-100.png" target="StoreLogo" />
+    <icon src="resources/winrt/icon/app_small_logo_winrt.png" target="Square30x30Logo" />
+    <splash height="300" src="resources/winrt/screen/Wide310x150Logo.scale-200.png" width="620" />
+    <icon src="resources/winrt/icon/Wide310x150Logo.scale-100.png" target="Wide310x150Logo" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
@@ -23,4 +28,6 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="ShowSplashScreenSpinner" value="true" />
     <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="WindowsStorePublisherName" value="West Weedtze Development - Michael Humann" />
+    <preference name="WindowsStoreIdentityName" value="17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino" />
 </widget>
