@@ -1,17 +1,17 @@
 <ion-header>
-	<ion-navbar>
-		<ion-buttons start>
-			<button menuToggle>
+    <ion-navbar>
+        <ion-buttons start>
+            <button menuToggle="left">
 				<ion-icon name="menu"></ion-icon>
 			</button>
-		</ion-buttons>
-		<ion-title>{{'FAVORITES' | translate}} ({{favoritePosts.length}})</ion-title>
-		<ion-buttons end>
-	      <button (click)="removeAllFavoritePosts()" ion-button icon-only>
+        </ion-buttons>
+        <ion-title>{{'FAVORITES' | translate}} ({{favoritePosts.length}})</ion-title>
+        <ion-buttons end>
+            <button (click)="removeAllFavoritePosts()" ion-button icon-only>
 	        <ion-icon name="trash"></ion-icon>
 	      </button>
-	    </ion-buttons>
-	</ion-navbar>
+        </ion-buttons>
+    </ion-navbar>
 </ion-header>
 
 <ion-content>

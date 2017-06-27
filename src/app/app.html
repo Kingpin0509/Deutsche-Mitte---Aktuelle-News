@@ -1,5 +1,5 @@
 <ion-split-pane>
-    <ion-menu *ngIf="!wordpressMenusNavigation" [content]="content">
+    <ion-menu *ngIf="!wordpressMenusNavigation" id="menuleft" side="left" [content]="content">
         <ion-header>
             <ion-toolbar>
                 <ion-title>{{'MENU' | translate}}</ion-title>
@@ -19,6 +19,20 @@
     </ion-menu>
     <ion-menu *ngIf="wordpressMenusNavigation" [content]="content">
         <ion-nav [root]="menuPage"></ion-nav>
+    </ion-menu>
+    <ion-menu id="menuright" side="right" [content]="content">
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>{{'MENU' | translate}}</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-list>
+                <ion-item menuClose ion-item>
+                    <img src="assets/img/BannerDMStammtische.gif" />
+                </ion-item>
+            </ion-list>
+        </ion-content>
     </ion-menu>
     <ion-nav [root]="rootPage" main #content></ion-nav>
 </ion-split-pane>
