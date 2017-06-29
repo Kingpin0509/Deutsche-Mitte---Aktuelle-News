@@ -1,4 +1,4 @@
-﻿cordova.define("cordova-plugin-email.EmailComposerProxy", function(require, exports, module) {
+cordova.define("cordova-plugin-email.EmailComposerProxy", function(require, exports, module) {
 /* globals Windows: true */
 
 /*
