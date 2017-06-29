@@ -10,6 +10,9 @@
         "cordova-plugin-console": {
             "PACKAGE_NAME": "Deutsche Mitte Aktuell"
         },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "Deutsche Mitte Aktuell"
+        },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "Deutsche Mitte Aktuell"
         },
@@ -37,9 +40,6 @@
             "PACKAGE_NAME": "Deutsche Mitte Aktuell"
         },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "Deutsche Mitte Aktuell"
-        },
-        "cordova-plugin-crosswalk-webview": {
             "PACKAGE_NAME": "Deutsche Mitte Aktuell"
         }
     },

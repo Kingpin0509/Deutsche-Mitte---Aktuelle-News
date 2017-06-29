@@ -137,6 +137,7 @@ module.exports.metadata =
 {
     "cordova-plugin-compat": "1.1.0",
     "cordova-plugin-console": "1.0.5",
+    "cordova-plugin-crosswalk-webview": "2.3.0",
     "cordova-plugin-device": "1.1.4",
     "cordova-plugin-email": "1.2.6",
     "cordova-plugin-facebook4": "1.7.1",
@@ -145,8 +146,7 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.2.1",
     "cordova-plugin-whitelist": "1.3.1",
     "cordova-plugin-x-socialsharing": "5.1.5",
-    "ionic-plugin-keyboard": "2.2.1",
-    "cordova-plugin-crosswalk-webview": "2.3.0"
+    "ionic-plugin-keyboard": "2.2.1"
 };
 // BOTTOM OF METADATA
 });

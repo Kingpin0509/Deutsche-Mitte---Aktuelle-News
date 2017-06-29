@@ -1,4 +1,4 @@
-cordova.define("cordova-plugin-email.EmailComposerProxyImpl", function(require, exports, module) {
+﻿cordova.define("cordova-plugin-email.EmailComposerProxyImpl", function(require, exports, module) {
 /*
 Copyright 2013-2016 appPlant UG
 
