@@ -10,10 +10,10 @@
         "cordova-plugin-console": {
             "PACKAGE_NAME": "de.dm.news"
         },
-        "cordova-plugin-device": {
+        "cordova-plugin-crosswalk-webview": {
             "PACKAGE_NAME": "de.dm.news"
         },
-        "cordova-plugin-email": {
+        "cordova-plugin-device": {
             "PACKAGE_NAME": "de.dm.news"
         },
         "cordova-plugin-facebook4": {
@@ -37,9 +37,6 @@
             "PACKAGE_NAME": "de.dm.news"
         },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "de.dm.news"
-        },
-        "cordova-plugin-crosswalk-webview": {
             "PACKAGE_NAME": "de.dm.news"
         }
     },

@@ -19,7 +19,7 @@ export class SlidesComponent {
     {
       title: "Zum Kennenlernen",
       description: "Schauen sie gern in unseren online Stammtisch vorbei. Oder kommen sie persönlich zu unseren Stammtischtreffen in jeder größeren Stadt",
-      description1: " www.dm-stammtisch.de",
+      description1: "www.dm-stammtisch.de",
       image: "assets/img/ica-slidebox-img-4.png",
     },
     {
