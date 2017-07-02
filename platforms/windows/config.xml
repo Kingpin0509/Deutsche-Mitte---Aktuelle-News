@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="de.dm.news" version="1.46.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Deutsche Mitte Aktuell</name>
+    <description>Stets alles aktuelle über die Partei "Deutsche Mitte"</description>
+    <author email="kingpin0509@gmail.com" href="http://westweedtzerecords.biz">Michael Humann</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon src="resources/winrt/icon/Square150x150Logo.scale-100.png" target="Square150x150Logo" />
+    <icon src="resources/winrt/icon/StoreLogo.scale-100.png" target="StoreLogo" />
+    <icon src="resources/winrt/icon/app_small_logo_winrt.png" target="Square30x30Logo" />
+    <icon src="resources/winrt/icon/Wide310x150Logo.scale-100.png" target="Wide310x150Logo" />
+    <splash height="300" src="resources/winrt/screen/Wide310x150Logo.scale-200.png" width="620" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="FadeSplashScreenDuration" value="300" />
+    <preference name="SplashScreenDelay" value="0" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="ShowSplashScreenSpinner" value="true" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="WindowsStorePublisherName" value="West Weedtze Development - Michael Humann" />
+    <preference name="WindowsStoreIdentityName" value="17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino" />
+</widget>
