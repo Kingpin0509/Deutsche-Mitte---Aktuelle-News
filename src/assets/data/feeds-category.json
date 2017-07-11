@@ -5,15 +5,15 @@
     "icon": "cloud",
     "items": [{
             "id": 1,
-            "title": "The Guardian",
-            "description": "The Guardian is a British national daily newspaper. Founded in 1821, it was known as The Manchester Guardian until 1959.",
+            "title": "Category",
+            "description": "https://deutsche-mitte.de/category/innen/",
             "url": "https://deutsche-mitte.de/category/innen/"
         },
         {
             "id": 2,
-            "title": "Huffington Post",
-            "description": "The Huffington Post is an American online news aggregator and blog.",
-            "url": "http://www.huffingtonpost.com/feeds/news.xml"
+            "title": "Innenpolitik",
+            "description": "https://deutsche-mitte.de/innenpolitik/feed/",
+            "url": "https://deutsche-mitte.de/innenpolitik/feed/"
         },
         {
             "id": 3,

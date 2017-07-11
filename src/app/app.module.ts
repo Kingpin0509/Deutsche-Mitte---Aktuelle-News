@@ -4,14 +4,17 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { SharedModule } from './shared/shared.module'
 import { HomeModule } from '../pages/home/home.module';
 import { TabsModule } from '../pages/tabs/tabs.module';
-// import { GoogleMapsModule } from '../pages/google-maps/google-maps.module';
 import { WordpressModule } from '../pages/wordpress/wordpress.module';
 import { SlidesModule } from '../pages/slides/slides.module';
-//import { GridModule } from '../pages/grid/grid.module';
 import { SettingsModule } from '../pages/settings/settings.module';
 import { FeedsModule } from '../pages/feeds/feeds.module';
 import { YoutubeModule } from '../pages/youtube/youtube.module';
 import { AboutModule } from '../pages/about/about.module';
+// Module Example: Use the PlaceholderModule for any new App Module
+import { PlaceholderModule } from '../pages/placeholder/placeholder.module';
+import { StammtischeModule } from '../pages/stammtische/stammtische.module';
+//import { GoogleMapsModule } from '../pages/google-maps/google-maps.module';
+//import { GridModule } from '../pages/grid/grid.module';
 //import { ContactModule } from '../pages/contact/contact.module';
 //import { DatetimeModule } from '../pages/datetime/datetime.module';
 //import { RangesModule } from '../pages/ranges/ranges.module';
@@ -20,10 +23,6 @@ import { AboutModule } from '../pages/about/about.module';
 //import { LoginModule } from '../pages/login/login.module';
 //import { ChartsModule } from '../pages/charts/charts.module';
 //import { FirebaseModule } from '../pages/firebase/firebase.module';
-// Module Example: Use the PlaceholderModule for any new App Module
-import { PlaceholderModule } from '../pages/placeholder/placeholder.module';
-import { StammtischeModule } from '../pages/stammtische/stammtische.module';
-
 import { MyApp } from './app.component';
 
 @NgModule({
@@ -35,14 +34,16 @@ import { MyApp } from './app.component';
     SharedModule,
     HomeModule,
     TabsModule,
-    // GoogleMapsModule,
     WordpressModule,
     SlidesModule,
-    //GridModule,
     SettingsModule,
     FeedsModule,
     YoutubeModule,
     AboutModule,
+    PlaceholderModule,
+    StammtischeModule
+    // GoogleMapsModule,
+    //GridModule,
     //ContactModule,
     //DatetimeModule,
     //RangesModule,
@@ -51,9 +52,7 @@ import { MyApp } from './app.component';
     //LoginModule,
     //ChartsModule,
     //FirebaseModule,
-    PlaceholderModule,
-    StammtischeModule
-  ],
+    ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp
