@@ -74,7 +74,4 @@
         <PreBuildEvent>node "$(ProjectDir)\\cordova\\prebuild-81.js"</PreBuildEvent>
         <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
     </PropertyGroup>
-    <ItemGroup>
-        <ProjectReference Include="..\..\plugins\phonegap-plugin-barcodescanner\src\windows\lib\WinRTBarcodeReader.csproj" />
-    </ItemGroup>
 </Project>

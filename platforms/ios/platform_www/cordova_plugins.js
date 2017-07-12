@@ -73,52 +73,11 @@ module.exports = [
             "cordova.plugins.Keyboard"
         ],
         "runs": true
-    },
-    {
-        "id": "phonegap-plugin-barcodescanner.BarcodeScanner",
-        "file": "plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js",
-        "pluginId": "phonegap-plugin-barcodescanner",
-        "clobbers": [
-            "cordova.plugins.barcodeScanner"
-        ]
-    },
-    {
-        "id": "cordova-plugin-camera.Camera",
-        "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
-        "pluginId": "cordova-plugin-camera",
-        "clobbers": [
-            "Camera"
-        ]
-    },
-    {
-        "id": "cordova-plugin-camera.CameraPopoverOptions",
-        "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
-        "pluginId": "cordova-plugin-camera",
-        "clobbers": [
-            "CameraPopoverOptions"
-        ]
-    },
-    {
-        "id": "cordova-plugin-camera.camera",
-        "file": "plugins/cordova-plugin-camera/www/Camera.js",
-        "pluginId": "cordova-plugin-camera",
-        "clobbers": [
-            "navigator.camera"
-        ]
-    },
-    {
-        "id": "cordova-plugin-camera.CameraPopoverHandle",
-        "file": "plugins/cordova-plugin-camera/www/ios/CameraPopoverHandle.js",
-        "pluginId": "cordova-plugin-camera",
-        "clobbers": [
-            "CameraPopoverHandle"
-        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-compat": "1.1.0",
     "cordova-plugin-console": "1.0.5",
     "cordova-plugin-crosswalk-webview": "2.3.0",
     "cordova-plugin-device": "1.1.4",
@@ -128,9 +87,7 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.2.1",
     "cordova-plugin-whitelist": "1.3.1",
     "cordova-plugin-x-socialsharing": "5.1.5",
-    "ionic-plugin-keyboard": "2.2.1",
-    "phonegap-plugin-barcodescanner": "6.0.6",
-    "cordova-plugin-camera": "2.4.1"
+    "ionic-plugin-keyboard": "2.2.1"
 };
 // BOTTOM OF METADATA
 });

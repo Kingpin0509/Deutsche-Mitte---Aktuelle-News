@@ -62,7 +62,7 @@
     <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
     <PropertyGroup>
         <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-        <TargetPlatformVersion>10.0.15063.0</TargetPlatformVersion>
+        <TargetPlatformVersion>10.0.14393.0</TargetPlatformVersion>
         <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
         <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
         <UapDefaultAssetScale>100</UapDefaultAssetScale>
@@ -94,22 +94,4 @@
         <AppxBundle>Always</AppxBundle>
         <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
     </PropertyGroup>
-    <ItemGroup>
-        <Reference Condition="'$(Platform)'=='x86'" Include="ZXing">
-            <HintPath>plugins\phonegap-plugin-barcodescanner\x86\ZXing.winmd</HintPath>
-            <IsWinMDFile>true</IsWinMDFile>
-        </Reference>
-    </ItemGroup>
-    <ItemGroup>
-        <Reference Condition="'$(Platform)'=='x64'" Include="ZXing">
-            <HintPath>plugins\phonegap-plugin-barcodescanner\x64\ZXing.winmd</HintPath>
-            <IsWinMDFile>true</IsWinMDFile>
-        </Reference>
-    </ItemGroup>
-    <ItemGroup>
-        <Reference Condition="'$(Platform)'=='ARM'" Include="ZXing">
-            <HintPath>plugins\phonegap-plugin-barcodescanner\ARM\ZXing.winmd</HintPath>
-            <IsWinMDFile>true</IsWinMDFile>
-        </Reference>
-    </ItemGroup>
 </Project>

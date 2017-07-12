@@ -38,20 +38,7 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "de.dm.news"
-        },
-        "phonegap-plugin-barcodescanner": {
-            "CAMERA_USAGE_DESCRIPTION": " ",
-            "PACKAGE_NAME": "de.dm.news"
-        },
-        "cordova-plugin-camera": {
-            "CAMERA_USAGE_DESCRIPTION": " ",
-            "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
-            "PACKAGE_NAME": "de.dm.news"
         }
     },
-    "dependent_plugins": {
-        "cordova-plugin-compat": {
-            "PACKAGE_NAME": "de.dm.news"
-        }
-    }
+    "dependent_plugins": {}
 }

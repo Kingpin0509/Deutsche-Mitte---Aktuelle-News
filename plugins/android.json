@@ -43,17 +43,7 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "de.dm.news"
-        },
-        "phonegap-plugin-barcodescanner": {
-            "PACKAGE_NAME": "de.dm.news"
-        },
-        "cordova-plugin-camera": {
-            "PACKAGE_NAME": "de.dm.news"
         }
     },
-    "dependent_plugins": {
-        "cordova-plugin-compat": {
-            "PACKAGE_NAME": "de.dm.news"
-        }
-    }
+    "dependent_plugins": {}
 }
