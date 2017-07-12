@@ -64,8 +64,6 @@ export class MyApp {
 
 		this.pages = [
 			{ title: 'HOME', component: TabsComponent, icon: 'home' },
-		//	{ title: 'FEEDS', component: FeedCategoriesComponent, icon: 'logo-rss',},
-		//	{ title: 'FEED_CATEGORY', component: FeedCategoryComponent, icon: 'logo-rss',},
 			{ title: 'ABOUT', component: AboutComponent, icon: 'information-circle' },
 			{ title: 'PLACEHOLDER', component: PlaceholderComponent, icon: 'logo-buffer' },
 			{ title: 'POSTS', component: WordpressPosts, icon: 'paper' },
@@ -74,9 +72,10 @@ export class MyApp {
 			{ title: 'FAVORITES', component: WordpressFavorites, icon: 'thumbs-up' },
 			{ title: 'YOUTUBE_CHANNEL', component: YoutubeChannelComponent, icon: 'logo-youtube' },
 			{ title: 'SETTINGS', component: SettingsComponent, icon: 'options' },
-			{ title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' },
-			{ title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'pin' },
-			
+    		{ title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'camera' },
+			{ title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
+			//		  { title: 'FEEDS', component: FeedCategoriesComponent, icon: 'logo-rss',},
+			//		  { title: 'FEED_CATEGORY', component: FeedCategoryComponent, icon: 'logo-rss',},			
 			//		  { title: 'GOOGLE_MAPS', component: GoogleMapsComponent, icon: 'pin' },
 			//		  { title: 'PAGES', component: WordpressPages, icon: 'document' },
 			//	      { title: 'GRID', component: GridComponent, icon: 'grid'},
