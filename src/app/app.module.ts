@@ -11,6 +11,7 @@ import { FeedsModule } from '../pages/feeds/feeds.module';
 import { YoutubeModule } from '../pages/youtube/youtube.module';
 import { AboutModule } from '../pages/about/about.module';
 // Module Example: Use the PlaceholderModule for any new App Module
+import { BarcodeScannerModule } from '../pages/barcode-scanner/barcode-scanner.module';
 import { PlaceholderModule } from '../pages/placeholder/placeholder.module';
 import { StammtischeModule } from '../pages/stammtische/stammtische.module';
 //import { GoogleMapsModule } from '../pages/google-maps/google-maps.module';
@@ -41,6 +42,7 @@ import { MyApp } from './app.component';
     YoutubeModule,
     AboutModule,
     PlaceholderModule,
+    BarcodeScannerModule,    
     StammtischeModule
     // GoogleMapsModule,
     //GridModule,

@@ -38,6 +38,12 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "Deutsche Mitte Aktuell"
+        },
+        "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "Deutsche Mitte Aktuell"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "Deutsche Mitte Aktuell"
         }
     },
     "dependent_plugins": {

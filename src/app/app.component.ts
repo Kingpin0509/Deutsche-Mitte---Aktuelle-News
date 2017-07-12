@@ -3,6 +3,7 @@ import { Nav, Platform, MenuController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Storage } from '@ionic/storage';
+//import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { TranslateService } from 'ng2-translate';
 import { Config } from './app.config';
 import { PlaceholderComponent } from '../pages/placeholder/placeholder-component/placeholder.component';
@@ -16,9 +17,10 @@ import { YoutubeChannelComponent } from '../pages/youtube/youtube-channel/youtub
 import { WordpressCategories } from '../pages/wordpress/wordpress-categories/wordpress-categories.component';
 import { WordpressTags } from '../pages/wordpress/wordpress-tags/wordpress-tags.component';
 import { SlidesComponent } from '../pages/slides/slides-component/slides.component';
+import { BarcodeScannerComponent } from '../pages/barcode-scanner/barcode-scanner-component/barcode-scanner.component';
 import { StammtischeComponent } from '../pages/stammtische/stammtische-component/stammtische.component';
-//import { FeedCategoriesComponent } from '../pages/feeds/feed-categories/feed-categories.component';
-//import { FeedCategoryComponent } from '../pages/feeds/feed-category/feed-category.component';
+// import { FeedCategoriesComponent } from '../pages/feeds/feed-categories/feed-categories.component';
+// import { FeedCategoryComponent } from '../pages/feeds/feed-category/feed-category.component';
 // import { GridComponent } from '../pages/grid/grid-component/grid.component';
 // import { DatetimeComponent } from '../pages/datetime/datetime-component/datetime.component';
 // import { RangesComponent } from '../pages/ranges/ranges-component/ranges.component';
@@ -73,6 +75,8 @@ export class MyApp {
 			{ title: 'YOUTUBE_CHANNEL', component: YoutubeChannelComponent, icon: 'logo-youtube' },
 			{ title: 'SETTINGS', component: SettingsComponent, icon: 'options' },
 			{ title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' },
+			{ title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'pin' },
+			
 			//		  { title: 'GOOGLE_MAPS', component: GoogleMapsComponent, icon: 'pin' },
 			//		  { title: 'PAGES', component: WordpressPages, icon: 'document' },
 			//	      { title: 'GRID', component: GridComponent, icon: 'grid'},

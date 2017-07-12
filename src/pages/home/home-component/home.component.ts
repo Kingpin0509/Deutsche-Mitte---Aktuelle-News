@@ -13,7 +13,7 @@ import { YoutubeChannelComponent } from '../../youtube/youtube-channel/youtube-c
 // import { WordpressPages } from '../../wordpress/wordpress-pages/wordpress-pages.component';
 // import { WordpressPage } from '../../wordpress/wordpress-page/wordpress-page.component';
 // import { WordpressMenus } from '../../wordpress/wordpress-menus/wordpress-menus.component';
-// // import { GoogleMapsComponent } from '../../google-maps/google-maps-component/google-maps.component';
+// import { GoogleMapsComponent } from '../../google-maps/google-maps-component/google-maps.component';
 // import { SlidesComponent } from '../../slides/slides-component/slides.component';
 // import { FeedCategoriesComponent } from '../../feeds/feed-categories/feed-categories.component';
 // import { FeedCategoryComponent } from '../../feeds/feed-category/feed-category.component';
@@ -57,7 +57,7 @@ export class HomeComponent {
 			//   { title: 'YOUTUBE_VIDEOS', component: YoutubeVideosComponent, icon: 'logo-youtube', note: 'Youtube' },
 			//   { title: 'YOUTUBE_CHANNEL', component: YoutubeChannelComponent, icon: 'logo-youtube', note: 'Youtube' },
 			//   { title: 'CHARTS', component: ChartsComponent, icon: 'pie', note: 'Chart.js' },
-			//   { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode', note: '' }
+//			   { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode', note: '' }
 		];
 
 		this.events.subscribe('navigationEvent', (object) => {
