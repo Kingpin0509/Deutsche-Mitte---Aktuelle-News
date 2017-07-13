@@ -29,6 +29,7 @@ import { StammtischeComponent } from '../pages/stammtische/stammtische-component
 // import { FacebookConnectComponent } from '../pages/facebook-connect/facebook-connect-component/facebook-connect.component';
 // import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';
 // import { LoginComponent } from '../pages/login/login-component/login.component';
+import skygear from 'skygear';
 
 @Component({
 	templateUrl: './app.html'
