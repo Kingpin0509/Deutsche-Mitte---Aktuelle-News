@@ -3,7 +3,6 @@ import { Nav, Platform, MenuController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Storage } from '@ionic/storage';
-//import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { TranslateService } from 'ng2-translate';
 import { Config } from './app.config';
 import { PlaceholderComponent } from '../pages/placeholder/placeholder-component/placeholder.component';
@@ -17,8 +16,9 @@ import { YoutubeChannelComponent } from '../pages/youtube/youtube-channel/youtub
 import { WordpressCategories } from '../pages/wordpress/wordpress-categories/wordpress-categories.component';
 import { WordpressTags } from '../pages/wordpress/wordpress-tags/wordpress-tags.component';
 import { SlidesComponent } from '../pages/slides/slides-component/slides.component';
-import { BarcodeScannerComponent } from '../pages/barcode-scanner/barcode-scanner-component/barcode-scanner.component';
 import { StammtischeComponent } from '../pages/stammtische/stammtische-component/stammtische.component';
+// import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+// import { BarcodeScannerComponent } from '../pages/barcode-scanner/barcode-scanner-component/barcode-scanner.component';
 // import { FeedCategoriesComponent } from '../pages/feeds/feed-categories/feed-categories.component';
 // import { FeedCategoryComponent } from '../pages/feeds/feed-category/feed-category.component';
 // import { GridComponent } from '../pages/grid/grid-component/grid.component';
@@ -72,8 +72,8 @@ export class MyApp {
 			{ title: 'FAVORITES', component: WordpressFavorites, icon: 'thumbs-up' },
 			{ title: 'YOUTUBE_CHANNEL', component: YoutubeChannelComponent, icon: 'logo-youtube' },
 			{ title: 'SETTINGS', component: SettingsComponent, icon: 'options' },
-    		{ title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
 			{ title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
+			//		  { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
 			//		  { title: 'FEEDS', component: FeedCategoriesComponent, icon: 'logo-rss',},
 			//		  { title: 'FEED_CATEGORY', component: FeedCategoryComponent, icon: 'logo-rss',},			
 			//		  { title: 'GOOGLE_MAPS', component: GoogleMapsComponent, icon: 'pin' },
