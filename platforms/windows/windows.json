@@ -4,23 +4,7 @@
         "uninstalled": []
     },
     "config_munge": {
-        "files": {
-            "package.phone.appxmanifest": {
-                "parents": {
-                    "/Package/Capabilities": []
-                }
-            },
-            "package.windows.appxmanifest": {
-                "parents": {
-                    "/Package/Capabilities": []
-                }
-            },
-            "package.windows10.appxmanifest": {
-                "parents": {
-                    "/Package/Capabilities": []
-                }
-            }
-        }
+        "files": {}
     },
     "installed_plugins": {
         "cordova-plugin-console": {
