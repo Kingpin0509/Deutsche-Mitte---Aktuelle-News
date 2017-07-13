@@ -73,7 +73,7 @@ export class MyApp {
 			{ title: 'FAVORITES', component: WordpressFavorites, icon: 'thumbs-up' },
 			{ title: 'YOUTUBE_CHANNEL', component: YoutubeChannelComponent, icon: 'logo-youtube' },
 			{ title: 'SETTINGS', component: SettingsComponent, icon: 'options' },
-    		{ title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
+    		//		  { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
 			{ title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
 			//		  { title: 'FEEDS', component: FeedCategoriesComponent, icon: 'logo-rss',},
 			//		  { title: 'FEED_CATEGORY', component: FeedCategoryComponent, icon: 'logo-rss',},			
