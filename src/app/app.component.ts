@@ -17,8 +17,10 @@ import { WordpressCategories } from '../pages/wordpress/wordpress-categories/wor
 import { WordpressTags } from '../pages/wordpress/wordpress-tags/wordpress-tags.component';
 import { SlidesComponent } from '../pages/slides/slides-component/slides.component';
 import { StammtischeComponent } from '../pages/stammtische/stammtische-component/stammtische.component';
-//import { FeedCategoriesComponent } from '../pages/feeds/feed-categories/feed-categories.component';
-//import { FeedCategoryComponent } from '../pages/feeds/feed-category/feed-category.component';
+// import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+// import { BarcodeScannerComponent } from '../pages/barcode-scanner/barcode-scanner-component/barcode-scanner.component';
+// import { FeedCategoriesComponent } from '../pages/feeds/feed-categories/feed-categories.component';
+// import { FeedCategoryComponent } from '../pages/feeds/feed-category/feed-category.component';
 // import { GridComponent } from '../pages/grid/grid-component/grid.component';
 // import { DatetimeComponent } from '../pages/datetime/datetime-component/datetime.component';
 // import { RangesComponent } from '../pages/ranges/ranges-component/ranges.component';
@@ -62,8 +64,6 @@ export class MyApp {
 
 		this.pages = [
 			{ title: 'HOME', component: TabsComponent, icon: 'home' },
-		//	{ title: 'FEEDS', component: FeedCategoriesComponent, icon: 'logo-rss',},
-		//	{ title: 'FEED_CATEGORY', component: FeedCategoryComponent, icon: 'logo-rss',},
 			{ title: 'ABOUT', component: AboutComponent, icon: 'information-circle' },
 			{ title: 'PLACEHOLDER', component: PlaceholderComponent, icon: 'logo-buffer' },
 			{ title: 'POSTS', component: WordpressPosts, icon: 'paper' },
@@ -72,7 +72,10 @@ export class MyApp {
 			{ title: 'FAVORITES', component: WordpressFavorites, icon: 'thumbs-up' },
 			{ title: 'YOUTUBE_CHANNEL', component: YoutubeChannelComponent, icon: 'logo-youtube' },
 			{ title: 'SETTINGS', component: SettingsComponent, icon: 'options' },
-			{ title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' },
+			{ title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
+			//		  { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
+			//		  { title: 'FEEDS', component: FeedCategoriesComponent, icon: 'logo-rss',},
+			//		  { title: 'FEED_CATEGORY', component: FeedCategoryComponent, icon: 'logo-rss',},			
 			//		  { title: 'GOOGLE_MAPS', component: GoogleMapsComponent, icon: 'pin' },
 			//		  { title: 'PAGES', component: WordpressPages, icon: 'document' },
 			//	      { title: 'GRID', component: GridComponent, icon: 'grid'},

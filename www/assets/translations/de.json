@@ -1,8 +1,9 @@
 {
-    "MENU": "DM - Aktuell",
+    "MENU": "Deutsche Mitte - Aktuell",
     "STAMMTISCHE": "Stammtische",
     "HOME": "Start",
     "ABOUT": "Über die Deutsche Mitte",
+    "PLACEHOLDER": "10 politische Thesen",
     "POSTS": "Aktuelle Beiträge",
     "CATEGORIES": "Kategorien",
     "TAGS": "Stichworte",
@@ -20,7 +21,6 @@
     "DATETIME": "Datetime (de)",
     "RANGES": "Ranges (de)",
     "ACTION_SHEET": "Action Sheet (de)",
-    "PLACEHOLDER": "10 Thesen",
     "BARCODE_SCANNER": "Barcode Scanner",
     "YOUTUBE_VIDEOS": "Youtube Videos",
     "YOUTUBE_CHANNEL": "Youtube Kanal",

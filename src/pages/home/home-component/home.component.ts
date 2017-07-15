@@ -13,7 +13,7 @@ import { YoutubeChannelComponent } from '../../youtube/youtube-channel/youtube-c
 // import { WordpressPages } from '../../wordpress/wordpress-pages/wordpress-pages.component';
 // import { WordpressPage } from '../../wordpress/wordpress-page/wordpress-page.component';
 // import { WordpressMenus } from '../../wordpress/wordpress-menus/wordpress-menus.component';
-// // import { GoogleMapsComponent } from '../../google-maps/google-maps-component/google-maps.component';
+// import { GoogleMapsComponent } from '../../google-maps/google-maps-component/google-maps.component';
 // import { SlidesComponent } from '../../slides/slides-component/slides.component';
 // import { FeedCategoriesComponent } from '../../feeds/feed-categories/feed-categories.component';
 // import { FeedCategoryComponent } from '../../feeds/feed-category/feed-category.component';
@@ -38,7 +38,7 @@ export class HomeComponent {
 		this.pages = [
 			{ title: 'POSTS', component: WordpressPosts, icon: 'paper', note: 'DM Webseite' },
 			{ title: 'CATEGORIES', component: WordpressCategories, icon: 'bookmarks', note: 'DM Webseite' },
-			{ title: 'YOUTUBE_HOME', component: YoutubeChannelComponent, icon: 'logo-youtube', note: 'Youtube' },
+			{ title: 'YOUTUBE_HOME', component: YoutubeChannelComponent, icon: 'logo-youtube', note: 'Youtube' }
 			//   { title: 'ABOUT', component: AboutComponent, icon: 'photos', note: '' },
 			//   { title: 'LOGIN', component: WordpressHome, icon: 'log-in', note: 'Wordpress' },
 			//   { title: 'POSTS', component: WordpressPosts, icon: 'logo-wordpress', note: 'Wordpress' },
@@ -47,17 +47,17 @@ export class HomeComponent {
 			//   { title: 'CATEGORY', component: WordpressPosts, icon: 'pricetags', note: 'Wordpress', params: { category: { name: 'Category Name', id: 16 }}},
 			//   { title: 'FAVORITES', component: WordpressFavorites, icon: 'heart', note: 'Wordpress (Storage)' },
 			//   { title: 'PAGES', component: WordpressPages, icon: 'document', note: 'Wordpress' },
-			// 		{ title: 'PAGE', component: WordpressPage, icon: 'document', note: 'Wordpress', params: { id: 2 }},
+			//	 { title: 'PAGE', component: WordpressPage, icon: 'document', note: 'Wordpress', params: { id: 2 }},
 			//   { title: 'MENUS', component: WordpressMenus, icon: 'menu', note: 'Wordpress' },
 			//   { title: 'Firebase', component: FirebaseHomeComponent, icon: 'flame', note: 'Firebase' },
-			// //   { title: 'GOOGLE_MAPS', component: GoogleMapsComponent, icon: 'map', note: '' },
+			//   { title: 'GOOGLE_MAPS', component: GoogleMapsComponent, icon: 'map', note: '' },
 			//   { title: 'SLIDES', component: SlidesComponent, icon: 'images', note: 'Welcome Tour' },
 			//   { title: 'FEEDS', component: FeedCategoriesComponent, icon: 'logo-rss', note: 'RSS (YQL)' },
 			//   { title: 'FEED_CATEGORY', component: FeedCategoryComponent, icon: 'logo-rss', note: 'RSS (YQL)' },
 			//   { title: 'YOUTUBE_VIDEOS', component: YoutubeVideosComponent, icon: 'logo-youtube', note: 'Youtube' },
 			//   { title: 'YOUTUBE_CHANNEL', component: YoutubeChannelComponent, icon: 'logo-youtube', note: 'Youtube' },
 			//   { title: 'CHARTS', component: ChartsComponent, icon: 'pie', note: 'Chart.js' },
-			//   { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode', note: '' }
+			//	 { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode', note: '' }
 		];
 
 		this.events.subscribe('navigationEvent', (object) => {

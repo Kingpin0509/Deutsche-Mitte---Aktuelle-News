@@ -8,8 +8,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { SocialSharing } from '@ionic-native/social-sharing';
-//import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { Facebook } from '@ionic-native/facebook';
+//import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 //import { EmailComposer } from '@ionic-native/email-composer';
 
 import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate';
@@ -20,7 +20,7 @@ import { TrimHtmlPipe } from './pipes/trim-html.pipe';
 import { Config } from '../app.config';
 
 export function createTranslateLoader(http: Http) {
-    return new TranslateStaticLoader(http, './assets/translations', '.json');
+  return new TranslateStaticLoader(http, './assets/translations', '.json');
 }
 
 @NgModule({
@@ -34,7 +34,7 @@ export function createTranslateLoader(http: Http) {
     IonicStorageModule.forRoot(),
     CommonModule,
     HttpModule,
-    TranslateModule.forRoot({ 
+    TranslateModule.forRoot({
       provide: TranslateLoader,
       useFactory: (createTranslateLoader),
       deps: [Http]
@@ -53,10 +53,10 @@ export function createTranslateLoader(http: Http) {
     SplashScreen,
     InAppBrowser,
     SocialSharing,
-//    BarcodeScanner,
     Facebook,
-//    EmailComposer,
+    // BarcodeScanner,
+    // EmailComposer,
     Config
   ]
 })
-export class SharedModule {}
+export class SharedModule { }

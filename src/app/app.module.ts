@@ -13,6 +13,7 @@ import { AboutModule } from '../pages/about/about.module';
 // Module Example: Use the PlaceholderModule for any new App Module
 import { PlaceholderModule } from '../pages/placeholder/placeholder.module';
 import { StammtischeModule } from '../pages/stammtische/stammtische.module';
+//import { BarcodeScannerModule } from '../pages/barcode-scanner/barcode-scanner.module';
 //import { GoogleMapsModule } from '../pages/google-maps/google-maps.module';
 //import { GridModule } from '../pages/grid/grid.module';
 //import { ContactModule } from '../pages/contact/contact.module';
@@ -42,7 +43,8 @@ import { MyApp } from './app.component';
     AboutModule,
     PlaceholderModule,
     StammtischeModule
-    // GoogleMapsModule,
+    //BarcodeScannerModule,
+    //GoogleMapsModule,
     //GridModule,
     //ContactModule,
     //DatetimeModule,

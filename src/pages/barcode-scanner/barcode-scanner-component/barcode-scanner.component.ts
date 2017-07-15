@@ -3,20 +3,19 @@ import { NavController } from 'ionic-angular';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 
 @Component({
-  templateUrl: 'barcode-scanner.html'
+	templateUrl: 'barcode-scanner.html'
 })
 export class BarcodeScannerComponent {
 
 	constructor(
 		public navCtrl: NavController,
-		private barcodeScanner: BarcodeScanner
-		) {}
-
+		public barcodeScanner: BarcodeScanner
+	) { }
 	scan() {
 		this.barcodeScanner.scan().then((barcodeData) => {
-		 // Success! Barcode data is here
+			// Success! Barcode data is here
 		}, (err) => {
-		    // An error occurred
+			// An error occurred
 		});
 	}
 

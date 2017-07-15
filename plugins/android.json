@@ -45,9 +45,5 @@
             "PACKAGE_NAME": "de.dm.news"
         }
     },
-    "dependent_plugins": {
-        "cordova-plugin-compat": {
-            "PACKAGE_NAME": "de.dm.news"
-        }
-    }
+    "dependent_plugins": {}
 }
