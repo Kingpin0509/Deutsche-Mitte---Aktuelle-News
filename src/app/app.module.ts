@@ -23,7 +23,7 @@ import { StammtischeModule } from '../pages/stammtische/stammtische.module';
 //import { FacebookConnectModule } from '../pages/facebook-connect/facebook-connect.module';
 //import { LoginModule } from '../pages/login/login.module';
 //import { ChartsModule } from '../pages/charts/charts.module';
-//import { FirebaseModule } from '../pages/firebase/firebase.module';
+import { FirebaseModule } from '../pages/firebase/firebase.module';
 import { MyApp } from './app.component';
 
 @NgModule({
@@ -42,7 +42,7 @@ import { MyApp } from './app.component';
     YoutubeModule,
     AboutModule,
     PlaceholderModule,
-    StammtischeModule
+    StammtischeModule,
     //BarcodeScannerModule,
     //GoogleMapsModule,
     //GridModule,
@@ -53,7 +53,7 @@ import { MyApp } from './app.component';
     //FacebookConnectModule,
     //LoginModule,
     //ChartsModule,
-    //FirebaseModule,
+    FirebaseModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
