@@ -25,6 +25,7 @@ export class SlidesComponent {
     {
       title: "SCHREIBEN SIE MIT UNS GESCHICHTE!!!",
       description: "Sind Sie Zuschauer - oder Teil der notwendigen und überfälligen Veränderung?",
+      description1: "",      
       image: "assets/img/ica-slidebox-img-3.png",
     },
     {
@@ -36,6 +37,7 @@ export class SlidesComponent {
     {
       title: "Inoffizielle App",
       description: "Verantwortlich für diese App ist ausschließlich der Entwickler, nicht die Partei",
+      description1: "",
       image: "assets/img/ica-slidebox-img-2.png",
     },
   ];

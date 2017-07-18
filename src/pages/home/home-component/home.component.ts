@@ -71,5 +71,4 @@ export class HomeComponent {
 	openPage(page) {
 		this.navController.push(page.component, page.params);
 	}
-
 }

@@ -23,7 +23,7 @@ export class WordpressPages implements OnInit {
 
 	getPages() {
 		let loader = this.loadingController.create({
-			content: "Please wait"
+			content: "Bitte Warten"
 		});
 
 		loader.present();

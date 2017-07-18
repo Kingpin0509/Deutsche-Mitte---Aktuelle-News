@@ -58,18 +58,22 @@ audio {
     color: rgba(140, 140, 140, 0.8);
 }
 
-dm-light {
+.dm-light {
     background: #005397;
 }
 
-dm-dark {
+.dm-dark {
     background: #00498a,
 }
 
-dmo-light {
+.dmo-light {
     background: #ff8b00,
 }
 
-dmo-dark {
+.dmo-dark {
     background: #FA7D09
+}
+
+.item-divider {
+    color: white;
 }

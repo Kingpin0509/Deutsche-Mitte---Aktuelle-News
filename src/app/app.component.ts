@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform, MenuController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { LoadingController } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { TranslateService } from 'ng2-translate';
 import { Config } from './app.config';
@@ -48,7 +49,8 @@ export class MyApp {
 		private statusBar: StatusBar,
 		private splashScreen: SplashScreen,
 		private config: Config,
-		private menuController: MenuController
+		private menuController: MenuController,
+		private loadingCtrl: LoadingController
 	) {
 		this.initializeApp();
 
@@ -71,8 +73,8 @@ export class MyApp {
 			{ title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
 			{ title: 'FAVORITES', component: WordpressFavorites, icon: 'thumbs-up' },
 			{ title: 'YOUTUBE_CHANNEL', component: YoutubeChannelComponent, icon: 'logo-youtube' },
-			{ title: 'SETTINGS', component: SettingsComponent, icon: 'options' },
-			{ title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
+			//		  { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
+			//		  { title: 'SETTINGS', component: SettingsComponent, icon: 'options' },
 			//		  { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
 			//		  { title: 'FEEDS', component: FeedCategoriesComponent, icon: 'logo-rss',},
 			//		  { title: 'FEED_CATEGORY', component: FeedCategoryComponent, icon: 'logo-rss',},			
@@ -101,4 +103,14 @@ export class MyApp {
 		this.menuController.close();
 		this.nav.setRoot(page.component);
 	}
+	openPageStammtische(page) {
+
+		this.menuController.close();
+		this.nav.push(StammtischeComponent);
+	}
+	openPageSettings(page) {
+		this.menuController.close();
+		this.nav.push(SettingsComponent);
+	}
 }
+

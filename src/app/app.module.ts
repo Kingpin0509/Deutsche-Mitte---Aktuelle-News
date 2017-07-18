@@ -1,6 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { AnimationService, AnimatesDirective } from 'css-animator';
+import { AnimationService } from 'css-animator';
 import { SharedModule } from './shared/shared.module'
 import { HomeModule } from '../pages/home/home.module';
 import { TabsModule } from '../pages/tabs/tabs.module';
@@ -29,7 +29,6 @@ import { MyApp } from './app.component';
 @NgModule({
   declarations: [
     MyApp,
-    AnimatesDirective
   ],
   imports: [
     IonicModule.forRoot(MyApp),

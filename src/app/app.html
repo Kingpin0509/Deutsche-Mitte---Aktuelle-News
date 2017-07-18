@@ -1,7 +1,7 @@
 <ion-split-pane>
     <ion-menu *ngIf="!wordpressMenusNavigation" id="menuleft" side="left" [content]="content">
         <ion-header>
-            <ion-toolbar>
+            <ion-toolbar class="dm-dark">
                 <ion-title>{{'MENU' | translate}}</ion-title>
             </ion-toolbar>
         </ion-header>
@@ -10,9 +10,6 @@
                 <ion-item ion-item *ngFor="let page of pages" (tap)="openPage(page)">
                     <ion-icon [name]="page.icon" item-left></ion-icon>
                     {{page.title | translate}}
-                </ion-item>
-                <ion-item menuClose ion-item>
-                    <img src="assets/img/BannerDMStammtische.gif" />
                 </ion-item>
             </ion-list>
         </ion-content>
@@ -25,20 +22,34 @@
 
 <ion-menu id="menuright" side="right" menuType="overlay" swipeEnabled="true" [content]="content">
     <ion-content>
-        <ion-list>
-            <ion-item menuClose ion-item>
-                <h2>Liebe Interessenten,<br>Mitglieder, Unterstützer<br>und Freunde.</h2>
+        <ion-item-group>
+
+            <ion-item-divider class="dmo-light" ion-item>
+                <h2>DM IN IHRER NÄHE!</h2>
+            </ion-item-divider>
+            <ion-item ion-item (tap)="openPageStammtische()">
+                <img src="assets/img/BannerDMStammtische.gif" />
             </ion-item>
-            <ion-item menuClose ion-item>
-                <p>Da die Deutsche Mitte 2017<br>erstmalig bei der Bundestagswahl<br>antritt, brauchen wir bundesweit<br>27678 Unterstützungsunterschriften,<br>um auf dem Wahlschein zu stehen.</p>
+
+            <ion-item-divider class="dmo-light" ion-item>
+                <h2>BUNDESTAGSWAHL 24.09.2017</h2>
+            </ion-item-divider>
+            <ion-item ion-item>
+                <img src="https://deutsche-mitte.de/wp-content/uploads/2017/07/Hotline.gif" />
+                <p>Tägl. von 9:00 bis 24:00 Uhr</p>
             </ion-item>
-            <ion-item menuClose ion-item>
-                <img src="http://deutsche-mitte.de/wp-content/uploads/2017/06/Unterschriftenzaehler.png" />
-            </ion-item>
-            <ion-item menuClose ion-item>
-                <p>Bitte helfen Sie uns dabei!</p>
-                <p>http//deutsche-mitte.de/uus/</p>
-            </ion-item>
-        </ion-list>
+            <ion-item ion-item></ion-item>
+        </ion-item-group>
     </ion-content>
+    <ion-footer>
+        <ion-item-group>
+            <ion-item-divider class="dmo-light" ion-item>
+                <h2>Einstellungen</h2>
+            </ion-item-divider>
+            <ion-item menuClose ion-item (tap)="openPageSettings()">
+                <ion-icon name="settings" item-left></ion-icon>
+                Sprache
+            </ion-item>
+        </ion-item-group>
+    </ion-footer>
 </ion-menu>

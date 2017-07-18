@@ -35,7 +35,7 @@ export class WordpressPost {
 
 	getPost(id) {
 		let loader = this.loadingController.create({
-			content: "Please wait"
+			content: "Bitte Warten"
 		});
 
 		loader.present();
