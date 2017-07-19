@@ -71,21 +71,21 @@ export class MyApp {
 			{ title: 'POSTS', component: WordpressPosts, icon: 'paper' },
 			{ title: 'CATEGORIES', component: WordpressCategories, icon: 'bookmarks' },
 			{ title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
-			{ title: 'FAVORITES', component: WordpressFavorites, icon: 'thumbs-up' },
 			{ title: 'YOUTUBE_CHANNEL', component: YoutubeChannelComponent, icon: 'logo-youtube' },
 			//		  { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
 			//		  { title: 'SETTINGS', component: SettingsComponent, icon: 'options' },
 			//		  { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
 			//		  { title: 'FEEDS', component: FeedCategoriesComponent, icon: 'logo-rss',},
-			//		  { title: 'FEED_CATEGORY', component: FeedCategoryComponent, icon: 'logo-rss',},			
+			//		  { title: 'FEED_CATEGORY', component: FeedCategoryComponent, icon: 'logo-rss',},
 			//		  { title: 'GOOGLE_MAPS', component: GoogleMapsComponent, icon: 'pin' },
 			//		  { title: 'PAGES', component: WordpressPages, icon: 'document' },
-			//	      { title: 'GRID', component: GridComponent, icon: 'grid'},
-			//	      { title: 'DATETIME', component: DatetimeComponent, icon: 'clock'},
-			//	      { title: 'RANGES', component: RangesComponent, icon: 'sunny'},
-			//	      { title: 'ACTION_SHEET', component: ActionSheetComponent, icon: 'create'},
-			//	      { title: 'Facebook Connect', component: FacebookConnectComponent, icon: 'logo-facebook' },
-			//	      { title: 'LOGIN', component: LoginComponent, icon: 'log-in' }
+			//		  { title: 'GRID', component: GridComponent, icon: 'grid'},
+			//		  { title: 'DATETIME', component: DatetimeComponent, icon: 'clock'},
+			//		  { title: 'RANGES', component: RangesComponent, icon: 'sunny'},
+			//		  { title: 'ACTION_SHEET', component: ActionSheetComponent, icon: 'create'},
+			//		  { title: 'Facebook Connect', component: FacebookConnectComponent, icon: 'logo-facebook' },
+			//		  { title: 'LOGIN', component: LoginComponent, icon: 'log-in' }
+			//		  { title: 'FAVORITES', component: WordpressFavorites, icon: 'thumbs-up' },
 		];
 		this.wordpressMenusNavigation = config.wordpressMenusNavigation;
 	}

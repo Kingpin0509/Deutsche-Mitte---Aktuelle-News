@@ -93,7 +93,8 @@
             "devServerAddress": "localhost",
             "port": 8100,
             "sourceMaps": true,
-            "devServerTimeout": 900000,
+            "devServerTimeout": 9000000,
+            "appStepLaunchTimeout": 1200000,
             "ionicLiveReload": true
         },
         {
