@@ -112,5 +112,9 @@ export class MyApp {
 		this.menuController.close();
 		this.nav.push(SettingsComponent);
 	}
+	openPageFavorites(page) {
+		this.menuController.close();
+		this.nav.push(WordpressFavorites);
+	}
 }
 

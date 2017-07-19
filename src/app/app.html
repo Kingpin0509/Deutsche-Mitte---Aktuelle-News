@@ -13,6 +13,17 @@
                 </ion-item>
             </ion-list>
         </ion-content>
+        <ion-footer>
+            <ion-item-group>
+                <ion-item-divider class="dmo-light" ion-item>
+                    <h2></h2>
+                </ion-item-divider>
+                <ion-item menuClose ion-item (tap)="openPageFavorites()">
+                    <ion-icon name="thumbs-up" item-left></ion-icon>
+                    Deine Favoriten
+                </ion-item>
+            </ion-item-group>
+        </ion-footer>
     </ion-menu>
     <ion-menu *ngIf="wordpressMenusNavigation" [content]="content">
         <ion-nav [root]="menuPage"></ion-nav>
