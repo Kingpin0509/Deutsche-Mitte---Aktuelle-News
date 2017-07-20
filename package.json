@@ -1,7 +1,7 @@
 {
     "name": "dmaktuell",
     "author": "Michael Humann",
-    "version": "1.50.0",
+    "version": "1.50.1",
     "homepage": "http://news.westweedtzerecords.biz",
     "private": true,
     "scripts": {
