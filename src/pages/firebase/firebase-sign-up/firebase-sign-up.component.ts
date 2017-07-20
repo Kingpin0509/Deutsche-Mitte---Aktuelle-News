@@ -20,7 +20,7 @@ export class FirebaseSignUpComponent {
 
   signUp() {
     let loader = this.loadingController.create({
-      content: "Please wait"
+      content: "Bitte warten..."
     });
     loader.present();
 

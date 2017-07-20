@@ -16,11 +16,19 @@
         <ion-footer>
             <ion-item-group>
                 <ion-item-divider class="dmo-light" ion-item>
-                    <h2></h2>
+                    <h2>Persönliches</h2>
                 </ion-item-divider>
                 <ion-item ion-item (tap)="openPageFavorites()">
                     <ion-icon name="thumbs-up" item-left></ion-icon>
                     Deine Favouriten
+                </ion-item>
+                <ion-item ion-item (tap)="openPageFacebook()">
+                    <ion-icon name="logo-facebook" item-left></ion-icon>
+                    Facebook
+                </ion-item>
+                <ion-item ion-item (tap)="openPageFirebase()">
+                    <ion-icon name="flame" item-left></ion-icon>
+                    Firebase
                 </ion-item>
             </ion-item-group>
         </ion-footer>
@@ -54,7 +62,7 @@
     </ion-content>
     <ion-footer>
         <ion-item-group>
-            <ion-item-divider class="dmo-light" ion-item>
+            <ion-item-divider class="dm-light" ion-item>
                 <h2>Einstellungen</h2>
             </ion-item-divider>
             <ion-item menuClose ion-item (tap)="openPageSettings()">

@@ -20,7 +20,7 @@ export class FirebaseResetPasswordComponent {
 
   resetPassword() {
     let loader = this.loadingController.create({
-      content: "Please wait"
+      content: "Bitte warten..."
     });
     loader.present();
     this.angularFireAuth.auth.sendPasswordResetEmail(

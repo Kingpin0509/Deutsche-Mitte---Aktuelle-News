@@ -20,7 +20,7 @@ import { StammtischeModule } from '../pages/stammtische/stammtische.module';
 //import { DatetimeModule } from '../pages/datetime/datetime.module';
 //import { RangesModule } from '../pages/ranges/ranges.module';
 //import { ActionSheetModule } from '../pages/action-sheet/action-sheet.module';
-//import { FacebookConnectModule } from '../pages/facebook-connect/facebook-connect.module';
+import { FacebookConnectModule } from '../pages/facebook-connect/facebook-connect.module';
 //import { LoginModule } from '../pages/login/login.module';
 //import { ChartsModule } from '../pages/charts/charts.module';
 import { FirebaseModule } from '../pages/firebase/firebase.module';
@@ -50,7 +50,7 @@ import { MyApp } from './app.component';
     //DatetimeModule,
     //RangesModule,
     //ActionSheetModule,
-    //FacebookConnectModule,
+    FacebookConnectModule,
     //LoginModule,
     //ChartsModule,
     FirebaseModule
