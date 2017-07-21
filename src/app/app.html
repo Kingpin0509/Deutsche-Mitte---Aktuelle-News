@@ -59,32 +59,38 @@
 </ion-split-pane>
 <ion-menu id="menuright" side="right" menuType="overlay" swipeEnabled="true" [content]="content">
     <ion-content>
-        <ion-item-group>
-            <ion-item-divider class="dmo-light" ion-item>
-                <h2>DM IN IHRER NÄHE!</h2>
-            </ion-item-divider>
-            <ion-item ion-item (tap)="openPageStammtische()">
-                <img src="assets/img/BannerDMStammtische.gif" />
-            </ion-item>
-            <ion-item-divider class="dmo-light" ion-item>
-                <h2>BUNDESTAGSWAHL 24.09.2017</h2>
-            </ion-item-divider>
-            <ion-item ion-item>
-                <img src="https://deutsche-mitte.de/wp-content/uploads/2017/07/Hotline.gif" />
-                <p>Tägl. von 9:00 bis 24:00 Uhr</p>
-            </ion-item>
-            <ion-item ion-item></ion-item>
-        </ion-item-group>
+        <div class="animated fadeInRight">
+
+            <ion-item-group>
+                <ion-item-divider class="dmo-light" ion-item>
+                    <h2>DM IN IHRER NÄHE!</h2>
+                </ion-item-divider>
+                <ion-item ion-item (tap)="openPageStammtische()">
+                    <img src="assets/img/BannerDMStammtische.gif" />
+                </ion-item>
+                <ion-item-divider class="dmo-light" ion-item>
+                    <h2>BUNDESTAGSWAHL 24.09.2017</h2>
+                </ion-item-divider>
+                <ion-item ion-item>
+                    <img src="https://deutsche-mitte.de/wp-content/uploads/2017/07/Hotline.gif" />
+                    <p>Tägl. von 9:00 bis 24:00 Uhr</p>
+                </ion-item>
+                <ion-item ion-item></ion-item>
+            </ion-item-group>
+        </div>
     </ion-content>
     <ion-footer>
-        <ion-item-group>
-            <ion-item-divider class="dm-light" ion-item>
-                <h2>Einstellungen</h2>
-            </ion-item-divider>
-            <ion-item menuClose ion-item (tap)="openPageSettings()">
-                <ion-icon name="settings" item-left></ion-icon>
-                Sprache
-            </ion-item>
-        </ion-item-group>
+        <div class="animated fadeInRight">
+
+            <ion-item-group>
+                <ion-item-divider class="dm-light" ion-item>
+                    <h2>Einstellungen</h2>
+                </ion-item-divider>
+                <ion-item menuClose ion-item (tap)="openPageSettings()">
+                    <ion-icon name="settings" item-left></ion-icon>
+                    Sprache
+                </ion-item>
+            </ion-item-group>
+        </div>
     </ion-footer>
 </ion-menu>
