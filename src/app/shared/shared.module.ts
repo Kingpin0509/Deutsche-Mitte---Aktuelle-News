@@ -11,18 +11,13 @@ import { SocialSharing } from '@ionic-native/social-sharing';
 import { Facebook } from '@ionic-native/facebook';
 //import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 //import { EmailComposer } from '@ionic-native/email-composer';
-
 import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate';
-
 import { TruncatePipe } from './pipes/truncate.pipe';
 import { TrimHtmlPipe } from './pipes/trim-html.pipe';
-
 import { Config } from '../app.config';
-
 export function createTranslateLoader(http: Http) {
   return new TranslateStaticLoader(http, './assets/translations', '.json');
 }
-
 @NgModule({
   declarations: [
     TruncatePipe,

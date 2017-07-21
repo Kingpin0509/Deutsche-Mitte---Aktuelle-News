@@ -72,7 +72,6 @@ export class MyApp {
 			{ title: 'POSTS', component: WordpressPosts, icon: 'paper' },
 			{ title: 'CATEGORIES', component: WordpressCategories, icon: 'bookmarks' },
 			{ title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
-			{ title: 'YOUTUBE_CHANNEL', component: YoutubeChannelComponent, icon: 'logo-youtube' },
 			//		  { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
 			//		  { title: 'SETTINGS', component: SettingsComponent, icon: 'options' },
 			//		  { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
@@ -87,6 +86,7 @@ export class MyApp {
 			//		  { title: 'Facebook Connect', component: FacebookConnectComponent, icon: 'logo-facebook' },
 			//		  { title: 'LOGIN', component: LoginComponent, icon: 'log-in' }
 			//		  { title: 'FAVORITES', component: WordpressFavorites, icon: 'thumbs-up' },
+			{ title: 'YOUTUBE_CHANNEL', component: YoutubeChannelComponent, icon: 'logo-youtube' }
 		];
 		this.wordpressMenusNavigation = config.wordpressMenusNavigation;
 	}
