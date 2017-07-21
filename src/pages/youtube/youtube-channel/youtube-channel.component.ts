@@ -21,7 +21,7 @@ export class YoutubeChannelComponent implements OnInit {
 
 	ngOnInit() {
 		this.loader = this.loadingController.create({
-			content: "Please wait"
+			content: "Bitte Warten!"
 		});
 		this.getChannel();
 	}

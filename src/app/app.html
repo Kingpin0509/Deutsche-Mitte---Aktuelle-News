@@ -6,14 +6,14 @@
             </ion-toolbar>
         </ion-header>
         <ion-content>
-            <ion-list>
+            <ion-list class="animated slideInLeft">
                 <ion-item ion-item *ngFor="let page of pages" (tap)="openPage(page)">
                     <ion-icon [name]="page.icon" item-left></ion-icon>
                     {{page.title | translate}}
                 </ion-item>
             </ion-list>
             <ion-item-group>
-                <ion-item-divider class="dmo-light" ion-item>
+                <ion-item-divider class="youtube" ion-item>
                     <h2>Video</h2>
                 </ion-item-divider>
                 <ion-item ion-item (tap)="openPageYoutube()">
