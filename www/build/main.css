@@ -24792,6 +24792,11 @@ audio {
   color: white;
 }
 
+.youtube {
+  background: #cc181e;
+  margin-top: 15%;
+}
+
 .tutorial-page .toolbar-background {
   background: #fff;
   border-color: transparent;
