@@ -4,7 +4,7 @@ import { NavController, Events, MenuController } from 'ionic-angular';
 import { WordpressPosts } from '../../wordpress/wordpress-posts/wordpress-posts.component';
 import { WordpressCategories } from '../../wordpress/wordpress-categories/wordpress-categories.component';
 import { YoutubeChannelComponent } from '../../youtube/youtube-channel/youtube-channel.component';
-import { WordpressPage } from '../../wordpress/wordpress-page/wordpress-page.component';
+// import { WordpressPage } from '../../wordpress/wordpress-page/wordpress-page.component';
 
 // import { AboutComponent } from '../../about/about-component/about.component';
 // import { WordpressHome } from '../../wordpress/wordpress-home/wordpress-home.component';
@@ -40,7 +40,7 @@ export class HomeComponent {
 		this.pages = [
 			{ title: 'POSTS', component: WordpressPosts, icon: 'paper', note: 'DM Webseite' },
 			{ title: 'CATEGORIES', component: WordpressCategories, icon: 'bookmarks', note: 'DM Webseite' },
-			{ title: 'PAGE', component: WordpressPage, icon: 'document', note: 'Wordpress', params: { id: 369 }},
+			// { title: 'PAGE', component: WordpressPage, icon: 'document', note: 'Wordpress', params: { id: 369 }},
 			//   { title: 'ABOUT', component: AboutComponent, icon: 'photos', note: '' },
 			//   { title: 'LOGIN', component: WordpressHome, icon: 'log-in', note: 'Wordpress' },
 			//   { title: 'POSTS', component: WordpressPosts, icon: 'logo-wordpress', note: 'Wordpress' },
