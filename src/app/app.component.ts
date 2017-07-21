@@ -27,10 +27,10 @@ import { StammtischeComponent } from '../pages/stammtische/stammtische-component
 // import { RangesComponent } from '../pages/ranges/ranges-component/ranges.component';
 // import { ActionSheetComponent } from '../pages/action-sheet/action-sheet-component/action-sheet.component';
 // import { GoogleMapsComponent } from '../pages/google-maps/google-maps-component/google-maps.component';
- import { FacebookConnectComponent } from '../pages/facebook-connect/facebook-connect-component/facebook-connect.component';
+// import { FacebookConnectComponent } from '../pages/facebook-connect/facebook-connect-component/facebook-connect.component';
 // import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';
 // import { LoginComponent } from '../pages/login/login-component/login.component';
-import { FirebaseHomeComponent } from '../pages/firebase/firebase-home/firebase-home.component';
+//import { FirebaseHomeComponent } from '../pages/firebase/firebase-home/firebase-home.component';
 
 @Component({
 	templateUrl: './app.html'
@@ -117,12 +117,12 @@ export class MyApp {
 		this.menuController.close();
 		this.nav.push(WordpressFavorites);
 	}
-	openPageFacebook(page) {
-		this.menuController.close();
-		this.nav.push(FacebookConnectComponent);
-	}
-	openPageFirebase(page) {
-		this.menuController.close();
-		this.nav.push(FirebaseHomeComponent);
-	}
+	// openPageFacebook(page) {
+	// 	this.menuController.close();
+	// 	this.nav.push(FacebookConnectComponent);
+	// }
+	// openPageFirebase(page) {
+	// 	this.menuController.close();
+	// 	this.nav.push(FirebaseHomeComponent);
+	// }
 }
