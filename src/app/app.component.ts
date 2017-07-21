@@ -15,7 +15,7 @@ import { WordpressPosts } from '../pages/wordpress/wordpress-posts/wordpress-pos
 import { WordpressFavorites } from '../pages/wordpress/wordpress-favorites/wordpress-favorites.component';
 import { YoutubeChannelComponent } from '../pages/youtube/youtube-channel/youtube-channel.component';
 import { WordpressCategories } from '../pages/wordpress/wordpress-categories/wordpress-categories.component';
-import { WordpressTags } from '../pages/wordpress/wordpress-tags/wordpress-tags.component';
+// import { WordpressTags } from '../pages/wordpress/wordpress-tags/wordpress-tags.component';
 import { SlidesComponent } from '../pages/slides/slides-component/slides.component';
 import { StammtischeComponent } from '../pages/stammtische/stammtische-component/stammtische.component';
 // import { BarcodeScanner } from '@ionic-native/barcode-scanner';
@@ -30,7 +30,7 @@ import { StammtischeComponent } from '../pages/stammtische/stammtische-component
 // import { FacebookConnectComponent } from '../pages/facebook-connect/facebook-connect-component/facebook-connect.component';
 // import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';
 // import { LoginComponent } from '../pages/login/login-component/login.component';
-//import { FirebaseHomeComponent } from '../pages/firebase/firebase-home/firebase-home.component';
+// import { FirebaseHomeComponent } from '../pages/firebase/firebase-home/firebase-home.component';
 
 @Component({
 	templateUrl: './app.html'
@@ -71,7 +71,7 @@ export class MyApp {
 			{ title: 'PLACEHOLDER', component: PlaceholderComponent, icon: 'logo-buffer' },
 			{ title: 'POSTS', component: WordpressPosts, icon: 'paper' },
 			{ title: 'CATEGORIES', component: WordpressCategories, icon: 'bookmarks' },
-			{ title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
+			//		  { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
 			//		  { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
 			//		  { title: 'SETTINGS', component: SettingsComponent, icon: 'options' },
 			//		  { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
@@ -86,7 +86,7 @@ export class MyApp {
 			//		  { title: 'Facebook Connect', component: FacebookConnectComponent, icon: 'logo-facebook' },
 			//		  { title: 'LOGIN', component: LoginComponent, icon: 'log-in' }
 			//		  { title: 'FAVORITES', component: WordpressFavorites, icon: 'thumbs-up' },
-			{ title: 'YOUTUBE_CHANNEL', component: YoutubeChannelComponent, icon: 'logo-youtube' }
+			// 		  { title: 'YOUTUBE_CHANNEL', component: YoutubeChannelComponent, icon: 'logo-youtube' }
 		];
 		this.wordpressMenusNavigation = config.wordpressMenusNavigation;
 	}
@@ -116,6 +116,10 @@ export class MyApp {
 	openPageFavorites(page) {
 		this.menuController.close();
 		this.nav.push(WordpressFavorites);
+	}
+	openPageYoutube(page) {
+		this.menuController.close();
+		this.nav.push(YoutubeChannelComponent);
 	}
 	// openPageFacebook(page) {
 	// 	this.menuController.close();

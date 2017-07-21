@@ -12,6 +12,15 @@
                     {{page.title | translate}}
                 </ion-item>
             </ion-list>
+            <ion-item-group>
+                <ion-item-divider class="dmo-light" ion-item>
+                    <h2>Video</h2>
+                </ion-item-divider>
+                <ion-item ion-item (tap)="openPageYoutube()">
+                    <ion-icon name="logo-youtube" item-left></ion-icon>
+                    Youtube Kanal
+                </ion-item>
+            </ion-item-group>
         </ion-content>
         <ion-footer>
             <ion-item-group>
