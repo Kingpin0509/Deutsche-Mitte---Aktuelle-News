@@ -24792,9 +24792,89 @@ audio {
   color: white;
 }
 
+.aktuelles {
+  background: #005397;
+  margin-top: 10%;
+}
+
 .youtube {
   background: #cc181e;
-  margin-top: 15%;
+  margin-top: 5%;
+}
+
+@-webkit-keyframes flipInYRight {
+  from {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -2deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -2deg);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 1deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 1deg);
+  }
+  to {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+@keyframes flipInYRight {
+  from {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -2deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -2deg);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 1deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 1deg);
+  }
+  to {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+.flipInYRight {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInYRight;
+  animation-name: flipInYRight;
+  -webkit-animation: flipInYRight 0.74s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: flipInYRight 0.74s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .tutorial-page .toolbar-background {

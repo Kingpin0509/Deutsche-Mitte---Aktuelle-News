@@ -18,6 +18,21 @@
             </ion-list>
             <div class="animated slideInLeft">
                 <ion-item-group>
+                    <ion-item-divider class="aktuelles" ion-item>
+                        <h2>Aktuelles</h2>
+                    </ion-item-divider>
+                    <ion-item ion-item (tap)="openPagePosts()">
+                        <ion-icon name="paper" item-left></ion-icon>
+                        Aktuelle Beiträge
+                    </ion-item>
+                    <ion-item ion-item (tap)="openPageCategories()">
+                        <ion-icon name="bookmarks" item-left></ion-icon>
+                        Kategorien
+                    </ion-item>
+                </ion-item-group>
+            </div>
+            <div class="animated slideInLeft">
+                <ion-item-group>
                     <ion-item-divider class="youtube" ion-item>
                         <h2>Video</h2>
                     </ion-item-divider>
@@ -59,8 +74,7 @@
 </ion-split-pane>
 <ion-menu id="menuright" side="right" menuType="overlay" swipeEnabled="true" [content]="content">
     <ion-content>
-        <div class="animated fadeInRight">
-
+        <div class="animated flipInYRight">
             <ion-item-group>
                 <ion-item-divider class="dmo-light" ion-item>
                     <h2>DM IN IHRER NÄHE!</h2>
@@ -80,17 +94,18 @@
         </div>
     </ion-content>
     <ion-footer>
-        <div class="animated fadeInRight">
-
-            <ion-item-group>
-                <ion-item-divider class="dm-light" ion-item>
+        <ion-item-group>
+            <ion-item-divider class="dm-light" ion-item>
+                <div class="animated fadeInRight">
                     <h2>Einstellungen</h2>
-                </ion-item-divider>
+                </div>
+            </ion-item-divider>
+            <div class="animated rotateInUpRight">
                 <ion-item menuClose ion-item (tap)="openPageSettings()">
                     <ion-icon name="settings" item-left></ion-icon>
                     Sprache
                 </ion-item>
-            </ion-item-group>
-        </div>
+            </div>
+        </ion-item-group>
     </ion-footer>
 </ion-menu>

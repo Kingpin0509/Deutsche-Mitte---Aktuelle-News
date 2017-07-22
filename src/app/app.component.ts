@@ -31,7 +31,6 @@ import { StammtischeComponent } from '../pages/stammtische/stammtische-component
 // import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';
 // import { LoginComponent } from '../pages/login/login-component/login.component';
 // import { FirebaseHomeComponent } from '../pages/firebase/firebase-home/firebase-home.component';
-
 @Component({
 	templateUrl: './app.html'
 })
@@ -42,7 +41,6 @@ export class MyApp {
 	menuPage = WordpressMenus;
 	pages: Array<{ title: string, component: any, icon: string }>;
 	wordpressMenusNavigation: boolean = false;
-
 	constructor(
 		private platform: Platform,
 		private translate: TranslateService,
@@ -54,7 +52,6 @@ export class MyApp {
 		private loadingCtrl: LoadingController
 	) {
 		this.initializeApp();
-
 		this.translate.setDefaultLang('de');
 		storage.get('language').then((value) => {
 			if (value) {
@@ -64,13 +61,12 @@ export class MyApp {
 				this.storage.set('language', 'de');
 			}
 		});
-
 		this.pages = [
 			{ title: 'HOME', component: TabsComponent, icon: 'home' },
 			{ title: 'ABOUT', component: AboutComponent, icon: 'information-circle' },
 			{ title: 'PLACEHOLDER', component: PlaceholderComponent, icon: 'logo-buffer' },
-			{ title: 'POSTS', component: WordpressPosts, icon: 'paper' },
-			{ title: 'CATEGORIES', component: WordpressCategories, icon: 'bookmarks' },
+			//		  { title: 'POSTS', component: WordpressPosts, icon: 'paper' },
+			//		  { title: 'CATEGORIES', component: WordpressCategories, icon: 'bookmarks' },
 			//		  { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
 			//		  { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
 			//		  { title: 'SETTINGS', component: SettingsComponent, icon: 'options' },
@@ -90,7 +86,6 @@ export class MyApp {
 		];
 		this.wordpressMenusNavigation = config.wordpressMenusNavigation;
 	}
-
 	initializeApp() {
 		this.platform.ready().then(() => {
 			// Enable RTL Support
@@ -99,13 +94,11 @@ export class MyApp {
 			this.splashScreen.hide();
 		});
 	}
-
 	openPage(page) {
 		this.menuController.close();
 		this.nav.setRoot(page.component);
 	}
 	openPageStammtische(page) {
-
 		this.menuController.close();
 		this.nav.push(StammtischeComponent);
 	}
@@ -113,13 +106,21 @@ export class MyApp {
 		this.menuController.close();
 		this.nav.push(SettingsComponent);
 	}
+	openPageYoutube(page) {
+		this.menuController.close();
+		this.nav.push(YoutubeChannelComponent);
+	}
 	openPageFavorites(page) {
 		this.menuController.close();
 		this.nav.push(WordpressFavorites);
 	}
-	openPageYoutube(page) {
+	openPagePosts(page) {
 		this.menuController.close();
-		this.nav.push(YoutubeChannelComponent);
+		this.nav.push(WordpressPosts);
+	}
+	openPageCategories(page) {
+		this.menuController.close();
+		this.nav.push(WordpressCategories);
 	}
 	// openPageFacebook(page) {
 	// 	this.menuController.close();
