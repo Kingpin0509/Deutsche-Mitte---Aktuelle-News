@@ -24792,13 +24792,17 @@ audio {
   color: white;
 }
 
+#menuleft {
+  background: rgba(248, 248, 248, 0.8);
+}
+
 .aktuelles {
-  background: #005397;
+  background: #ff8b00;
   margin-top: 10%;
 }
 
 .youtube {
-  background: #cc181e;
+  color: #cc181e;
   margin-top: 5%;
 }
 
@@ -24875,6 +24879,41 @@ audio {
   animation-name: flipInYRight;
   -webkit-animation: flipInYRight 0.74s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: flipInYRight 0.74s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes scale-up-hor-left {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+}
+
+@keyframes scale-up-hor-left {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+}
+
+.scale-up-hor-left {
+  -webkit-animation: scale-up-hor-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-hor-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 .tutorial-page .toolbar-background {

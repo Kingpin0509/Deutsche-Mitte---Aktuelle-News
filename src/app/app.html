@@ -16,7 +16,7 @@
                     </div>
                 </ion-item>
             </ion-list>
-            <div class="animated slideInLeft">
+            <div class="scale-up-hor-left">
                 <ion-item-group>
                     <ion-item-divider class="aktuelles" ion-item>
                         <h2>Aktuelles</h2>
@@ -31,14 +31,17 @@
                     </ion-item>
                 </ion-item-group>
             </div>
-            <div class="animated slideInLeft">
+            <div class="scale-up-hor-left">
                 <ion-item-group>
-                    <ion-item-divider class="youtube" ion-item>
+                    <!-- <ion-item-divider class="youtube" ion-item>
                         <h2>Video</h2>
-                    </ion-item-divider>
+                    </ion-item-divider> -->
                     <ion-item ion-item (tap)="openPageYoutube()">
-                        <ion-icon name="logo-youtube" item-left></ion-icon>
+                        <ion-icon name="logo-youtube" class="youtube" item-left></ion-icon>
                         Youtube Kanal
+                        <ion-note item-right>
+                            DM
+                        </ion-note>
                     </ion-item>
                 </ion-item-group>
             </div>
@@ -46,7 +49,7 @@
         <ion-footer>
             <ion-item-group>
                 <div class="animated fadeInLeft">
-                    <ion-item-divider class="dmo-light" ion-item>
+                    <ion-item-divider class="dmo-dark" ion-item>
                         <h2>Persönliches</h2>
                     </ion-item-divider>
                 </div>

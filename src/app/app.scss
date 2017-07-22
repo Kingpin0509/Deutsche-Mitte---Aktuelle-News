@@ -78,13 +78,17 @@ audio {
     color: white;
 }
 
+#menuleft {
+    background: rgba(248, 248, 248, 0.8);
+}
+
 .aktuelles {
-    background: #005397;
+    background: #ff8b00;
     margin-top: 10%;
 }
 
 .youtube {
-    background: #cc181e;
+    color: #cc181e;
     margin-top: 5%;
 }
 
@@ -161,4 +165,39 @@ audio {
     animation-name: flipInYRight;
     -webkit-animation: flipInYRight 0.74s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: flipInYRight 0.74s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-up-hor-left {
+    0% {
+        -webkit-transform: scaleX(0.4);
+        transform: scaleX(0.4);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+    }
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+    }
+}
+
+@keyframes scale-up-hor-left {
+    0% {
+        -webkit-transform: scaleX(0.4);
+        transform: scaleX(0.4);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+    }
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+    }
+}
+
+.scale-up-hor-left {
+    -webkit-animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
