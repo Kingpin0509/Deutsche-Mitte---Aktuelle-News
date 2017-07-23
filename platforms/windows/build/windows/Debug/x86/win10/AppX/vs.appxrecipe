@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-IDEAPAD</Machine>
+    <WindowsUser>Kingp</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>0a36b790-6f7e-11e7-999a-d7f6dc58a55e</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Apache Cordova Team</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>
+    </WindowsSdkPath>
+    <LayoutDir>C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\Debug\x86\win10\AppX</LayoutDir>
+    <RegisteredManifestChecksum>63D1EABA6F7330BC5FCB5F9B7FB27CB00C3E1AF8F0C97706460E0B1D6A9887B2</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino_1.50.5.0_x86__h35559jr9hy9m</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino_h35559jr9hy9m!de.dm.news</RegisteredUserModeAppID>
+    <RegisteredPackageID>17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Apache Cordova Team</RegisteredPackagePublisher>
+    <RegisteredVersion>1.50.5.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\Debug\x86\win10\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-07-23T10:45:26.581</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\images\SplashScreen.scale-100.png">
+      <PackagePath>images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-07-23T10:39:21.352</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\images\Square150x150Logo.scale-100.png">
+      <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-07-15T22:00:13.090</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\images\Square30x30Logo.scale-100.png">
+      <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
+      <Modified>2017-07-23T10:39:21.352</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\images\Square310x310Logo.scale-100.png">
+      <PackagePath>images\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-07-15T22:06:32.809</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\images\Square44x44Logo.scale-100.png">
+      <PackagePath>images\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-07-15T22:05:49.378</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\images\Square70x70Logo.scale-100.png">
+      <PackagePath>images\Square70x70Logo.scale-100.png</PackagePath>
+      <Modified>2017-07-23T10:39:21.367</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\images\Square71x71Logo.scale-100.png">
+      <PackagePath>images\Square71x71Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-07-15T22:05:37.657</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\images\StoreLogo.scale-100.png">
+      <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-07-23T10:39:21.367</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\images\Wide310x150Logo.scale-100.png">
+      <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-07-15T22:06:19.008</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\img\10ThesenWahlomat.png">
+      <PackagePath>www\assets\img\10ThesenWahlomat.png</PackagePath>
+      <Modified>2017-07-23T10:39:23.207</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\img\appicon.png">
+      <PackagePath>www\assets\img\appicon.png</PackagePath>
+      <Modified>2017-07-23T10:39:23.222</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\img\facebookicon.png">
+      <PackagePath>www\assets\img\facebookicon.png</PackagePath>
+      <Modified>2017-07-23T10:39:23.241</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\img\firebase.png">
+      <PackagePath>www\assets\img\firebase.png</PackagePath>
+      <Modified>2017-07-23T10:39:23.244</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\img\ica-slidebox-img-1.png">
+      <PackagePath>www\assets\img\ica-slidebox-img-1.png</PackagePath>
+      <Modified>2017-07-23T10:39:23.245</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\img\ica-slidebox-img-2.png">
+      <PackagePath>www\assets\img\ica-slidebox-img-2.png</PackagePath>
+      <Modified>2017-07-23T10:39:23.245</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\img\ica-slidebox-img-3.png">
+      <PackagePath>www\assets\img\ica-slidebox-img-3.png</PackagePath>
+      <Modified>2017-07-23T10:39:23.245</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\img\ica-slidebox-img-4.png">
+      <PackagePath>www\assets\img\ica-slidebox-img-4.png</PackagePath>
+      <Modified>2017-07-23T10:39:23.245</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\img\ica-slidebox-img-5.png">
+      <PackagePath>www\assets\img\ica-slidebox-img-5.png</PackagePath>
+      <Modified>2017-07-23T10:39:23.245</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\img\ica-slidebox-img-6.png">
+      <PackagePath>www\assets\img\ica-slidebox-img-6.png</PackagePath>
+      <Modified>2017-07-23T10:39:23.245</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\img\ica-slidebox-img-7.png">
+      <PackagePath>www\assets\img\ica-slidebox-img-7.png</PackagePath>
+      <Modified>2017-07-23T10:39:23.260</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\img\splashbg.png">
+      <PackagePath>www\assets\img\splashbg.png</PackagePath>
+      <Modified>2017-07-23T10:39:23.260</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\data\feeds-category.json">
+      <PackagePath>www\assets\data\feeds-category.json</PackagePath>
+      <Modified>2017-07-23T10:39:22.991</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\data\feeds.json">
+      <PackagePath>www\assets\data\feeds.json</PackagePath>
+      <Modified>2017-07-23T10:39:22.991</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\translations\de.json">
+      <PackagePath>www\assets\translations\de.json</PackagePath>
+      <Modified>2017-07-23T10:39:23.276</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\translations\en.json">
+      <PackagePath>www\assets\translations\en.json</PackagePath>
+      <Modified>2017-07-23T10:39:23.276</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\translations\fr.json">
+      <PackagePath>www\assets\translations\fr.json</PackagePath>
+      <Modified>2017-07-23T10:39:23.291</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\manifest.json">
+      <PackagePath>www\manifest.json</PackagePath>
+      <Modified>2017-07-23T10:42:44.890</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\ionicons.eot">
+      <PackagePath>www\assets\fonts\ionicons.eot</PackagePath>
+      <Modified>2017-07-23T10:39:23.006</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\ionicons.scss">
+      <PackagePath>www\assets\fonts\ionicons.scss</PackagePath>
+      <Modified>2017-07-23T10:39:23.006</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\noto-sans.scss">
+      <PackagePath>www\assets\fonts\noto-sans.scss</PackagePath>
+      <Modified>2017-07-23T10:39:23.106</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\roboto.scss">
+      <PackagePath>www\assets\fonts\roboto.scss</PackagePath>
+      <Modified>2017-07-23T10:39:23.207</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\ionicons.svg">
+      <PackagePath>www\assets\fonts\ionicons.svg</PackagePath>
+      <Modified>2017-07-23T10:39:23.042</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\ionicons.ttf">
+      <PackagePath>www\assets\fonts\ionicons.ttf</PackagePath>
+      <Modified>2017-07-23T10:39:23.044</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\noto-sans-bold.ttf">
+      <PackagePath>www\assets\fonts\noto-sans-bold.ttf</PackagePath>
+      <Modified>2017-07-23T10:39:23.075</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\noto-sans-regular.ttf">
+      <PackagePath>www\assets\fonts\noto-sans-regular.ttf</PackagePath>
+      <Modified>2017-07-23T10:39:23.091</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\roboto-bold.ttf">
+      <PackagePath>www\assets\fonts\roboto-bold.ttf</PackagePath>
+      <Modified>2017-07-23T10:39:23.122</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\roboto-light.ttf">
+      <PackagePath>www\assets\fonts\roboto-light.ttf</PackagePath>
+      <Modified>2017-07-23T10:39:23.144</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\roboto-medium.ttf">
+      <PackagePath>www\assets\fonts\roboto-medium.ttf</PackagePath>
+      <Modified>2017-07-23T10:39:23.160</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\roboto-regular.ttf">
+      <PackagePath>www\assets\fonts\roboto-regular.ttf</PackagePath>
+      <Modified>2017-07-23T10:39:23.191</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\ionicons.woff">
+      <PackagePath>www\assets\fonts\ionicons.woff</PackagePath>
+      <Modified>2017-07-23T10:39:23.044</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\noto-sans-bold.woff">
+      <PackagePath>www\assets\fonts\noto-sans-bold.woff</PackagePath>
+      <Modified>2017-07-23T10:39:23.075</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\noto-sans-regular.woff">
+      <PackagePath>www\assets\fonts\noto-sans-regular.woff</PackagePath>
+      <Modified>2017-07-23T10:39:23.106</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\roboto-bold.woff">
+      <PackagePath>www\assets\fonts\roboto-bold.woff</PackagePath>
+      <Modified>2017-07-23T10:39:23.122</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\roboto-light.woff">
+      <PackagePath>www\assets\fonts\roboto-light.woff</PackagePath>
+      <Modified>2017-07-23T10:39:23.144</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\roboto-medium.woff">
+      <PackagePath>www\assets\fonts\roboto-medium.woff</PackagePath>
+      <Modified>2017-07-23T10:39:23.176</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\roboto-regular.woff">
+      <PackagePath>www\assets\fonts\roboto-regular.woff</PackagePath>
+      <Modified>2017-07-23T10:39:23.191</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\ionicons.woff2">
+      <PackagePath>www\assets\fonts\ionicons.woff2</PackagePath>
+      <Modified>2017-07-23T10:39:23.060</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\roboto-bold.woff2">
+      <PackagePath>www\assets\fonts\roboto-bold.woff2</PackagePath>
+      <Modified>2017-07-23T10:39:23.122</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\roboto-light.woff2">
+      <PackagePath>www\assets\fonts\roboto-light.woff2</PackagePath>
+      <Modified>2017-07-23T10:39:23.144</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\roboto-medium.woff2">
+      <PackagePath>www\assets\fonts\roboto-medium.woff2</PackagePath>
+      <Modified>2017-07-23T10:39:23.176</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\fonts\roboto-regular.woff2">
+      <PackagePath>www\assets\fonts\roboto-regular.woff2</PackagePath>
+      <Modified>2017-07-23T10:39:23.191</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\icon\favicon.ico">
+      <PackagePath>www\assets\icon\favicon.ico</PackagePath>
+      <Modified>2017-07-23T10:39:23.207</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\img\BannerDMStammtische.gif">
+      <PackagePath>www\assets\img\BannerDMStammtische.gif</PackagePath>
+      <Modified>2017-07-23T10:39:23.222</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\assets\img\facebookbg.jpg">
+      <PackagePath>www\assets\img\facebookbg.jpg</PackagePath>
+      <Modified>2017-07-23T10:39:23.222</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\build\animate.css">
+      <PackagePath>www\build\animate.css</PackagePath>
+      <Modified>2017-07-23T10:39:23.307</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\build\main.css">
+      <PackagePath>www\build\main.css</PackagePath>
+      <Modified>2017-07-23T10:42:43.823</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\css\inappbrowser.css">
+      <PackagePath>www\css\inappbrowser.css</PackagePath>
+      <Modified>2017-07-23T10:39:24.361</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\css\splashscreen.css">
+      <PackagePath>www\css\splashscreen.css</PackagePath>
+      <Modified>2017-07-23T10:39:24.376</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\build\main.js">
+      <PackagePath>www\build\main.js</PackagePath>
+      <Modified>2017-07-23T10:42:44.870</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\build\polyfills.js">
+      <PackagePath>www\build\polyfills.js</PackagePath>
+      <Modified>2017-07-23T10:39:24.061</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\build\sw-toolbox.js">
+      <PackagePath>www\build\sw-toolbox.js</PackagePath>
+      <Modified>2017-07-23T10:39:24.145</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\cordova-js-src\confighelper.js">
+      <PackagePath>www\cordova-js-src\confighelper.js</PackagePath>
+      <Modified>2017-07-23T10:39:24.176</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\cordova-js-src\exec.js">
+      <PackagePath>www\cordova-js-src\exec.js</PackagePath>
+      <Modified>2017-07-23T10:39:24.192</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\cordova-js-src\platform.js">
+      <PackagePath>www\cordova-js-src\platform.js</PackagePath>
+      <Modified>2017-07-23T10:39:24.223</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\cordova-js-src\splashscreen.js">
+      <PackagePath>www\cordova-js-src\splashscreen.js</PackagePath>
+      <Modified>2017-07-23T10:39:24.292</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\cordova.js">
+      <PackagePath>www\cordova.js</PackagePath>
+      <Modified>2017-07-23T10:39:24.361</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\cordova_plugins.js">
+      <PackagePath>www\cordova_plugins.js</PackagePath>
+      <Modified>2017-07-15T22:01:05.628</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\plugins\cordova-plugin-console\www\console-via-logger.js">
+      <PackagePath>www\plugins\cordova-plugin-console\www\console-via-logger.js</PackagePath>
+      <Modified>2017-07-23T10:39:24.423</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\plugins\cordova-plugin-console\www\logger.js">
+      <PackagePath>www\plugins\cordova-plugin-console\www\logger.js</PackagePath>
+      <Modified>2017-07-23T10:39:24.477</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\plugins\cordova-plugin-device\src\windows\DeviceProxy.js">
+      <PackagePath>www\plugins\cordova-plugin-device\src\windows\DeviceProxy.js</PackagePath>
+      <Modified>2017-07-23T10:39:24.492</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\plugins\cordova-plugin-device\www\device.js">
+      <PackagePath>www\plugins\cordova-plugin-device\www\device.js</PackagePath>
+      <Modified>2017-07-23T10:39:24.524</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\plugins\cordova-plugin-facebook4\www\facebook-native.js">
+      <PackagePath>www\plugins\cordova-plugin-facebook4\www\facebook-native.js</PackagePath>
+      <Modified>2017-07-23T10:39:24.546</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\plugins\cordova-plugin-inappbrowser\src\windows\InAppBrowserProxy.js">
+      <PackagePath>www\plugins\cordova-plugin-inappbrowser\src\windows\InAppBrowserProxy.js</PackagePath>
+      <Modified>2017-07-23T10:39:24.646</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\plugins\cordova-plugin-inappbrowser\www\inappbrowser.js">
+      <PackagePath>www\plugins\cordova-plugin-inappbrowser\www\inappbrowser.js</PackagePath>
+      <Modified>2017-07-23T10:39:24.693</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\plugins\cordova-plugin-splashscreen\www\splashscreen.js">
+      <PackagePath>www\plugins\cordova-plugin-splashscreen\www\splashscreen.js</PackagePath>
+      <Modified>2017-07-23T10:39:24.709</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\plugins\cordova-plugin-splashscreen\www\windows\SplashScreenProxy.js">
+      <PackagePath>www\plugins\cordova-plugin-splashscreen\www\windows\SplashScreenProxy.js</PackagePath>
+      <Modified>2017-07-23T10:39:24.746</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\plugins\cordova-plugin-statusbar\src\windows\StatusBarProxy.js">
+      <PackagePath>www\plugins\cordova-plugin-statusbar\src\windows\StatusBarProxy.js</PackagePath>
+      <Modified>2017-07-23T10:39:24.777</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\plugins\cordova-plugin-statusbar\www\statusbar.js">
+      <PackagePath>www\plugins\cordova-plugin-statusbar\www\statusbar.js</PackagePath>
+      <Modified>2017-07-23T10:39:24.808</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\plugins\cordova-plugin-x-socialsharing\src\windows\SocialSharingProxy.js">
+      <PackagePath>www\plugins\cordova-plugin-x-socialsharing\src\windows\SocialSharingProxy.js</PackagePath>
+      <Modified>2017-07-23T10:39:24.961</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\plugins\cordova-plugin-x-socialsharing\www\SocialSharing.js">
+      <PackagePath>www\plugins\cordova-plugin-x-socialsharing\www\SocialSharing.js</PackagePath>
+      <Modified>2017-07-23T10:39:25.077</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\plugins\ionic-plugin-keyboard\src\windows\KeyboardProxy.js">
+      <PackagePath>www\plugins\ionic-plugin-keyboard\src\windows\KeyboardProxy.js</PackagePath>
+      <Modified>2017-07-23T10:39:25.192</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\service-worker.js">
+      <PackagePath>www\service-worker.js</PackagePath>
+      <Modified>2017-07-23T10:42:44.906</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\WinJS\js\base.js">
+      <PackagePath>www\WinJS\js\base.js</PackagePath>
+      <Modified>2017-07-23T10:39:22.959</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\www\index.html">
+      <PackagePath>www\index.html</PackagePath>
+      <Modified>2017-07-23T10:45:24.869</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\config.xml">
+      <PackagePath>config.xml</PackagePath>
+      <Modified>2017-07-23T10:42:43.523</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\Debug\x86\win10\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-07-23T10:45:25.893</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

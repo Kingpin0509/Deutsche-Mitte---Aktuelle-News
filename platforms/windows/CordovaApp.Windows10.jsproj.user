@@ -2,5 +2,13 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ShowAllFiles>false</ShowAllFiles>
+    <Source>C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\resources\appstore.png</Source>
+    <SmallTileSource>C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\resources\appstore.jpg</SmallTileSource>
+    <MediumTileSource>C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\resources\appstore.jpg</MediumTileSource>
+    <WideTileSource>C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\resources\appstore.jpg</WideTileSource>
+    <LargeTileSource>C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\resources\appstore.png</LargeTileSource>
+    <AppIconSource>C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\resources\appstore.jpg</AppIconSource>
+    <SplashScreenSource>C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\resources\appstore.jpg</SplashScreenSource>
+    <AppxShowAllApps>False</AppxShowAllApps>
   </PropertyGroup>
 </Project>

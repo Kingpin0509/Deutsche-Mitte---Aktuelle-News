@@ -1,0 +1,16 @@
+C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\Debug\x86\win10\ReverseMap\resources.pri
+C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\Debug\x86\win10\AppxManifest.xml
+C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\Debug\x86\win10\CordovaApp.Windows10.build.appxrecipe
+C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\ResourceHandlingTask.state
+C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\priconfig.xml
+C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\priconfig.xml.intermediate
+C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\layout.resfiles
+C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\layout.resfiles.intermediate
+C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\resources.resfiles
+C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\resources.resfiles.intermediate
+C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\pri.resfiles
+C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\pri.resfiles.intermediate
+C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\qualifiers.txt
+C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\qualifiers.txt.intermediate
+C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\ProjectArchitectures.txt
