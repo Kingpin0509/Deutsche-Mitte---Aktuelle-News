@@ -10,5 +10,8 @@
     <AppIconSource>C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\resources\appstore.jpg</AppIconSource>
     <SplashScreenSource>C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\resources\appstore.jpg</SplashScreenSource>
     <AppxShowAllApps>False</AppxShowAllApps>
+    <AppxPackageIsForStore>True</AppxPackageIsForStore>
+    <AppxBuildConfigurationSelection>x86|x64|arm</AppxBuildConfigurationSelection>
+    <PackageOptionalProjectsInIdeBuilds>True</PackageOptionalProjectsInIdeBuilds>
   </PropertyGroup>
 </Project>

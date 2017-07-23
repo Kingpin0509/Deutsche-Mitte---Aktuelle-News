@@ -1,1 +1,1 @@
-C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\CordovaApp.Windows10.jsproj;x86
+C:\Users\Kingp\Deutsche-Mitte---Aktuelle-News\platforms\windows\CordovaApp.Windows10.jsproj;arm
