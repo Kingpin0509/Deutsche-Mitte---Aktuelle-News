@@ -1,21 +1,13 @@
-<ion-split-pane>
+﻿<ion-split-pane>
     <ion-menu *ngIf="!wordpressMenusNavigation" id="menuleft" side="left" [content]="content">
         <ion-header>
-            <ion-toolbar class="dm-dark">
-                <div class="animated rotateInDownLeft">
+            <ion-toolbar no-margin no-padding class="dm-dark">
+                <div class="animated rotateInDown">
                     <ion-title>{{'MENU' | translate}}</ion-title>
                 </div>
             </ion-toolbar>
         </ion-header>
         <ion-content>
-            <ion-list>
-                <ion-item ion-item *ngFor="let page of pages" (tap)="openPage(page)">
-                    <div class="animated bounceInLeft">
-                        <ion-icon [name]="page.icon" item-left></ion-icon>
-                        {{page.title | translate}}
-                    </div>
-                </ion-item>
-            </ion-list>
             <div class="scale-up-hor-left">
                 <ion-item-group>
                     <ion-item-divider class="aktuelles" ion-item>
@@ -29,22 +21,24 @@
                         <ion-icon name="bookmarks" item-left></ion-icon>
                         Kategorien
                     </ion-item>
-                </ion-item-group>
-            </div>
-            <div class="scale-up-hor-left">
-                <ion-item-group>
-                    <!-- <ion-item-divider class="youtube" ion-item>
-                        <h2>Video</h2>
-                    </ion-item-divider> -->
-                    <ion-item ion-item (tap)="openPageYoutube()">
-                        <ion-icon name="logo-youtube" class="youtube" item-left></ion-icon>
+                    <ion-item class="scale-up-hor-left" ion-item (tap)="openPageYoutube()">
+                        <ion-icon name="logo-youtube" class="youtube" item-start></ion-icon>
                         Youtube Kanal
-                        <ion-note item-right>
+                        <ion-note item-end>
                             DM
                         </ion-note>
                     </ion-item>
                 </ion-item-group>
             </div>
+            <ion-list margin-top>
+                <ion-item ion-item *ngFor="let page of pages" (tap)="openPage(page)">
+                    <div class="animated bounceInLeft">
+                        <ion-icon [name]="page.icon" item-left></ion-icon>
+                        {{page.title | translate}}
+                    </div>
+                </ion-item>
+            </ion-list>
+
         </ion-content>
         <ion-footer>
             <ion-item-group>
