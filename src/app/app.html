@@ -13,32 +13,31 @@
                     <ion-item-divider class="aktuelles" ion-item>
                         <h2>Aktuelles</h2>
                     </ion-item-divider>
-                    <ion-item ion-item (tap)="openPagePosts()">
+                    <button ion-item (tap)="openPagePosts()">
                         <ion-icon name="paper" item-left></ion-icon>
-                        Aktuelle Beiträge
-                    </ion-item>
-                    <ion-item ion-item (tap)="openPageCategories()">
+                        <i ion-text color="primary">Aktuelle Beiträge</i>
+                    </button>
+                    <button ion-item (tap)="openPageCategories()">
                         <ion-icon name="bookmarks" item-left></ion-icon>
-                        Kategorien
-                    </ion-item>
-                    <ion-item class="scale-up-hor-left" ion-item (tap)="openPageYoutube()">
+                        <i ion-text color="primary">Kategorien</i>
+                    </button>
+                    <button outline class="scale-up-hor-left" ion-item (tap)="openPageYoutube()">
                         <ion-icon name="logo-youtube" class="youtube" item-start></ion-icon>
-                        Youtube Kanal
+                        <i ion-text color="primary">Youtube Kanal</i>
                         <ion-note item-end>
                             DM
                         </ion-note>
-                    </ion-item>
+                    </button>
                 </ion-item-group>
             </div>
             <ion-list margin-top>
-                <ion-item ion-item *ngFor="let page of pages" (tap)="openPage(page)">
+                <button ion-item *ngFor="let page of pages" (tap)="openPage(page)">
                     <div class="animated bounceInLeft">
                         <ion-icon [name]="page.icon" item-left></ion-icon>
-                        {{page.title | translate}}
+                        <sup ion-text color="primary">{{page.title | translate}}</sup>
                     </div>
-                </ion-item>
+                </button>
             </ion-list>
-
         </ion-content>
         <ion-footer>
             <ion-item-group>
@@ -48,10 +47,10 @@
                     </ion-item-divider>
                 </div>
                 <div class="animated rotateInUpLeft">
-                    <ion-item ion-item (tap)="openPageFavorites()">
+                    <button ion-item (tap)="openPageFavorites()">
                         <ion-icon name="thumbs-up" item-left></ion-icon>
                         Deine Favouriten
-                    </ion-item>
+                    </button>
                 </div>
                 <!-- <ion-item ion-item (tap)="openPageFacebook()">
                     <ion-icon name="logo-facebook" item-left></ion-icon>
