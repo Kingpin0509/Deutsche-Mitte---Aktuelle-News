@@ -8,41 +8,44 @@
             </ion-toolbar>
         </ion-header>
         <ion-content>
-            <div class="scale-up-hor-left">
-                <ion-item-group>
-                    <ion-item-divider class="aktuelles" ion-item>
-                        <h2>Aktuelles</h2>
-                    </ion-item-divider>
-                    <button ion-item (tap)="openPagePosts()">
-                        <ion-icon name="paper" item-left></ion-icon>
-                        <i ion-text color="primary">Aktuelle Beiträge</i>
+            <ion-list>
+                <ion-item-group margin-bottom>
+                    <div class="scale-up-hor-left">
+                        <ion-item-divider class="aktuelles">
+                            <h2>Aktuelles</h2>
+                        </ion-item-divider>
+                        <button ion-item (tap)="openPagePosts()">
+                        <ion-icon name="paper" item-start></ion-icon>
+                        <h2 ion-text color="primary">Aktuelle Beiträge</h2>
                     </button>
-                    <button ion-item (tap)="openPageCategories()">
-                        <ion-icon name="bookmarks" item-left></ion-icon>
-                        <i ion-text color="primary">Kategorien</i>
+                        <button ion-item (tap)="openPageCategories()">
+                        <ion-icon name="bookmarks" item-start></ion-icon>
+                        <h2 ion-text color="primary">Kategorien</h2>
                     </button>
-                    <button outline class="scale-up-hor-left" ion-item (tap)="openPageYoutube()">
+                        <button outline class="scale-up-hor-left" ion-item (tap)="openPageYoutube()">
                         <ion-icon name="logo-youtube" class="youtube" item-start></ion-icon>
-                        <i ion-text color="primary">Youtube Kanal</i>
+                        <h2 ion-text color="primary">Youtube Kanal</h2>
                         <ion-note item-end>
                             DM
                         </ion-note>
                     </button>
-                </ion-item-group>
-            </div>
-            <ion-list margin-top>
-                <button ion-item *ngFor="let page of pages" (tap)="openPage(page)">
-                    <div class="animated bounceInLeft">
-                        <ion-icon [name]="page.icon" item-left></ion-icon>
-                        <sup ion-text color="primary">{{page.title | translate}}</sup>
                     </div>
+                </ion-item-group>
+                <ion-item-group margin-top>
+                    <ion-item-divider class="aktuelles">
+                        <h2>Themen</h2>
+                    </ion-item-divider>
+                    <button class="animated bounceInLeft" ion-item *ngFor="let page of pages" (tap)="openPage(page)">
+                    <ion-icon item-start [name]="page.icon"></ion-icon>
+                    <h2 ion-text color="primary">{{page.title | translate}}</h2>
                 </button>
+                </ion-item-group>
             </ion-list>
         </ion-content>
         <ion-footer>
             <ion-item-group>
                 <div class="animated fadeInLeft">
-                    <ion-item-divider class="dmo-dark" ion-item>
+                    <ion-item-divider class="dmo-dark">
                         <h2>Persönliches</h2>
                     </ion-item-divider>
                 </div>
@@ -75,9 +78,9 @@
                 <ion-item-divider class="dmo-light" ion-item>
                     <h2>DM IN IHRER NÄHE!</h2>
                 </ion-item-divider>
-                <ion-item ion-item (tap)="openPageStammtische()">
+                <button ion-item (tap)="openPageStammtische()">
                     <img src="assets/img/BannerDMStammtische.gif" />
-                </ion-item>
+                </button>
                 <ion-item-divider class="dmo-light" ion-item>
                     <h2>BUNDESTAGSWAHL 24.09.2017</h2>
                 </ion-item-divider>
@@ -85,7 +88,6 @@
                     <img src="https://deutsche-mitte.de/wp-content/uploads/2017/07/Hotline.gif" />
                     <p>Tägl. von 9:00 bis 24:00 Uhr</p>
                 </ion-item>
-                <ion-item ion-item></ion-item>
             </ion-item-group>
         </div>
     </ion-content>
@@ -97,10 +99,10 @@
                 </div>
             </ion-item-divider>
             <div class="animated rotateInUpRight">
-                <ion-item menuClose ion-item (tap)="openPageSettings()">
+                <button ion-item (tap)="openPageSettings()">
                     <ion-icon name="settings" item-left></ion-icon>
                     Sprache
-                </ion-item>
+                </button>
             </div>
         </ion-item-group>
     </ion-footer>

@@ -6,9 +6,13 @@
     </button>
         </ion-buttons>
         <ion-title>{{'YOUTUBE_CHANNEL' | translate}}</ion-title>
+        <ion-buttons end>
+            <button ion-button menuToggle="right" icon-only>
+                <ion-icon name='more'></ion-icon>
+              </button>
+        </ion-buttons>
     </ion-navbar>
 </ion-header>
-
 <ion-content>
     <ion-list *ngFor="let video of videos" (click)="loadVideo(video)">
         <ion-item text-wrap>
