@@ -1,0 +1,103 @@
+{
+    "questions": [{
+            "flashCardFront": "Demokratie",
+            "flashCardBack": "Helicopter",
+            "flashCardFlipped": false,
+            "questionText": "Mehr direkte Demokratie; Volksentscheide auf Bundesebene?",
+            "answers": [
+                { "answer": "Ja", "correct": true, "selected": false },
+                { "answer": "Nein", "correct": false, "selected": false }
+            ]
+        },
+        {
+            "flashCardFront": "Geldschöpfung",
+            "flashCardBack": "Plane",
+            "flashCardFlipped": false,
+            "questionText": "Finanzkartell entmachten; Zinsen und Schuldgeld abschaffen?",
+            "answers": [
+                { "answer": "Ja", "correct": true, "selected": false },
+                { "answer": "Nein", "correct": false, "selected": false }
+            ]
+        },
+        {
+            "flashCardFront": "Souveränität",
+            "flashCardBack": "Truck",
+            "flashCardFlipped": false,
+            "questionText": "Unbeschränkte Souveränität; Friedensvertrag, Neue Verfassung?",
+            "answers": [
+                { "answer": "Ja", "correct": true, "selected": false },
+                { "answer": "Nein", "correct": false, "selected": false }
+            ]
+        },
+        {
+            "flashCardFront": "Aussenpolitik",
+            "flashCardBack": "Plane",
+            "flashCardFlipped": false,
+            "questionText": "Aggressive Einmischung stoppen; Sanktionen gegen Russland beenden?",
+            "answers": [
+                { "answer": "Ja", "correct": true, "selected": false },
+                { "answer": "Nein", "correct": false, "selected": false }
+            ]
+        },
+        {
+            "flashCardFront": "Gesundheit",
+            "flashCardBack": "Plane",
+            "flashCardFlipped": false,
+            "questionText": "Pharmakartell entmachten; Förderung alternativer Heilmethoden?",
+            "answers": [
+                { "answer": "Ja", "correct": true, "selected": false },
+                { "answer": "Nein", "correct": false, "selected": false }
+            ]
+        },
+        {
+            "flashCardFront": "Arbeit & Soziales",
+            "flashCardBack": "Plane",
+            "flashCardFlipped": false,
+            "questionText": "Solidarisches Grundeinkommen bei sozialer und ehrenamtlicher Arbeit?",
+            "answers": [
+                { "answer": "Ja", "correct": true, "selected": false },
+                { "answer": "Nein", "correct": false, "selected": false }
+            ]
+        },
+        {
+            "flashCardFront": "Zwangsgebühren",
+            "flashCardBack": "Plane",
+            "flashCardFlipped": false,
+            "questionText": "GEZ abschaffen; Keine Zwangsgebühr mehr?",
+            "answers": [
+                { "answer": "Ja", "correct": true, "selected": false },
+                { "answer": "Nein", "correct": false, "selected": false }
+            ]
+        },
+        {
+            "flashCardFront": "Wahlversprechen",
+            "flashCardBack": "Plane",
+            "flashCardFlipped": false,
+            "questionText": "Parteiprogramm = Wahlprogramm = Regierungsprogramm?",
+            "answers": [
+                { "answer": "Ja", "correct": true, "selected": false },
+                { "answer": "Nein", "correct": false, "selected": false }
+            ]
+        },
+        {
+            "flashCardFront": "Energieversorgung",
+            "flashCardBack": "Plane",
+            "flashCardFlipped": false,
+            "questionText": "Dezentrale Versorgung mit neuen alternativen Energien?",
+            "answers": [
+                { "answer": "Ja", "correct": true, "selected": false },
+                { "answer": "Nein", "correct": false, "selected": false }
+            ]
+        },
+        {
+            "flashCardFront": "Privatisierung",
+            "flashCardBack": "Plane",
+            "flashCardFlipped": false,
+            "questionText": "EU-Privatisierungsplan stoppen; Wasser und Saatgut schützen?",
+            "answers": [
+                { "answer": "Ja", "correct": true, "selected": false },
+                { "answer": "Nein", "correct": false, "selected": false }
+            ]
+        }
+    ]
+}

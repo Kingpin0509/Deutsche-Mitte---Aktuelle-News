@@ -13,6 +13,10 @@ import { AboutModule } from '../pages/about/about.module';
 // Module Example: Use the PlaceholderModule for any new App Module
 import { PlaceholderModule } from '../pages/placeholder/placeholder.module';
 import { StammtischeModule } from '../pages/stammtische/stammtische.module';
+import { QuizModule } from '../pages/quiz/quiz.module';
+//import { QuizComponent } from '../pages/quiz/quiz-component/quiz';
+//import { FlashCardComponent } from '../pages/quiz/flash-card/flash-card';
+import { Data } from '../providers/data';
 //import { BarcodeScannerModule } from '../pages/barcode-scanner/barcode-scanner.module';
 //import { GoogleMapsModule } from '../pages/google-maps/google-maps.module';
 //import { GridModule } from '../pages/grid/grid.module';
@@ -28,7 +32,7 @@ import { MyApp } from './app.component';
 
 @NgModule({
   declarations: [
-    MyApp,
+    MyApp
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -52,13 +56,14 @@ import { MyApp } from './app.component';
     //FacebookConnectModule,
     //LoginModule,
     //ChartsModule,
-    //FirebaseModule
+    //FirebaseModule,
+    QuizModule,
     StammtischeModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp
   ],
-  providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }, AnimationService]
+  providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }, Data, AnimationService]
 })
 export class AppModule { }

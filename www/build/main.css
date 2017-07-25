@@ -24915,6 +24915,109 @@ audio {
   animation: scale-up-hor-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
+.ios flash-card, .md flash-card {
+  /*
+		 *	Flip animation by David Walsh: https://davidwalsh.name/css-flip
+		 */
+  /* entire container, keeps perspective */
+  /* flip the pane when hovered */
+  /* flip speed goes here */
+  /* hide back of pane during swap */
+  /* front pane, placed above back */
+  /* back, initially hidden pane */
+}
+
+.ios flash-card .flip-container, .md flash-card .flip-container {
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.ios flash-card .flip-container.flipped .flipper, .md flash-card .flip-container.flipped .flipper {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.ios flash-card .flip-container, .ios flash-card .front, .ios flash-card .back, .md flash-card .flip-container, .md flash-card .front, .md flash-card .back {
+  width: 90vw;
+  height: 40vh;
+  margin: 20px auto;
+}
+
+.ios flash-card .flipper, .md flash-card .flipper {
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.ios flash-card .front, .ios flash-card .back, .md flash-card .front, .md flash-card .back {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #ecf0f1;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0px 8px 4px -4px rgba(163, 163, 163, 0.25);
+  border: 1px solid #dee2e3;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ios flash-card .front, .md flash-card .front {
+  z-index: 2;
+  /* for firefox 31 */
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.ios flash-card .back, .md flash-card .back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.ios page-home ion-slide, .md page-home ion-slide {
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.ios page-home ion-item, .md page-home ion-item {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  background-color: #00498a;
+}
+
+.ios page-home flash-card, .md page-home flash-card {
+  color: #000;
+}
+
+.ios page-home flash-card img, .md page-home flash-card img {
+  width: 70%;
+  height: auto;
+}
+
+.ios page-home .start-slide, .md page-home .start-slide {
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.ios page-home .start-slide button, .md page-home .start-slide button {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
 .tutorial-page .toolbar-background {
   background: #fff;
   border-color: transparent;

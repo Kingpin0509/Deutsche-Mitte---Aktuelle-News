@@ -18,6 +18,7 @@ import { WordpressCategories } from '../pages/wordpress/wordpress-categories/wor
 // import { WordpressTags } from '../pages/wordpress/wordpress-tags/wordpress-tags.component';
 import { SlidesComponent } from '../pages/slides/slides-component/slides.component';
 import { StammtischeComponent } from '../pages/stammtische/stammtische-component/stammtische.component';
+import { QuizComponent } from '../pages/quiz/quiz-component/quiz';
 // import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 // import { BarcodeScannerComponent } from '../pages/barcode-scanner/barcode-scanner-component/barcode-scanner.component';
 // import { FeedCategoriesComponent } from '../pages/feeds/feed-categories/feed-categories.component';
@@ -65,6 +66,7 @@ export class MyApp {
 			{ title: 'HOME', component: TabsComponent, icon: 'home' },
 			{ title: 'ABOUT', component: AboutComponent, icon: 'information-circle' },
 			{ title: 'PLACEHOLDER', component: PlaceholderComponent, icon: 'logo-buffer' },
+			{ title: 'QUIZ', component: QuizComponent, icon: 'logo-buffer' }
 			//		  { title: 'POSTS', component: WordpressPosts, icon: 'paper' },
 			//		  { title: 'CATEGORIES', component: WordpressCategories, icon: 'bookmarks' },
 			//		  { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
