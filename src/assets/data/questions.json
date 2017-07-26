@@ -1,7 +1,7 @@
 {
     "questions": [{
             "flashCardFront": "Demokratie",
-            "flashCardBack": "Helicopter",
+            "flashCardBack": "Die DM sagt JA!",
             "flashCardFlipped": false,
             "questionText": "Mehr direkte Demokratie; Volksentscheide auf Bundesebene?",
             "answers": [
@@ -11,7 +11,7 @@
         },
         {
             "flashCardFront": "Geldschöpfung",
-            "flashCardBack": "Plane",
+            "flashCardBack": "Die DM sagt JA!",
             "flashCardFlipped": false,
             "questionText": "Finanzkartell entmachten; Zinsen und Schuldgeld abschaffen?",
             "answers": [
@@ -21,7 +21,7 @@
         },
         {
             "flashCardFront": "Souveränität",
-            "flashCardBack": "Truck",
+            "flashCardBack": "Die DM sagt JA!",
             "flashCardFlipped": false,
             "questionText": "Unbeschränkte Souveränität; Friedensvertrag, Neue Verfassung?",
             "answers": [
@@ -31,7 +31,7 @@
         },
         {
             "flashCardFront": "Aussenpolitik",
-            "flashCardBack": "Plane",
+            "flashCardBack": "Die DM sagt JA!",
             "flashCardFlipped": false,
             "questionText": "Aggressive Einmischung stoppen; Sanktionen gegen Russland beenden?",
             "answers": [
@@ -41,7 +41,7 @@
         },
         {
             "flashCardFront": "Gesundheit",
-            "flashCardBack": "Plane",
+            "flashCardBack": "Die DM sagt JA!",
             "flashCardFlipped": false,
             "questionText": "Pharmakartell entmachten; Förderung alternativer Heilmethoden?",
             "answers": [
@@ -51,7 +51,7 @@
         },
         {
             "flashCardFront": "Arbeit & Soziales",
-            "flashCardBack": "Plane",
+            "flashCardBack": "Die DM sagt JA!",
             "flashCardFlipped": false,
             "questionText": "Solidarisches Grundeinkommen bei sozialer und ehrenamtlicher Arbeit?",
             "answers": [
@@ -61,7 +61,7 @@
         },
         {
             "flashCardFront": "Zwangsgebühren",
-            "flashCardBack": "Plane",
+            "flashCardBack": "Die DM sagt JA!",
             "flashCardFlipped": false,
             "questionText": "GEZ abschaffen; Keine Zwangsgebühr mehr?",
             "answers": [
@@ -71,7 +71,7 @@
         },
         {
             "flashCardFront": "Wahlversprechen",
-            "flashCardBack": "Plane",
+            "flashCardBack": "Die DM sagt JA!",
             "flashCardFlipped": false,
             "questionText": "Parteiprogramm = Wahlprogramm = Regierungsprogramm?",
             "answers": [
@@ -81,7 +81,7 @@
         },
         {
             "flashCardFront": "Energieversorgung",
-            "flashCardBack": "Plane",
+            "flashCardBack": "Die DM sagt JA!",
             "flashCardFlipped": false,
             "questionText": "Dezentrale Versorgung mit neuen alternativen Energien?",
             "answers": [
@@ -91,7 +91,7 @@
         },
         {
             "flashCardFront": "Privatisierung",
-            "flashCardBack": "Plane",
+            "flashCardBack": "Die DM sagt JA!",
             "flashCardFlipped": false,
             "questionText": "EU-Privatisierungsplan stoppen; Wasser und Saatgut schützen?",
             "answers": [

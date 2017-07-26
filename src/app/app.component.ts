@@ -65,8 +65,8 @@ export class MyApp {
 		this.pages = [
 			{ title: 'HOME', component: TabsComponent, icon: 'home' },
 			{ title: 'ABOUT', component: AboutComponent, icon: 'information-circle' },
-			{ title: 'PLACEHOLDER', component: PlaceholderComponent, icon: 'logo-buffer' },
-			{ title: 'QUIZ', component: QuizComponent, icon: 'logo-buffer' }
+			{ title: 'PLACEHOLDER', component: PlaceholderComponent, icon: 'book' },
+			//		  { title: 'QUIZ', component: QuizComponent, icon: 'help' }
 			//		  { title: 'POSTS', component: WordpressPosts, icon: 'paper' },
 			//		  { title: 'CATEGORIES', component: WordpressCategories, icon: 'bookmarks' },
 			//		  { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
@@ -123,6 +123,10 @@ export class MyApp {
 	openPageCategories(page) {
 		this.menuController.close();
 		this.nav.push(WordpressCategories);
+	}
+	openPageQuiz(page) {
+		this.menuController.close();
+		this.nav.push(QuizComponent);
 	}
 	// openPageFacebook(page) {
 	// 	this.menuController.close();

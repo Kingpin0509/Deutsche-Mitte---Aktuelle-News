@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, Events, MenuController } from 'ionic-angular';
-
 import { WordpressPosts } from '../../wordpress/wordpress-posts/wordpress-posts.component';
 import { WordpressCategories } from '../../wordpress/wordpress-categories/wordpress-categories.component';
 import { YoutubeChannelComponent } from '../../youtube/youtube-channel/youtube-channel.component';
 // import { WordpressPage } from '../../wordpress/wordpress-page/wordpress-page.component';
-
 // import { AboutComponent } from '../../about/about-component/about.component';
 // import { WordpressHome } from '../../wordpress/wordpress-home/wordpress-home.component';
 // import { WordpressPosts } from '../../wordpress/wordpress-posts/wordpress-posts.component';
@@ -70,7 +68,6 @@ export class HomeComponent {
 			}
 		});
 	}
-
 	openPage(page) {
 		this.navController.push(page.component, page.params);
 	}

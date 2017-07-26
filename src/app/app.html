@@ -50,6 +50,10 @@
                     </ion-item-divider>
                 </div>
                 <div class="animated rotateInUpLeft">
+                    <button ion-item (tap)="openPageQuiz()">
+                                <ion-icon name="help" item-left></ion-icon>
+                                {{'QUIZ' | translate}}
+                            </button>
                     <button ion-item (tap)="openPageFavorites()">
                         <ion-icon name="thumbs-up" item-left></ion-icon>
                         Deine Favouriten
