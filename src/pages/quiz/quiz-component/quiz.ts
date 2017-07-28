@@ -42,7 +42,7 @@ export class QuizComponent {
 			this.nextSlide();
 			answer.selected = false;
 			question.flashCardFlipped = false;
-		}, 1500);
+		}, 2500);
 	}
 	randomizeAnswers(rawAnswers: any[]): any[] {
 		for (let i = rawAnswers.length - 1; i > 0; i--) {

@@ -10,18 +10,18 @@
         }
         /* flip the pane when hovered */
         .flip-container.flipped .flipper {
-            transform: rotateY(180deg);
+            transform: rotateX(180deg);
         }
         .flip-container,
         .front,
         .back {
-            width: 65vw;
-            height: 25vh;
-            margin: 20px auto;
+            width: 60vw;
+            height: 30vh;
+            margin: 10px auto;
         }
         /* flip speed goes here */
         .flipper {
-            transition: 0.7s;
+            transition: 0.5s;
             transform-style: preserve-3d;
             position: relative;
         }
@@ -42,18 +42,40 @@
             border: 1px outset #dee2e3;
             margin: 0;
             position: absolute;
-            top: 0;
+            top: -100px;
             left: 0;
         }
         /* front pane, placed above back */
         .front {
+            top: -100px;
             z-index: 2;
             /* for firefox 31 */
-            transform: rotateY(0deg);
+            transform: rotateX(0deg);
         }
         /* back, initially hidden pane */
         .back {
-            transform: rotateY(180deg);
+            transform: rotateX(180deg);
+        }
+        .card-background-page {
+            ion-card {
+                position: relative;
+                text-align: center;
+            }
+            .card-title {
+                position: absolute;
+                top: 36%;
+                font-size: 2.0em;
+                width: 100%;
+                font-weight: bold;
+                color: #fff;
+            }
+            .card-subtitle {
+                font-size: 1.0em;
+                position: absolute;
+                top: 52%;
+                width: 100%;
+                color: #fff;
+            }
         }
     }
 }

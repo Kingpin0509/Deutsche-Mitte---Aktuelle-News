@@ -1,7 +1,7 @@
 {
     "questions": [{
             "flashCardFront": "Demokratie",
-            "flashCardBack": "Die DM sagt JA!",
+            "flashCardBack": "<img src='assets/img/1.jpg' />",
             "flashCardFlipped": false,
             "questionText": "Mehr direkte Demokratie; Volksentscheide auf Bundesebene?",
             "answers": [
@@ -10,8 +10,8 @@
             ]
         },
         {
-            "flashCardFront": "Geldschöpfung",
-            "flashCardBack": "Die DM sagt JA!",
+            "flashCardFront": "Finanzen",
+            "flashCardBack": "<ion-content class='card-background-page'><ion-card><img src='assets/img/2.jpg' /><div class='card-title'></div><div class='card-subtitle'></div></ion-card></ion-content>",
             "flashCardFlipped": false,
             "questionText": "Finanzkartell entmachten; Zinsen und Schuldgeld abschaffen?",
             "answers": [
@@ -21,7 +21,7 @@
         },
         {
             "flashCardFront": "Souveränität",
-            "flashCardBack": "Die DM sagt JA!",
+            "flashCardBack": "<ion-content class='card-background-page'><ion-card><img src='assets/img/3.jpg' /><div class='card-title'></div><div class='card-subtitle'></div></ion-card></ion-content>",
             "flashCardFlipped": false,
             "questionText": "Unbeschränkte Souveränität; Friedensvertrag, Neue Verfassung?",
             "answers": [
@@ -31,7 +31,7 @@
         },
         {
             "flashCardFront": "Aussenpolitik",
-            "flashCardBack": "Die DM sagt JA!",
+            "flashCardBack": "<ion-content class='card-background-page'><ion-card><img src='assets/img/4.jpg' /><div class='card-title'></div><div class='card-subtitle'></div></ion-card></ion-content>",
             "flashCardFlipped": false,
             "questionText": "Aggressive Einmischung stoppen; Sanktionen gegen Russland beenden?",
             "answers": [
@@ -41,7 +41,7 @@
         },
         {
             "flashCardFront": "Gesundheit",
-            "flashCardBack": "Die DM sagt JA!",
+            "flashCardBack": "<ion-content class='card-background-page'><ion-card><img src='assets/img/5.jpg' /><div class='card-title'></div><div class='card-subtitle'></div></ion-card></ion-content>",
             "flashCardFlipped": false,
             "questionText": "Pharmakartell entmachten; Förderung alternativer Heilmethoden?",
             "answers": [
@@ -51,7 +51,7 @@
         },
         {
             "flashCardFront": "Arbeit & Soziales",
-            "flashCardBack": "Die DM sagt JA!",
+            "flashCardBack": "<ion-content class='card-background-page'><ion-card><img src='assets/img/6.jpg' /><div class='card-title'></div><div class='card-subtitle'></div></ion-card></ion-content>",
             "flashCardFlipped": false,
             "questionText": "Solidarisches Grundeinkommen bei sozialer und ehrenamtlicher Arbeit?",
             "answers": [
@@ -61,7 +61,7 @@
         },
         {
             "flashCardFront": "Zwangsgebühren",
-            "flashCardBack": "Die DM sagt JA!",
+            "flashCardBack": "<ion-content class='card-background-page'><ion-card><img src='assets/img/7.jpg' /><div class='card-title'></div><div class='card-subtitle'></div></ion-card></ion-content>",
             "flashCardFlipped": false,
             "questionText": "GEZ abschaffen; Keine Zwangsgebühr mehr?",
             "answers": [
@@ -71,7 +71,7 @@
         },
         {
             "flashCardFront": "Wahlversprechen",
-            "flashCardBack": "Die DM sagt JA!",
+            "flashCardBack": "<ion-content class='card-background-page'><ion-card><img src='assets/img/6.jpg' /><div class='card-title'></div><div class='card-subtitle'></div></ion-card></ion-content>",
             "flashCardFlipped": false,
             "questionText": "Parteiprogramm = Wahlprogramm = Regierungsprogramm?",
             "answers": [
@@ -81,7 +81,7 @@
         },
         {
             "flashCardFront": "Energieversorgung",
-            "flashCardBack": "Die DM sagt JA!",
+            "flashCardBack": "<ion-content class='card-background-page'><ion-card><img src='assets/img/9.jpg' /><div class='card-title'></div><div class='card-subtitle'></div></ion-card></ion-content>",
             "flashCardFlipped": false,
             "questionText": "Dezentrale Versorgung mit neuen alternativen Energien?",
             "answers": [
@@ -91,7 +91,7 @@
         },
         {
             "flashCardFront": "Privatisierung",
-            "flashCardBack": "Die DM sagt JA!",
+            "flashCardBack": "<ion-content class='card-background-page'><ion-card><img src='assets/img/10.jpg' /><div class='card-title'></div><div class='card-subtitle'></div></ion-card></ion-content>",
             "flashCardFlipped": false,
             "questionText": "EU-Privatisierungsplan stoppen; Wasser und Saatgut schützen?",
             "answers": [
