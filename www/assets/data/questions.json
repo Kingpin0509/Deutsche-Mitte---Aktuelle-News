@@ -11,7 +11,7 @@
         },
         {
             "flashCardFront": "Finanzen",
-            "flashCardBack": "<img src='assets/img/2.jpg'>",
+            "flashCardBack": "<img src='assets/img/2.jpg' />",
             "flashCardFlipped": false,
             "questionText": "Finanzkartell entmachten; Zinsen und Schuldgeld abschaffen?",
             "answers": [
@@ -21,7 +21,7 @@
         },
         {
             "flashCardFront": "Souveränität",
-            "flashCardBack": "<img src='../../assets/img/3.jpg' />",
+            "flashCardBack": "<img src='assets/img/3.jpg' />",
             "flashCardFlipped": false,
             "questionText": "Unbeschränkte Souveränität; Friedensvertrag, Neue Verfassung?",
             "answers": [
@@ -31,7 +31,7 @@
         },
         {
             "flashCardFront": "Aussenpolitik",
-            "flashCardBack": "<img src='../../assets/img/4.jpg' />",
+            "flashCardBack": "<img src='assets/img/4.jpg' />",
             "flashCardFlipped": false,
             "questionText": "Aggressive Einmischung stoppen; Sanktionen gegen Russland beenden?",
             "answers": [
@@ -41,7 +41,7 @@
         },
         {
             "flashCardFront": "Gesundheit",
-            "flashCardBack": "<img src='../../assets/img/5.jpg' />",
+            "flashCardBack": "<img src='assets/img/5.jpg' />",
             "flashCardFlipped": false,
             "questionText": "Pharmakartell entmachten; Förderung alternativer Heilmethoden?",
             "answers": [
@@ -51,7 +51,7 @@
         },
         {
             "flashCardFront": "Arbeit & Soziales",
-            "flashCardBack": "<img src='../../assets/img/6.jpg' />",
+            "flashCardBack": "<img src='assets/img/6.jpg' />",
             "flashCardFlipped": false,
             "questionText": "Solidarisches Grundeinkommen bei sozialer und ehrenamtlicher Arbeit?",
             "answers": [
@@ -61,7 +61,7 @@
         },
         {
             "flashCardFront": "Zwangsgebühren",
-            "flashCardBack": "<img src='../../assets/img/7.jpg' />",
+            "flashCardBack": "<img src='assets/img/7.jpg' />",
             "flashCardFlipped": false,
             "questionText": "GEZ abschaffen; Keine Zwangsgebühr mehr?",
             "answers": [
@@ -71,7 +71,7 @@
         },
         {
             "flashCardFront": "Wahlversprechen",
-            "flashCardBack": "<img src='../../assets/img/6.jpg' />",
+            "flashCardBack": "<img src='assets/img/6.jpg' />",
             "flashCardFlipped": false,
             "questionText": "Parteiprogramm = Wahlprogramm = Regierungsprogramm?",
             "answers": [
@@ -81,7 +81,7 @@
         },
         {
             "flashCardFront": "Energieversorgung",
-            "flashCardBack": "<img src='../../assets/img/9.jpg' />",
+            "flashCardBack": "<img src='assets/img/9.jpg' />",
             "flashCardFlipped": false,
             "questionText": "Dezentrale Versorgung mit neuen alternativen Energien?",
             "answers": [
@@ -91,7 +91,7 @@
         },
         {
             "flashCardFront": "Privatisierung",
-            "flashCardBack": "<img src='../../assets/img/10.jpg' />",
+            "flashCardBack": "<img src='assets/img/10.jpg' />",
             "flashCardFlipped": false,
             "questionText": "EU-Privatisierungsplan stoppen; Wasser und Saatgut schützen?",
             "answers": [
