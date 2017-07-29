@@ -1,0 +1,103 @@
+{
+    "questions": [{
+            "flashCardFront": "Demokratie",
+            "flashCardBack": "<img src='assets/img/1.jpg' />",
+            "flashCardFlipped": false,
+            "questionText": "Mehr direkte Demokratie; Volksentscheide auf Bundesebene?",
+            "answers": [
+                { "answer": "Ja", "correct": true, "selected": false },
+                { "answer": "Nein", "correct": false, "selected": false }
+            ]
+        },
+        {
+            "flashCardFront": "Finanzen",
+            "flashCardBack": "<img src='assets/img/2.jpg' />",
+            "flashCardFlipped": false,
+            "questionText": "Finanzkartell entmachten; Zinsen und Schuldgeld abschaffen?",
+            "answers": [
+                { "answer": "Ja", "correct": true, "selected": false },
+                { "answer": "Nein", "correct": false, "selected": false }
+            ]
+        },
+        {
+            "flashCardFront": "Souveränität",
+            "flashCardBack": "<img src='assets/img/3.jpg' />",
+            "flashCardFlipped": false,
+            "questionText": "Unbeschränkte Souveränität; Friedensvertrag, Neue Verfassung?",
+            "answers": [
+                { "answer": "Ja", "correct": true, "selected": false },
+                { "answer": "Nein", "correct": false, "selected": false }
+            ]
+        },
+        {
+            "flashCardFront": "Aussenpolitik",
+            "flashCardBack": "<img src='assets/img/4.jpg' />",
+            "flashCardFlipped": false,
+            "questionText": "Aggressive Einmischung stoppen; Sanktionen gegen Russland beenden?",
+            "answers": [
+                { "answer": "Ja", "correct": true, "selected": false },
+                { "answer": "Nein", "correct": false, "selected": false }
+            ]
+        },
+        {
+            "flashCardFront": "Gesundheit",
+            "flashCardBack": "<img src='assets/img/5.jpg' />",
+            "flashCardFlipped": false,
+            "questionText": "Pharmakartell entmachten; Förderung alternativer Heilmethoden?",
+            "answers": [
+                { "answer": "Ja", "correct": true, "selected": false },
+                { "answer": "Nein", "correct": false, "selected": false }
+            ]
+        },
+        {
+            "flashCardFront": "Arbeit & Soziales",
+            "flashCardBack": "<img src='assets/img/6.jpg' />",
+            "flashCardFlipped": false,
+            "questionText": "Solidarisches Grundeinkommen bei sozialer und ehrenamtlicher Arbeit?",
+            "answers": [
+                { "answer": "Ja", "correct": true, "selected": false },
+                { "answer": "Nein", "correct": false, "selected": false }
+            ]
+        },
+        {
+            "flashCardFront": "Zwangsgebühren",
+            "flashCardBack": "<img src='assets/img/7.jpg' />",
+            "flashCardFlipped": false,
+            "questionText": "GEZ abschaffen; Keine Zwangsgebühr mehr?",
+            "answers": [
+                { "answer": "Ja", "correct": true, "selected": false },
+                { "answer": "Nein", "correct": false, "selected": false }
+            ]
+        },
+        {
+            "flashCardFront": "Wahlversprechen",
+            "flashCardBack": "<img src='assets/img/6.jpg' />",
+            "flashCardFlipped": false,
+            "questionText": "Parteiprogramm = Wahlprogramm = Regierungsprogramm?",
+            "answers": [
+                { "answer": "Ja", "correct": true, "selected": false },
+                { "answer": "Nein", "correct": false, "selected": false }
+            ]
+        },
+        {
+            "flashCardFront": "Energieversorgung",
+            "flashCardBack": "<img src='assets/img/9.jpg' />",
+            "flashCardFlipped": false,
+            "questionText": "Dezentrale Versorgung mit neuen alternativen Energien?",
+            "answers": [
+                { "answer": "Ja", "correct": true, "selected": false },
+                { "answer": "Nein", "correct": false, "selected": false }
+            ]
+        },
+        {
+            "flashCardFront": "Privatisierung",
+            "flashCardBack": "<img src='assets/img/10.jpg' />",
+            "flashCardFlipped": false,
+            "questionText": "EU-Privatisierungsplan stoppen; Wasser und Saatgut schützen?",
+            "answers": [
+                { "answer": "Ja", "correct": true, "selected": false },
+                { "answer": "Nein", "correct": false, "selected": false }
+            ]
+        }
+    ]
+}
