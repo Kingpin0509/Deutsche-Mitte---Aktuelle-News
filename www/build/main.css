@@ -25005,31 +25005,6 @@ audio {
   transform: rotateX(180deg);
 }
 
-.ios flash-card .card-background-page ion-card,
-.md flash-card .card-background-page ion-card {
-  position: relative;
-  text-align: center;
-}
-
-.ios flash-card .card-background-page .card-title,
-.md flash-card .card-background-page .card-title {
-  position: absolute;
-  top: 36%;
-  font-size: 2.0em;
-  width: 100%;
-  font-weight: bold;
-  color: #fff;
-}
-
-.ios flash-card .card-background-page .card-subtitle,
-.md flash-card .card-background-page .card-subtitle {
-  font-size: 1.0em;
-  position: absolute;
-  top: 52%;
-  width: 100%;
-  color: #fff;
-}
-
 .ios page-home ion-slide,
 .md page-home ion-slide {
   -webkit-align-items: flex-start;
