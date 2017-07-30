@@ -24919,6 +24919,14 @@ audio {
   animation: scale-up-hor-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
+.grid-basic-page ion-col div {
+  background-color: #F9FAFB;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  text-align: center;
+}
+
 .ios flash-card,
 .md flash-card {
   /*
@@ -25003,6 +25011,11 @@ audio {
 .md flash-card .back {
   -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
+}
+
+.ios .img1,
+.md .img1 {
+  background-image: url(../../assets/img/1.jpg);
 }
 
 .ios page-home ion-slide,

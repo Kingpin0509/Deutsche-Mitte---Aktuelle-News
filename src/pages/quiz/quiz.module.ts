@@ -3,14 +3,14 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from '../../app/shared/shared.module';
 import { FlashCardComponent} from './flash-card/flash-card';
 import { QuizComponent} from './quiz-component/quiz';
-// import { Data } from '../../providers/data';
+
 @NgModule({
   declarations: [
     FlashCardComponent,
     QuizComponent
   ],
   imports: [
-  	CommonModule,
+    CommonModule,
     SharedModule
   ],
   exports: [

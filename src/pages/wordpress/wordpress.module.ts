@@ -14,6 +14,8 @@ import { WordpressPage } from './wordpress-page/wordpress-page.component';
 import { WordpressMenus } from './wordpress-menus/wordpress-menus.component';
 import { WordpressMenu } from './wordpress-menu/wordpress-menu.component';
 import { WordpressMenuItem } from './wordpress-menu-item/wordpress-menu-item.component';
+import { WordpressPostsHome } from './wordpress-posts-home/wordpress-posts-home.component';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { WordpressMenuItem } from './wordpress-menu-item/wordpress-menu-item.com
     WordpressPage,
     WordpressMenus,
     WordpressMenu,
-    WordpressMenuItem
+    WordpressMenuItem,
+    WordpressPostsHome
   ],
   imports: [
   	CommonModule,
@@ -48,7 +51,8 @@ import { WordpressMenuItem } from './wordpress-menu-item/wordpress-menu-item.com
     WordpressPage,
     WordpressMenus,
     WordpressMenu,
-    WordpressMenuItem
+    WordpressMenuItem,
+    WordpressPostsHome
   ],
   entryComponents:[
     WordpressHome,
@@ -63,7 +67,8 @@ import { WordpressMenuItem } from './wordpress-menu-item/wordpress-menu-item.com
     WordpressPage,
     WordpressMenus,
     WordpressMenu,
-    WordpressMenuItem
+    WordpressMenuItem,
+    WordpressPostsHome
   ]
 })
 export class WordpressModule {}
