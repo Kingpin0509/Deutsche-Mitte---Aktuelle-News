@@ -11,10 +11,8 @@
         </ion-buttons>
     </ion-navbar>
 </ion-header>
-
 <ion-content class="youtube-video">
     <iframe *ngIf="video.id.videoId" [src]="videoUrl" frameborder="0" allowfullscreen="true"></iframe>
-
     <div padding>
         <h2>{{video.snippet.title}}</h2>
         <p>Veröffentlich von <strong>{{video.snippet.channelTitle}}</strong></p>
