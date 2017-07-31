@@ -25005,11 +25005,6 @@ audio {
   transform: rotateX(180deg);
 }
 
-.ios .img1,
-.md .img1 {
-  background-image: url(../../assets/img/1.jpg);
-}
-
 .ios page-home ion-slide,
 .md page-home ion-slide {
   -webkit-align-items: flex-start;

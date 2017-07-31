@@ -33,13 +33,12 @@
                     <ion-radio (tap)="selectAnswer(answer, question)" [checked]="answer.selected" [disabled]="hasAnswered"></ion-radio>
                 </ion-item>
             </ion-list>
-
         </ion-slide>
         <ion-slide>
             <ion-header class="dm-dark">
                 <ion-title>Übereinstimmung: {{score}}/10</ion-title>
             </ion-header>
-            <img src="../../../assets/img/DMWahl2017.png" />
+            <img src="../../../assets/img/quiz/WahlOMat-Ergebniss.png" />
             <ion-footer>
                 <button (tap)="restartQuiz()" ion-button full large no-margin no-padding color="primary">Erneut Starten</button>
             </ion-footer>
