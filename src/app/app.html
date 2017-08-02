@@ -1,4 +1,4 @@
-﻿<ion-split-pane>
+﻿<ion-split-pane when="lg">
     <ion-menu *ngIf="!wordpressMenusNavigation" id="menuleft" side="left" [content]="content">
         <ion-header>
             <ion-toolbar no-margin no-padding class="dm-dark">
@@ -10,10 +10,12 @@
         <ion-content>
             <ion-list>
                 <ion-item-group margin-bottom>
-                    <div class="scale-up-hor-left">
+                    <div class="fade-in-left">
                         <ion-item-divider class="aktuelles">
                             <h2>Aktuelles</h2>
                         </ion-item-divider>
+                    </div>
+                    <div class="animated bounceInLeft">
                         <button ion-item (tap)="openPagePosts()">
                         <ion-icon name="paper" item-start></ion-icon>
                         <h2 ion-text color="primary">Aktuelle Beiträge</h2>
@@ -28,13 +30,14 @@
                         <ion-note item-end>
                             DM
                         </ion-note>
-                    </button>
-                    </div>
+                    </button></div>
                 </ion-item-group>
                 <ion-item-group margin-top>
-                    <ion-item-divider class="aktuelles">
-                        <h2>Themen</h2>
-                    </ion-item-divider>
+                    <div class="fade-in-left">
+                        <ion-item-divider class="aktuelles">
+                            <h2>Themen</h2>
+                        </ion-item-divider>
+                    </div>
                     <button class="animated bounceInLeft" ion-item *ngFor="let page of pages" (tap)="openPage(page)">
                     <ion-icon item-start [name]="page.icon"></ion-icon>
                     <h2 ion-text color="primary">{{page.title | translate}}</h2>
@@ -44,7 +47,7 @@
         </ion-content>
         <ion-footer>
             <ion-item-group>
-                <div class="animated fadeInLeft">
+                <div class="fade-in-left">
                     <ion-item-divider class="dmo-dark">
                         <h2>Persönliches</h2>
                     </ion-item-divider>
@@ -97,16 +100,20 @@
     </ion-content>
     <ion-footer>
         <ion-item-group>
-            <ion-item-divider class="dm-light" ion-item>
-                <div class="animated fadeInRight">
+            <div class="fade-in-right">
+                <ion-item-divider class="dm-light" ion-item>
                     <h2>Einstellungen</h2>
-                </div>
-            </ion-item-divider>
+                </ion-item-divider>
+            </div>
             <div class="animated rotateInUpRight">
                 <button ion-item (tap)="openPageSettings()">
-                    <ion-icon name="settings" item-left></ion-icon>
+                    <ion-icon name="settings" item-right></ion-icon>
                     Sprache
                 </button>
+                <button ion-item (tap)="openPageFavorites()">
+                        <ion-icon name="thumbs-up" item-right></ion-icon>
+                        Deine Favouriten
+                    </button>
             </div>
         </ion-item-group>
     </ion-footer>

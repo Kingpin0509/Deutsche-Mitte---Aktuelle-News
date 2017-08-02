@@ -1,0 +1,16 @@
+U:\OneDrive\DeutscheMitte\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\Debug\AnyCPU\win10\ReverseMap\resources.pri
+U:\OneDrive\DeutscheMitte\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\Debug\AnyCPU\win10\AppxManifest.xml
+U:\OneDrive\DeutscheMitte\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\Debug\AnyCPU\win10\CordovaApp.Windows10.build.appxrecipe
+U:\OneDrive\DeutscheMitte\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\ResourceHandlingTask.state
+U:\OneDrive\DeutscheMitte\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\priconfig.xml
+U:\OneDrive\DeutscheMitte\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\priconfig.xml.intermediate
+U:\OneDrive\DeutscheMitte\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\layout.resfiles
+U:\OneDrive\DeutscheMitte\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\layout.resfiles.intermediate
+U:\OneDrive\DeutscheMitte\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\resources.resfiles
+U:\OneDrive\DeutscheMitte\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\resources.resfiles.intermediate
+U:\OneDrive\DeutscheMitte\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\pri.resfiles
+U:\OneDrive\DeutscheMitte\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\pri.resfiles.intermediate
+U:\OneDrive\DeutscheMitte\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\qualifiers.txt
+U:\OneDrive\DeutscheMitte\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\qualifiers.txt.intermediate
+U:\OneDrive\DeutscheMitte\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\MultipleQualifiersPerDimensionFound.txt
+U:\OneDrive\DeutscheMitte\Deutsche-Mitte---Aktuelle-News\platforms\windows\build\windows\bld\ProjectArchitectures.txt
