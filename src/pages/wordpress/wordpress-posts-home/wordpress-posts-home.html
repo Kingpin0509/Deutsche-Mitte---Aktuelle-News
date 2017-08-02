@@ -18,8 +18,14 @@
 <ion-content>
     <ion-card *ngFor="let post of posts">
         <ion-item text-wrap (click)="loadPost(post)">
-            <h2 text-left [innerHTML]="post.title.rendered"></h2>
-            <h4 text-right class="date">{{post.date | date: 'shortDate'}}</h4>
+            <ion-row>
+                <ion-col text-left>
+                    <h2 [innerHTML]="post.title.rendered"></h2>
+                </ion-col>
+                <ion-col text-right>
+                    <ion-note class="date">{{post.date | date: 'shortDate'}}</ion-note>
+                </ion-col>
+            </ion-row>
         </ion-item>
         <!--        <wordpress-feature-media *ngIf="post.featured_media" [id]="post.featured_media" (click)="loadPost(post)"></wordpress-feature-media>
          <ion-item *ngIf="post['_embedded'] && post['_embedded'].author && post['_embedded'].author[0] && post['_embedded'].author[0].avatar_urls">
@@ -31,14 +37,14 @@
         <!--         <ion-card-content>
             <p>{{post.content.rendered | trimHTML | truncate: 500 }}</p>
         </ion-card-content> -->
-        <ion-row no-padding>
-            <ion-col text-left>
+        <ion-row>
+            <ion-col no-padding text-left>
                 <button ion-button icon-left clear (click)="favoritePost(post)">
 					<ion-icon name='heart'></ion-icon>
 					Favorit
 				</button>
             </ion-col>
-            <ion-col text-right>
+            <ion-col no-padding text-right>
                 <button ion-button clear (click)="loadPost(post)">
 					Lesen
 				</button>
