@@ -13,16 +13,15 @@
         </ion-buttons>
     </ion-navbar>
 </ion-header>
-
 <ion-content>
     <ion-list>
         <ion-item-sliding *ngFor="let post of favoritePosts">
             <ion-item (click)="loadPost(post)">
                 {{post.title.rendered}}
-                <button ion-button item-right outline>Lesen</button>
+                <button ion-button item-right outline>{{'READ' | translate}}</button>
             </ion-item>
             <ion-item-options>
-                <button primary (click)="removeFavoritePost(post)">Entfernen</button>
+                <button primary (click)="removeFavoritePost(post)">{{'REMOVE' | translate}}</button>
             </ion-item-options>
         </ion-item-sliding>
     </ion-list>

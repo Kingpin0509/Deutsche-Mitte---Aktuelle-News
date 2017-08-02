@@ -25,7 +25,6 @@ export class WordpressFavorites {
     ionViewWillEnter() {
         this.getPosts();
     }
-
 	getPosts() {
 	    this.storage.get('wordpress.favorite')
 	    .then(data => {
@@ -34,22 +33,18 @@ export class WordpressFavorites {
 	        }
 	    });
 	}
-
 	loadPost(post) {
 		this.navController.push(WordpressPost, {
 			post: post
 		});
 	}
-
 	removeFavoritePost(post) {
 		const index = this.favoritePosts.findIndex(item => item.id === post.id);
 		this.favoritePosts.splice(index, 1);
 		this.storage.set('wordpress.favorite', JSON.stringify(this.favoritePosts)); 
 	}
-
 	removeAllFavoritePosts() {
 		this.favoritePosts = [];
 		this.storage.remove('wordpress.favorite');
 	}
-
 }

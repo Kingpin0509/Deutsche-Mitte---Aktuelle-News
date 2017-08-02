@@ -18,15 +18,15 @@
                     <div class="animated bounceInLeft">
                         <button ion-item (tap)="openPagePosts()">
                         <ion-icon name="paper" item-start></ion-icon>
-                        <h2 ion-text color="primary">Aktuelle Beiträge</h2>
+                        <h2 ion-text color="primary">{{'POSTS' | translate}}</h2>
                     </button>
                         <button ion-item (tap)="openPageCategories()">
                         <ion-icon name="bookmarks" item-start></ion-icon>
-                        <h2 ion-text color="primary">Kategorien</h2>
+                        <h2 ion-text color="primary">{{'CATEGORY' | translate}}</h2>
                     </button>
                         <button outline class="scale-up-hor-left" ion-item (tap)="openPageYoutube()">
                         <ion-icon name="logo-youtube" class="youtube" item-start></ion-icon>
-                        <h2 ion-text color="primary">Youtube Kanal</h2>
+                        <h2 ion-text color="primary">{{'YOUTUBE_CHANNEL' | translate}}</h2>
                         <ion-note item-end>
                             DM
                         </ion-note>
@@ -59,7 +59,7 @@
                             </button>
                     <button ion-item (tap)="openPageFavorites()">
                         <ion-icon name="thumbs-up" item-left></ion-icon>
-                        Deine Favouriten
+                        {{'FAVORITES' | translate}}
                     </button>
                 </div>
                 <!-- <ion-item ion-item (tap)="openPageFacebook()">
@@ -102,17 +102,17 @@
         <ion-item-group>
             <div class="fade-in-right">
                 <ion-item-divider class="dm-light" ion-item>
-                    <h2>Einstellungen</h2>
+                    <h2>{{'SETTINGS' | translate}}</h2>
                 </ion-item-divider>
             </div>
             <div class="animated rotateInUpRight">
                 <button ion-item (tap)="openPageSettings()">
                     <ion-icon name="settings" item-right></ion-icon>
-                    Sprache
+                    {{'LANGUAGE' | translate}}
                 </button>
                 <button ion-item (tap)="openPageFavorites()">
                         <ion-icon name="thumbs-up" item-right></ion-icon>
-                        Deine Favouriten
+                        {{'FAVORITES' | translate}}
                     </button>
             </div>
         </ion-item-group>
