@@ -59,19 +59,19 @@ audio {
 }
 
 .dm-light {
-    background: #005397;
+    background: rgb(0, 83, 151);
 }
 
 .dm-dark {
-    background: #00498a;
+    background: rgb(0, 73, 138);
 }
 
 .dmo-light {
-    background: #ff8b00;
+    background: #FF8B00;
 }
 
 .dmo-dark {
-    background: #FA7D09;
+    background: rgb(250, 125, 9);
 }
 
 .item-divider {
@@ -87,8 +87,7 @@ audio {
 }
 
 .aktuelles {
-    background: #ff8b00;
-    //margin-top: 10%;
+    background: #ff8b00; //margin-top: 10%;
 }
 
 .youtube {
@@ -330,38 +329,15 @@ audio {
     animation: scale-up-ver-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-
-/*
-  Loading Custom Component
-*/
-
-.loading-custom-spinner-container {
-    position: relative;
-    display: inline-block;
+.apphome {
     box-sizing: border-box;
-    width: 100%;
-    margin-bottom: 20px;
+    stroke: 4px solid #444;
+    fill: #222;
+    animation: pulse 0.5s infinite linear;
 }
 
-.loading-custom-spinner-box {
-    margin: 0 auto;
-    position: relative;
+.wordpresspostshome {
     box-sizing: border-box;
-    border: 4px solid #000;
-    width: 60px;
-    height: 60px;
-    animation: spin 3s infinite linear;
-}
-
-.loading-custom-spinner-box:before {
-    content: 'Bitte Warten...';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    border: 4px solid #000;
-    width: 40px;
-    height: 40px;
-    animation: pulse 1.5s infinite ease;
+    stroke: 4px solid #444;
+    animation: pulse 0.75s infinite linear;
 }

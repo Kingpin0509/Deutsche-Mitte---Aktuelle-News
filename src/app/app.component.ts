@@ -32,6 +32,7 @@ import { QuizComponent } from '../pages/quiz/quiz-component/quiz';
 // import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';
 // import { LoginComponent } from '../pages/login/login-component/login.component';
 // import { FirebaseHomeComponent } from '../pages/firebase/firebase-home/firebase-home.component';
+
 @Component({
 	templateUrl: './app.html'
 })
@@ -41,6 +42,11 @@ export class MyApp {
 	rootPage = SlidesComponent;
 	menuPage = WordpressMenus;
 	pages: Array<{ title: string, component: any, icon: string }>;
+	pagesleft: Array<{ title: string, component: any, icon: string }>;
+	pagesleftcenter: Array<{ title: string, component: any, icon: string }>;
+	pagesleftfooter: Array<{ title: string, component: any, icon: string }>;
+	pagesright: Array<{ title: string, component: any, icon: string }>;
+	pagesrightfooter: Array<{ title: string, component: any, icon: string }>;
 	wordpressMenusNavigation: boolean = false;
 	constructor(
 		private platform: Platform,
@@ -62,16 +68,15 @@ export class MyApp {
 				this.storage.set('language', 'de');
 			}
 		});
-		this.pages = [
+		this.pagesleft = [
+			{ title: 'POSTS', component: WordpressPosts, icon: 'paper' },
+			{ title: 'CATEGORIES', component: WordpressCategories, icon: 'bookmarks' },
+		];
+		this.pagesleftcenter = [
 			{ title: 'HOME', component: TabsComponent, icon: 'home' },
 			{ title: 'ABOUT', component: AboutComponent, icon: 'information-circle' },
-			{ title: 'PLACEHOLDER', component: PlaceholderComponent, icon: 'book' },
-			//		  { title: 'QUIZ', component: QuizComponent, icon: 'help' }
-			//		  { title: 'POSTS', component: WordpressPosts, icon: 'paper' },
-			//		  { title: 'CATEGORIES', component: WordpressCategories, icon: 'bookmarks' },
+			{ title: 'PLACEHOLDER', component: PlaceholderComponent, icon: 'book' }
 			//		  { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
-			//		  { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
-			//		  { title: 'SETTINGS', component: SettingsComponent, icon: 'options' },
 			//		  { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
 			//		  { title: 'FEEDS', component: FeedCategoriesComponent, icon: 'logo-rss',},
 			//		  { title: 'FEED_CATEGORY', component: FeedCategoryComponent, icon: 'logo-rss',},
@@ -83,8 +88,17 @@ export class MyApp {
 			//		  { title: 'ACTION_SHEET', component: ActionSheetComponent, icon: 'create'},
 			//		  { title: 'Facebook Connect', component: FacebookConnectComponent, icon: 'logo-facebook' },
 			//		  { title: 'LOGIN', component: LoginComponent, icon: 'log-in' }
-			//		  { title: 'FAVORITES', component: WordpressFavorites, icon: 'thumbs-up' },
-			// 		  { title: 'YOUTUBE_CHANNEL', component: YoutubeChannelComponent, icon: 'logo-youtube' }
+		];
+		this.pagesleftfooter = [
+			{ title: 'QUIZ', component: QuizComponent, icon: 'help' },
+			{ title: 'FAVORITES', component: WordpressFavorites, icon: 'thumbs-up' }
+		];
+		this.pagesright = [
+			//		  { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
+		];
+		this.pagesrightfooter = [
+			{ title: 'SETTINGS', component: SettingsComponent, icon: 'options' },
+			{ title: 'FAVORITES', component: WordpressFavorites, icon: 'thumbs-up' }
 		];
 		this.wordpressMenusNavigation = config.wordpressMenusNavigation;
 	}
@@ -97,6 +111,13 @@ export class MyApp {
 		});
 	}
 	openPage(page) {
+		let loader = this.loadingCtrl.create({
+			spinner: 'bubbles',
+			cssClass: `apphome`,
+			content: `Bitte Warten...`,
+			duration: 1000,
+		});
+		loader.present();
 		this.menuController.close();
 		this.nav.setRoot(page.component);
 	}
@@ -104,30 +125,31 @@ export class MyApp {
 		this.menuController.close();
 		this.nav.push(StammtischeComponent);
 	}
-	openPageSettings(page) {
-		this.menuController.close();
-		this.nav.push(SettingsComponent);
-	}
-	openPageYoutube(page) {
-		this.menuController.close();
-		this.nav.push(YoutubeChannelComponent);
-	}
-	openPageFavorites(page) {
-		this.menuController.close();
-		this.nav.push(WordpressFavorites);
-	}
-	openPagePosts(page) {
-		this.menuController.close();
-		this.nav.push(WordpressPosts);
-	}
-	openPageCategories(page) {
-		this.menuController.close();
-		this.nav.push(WordpressCategories);
-	}
-	openPageQuiz(page) {
-		this.menuController.close();
-		this.nav.push(QuizComponent);
-	}
+	 openPageYoutube(page) {
+	 	this.menuController.close();
+	 	this.nav.push(YoutubeChannelComponent);
+	 }
+}
+	// openPageSettings(page) {
+	// 	this.menuController.close();
+	// 	this.nav.push(SettingsComponent);
+	// }
+	// openPageFavorites(page) {
+	// 	this.menuController.close();
+	// 	this.nav.push(WordpressFavorites);
+	// }
+	// openPagePosts(page) {
+	// 	this.menuController.close();
+	// 	this.nav.push(WordpressPosts);
+	// }
+	// openPageCategories(page) {
+	// 	this.menuController.close();
+	// 	this.nav.push(WordpressCategories);
+	// }
+	// openPageQuiz(page) {
+	// 	this.menuController.close();
+	// 	this.nav.push(QuizComponent);
+	// }
 	// openPageFacebook(page) {
 	// 	this.menuController.close();
 	// 	this.nav.push(FacebookConnectComponent);
@@ -136,4 +158,3 @@ export class MyApp {
 	// 	this.menuController.close();
 	// 	this.nav.push(FirebaseHomeComponent);
 	// }
-}

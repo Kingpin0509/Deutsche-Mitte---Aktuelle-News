@@ -12,33 +12,26 @@
                 <ion-item-group margin-bottom>
                     <div class="fade-in-left">
                         <ion-item-divider class="aktuelles">
-                            <h2>Aktuelles</h2>
+                            <h2>{{'CURRENT' | translate}}</h2>
                         </ion-item-divider>
                     </div>
-                    <div class="animated bounceInLeft">
-                        <button ion-item (tap)="openPagePosts()">
-                        <ion-icon name="paper" item-start></ion-icon>
-                        <h2 ion-text color="primary">{{'POSTS' | translate}}</h2>
-                    </button>
-                        <button ion-item (tap)="openPageCategories()">
-                        <ion-icon name="bookmarks" item-start></ion-icon>
-                        <h2 ion-text color="primary">{{'CATEGORY' | translate}}</h2>
-                    </button>
-                        <button outline class="scale-up-hor-left" ion-item (tap)="openPageYoutube()">
+                    <button class="animated bounceInLeft" ion-item *ngFor="let page of pagesleft" (tap)="openPage(page)">
+                        <ion-icon item-start [name]="page.icon"></ion-icon>
+                        <h2 ion-text color="primary">{{page.title | translate}}</h2>
+                        </button>
+                    <button outline class="scale-up-hor-left" ion-item (tap)="openPageYoutube()">
                         <ion-icon name="logo-youtube" class="youtube" item-start></ion-icon>
                         <h2 ion-text color="primary">{{'YOUTUBE_CHANNEL' | translate}}</h2>
-                        <ion-note item-end>
-                            DM
-                        </ion-note>
-                    </button></div>
+                        <ion-note item-end>DM</ion-note>
+                    </button>
                 </ion-item-group>
                 <ion-item-group margin-top>
                     <div class="fade-in-left">
                         <ion-item-divider class="aktuelles">
-                            <h2>Themen</h2>
+                            <h2>{{'THEMES' | translate}}</h2>
                         </ion-item-divider>
                     </div>
-                    <button class="animated bounceInLeft" ion-item *ngFor="let page of pages" (tap)="openPage(page)">
+                    <button class="animated bounceInLeft" ion-item *ngFor="let page of pagesleftcenter" (tap)="openPage(page)">
                     <ion-icon item-start [name]="page.icon"></ion-icon>
                     <h2 ion-text color="primary">{{page.title | translate}}</h2>
                 </button>
@@ -46,23 +39,18 @@
             </ion-list>
         </ion-content>
         <ion-footer>
-            <ion-item-group>
-                <div class="fade-in-left">
-                    <ion-item-divider class="dmo-dark">
-                        <h2>Persönliches</h2>
-                    </ion-item-divider>
-                </div>
-                <div class="animated rotateInUpLeft">
-                    <button ion-item (tap)="openPageQuiz()">
-                                <ion-icon name="help" item-left></ion-icon>
-                                {{'QUIZ' | translate}}
-                            </button>
-                    <button ion-item (tap)="openPageFavorites()">
-                        <ion-icon name="thumbs-up" item-left></ion-icon>
-                        {{'FAVORITES' | translate}}
+            <ion-list>
+                <ion-item-group>
+                    <div class="fade-in-left">
+                        <ion-item-divider class="dmo-dark">
+                            <h2>{{'PERSONAL' | translate}}</h2>
+                        </ion-item-divider>
+                    </div>
+                    <button class="animated rotateInUpLeft" ion-item *ngFor="let page of pagesleftfooter" (tap)="openPage(page)">
+                    <ion-icon item-start [name]="page.icon"></ion-icon>
+                    <h2 ion-text color="primary">{{page.title | translate}}</h2>
                     </button>
-                </div>
-                <!-- <ion-item ion-item (tap)="openPageFacebook()">
+                    <!-- <ion-item ion-item (tap)="openPageFacebook()">
                     <ion-icon name="logo-facebook" item-left></ion-icon>
                     Facebook
                 </ion-item>
@@ -70,7 +58,8 @@
                     <ion-icon name="flame" item-left></ion-icon>
                     Firebase
                 </ion-item> -->
-            </ion-item-group>
+                </ion-item-group>
+            </ion-list>
         </ion-footer>
     </ion-menu>
     <ion-menu *ngIf="wordpressMenusNavigation" [content]="content">
@@ -83,7 +72,7 @@
         <div class="animated flipInYRight">
             <ion-item-group>
                 <ion-item-divider class="dmo-light" ion-item>
-                    <h2>DM IN IHRER NÄHE!</h2>
+                    <h2>{{'DMVENUE' | translate}}</h2>
                 </ion-item-divider>
                 <button ion-item (tap)="openPageStammtische()">
                     <img src="assets/img/BannerDMStammtische.gif" />
@@ -99,22 +88,18 @@
         </div>
     </ion-content>
     <ion-footer>
-        <ion-item-group>
-            <div class="fade-in-right">
-                <ion-item-divider class="dm-light" ion-item>
-                    <h2>{{'SETTINGS' | translate}}</h2>
-                </ion-item-divider>
-            </div>
-            <div class="animated rotateInUpRight">
-                <button ion-item (tap)="openPageSettings()">
-                    <ion-icon name="settings" item-right></ion-icon>
-                    {{'LANGUAGE' | translate}}
+        <ion-list>
+            <ion-item-group>
+                <div class="fade-in-right">
+                    <ion-item-divider class="dm-light" ion-item>
+                        <h2>{{'SETTINGS' | translate}}</h2>
+                    </ion-item-divider>
+                </div>
+                <button class="animated rotateInUpRight" ion-item *ngFor="let page of pagesrightfooter" (tap)="openPage(page)">
+                        <ion-icon item-start [name]="page.icon"></ion-icon>
+                        <h2 ion-text color="primary">{{page.title | translate}}</h2>
                 </button>
-                <button ion-item (tap)="openPageFavorites()">
-                        <ion-icon name="thumbs-up" item-right></ion-icon>
-                        {{'FAVORITES' | translate}}
-                    </button>
-            </div>
-        </ion-item-group>
+            </ion-item-group>
+        </ion-list>
     </ion-footer>
 </ion-menu>
