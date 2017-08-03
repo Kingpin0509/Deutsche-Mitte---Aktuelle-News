@@ -42,7 +42,10 @@ export class WordpressPostsHome implements OnInit {
 		this.pageCount = 1;
 		let query = this.createQuery();
 		let loader = this.loadingController.create({
-			content: "Bitte warten...",
+			content: `
+			<div class="loading-custom-spinner-container">
+			<div class="loading-custom-spinner-box"></div>
+		  </div>`,
 			duration: 10000
 		});
 		loader.present();
