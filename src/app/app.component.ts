@@ -125,10 +125,10 @@ export class MyApp {
 		this.menuController.close();
 		this.nav.push(StammtischeComponent);
 	}
-	 openPageYoutube(page) {
-	 	this.menuController.close();
-	 	this.nav.push(YoutubeChannelComponent);
-	 }
+	openPageYoutube(page) {
+		this.menuController.close();
+		this.nav.push(YoutubeChannelComponent);
+	}
 }
 	// openPageSettings(page) {
 	// 	this.menuController.close();

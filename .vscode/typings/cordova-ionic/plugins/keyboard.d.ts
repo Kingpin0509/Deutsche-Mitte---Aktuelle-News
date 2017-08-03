@@ -11,13 +11,13 @@ declare module Ionic {
      *
      * @param hide
      */
-    hideKeyboardAccessoryBar(hide:boolean): void;
+    hideKeyboardAccessoryBar(hide: boolean): void;
 
     /**
      * Close the keyboard if it is open.
      */
     close(): void;
-    
+
     /**
      * Force keyboard to be shown on Android.
      * This typically helps if autofocus on a text element does not pop up the keyboard automatically
@@ -31,7 +31,7 @@ declare module Ionic {
      *
      * @param disbale
      */
-    disableScroll(disbale:boolean): void;
+    disableScroll(disbale: boolean): void;
 
     /**
      * Whether or not the keyboard is currently visible.
