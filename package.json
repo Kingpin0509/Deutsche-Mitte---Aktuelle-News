@@ -59,13 +59,14 @@
         "ls": "^0.2.1",
         "moment": "2.15.1",
         "ng2-translate": "5.0.0",
+        "object-keys": "^1.0.11",
         "promise-polyfill": "^6.0.2",
         "rxjs": "5.4.0",
         "sw-toolbox": "3.6.0",
         "zone.js": "0.8.12"
     },
     "devDependencies": {
-        "@ionic/app-scripts": "1.3.7",
+        "@ionic/app-scripts": "^2.1.3",
         "@ionic/cli-plugin-cordova": "1.6.1",
         "@ionic/cli-plugin-ionic-angular": "1.4.1",
         "ionic": "^3.7.0",
