@@ -1,7 +1,7 @@
 import { Pipe } from '@angular/core';
 
 @Pipe({
-  name: 'truncate'
+	name: 'truncate'
 })
 export class TruncatePipe {
 	transform(value: string, args: number) {

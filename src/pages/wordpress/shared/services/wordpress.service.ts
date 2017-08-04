@@ -13,7 +13,7 @@ export class WordpressService {
 		return this.http.post(url, data)
 	  	.map(result => {
 			return result.json();
-		});    
+		});
 	}
 
 	public getPosts(query) {
@@ -22,7 +22,7 @@ export class WordpressService {
 		return this.http.get(url)
 	  	.map(result => {
 			return result.json();
-		});    
+		});
 	}
 
 	public getPost(id) {
