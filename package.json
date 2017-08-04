@@ -39,7 +39,6 @@
         "chart.js": "^2.5.0",
         "cordova": "^7.0.1",
         "cordova-android": "^6.2.3",
-        "cordova-ios": "^4.4.0",
         "cordova-plugin-console": "1.0.5",
         "cordova-plugin-crosswalk-webview": "~2.3.0",
         "cordova-plugin-device": "1.1.4",
@@ -112,7 +111,6 @@
         },
         "platforms": [
             "android",
-            "ios",
             "windows"
         ]
     }

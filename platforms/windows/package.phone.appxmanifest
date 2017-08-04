@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
     <Identity Name="17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino" Publisher="CN=$username$" Version="1.51.0.0" />
-    <mp:PhoneIdentity PhoneProductId="599d9610-78ab-11e7-bbff-3bce6efe2389" PhonePublisherId="db093ed5-53b1-45f7-af72-751e8f36ab80" />
+    <mp:PhoneIdentity PhoneProductId="e3b663f0-78be-11e7-a070-992037619102" PhonePublisherId="db093ed5-53b1-45f7-af72-751e8f36ab80" />
     <Properties>
         <DisplayName>Deutsche Mitte - Aktuell (inoffiziell)</DisplayName>
         <PublisherDisplayName>West Weedtze Development - Michael Humann</PublisherDisplayName>
