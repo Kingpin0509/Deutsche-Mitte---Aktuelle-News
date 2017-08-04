@@ -174,3 +174,10 @@ https://www.google.de/intl/de/policies/privacy/
 Information/Cancellation/Deletion
 
 On the basis of the Federal Data Protection Act, you may contact us at no cost if you have questions relating to the collection, processing or use of your personal information, if you wish to request the correction, blocking or deletion of the same, or if you wish to cancel explicitly granted consent. Please note that you have the right to have incorrect data corrected or to have personal data deleted, where such claim is not barred by any legal obligation to retain this data.
+
+ionic cordova platform rm ios && ionic cordova platform rm android && ionic cordova platform rm windows && ionic cordova platform add ios && ionic cordova platform add android && ionic cordova platform add windows &&
+ionic cordova prepare && ionic cordova resources &&
+ionic package build android --profile=prod --release --prod && ionic package build ios --profile=prod --release --prod &&
+ionic build  && ionic upload
+
+ionic cordova platform rm ios android windows && ionic cordova platform add ios android windows

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Package IgnorableNamespaces="uap mp" xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10">
-    <Identity Name="17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino" Publisher="CN=$username$" Version="1.50.8.0" />
-    <mp:PhoneIdentity PhoneProductId="dd3cec60-758f-11e7-aeaa-f58860888137" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+    <Identity Name="17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino" Publisher="CN=$username$" Version="1.52.1.0" />
+    <mp:PhoneIdentity PhoneProductId="f252c390-7959-11e7-a4ab-bd24160ba50f" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
     <Properties>
-        <DisplayName>Deutsche Mitte - Aktuell</DisplayName>
+        <DisplayName>Deutsche Mitte - Aktuell (inoffiziell)</DisplayName>
         <PublisherDisplayName>West Weedtze Development - Michael Humann</PublisherDisplayName>
         <Logo>images\StoreLogo.png</Logo>
         <Description>Stets alles aktuelle über die Partei "Deutsche Mitte"</Description>
