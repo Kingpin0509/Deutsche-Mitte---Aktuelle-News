@@ -37,6 +37,7 @@
         "chart.js": "^2.5.0",
         "cordova-android": "^6.2.3",
         "cordova-ios": "^4.4.0",
+        "cordova-ios-plugin-no-export-compliance": "0.0.2",
         "cordova-plugin-console": "1.0.5",
         "cordova-plugin-crosswalk-webview": "~2.3.0",
         "cordova-plugin-device": "1.1.4",
@@ -103,7 +104,8 @@
             "cordova-plugin-whitelist": {},
             "cordova-plugin-x-socialsharing": {},
             "ionic-plugin-keyboard": {},
-            "cordova-plugin-crosswalk-webview": {}
+            "cordova-plugin-crosswalk-webview": {},
+            "cordova-plugin-ios-no-export-compliance": {}
         },
         "platforms": [
             "android",

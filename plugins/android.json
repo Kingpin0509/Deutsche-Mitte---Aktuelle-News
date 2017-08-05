@@ -43,6 +43,9 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "de.dm.news"
+        },
+        "cordova-plugin-ios-no-export-compliance": {
+            "PACKAGE_NAME": "de.dm.news"
         }
     },
     "dependent_plugins": {}
