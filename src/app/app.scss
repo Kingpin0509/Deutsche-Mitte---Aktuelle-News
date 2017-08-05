@@ -333,11 +333,30 @@ audio {
     box-sizing: border-box;
     stroke: 4px solid #444;
     fill: #222;
-    animation: pulse 0.5s infinite linear;
+    animation: pulse 500ms infinite ease-out both;
 }
 
 .wordpresspostshome {
     box-sizing: border-box;
     stroke: 4px solid #444;
-    animation: pulse 0.75s infinite linear;
+    animation: pulse 500ms infinite ease-out both;
+}
+
+.splash-bg {
+    position: relative;
+    background: url('../../../assets/img/splashbg.png') no-repeat transparent;
+    background-size: cover;
+    height: 45%;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: animatedBackground 40s linear infinite;
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
 }

@@ -106,7 +106,9 @@ export class MyApp {
 		this.platform.ready().then(() => {
 			// Enable RTL Support
 			// this.platform.setDir('rtl', true);
-			this.statusBar.styleDefault();
+			this.statusBar.overlaysWebView(false);
+			this.statusBar.backgroundColorByHexString('#005397');
+			this.statusBar.styleBlackTranslucent();
 			this.splashScreen.hide();
 		});
 	}
@@ -115,7 +117,7 @@ export class MyApp {
 			spinner: 'bubbles',
 			cssClass: `apphome`,
 			content: `Bitte Warten...`,
-			duration: 1000,
+			duration: 750,
 		});
 		loader.present();
 		this.menuController.close();
