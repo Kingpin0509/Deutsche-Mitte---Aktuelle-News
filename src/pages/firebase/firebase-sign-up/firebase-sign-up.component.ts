@@ -47,7 +47,7 @@ export class FirebaseSignUpComponent {
 
   login() {
     let loader = this.loadingController.create({
-      content: "Please wait"
+      content: "Bitte Warten"
     });
     loader.present();
 
