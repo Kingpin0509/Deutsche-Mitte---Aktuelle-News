@@ -29,6 +29,9 @@
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "de.dm.news"
         },
+        "cordova-plugin-ios-no-export-compliance": {
+            "PACKAGE_NAME": "de.dm.news"
+        },
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "de.dm.news"
         },
@@ -42,9 +45,6 @@
             "PACKAGE_NAME": "de.dm.news"
         },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "de.dm.news"
-        },
-        "cordova-plugin-ios-no-export-compliance": {
             "PACKAGE_NAME": "de.dm.news"
         }
     },

@@ -1,0 +1,1 @@
+C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\ARM\win10\Upload\CordovaApp.Windows10_1.52.4.0\CordovaApp.Windows10_1.52.4.0_x86_x64_arm.appxbundle

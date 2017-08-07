@@ -24,6 +24,9 @@
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
         },
+        "cordova-plugin-ios-no-export-compliance": {
+            "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
+        },
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
         },
@@ -37,9 +40,6 @@
             "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
         },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
-        },
-        "cordova-plugin-ios-no-export-compliance": {
             "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
         }
     },
