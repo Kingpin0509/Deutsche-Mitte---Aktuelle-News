@@ -20,15 +20,15 @@
     <ion-card *ngFor="let post of posts">
         <ion-item text-wrap (click)="loadPost(post)">
             <ion-row>
-                <ion-col>
+                <ion-col class="posts-avatar">
                     <ion-avatar item-start>
                         <wordpress-feature-media *ngIf="post.featured_media" [id]="post.featured_media" (click)="loadPost(post)"></wordpress-feature-media>
                     </ion-avatar>
                 </ion-col>
-                <ion-col text-left>
+                <ion-col class="posts-content" text-left>
                     <h2 [innerHTML]="post.title.rendered"></h2>
                 </ion-col>
-                <ion-col text-right>
+                <ion-col class="posts-date" text-right>
                     <ion-note class="date">{{post.date | date: 'shortDate'}}</ion-note>
                 </ion-col>
             </ion-row>
