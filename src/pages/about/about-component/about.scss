@@ -1,0 +1,31 @@
+.alert {
+    max-width: 80%;
+    max-height: 60%;
+}
+
+.alert .alert-message {
+    max-height: 60%;
+    font-size: 15px;
+}
+
+.alert .alert-wrapper {
+    border-radius: 2px;
+    max-width: 80%;
+    background-color: #fafafa;
+    box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+}
+
+.about {
+    max-width: 80%;
+    max-height: 60%;
+}
+
+.about.alert {
+    max-width: 80%;
+    max-height: 60%;
+}
+
+.about.alert-wrapper {
+    max-width: 80%;
+    max-height: 60%;
+}
