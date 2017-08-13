@@ -25,7 +25,10 @@ export class WordpressCategories implements OnInit {
 
 	getCategories() {
 		let loader = this.loadingController.create({
-			content: "Bitte warten"
+			content: "Bitte warten",
+			spinner: 'bubbles',
+			cssClass:`wordpresspostshome`,
+			duration: 5000,
 		});
 		loader.present();
 		
