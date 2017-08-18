@@ -7,8 +7,8 @@
 
     Weitere Informationen zu Paketmanifestdateien finden Sie unter http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino" Publisher="CN=47AF69ED-2732-47DA-B13E-0E7FFFE045CA" Version="1.52.4.0" ProcessorArchitecture="arm" />
-  <mp:PhoneIdentity PhoneProductId="f0326e09-f101-4229-8ab9-cfec4ad82172" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino" Publisher="CN=47AF69ED-2732-47DA-B13E-0E7FFFE045CA" Version="1.54.1.0" ProcessorArchitecture="x64" />
+  <mp:PhoneIdentity PhoneProductId="a1311374-c1ee-437b-9b12-23132c4d20e7" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Deutsche Mitte - Aktuell (inoffiziell)</DisplayName>
     <PublisherDisplayName>West Weedtze Development - Michael Humann</PublisherDisplayName>

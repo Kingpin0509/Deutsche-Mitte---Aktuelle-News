@@ -8,7 +8,7 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Release|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
-    <PackageIdentityName>f0326e09-f101-4229-8ab9-cfec4ad82172</PackageIdentityName>
+    <PackageIdentityName>a1311374-c1ee-437b-9b12-23132c4d20e7</PackageIdentityName>
     <PackageIdentityPublisher>CN=47AF69ED-2732-47DA-B13E-0E7FFFE045CA</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\bld\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
@@ -51,6 +51,9 @@
       <PackagePath>images\splashscreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\images\SplashScreenPhone.scale-240.png">
+      <PackagePath>images\SplashScreenPhone.scale-240.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\images\Square150x150Logo.scale-100.png">
       <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -65,6 +68,10 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\images\Square150x150Logo.scale-200.png">
       <PackagePath>images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\images\Square150x150Logo.scale-240.png">
+      <PackagePath>images\Square150x150Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\images\Square150x150Logo.scale-400.png">
@@ -130,6 +137,10 @@
       <PackagePath>images\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\images\Square44x44Logo.scale-240.png">
+      <PackagePath>images\Square44x44Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\images\Square44x44Logo.scale-400.png">
       <PackagePath>images\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -193,6 +204,10 @@
       <PackagePath>images\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\images\StoreLogo.scale-240.png">
+      <PackagePath>images\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\images\StoreLogo.scale-400.png">
       <PackagePath>images\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -213,6 +228,10 @@
       <PackagePath>images\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\images\Wide310x150Logo.scale-240.png">
+      <PackagePath>images\Wide310x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\images\Wide310x150Logo.scale-400.png">
       <PackagePath>images\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -220,207 +239,6 @@
     <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\data\feeds-category.json">
-      <PackagePath>www\assets\data\feeds-category.json</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\data\feeds.json">
-      <PackagePath>www\assets\data\feeds.json</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\data\questions.json">
-      <PackagePath>www\assets\data\questions.json</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\ionicons.eot">
-      <PackagePath>www\assets\fonts\ionicons.eot</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\ionicons.scss">
-      <PackagePath>www\assets\fonts\ionicons.scss</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\ionicons.svg">
-      <PackagePath>www\assets\fonts\ionicons.svg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\ionicons.ttf">
-      <PackagePath>www\assets\fonts\ionicons.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\ionicons.woff">
-      <PackagePath>www\assets\fonts\ionicons.woff</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\ionicons.woff2">
-      <PackagePath>www\assets\fonts\ionicons.woff2</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\noto-sans-bold.ttf">
-      <PackagePath>www\assets\fonts\noto-sans-bold.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\noto-sans-bold.woff">
-      <PackagePath>www\assets\fonts\noto-sans-bold.woff</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\noto-sans-regular.ttf">
-      <PackagePath>www\assets\fonts\noto-sans-regular.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\noto-sans-regular.woff">
-      <PackagePath>www\assets\fonts\noto-sans-regular.woff</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\noto-sans.scss">
-      <PackagePath>www\assets\fonts\noto-sans.scss</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\roboto-bold.ttf">
-      <PackagePath>www\assets\fonts\roboto-bold.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\roboto-bold.woff">
-      <PackagePath>www\assets\fonts\roboto-bold.woff</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\roboto-bold.woff2">
-      <PackagePath>www\assets\fonts\roboto-bold.woff2</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\roboto-light.ttf">
-      <PackagePath>www\assets\fonts\roboto-light.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\roboto-light.woff">
-      <PackagePath>www\assets\fonts\roboto-light.woff</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\roboto-light.woff2">
-      <PackagePath>www\assets\fonts\roboto-light.woff2</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\roboto-medium.ttf">
-      <PackagePath>www\assets\fonts\roboto-medium.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\roboto-medium.woff">
-      <PackagePath>www\assets\fonts\roboto-medium.woff</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\roboto-medium.woff2">
-      <PackagePath>www\assets\fonts\roboto-medium.woff2</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\roboto-regular.ttf">
-      <PackagePath>www\assets\fonts\roboto-regular.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\roboto-regular.woff">
-      <PackagePath>www\assets\fonts\roboto-regular.woff</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\roboto-regular.woff2">
-      <PackagePath>www\assets\fonts\roboto-regular.woff2</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\fonts\roboto.scss">
-      <PackagePath>www\assets\fonts\roboto.scss</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\icon\favicon.ico">
-      <PackagePath>www\assets\icon\favicon.ico</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\10ThesenFlyer.jpg">
-      <PackagePath>www\assets\img\10ThesenFlyer.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\appicon.png">
-      <PackagePath>www\assets\img\appicon.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\BannerDMStammtische.gif">
-      <PackagePath>www\assets\img\BannerDMStammtische.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\DMWahl201706.jpg">
-      <PackagePath>www\assets\img\DMWahl201706.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\facebookbg.jpg">
-      <PackagePath>www\assets\img\facebookbg.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\facebookicon.png">
-      <PackagePath>www\assets\img\facebookicon.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\firebase.png">
-      <PackagePath>www\assets\img\firebase.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\ica-slidebox-img-1.png">
-      <PackagePath>www\assets\img\ica-slidebox-img-1.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\ica-slidebox-img-2.png">
-      <PackagePath>www\assets\img\ica-slidebox-img-2.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\ica-slidebox-img-3.png">
-      <PackagePath>www\assets\img\ica-slidebox-img-3.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\ica-slidebox-img-4.png">
-      <PackagePath>www\assets\img\ica-slidebox-img-4.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\ica-slidebox-img-5.png">
-      <PackagePath>www\assets\img\ica-slidebox-img-5.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\ica-slidebox-img-6.png">
-      <PackagePath>www\assets\img\ica-slidebox-img-6.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\ica-slidebox-img-7.png">
-      <PackagePath>www\assets\img\ica-slidebox-img-7.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\menu\Banner-DM-Stammtische.gif">
-      <PackagePath>www\assets\img\menu\Banner-DM-Stammtische.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\menu\BTW-Banner.png">
-      <PackagePath>www\assets\img\menu\BTW-Banner.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\menu\BTW-Bundeslander-2017.png">
-      <PackagePath>www\assets\img\menu\BTW-Bundeslander-2017.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\quiz\Frage1.png">
-      <PackagePath>www\assets\img\quiz\Frage1.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\quiz\Frage10.png">
-      <PackagePath>www\assets\img\quiz\Frage10.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\quiz\Frage2.png">
-      <PackagePath>www\assets\img\quiz\Frage2.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\quiz\Frage3.png">
-      <PackagePath>www\assets\img\quiz\Frage3.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\quiz\Frage4.png">
-      <PackagePath>www\assets\img\quiz\Frage4.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\quiz\Frage5.png">
-      <PackagePath>www\assets\img\quiz\Frage5.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\quiz\Frage6.png">
-      <PackagePath>www\assets\img\quiz\Frage6.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\quiz\Frage7.png">
-      <PackagePath>www\assets\img\quiz\Frage7.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\quiz\Frage8.png">
-      <PackagePath>www\assets\img\quiz\Frage8.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\quiz\Frage9.png">
-      <PackagePath>www\assets\img\quiz\Frage9.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\quiz\parteien.png">
-      <PackagePath>www\assets\img\quiz\parteien.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\quiz\WahlOMat-Ergebniss.png">
-      <PackagePath>www\assets\img\quiz\WahlOMat-Ergebniss.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\quiz\WahlOMat.png">
-      <PackagePath>www\assets\img\quiz\WahlOMat.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\img\splashbg.png">
-      <PackagePath>www\assets\img\splashbg.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\translations\de.json">
-      <PackagePath>www\assets\translations\de.json</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\translations\en.json">
-      <PackagePath>www\assets\translations\en.json</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\assets\translations\fr.json">
-      <PackagePath>www\assets\translations\fr.json</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\build\animate.css">
-      <PackagePath>www\build\animate.css</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\build\main.css">
-      <PackagePath>www\build\main.css</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\build\main.js">
-      <PackagePath>www\build\main.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\build\polyfills.js">
-      <PackagePath>www\build\polyfills.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\build\sw-toolbox.js">
-      <PackagePath>www\build\sw-toolbox.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\cordova-js-src\confighelper.js">
       <PackagePath>www\cordova-js-src\confighelper.js</PackagePath>
@@ -445,12 +263,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\css\splashscreen.css">
       <PackagePath>www\css\splashscreen.css</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\index.html">
-      <PackagePath>www\index.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\manifest.json">
-      <PackagePath>www\manifest.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\plugins\cordova-plugin-console\www\console-via-logger.js">
       <PackagePath>www\plugins\cordova-plugin-console\www\console-via-logger.js</PackagePath>
@@ -493,9 +305,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\plugins\ionic-plugin-keyboard\src\windows\KeyboardProxy.js">
       <PackagePath>www\plugins\ionic-plugin-keyboard\src\windows\KeyboardProxy.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\service-worker.js">
-      <PackagePath>www\service-worker.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\www\WinJS\js\base.js">
       <PackagePath>www\WinJS\js\base.js</PackagePath>

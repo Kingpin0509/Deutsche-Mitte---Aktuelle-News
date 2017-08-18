@@ -5,7 +5,7 @@
     <autoResourcePackage qualifier="Scale" />
     <autoResourcePackage qualifier="DXFeatureLevel" />
   </packaging>
-  <index root="\" startIndexAt="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x64\win10\ilc\resources.pri">
+  <index root="\" startIndexAt="C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x86\win10\ilc\resources.pri">
     <default>
       <qualifier name="Language" value="de-DE" />
       <qualifier name="Contrast" value="standard" />
