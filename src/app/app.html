@@ -31,7 +31,7 @@
                             <h2>{{'THEMES' | translate}}</h2>
                         </ion-item-divider>
                     </div>
-                    <button class="animated bounceInLeft" ion-item *ngFor="let page of pagesleftcenter" (tap)="openPage(page)">
+                    <button class="animated bounceInLeft" ion-item *ngFor="let page of pagesleftcenter" (tap)="pushPage(page)">
                     <ion-icon item-start [name]="page.icon"></ion-icon>
                     <h2 ion-text color="primary">{{page.title | translate}}</h2>
                 </button>
@@ -46,7 +46,7 @@
                             <h2>{{'PERSONAL' | translate}}</h2>
                         </ion-item-divider>
                     </div>
-                    <button class="animated rotateInUpLeft" ion-item *ngFor="let page of pagesleftfooter" (tap)="openPage(page)">
+                    <button class="animated rotateInUpLeft" ion-item *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)">
                     <ion-icon item-start [name]="page.icon"></ion-icon>
                     <h2 ion-text color="primary">{{page.title | translate}}</h2>
                     </button>
@@ -102,7 +102,7 @@
                         <h2>{{'SETTINGS' | translate}}</h2>
                     </ion-item-divider>
                 </div>
-                <button class="animated rotateInUpRight" ion-item *ngFor="let page of pagesrightfooter" (tap)="openPage(page)">
+                <button class="animated rotateInUpRight" ion-item *ngFor="let page of pagesrightfooter" (tap)="pushPage(page)">
                     <ion-icon item-start [name]="page.icon"></ion-icon>
                     <h2 ion-text color="primary">{{page.title | translate}}</h2>
                 </button>

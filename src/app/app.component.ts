@@ -7,7 +7,7 @@ import { Storage } from '@ionic/storage';
 import { TranslateService } from 'ng2-translate';
 import { Config } from './app.config';
 import { PlaceholderComponent } from '../pages/placeholder/placeholder-component/placeholder.component';
-import { NewsletterComponent } from '../pages/newsletter/newsletter-component/newsletter.component';
+//import { NewsletterComponent } from '../pages/newsletter/newsletter-component/newsletter.component';
 import { TabsComponent } from '../pages/tabs/tabs-component/tabs.component';
 import { AboutComponent } from '../pages/about/about-component/about.component';
 import { SettingsComponent } from '../pages/settings/settings-component/settings.component';
@@ -70,11 +70,11 @@ export class MyApp {
 			}
 		});
 		this.pagesleft = [
+			{ title: 'HOME', component: TabsComponent, icon: 'home' },
 			{ title: 'POSTS', component: WordpressPosts, icon: 'paper' },
 			{ title: 'CATEGORIES', component: WordpressCategories, icon: 'bookmarks' },
 		];
 		this.pagesleftcenter = [
-			{ title: 'HOME', component: TabsComponent, icon: 'home' },
 			{ title: 'ABOUT', component: AboutComponent, icon: 'information-circle' },
 			{ title: 'PLACEHOLDER', component: PlaceholderComponent, icon: 'book' }
 			//		  { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
@@ -92,7 +92,7 @@ export class MyApp {
 		];
 		this.pagesleftfooter = [
 			{ title: 'QUIZ', component: QuizComponent, icon: 'help' },
-			{ title: 'NEWSLETTER', component: NewsletterComponent, icon: 'help' },
+		//	{ title: 'NEWSLETTER', component: NewsletterComponent, icon: 'help' },
 			{ title: 'FAVORITES', component: WordpressFavorites, icon: 'thumbs-up' }
 		];
 		this.pagesright = [
@@ -124,6 +124,10 @@ export class MyApp {
 		loader.present();
 		this.menuController.close();
 		this.nav.setRoot(page.component);
+  }
+  pushPage(page) {
+		this.menuController.close();
+		this.nav.push(page.component);
 	}
 	openPageStammtische(page) {
 		this.menuController.close();
