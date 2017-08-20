@@ -15,6 +15,7 @@ import { WordpressMenus } from './wordpress-menus/wordpress-menus.component';
 import { WordpressMenu } from './wordpress-menu/wordpress-menu.component';
 import { WordpressMenuItem } from './wordpress-menu-item/wordpress-menu-item.component';
 import { WordpressPostsHome } from './wordpress-posts-home/wordpress-posts-home.component';
+import { WordpressPageDownloads } from './wordpress-page-downloads/wordpress-page-downloads.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { WordpressPostsHome } from './wordpress-posts-home/wordpress-posts-home.
     WordpressMenus,
     WordpressMenu,
     WordpressMenuItem,
+    WordpressPageDownloads,
     WordpressPostsHome
   ],
   imports: [
@@ -52,6 +54,7 @@ import { WordpressPostsHome } from './wordpress-posts-home/wordpress-posts-home.
     WordpressMenus,
     WordpressMenu,
     WordpressMenuItem,
+    WordpressPageDownloads,
     WordpressPostsHome
   ],
   entryComponents:[
@@ -68,6 +71,7 @@ import { WordpressPostsHome } from './wordpress-posts-home/wordpress-posts-home.
     WordpressMenus,
     WordpressMenu,
     WordpressMenuItem,
+    WordpressPageDownloads,
     WordpressPostsHome
   ]
 })

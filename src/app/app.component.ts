@@ -30,7 +30,8 @@ import { QuizComponent } from '../pages/quiz/quiz-component/quiz';
 // import { ActionSheetComponent } from '../pages/action-sheet/action-sheet-component/action-sheet.component';
 // import { GoogleMapsComponent } from '../pages/google-maps/google-maps-component/google-maps.component';
 // import { FacebookConnectComponent } from '../pages/facebook-connect/facebook-connect-component/facebook-connect.component';
-// import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';
+import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';
+import { WordpressPageDownloads } from '../pages/wordpress/wordpress-page-downloads/wordpress-page-downloads.component';
 // import { LoginComponent } from '../pages/login/login-component/login.component';
 // import { FirebaseHomeComponent } from '../pages/firebase/firebase-home/firebase-home.component';
 
@@ -72,7 +73,9 @@ export class MyApp {
 		this.pagesleft = [
 			{ title: 'HOME', component: TabsComponent, icon: 'home' },
 			{ title: 'POSTS', component: WordpressPosts, icon: 'paper' },
-			{ title: 'CATEGORIES', component: WordpressCategories, icon: 'bookmarks' },
+      { title: 'CATEGORIES', component: WordpressCategories, icon: 'bookmarks' },
+      { title: 'PAGES', component: WordpressPages, icon: 'bookmarks' },
+      { title: 'DOWNLOADS', component: WordpressPageDownloads, icon: 'bookmarks' },
 		];
 		this.pagesleftcenter = [
 			{ title: 'ABOUT', component: AboutComponent, icon: 'information-circle' },
@@ -138,13 +141,14 @@ export class MyApp {
 		this.nav.push(YoutubeChannelComponent);
 	}
 }
+
 	// openPageSettings(page) {
 	// 	this.menuController.close();
 	// 	this.nav.push(SettingsComponent);
 	// }
 	// openPageFavorites(page) {
 	// 	this.menuController.close();
-	// 	this.nav.push(WordpressFavorites);
+	// 	this.nav.push(deutsche-mitte.de/wp-content/uploads/2017);
 	// }
 	// openPagePosts(page) {
 	// 	this.menuController.close();
