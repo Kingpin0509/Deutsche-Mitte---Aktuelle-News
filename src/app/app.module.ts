@@ -12,6 +12,7 @@ import { YoutubeModule } from '../pages/youtube/youtube.module';
 import { AboutModule } from '../pages/about/about.module';
 // Module Example: Use the PlaceholderModule for any new App Module
 import { PlaceholderModule } from '../pages/placeholder/placeholder.module';
+import { DownloadsModule } from '../pages/downloads/downloads.module';
 import { NewsletterModule } from '../pages/newsletter/newsletter.module';
 import { StammtischeModule } from '../pages/stammtische/stammtische.module';
 import { QuizModule } from '../pages/quiz/quiz.module';
@@ -60,6 +61,7 @@ import { MyApp } from './app.component';
     //FirebaseModule,
     NewsletterModule,
     QuizModule,
+    DownloadsModule,
     StammtischeModule
   ],
   bootstrap: [IonicApp],

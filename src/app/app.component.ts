@@ -7,6 +7,7 @@ import { Storage } from '@ionic/storage';
 import { TranslateService } from 'ng2-translate';
 import { Config } from './app.config';
 import { PlaceholderComponent } from '../pages/placeholder/placeholder-component/placeholder.component';
+import { DownloadsComponent } from '../pages/downloads/downloads-component/downloads.component';
 //import { NewsletterComponent } from '../pages/newsletter/newsletter-component/newsletter.component';
 import { TabsComponent } from '../pages/tabs/tabs-component/tabs.component';
 import { AboutComponent } from '../pages/about/about-component/about.component';
@@ -30,8 +31,8 @@ import { QuizComponent } from '../pages/quiz/quiz-component/quiz';
 // import { ActionSheetComponent } from '../pages/action-sheet/action-sheet-component/action-sheet.component';
 // import { GoogleMapsComponent } from '../pages/google-maps/google-maps-component/google-maps.component';
 // import { FacebookConnectComponent } from '../pages/facebook-connect/facebook-connect-component/facebook-connect.component';
-import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';
-import { WordpressPageDownloads } from '../pages/wordpress/wordpress-page-downloads/wordpress-page-downloads.component';
+//import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';
+//import { WordpressPageDownloads } from '../pages/wordpress/wordpress-page-downloads/wordpress-page-downloads.component';
 // import { LoginComponent } from '../pages/login/login-component/login.component';
 // import { FirebaseHomeComponent } from '../pages/firebase/firebase-home/firebase-home.component';
 
@@ -74,12 +75,13 @@ export class MyApp {
 			{ title: 'HOME', component: TabsComponent, icon: 'home' },
 			{ title: 'POSTS', component: WordpressPosts, icon: 'paper' },
       { title: 'CATEGORIES', component: WordpressCategories, icon: 'bookmarks' },
-      { title: 'PAGES', component: WordpressPages, icon: 'bookmarks' },
-      { title: 'DOWNLOADS', component: WordpressPageDownloads, icon: 'bookmarks' },
+      //{ title: 'PAGES', component: WordpressPages, icon: 'bookmarks' },
+      //{ title: 'DOWNLOADS', component: WordpressPageDownloads, icon: 'bookmarks' },
 		];
 		this.pagesleftcenter = [
 			{ title: 'ABOUT', component: AboutComponent, icon: 'information-circle' },
-			{ title: 'PLACEHOLDER', component: PlaceholderComponent, icon: 'book' }
+      { title: 'PLACEHOLDER', component: PlaceholderComponent, icon: 'book' },
+      { title: 'DOWNLOADS', component: DownloadsComponent, icon: 'bookmarks' }
 			//		  { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
 			//		  { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
 			//		  { title: 'FEEDS', component: FeedCategoriesComponent, icon: 'logo-rss',},
