@@ -20,11 +20,11 @@
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Deutsche-Mitte---Aktuelle-News2\platforms\windows\build\windows\Release\x64\win10\AppX</LayoutDir>
     <RegisteredManifestChecksum>72625C238FBC1BDDE66442886E810520AB8557E2FB9E06958A04935B422E8908</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino_1.54.0.0_x64__e0h9fbhyv9ebc</RegisteredPackageMoniker>
+    <RegisteredPackageMoniker>17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino_2.00.0.0_x64__e0h9fbhyv9ebc</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino_e0h9fbhyv9ebc!de.dm.news</RegisteredUserModeAppID>
     <RegisteredPackageID>17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=47AF69ED-2732-47DA-B13E-0E7FFFE045CA</RegisteredPackagePublisher>
-    <RegisteredVersion>1.54.0.0</RegisteredVersion>
+    <RegisteredVersion>2.00.0.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
