@@ -24747,6 +24747,18 @@ audio {
   background: #005397;
 }
 
+h2 {
+  margin-top: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+ion-label.label {
+  margin-top: 1.6rem;
+  margin-bottom: 1rem;
+}
+
 .toolbar-title {
   color: #dddddd;
   display: block;
@@ -24781,11 +24793,11 @@ audio {
 }
 
 .dmo-light {
-  background: #FF8B00;
+  background: #ff8b00;
 }
 
 .dmo-dark {
-  background: #FA7D09;
+  background: #fa7d09;
 }
 
 .item-divider {
@@ -25407,16 +25419,27 @@ audio {
   background-color: gainsboro;
 }
 
-.posts-avatar {
-  max-width: 6%;
+ion-list-header.header {
+  margin-bottom: 0px;
 }
 
-.posts-content {
-  max-width: 79%;
+h2.header {
+  font-family: "Oswald", sans-serif;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  color: #00498a;
 }
 
-.posts-date {
-  max-width: 15%;
+ion-item.content {
+  font-family: "Calibri", sans-serif;
+  color: #ffa016;
+  margin-top: -10px;
+  padding-left: 25px;
+}
+
+ion-note.date {
+  font-style: italic;
+  font-size: small;
 }
 
 .youtube-video iframe {
