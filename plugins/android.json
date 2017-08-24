@@ -23,7 +23,7 @@
         },
         "cordova-plugin-facebook4": {
             "APP_ID": "131001554119757",
-            "APP_NAME": "IonicFrameworkApp",
+            "APP_NAME": "Deutsche Mitte - Aktuell",
             "PACKAGE_NAME": "de.dm.news"
         },
         "cordova-plugin-inappbrowser": {

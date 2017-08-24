@@ -79,7 +79,7 @@
     "is_top_level": true,
     "variables": {
       "APP_ID": "131001554119757",
-      "APP_NAME": "IonicFrameworkApp"
+      "APP_NAME": "Deutsche Mitte - Aktuell"
     }
   },
   "cordova-plugin-compat": {

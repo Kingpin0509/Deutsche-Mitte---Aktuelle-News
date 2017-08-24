@@ -81,7 +81,7 @@
         {
             "variables": {
                 "APP_ID": "131001554119757",
-                "APP_NAME": "IonicFrameworkApp"
+                "APP_NAME": "Deutsche Mitte - Aktuell"
             },
             "locator": "cordova-plugin-facebook4@1.9.1",
             "id": "cordova-plugin-facebook4"
@@ -96,7 +96,7 @@
             "cordova-plugin-device": {},
             "cordova-plugin-facebook4": {
                 "APP_ID": "131001554119757",
-                "APP_NAME": "IonicFrameworkApp"
+                "APP_NAME": "Deutsche Mitte - Aktuell"
             },
             "cordova-plugin-inappbrowser": {},
             "cordova-plugin-splashscreen": {},
