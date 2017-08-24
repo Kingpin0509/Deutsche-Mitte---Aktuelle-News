@@ -34,7 +34,7 @@ import { QuizComponent } from "../pages/quiz/quiz-component/quiz";
 //import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';
 //import { WordpressPageDownloads } from '../pages/wordpress/wordpress-page-downloads/wordpress-page-downloads.component';
 // import { LoginComponent } from '../pages/login/login-component/login.component';
-// import { FirebaseHomeComponent } from '../pages/firebase/firebase-home/firebase-home.component';
+import { FirebaseHomeComponent } from "../pages/firebase/firebase-home/firebase-home.component";
 
 @Component({
   templateUrl: "./app.html"
@@ -142,6 +142,10 @@ export class MyApp {
     this.menuController.close();
     this.nav.push(YoutubeChannelComponent);
   }
+  openPageFirebase(page) {
+    this.menuController.close();
+    this.nav.push(FirebaseHomeComponent);
+  }
 }
 
 // openPageSettings(page) {
@@ -167,8 +171,4 @@ export class MyApp {
 // openPageFacebook(page) {
 // 	this.menuController.close();
 // 	this.nav.push(FacebookConnectComponent);
-// }
-// openPageFirebase(page) {
-// 	this.menuController.close();
-// 	this.nav.push(FirebaseHomeComponent);
 // }

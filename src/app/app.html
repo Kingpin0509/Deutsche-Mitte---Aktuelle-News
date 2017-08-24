@@ -16,14 +16,14 @@
             </ion-item-divider>
           </div>
           <button class="animated bounceInLeft" ion-item *ngFor="let page of pagesleft" (tap)="openPage(page)">
-                        <ion-icon item-start [name]="page.icon"></ion-icon>
-                        <h2 ion-text color="primary">{{page.title | translate}}</h2>
-                        </button>
+            <ion-icon item-start [name]="page.icon"></ion-icon>
+            <h2 ion-text color="primary">{{page.title | translate}}</h2>
+          </button>
           <button outline class="animated bounceInLeft" ion-item (tap)="openPageYoutube()">
-                        <ion-icon name="logo-youtube" class="youtube" item-start></ion-icon>
-                        <h2 ion-text color="primary">{{'YOUTUBE_CHANNEL' | translate}}</h2>
-                        <ion-note item-end>DM</ion-note>
-                    </button>
+          <ion-icon name="logo-youtube" class="youtube" item-start></ion-icon>
+          <h2 ion-text color="primary">{{'YOUTUBE_CHANNEL' | translate}}</h2>
+          <ion-note item-end>DM</ion-note>
+          </button>
         </ion-item-group>
         <ion-item-group margin-top>
           <div class="fade-in-left">
@@ -32,9 +32,9 @@
             </ion-item-divider>
           </div>
           <button class="animated bounceInLeft" ion-item *ngFor="let page of pagesleftcenter" (tap)="pushPage(page)">
-                    <ion-icon item-start [name]="page.icon"></ion-icon>
-                    <h2 ion-text color="primary">{{page.title | translate}}</h2>
-                </button>
+            <ion-icon item-start [name]="page.icon"></ion-icon>
+            <h2 ion-text color="primary">{{page.title | translate}}</h2>
+          </button>
         </ion-item-group>
       </ion-list>
     </ion-content>
@@ -47,17 +47,17 @@
             </ion-item-divider>
           </div>
           <button class="animated rotateInUpLeft" ion-item *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)">
-                    <ion-icon item-start [name]="page.icon"></ion-icon>
-                    <h2 ion-text color="primary">{{page.title | translate}}</h2>
-                    </button>
+            <ion-icon item-start [name]="page.icon"></ion-icon>
+            <h2 ion-text color="primary">{{page.title | translate}}</h2>
+            </button>
           <!-- <ion-item ion-item (tap)="openPageFacebook()">
-                    <ion-icon name="logo-facebook" item-left></ion-icon>
-                    Facebook
-                </ion-item>
-                <ion-item ion-item (tap)="openPageFirebase()">
-                    <ion-icon name="flame" item-left></ion-icon>
-                    Firebase
-                </ion-item> -->
+<ion-icon name="logo-facebook" item-left></ion-icon>
+Facebook
+</ion-item>-->
+          <button ion-item (tap)="openPageFirebase()">
+            <ion-icon name="flame" item-left></ion-icon>
+            Firebase
+          </button>
         </ion-item-group>
       </ion-list>
     </ion-footer>
@@ -82,8 +82,8 @@
           <h2>{{'DMVENUE' | translate}}</h2>
         </ion-item-divider>
         <button class="animated bounceInRight" ion-item (tap)="openPageStammtische()">
-                    <img src="assets/img/menu/Banner-DM-Stammtische.gif" />
-                </button>
+          <img src="assets/img/menu/Banner-DM-Stammtische.gif" />
+        </button>
         <ion-item-divider class="fade-in-right dmo-dark" ion-item>
           <h2>BUNDESTAGSWAHL 24.09.2017</h2>
         </ion-item-divider>
@@ -103,9 +103,9 @@
           </ion-item-divider>
         </div>
         <button class="animated rotateInUpRight" ion-item *ngFor="let page of pagesrightfooter" (tap)="pushPage(page)">
-                    <ion-icon item-start [name]="page.icon"></ion-icon>
-                    <h2 ion-text color="primary">{{page.title | translate}}</h2>
-                </button>
+          <ion-icon item-start [name]="page.icon"></ion-icon>
+          <h2 ion-text color="primary">{{page.title | translate}}</h2>
+        </button>
       </ion-item-group>
     </ion-list>
   </ion-footer>
