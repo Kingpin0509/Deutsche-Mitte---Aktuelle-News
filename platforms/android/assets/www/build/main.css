@@ -25166,6 +25166,31 @@ ion-label.label {
   max-height: 60%;
 }
 
+h2.header {
+  font-family: "Oswald", sans-serif;
+  color: #00498a;
+}
+
+h2.footer {
+  font-family: "Oswald", sans-serif;
+  color: #00498a;
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  color: #00498a;
+}
+
+p {
+  font-family: "Calibri", sans-serif;
+  color: #ffa016;
+}
+
+i {
+  font-style: italic;
+  font-size: small;
+}
+
 .ios flash-card,
 .md flash-card {
   /*
@@ -25419,12 +25444,23 @@ ion-label.label {
   background-color: gainsboro;
 }
 
+h1.header {
+  font-family: "Oswald", sans-serif;
+  color: #00498a;
+}
+
+p.content {
+  font-family: "Calibri", sans-serif;
+  color: #ffa016;
+}
+
 ion-list-header.header {
-  margin-bottom: 0px;
+  margin: 0px;
 }
 
 h2.header {
   font-family: "Oswald", sans-serif;
+  margin: 10px 10px 0px 1px;
   margin-top: 2px;
   margin-bottom: 0px;
   color: #00498a;
@@ -25433,8 +25469,8 @@ h2.header {
 ion-item.content {
   font-family: "Calibri", sans-serif;
   color: #ffa016;
-  margin-top: -10px;
-  padding-left: 25px;
+  margin: -10px 5px 0px 10px;
+  padding: 0px 15px 0px 10px;
 }
 
 ion-note.date {
@@ -25442,9 +25478,29 @@ ion-note.date {
   font-size: small;
 }
 
+h2.header {
+  font-family: "Oswald", sans-serif;
+  color: #00498a;
+}
+
+p.content {
+  font-family: "Calibri", sans-serif;
+  color: #ffa016;
+}
+
 .youtube-video iframe {
   height: 75%;
   width: 100%;
+}
+
+h2.header {
+  font-family: "Oswald", sans-serif;
+  color: #00498a;
+}
+
+p.content {
+  font-family: "Calibri", sans-serif;
+  color: #ffa016;
 }
 
 .youtube-video iframe {

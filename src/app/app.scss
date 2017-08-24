@@ -60,7 +60,14 @@ ion-label.label {
   color: #dddddd;
   background-color: transparent;
 }
-
+.footer::before, .tabs[tabsPlacement="bottom"] > .tabbar::before{
+  height: 6px;
+}
+.tabs .tab-button[aria-selected=true] {
+  color: #00498a;
+  padding: 0;
+  background-color: rgba(121, 111, 101, 0.21);
+}
 .tab-button-icon {
   min-width: 2.4rem;
   font-size: 2.4rem;
@@ -81,6 +88,13 @@ ion-label.label {
 
 .dmo-dark {
   background: #fa7d09;
+}
+
+ion-card-content {
+  background: #f3f3f3;
+}
+.note {
+  color: #a3a3a3;
 }
 
 .item-divider {
