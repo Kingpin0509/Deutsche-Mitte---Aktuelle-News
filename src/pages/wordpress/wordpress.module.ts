@@ -1,21 +1,21 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { SharedModule } from '../../app/shared/shared.module';
-import { WordpressHome } from './wordpress-home/wordpress-home.component';
-import { WordpressLogin } from './wordpress-login/wordpress-login.component';
-import { WordpressPosts } from './wordpress-posts/wordpress-posts.component';
-import { WordpressPost } from './wordpress-post/wordpress-post.component';
-import { WordpressFeatureMedia } from './wordpress-feature-media/wordpress-feature-media.component';
-import { WordpressCategories } from './wordpress-categories/wordpress-categories.component';
-import { WordpressTags } from './wordpress-tags/wordpress-tags.component';
-import { WordpressFavorites } from './wordpress-favorites/wordpress-favorites.component';
-import { WordpressPages } from './wordpress-pages/wordpress-pages.component';
-import { WordpressPage } from './wordpress-page/wordpress-page.component';
-import { WordpressMenus } from './wordpress-menus/wordpress-menus.component';
-import { WordpressMenu } from './wordpress-menu/wordpress-menu.component';
-import { WordpressMenuItem } from './wordpress-menu-item/wordpress-menu-item.component';
-import { WordpressPostsHome } from './wordpress-posts-home/wordpress-posts-home.component';
-
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { SharedModule } from "../../app/shared/shared.module";
+import { WordpressHome } from "./wordpress-home/wordpress-home.component";
+import { WordpressLogin } from "./wordpress-login/wordpress-login.component";
+import { WordpressPosts } from "./wordpress-posts/wordpress-posts.component";
+import { WordpressPost } from "./wordpress-post/wordpress-post.component";
+import { WordpressFeatureMedia } from "./wordpress-feature-media/wordpress-feature-media.component";
+import { WordpressCategories } from "./wordpress-categories/wordpress-categories.component";
+import { WordpressTags } from "./wordpress-tags/wordpress-tags.component";
+import { WordpressFavorites } from "./wordpress-favorites/wordpress-favorites.component";
+import { WordpressPages } from "./wordpress-pages/wordpress-pages.component";
+import { WordpressPage } from "./wordpress-page/wordpress-page.component";
+import { WordpressMenus } from "./wordpress-menus/wordpress-menus.component";
+import { WordpressMenu } from "./wordpress-menu/wordpress-menu.component";
+import { WordpressMenuItem } from "./wordpress-menu-item/wordpress-menu-item.component";
+import { WordpressPostsHome } from "./wordpress-posts-home/wordpress-posts-home.component";
+import { WordpressPageDownloads } from "./wordpress-page-downloads/wordpress-page-downloads.component";
 
 @NgModule({
   declarations: [
@@ -32,12 +32,10 @@ import { WordpressPostsHome } from './wordpress-posts-home/wordpress-posts-home.
     WordpressMenus,
     WordpressMenu,
     WordpressMenuItem,
+    WordpressPageDownloads,
     WordpressPostsHome
   ],
-  imports: [
-  	CommonModule,
-  	SharedModule
-  ],
+  imports: [CommonModule, SharedModule],
   exports: [
     WordpressHome,
     WordpressLogin,
@@ -52,12 +50,13 @@ import { WordpressPostsHome } from './wordpress-posts-home/wordpress-posts-home.
     WordpressMenus,
     WordpressMenu,
     WordpressMenuItem,
+    WordpressPageDownloads,
     WordpressPostsHome
   ],
-  entryComponents:[
+  entryComponents: [
     WordpressHome,
     WordpressLogin,
-  	WordpressPosts,
+    WordpressPosts,
     WordpressPost,
     WordpressFeatureMedia,
     WordpressCategories,
@@ -68,6 +67,7 @@ import { WordpressPostsHome } from './wordpress-posts-home/wordpress-posts-home.
     WordpressMenus,
     WordpressMenu,
     WordpressMenuItem,
+    WordpressPageDownloads,
     WordpressPostsHome
   ]
 })

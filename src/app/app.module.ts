@@ -1,22 +1,24 @@
-import { NgModule, ErrorHandler } from '@angular/core';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { AnimationService } from 'css-animator';
-import { SharedModule } from './shared/shared.module'
-import { HomeModule } from '../pages/home/home.module';
-import { TabsModule } from '../pages/tabs/tabs.module';
-import { WordpressModule } from '../pages/wordpress/wordpress.module';
-import { SlidesModule } from '../pages/slides/slides.module';
-import { SettingsModule } from '../pages/settings/settings.module';
-import { FeedsModule } from '../pages/feeds/feeds.module';
-import { YoutubeModule } from '../pages/youtube/youtube.module';
-import { AboutModule } from '../pages/about/about.module';
+import { NgModule, ErrorHandler } from "@angular/core";
+import { IonicApp, IonicModule, IonicErrorHandler } from "ionic-angular";
+import { AnimationService } from "css-animator";
+import { SharedModule } from "./shared/shared.module";
+import { HomeModule } from "../pages/home/home.module";
+import { TabsModule } from "../pages/tabs/tabs.module";
+import { WordpressModule } from "../pages/wordpress/wordpress.module";
+import { SlidesModule } from "../pages/slides/slides.module";
+import { SettingsModule } from "../pages/settings/settings.module";
+import { FeedsModule } from "../pages/feeds/feeds.module";
+import { YoutubeModule } from "../pages/youtube/youtube.module";
+import { AboutModule } from "../pages/about/about.module";
 // Module Example: Use the PlaceholderModule for any new App Module
-import { PlaceholderModule } from '../pages/placeholder/placeholder.module';
-import { StammtischeModule } from '../pages/stammtische/stammtische.module';
-import { QuizModule } from '../pages/quiz/quiz.module';
+import { PlaceholderModule } from "../pages/placeholder/placeholder.module";
+import { DownloadsModule } from "../pages/downloads/downloads.module";
+import { NewsletterModule } from "../pages/newsletter/newsletter.module";
+import { StammtischeModule } from "../pages/stammtische/stammtische.module";
+import { QuizModule } from "../pages/quiz/quiz.module";
 //import { QuizComponent } from '../pages/quiz/quiz-component/quiz';
 //import { FlashCardComponent } from '../pages/quiz/flash-card/flash-card';
-import { Data } from '../providers/data';
+import { Data } from "../providers/data";
 //import { BarcodeScannerModule } from '../pages/barcode-scanner/barcode-scanner.module';
 //import { GoogleMapsModule } from '../pages/google-maps/google-maps.module';
 //import { GridModule } from '../pages/grid/grid.module';
@@ -28,12 +30,10 @@ import { Data } from '../providers/data';
 //import { LoginModule } from '../pages/login/login.module';
 //import { ChartsModule } from '../pages/charts/charts.module';
 //import { FirebaseModule } from '../pages/firebase/firebase.module';
-import { MyApp } from './app.component';
+import { MyApp } from "./app.component";
 
 @NgModule({
-  declarations: [
-    MyApp
-  ],
+  declarations: [MyApp],
   imports: [
     IonicModule.forRoot(MyApp),
     SharedModule,
@@ -57,13 +57,17 @@ import { MyApp } from './app.component';
     //LoginModule,
     //ChartsModule,
     //FirebaseModule,
+    NewsletterModule,
     QuizModule,
+    DownloadsModule,
     StammtischeModule
   ],
   bootstrap: [IonicApp],
-  entryComponents: [
-    MyApp
-  ],
-  providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }, Data, AnimationService]
+  entryComponents: [MyApp],
+  providers: [
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    Data,
+    AnimationService
+  ]
 })
-export class AppModule { }
+export class AppModule {}

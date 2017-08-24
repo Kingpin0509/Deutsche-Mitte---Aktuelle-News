@@ -1,43 +1,44 @@
-import { Component, OnInit } from '@angular/core';
-import { NavController, LoadingController } from 'ionic-angular';
+import { Component, OnInit } from "@angular/core";
+import { NavController, LoadingController } from "ionic-angular";
 
-import { WordpressService } from '../shared/services/wordpress.service';
-import { WordpressPage } from '../wordpress-page/wordpress-page.component';
+import { WordpressService } from "../shared/services/wordpress.service";
+import { WordpressPage } from "../wordpress-page/wordpress-page.component";
 
 @Component({
-	templateUrl: './wordpress-pages.html',
-	providers: [ WordpressService ]
+  templateUrl: "./wordpress-pages.html",
+  providers: [WordpressService]
 })
 export class WordpressPages implements OnInit {
+  pages: any;
 
-	pages: any;
+  constructor(
+    private wordpressService: WordpressService,
+    private navController: NavController,
+    private loadingController: LoadingController
+  ) {}
 
-	constructor(
-		private wordpressService: WordpressService,
-		private navController: NavController,
-		private loadingController: LoadingController) {}
+  ngOnInit() {
+    this.getPages();
+  }
 
-	ngOnInit() {
-		this.getPages();
-	}
+  getPages() {
+    let loader = this.loadingController.create({
+      content: "Bitte Warten"
+    });
 
-	getPages() {
-		let loader = this.loadingController.create({
-			content: "Bitte Warten"
-		});
+    loader.present();
+    this.wordpressService.getPages().subscribe(
+      result => {
+        this.pages = result;
+      },
+      error => console.log(error),
+      () => loader.dismiss()
+    );
+  }
 
-		loader.present();
-		this.wordpressService.getPages()
-		.subscribe(result => {
-			this.pages = result;
-		},
-		error => console.log(error),
-    () => loader.dismiss());
-	}
-
-	loadPage(page) {
-		this.navController.push(WordpressPage, {
-			page: page
-		});
-	}
+  loadPage(page) {
+    this.navController.push(WordpressPage, {
+      page: page
+    });
+  }
 }

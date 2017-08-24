@@ -1,7 +1,6 @@
-import { Component } from '@angular/core';
-
+import { Component } from "@angular/core";
 
 @Component({
-    templateUrl: 'grid.html'
+  templateUrl: "grid.html"
 })
-export class GridComponent { }
+export class GridComponent {}

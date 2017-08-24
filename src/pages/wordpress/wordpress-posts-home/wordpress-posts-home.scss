@@ -1,11 +1,21 @@
-.posts-avatar {
-    max-width: 10%;
+ion-list-header.header {
+  margin-bottom: 0px;
 }
 
-.posts-content {
-    max-width: 78%;
+h2.header {
+  font-family: "Oswald", sans-serif;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  color: #00498a;
 }
 
-.posts-date {
-    max-width: 12%;
+ion-item.content {
+  font-family: "Calibri", sans-serif;
+  color: #ffa016;
+  margin-top: -10px;
+  padding-left: 25px;
+}
+ion-note.date {
+  font-style: italic;
+  font-size: small;
 }

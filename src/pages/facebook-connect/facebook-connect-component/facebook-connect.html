@@ -1,7 +1,7 @@
 <ion-content scroll="false" class="page-welcome">
   <div class="facebook-bg"></div>
   <div class="facebook-info">
-  <div *ngIf="!user" class="facebook-logo"></div>
+    <div *ngIf="!user" class="facebook-logo"></div>
     <div *ngIf="user && user.picture" class="facebook-logo" [ngStyle]="{'background-image': 'url(' + user.picture + ')'}"></div>
     <div class="facebook-intro">
       <span *ngIf="!user">Facebook</span>
