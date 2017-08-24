@@ -14,8 +14,8 @@
 <ion-content class="youtube-video">
   <iframe *ngIf="video.id.videoId" [src]="videoUrl" frameborder="0" allowfullscreen="true"></iframe>
   <div padding>
-    <h2>{{video.snippet.title}}</h2>
+    <h2 class="header">{{video.snippet.title}}</h2>
     <p>Veröffentlich von <strong>{{video.snippet.channelTitle}}</strong></p>
-    <p [innerHtml]="video.snippet.description"></p>
+    <p class="content" [innerHtml]="video.snippet.description"></p>
   </div>
 </ion-content>

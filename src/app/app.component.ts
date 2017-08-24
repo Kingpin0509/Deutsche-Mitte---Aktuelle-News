@@ -31,8 +31,8 @@ import { QuizComponent } from "../pages/quiz/quiz-component/quiz";
 // import { ActionSheetComponent } from '../pages/action-sheet/action-sheet-component/action-sheet.component';
 // import { GoogleMapsComponent } from '../pages/google-maps/google-maps-component/google-maps.component';
 // import { FacebookConnectComponent } from '../pages/facebook-connect/facebook-connect-component/facebook-connect.component';
-//import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';
-//import { WordpressPageDownloads } from '../pages/wordpress/wordpress-page-downloads/wordpress-page-downloads.component';
+// import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';
+// import { WordpressPageDownloads } from '../pages/wordpress/wordpress-page-downloads/wordpress-page-downloads.component';
 // import { LoginComponent } from '../pages/login/login-component/login.component';
 // import { FirebaseHomeComponent } from '../pages/firebase/firebase-home/firebase-home.component';
 

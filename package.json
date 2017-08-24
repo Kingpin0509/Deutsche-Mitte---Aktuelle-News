@@ -1,7 +1,7 @@
 {
   "name": "dmaktuell",
   "author": "Michael Humann",
-  "version": "2.00.0",
+  "version": "2.01.0",
   "homepage": "http://news.westweedtzerecords.biz",
   "private": true,
   "scripts": {
@@ -37,7 +37,7 @@
     "chart.js": "^2.5.0",
     "cordova-android": "^6.2.3",
     "cordova-ios": "^4.4.0",
-    "cordova-ios-plugin-no-export-compliance": "0.0.2",
+    "cordova-ios-plugin-no-export-compliance": "0.0.5",
     "cordova-plugin-console": "1.0.5",
     "cordova-plugin-crosswalk-webview": "~2.3.0",
     "cordova-plugin-device": "1.1.4",

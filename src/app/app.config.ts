@@ -7,7 +7,7 @@ export class Config {
   public wordpressMenusNavigation = false;
   public feedsUrl = "./assets/data/feeds.json";
   public feedsCategoryUrl = "./assets/data/feeds-category.json";
-  public youtubeKey = "AIzaSyAWCp9T5itKF--J1F09hOdKX0bZPNVz6Gw";
+  public youtubeKey = "AIzaSyBECpDIgY18MBmc4Uoxpo4L6nX45HFAtIA";
   public youtubeApiUrl = "https://www.googleapis.com/youtube/v3/";
   public youtubeUsername = "Deutsche Mitte";
   public youtubeChannelId = "UCLC_9zmyYs5wFX46KBJz95w";

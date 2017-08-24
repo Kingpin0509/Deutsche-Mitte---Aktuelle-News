@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 import { NavController, NavParams, LoadingController } from "ionic-angular";
-
 import { YoutubeService } from "../shared/services/youtube.service";
 import { YoutubeChannelVideoComponent } from "../youtube-channel-video/youtube-channel-video.component";
 
@@ -11,21 +10,18 @@ import { YoutubeChannelVideoComponent } from "../youtube-channel-video/youtube-c
 export class YoutubeChannelComponent implements OnInit {
   videos: any;
   loader: any;
-
   constructor(
     private navParams: NavParams,
     private youtubeService: YoutubeService,
     private navController: NavController,
     private loadingController: LoadingController
   ) {}
-
   ngOnInit() {
     this.loader = this.loadingController.create({
       content: "Bitte Warten!"
     });
     this.getChannel();
   }
-
   getChannel() {
     this.youtubeService.getChannel().subscribe(
       result => {
@@ -37,7 +33,6 @@ export class YoutubeChannelComponent implements OnInit {
       }
     );
   }
-
   loadVideo(video) {
     this.navController.push(YoutubeChannelVideoComponent, {
       video: video
