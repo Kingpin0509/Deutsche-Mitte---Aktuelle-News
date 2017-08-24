@@ -1,5 +1,0 @@
-Scale=125
-Scale=150
-Scale=200
-Scale=240
-Scale=400
