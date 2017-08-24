@@ -1,0 +1,1417 @@
+[
+    {
+        "outputFile": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\incremental\\mergeX86ReleaseResources\\merged.dir\\values-it\\values-it.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 66,
+                    "endOffset": 117
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 0,
+                        "startOffset": 1268,
+                        "endColumn": 62,
+                        "endOffset": 1330
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 122,
+                    "endColumn": 70,
+                    "endOffset": 188
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 0,
+                        "startOffset": 1515,
+                        "endColumn": 66,
+                        "endOffset": 1581
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 193,
+                    "endColumn": 65,
+                    "endOffset": 254
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 0,
+                        "startOffset": 1331,
+                        "endColumn": 61,
+                        "endOffset": 1392
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 259,
+                    "endColumn": 69,
+                    "endOffset": 324
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 0,
+                        "startOffset": 2433,
+                        "endColumn": 65,
+                        "endOffset": 2498
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 329,
+                    "endColumn": 68,
+                    "endOffset": 393
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 0,
+                        "startOffset": 2499,
+                        "endColumn": 64,
+                        "endOffset": 2563
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 398,
+                    "endColumn": 66,
+                    "endOffset": 460
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 0,
+                        "startOffset": 2081,
+                        "endColumn": 62,
+                        "endOffset": 2143
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 465,
+                    "endColumn": 64,
+                    "endOffset": 525
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 0,
+                        "startOffset": 1816,
+                        "endColumn": 60,
+                        "endOffset": 1876
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 530,
+                    "endColumn": 74,
+                    "endOffset": 600
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 0,
+                        "startOffset": 2010,
+                        "endColumn": 70,
+                        "endOffset": 2080
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 605,
+                    "endColumn": 69,
+                    "endOffset": 670
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 0,
+                        "startOffset": 1877,
+                        "endColumn": 65,
+                        "endOffset": 1942
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 675,
+                    "endColumn": 70,
+                    "endOffset": 741
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 0,
+                        "startOffset": 1943,
+                        "endColumn": 66,
+                        "endOffset": 2009
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 746,
+                    "endColumn": 55,
+                    "endOffset": 797
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_content_strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 0,
+                        "startOffset": 110,
+                        "endColumn": 51,
+                        "endOffset": 161
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 802,
+                    "endColumn": 75,
+                    "endOffset": 873
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_content_strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 224,
+                        "endColumn": 71,
+                        "endOffset": 295
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 878,
+                    "endColumn": 65,
+                    "endOffset": 939
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_content_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 0,
+                        "startOffset": 162,
+                        "endColumn": 61,
+                        "endOffset": 223
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 944,
+                    "endColumn": 102,
+                    "endOffset": 1042
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 0,
+                        "startOffset": 2988,
+                        "endColumn": 98,
+                        "endOffset": 3086
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1047,
+                    "endColumn": 111,
+                    "endOffset": 1154
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 43,
+                        "startColumn": 0,
+                        "startOffset": 2758,
+                        "endColumn": 107,
+                        "endOffset": 2865
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1159,
+                    "endColumn": 60,
+                    "endOffset": 1215
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 0,
+                        "startOffset": 1058,
+                        "endColumn": 56,
+                        "endOffset": 1114
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1220,
+                    "endColumn": 58,
+                    "endOffset": 1274
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 0,
+                        "startOffset": 823,
+                        "endColumn": 54,
+                        "endOffset": 877
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1279,
+                    "endColumn": 64,
+                    "endOffset": 1339
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 0,
+                        "startOffset": 580,
+                        "endColumn": 60,
+                        "endOffset": 640
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1344,
+                    "endColumn": 60,
+                    "endOffset": 1400
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 0,
+                        "startOffset": 766,
+                        "endColumn": 56,
+                        "endOffset": 822
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1405,
+                    "endColumn": 61,
+                    "endOffset": 1462
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 0,
+                        "startOffset": 878,
+                        "endColumn": 57,
+                        "endOffset": 935
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1467,
+                    "endColumn": 65,
+                    "endOffset": 1528
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 0,
+                        "startOffset": 936,
+                        "endColumn": 61,
+                        "endOffset": 997
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1533,
+                    "endColumn": 58,
+                    "endOffset": 1587
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 301,
+                        "endColumn": 54,
+                        "endOffset": 355
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1592,
+                    "endColumn": 59,
+                    "endOffset": 1647
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 0,
+                        "startOffset": 710,
+                        "endColumn": 55,
+                        "endOffset": 765
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1652,
+                    "endColumn": 61,
+                    "endOffset": 1709
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 0,
+                        "startOffset": 522,
+                        "endColumn": 57,
+                        "endOffset": 579
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1714,
+                    "endColumn": 62,
+                    "endOffset": 1772
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 0,
+                        "startOffset": 1115,
+                        "endColumn": 58,
+                        "endOffset": 1173
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1777,
+                    "endColumn": 63,
+                    "endOffset": 1836
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 0,
+                        "startOffset": 998,
+                        "endColumn": 59,
+                        "endOffset": 1057
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1841,
+                    "endColumn": 72,
+                    "endOffset": 1909
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 0,
+                        "startOffset": 641,
+                        "endColumn": 68,
+                        "endOffset": 709
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 1914,
+                    "endColumn": 55,
+                    "endOffset": 1965
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 356,
+                        "endColumn": 51,
+                        "endOffset": 407
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1970,
+                    "endColumn": 65,
+                    "endOffset": 2031
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 0,
+                        "startOffset": 408,
+                        "endColumn": 61,
+                        "endOffset": 469
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 2036,
+                    "endColumn": 55,
+                    "endOffset": 2087
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 0,
+                        "startOffset": 470,
+                        "endColumn": 51,
+                        "endOffset": 521
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 2092,
+                    "endLine": 33,
+                    "endColumn": 45,
+                    "endOffset": 2223
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.8.2\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 170,
+                        "endLine": 5,
+                        "endColumn": 45,
+                        "endOffset": 301
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 2228,
+                    "endLine": 35,
+                    "endColumn": 43,
+                    "endOffset": 2365
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.8.2\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 306,
+                        "endLine": 7,
+                        "endColumn": 43,
+                        "endOffset": 443
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 2370,
+                    "endColumn": 94,
+                    "endOffset": 2460
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.8.2\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 448,
+                        "endColumn": 94,
+                        "endOffset": 538
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 2465,
+                    "endColumn": 67,
+                    "endOffset": 2528
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.8.2\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 543,
+                        "endColumn": 67,
+                        "endOffset": 606
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 2533,
+                    "endColumn": 71,
+                    "endOffset": 2600
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.8.2\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 611,
+                        "endColumn": 71,
+                        "endOffset": 678
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 2605,
+                    "endColumn": 63,
+                    "endOffset": 2664
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.8.2\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 683,
+                        "endColumn": 63,
+                        "endOffset": 742
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 2669,
+                    "endColumn": 72,
+                    "endOffset": 2737
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.8.2\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 747,
+                        "endColumn": 72,
+                        "endOffset": 815
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 2742,
+                    "endColumn": 71,
+                    "endOffset": 2809
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.8.2\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 820,
+                        "endColumn": 71,
+                        "endOffset": 887
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 2814,
+                    "endColumn": 89,
+                    "endOffset": 2899
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.8.2\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 892,
+                        "endColumn": 89,
+                        "endOffset": 977
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 2904,
+                    "endColumn": 70,
+                    "endOffset": 2970
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.8.2\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 982,
+                        "endColumn": 70,
+                        "endOffset": 1048
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 2975,
+                    "endColumn": 70,
+                    "endOffset": 3041
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.8.2\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1053,
+                        "endColumn": 70,
+                        "endOffset": 1119
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 3046,
+                    "endColumn": 93,
+                    "endOffset": 3135
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.8.2\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1124,
+                        "endColumn": 93,
+                        "endOffset": 1213
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 3140,
+                    "endColumn": 107,
+                    "endOffset": 3243
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.8.2\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1218,
+                        "endColumn": 107,
+                        "endOffset": 1321
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 3248,
+                    "endColumn": 63,
+                    "endOffset": 3307
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.8.2\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1326,
+                        "endColumn": 63,
+                        "endOffset": 1385
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 3312,
+                    "endColumn": 68,
+                    "endOffset": 3376
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.8.2\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1390,
+                        "endColumn": 68,
+                        "endOffset": 1454
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 3381,
+                    "endColumn": 154,
+                    "endOffset": 3531
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.8.2\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1459,
+                        "endColumn": 154,
+                        "endOffset": 1609
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 3536,
+                    "endColumn": 97,
+                    "endOffset": 3629
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 0,
+                        "startOffset": 1174,
+                        "endColumn": 93,
+                        "endOffset": 1267
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 3634,
+                    "endColumn": 63,
+                    "endOffset": 3693
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 0,
+                        "startOffset": 2698,
+                        "endColumn": 59,
+                        "endOffset": 2757
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 3698,
+                    "endColumn": 73,
+                    "endOffset": 3767
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 0,
+                        "startOffset": 2564,
+                        "endColumn": 69,
+                        "endOffset": 2633
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 3772,
+                    "endColumn": 60,
+                    "endOffset": 3828
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 0,
+                        "startOffset": 1393,
+                        "endColumn": 56,
+                        "endOffset": 1449
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 3833,
+                    "endColumn": 67,
+                    "endOffset": 3896
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 0,
+                        "startOffset": 2634,
+                        "endColumn": 63,
+                        "endOffset": 2697
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 3901,
+                    "endColumn": 78,
+                    "endOffset": 3975
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 0,
+                        "startOffset": 2358,
+                        "endColumn": 74,
+                        "endOffset": 2432
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 56,
+                    "startColumn": 4,
+                    "startOffset": 3980,
+                    "endColumn": 118,
+                    "endOffset": 4094
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 0,
+                        "startOffset": 110,
+                        "endColumn": 114,
+                        "endOffset": 224
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 4099,
+                    "endColumn": 58,
+                    "endOffset": 4153
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_content_strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 0,
+                        "startOffset": 648,
+                        "endColumn": 54,
+                        "endOffset": 702
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 4158,
+                    "endColumn": 170,
+                    "endOffset": 4324
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_content_strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 0,
+                        "startOffset": 379,
+                        "endColumn": 166,
+                        "endOffset": 545
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 59,
+                    "startColumn": 4,
+                    "startOffset": 4329,
+                    "endColumn": 105,
+                    "endOffset": 4430
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_content_strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 0,
+                        "startOffset": 546,
+                        "endColumn": 101,
+                        "endOffset": 647
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 60,
+                    "startColumn": 4,
+                    "startOffset": 4435,
+                    "endColumn": 86,
+                    "endOffset": 4517
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_content_strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 296,
+                        "endColumn": 82,
+                        "endOffset": 378
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 4522,
+                    "endColumn": 74,
+                    "endOffset": 4592
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_content_strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 0,
+                        "startOffset": 703,
+                        "endColumn": 70,
+                        "endOffset": 773
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 62,
+                    "startColumn": 4,
+                    "startOffset": 4597,
+                    "endColumn": 60,
+                    "endOffset": 4653
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.8.2\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1746,
+                        "endColumn": 60,
+                        "endOffset": 1802
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 63,
+                    "startColumn": 4,
+                    "startOffset": 4658,
+                    "endColumn": 68,
+                    "endOffset": 4722
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 0,
+                        "startOffset": 1450,
+                        "endColumn": 64,
+                        "endOffset": 1514
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 64,
+                    "startColumn": 4,
+                    "startOffset": 4727,
+                    "endColumn": 79,
+                    "endOffset": 4802
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 0,
+                        "startOffset": 225,
+                        "endColumn": 75,
+                        "endOffset": 300
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 65,
+                    "startColumn": 4,
+                    "startOffset": 4807,
+                    "endColumn": 125,
+                    "endOffset": 4928
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 0,
+                        "startOffset": 2866,
+                        "endColumn": 121,
+                        "endOffset": 2987
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 66,
+                    "startColumn": 4,
+                    "startOffset": 4933,
+                    "endColumn": 79,
+                    "endOffset": 5008
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_content_strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 0,
+                        "startOffset": 1055,
+                        "endColumn": 75,
+                        "endOffset": 1130
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 67,
+                    "startColumn": 4,
+                    "startOffset": 5013,
+                    "endColumn": 123,
+                    "endOffset": 5132
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_content_strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 0,
+                        "startOffset": 935,
+                        "endColumn": 119,
+                        "endOffset": 1054
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 68,
+                    "startColumn": 4,
+                    "startOffset": 5137,
+                    "endColumn": 69,
+                    "endOffset": 5202
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_content_strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 0,
+                        "startOffset": 774,
+                        "endColumn": 65,
+                        "endOffset": 839
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 69,
+                    "startColumn": 4,
+                    "startOffset": 5207,
+                    "endColumn": 98,
+                    "endOffset": 5301
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_content_strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 0,
+                        "startOffset": 840,
+                        "endColumn": 94,
+                        "endOffset": 934
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 70,
+                    "startColumn": 4,
+                    "startOffset": 5306,
+                    "endColumn": 54,
+                    "endOffset": 5356
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 0,
+                        "startOffset": 1651,
+                        "endColumn": 50,
+                        "endOffset": 1701
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 71,
+                    "startColumn": 4,
+                    "startOffset": 5361,
+                    "endColumn": 72,
+                    "endOffset": 5429
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 0,
+                        "startOffset": 2144,
+                        "endColumn": 68,
+                        "endOffset": 2212
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 72,
+                    "startColumn": 4,
+                    "startOffset": 5434,
+                    "endColumn": 74,
+                    "endOffset": 5504
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 0,
+                        "startOffset": 2213,
+                        "endColumn": 70,
+                        "endOffset": 2283
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 73,
+                    "startColumn": 4,
+                    "startOffset": 5509,
+                    "endColumn": 54,
+                    "endOffset": 5559
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 0,
+                        "startOffset": 1702,
+                        "endColumn": 50,
+                        "endOffset": 1752
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 74,
+                    "startColumn": 4,
+                    "startOffset": 5564,
+                    "endColumn": 77,
+                    "endOffset": 5637
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 0,
+                        "startOffset": 2284,
+                        "endColumn": 73,
+                        "endOffset": 2357
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 75,
+                    "startColumn": 4,
+                    "startOffset": 5642,
+                    "endColumn": 66,
+                    "endOffset": 5704
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 0,
+                        "startOffset": 1753,
+                        "endColumn": 62,
+                        "endOffset": 1815
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 76,
+                    "startColumn": 4,
+                    "startOffset": 5709,
+                    "endColumn": 72,
+                    "endOffset": 5777
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 0,
+                        "startOffset": 3087,
+                        "endColumn": 68,
+                        "endOffset": 3155
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 77,
+                    "startColumn": 4,
+                    "startOffset": 5782,
+                    "endColumn": 72,
+                    "endOffset": 5850
+                },
+                "from": {
+                    "file": "C:\\Deutsche-Mitte---Aktuelle-News\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\23.53.589.4\\res\\values-it\\android_ui_strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 0,
+                        "startOffset": 1582,
+                        "endColumn": 68,
+                        "endOffset": 1650
+                    }
+                }
+            }
+        ]
+    }
+]
