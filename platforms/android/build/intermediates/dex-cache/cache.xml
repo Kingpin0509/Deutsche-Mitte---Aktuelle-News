@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\pre-dexed\armv7\debug\com.android.support-support-media-compat-26.0.0-alpha1_3d63382fa4190270318a670313c5c9f08b84525d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\exploded-aar\com.android.support\support-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\pre-dexed\armv7\debug\com.android.support-support-compat-26.0.0-alpha1_2d5f9988af9454b6a2c184f1cc0c4f90f0926688.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\exploded-aar\org.apache.cordova\CordovaLib\6.2.3\debug\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7a1530ac850543228ac856fe951d258efe29f918">
+        <dex dex="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\pre-dexed\armv7\debug\CordovaLib-6.2.3-debug_f8171430358e9267e016a3cd3fdef7a18fb12daa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\pre-dexed\armv7\debug\support-annotations-26.0.0-alpha1_8a57f9999ac2028dac427e00cd754d5fd09555e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\exploded-aar\com.android.support\support-fragment\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\pre-dexed\armv7\debug\com.android.support-support-fragment-26.0.0-alpha1_d32afb437e62f5db5b963910451d07f433227a7b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.8.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7679607a53988c76b23575d3e2bd473951773f29">
+        <dex dex="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\pre-dexed\armv7\debug\com.facebook.android-facebook-android-sdk-4.8.2_17a9d495a13ceee248ea9d695edb7d1ab2737665.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\pre-dexed\armv7\debug\com.android.support-support-v4-26.0.0-alpha1_15a1ac9967add4b4033006e5546be23d85207437.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kingp\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.1\44780c2cf98f6a3cf4e77f1234d644758b329201\bolts-android-1.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44780c2cf98f6a3cf4e77f1234d644758b329201">
+        <dex dex="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\pre-dexed\armv7\debug\bolts-android-1.2.1_08f87e94a8f718ebb2daacf67eef3fbe9f604b5f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\exploded-aar\org.xwalk\xwalk_core_library\23.53.589.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="834071525d6d2707eb4c7f76b728d8cd14b17ae1">
+        <dex dex="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\pre-dexed\armv7\debug\org.xwalk-xwalk_core_library-23.53.589.4_cf5796bb2d3a76c69bc9d1960ed99bb543946c87.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\pre-dexed\armv7\debug\com.android.support-multidex-1.0.1_9e4dff25c18eabf2d42d50cbfdff59a70d05d488.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\pre-dexed\armv7\debug\com.android.support-support-core-utils-26.0.0-alpha1_9e7f6e4a52aaaff98c00c356257113928fb74706.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="C:\Deutsche-Mitte---Aktuelle-News\platforms\android\build\intermediates\pre-dexed\armv7\debug\com.android.support-support-core-ui-26.0.0-alpha1_9b67576bebb787a5ff243752728e9655d230171f.jar" />
+    </item>
+
+</items>
