@@ -1,28 +1,28 @@
 <ion-header>
-    <ion-navbar>
-        <button ion-button menuToggle="left" icon-only>
+  <ion-navbar>
+    <button ion-button menuToggle="left" icon-only>
       <ion-icon name='menu'></ion-icon>
     </button>
-        <ion-title>{{'SETTINGS' | translate}}</ion-title>
-        <ion-buttons end>
-            <button ion-button menuToggle="right" icon-only>
+    <ion-title>{{'SETTINGS' | translate}}</ion-title>
+    <ion-buttons end>
+      <button ion-button menuToggle="right" icon-only>
                     <ion-icon name='more'></ion-icon>
                   </button>
-        </ion-buttons>
-    </ion-navbar>
+    </ion-buttons>
+  </ion-navbar>
 </ion-header>
 <ion-content class="grid-basic-page">
-    <ion-list>
-        <ion-list-header>
-            {{'LANGUAGE' | translate}}
-        </ion-list-header>
-        <ion-item>
-            <ion-label>{{'LANGUAGE' | translate}}</ion-label>
-            <ion-select [(ngModel)]="language" (ionChange)=selectLanguage()>
-                <ion-option value="de">{{'GERMAN' | translate}}</ion-option>
-                <ion-option value="en">{{'ENGLISH' | translate}}</ion-option>
-                <ion-option value="fr">{{'FRENCH' | translate}}</ion-option>
-            </ion-select>
-        </ion-item>
-    </ion-list>
+  <ion-list>
+    <ion-list-header>
+      {{'LANGUAGE' | translate}}
+    </ion-list-header>
+    <ion-item>
+      <ion-label>{{'LANGUAGE' | translate}}</ion-label>
+      <ion-select [(ngModel)]="language" (ionChange)=selectLanguage()>
+        <ion-option value="de">{{'GERMAN' | translate}}</ion-option>
+        <ion-option value="en">{{'ENGLISH' | translate}}</ion-option>
+        <ion-option value="fr">{{'FRENCH' | translate}}</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
 </ion-content>

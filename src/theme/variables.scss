@@ -17,13 +17,17 @@ $font-path: "../assets/fonts";
 // to match your app's branding. Ionic uses a Sass map of
 // colors so you can add, rename and remove colors as needed.
 // The "primary" color is the only required color in the map.
-$colors: ( primary: #00498a, secondary: #ff8b00, danger: #f53d3d, light: #005397, dark: #FA7D09)!default;
+$colors: (
+    primary: #00498a,
+    secondary: #ff8b00,
+    danger: #f53d3d,
+    light: #005397,
+    dark: #fa7d09
+  )!default;
 $link-color: color($colors, primary) !default;
 $subdued-text-color: #666 !default;
-$font-family-base: -apple-system,
-"Helvetica Neue",
-"Roboto",
-sans-serif !default;
+$font-family-base: -apple-system, "Helvetica Neue", "Roboto",
+  sans-serif !default;
 $font-size-base: 1.4rem !default; // 1.4rem == 14px
 $toolbar-background: #151515 !default;
 $toolbar-border-color: #222 !default;

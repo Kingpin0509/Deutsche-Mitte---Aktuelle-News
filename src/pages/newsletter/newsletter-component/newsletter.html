@@ -1,95 +1,107 @@
 <ion-header>
-    <ion-navbar>
-        <button ion-button menuToggle="left" icon-only>
+  <ion-navbar>
+    <button ion-button menuToggle="left" icon-only>
       <ion-icon name='menu'></ion-icon>
     </button>
-        <ion-title>Newsletter</ion-title>
-        <ion-buttons end>
-            <button ion-button menuToggle="right" icon-only>
+    <ion-title>Newsletter</ion-title>
+    <ion-buttons end>
+      <button ion-button menuToggle="right" icon-only>
                 <ion-icon name='more'></ion-icon>
               </button>
-        </ion-buttons>
-    </ion-navbar>
+    </ion-buttons>
+  </ion-navbar>
 </ion-header>
-	<script type="application/json" class="joomla-script-options new">{"system.paths":{"root":"","base":""}}</script>
-	<script src="https://newsletter.deutsche-mitte.de/media/jui/js/jquery.min.js?ffd7d6fca7753e755dc0216b868c0aa4"></script>
-	<script src="https://newsletter.deutsche-mitte.de/media/jui/js/jquery-noconflict.js?ffd7d6fca7753e755dc0216b868c0aa4"></script>
-	<script src="https://newsletter.deutsche-mitte.de/media/jui/js/jquery-migrate.min.js?ffd7d6fca7753e755dc0216b868c0aa4"></script>
-	<script src="https://newsletter.deutsche-mitte.de/media/system/js/caption.js?ffd7d6fca7753e755dc0216b868c0aa4"></script>
-	<script src="https://newsletter.deutsche-mitte.de/media/jui/js/bootstrap.min.js?ffd7d6fca7753e755dc0216b868c0aa4"></script>
-	<script src="https://newsletter.deutsche-mitte.de/templates/protostar/js/template.js?ffd7d6fca7753e755dc0216b868c0aa4"></script>
-	<!--[if lt IE 9]><script src="https://newsletter.deutsche-mitte.de/media/jui/js/html5.js?ffd7d6fca7753e755dc0216b868c0aa4"></script><![endif]-->
-	<script src="https://newsletter.deutsche-mitte.de/media/com_acymailing/js/acymailing_module.js?v=570" async></script>
-	<script src="https://newsletter.deutsche-mitte.de/media/system/js/mootools-core.js?ffd7d6fca7753e755dc0216b868c0aa4"></script>
-	<script src="https://newsletter.deutsche-mitte.de/media/system/js/core.js?ffd7d6fca7753e755dc0216b868c0aa4"></script>
-	<script src="https://newsletter.deutsche-mitte.de/media/system/js/mootools-more.js?ffd7d6fca7753e755dc0216b868c0aa4"></script>
-	<script>
-jQuery(window).on('load',  function() {
-				new JCaption('img.caption');
-			});
-jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"}); });
-	if(typeof acymailing == 'undefined'){
-					var acymailing = Array();
-				}
-				acymailing['NAMECAPTION'] = 'Name';
-				acymailing['NAME_MISSING'] = 'Bitte Namen eingeben';
-				acymailing['EMAILCAPTION'] = 'E-Mail';
-				acymailing['VALID_EMAIL'] = 'Bitte eine gültige E-Mail Adresse eingeben';
-				acymailing['ACCEPT_TERMS'] = 'Bitte die Nutzungsbedingungen lesen';
-				acymailing['CAPTCHA_MISSING'] = 'Bitte geben Sie den Sicherheitscode wie im Bild angezeigt ein';
-				acymailing['NO_LIST_SELECTED'] = 'Wählen Sie bitte die Listen aus, die Sie abonnieren möchten';
-		
+<script type="application/json" class="joomla-script-options new">
+  {"system.paths":{"root":"","base":""}}
 
-		acymailing['level'] = 'enterprise';
-		
-acymailing['reqFieldsformAcymailing64811'] = Array('name','html');
-		acymailing['validFieldsformAcymailing64811'] = Array('Bitte einen gültigen Wert für das Feld Name hinzufügen','Bitte einen gültigen Wert für das Feld Erhalten hinzufügen');
-jQuery(function($) {
-			 $('.hasTip').each(function() {
-				var title = $(this).attr('title');
-				if (title) {
-					var parts = title.split('::', 2);
-					var mtelement = document.id(this);
-					mtelement.store('tip:title', parts[0]);
-					mtelement.store('tip:text', parts[1]);
-				}
-			});
-			var JTooltips = new Tips($('.hasTip').get(), {"maxTitleChars": 50,"fixed": false});
-		});
-acymailing['excludeValuesformAcymailing64811'] = Array();
-acymailing['excludeValuesformAcymailing64811']['name'] = 'Name';
-acymailing['excludeValuesformAcymailing64811']['email'] = 'E-Mail';
+</script>
+<script src="https://newsletter.deutsche-mitte.de/media/jui/js/jquery.min.js?ffd7d6fca7753e755dc0216b868c0aa4"></script>
+<script src="https://newsletter.deutsche-mitte.de/media/jui/js/jquery-noconflict.js?ffd7d6fca7753e755dc0216b868c0aa4"></script>
+<script src="https://newsletter.deutsche-mitte.de/media/jui/js/jquery-migrate.min.js?ffd7d6fca7753e755dc0216b868c0aa4"></script>
+<script src="https://newsletter.deutsche-mitte.de/media/system/js/caption.js?ffd7d6fca7753e755dc0216b868c0aa4"></script>
+<script src="https://newsletter.deutsche-mitte.de/media/jui/js/bootstrap.min.js?ffd7d6fca7753e755dc0216b868c0aa4"></script>
+<script src="https://newsletter.deutsche-mitte.de/templates/protostar/js/template.js?ffd7d6fca7753e755dc0216b868c0aa4"></script>
+<!--[if lt IE 9]><script src="https://newsletter.deutsche-mitte.de/media/jui/js/html5.js?ffd7d6fca7753e755dc0216b868c0aa4"></script><![endif]-->
+<script src="https://newsletter.deutsche-mitte.de/media/com_acymailing/js/acymailing_module.js?v=570" async></script>
+<script src="https://newsletter.deutsche-mitte.de/media/system/js/mootools-core.js?ffd7d6fca7753e755dc0216b868c0aa4"></script>
+<script src="https://newsletter.deutsche-mitte.de/media/system/js/core.js?ffd7d6fca7753e755dc0216b868c0aa4"></script>
+<script src="https://newsletter.deutsche-mitte.de/media/system/js/mootools-more.js?ffd7d6fca7753e755dc0216b868c0aa4"></script>
+<script>
+  jQuery(window).on('load', function () {
+    new JCaption('img.caption');
+  });
+  jQuery(function ($) { $(".hasTooltip").tooltip({ "html": true, "container": "body" }); });
+  if (typeof acymailing == 'undefined') {
+    var acymailing = Array();
+  }
+  acymailing['NAMECAPTION'] = 'Name';
+  acymailing['NAME_MISSING'] = 'Bitte Namen eingeben';
+  acymailing['EMAILCAPTION'] = 'E-Mail';
+  acymailing['VALID_EMAIL'] = 'Bitte eine gültige E-Mail Adresse eingeben';
+  acymailing['ACCEPT_TERMS'] = 'Bitte die Nutzungsbedingungen lesen';
+  acymailing['CAPTCHA_MISSING'] = 'Bitte geben Sie den Sicherheitscode wie im Bild angezeigt ein';
+  acymailing['NO_LIST_SELECTED'] = 'Wählen Sie bitte die Listen aus, die Sie abonnieren möchten';
 
-	</script>
+
+  acymailing['level'] = 'enterprise';
+
+  acymailing['reqFieldsformAcymailing64811'] = Array('name', 'html');
+  acymailing['validFieldsformAcymailing64811'] = Array('Bitte einen gültigen Wert für das Feld Name hinzufügen', 'Bitte einen gültigen Wert für das Feld Erhalten hinzufügen');
+  jQuery(function ($) {
+    $('.hasTip').each(function () {
+      var title = $(this).attr('title');
+      if (title) {
+        var parts = title.split('::', 2);
+        var mtelement = document.id(this);
+        mtelement.store('tip:title', parts[0]);
+        mtelement.store('tip:text', parts[1]);
+      }
+    });
+    var JTooltips = new Tips($('.hasTip').get(), { "maxTitleChars": 50, "fixed": false });
+  });
+  acymailing['excludeValuesformAcymailing64811'] = Array();
+  acymailing['excludeValuesformAcymailing64811']['name'] = 'Name';
+  acymailing['excludeValuesformAcymailing64811']['email'] = 'E-Mail';
+
+</script>
 
 <ion-content padding>
-<div class="acymailing_module" id="acymailing_module_formAcymailing64811">
-	<div class="acymailing_fulldiv" id="acymailing_fulldiv_formAcymailing64811"  >
-		<form id="formAcymailing64811" action="/index.php" onsubmit="return submitacymailingform('optin','formAcymailing64811', 0)" method="post" name="formAcymailing64811"  >
-		<div class="acymailing_module_form" >
-						<table class="acymailing_form">
-				<tr>
-													<td class="acyfield_name acy_requiredField">
-								<input id="user_name_formAcymailing64811"  style="width:80%" onfocus="if(this.value == 'Name') this.value = '';" onblur="if(this.value=='') this.value='Name';" type="text" class="inputbox required" name="user[name]" value="Name" title="Name"/>								</td></tr><tr>								<td class="acyfield_email acy_requiredField">
-								<input id="user_email_formAcymailing64811"  style="width:80%" onfocus="if(this.value == 'E-Mail') this.value = '';" onblur="if(this.value=='') this.value='E-Mail';" type="text" class="inputbox required" name="user[email]" value="E-Mail" title="E-Mail"/>								</td></tr><tr>
-					
-					<td  class="acysubbuttons">
-												<input class="button subbutton btn btn-primary" type="submit" value="Abonnieren" name="Submit" onclick="try{ return submitacymailingform('optin','formAcymailing64811', 0); }catch(err){alert('The form could not be submitted '+err);return false;}"/>
-											</td>
-				</tr>
-			</table>
-						<input type="hidden" name="ajax" value="0" />
-			<input type="hidden" name="acy_source" value="module_87" />
-			<input type="hidden" name="ctrl" value="sub"/>
-			<input type="hidden" name="task" value="notask"/>
-			<input type="hidden" name="redirect" value="https%3A%2F%2Fnewsletter.deutsche-mitte.de%2F"/>
-			<input type="hidden" name="redirectunsub" value="https%3A%2F%2Fnewsletter.deutsche-mitte.de%2F"/>
-			<input type="hidden" name="option" value="com_acymailing"/>
-						<input type="hidden" name="hiddenlists" value="6"/>
-			<input type="hidden" name="acyformname" value="formAcymailing64811" />
-									</div>
-		</form>
-	</div>
-	</div>
+  <div class="acymailing_module" id="acymailing_module_formAcymailing64811">
+    <div class="acymailing_fulldiv" id="acymailing_fulldiv_formAcymailing64811">
+      <form id="formAcymailing64811" action="/index.php" onsubmit="return submitacymailingform('optin','formAcymailing64811', 0)"
+        method="post" name="formAcymailing64811">
+        <div class="acymailing_module_form">
+          <table class="acymailing_form">
+            <tr>
+              <td class="acyfield_name acy_requiredField">
+                <input id="user_name_formAcymailing64811" style="width:80%" onfocus="if(this.value == 'Name') this.value = '';" onblur="if(this.value=='') this.value='Name';"
+                  type="text" class="inputbox required" name="user[name]" value="Name" title="Name" /> </td>
+            </tr>
+            <tr>
+              <td class="acyfield_email acy_requiredField">
+                <input id="user_email_formAcymailing64811" style="width:80%" onfocus="if(this.value == 'E-Mail') this.value = '';" onblur="if(this.value=='') this.value='E-Mail';"
+                  type="text" class="inputbox required" name="user[email]" value="E-Mail" title="E-Mail" />                </td>
+            </tr>
+            <tr>
+
+              <td class="acysubbuttons">
+                <input class="button subbutton btn btn-primary" type="submit" value="Abonnieren" name="Submit" onclick="try{ return submitacymailingform('optin','formAcymailing64811', 0); }catch(err){alert('The form could not be submitted '+err);return false;}"
+                />
+              </td>
+            </tr>
+          </table>
+          <input type="hidden" name="ajax" value="0" />
+          <input type="hidden" name="acy_source" value="module_87" />
+          <input type="hidden" name="ctrl" value="sub" />
+          <input type="hidden" name="task" value="notask" />
+          <input type="hidden" name="redirect" value="https%3A%2F%2Fnewsletter.deutsche-mitte.de%2F" />
+          <input type="hidden" name="redirectunsub" value="https%3A%2F%2Fnewsletter.deutsche-mitte.de%2F" />
+          <input type="hidden" name="option" value="com_acymailing" />
+          <input type="hidden" name="hiddenlists" value="6" />
+          <input type="hidden" name="acyformname" value="formAcymailing64811" />
+        </div>
+      </form>
+    </div>
+  </div>
 
 </ion-content>

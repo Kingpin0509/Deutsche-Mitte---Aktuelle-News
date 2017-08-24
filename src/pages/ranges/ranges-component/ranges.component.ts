@@ -1,8 +1,7 @@
-import { Component } from '@angular/core';
-
+import { Component } from "@angular/core";
 
 @Component({
-  templateUrl: 'ranges.html'
+  templateUrl: "ranges.html"
 })
 export class RangesComponent {
   brightness: number = 20;
