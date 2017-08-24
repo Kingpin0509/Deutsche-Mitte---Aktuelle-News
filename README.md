@@ -177,7 +177,6 @@ On the basis of the Federal Data Protection Act, you may contact us at no cost i
 
 ionic cordova platform rm ios && ionic cordova platform rm android && ionic cordova platform rm windows && ionic cordova platform add ios && ionic cordova platform add android && ionic cordova platform add windows &&
 ionic cordova prepare && ionic cordova resources &&
-ionic package build android --profile=prod --release --prod && ionic package build ios --profile=prod --release --prod &&
-ionic build  && ionic upload
+ionic package build android --profile=prod --release --prod && ionic package build ios --profile=prod --release --prod && ionic build  && ionic upload
 
 ionic cordova platform rm ios android windows && ionic cordova platform add ios android windows
