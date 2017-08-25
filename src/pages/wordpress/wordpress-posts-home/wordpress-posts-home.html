@@ -17,7 +17,7 @@
       <ion-note class="date" item-end>{{post.date | date: 'shortDate'}}</ion-note>
     </ion-list-header>
     <ion-item-sliding #slidingItem>
-      <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 250 }}</ion-item>
+      <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 100 }}</ion-item>
       <ion-item-options side="right">
         <button ion-button color="primary" (click)="share(slidingItem)" (tap)="favoritePost(post)">
           <ion-icon name="thumbs-up"></ion-icon>

@@ -11,13 +11,6 @@ export class SlidesComponent {
 
   slides = [
     {
-      title: "Herzlich Willkommen",
-      description:
-        "Diese App stellt ihnen stets aktuelle Informationen bereit, über die Partei",
-      description1: "-Deutsche Mitte-",
-      image: "assets/img/ica-slidebox-img-6.png"
-    },
-    {
       title: "Zum Kennenlernen",
       description:
         "Schauen sie gern in unseren online Stammtisch vorbei. Oder kommen sie persönlich zu unseren Stammtischtreffen in jeder größeren Stadt",

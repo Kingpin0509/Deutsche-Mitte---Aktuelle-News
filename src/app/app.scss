@@ -60,7 +60,8 @@ ion-label.label {
   color: #dddddd;
   background-color: transparent;
 }
-.footer::before, .tabs[tabsPlacement="bottom"] > .tabbar::before{
+.footer::before,
+.tabs[tabsPlacement="bottom"] > .tabbar::before {
   height: 6px;
 }
 .tabs .tab-button[aria-selected=true] {
@@ -354,6 +355,76 @@ ion-card-content {
   animation: scale-up-ver-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000)
     both;
 }
+
+/*----------------------------------------
+* animation scale-up-ver-top
+*----------------------------------------*/
+@-webkit-keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.0);
+    transform: scaleY(0.0);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}
+@keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.0);
+    transform: scaleY(0.0);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}
+.scale-up-ver-top {
+  -webkit-animation: scale-up-ver-top 0.5s
+    cubic-bezier(0.390, 0.575, 0.565, 1.000) 0ms both;
+  animation: scale-up-ver-top 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0ms
+    both;
+}
+/*----------------------------------------*/
+
+/*----------------------------------------
+* animation scale-up-hor-center
+*----------------------------------------*/
+@-webkit-keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.0);
+    transform: scaleX(0.0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+@keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.0);
+    transform: scaleX(0.0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+.scale-up-hor-center {
+  -webkit-animation: scale-up-hor-center 0.5s
+    cubic-bezier(0.390, 0.575, 0.565, 1.000) 150ms both;
+  animation: scale-up-hor-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000)
+    150ms both;
+}
+/*----------------------------------------*/
 
 .apphome {
   box-sizing: border-box;
