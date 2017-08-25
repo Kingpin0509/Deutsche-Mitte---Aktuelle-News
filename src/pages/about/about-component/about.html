@@ -33,103 +33,110 @@
     </ion-card-content>
   </ion-card>
   <h2 class="header">Kurzprogramm der Deutschen Mitte 2017:</h2>
-  <ion-card>
-<ion-card-content>
-    <div padding>
-      <button ion-button block color="dark" (click)="openAussenpolitikModal()"><ion-icon padding-horizontal name="expand"></ion-icon><h2>Außenpolitik</h2></button>
-    </div>
+  <ion-card padding>
+    <ion-card-content margin-horizontal>
+      <button ion-button round block color="dark" (click)="openAussenpolitik()">
+          <h2 class="button">
+            <ion-icon padding-horizontal name="expand"></ion-icon>
+            Außenpolitik
+          </h2>
+        </button>
+    </ion-card-content>
     <ion-note text-justify><b><i>Mit Augenmaß, gut abgestimmt mit Partnern und Freunden und ohne großen Wirbel verlässt Deutschland die Euro-Gruppe – nicht als erstes Land, um Missstimmung zu vermeiden, jedoch als zweites...</i></b></ion-note>
-    </ion-card-content>
   </ion-card>
-  <ion-card>
-    <ion-card-content (click)="doAlertInnenpolitik()">
-      <button block color="dark" ion-button>
-                <h2><ion-icon padding-horizontal name="download"></ion-icon>Innenpolitik</h2></button>
-      <ion-note text-justify><b><i>Wir wollen mehr und besser bezahlte Polizisten, die wir persönlich kennen: als „Revierbeamte“ mit erhöhter Straßenpräsenz. Geheimdienste sollen besser und ehrlicher zum Wohl der Bevölkerung arbeiten...</i></b></ion-note>
+  <ion-card padding>
+    <ion-card-content margin-horizontal>
+      <button ion-button round block color="dark" (click)="openInnenpolitik()">
+      <h2 class="button">
+        <ion-icon padding-horizontal name="download"></ion-icon>
+        Innenpolitik
+      </h2>
+      </button>
     </ion-card-content>
+    <ion-note text-justify><b><i>Wir wollen mehr und besser bezahlte Polizisten, die wir persönlich kennen: als „Revierbeamte“ mit erhöhter Straßenpräsenz. Geheimdienste sollen besser und ehrlicher zum Wohl der Bevölkerung arbeiten...</i></b></ion-note>
   </ion-card>
-  <ion-card>
-    <ion-card-content (click)="doAlertFinanzen()">
-      <button block color="dark" ion-button>
-                <h2><ion-icon padding-horizontal name="cash"></ion-icon>Finanzen</h2></button>
-      <ion-note text-justify><b><i>Banken werden ehrliche Dienstleister, Zockerei wird verboten, Zins und Zinseszins werden abgeschafft. Marode Banken werden vorübergehend verstaatlicht und teilweise in kontrollierten Konkurs gehen. Manager haften für Fehlverhalten...</i></b></ion-note>
+  <ion-card padding>
+    <ion-card-content>
+      <button ion-button round block color="dark" (click)="openFinanzen()">
+      <h2 class="button"><ion-icon padding-horizontal name="cash"></ion-icon>Finanzen</h2></button>
     </ion-card-content>
+    <ion-note text-justify><b><i>Banken werden ehrliche Dienstleister, Zockerei wird verboten, Zins und Zinseszins werden abgeschafft. Marode Banken werden vorübergehend verstaatlicht und teilweise in kontrollierten Konkurs gehen. Manager haften für Fehlverhalten...</i></b></ion-note>
   </ion-card>
-  <ion-card>
-    <ion-card-content (click)="doAlertWirtschaft()">
-      <button block color="dark" ion-button>
-                <h2><ion-icon padding-horizontal name="construct"></ion-icon>Wirtschaft und Technologie</h2></button>
-      <ion-note text-justify><b><i>Wirtschaft dient allen Menschen, dies ist ebenfalls Aufgabe der Politik: Unternehmen, die sozial, ökologisch, menschenfreundlich und flexibel arbeiten (Gemeinwohlökonomie) erhalten finanzielle Erleichterungen...</i></b></ion-note>
+  <ion-card padding>
+    <ion-card-content>
+      <button ion-button round block color="dark" (click)="openWirtschaft()">
+      <h2 class="button"><ion-icon padding-horizontal name="construct"></ion-icon>Wirtschaft und Technologie</h2></button>
     </ion-card-content>
+    <ion-note text-justify><b><i>Wirtschaft dient allen Menschen, dies ist ebenfalls Aufgabe der Politik: Unternehmen, die sozial, ökologisch, menschenfreundlich und flexibel arbeiten (Gemeinwohlökonomie) erhalten finanzielle Erleichterungen...</i></b></ion-note>
   </ion-card>
-  <ion-card>
-    <ion-card-content (click)="doAlertArbeit()">
-      <button block color="dark" ion-button>
-                <h2><ion-icon padding-horizontal name="man"></ion-icon>Arbeit und Soziales</h2></button>
-      <ion-note text-justify><b><i>Jeder arbeitsfähige Mensch geht einer Beschäftigung nach. In einer Vorphase vor Einführung des Bedingungslosen Grundeinkommens (BGE) steht das Solidarische Grundeinkommen (SGE)...</i></b></ion-note>
+  <ion-card padding>
+    <ion-card-content>
+      <button ion-button round block color="dark" (click)="openArbeit()">
+      <h2 class="button"><ion-icon padding-horizontal name="man"></ion-icon>Arbeit und Soziales</h2></button>
     </ion-card-content>
+    <ion-note text-justify><b><i>Jeder arbeitsfähige Mensch geht einer Beschäftigung nach. In einer Vorphase vor Einführung des Bedingungslosen Grundeinkommens (BGE) steht das Solidarische Grundeinkommen (SGE)...</i></b></ion-note>
   </ion-card>
-  <ion-card>
-    <ion-card-content (click)="doAlertVerteidigung()">
-      <button block color="dark" ion-button>
-                <h2><ion-icon padding-horizontal name="jet"></ion-icon>Verteidigung</h2></button>
-      <ion-note text-justify><b><i>Die neue Verteidigungsstrategie lautet: „Full Spectrum Defense“ – und stellt sicher, dass Deutschland auf jedem Gebiet – entweder eigenständig oder im Verbund mit anderen Nationen – abschreckend verteidigungsfähig wird...</i></b></ion-note>
+  <ion-card padding>
+    <ion-card-content>
+      <button ion-button round block color="dark" (click)="openVerteidigung()">
+      <h2 class="button"><ion-icon padding-horizontal name="jet"></ion-icon>Verteidigung</h2></button>
     </ion-card-content>
+    <ion-note text-justify><b><i>Die neue Verteidigungsstrategie lautet: „Full Spectrum Defense“ – und stellt sicher, dass Deutschland auf jedem Gebiet – entweder eigenständig oder im Verbund mit anderen Nationen – abschreckend verteidigungsfähig wird...</i></b></ion-note>
   </ion-card>
-  <ion-card>
-    <ion-card-content (click)="doAlertBildung()">
-      <button block color="dark" ion-button>
-                <h2><ion-icon padding-horizontal name="flask"></ion-icon>Bildung und Forschung:</h2></button>
-      <ion-note text-justify><b><i>Große Investitionen in Bildung und Forschung machen Deutschland wieder zur führenden Nation in diesem Bereich. Die elterliche Kindererziehung bis zum Erreichen des dritten Lebensjahres wird finanziell kräftig gefördert...</i></b></ion-note>
+  <ion-card padding>
+    <ion-card-content>
+      <button ion-button round block color="dark" (click)="openBildung()">
+      <h2 class="button"><ion-icon padding-horizontal name="flask"></ion-icon>Bildung und Forschung:</h2></button>
     </ion-card-content>
+    <ion-note text-justify><b><i>Große Investitionen in Bildung und Forschung machen Deutschland wieder zur führenden Nation in diesem Bereich. Die elterliche Kindererziehung bis zum Erreichen des dritten Lebensjahres wird finanziell kräftig gefördert...</i></b></ion-note>
   </ion-card>
-  <ion-card>
-    <ion-card-content (click)="doAlertFamilie()">
-      <button block color="dark" ion-button>
-                <h2><ion-icon padding-horizontal name="contacts"></ion-icon>Familie, Senioren, Frauen und Jugend</h2></button>
+  <ion-card padding>
+    <ion-card-content>
+      <button ion-button round block color="dark" (click)="openFamilie()">
+      <h2 class="button"><ion-icon padding-horizontal name="contacts"></ion-icon>Familie, Senioren, Frauen und Jugend</h2></button>
+    </ion-card-content>
       <ion-note text-justify><b><i>Großzügige Förderung von Familien mit Kindern, auch durch kostenlose Paar-, Eltern- und Familienberatung. 50% mehr Kindergeld, zusätzlich erhalten Eltern nach aktuellen Maßstäben 5.000 € für das erste Kind, je 10.000 € für jedes weitere Kind...</i></b></ion-note>
-    </ion-card-content>
   </ion-card>
-  <ion-card>
-    <ion-card-content (click)="doAlertUmwelt()">
-      <button block color="dark" ion-button>
-                <h2><ion-icon padding-horizontal name="flash"></ion-icon>Umwelt, Naturschutz und Reaktorsicherheit</h2></button>
+  <ion-card padding>
+    <ion-card-content>
+      <button ion-button round block color="dark" (click)="openUmwelt()">
+      <h2 class="button"><ion-icon padding-horizontal name="flash"></ion-icon>Umwelt, Naturschutz und Reaktorsicherheit</h2></button>
+    </ion-card-content>
       <ion-note text-justify><b><i>Die Deutsche Mitte sieht den Menschen in der hohen Verantwortung, die natürlichen Grundlagen für alle Lebensformen zu bewahren. Darum erhalten Umwelt- und Naturschutz bedeutenden Vorrang...</i></b></ion-note>
-    </ion-card-content>
   </ion-card>
-  <ion-card>
-    <ion-card-content (click)="doAlertNahrung()">
-      <button block color="dark" ion-button>
-                <h2><ion-icon padding-horizontal name="leaf"></ion-icon>Ernährung, Landwirtschaft und Verbraucherschutz</h2></button>
+  <ion-card padding>
+    <ion-card-content>
+      <button ion-button round block color="dark" (click)="openNahrung()">
+      <h2 class="button"><ion-icon padding-horizontal name="leaf"></ion-icon>Ernährung, Landwirtschaft und Verbraucherschutz</h2></button>
+    </ion-card-content>
       <ion-note text-justify><b><i>Die Deutsche Mitte fordert das Recht auf natürlich gesunde Lebensmittel. Schrittweise Umstellung auf ökologische, pestizid- und gentechnikfreie Landwirtschaft (Mindeststandard: Bioland)...</i></b></ion-note>
-    </ion-card-content>
   </ion-card>
-  <ion-card>
-    <ion-card-content (click)="doAlertGesundheit()">
-      <button block color="dark" ion-button>
-                <h2><ion-icon padding-horizontal name="medkit"></ion-icon>Gesundheit</h2></button>
+  <ion-card padding>
+    <ion-card-content>
+      <button ion-button round block color="dark" (click)="openGesundheit()">
+      <h2 class="button"><ion-icon padding-horizontal name="medkit"></ion-icon>Gesundheit</h2></button>
+    </ion-card-content>
       <ion-note text-justify><b><i>Die Deutsche Mitte strebt schrittweise eine kostenlose medizinische Grundversorgung für alle an. Wir stehen für ursachenbezogene ganzheitliche Heilkunde und natürliche Medizin, die sich am Menschen orientiert...</i></b></ion-note>
-    </ion-card-content>
   </ion-card>
-  <ion-card>
-    <ion-card-content (click)="doAlertVerkehr()">
-      <button block color="dark" ion-button>
-                <h2><ion-icon padding-horizontal name="hammer"></ion-icon>Verkehr, Bau und Stadtentwicklung:</h2></button>
+  <ion-card padding>
+    <ion-card-content>
+      <button ion-button round block color="dark" (click)="openVerkehr()">
+      <h2 class="button"><ion-icon padding-horizontal name="hammer"></ion-icon>Verkehr, Bau und Stadtentwicklung:</h2></button>
+    </ion-card-content>
       <ion-note text-justify><b><i>Voll-Ausbau der Bahn zum großen LogistikDienstleister, keine Privatisierung, stattdessen Zusammenarbeit mit Privatfirmen, deutlich weniger und kleinere LKW auf den Straßen. Großprojekte mit enger Einbindung der Bevölkerung...</i></b></ion-note>
-    </ion-card-content>
   </ion-card>
-  <ion-card>
-    <ion-card-content (click)="doAlertEntwicklung()">
-      <button block color="dark" ion-button>
-                <h2><ion-icon padding-horizontal name="open"></ion-icon>Wirtschaftliche Zusammenarbeit und Entwicklung</h2></button>
+  <ion-card padding>
+    <ion-card-content>
+      <button ion-button round block color="dark" (click)="openEntwicklung()">
+      <h2 class="button"><ion-icon padding-horizontal name="open"></ion-icon>Wirtschaftliche Zusammenarbeit und Entwicklung</h2></button>
+    </ion-card-content>
       <ion-note text-justify><b><i>Fairer Handel ohne Diktate aus IWF und Weltbank. Internationale Unterstützungsleistungen werden künftig neben bisherigen Verfahren zusätzlich in verantwortlichen Patenschaften organisiert...</i></b></ion-note>
-    </ion-card-content>
   </ion-card>
-  <ion-card>
-    <ion-card-content (click)="doAlertJustiz()">
-      <button block color="dark" ion-button>
-                <h2><ion-icon padding-horizontal name="archive"></ion-icon>Justiz</h2></button>
-      <ion-note text-justify><b><i>Recht darf kein Privileg der Wohlhabenden oder Mächtigen sein. Gerechtigkeit soll vor Gericht siegen. Ausbau des Justizwesens, weniger machtpolitischer Einfluss, mehr richterliche Unabhängigkeit...</i></b></ion-note>
+  <ion-card padding>
+    <ion-card-content>
+      <button ion-button round block color="dark" (click)="openJustiz()">
+      <h2 class="button"><ion-icon padding-horizontal name="archive"></ion-icon>Justiz</h2></button>
     </ion-card-content>
+      <ion-note text-justify><b><i>Recht darf kein Privileg der Wohlhabenden oder Mächtigen sein. Gerechtigkeit soll vor Gericht siegen. Ausbau des Justizwesens, weniger machtpolitischer Einfluss, mehr richterliche Unabhängigkeit...</i></b></ion-note>
   </ion-card>
 </ion-content>
