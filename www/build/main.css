@@ -25579,19 +25579,20 @@ h2.header {
   margin-top: 2px;
   margin-bottom: 0px;
   color: #00498a;
-  max-width: 80%;
+  max-width: 85%;
 }
 
 ion-item.content {
   font-family: "Calibri", sans-serif;
   color: #ffa016;
+  font-size: small;
   margin: -10px 5px 0px 10px;
   padding: 0px 15px 0px 10px;
 }
 
 ion-note.date {
   font-style: italic;
-  font-size: small;
+  font-size: smaller;
 }
 
 h2.header {
