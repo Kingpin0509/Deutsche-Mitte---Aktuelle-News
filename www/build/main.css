@@ -24774,7 +24774,7 @@ ion-label.label {
 }
 
 .bar-buttons {
-  color: #dddddd;
+  color: #F2F2F2;
   background-color: transparent;
 }
 
@@ -24812,7 +24812,7 @@ ion-label.label {
 }
 
 ion-card-content {
-  background: #f3f3f3;
+  background: #F9F9F9;
 }
 
 .note {
@@ -25224,11 +25224,6 @@ ion-card-content {
 }
 
 h1.header {
-  font-family: "Oswald", sans-serif;
-  color: #00498a;
-}
-
-ion-card-title.header {
   font-family: "Oswald", sans-serif;
   color: #00498a;
 }

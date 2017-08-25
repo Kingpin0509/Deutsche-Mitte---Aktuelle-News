@@ -1,7 +1,6 @@
 import { Component } from "@angular/core";
-import { AlertController } from "ionic-angular";
-import { NavController } from "ionic-angular";
-
+import { AlertController,NavController,ModalController } from "ionic-angular";
+import { AussenpolitikComponent } from '../programm/aussenpolitik'
 @Component({
   selector: "page-about",
   templateUrl: "about.html"
@@ -9,8 +8,14 @@ import { NavController } from "ionic-angular";
 export class AboutComponent {
   constructor(
     public navCtrl: NavController,
-    public alerCtrl: AlertController
+    public alerCtrl: AlertController,
+    public modalCtrl: ModalController
   ) {}
+  openBasicModal() {
+    let myModal = this.modalCtrl.create(AussenpolitikComponent);
+    myModal.present();
+  }
+
   doAlertAussenpolitik() {
     let alert = this.alerCtrl.create({
       title: "Aussenpolitik",

@@ -11,19 +11,9 @@
     </ion-buttons>
   </ion-navbar>
 </ion-header>
-
 <ion-content padding>
-  <ion-card>
-    <ion-card-content>
-      <ion-card-header>
-        <h1 class="header" text-wrap text-center>Die Deutsche Mitte steht für ethische Politik im Sinne der Bewahrung der Schöpfung: mit Herz, Augenmaß und Vernunft</h1>
-      </ion-card-header>
-      <p padding-horizontal text-justify>
-        <i padding-horizontal>Politik soll fragen: Was ist gut für alle? Für Deutschland, für Europa, für die Welt. Für Mensch und Natur. Für ein glückliches und erfolgreiches Miteinander aller in Frieden, Gerechtigkeit und fairem Interessenausgleich. Wir sind alle miteinander
-                verbunden!</i>
-      </p>
-    </ion-card-content>
-  </ion-card>
+  <h1 class="header" text-wrap text-center>Die Deutsche Mitte steht für ethische Politik im Sinne der Bewahrung der Schöpfung: mit Herz, Augenmaß und Vernunft</h1>
+  <p padding-horizontal text-justify><i padding-horizontal>Politik soll fragen: Was ist gut für alle? Für Deutschland, für Europa, für die Welt. Für Mensch und Natur. Für ein glückliches und erfolgreiches Miteinander aller in Frieden, Gerechtigkeit und fairem Interessenausgleich. Wir sind alle miteinander verbunden!</i></p>
   <ion-card>
     <ion-card-content>
       <ion-card-title class="header" text-center>Aufrichtige Wahlversprechen: Regieren heißt dienen – nicht herrschen</ion-card-title>
@@ -44,6 +34,10 @@
   </ion-card>
   <h2 class="header">Kurzprogramm der Deutschen Mitte 2017:</h2>
   <ion-card>
+    <div padding>
+      <button ion-button block (click)="openBasicModal()"><ion-icon padding-horizontal name="expand"></ion-icon><h2>Außenpolitik</h2></button>
+    </div>
+    <ion-note text-justify><b><i>Mit Augenmaß, gut abgestimmt mit Partnern und Freunden und ohne großen Wirbel verlässt Deutschland die Euro-Gruppe – nicht als erstes Land, um Missstimmung zu vermeiden, jedoch als zweites...</i></b></ion-note>
     <ion-card-content (click)="doAlertAussenpolitik()">
       <button ion-button block color="dark">
                 <h2><ion-icon padding-horizontal name="expand"></ion-icon>Außenpolitik</h2></button>
