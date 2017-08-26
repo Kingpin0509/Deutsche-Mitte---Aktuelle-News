@@ -29,13 +29,6 @@ export class SlidesComponent {
       description: "Machen Sie mit !",
       description1: "Kommen Sie in die Deutsche Mitte",
       image: "assets/img/ica-slidebox-img-7.png"
-    },
-    {
-      title: "Inoffizielle App",
-      description:
-        "Verantwortlich für diese App ist ausschließlich der Entwickler, nicht die Partei",
-      description1: "",
-      image: "assets/img/ica-slidebox-img-2.png"
     }
   ];
   openPage() {
