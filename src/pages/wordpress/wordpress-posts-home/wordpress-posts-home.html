@@ -13,8 +13,9 @@
 <ion-content>
   <ion-card>
 
-      <ion-list *ngFor="let post of posts">
-    <ion-card-content>        <ion-list-header (tap)="loadPost(post)" class="header">
+    <ion-list *ngFor="let post of posts">
+      <ion-card-content>
+        <ion-list-header (tap)="loadPost(post)" class="header">
           <h2 class="header" item-start [innerHTML]="post.title.rendered"></h2>
           <ion-note class="date" item-end>{{post.date | date: 'shortDate'}}</ion-note>
         </ion-list-header>
@@ -31,11 +32,12 @@
         </button>
           </ion-item-options>
         </ion-item-sliding>
-    </ion-card-content>
-     </ion-list>  </ion-card>
-      <ion-infinite-scroll (ionInfinite)="loadMore($event)">
-        <ion-infinite-scroll-content></ion-infinite-scroll-content>
-      </ion-infinite-scroll>
+      </ion-card-content>
+    </ion-list>
+  </ion-card>
+  <ion-infinite-scroll (ionInfinite)="loadMore($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
 
 
 </ion-content>
