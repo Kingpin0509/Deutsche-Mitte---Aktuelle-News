@@ -11,26 +11,31 @@
   </ion-navbar>
 </ion-header>
 <ion-content>
-  <ion-list *ngFor="let post of posts">
-    <ion-list-header (tap)="loadPost(post)" class="header">
-      <h2 class="header" item-start [innerHTML]="post.title.rendered"></h2>
-      <ion-note class="date" item-end>{{post.date | date: 'shortDate'}}</ion-note>
-    </ion-list-header>
-    <ion-item-sliding #slidingItem>
-      <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>
-      <ion-item-options side="right">
-        <button ion-button color="primary" (click)="share(slidingItem)" (tap)="favoritePost(post)">
+  <ion-card>
+
+      <ion-list *ngFor="let post of posts">
+    <ion-card-content>        <ion-list-header (tap)="loadPost(post)" class="header">
+          <h2 class="header" item-start [innerHTML]="post.title.rendered"></h2>
+          <ion-note class="date" item-end>{{post.date | date: 'shortDate'}}</ion-note>
+        </ion-list-header>
+        <ion-item-sliding #slidingItem>
+          <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>
+          <ion-item-options side="right">
+            <button ion-button color="primary" (click)="share(slidingItem)" (tap)="favoritePost(post)">
           <ion-icon name="thumbs-up"></ion-icon>
           {{ 'FAVORITE' | translate }}
         </button>
-        <button ion-button color="secondary" (tap)="loadPost(post)">
+            <button ion-button color="secondary" (tap)="loadPost(post)">
           <ion-icon name="book"></ion-icon>
           {{ 'READ' | translate }}
         </button>
-      </ion-item-options>
-    </ion-item-sliding>
-  </ion-list>
-  <ion-infinite-scroll (ionInfinite)="loadMore($event)">
-    <ion-infinite-scroll-content></ion-infinite-scroll-content>
-  </ion-infinite-scroll>
+          </ion-item-options>
+        </ion-item-sliding>
+    </ion-card-content>
+     </ion-list>  </ion-card>
+      <ion-infinite-scroll (ionInfinite)="loadMore($event)">
+        <ion-infinite-scroll-content></ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+
+
 </ion-content>
