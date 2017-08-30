@@ -91,6 +91,13 @@ ion-label.label {
   background: #fa7d09;
 }
 
+.menu-divider-bordered
+{
+  border-top: 3px outset #6D6D6D;
+  border-bottom: 1px outset #6D6D6D;
+  height: 40px;
+}
+
 ion-card-content {
   background: #f9f9f9;
 }

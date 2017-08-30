@@ -15,11 +15,11 @@
     <ion-list *ngFor="let post of posts">
       <ion-card-content>
         <ion-list-header (tap)="loadPost(post)" class="header">
-          <h2 class="header" item-start [innerHTML]="post.title.rendered"></h2>
+          <h2 text-justify class="header" item-start [innerHTML]="post.title.rendered"></h2>
           <ion-note class="date" item-end>{{post.date | date: 'shortDate'}}</ion-note>
         </ion-list-header>
         <ion-item-sliding #slidingItem>
-          <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>
+          <ion-item class="content" (tap)="loadPost(post)" text-justify text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>
           <ion-item-options side="right">
             <button ion-button color="primary" (click)="share(slidingItem)" (tap)="favoritePost(post)">
           <ion-icon name="thumbs-up"></ion-icon>
