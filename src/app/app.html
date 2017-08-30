@@ -43,13 +43,13 @@
         <ion-item-group>
           <div class="fade-in-left">
             <ion-item-divider class="dmo-dark">
-              <h2>{{'PERSONAL' | translate}}</h2>
+              <h4>{{'PERSONAL' | translate}}</h4>
             </ion-item-divider>
           </div>
-          <button class="animated rotateInUpLeft" ion-item *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)">
-                    <ion-icon item-start [name]="page.icon"></ion-icon>
-                    <h2 ion-text color="primary">{{page.title | translate}}</h2>
-                    </button>
+          <p><button class="animated rotateInUpLeft" ion-button icon-start *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)">
+                    <ion-icon [name]="page.icon"></ion-icon>
+                    <h2 color="primary">{{page.title | translate}}</h2>
+                    </button></p>
           <!-- <ion-item ion-item (tap)="openPageFacebook()">
                     <ion-icon name="logo-facebook" item-left></ion-icon>
                     Facebook
