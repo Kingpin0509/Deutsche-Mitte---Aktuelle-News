@@ -64,7 +64,7 @@ ion-label.label {
 .tabs[tabsPlacement="bottom"] > .tabbar::before {
   height: 6px;
 }
-.tabs .tab-button[aria-selected=true] {
+.tabs .tab-button[aria-selected="true"] {
   color: #00498a;
   padding: 0;
   background-color: rgba(121, 111, 101, 0.21);
@@ -91,10 +91,9 @@ ion-label.label {
   background: #fa7d09;
 }
 
-.menu-divider-bordered
-{
-  border-top: 3px outset #6D6D6D;
-  border-bottom: 1px outset #6D6D6D;
+.menu-divider-bordered {
+  border-top: 3px outset #6d6d6d;
+  border-bottom: 1px outset #6d6d6d;
   height: 40px;
 }
 
@@ -128,7 +127,7 @@ ion-card-content {
   75%,
   90%,
   to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   0% {
     opacity: 0;
@@ -180,9 +179,8 @@ ion-card-content {
 }
 
 .fade-in-left {
-  -webkit-animation: fade-in-left 0.7s cubic-bezier(0.170, 0.900, 0.200, 1.000)
-    both;
-  animation: fade-in-left 0.7s cubic-bezier(0.170, 0.900, 0.200, 1.000) both;
+  -webkit-animation: fade-in-left 0.7s cubic-bezier(0.17, 0.9, 0.2, 1) both;
+  animation: fade-in-left 0.7s cubic-bezier(0.17, 0.9, 0.2, 1) both;
   -webkit-animation-name: fade-in-left;
   animation-name: fade-in-left;
 }
@@ -214,9 +212,8 @@ ion-card-content {
 }
 
 .fade-in-right {
-  -webkit-animation: fade-in-right 0.7s cubic-bezier(0.170, 0.900, 0.200, 1.000)
-    both;
-  animation: fade-in-right 0.7s cubic-bezier(0.170, 0.900, 0.200, 1.000) both;
+  -webkit-animation: fade-in-right 0.7s cubic-bezier(0.17, 0.9, 0.2, 1) both;
+  animation: fade-in-right 0.7s cubic-bezier(0.17, 0.9, 0.2, 1) both;
   -webkit-animation-name: fade-in-right;
   animation-name: fade-in-right;
 }
@@ -292,9 +289,9 @@ ion-card-content {
   backface-visibility: visible !important;
   -webkit-animation-name: flipInYRight;
   animation-name: flipInYRight;
-  -webkit-animation: flipInYRight 0.74s cubic-bezier(0.250, 0.460, 0.450, 0.940)
+  -webkit-animation: flipInYRight 0.74s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
-  animation: flipInYRight 0.74s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: flipInYRight 0.74s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes scale-up-hor-left {
@@ -328,10 +325,9 @@ ion-card-content {
 }
 
 .scale-up-hor-left {
-  -webkit-animation: scale-up-hor-left 0.4s
-    cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000)
+  -webkit-animation: scale-up-hor-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
     both;
+  animation: scale-up-hor-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 @-webkit-keyframes scale-up-ver-center {
@@ -358,9 +354,8 @@ ion-card-content {
 
 .scale-up-ver-center {
   -webkit-animation: scale-up-ver-center 0.4s
-    cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  animation: scale-up-ver-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000)
-    both;
+    cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-ver-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 /*----------------------------------------
@@ -368,8 +363,8 @@ ion-card-content {
 *----------------------------------------*/
 @-webkit-keyframes scale-up-ver-top {
   0% {
-    -webkit-transform: scaleY(0.0);
-    transform: scaleY(0.0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
     -webkit-transform-origin: 100% 0%;
     transform-origin: 100% 0%;
   }
@@ -382,8 +377,8 @@ ion-card-content {
 }
 @keyframes scale-up-ver-top {
   0% {
-    -webkit-transform: scaleY(0.0);
-    transform: scaleY(0.0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
     -webkit-transform-origin: 100% 0%;
     transform-origin: 100% 0%;
   }
@@ -395,10 +390,9 @@ ion-card-content {
   }
 }
 .scale-up-ver-top {
-  -webkit-animation: scale-up-ver-top 0.5s
-    cubic-bezier(0.390, 0.575, 0.565, 1.000) 0ms both;
-  animation: scale-up-ver-top 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0ms
-    both;
+  -webkit-animation: scale-up-ver-top 0.5s cubic-bezier(0.39, 0.575, 0.565, 1)
+    0ms both;
+  animation: scale-up-ver-top 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0ms both;
 }
 /*----------------------------------------*/
 
@@ -407,8 +401,8 @@ ion-card-content {
 *----------------------------------------*/
 @-webkit-keyframes scale-up-hor-center {
   0% {
-    -webkit-transform: scaleX(0.0);
-    transform: scaleX(0.0);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
   }
   100% {
     -webkit-transform: scaleX(1);
@@ -417,8 +411,8 @@ ion-card-content {
 }
 @keyframes scale-up-hor-center {
   0% {
-    -webkit-transform: scaleX(0.0);
-    transform: scaleX(0.0);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
   }
   100% {
     -webkit-transform: scaleX(1);
@@ -427,9 +421,9 @@ ion-card-content {
 }
 .scale-up-hor-center {
   -webkit-animation: scale-up-hor-center 0.5s
-    cubic-bezier(0.390, 0.575, 0.565, 1.000) 150ms both;
-  animation: scale-up-hor-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000)
-    150ms both;
+    cubic-bezier(0.39, 0.575, 0.565, 1) 150ms both;
+  animation: scale-up-hor-center 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 150ms
+    both;
 }
 /*----------------------------------------
 
@@ -437,10 +431,9 @@ ion-card-content {
 * animation slide-in-blurred-top
 * ----------------------------------------*/
 .slide-in-blurred-top {
-  -webkit-animation: slide-in-blurred-top 0.5s
-    cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-  animation: slide-in-blurred-top 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000)
+  -webkit-animation: slide-in-blurred-top 0.5s cubic-bezier(0.23, 1, 0.32, 1)
     both;
+  animation: slide-in-blurred-top 0.5s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 @-webkit-keyframes slide-in-blurred-top {
   0% {
@@ -487,11 +480,12 @@ ion-card-content {
 * ----------------------------------------
 * animation tracking-in-contract *
  ----------------------------------------*/
- .tracking-in-contract {
-	-webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+.tracking-in-contract {
+  -webkit-animation: tracking-in-contract 0.8s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
- @-webkit-keyframes tracking-in-contract {
+@-webkit-keyframes tracking-in-contract {
   0% {
     letter-spacing: 1em;
     opacity: 0;
@@ -533,7 +527,7 @@ ion-card-content {
 
 .splash-bg {
   position: relative;
-  background: url('../../../assets/img/splashbg.png') no-repeat transparent;
+  background: url("../../../assets/img/splashbg.png") no-repeat transparent;
   background-size: cover;
   height: 45%;
   z-index: 1;
@@ -550,8 +544,10 @@ ion-card-content {
   }
 }
 .slide-in-elliptic-bottom-fwd {
-	-webkit-animation: slide-in-elliptic-bottom-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-elliptic-bottom-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-elliptic-bottom-fwd 0.7s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-elliptic-bottom-fwd 0.7s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 /* ----------------------------------------------
  * Generated by Animista on 2017-8-26 5:57:18
@@ -563,41 +559,43 @@ ion-card-content {
  * animation slide-in-elliptic-bottom-fwd
  * ----------------------------------------
  */
- @-webkit-keyframes slide-in-elliptic-bottom-fwd {
+@-webkit-keyframes slide-in-elliptic-bottom-fwd {
   0% {
     -webkit-transform: translateY(600px) rotateX(30deg) scale(0);
-            transform: translateY(600px) rotateX(30deg) scale(0);
+    transform: translateY(600px) rotateX(30deg) scale(0);
     -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
     opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0) rotateX(0) scale(1);
-            transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
     -webkit-transform-origin: 50% -1400px;
-            transform-origin: 50% -1400px;
+    transform-origin: 50% -1400px;
     opacity: 1;
   }
 }
 @keyframes slide-in-elliptic-bottom-fwd {
   0% {
     -webkit-transform: translateY(600px) rotateX(30deg) scale(0);
-            transform: translateY(600px) rotateX(30deg) scale(0);
+    transform: translateY(600px) rotateX(30deg) scale(0);
     -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
     opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0) rotateX(0) scale(1);
-            transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
     -webkit-transform-origin: 50% -1400px;
-            transform-origin: 50% -1400px;
+    transform-origin: 50% -1400px;
     opacity: 1;
   }
 }
 .slide-in-elliptic-bottom-bck {
-	-webkit-animation: slide-in-elliptic-bottom-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-elliptic-bottom-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-elliptic-bottom-bck 0.7s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-elliptic-bottom-bck 0.7s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 /* ----------------------------------------------
  * Generated by Animista on 2017-8-26 6:4:51
@@ -609,35 +607,153 @@ ion-card-content {
  * animation slide-in-elliptic-bottom-bck
  * ----------------------------------------
  */
- @-webkit-keyframes slide-in-elliptic-bottom-bck {
+@-webkit-keyframes slide-in-elliptic-bottom-bck {
   0% {
     -webkit-transform: translateY(600px) rotateX(-30deg) scale(6.5);
-            transform: translateY(600px) rotateX(-30deg) scale(6.5);
+    transform: translateY(600px) rotateX(-30deg) scale(6.5);
     -webkit-transform-origin: 50% -100%;
-            transform-origin: 50% -100%;
+    transform-origin: 50% -100%;
     opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0) rotateX(0) scale(1);
-            transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
     -webkit-transform-origin: 50% 500px;
-            transform-origin: 50% 500px;
+    transform-origin: 50% 500px;
     opacity: 1;
   }
 }
 @keyframes slide-in-elliptic-bottom-bck {
   0% {
     -webkit-transform: translateY(600px) rotateX(-30deg) scale(6.5);
-            transform: translateY(600px) rotateX(-30deg) scale(6.5);
+    transform: translateY(600px) rotateX(-30deg) scale(6.5);
     -webkit-transform-origin: 50% -100%;
-            transform-origin: 50% -100%;
+    transform-origin: 50% -100%;
     opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0) rotateX(0) scale(1);
-            transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
     -webkit-transform-origin: 50% 500px;
-            transform-origin: 50% 500px;
+    transform-origin: 50% 500px;
+    opacity: 1;
+  }
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2017-8-31 20:39:8
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation bounce-top
+ * ----------------------------------------
+ */
+.bounce-top {
+  -webkit-animation: bounce-top 0.9s both;
+  animation: bounce-top 0.9s both;
+}
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
     opacity: 1;
   }
 }
