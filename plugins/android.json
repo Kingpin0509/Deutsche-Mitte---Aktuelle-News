@@ -1,0 +1,52 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "de.dm.news"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "XWALK_VERSION": "23+",
+            "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
+            "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
+            "XWALK_MODE": "embedded",
+            "XWALK_MULTIPLEAPK": "true",
+            "PACKAGE_NAME": "de.dm.news"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "de.dm.news"
+        },
+        "cordova-plugin-facebook4": {
+            "APP_ID": "131001554119757",
+            "APP_NAME": "Deutsche Mitte - Aktuell",
+            "PACKAGE_NAME": "de.dm.news"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "de.dm.news"
+        },
+        "cordova-plugin-ios-no-export-compliance": {
+            "PACKAGE_NAME": "de.dm.news"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "de.dm.news"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "de.dm.news"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "de.dm.news"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "de.dm.news"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "de.dm.news"
+        }
+    },
+    "dependent_plugins": {}
+}
