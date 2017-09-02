@@ -19,10 +19,12 @@
 </ion-header>
 <ion-content class="post">
   <ion-list>
-    <ion-toolbar><wordpress-feature-media *ngIf="post.featured_media" [id]="post.featured_media"></wordpress-feature-media></ion-toolbar>
+    <ion-toolbar>
+      <wordpress-feature-media *ngIf="post.featured_media" [id]="post.featured_media"></wordpress-feature-media>
+    </ion-toolbar>
+
     <ion-card text-wrap *ngIf="post.content.rendered">
-      <p padding text-justify [innerHtml]="post.content.rendered"></p>
-    </ion-card>
+          <p padding text-justify [innerHtml]="post.content.rendered"></p></ion-card>
     <button ion-button full (tap)=previewPost()>Artikel anzeigen</button>
     <ion-list *ngIf="comments">
       <ion-item-divider light>Kommentare</ion-item-divider>
