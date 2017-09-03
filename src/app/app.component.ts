@@ -8,19 +8,19 @@ import { TranslateService } from "ng2-translate";
 import { Config } from "./app.config";
 import { PlaceholderComponent } from "../pages/placeholder/placeholder-component/placeholder.component";
 import { DownloadsComponent } from "../pages/downloads/downloads-component/downloads.component";
-//import { NewsletterComponent } from '../pages/newsletter/newsletter-component/newsletter.component';
 import { TabsComponent } from "../pages/tabs/tabs-component/tabs.component";
 import { AboutComponent } from "../pages/about/about-component/about.component";
 import { SettingsComponent } from "../pages/settings/settings-component/settings.component";
 import { WordpressMenus } from "../pages/wordpress/wordpress-menus/wordpress-menus.component";
-import { WordpressPosts } from "../pages/wordpress/wordpress-posts/wordpress-posts.component";
 import { WordpressFavorites } from "../pages/wordpress/wordpress-favorites/wordpress-favorites.component";
 import { YoutubeChannelComponent } from "../pages/youtube/youtube-channel/youtube-channel.component";
 import { WordpressCategories } from "../pages/wordpress/wordpress-categories/wordpress-categories.component";
-// import { WordpressTags } from '../pages/wordpress/wordpress-tags/wordpress-tags.component';
 import { SlidesComponent } from "../pages/slides/slides-component/slides.component";
 import { StammtischeComponent } from "../pages/stammtische/stammtische-component/stammtische.component";
 import { QuizComponent } from "../pages/quiz/quiz-component/quiz";
+//import { NewsletterComponent } from '../pages/newsletter/newsletter-component/newsletter.component';
+// import { WordpressTags } from '../pages/wordpress/wordpress-tags/wordpress-tags.component';
+// import { WordpressPosts } from "../pages/wordpress/wordpress-posts/wordpress-posts.component";
 // import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 // import { BarcodeScannerComponent } from '../pages/barcode-scanner/barcode-scanner-component/barcode-scanner.component';
 // import { FeedCategoriesComponent } from '../pages/feeds/feed-categories/feed-categories.component';
@@ -73,8 +73,8 @@ export class MyApp {
     });
     this.pagesleft = [
       { title: "HOME", component: TabsComponent, icon: "home" },
-      { title: "POSTS", component: WordpressPosts, icon: "paper" },
       { title: "CATEGORIES", component: WordpressCategories, icon: "bookmarks" }
+      // { title: "POSTS", component: WordpressPosts, icon: "paper" },
       //{ title: 'PAGES', component: WordpressPages, icon: 'bookmarks' },
       //{ title: 'DOWNLOADS', component: WordpressPageDownloads, icon: 'bookmarks' },
     ];
@@ -97,8 +97,8 @@ export class MyApp {
     ];
     this.pagesleftfooter = [
       { title: "QUIZ", component: QuizComponent, icon: "help" },
-      //	{ title: 'NEWSLETTER', component: NewsletterComponent, icon: 'help' },
       { title: "FAVORITES", component: WordpressFavorites, icon: "thumbs-up" }
+      //	{ title: 'NEWSLETTER', component: NewsletterComponent, icon: 'help' },
     ];
     this.pagesright = [
       //		  { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
