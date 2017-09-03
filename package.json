@@ -32,6 +32,7 @@
         "@ionic-native/splash-screen": "3.12.1",
         "@ionic-native/status-bar": "3.12.1",
         "@ionic/storage": "2.0.1",
+        "ajv": "^5.0.0",
         "angularfire2": "^4.0.0-rc.1",
         "animate.css": "3.5.2",
         "chart.js": "^2.5.0",
