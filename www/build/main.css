@@ -25697,6 +25697,11 @@ p {
   font-family: "Calibri", sans-serif;
 }
 
+h1.header {
+  font-family: "Oswald", sans-serif;
+  color: #00498a;
+}
+
 h2.header {
   font-family: "Oswald", sans-serif;
   color: #00498a;
@@ -25916,6 +25921,11 @@ i {
 
 .stammtische-page p b {
   color: #000000;
+}
+
+h1.header {
+  font-family: "Oswald", sans-serif;
+  color: #00498a;
 }
 
 .page-welcome .splash-bg {
