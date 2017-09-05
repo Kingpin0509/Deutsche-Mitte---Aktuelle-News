@@ -37,9 +37,6 @@
         <param name="android-package" value="io.ionic.keyboard.IonicKeyboard" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="BarcodeScanner">
-        <param name="android-package" value="com.phonegap.plugins.barcodescanner.BarcodeScanner" />
-    </feature>
     <name>Ionic Framework App</name>
     <description>Ionic Framework App</description>
     <author email="gtsopour@gmail.com" href="https://codecanyon.net/user/gtsopour/portfolio">George I. Tsopouridis</author>
