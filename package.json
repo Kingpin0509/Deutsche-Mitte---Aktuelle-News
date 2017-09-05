@@ -106,9 +106,6 @@
             "cordova-plugin-crosswalk-webview": {},
             "cordova-plugin-ios-no-export-compliance": {}
         },
-        "platforms": [
-            "android",
-            "ios"
-        ]
+        "platforms": []
     }
 }
