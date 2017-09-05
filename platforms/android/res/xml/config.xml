@@ -1,7 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="de.dm.news" version="2.2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.ionicframework.ionic2app" version="1.11.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="EmailComposer">
+        <param name="android-package" value="de.martinreinhardt.cordova.plugins.email.EmailComposer" />
     </feature>
     <feature name="FacebookConnectPlugin">
         <param name="android-package" value="org.apache.cordova.facebook.ConnectPlugin" />
@@ -34,9 +37,12 @@
         <param name="android-package" value="io.ionic.keyboard.IonicKeyboard" />
         <param name="onload" value="true" />
     </feature>
-    <name>Deutsche Mitte - Aktuell</name>
-    <description>Stets alles aktuelle über die Partei "Deutsche Mitte"</description>
-    <author email="kingpin0509@gmail.com" href="http://westweedtzerecords.biz">Michael Humann</author>
+    <feature name="BarcodeScanner">
+        <param name="android-package" value="com.phonegap.plugins.barcodescanner.BarcodeScanner" />
+    </feature>
+    <name>Ionic Framework App</name>
+    <description>Ionic Framework App</description>
+    <author email="gtsopour@gmail.com" href="https://codecanyon.net/user/gtsopour/portfolio">George I. Tsopouridis</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="*" />
@@ -66,26 +72,15 @@
     <splash density="port-xxhdpi" src="resources/android/splash/drawable-port-xxhdpi-screen.png" />
     <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
     <preference name="loglevel" value="DEBUG" />
-    <preference name="webView" value="org.crosswalk.engine.XWalkWebViewEngine" />
-    <preference name="xwalkVersion" value="23+" />
-    <preference name="xwalkLiteVersion" value="xwalk_core_library_canary:17+" />
-    <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect" />
-    <preference name="xwalkMode" value="embedded" />
-    <preference name="xwalkMultipleApk" value="true" />
     <preference name="android-minSdkVersion" value="16" />
-    <preference name="windows-target-version" value="10.0" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="BackupWebStorage" value="none" />
     <preference name="SplashMaintainAspectRatio" value="true" />
-    <preference name="FadeSplashScreenDuration" value="500" />
-    <preference name="SplashScreenDelay" value="10" />
+    <preference name="FadeSplashScreenDuration" value="300" />
+    <preference name="SplashScreenDelay" value="0" />
     <preference name="SplashScreen" value="screen" />
     <preference name="ShowSplashScreenSpinner" value="true" />
     <preference name="AutoHideSplashScreen" value="false" />
-    <preference name="WindowsStorePublisherName" value="West Weedtze Development - Michael Humann" />
-    <preference name="WindowsStoreIdentityName" value="17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino" />
-    <preference name="WindowsStoreDisplayName" value="Deutsche Mitte - Aktuell (inoffiziell)" />
-    <preference name="SplashShowOnlyFirstTime" value="false" />
 </widget>
