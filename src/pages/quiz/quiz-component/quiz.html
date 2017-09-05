@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle="left" icon-only>
+		<ion-icon name='menu'></ion-icon>
+	</button>
+    <ion-title>WahlOMat</ion-title>
+    <ion-buttons end>
+      <button ion-button menuToggle="right" icon-only>
+		<ion-icon name='more'></ion-icon>
+	</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-slides #slides>
+    <ion-slide class="start-slide">
+      <h2>Passt die Deutsche Mitte zu mir?</h2>
+      <h4>10 Fragen</h4>
+      <button ion-button color="primary" (tap)="nextSlide()">Start!</button>
+    </ion-slide>
+    <ion-slide *ngFor="let question of questions; let i = index;">
+      <ion-header class="headerquiz">
+        <h3>Frage {{i+1}}/10</h3>
+      </ion-header>
+      <flash-card [isFlipped]="question.flashCardFlipped">
+        <div class="flash-card-front" [innerHTML]="question.flashCardFront"></div>
+        <div class="flash-card-back" [innerHTML]="question.flashCardBack"></div>
+      </flash-card>
+      <h3>{{question.questionText}}</h3>
+      <ion-list no-lines radio-group>
+        <ion-item *ngFor="let answer of question.answers; let i = index;">
+          <ion-label>{{i+1}}. {{answer.answer}}</ion-label>
+          <ion-radio (tap)="selectAnswer(answer, question)" [checked]="answer.selected" [disabled]="hasAnswered"></ion-radio>
+        </ion-item>
+      </ion-list>
+    </ion-slide>
+    <ion-slide>
+      <ion-header class="dm-dark">
+        <ion-title>Übereinstimmung: {{score}}/10</ion-title>
+      </ion-header>
+      <img src="assets/img/quiz/WahlOMat-Ergebniss.png" />
+      <ion-footer>
+        <button (tap)="restartQuiz()" ion-button full large no-margin no-padding color="primary">Erneut Starten</button>
+      </ion-footer>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

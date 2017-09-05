@@ -1,0 +1,39 @@
+h2.header {
+  font-family: "Oswald", sans-serif;
+  color: #00498a;
+}
+
+p.content {
+  font-family: "Calibri", sans-serif;
+  color: #ffa016;
+}
+
+ion-card.bordered{
+  border: solid 2px rgba(121, 111, 101, 0.21);
+}
+.card-background-page {
+
+    ion-card {
+      max-width: 400px;
+      position: relative;
+      text-align: center;
+    }
+
+    .card-title {
+      position: absolute;
+      top: 3%;
+      font-size: 1.4em;
+      width: 94%;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .card-subtitle {
+      font-size: 0.9em;
+      position: absolute;
+      top: 83%;
+      width: 98%;
+      color: #fff;
+    }
+
+  }
