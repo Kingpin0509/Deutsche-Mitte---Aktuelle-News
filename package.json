@@ -36,6 +36,7 @@
         "angularfire2": "^4.0.0-rc.1",
         "animate.css": "3.5.2",
         "chart.js": "^2.5.0",
+        "cordova-android": "^6.2.3",
         "cordova-ios": "^4.4.0",
         "cordova-ios-plugin-no-export-compliance": "0.0.5",
         "cordova-plugin-console": "1.0.5",
@@ -106,6 +107,7 @@
             "cordova-plugin-ios-no-export-compliance": {}
         },
         "platforms": [
+            "android",
             "ios"
         ]
     }
