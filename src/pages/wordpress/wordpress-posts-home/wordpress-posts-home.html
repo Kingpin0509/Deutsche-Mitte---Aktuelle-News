@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle="left" icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title class="bounce-top">{{'POSTS' | translate}}</ion-title>
+    <ion-buttons end>
+      <button ion-button menuToggle="right" icon-only>
+        <ion-icon name='more'></ion-icon>
+      </button></ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-card class="bordered slide-in-bck-bottom">
+    <ion-list *ngFor="let post of posts">
+      <ion-card-content>
+        <ion-list-header (tap)="loadPost(post)" class="header">
+          <h2 class="header" text-wrap item-start [innerHTML]="post.title.rendered"></h2>
+          <ion-note class="date" item-end>{{post.date | date: 'shortDate'}}</ion-note>
+        </ion-list-header>
+        <ion-item-sliding #slidingItem>
+          <ion-item class="content" (tap)="loadPost(post)" text-justify text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>
+          <ion-item-options side="right">
+            <button ion-button color="primary" (click)="share(slidingItem)" (tap)="favoritePost(post)">
+          <ion-icon name="thumbs-up"></ion-icon>
+          {{ 'FAVORITE' | translate }}
+        </button>
+            <button ion-button color="secondary" (tap)="loadPost(post)">
+          <ion-icon name="book"></ion-icon>
+          {{ 'READ' | translate }}
+        </button>
+          </ion-item-options>
+        </ion-item-sliding>
+      </ion-card-content>
+    </ion-list>
+  </ion-card>
+  <ion-infinite-scroll (ionInfinite)="loadMore($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

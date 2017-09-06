@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle="left" icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>{{ 'HEADLINE' | translate }}</ion-title>
+    <ion-buttons end>
+      <button (tap)="sharePost()" ion-button icon-only>
+	        <ion-icon name="share"></ion-icon>
+	      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar class="toolbar-header">
+    <ion-title *ngIf="post && authorData">
+      <h1 class="title-h1" text-wrap [innerHTML]="post.title.rendered"></h1>
+      <h4 class="title-date"><b>{{authorData.name}},</b> {{post.date | date: 'fullDate'}}</h4>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="post">
+  <ion-list class="slide-in-bck-bottom">
+    <ion-toolbar class="toolbar-header">
+      <wordpress-feature-media *ngIf="post.featured_media" [id]="post.featured_media"></wordpress-feature-media>
+    </ion-toolbar>
+
+    <ion-card text-wrap *ngIf="post.content.rendered">
+          <p padding text-justify [innerHtml]="post.content.rendered"></p></ion-card>
+    <button ion-button full (tap)=previewPost()>Artikel anzeigen</button>
+    <ion-list *ngIf="comments">
+      <ion-item-divider light>Kommentare</ion-item-divider>
+      <ion-item text-wrap *ngFor="let comment of comments">
+        <ion-avatar item-left>
+          <img [src]="comment.author_avatar_urls[96]">
+        </ion-avatar>
+        <h2>{{comment.author_name}}</h2>
+        <p [innerHTML]="comment.content.rendered"></p>
+      </ion-item>
+    </ion-list>
+  </ion-list>
+</ion-content>
