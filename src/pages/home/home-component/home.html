@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle="left" icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>{{'HOME' | translate}}</ion-title>
+    <ion-buttons end>
+      <button ion-button menuToggle="right" icon-only>
+      <ion-icon name='more'></ion-icon>
+    </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+  <h2>{{'HOME_TITLE' | translate}}</h2>
+  <p>
+    {{'HOME_MESSAGE' | translate}}
+  </p>
+  <p>
+    Die zur Partei gewordene Bewegung DEUTSCHE MITTE schafft den einzig sicheren Weg in die Zukunft: den ethischen – zur Bewahrung
+    der Schöpfung. Wir bringen Menschen in ein wachsendes und gutes Miteinander.</p>
+  <ion-list>
+    <ion-item *ngFor="let page of pages" (tap)="openPage(page)">
+      <ion-icon [name]="page.icon" item-left></ion-icon>
+      {{page.title | translate}}
+      <ion-note item-right>
+        {{page.note}}
+      </ion-note>
+    </ion-item>
+  </ion-list>
+</ion-content>
