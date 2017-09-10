@@ -1,42 +1,42 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Wilkommen</ion-title>
-  </ion-navbar>
-</ion-header>
-<ion-content class="tutorial-page">
-  <ion-slides pager>
-    <ion-slide>
-      <ion-toolbar>
-        <ion-buttons end>
-          <button ion-button (click)=openPage()>Überspringen</button>
-        </ion-buttons>
-      </ion-toolbar>
-      <div class="slide-in-blurred-top">
-        <img src="assets/img/slidebox-img-1o.png" class="slide-image" /></div>
-      <div class="scale-up-hor-center">
-        <img src="assets/img/slidebox-img-1u.png" class="slide-image" /></div>
-      <h2 class="slide-title tracking-in-contract">Herzlich Willkommen</h2>
-      <p class="tracking-in-contract"> Diese App stellt ihnen stets aktuelle Informationen bereit, über die Partei</p>
-      <p>-Deutsche Mitte-</p>
-    </ion-slide>
-    <ion-slide *ngFor="let slide of slides">
-      <ion-toolbar>
-        <ion-buttons end>
-          <button ion-button (click)=openPage()>Überspringen</button>
-        </ion-buttons>
-      </ion-toolbar>
-      <div class="scale-up-ver-center">
-        <img [src]="slide.image" class="slide-image " />
-        <h2 class="slide-title" [innerHTML]="slide.title"></h2>
-        <p [innerHTML]="slide.description"></p>
-        <p [innerHTML]="slide.description1"></p>
-      </div>
-    </ion-slide>
-    <ion-slide>
-      <img src="assets/img/ica-slidebox-img-5.png" class="slide-image" />
-      <h2 class="slide-title">Alles klar?</h2>
-      <p> Dann lassen Sie uns zusammen auf die Bremse treten, den Kurs korrigieren und dann durchstarten!</p>
-      <button ion-button large clear icon-right (click)=openPage()>Start<ion-icon name="arrow-forward"></ion-icon></button>
-    </ion-slide>
-  </ion-slides>
-</ion-content>
+    <ion-navbar>
+      <ion-title class="bounce-top">Wilkommen</ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content class="tutorial-page">
+    <ion-slides pager>
+      <ion-slide>
+        <ion-toolbar>
+          <ion-buttons end>
+            <button ion-button (click)=openPage()>Überspringen</button>
+          </ion-buttons>
+        </ion-toolbar>
+        <div class="slide-in-blurred-top">
+          <img src="assets/img/slidebox-img-1o.png" class="slide-image" /></div>
+        <div class="scale-up-hor-center">
+          <img src="assets/img/slidebox-img-1u.png" class="slide-image" /></div>
+        <h2 class="slide-title tracking-in-contract">Herzlich Willkommen</h2>
+        <p class="tracking-in-contract"> Diese App stellt ihnen stets aktuelle Informationen bereit, über die Partei</p>
+        <p>-Deutsche Mitte-</p>
+      </ion-slide>
+      <ion-slide *ngFor="let slide of slides">
+        <ion-toolbar>
+          <ion-buttons end>
+            <button ion-button (click)=openPage()>Überspringen</button>
+          </ion-buttons>
+        </ion-toolbar>
+        <div class="scale-up-ver-center">
+          <img [src]="slide.image" class="slide-image " />
+          <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+          <p [innerHTML]="slide.description"></p>
+          <p [innerHTML]="slide.description1"></p>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/img/ica-slidebox-img-5.png" class="slide-image" />
+        <h2 class="slide-title">Alles klar?</h2>
+        <p> Dann lassen Sie uns zusammen auf die Bremse treten, den Kurs korrigieren und dann durchstarten!</p>
+        <button ion-button large clear icon-right (click)=openPage()>Start<ion-icon name="arrow-forward"></ion-icon></button>
+      </ion-slide>
+    </ion-slides>
+  </ion-content>
