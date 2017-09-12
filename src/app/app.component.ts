@@ -116,6 +116,7 @@ export class MyApp {
       this.statusBar.overlaysWebView(false);
       this.statusBar.backgroundColorByHexString("#005397");
       this.statusBar.styleBlackTranslucent();
+      this.statusBar.hide();
       this.splashScreen.hide();
     });
   }
