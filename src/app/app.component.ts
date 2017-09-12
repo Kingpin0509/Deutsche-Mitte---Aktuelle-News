@@ -98,13 +98,13 @@ export class MyApp {
     this.pagesleftfooter = [
       { title: "QUIZ", component: QuizComponent, icon: "help" },
       //	{ title: 'NEWSLETTER', component: NewsletterComponent, icon: 'help' },
-      { title: "FAVORITES", component: WordpressFavorites, icon: "thumbs-up" }
+      { title: "FAVORITES", component: WordpressFavorites, icon: "thumbs-up" },
+      { title: "SETTINGS", component: SettingsComponent, icon: "options" }
     ];
     this.pagesright = [
       //		  { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
     ];
     this.pagesrightfooter = [
-      { title: "SETTINGS", component: SettingsComponent, icon: "options" },
       { title: "FAVORITES", component: WordpressFavorites, icon: "thumbs-up" }
     ];
     this.wordpressMenusNavigation = config.wordpressMenusNavigation;
