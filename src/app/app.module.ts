@@ -1,5 +1,7 @@
 import { NgModule, ErrorHandler } from "@angular/core";
 import { IonicApp, IonicModule, IonicErrorHandler } from "ionic-angular";
+import { SplashScreen } from "@ionic-native/splash-screen";
+
 import { AnimationService } from "css-animator";
 import { SharedModule } from "./shared/shared.module";
 import { HomeModule } from "../pages/home/home.module";
@@ -11,6 +13,7 @@ import { FeedsModule } from "../pages/feeds/feeds.module";
 import { YoutubeModule } from "../pages/youtube/youtube.module";
 import { AboutModule } from "../pages/about/about.module";
 // Module Example: Use the PlaceholderModule for any new App Module
+import { Splash } from "../pages/splash/splash.module";
 import { PlaceholderModule } from "../pages/placeholder/placeholder.module";
 import { DownloadsModule } from "../pages/downloads/downloads.module";
 import { NewsletterModule } from "../pages/newsletter/newsletter.module";
@@ -33,7 +36,7 @@ import { Data } from "../providers/data";
 import { MyApp } from "./app.component";
 
 @NgModule({
-  declarations: [MyApp],
+  declarations: [MyApp, Splash],
   imports: [
     IonicModule.forRoot(MyApp),
     SharedModule,
@@ -63,8 +66,9 @@ import { MyApp } from "./app.component";
     StammtischeModule
   ],
   bootstrap: [IonicApp],
-  entryComponents: [MyApp],
+  entryComponents: [MyApp, Splash],
   providers: [
+    SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     Data,
     AnimationService

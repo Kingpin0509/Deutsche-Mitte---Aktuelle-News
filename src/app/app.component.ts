@@ -1,5 +1,5 @@
 import { Component, ViewChild } from "@angular/core";
-import { Nav, Platform, MenuController } from "ionic-angular";
+import { Nav, Platform, MenuController, ModalController } from "ionic-angular";
 import { StatusBar } from "@ionic-native/status-bar";
 import { SplashScreen } from "@ionic-native/splash-screen";
 import { LoadingController } from "ionic-angular";
@@ -21,6 +21,7 @@ import { WordpressCategories } from "../pages/wordpress/wordpress-categories/wor
 import { SlidesComponent } from "../pages/slides/slides-component/slides.component";
 import { StammtischeComponent } from "../pages/stammtische/stammtische-component/stammtische.component";
 import { QuizComponent } from "../pages/quiz/quiz-component/quiz";
+import { Splash } from "../pages/splash/splash.module";
 // import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 // import { BarcodeScannerComponent } from '../pages/barcode-scanner/barcode-scanner-component/barcode-scanner.component';
 // import { FeedCategoriesComponent } from '../pages/feeds/feed-categories/feed-categories.component';
@@ -59,8 +60,14 @@ export class MyApp {
     private splashScreen: SplashScreen,
     private config: Config,
     private menuController: MenuController,
-    private loadingCtrl: LoadingController
+    private loadingCtrl: LoadingController,
+    private modalCtrl: ModalController
   ) {
+    platform.ready().then(() => {
+      statusBar.styleDefault();
+      let splash = modalCtrl.create(Splash);
+      splash.present();
+    });
     this.initializeApp();
     this.translate.setDefaultLang("de");
     storage.get("language").then(value => {
@@ -117,7 +124,7 @@ export class MyApp {
       this.statusBar.backgroundColorByHexString("#005397");
       this.statusBar.styleBlackTranslucent();
       this.statusBar.hide();
-      this.splashScreen.hide();
+      // this.splashScreen.hide();
     });
   }
   openPage(page) {
