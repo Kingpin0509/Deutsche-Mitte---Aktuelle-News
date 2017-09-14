@@ -24803,11 +24803,11 @@ ion-label.label {
 }
 
 .dm-light {
-  background: #005397;
+  background: #005397 0, 83, 151;
 }
 
 .dm-dark {
-  background: #00498a;
+  background: #00498A;
 }
 
 .dmo-light {
@@ -25915,8 +25915,8 @@ i {
   opacity: 0;
   -webkit-transform: rotate3d(1, 1, 0, 50deg);
   transform: rotate3d(1, 1, 0, 50deg);
-  -webkit-animation: 1s 0.2s ease fadeInAndSpin;
-  animation: 1s 0.2s ease fadeInAndSpin;
+  -webkit-animation: 1.2s 0.3s ease fadeInAndSpin;
+  animation: 1.2s 0.3s ease fadeInAndSpin;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -25926,8 +25926,8 @@ i {
   opacity: 0;
   -webkit-transform: rotate3d(1, 1, 0, 50deg);
   transform: rotate3d(1, 1, 0, 50deg);
-  -webkit-animation: 1s 0.4s ease fadeInAndSpin;
-  animation: 1s 0.4s ease fadeInAndSpin;
+  -webkit-animation: 1.2s 0.5s ease fadeInAndSpin;
+  animation: 1.2s 0.5s ease fadeInAndSpin;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -25937,8 +25937,8 @@ i {
   opacity: 0;
   -webkit-transform: rotate3d(1, 1, 0, 50deg);
   transform: rotate3d(1, 1, 0, 50deg);
-  -webkit-animation: 1s 0.6s ease fadeInAndSpin;
-  animation: 1s 0.6s ease fadeInAndSpin;
+  -webkit-animation: 1.2s 0.7s ease fadeInAndSpin;
+  animation: 1.2s 0.7s ease fadeInAndSpin;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -25948,8 +25948,8 @@ i {
   opacity: 0;
   -webkit-transform: rotate3d(1, 1, 0, 50deg);
   transform: rotate3d(1, 1, 0, 50deg);
-  -webkit-animation: 1s 0.8s ease fadeInAndSpin;
-  animation: 1s 0.8s ease fadeInAndSpin;
+  -webkit-animation: 1.2s 0.9s ease fadeInAndSpin;
+  animation: 1.2s 0.9s ease fadeInAndSpin;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -25959,8 +25959,8 @@ i {
 .md page-splash #bars .cls-5,
 .md page-splash #bars .cls-6 {
   opacity: 0;
-  -webkit-animation: 2s 1.5s linear fadeIn;
-  animation: 2s 1.5s linear fadeIn;
+  -webkit-animation: 2.5s 1.8s linear fadeIn;
+  animation: 2.5s 1.8s linear fadeIn;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
