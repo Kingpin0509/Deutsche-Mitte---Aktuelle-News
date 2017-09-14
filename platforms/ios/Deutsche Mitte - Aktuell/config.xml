@@ -113,9 +113,10 @@
     <preference name="UIWebViewBounce" value="false" />
     <preference name="android-minSdkVersion" value="16" />
     <preference name="SplashMaintainAspectRatio" value="true" />
-    <preference name="FadeSplashScreenDuration" value="500" />
     <preference name="SplashScreenDelay" value="10" />
     <preference name="SplashScreen" value="screen" />
+    <preference name="FadeSplashScreenDuration" value="2000" />
+    <preference name="FadeSplashScreen" value="false" />
     <preference name="ShowSplashScreenSpinner" value="true" />
     <preference name="AutoHideSplashScreen" value="false" />
     <preference name="WindowsStorePublisherName" value="West Weedtze Development - Michael Humann" />

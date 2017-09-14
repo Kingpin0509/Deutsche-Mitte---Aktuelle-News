@@ -24768,6 +24768,13 @@ ion-label.label {
   white-space: nowrap;
 }
 
+.modal-wrapper {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
 .bar-button {
   color: #aaaaaa;
   background-color: transparent;
@@ -24796,11 +24803,11 @@ ion-label.label {
 }
 
 .dm-light {
-  background: #005397;
+  background: #005397 0, 83, 151;
 }
 
 .dm-dark {
-  background: #00498a;
+  background: #00498A;
 }
 
 .dmo-light {
@@ -25883,6 +25890,107 @@ i {
 
 .tutorial-page p b {
   color: #000000;
+}
+
+.ios page-splash .scroll-content,
+.md page-splash .scroll-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.ios page-splash #bars,
+.md page-splash #bars {
+  height: 80%;
+}
+
+.ios page-splash #bars .cls-1,
+.md page-splash #bars .cls-1 {
+  opacity: 0;
+  -webkit-transform: rotate3d(1, 1, 0, 50deg);
+  transform: rotate3d(1, 1, 0, 50deg);
+  -webkit-animation: 1.2s 0.3s ease fadeInAndSpin;
+  animation: 1.2s 0.3s ease fadeInAndSpin;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.ios page-splash #bars .cls-2,
+.md page-splash #bars .cls-2 {
+  opacity: 0;
+  -webkit-transform: rotate3d(1, 1, 0, 50deg);
+  transform: rotate3d(1, 1, 0, 50deg);
+  -webkit-animation: 1.2s 0.5s ease fadeInAndSpin;
+  animation: 1.2s 0.5s ease fadeInAndSpin;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.ios page-splash #bars .cls-3,
+.md page-splash #bars .cls-3 {
+  opacity: 0;
+  -webkit-transform: rotate3d(1, 1, 0, 50deg);
+  transform: rotate3d(1, 1, 0, 50deg);
+  -webkit-animation: 1.2s 0.7s ease fadeInAndSpin;
+  animation: 1.2s 0.7s ease fadeInAndSpin;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.ios page-splash #bars .cls-4,
+.md page-splash #bars .cls-4 {
+  opacity: 0;
+  -webkit-transform: rotate3d(1, 1, 0, 50deg);
+  transform: rotate3d(1, 1, 0, 50deg);
+  -webkit-animation: 1.2s 0.9s ease fadeInAndSpin;
+  animation: 1.2s 0.9s ease fadeInAndSpin;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.ios page-splash #bars .cls-5,
+.ios page-splash #bars .cls-6,
+.md page-splash #bars .cls-5,
+.md page-splash #bars .cls-6 {
+  opacity: 0;
+  -webkit-animation: 2.5s 1.8s linear fadeIn;
+  animation: 2.5s 1.8s linear fadeIn;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInAndSpin {
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate3d(1, 1, 0, 0deg);
+    transform: rotate3d(1, 1, 0, 0deg);
+  }
+}
+
+@keyframes fadeInAndSpin {
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate3d(1, 1, 0, 0deg);
+    transform: rotate3d(1, 1, 0, 0deg);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
 }
 
 .stammtische-page .toolbar-background {
