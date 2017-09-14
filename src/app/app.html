@@ -35,6 +35,9 @@
                     <ion-icon item-start [name]="page.icon"></ion-icon>
                     <h2 ion-text color="primary">{{page.title | translate}}</h2>
                 </button>
+          <ion-item-divider class="fade-in-left dmo-dark">
+            <h2>BUNDESTAGSWAHL 24.09.2017</h2>
+          </ion-item-divider>
         </ion-item-group>
       </ion-list>
     </ion-content>
@@ -46,19 +49,12 @@
               <h4>{{'PERSONAL' | translate}}</h4>
             </ion-item-divider>
           </div>
-          <p style="display:flex; margin:0px"><button style="width:50%" class="animated rotateInUpLeft" ion-button icon-start *ngFor="let page of pagesleftfooter"
-              (tap)="pushPage(page)">
-                    <ion-icon small [name]="page.icon"></ion-icon>
-                    <h4 style="font-size:smaller" color="primary">{{page.title | translate}}</h4>
-                    </button></p>
-          <!-- <ion-item ion-item (tap)="openPageFacebook()">
-                    <ion-icon name="logo-facebook" item-left></ion-icon>
-                    Facebook
-                </ion-item>
-                <ion-item ion-item (tap)="openPageFirebase()">
-                    <ion-icon name="flame" item-left></ion-icon>
-                    Firebase
-                </ion-item> -->
+          <p style="display:flex; margin:0px">
+            <button style="width:50%" class="animated rotateInUpLeft" ion-button icon-start *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)">
+            <ion-icon small [name]="page.icon"></ion-icon>
+            <h4 style="font-size:smaller" color="primary">{{page.title | translate}}</h4>
+            </button>
+          </p>
         </ion-item-group>
       </ion-list>
     </ion-footer>
@@ -77,9 +73,7 @@
       <button detail-push ion-item (tap)="openPageStammtische()" class="animated bounceInRight">
             <img src="assets/img/menu/Banner-DM-Stammtische.gif" />
           </button>
-      <ion-item-divider class="fade-in-right dmo-dark">
-        <h2>BUNDESTAGSWAHL 24.09.2017</h2>
-      </ion-item-divider>
+<ion-note>Besuchen sie uns gerne  </ion-note>
       <ion-item class="animated bounceInRight">
         <img src="assets/img/menu/BTW-Banner.png" />
       </ion-item>

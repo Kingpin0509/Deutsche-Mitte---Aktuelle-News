@@ -88,7 +88,8 @@ export class MyApp {
     this.pagesleftcenter = [
       { title: "ABOUT", component: AboutComponent, icon: "information-circle" },
       { title: "PLACEHOLDER", component: PlaceholderComponent, icon: "book" },
-      { title: "DOWNLOADS", component: DownloadsComponent, icon: "download" }
+      { title: "DOWNLOADS", component: DownloadsComponent, icon: "download" },
+      { title: "QUIZ", component: QuizComponent, icon: "help" }
       //		  { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
       //		  { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
       //		  { title: 'FEEDS', component: FeedCategoriesComponent, icon: 'logo-rss',},
@@ -103,9 +104,7 @@ export class MyApp {
       //		  { title: 'LOGIN', component: LoginComponent, icon: 'log-in' }
     ];
     this.pagesleftfooter = [
-      { title: "QUIZ", component: QuizComponent, icon: "help" },
       //	{ title: 'NEWSLETTER', component: NewsletterComponent, icon: 'help' },
-      { title: "FAVORITES", component: WordpressFavorites, icon: "thumbs-up" },
       { title: "SETTINGS", component: SettingsComponent, icon: "options" }
     ];
     this.pagesright = [
