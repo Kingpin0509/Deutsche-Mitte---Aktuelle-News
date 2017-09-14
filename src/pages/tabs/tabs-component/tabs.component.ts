@@ -1,6 +1,4 @@
 import { Component } from "@angular/core";
-//import { HomeComponent } from '../../home/home-component/home.component';
-//import { ContactComponent } from '../../contact/contact-component/contact.component';
 import { WordpressPostsHome } from "../../wordpress/wordpress-posts-home/wordpress-posts-home.component";
 import { WordpressFavorites } from "../../wordpress/wordpress-favorites/wordpress-favorites.component";
 import { YoutubeChannelComponent } from "../../youtube/youtube-channel/youtube-channel.component";

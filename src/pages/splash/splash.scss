@@ -11,31 +11,31 @@
       .cls-1 {
         opacity: 0;
         transform: rotate3d(1, 1, 0, 50deg);
-        animation: 1.2s 0.3s ease fadeInAndSpin;
+        animation: fadeInAndSpin 1.2s ease 50ms;
         animation-fill-mode: forwards;
       }
       .cls-2 {
         opacity: 0;
         transform: rotate3d(1, 1, 0, 50deg);
-        animation: 1.2s 0.5s ease fadeInAndSpin;
+        animation: fadeInAndSpin 1.2s ease 150ms;
         animation-fill-mode: forwards;
       }
       .cls-3 {
         opacity: 0;
         transform: rotate3d(1, 1, 0, 50deg);
-        animation: 1.2s 0.7s ease fadeInAndSpin;
+        animation: fadeInAndSpin 1.2s ease 400ms;
         animation-fill-mode: forwards;
       }
       .cls-4 {
         opacity: 0;
         transform: rotate3d(1, 1, 0, 50deg);
-        animation: 1.2s 0.9s ease fadeInAndSpin;
+        animation: fadeInAndSpin 1.2s ease 600ms;
         animation-fill-mode: forwards;
       }
       .cls-5,
       .cls-6 {
         opacity: 0;
-        animation: 2.5s 1.8s linear fadeIn;
+        animation: fadeIn 2s linear 100ms;
         animation-fill-mode: forwards;
       }
     }
