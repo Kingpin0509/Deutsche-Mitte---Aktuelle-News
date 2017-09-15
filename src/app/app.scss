@@ -81,11 +81,11 @@ ion-label.label {
 }
 
 .dm-light {
-  background: #005397(0, 83, 151);
+  background: #005397;
 }
 
 .dm-dark {
-  background: #00498A;
+  background: #00498a;
 }
 
 .dmo-light {
@@ -124,6 +124,34 @@ ion-card-content {
 .youtube {
   color: #cc181e;
   margin-top: 5%;
+}
+
+.card-background-menu {
+  max-width: 100%;
+
+  ion-card {
+    height: 145px;
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 65%;
+    font-size: 1.6em;
+    width: 100%;
+    font-weight: bold;
+    color: #003866;
+  }
+
+  .card-subtitle {
+    font-size: 0.9em;
+    position: absolute;
+    top: 92%;
+    width: 100%;
+    color: #003869;
+    font-style: italic;
+  }
 }
 
 @keyframes bounceInLeft {

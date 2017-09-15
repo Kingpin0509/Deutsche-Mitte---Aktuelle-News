@@ -14400,7 +14400,7 @@ ion-list[inset] {
 }
 
 .list-md ion-item-options .button {
-  margin: 1px 0;
+  margin: 0;
   border-radius: 0;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -14408,7 +14408,7 @@ ion-list[inset] {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  height: calc(100% - 2px);
+  height: 100%;
   border: 0;
   box-shadow: none;
   box-sizing: border-box;
@@ -24803,11 +24803,11 @@ ion-label.label {
 }
 
 .dm-light {
-  background: #005397 0, 83, 151;
+  background: #005397;
 }
 
 .dm-dark {
-  background: #00498A;
+  background: #00498a;
 }
 
 .dmo-light {
@@ -24846,6 +24846,34 @@ ion-card-content {
 .youtube {
   color: #cc181e;
   margin-top: 5%;
+}
+
+.card-background-menu {
+  max-width: 100%;
+}
+
+.card-background-menu ion-card {
+  height: 145px;
+  position: relative;
+  text-align: center;
+}
+
+.card-background-menu .card-title {
+  position: absolute;
+  top: 65%;
+  font-size: 1.6em;
+  width: 100%;
+  font-weight: bold;
+  color: #003866;
+}
+
+.card-background-menu .card-subtitle {
+  font-size: 0.9em;
+  position: absolute;
+  top: 92%;
+  width: 100%;
+  color: #003869;
+  font-style: italic;
 }
 
 @-webkit-keyframes bounceInLeft {
@@ -25912,8 +25940,8 @@ i {
   opacity: 0;
   -webkit-transform: rotate3d(1, 1, 0, 50deg);
   transform: rotate3d(1, 1, 0, 50deg);
-  -webkit-animation: fadeInAndSpin 1.2s ease 50ms;
-  animation: fadeInAndSpin 1.2s ease 50ms;
+  -webkit-animation: fadeInAndSpin 1.5s ease 50ms;
+  animation: fadeInAndSpin 1.5s ease 50ms;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -25923,8 +25951,8 @@ i {
   opacity: 0;
   -webkit-transform: rotate3d(1, 1, 0, 50deg);
   transform: rotate3d(1, 1, 0, 50deg);
-  -webkit-animation: fadeInAndSpin 1.2s ease 150ms;
-  animation: fadeInAndSpin 1.2s ease 150ms;
+  -webkit-animation: fadeInAndSpin 1.4s ease 250ms;
+  animation: fadeInAndSpin 1.4s ease 250ms;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -25934,8 +25962,8 @@ i {
   opacity: 0;
   -webkit-transform: rotate3d(1, 1, 0, 50deg);
   transform: rotate3d(1, 1, 0, 50deg);
-  -webkit-animation: fadeInAndSpin 1.2s ease 400ms;
-  animation: fadeInAndSpin 1.2s ease 400ms;
+  -webkit-animation: fadeInAndSpin 1.6s ease 500ms;
+  animation: fadeInAndSpin 1.6s ease 500ms;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -25945,8 +25973,8 @@ i {
   opacity: 0;
   -webkit-transform: rotate3d(1, 1, 0, 50deg);
   transform: rotate3d(1, 1, 0, 50deg);
-  -webkit-animation: fadeInAndSpin 1.2s ease 600ms;
-  animation: fadeInAndSpin 1.2s ease 600ms;
+  -webkit-animation: fadeInAndSpin 1.8s ease 750ms;
+  animation: fadeInAndSpin 1.8s ease 750ms;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -25956,8 +25984,8 @@ i {
 .md page-splash #bars .cls-5,
 .md page-splash #bars .cls-6 {
   opacity: 0;
-  -webkit-animation: fadeIn 2s linear 100ms;
-  animation: fadeIn 2s linear 100ms;
+  -webkit-animation: fadeIn 2s linear 500ms;
+  animation: fadeIn 2s linear 500ms;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
