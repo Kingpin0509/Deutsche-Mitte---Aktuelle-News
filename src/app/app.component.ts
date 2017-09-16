@@ -117,8 +117,6 @@ export class MyApp {
   }
   initializeApp() {
     this.platform.ready().then(() => {
-      // Enable RTL Support
-      // this.platform.setDir('rtl', true);
       this.statusBar.overlaysWebView(false);
       this.statusBar.backgroundColorByHexString("#005397");
       this.statusBar.styleBlackTranslucent();
