@@ -25940,8 +25940,8 @@ i {
   opacity: 0;
   -webkit-transform: rotate3d(1, 1, 0, 50deg);
   transform: rotate3d(1, 1, 0, 50deg);
-  -webkit-animation: fadeInAndSpin 1.0s ease 50ms;
-  animation: fadeInAndSpin 1.0s ease 50ms;
+  -webkit-animation: fadeInAndSpin 0.7s ease-in 0ms;
+  animation: fadeInAndSpin 0.7s ease-in 0ms;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -25951,8 +25951,8 @@ i {
   opacity: 0;
   -webkit-transform: rotate3d(1, 1, 0, 50deg);
   transform: rotate3d(1, 1, 0, 50deg);
-  -webkit-animation: fadeInAndSpin 0.9s ease 250ms;
-  animation: fadeInAndSpin 0.9s ease 250ms;
+  -webkit-animation: fadeInAndSpin 1.0s ease-in 300ms;
+  animation: fadeInAndSpin 1.0s ease-in 300ms;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -25962,8 +25962,8 @@ i {
   opacity: 0;
   -webkit-transform: rotate3d(1, 1, 0, 50deg);
   transform: rotate3d(1, 1, 0, 50deg);
-  -webkit-animation: fadeInAndSpin 0.8s ease 500ms;
-  animation: fadeInAndSpin 0.8s ease 500ms;
+  -webkit-animation: fadeInAndSpin 1.0s ease-in 950ms;
+  animation: fadeInAndSpin 1.0s ease-in 950ms;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -25973,8 +25973,8 @@ i {
   opacity: 0;
   -webkit-transform: rotate3d(1, 1, 0, 50deg);
   transform: rotate3d(1, 1, 0, 50deg);
-  -webkit-animation: fadeInAndSpin 0.7s ease 750ms;
-  animation: fadeInAndSpin 0.7s ease 750ms;
+  -webkit-animation: fadeInAndSpin 0.8s ease-in 700ms;
+  animation: fadeInAndSpin 0.8s ease-in 700ms;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -25984,8 +25984,8 @@ i {
 .md page-splash #bars .cls-5,
 .md page-splash #bars .cls-6 {
   opacity: 0;
-  -webkit-animation: fadeIn 1.1s linear 500ms;
-  animation: fadeIn 1.1s linear 500ms;
+  -webkit-animation: fadeIn 1.5s linear 500ms;
+  animation: fadeIn 1.5s linear 500ms;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }

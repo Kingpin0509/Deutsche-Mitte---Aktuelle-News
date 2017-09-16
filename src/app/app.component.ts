@@ -58,10 +58,10 @@ export class MyApp {
     private storage: Storage,
     private statusBar: StatusBar,
     private splashScreen: SplashScreen,
+    private modalCtrl: ModalController,
     private config: Config,
     private menuController: MenuController,
-    private loadingCtrl: LoadingController,
-    private modalCtrl: ModalController
+    private loadingCtrl: LoadingController
   ) {
     platform.ready().then(() => {
       statusBar.styleDefault();
@@ -146,7 +146,12 @@ export class MyApp {
   openPageYoutube(page) {
     this.menuController.close();
     this.nav.push(YoutubeChannelComponent);
-  }
+}
+startSplash(page) {
+  this.menuController.close();
+  let splash = this.modalCtrl.create(Splash);
+splash.present();
+}
 }
 
 // openPageSettings(page) {
