@@ -66,7 +66,7 @@ import { MyApp } from "./app.component";
     StammtischeModule
   ],
   bootstrap: [IonicApp],
-  entryComponents: [Splash,MyApp],
+  entryComponents: [MyApp],
   providers: [
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },

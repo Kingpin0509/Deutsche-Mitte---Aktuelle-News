@@ -63,11 +63,11 @@ export class MyApp {
     private menuController: MenuController,
     private loadingCtrl: LoadingController
   ) {
-    platform.ready().then(() => {
-      statusBar.styleDefault();
-      let splash = modalCtrl.create(Splash);
-      splash.present();
-    });
+    // platform.ready().then(() => {
+    //   statusBar.styleDefault();
+    //   let splash = modalCtrl.create(Splash);
+    //   splash.present();
+    // });
     this.initializeApp();
     this.translate.setDefaultLang("de");
     storage.get("language").then(value => {
