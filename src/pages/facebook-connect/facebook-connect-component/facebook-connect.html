@@ -1,3 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle="left" icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>{{'FACEBOOK' | translate}}</ion-title>
+    <ion-buttons end>
+      <button ion-button menuToggle="right" icon-only>
+        <ion-icon name='more'></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
 <ion-content scroll="false" class="page-welcome">
   <div class="facebook-bg"></div>
   <div class="facebook-info">
@@ -10,10 +23,10 @@
     <div class="facebook-email" *ngIf="user">{{ user.email }}</div>
   </div>
   <div padding>
-    <button *ngIf="!user" color="light" ion-button icon-left block (click)="login()">
+    <button *ngIf="!user" color="light" ion-button icon-left block (tap)="login()">
       <ion-icon name="logo-facebook"></ion-icon>
       {{ 'LOGIN' | translate }}</button>
-    <button *ngIf="user" color="light" ion-button icon-left block (click)="logout()">
+    <button *ngIf="user" color="light" ion-button icon-left block (tap)="logout()">
       <ion-icon name="logo-facebook"></ion-icon>
       {{ 'LOGOUT' | translate }}
     </button>

@@ -24,18 +24,18 @@ import { QuizComponent } from "../pages/quiz/quiz-component/quiz";
 import { Splash } from "../pages/splash/splash.module";
 // import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 // import { BarcodeScannerComponent } from '../pages/barcode-scanner/barcode-scanner-component/barcode-scanner.component';
-// import { FeedCategoriesComponent } from '../pages/feeds/feed-categories/feed-categories.component';
-// import { FeedCategoryComponent } from '../pages/feeds/feed-category/feed-category.component';
+ import { FeedCategoriesComponent } from '../pages/feeds/feed-categories/feed-categories.component';
+ import { FeedCategoryComponent } from '../pages/feeds/feed-category/feed-category.component';
 // import { GridComponent } from '../pages/grid/grid-component/grid.component';
 // import { DatetimeComponent } from '../pages/datetime/datetime-component/datetime.component';
 // import { RangesComponent } from '../pages/ranges/ranges-component/ranges.component';
 // import { ActionSheetComponent } from '../pages/action-sheet/action-sheet-component/action-sheet.component';
 // import { GoogleMapsComponent } from '../pages/google-maps/google-maps-component/google-maps.component';
-// import { FacebookConnectComponent } from '../pages/facebook-connect/facebook-connect-component/facebook-connect.component';
+ import { FacebookConnectComponent } from '../pages/facebook-connect/facebook-connect-component/facebook-connect.component';
 // import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';
 // import { WordpressPageDownloads } from '../pages/wordpress/wordpress-page-downloads/wordpress-page-downloads.component';
 // import { LoginComponent } from '../pages/login/login-component/login.component';
-// import { FirebaseHomeComponent } from '../pages/firebase/firebase-home/firebase-home.component';
+import { FirebaseHomeComponent } from '../pages/firebase/firebase-home/firebase-home.component';
 
 @Component({
   templateUrl: "./app.html"
@@ -89,18 +89,18 @@ export class MyApp {
       { title: "ABOUT", component: AboutComponent, icon: "information-circle" },
       { title: "PLACEHOLDER", component: PlaceholderComponent, icon: "book" },
       { title: "DOWNLOADS", component: DownloadsComponent, icon: "download" },
-      { title: "QUIZ", component: QuizComponent, icon: "help" }
+      { title: "QUIZ", component: QuizComponent, icon: "help" },
       //		  { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
       //		  { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
-      //		  { title: 'FEEDS', component: FeedCategoriesComponent, icon: 'logo-rss',},
-      //		  { title: 'FEED_CATEGORY', component: FeedCategoryComponent, icon: 'logo-rss',},
-      //		  { title: 'GOOGLE_MAPS', component: GoogleMapsComponent, icon: 'pin' },
+      		  { title: 'FEEDS', component: FeedCategoriesComponent, icon: 'logo-rss',},
+      		  { title: 'FEED_CATEGORY', component: FeedCategoryComponent, icon: 'logo-rss',},
+      		  { title: 'FIREBASE', component: FirebaseHomeComponent, icon: 'pin' },
       //		  { title: 'PAGES', component: WordpressPages, icon: 'document' },
       //		  { title: 'GRID', component: GridComponent, icon: 'grid'},
       //		  { title: 'DATETIME', component: DatetimeComponent, icon: 'clock'},
       //		  { title: 'RANGES', component: RangesComponent, icon: 'sunny'},
       //		  { title: 'ACTION_SHEET', component: ActionSheetComponent, icon: 'create'},
-      //		  { title: 'Facebook Connect', component: FacebookConnectComponent, icon: 'logo-facebook' },
+      		  { title: 'Facebook Connect', component: FacebookConnectComponent, icon: 'logo-facebook' }
       //		  { title: 'LOGIN', component: LoginComponent, icon: 'log-in' }
     ];
     this.pagesleftfooter = [
@@ -121,7 +121,7 @@ export class MyApp {
       this.statusBar.backgroundColorByHexString("#005397");
       this.statusBar.styleBlackTranslucent();
       //this.statusBar.hide();
-      // this.splashScreen.hide();
+      this.splashScreen.hide();
     });
   }
   openPage(page) {
@@ -177,8 +177,4 @@ splash.present();
 // openPageFacebook(page) {
 // 	this.menuController.close();
 // 	this.nav.push(FacebookConnectComponent);
-// }
-// openPageFirebase(page) {
-// 	this.menuController.close();
-// 	this.nav.push(FirebaseHomeComponent);
 // }
