@@ -12,9 +12,9 @@ import { FirebaseResetPasswordComponent } from "./firebase-reset-password/fireba
 var config = {
   apiKey: "AIzaSyAWCp9T5itKF--J1F09hOdKX0bZPNVz6Gw",
   authDomain: "ionicframeworkapp-bc20a.firebaseapp.com",
-  databaseURL: "https://ionicframeworkapp-bc20a.firebaseio.com/",
+  databaseURL: "https://ionicframeworkapp-bc20a.firebaseio.com",
   projectId: "ionicframeworkapp-bc20a",
-  storageBucket: "gs://ionicframeworkapp-bc20a.appspot.com/",
+  storageBucket: "ionicframeworkapp-bc20a.appspot.com",
   messagingSenderId: "645777369391"
 };
 
