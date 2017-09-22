@@ -1,13 +1,11 @@
 import { NgModule, ErrorHandler } from "@angular/core";
-import { IonicApp, IonicModule, IonicErrorHandler } from "ionic-angular";
-import { SplashScreen } from "@ionic-native/splash-screen";
+import { IonicApp, IonicErrorHandler, IonicModule } from "ionic-angular";
 import { AnimationService } from "css-animator";
 import { MyApp } from "./app.component";
 import { SharedModule } from "./shared/shared.module";
 import { Data } from "../providers/data";
 
 // Module Example: App Module
-import { Splash } from "../pages/splash/splash.module";
 import { SlidesModule } from "../pages/slides/slides.module";
 import { HomeModule } from "../pages/home/home.module";
 import { TabsModule } from "../pages/tabs/tabs.module";
@@ -23,6 +21,7 @@ import { StammtischeModule } from "../pages/stammtische/stammtische.module";
 import { QuizModule } from "../pages/quiz/quiz.module";
 import { FacebookConnectModule } from "../pages/facebook-connect/facebook-connect.module";
 import { FirebaseModule } from "../pages/firebase/firebase.module";
+//import { Splash } from "../pages/splash/splash.module";
 //import { QuizComponent } from '../pages/quiz/quiz-component/quiz';
 //import { FlashCardComponent } from '../pages/quiz/flash-card/flash-card';
 //import { BarcodeScannerModule } from '../pages/barcode-scanner/barcode-scanner.module';
@@ -36,7 +35,7 @@ import { FirebaseModule } from "../pages/firebase/firebase.module";
 //import { ChartsModule } from '../pages/charts/charts.module';
 
 @NgModule({
-  declarations: [MyApp, Splash],
+  declarations: [MyApp],
   imports: [
     IonicModule.forRoot(MyApp, {
       menuType: "push"
@@ -70,7 +69,6 @@ import { FirebaseModule } from "../pages/firebase/firebase.module";
   bootstrap: [IonicApp],
   entryComponents: [MyApp],
   providers: [
-    SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     Data,
     AnimationService

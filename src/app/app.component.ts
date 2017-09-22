@@ -4,8 +4,7 @@ import {
   MenuController,
   ModalController,
   Nav,
-  Platform,
-  Spinner
+  Platform
 } from "ionic-angular";
 import { StatusBar } from "@ionic-native/status-bar";
 import { SplashScreen } from "@ionic-native/splash-screen";
@@ -60,7 +59,6 @@ export class MyApp {
   constructor(
     private config: Config,
     private platform: Platform,
-    private spinner: Spinner,
     private storage: Storage,
     private loadingCtrl: LoadingController,
     private splashScreen: SplashScreen,

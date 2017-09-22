@@ -5,7 +5,6 @@ import {
   LoadingController
 } from "ionic-angular";
 import { AngularFireAuth } from "angularfire2/auth";
-import { FirebaseHomeComponent } from "../firebase-home/firebase-home.component";
 
 @Component({
   templateUrl: "./firebase-sign-up.html"
@@ -17,7 +16,7 @@ export class FirebaseSignUpComponent {
   };
 
   constructor(
-    private navController: NavController,
+    public navController: NavController,
     private loadingController: LoadingController,
     private toastController: ToastController,
     private angularFireAuth: AngularFireAuth
@@ -60,7 +59,7 @@ export class FirebaseSignUpComponent {
       .signInWithEmailAndPassword(this.account.email, this.account.password)
       .then(value => {
         loader.dismiss();
-        this.navController.pop(FirebaseHomeComponent);
+        this.navController.pop();
       })
       .catch(error => {
         loader.dismiss();

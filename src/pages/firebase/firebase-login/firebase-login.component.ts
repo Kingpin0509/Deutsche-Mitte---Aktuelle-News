@@ -5,7 +5,6 @@ import {
   LoadingController
 } from "ionic-angular";
 import { AngularFireAuth } from "angularfire2/auth";
-import { FirebaseHomeComponent } from "../firebase-home/firebase-home.component";
 
 @Component({
   templateUrl: "./firebase-login.html"
@@ -33,7 +32,7 @@ export class FirebaseLoginComponent {
       .signInWithEmailAndPassword(this.account.email, this.account.password)
       .then(value => {
         loader.dismiss();
-        this.navController.pop(FirebaseHomeComponent);
+        this.navController.pop();
       })
       .catch(error => {
         loader.dismiss();
