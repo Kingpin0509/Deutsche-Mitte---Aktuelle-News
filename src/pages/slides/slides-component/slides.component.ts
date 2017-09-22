@@ -6,7 +6,8 @@ import { TabsComponent } from "../../tabs/tabs-component/tabs.component";
   templateUrl: "slides.html"
 })
 export class SlidesComponent {
-  constructor(public nav: NavController) {}
+  constructor(public nav: NavController
+) {}
 
   slides = [
     {

@@ -25,10 +25,10 @@ export function createTranslateLoader(http: Http) {
 @NgModule({
   declarations: [TruncatePipe, TrimHtmlPipe],
   imports: [
-    BrowserModule,
     IonicModule,
     IonicStorageModule.forRoot(),
     CommonModule,
+    BrowserModule,
     HttpModule,
     TranslateModule.forRoot({
       provide: TranslateLoader,
@@ -37,9 +37,9 @@ export function createTranslateLoader(http: Http) {
     })
   ],
   exports: [
+    IonicModule,
     BrowserModule,
     HttpModule,
-    IonicModule,
     TranslateModule,
     TruncatePipe,
     TrimHtmlPipe

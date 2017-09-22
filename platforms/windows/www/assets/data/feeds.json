@@ -8,9 +8,9 @@
       "items": [
         {
           "id": 1,
-          "title": "The Guardian",
-          "description": "The Guardian is a British national daily newspaper. Founded in 1821, it was known as The Manchester Guardian until 1959.",
-          "url": "http://www.theguardian.com/world/rss"
+          "title": "Deutsche Mitte",
+          "description": "Presseportal",
+          "url": "http://www.presseportal.de/rss/pm_127629.rss"
         },
         {
           "id": 2,

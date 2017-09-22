@@ -25611,6 +25611,88 @@ p {
   font-family: "Calibri", sans-serif;
 }
 
+.page-welcome .facebook-bg {
+  position: relative;
+  background: #3b5998;
+  height: 45%;
+  z-index: 1;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+.page-welcome .facebook-info {
+  position: relative;
+  z-index: 2;
+  margin-top: -64px;
+  text-align: center;
+}
+
+.page-welcome .facebook-logo {
+  margin: auto;
+  background: url("../assets/img/facebookicon.png") repeat transparent;
+  background-size: 100%;
+  width: 128px;
+  height: 128px;
+  border-radius: 100%;
+}
+
+.page-welcome .facebook-intro {
+  font-size: 18px;
+  font-weight: bold;
+  max-width: 80%;
+  margin: auto;
+  padding: 20px 0 0 0;
+}
+
+.page-welcome .facebook-email {
+  padding-bottom: 20px;
+}
+
+.page-welcome button.login {
+  margin-top: 25px;
+  background-color: white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+.page-welcome button.login.activated {
+  background-color: gainsboro;
+}
+
+.logo {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.user-logo {
+  margin: auto;
+  background-size: 100%;
+  width: 128px;
+  height: 128px;
+  border-radius: 100%;
+}
+
+.facebook-btn {
+  margin-bottom: 10px;
+}
+
+.login-btn {
+  margin: 20px 0 60px 0;
+}
+
+.action-btn {
+  margin-top: 5px;
+  text-transform: none;
+}
+
 h1.header {
   font-family: "Oswald", sans-serif;
   color: #00498a;

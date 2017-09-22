@@ -1,48 +1,53 @@
 import { Component, ViewChild } from "@angular/core";
-import { Nav, Platform, MenuController, ModalController } from "ionic-angular";
+import {
+  LoadingController,
+  MenuController,
+  ModalController,
+  Nav,
+  Platform,
+  Spinner
+} from "ionic-angular";
 import { StatusBar } from "@ionic-native/status-bar";
 import { SplashScreen } from "@ionic-native/splash-screen";
-import { LoadingController } from "ionic-angular";
 import { Storage } from "@ionic/storage";
 import { TranslateService } from "ng2-translate";
 import { Config } from "./app.config";
-import { PlaceholderComponent } from "../pages/placeholder/placeholder-component/placeholder.component";
-import { DownloadsComponent } from "../pages/downloads/downloads-component/downloads.component";
-//import { NewsletterComponent } from '../pages/newsletter/newsletter-component/newsletter.component';
+import { Splash } from "../pages/splash/splash.module";
+import { SlidesComponent } from "../pages/slides/slides-component/slides.component";
 import { TabsComponent } from "../pages/tabs/tabs-component/tabs.component";
-import { AboutComponent } from "../pages/about/about-component/about.component";
-import { SettingsComponent } from "../pages/settings/settings-component/settings.component";
 import { WordpressMenus } from "../pages/wordpress/wordpress-menus/wordpress-menus.component";
 import { WordpressPosts } from "../pages/wordpress/wordpress-posts/wordpress-posts.component";
 import { WordpressFavorites } from "../pages/wordpress/wordpress-favorites/wordpress-favorites.component";
-import { YoutubeChannelComponent } from "../pages/youtube/youtube-channel/youtube-channel.component";
 import { WordpressCategories } from "../pages/wordpress/wordpress-categories/wordpress-categories.component";
 // import { WordpressTags } from '../pages/wordpress/wordpress-tags/wordpress-tags.component';
-import { SlidesComponent } from "../pages/slides/slides-component/slides.component";
+// import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';
+// import { WordpressPageDownloads } from '../pages/wordpress/wordpress-page-downloads/wordpress-page-downloads.component';
+import { YoutubeChannelComponent } from "../pages/youtube/youtube-channel/youtube-channel.component";
+import { AboutComponent } from "../pages/about/about-component/about.component";
+import { PlaceholderComponent } from "../pages/placeholder/placeholder-component/placeholder.component";
+import { DownloadsComponent } from "../pages/downloads/downloads-component/downloads.component";
+import { SettingsComponent } from "../pages/settings/settings-component/settings.component";
 import { StammtischeComponent } from "../pages/stammtische/stammtische-component/stammtische.component";
 import { QuizComponent } from "../pages/quiz/quiz-component/quiz";
-import { Splash } from "../pages/splash/splash.module";
+import { FeedCategoriesComponent } from "../pages/feeds/feed-categories/feed-categories.component";
+import { FeedCategoryComponent } from "../pages/feeds/feed-category/feed-category.component";
+import { FacebookConnectComponent } from "../pages/facebook-connect/facebook-connect-component/facebook-connect.component";
+import { FirebaseHomeComponent } from "../pages/firebase/firebase-home/firebase-home.component";
 // import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 // import { BarcodeScannerComponent } from '../pages/barcode-scanner/barcode-scanner-component/barcode-scanner.component';
- import { FeedCategoriesComponent } from '../pages/feeds/feed-categories/feed-categories.component';
- import { FeedCategoryComponent } from '../pages/feeds/feed-category/feed-category.component';
+// import { NewsletterComponent } from '../pages/newsletter/newsletter-component/newsletter.component';
 // import { GridComponent } from '../pages/grid/grid-component/grid.component';
 // import { DatetimeComponent } from '../pages/datetime/datetime-component/datetime.component';
 // import { RangesComponent } from '../pages/ranges/ranges-component/ranges.component';
 // import { ActionSheetComponent } from '../pages/action-sheet/action-sheet-component/action-sheet.component';
 // import { GoogleMapsComponent } from '../pages/google-maps/google-maps-component/google-maps.component';
- import { FacebookConnectComponent } from '../pages/facebook-connect/facebook-connect-component/facebook-connect.component';
-// import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';
-// import { WordpressPageDownloads } from '../pages/wordpress/wordpress-page-downloads/wordpress-page-downloads.component';
 // import { LoginComponent } from '../pages/login/login-component/login.component';
-import { FirebaseHomeComponent } from '../pages/firebase/firebase-home/firebase-home.component';
 
 @Component({
   templateUrl: "./app.html"
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-  //	rootPage = TabsComponent;
   rootPage = SlidesComponent;
   menuPage = WordpressMenus;
   pages: Array<{ title: string; component: any; icon: string }>;
@@ -53,15 +58,16 @@ export class MyApp {
   pagesrightfooter: Array<{ title: string; component: any; icon: string }>;
   wordpressMenusNavigation: boolean = false;
   constructor(
-    private platform: Platform,
-    private translate: TranslateService,
-    private storage: Storage,
-    private statusBar: StatusBar,
-    private splashScreen: SplashScreen,
-    private modalCtrl: ModalController,
     private config: Config,
+    private platform: Platform,
+    private spinner: Spinner,
+    private storage: Storage,
+    private loadingCtrl: LoadingController,
+    private splashScreen: SplashScreen,
+    private translate: TranslateService,
     private menuController: MenuController,
-    private loadingCtrl: LoadingController
+    private statusBar: StatusBar,
+    private modalCtrl: ModalController
   ) {
     // platform.ready().then(() => {
     //   statusBar.styleDefault();
@@ -92,15 +98,23 @@ export class MyApp {
       { title: "QUIZ", component: QuizComponent, icon: "help" },
       //		  { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
       //		  { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
-      		  { title: 'FEEDS', component: FeedCategoriesComponent, icon: 'logo-rss',},
-      		  { title: 'FEED_CATEGORY', component: FeedCategoryComponent, icon: 'logo-rss',},
-      		  { title: 'FIREBASE', component: FirebaseHomeComponent, icon: 'pin' },
+      { title: "FEEDS", component: FeedCategoriesComponent, icon: "logo-rss" },
+      {
+        title: "FEED_CATEGORY",
+        component: FeedCategoryComponent,
+        icon: "logo-rss"
+      },
+      { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" },
       //		  { title: 'PAGES', component: WordpressPages, icon: 'document' },
       //		  { title: 'GRID', component: GridComponent, icon: 'grid'},
       //		  { title: 'DATETIME', component: DatetimeComponent, icon: 'clock'},
       //		  { title: 'RANGES', component: RangesComponent, icon: 'sunny'},
       //		  { title: 'ACTION_SHEET', component: ActionSheetComponent, icon: 'create'},
-      		  { title: 'Facebook Connect', component: FacebookConnectComponent, icon: 'logo-facebook' }
+      {
+        title: "Facebook Connect",
+        component: FacebookConnectComponent,
+        icon: "logo-facebook"
+      }
       //		  { title: 'LOGIN', component: LoginComponent, icon: 'log-in' }
     ];
     this.pagesleftfooter = [
@@ -146,12 +160,12 @@ export class MyApp {
   openPageYoutube(page) {
     this.menuController.close();
     this.nav.push(YoutubeChannelComponent);
-}
-startSplash(page) {
-  this.menuController.close();
-  let splash = this.modalCtrl.create(Splash);
-splash.present();
-}
+  }
+  startSplash(page) {
+    this.menuController.close();
+    let splash = this.modalCtrl.create(Splash);
+    splash.present();
+  }
 }
 
 // openPageSettings(page) {
