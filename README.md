@@ -181,3 +181,5 @@ ionic package build android --profile=prod --release --prod && ionic package bui
 ionic build  && ionic upload
 
 ionic cordova platform rm ios android windows && ionic cordova platform add ios android windows
+
+ionic cordova plugin add https://github.com/jeduan/cordova-plugin-facebook4 --save --variable APP_ID="131001554119757" --variable APP_NAME="Deutsche Mitte - Aktuell"

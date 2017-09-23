@@ -27,9 +27,9 @@ import { PlaceholderComponent } from "../pages/placeholder/placeholder-component
 import { DownloadsComponent } from "../pages/downloads/downloads-component/downloads.component";
 import { SettingsComponent } from "../pages/settings/settings-component/settings.component";
 import { StammtischeComponent } from "../pages/stammtische/stammtische-component/stammtische.component";
-import { QuizComponent } from "../pages/quiz/quiz-component/quiz";
-import { FeedCategoriesComponent } from "../pages/feeds/feed-categories/feed-categories.component";
-import { FeedCategoryComponent } from "../pages/feeds/feed-category/feed-category.component";
+// import { QuizComponent } from "../pages/quiz/quiz-component/quiz";
+// import { FeedCategoriesComponent } from "../pages/feeds/feed-categories/feed-categories.component";
+// import { FeedCategoryComponent } from "../pages/feeds/feed-category/feed-category.component";
 import { FacebookConnectComponent } from "../pages/facebook-connect/facebook-connect-component/facebook-connect.component";
 import { FirebaseHomeComponent } from "../pages/firebase/firebase-home/firebase-home.component";
 // import { BarcodeScanner } from '@ionic-native/barcode-scanner';
@@ -50,6 +50,7 @@ export class MyApp {
   rootPage = SlidesComponent;
   menuPage = WordpressMenus;
   pages: Array<{ title: string; component: any; icon: string }>;
+  pageshidden: Array<{ title: string; component: any; icon: string }>;
   pagesleft: Array<{ title: string; component: any; icon: string }>;
   pagesleftcenter: Array<{ title: string; component: any; icon: string }>;
   pagesleftfooter: Array<{ title: string; component: any; icon: string }>;
@@ -89,35 +90,35 @@ export class MyApp {
       //{ title: 'PAGES', component: WordpressPages, icon: 'bookmarks' },
       //{ title: 'DOWNLOADS', component: WordpressPageDownloads, icon: 'bookmarks' },
     ];
-    this.pagesleftcenter = [
-      { title: "ABOUT", component: AboutComponent, icon: "information-circle" },
-      { title: "PLACEHOLDER", component: PlaceholderComponent, icon: "book" },
-      { title: "DOWNLOADS", component: DownloadsComponent, icon: "download" },
-      { title: "QUIZ", component: QuizComponent, icon: "help" },
-      //		  { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
-      //		  { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
-      { title: "FEEDS", component: FeedCategoriesComponent, icon: "logo-rss" },
-      {
-        title: "FEED_CATEGORY",
-        component: FeedCategoryComponent,
-        icon: "logo-rss"
-      },
+    this.pageshidden = [
       { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" },
-      //		  { title: 'PAGES', component: WordpressPages, icon: 'document' },
-      //		  { title: 'GRID', component: GridComponent, icon: 'grid'},
-      //		  { title: 'DATETIME', component: DatetimeComponent, icon: 'clock'},
-      //		  { title: 'RANGES', component: RangesComponent, icon: 'sunny'},
-      //		  { title: 'ACTION_SHEET', component: ActionSheetComponent, icon: 'create'},
       {
         title: "Facebook Connect",
         component: FacebookConnectComponent,
         icon: "logo-facebook"
       }
+    ];
+    this.pagesleftcenter = [
+      { title: "ABOUT", component: AboutComponent, icon: "information-circle" },
+      { title: "PLACEHOLDER", component: PlaceholderComponent, icon: "book" },
+      { title: "DOWNLOADS", component: DownloadsComponent, icon: "download" }
+      //      { title: "QUIZ", component: QuizComponent, icon: "help" }
+      //		  { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
+      //		  { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
+      //      { title: "FEEDS", component: FeedCategoriesComponent, icon: "logo-rss" },
+      //      { title: "FEED_CATEGORY",component: FeedCategoryComponent,icon: "logo-rss"},
+
+      //		  { title: 'PAGES', component: WordpressPages, icon: 'document' },
+      //		  { title: 'GRID', component: GridComponent, icon: 'grid'},
+      //		  { title: 'DATETIME', component: DatetimeComponent, icon: 'clock'},
+      //		  { title: 'RANGES', component: RangesComponent, icon: 'sunny'},
+      //		  { title: 'ACTION_SHEET', component: ActionSheetComponent, icon: 'create'},
       //		  { title: 'LOGIN', component: LoginComponent, icon: 'log-in' }
     ];
     this.pagesleftfooter = [
-      //	{ title: 'NEWSLETTER', component: NewsletterComponent, icon: 'help' },
-      { title: "SETTINGS", component: SettingsComponent, icon: "options" }
+      //	    { title: 'NEWSLETTER', component: NewsletterComponent, icon: 'help' },
+      { title: "SETTINGS", component: SettingsComponent, icon: "options" },
+      { title: "STAMMTISCHE", component: StammtischeComponent, icon: "pin" }
     ];
     this.pagesright = [
       //		  { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
