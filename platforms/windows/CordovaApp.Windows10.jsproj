@@ -87,11 +87,5 @@
     <PropertyGroup>
         <PreBuildEvent>node "$(ProjectDir)\\cordova\\prebuild-10.js"</PreBuildEvent>
         <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
-        <PackageCertificateThumbprint>CC4FDACF0D1EDEBD4A5E1C6132872004172B7EF1</PackageCertificateThumbprint>
-        <PackageCertificateKeyFile>CordovaApp.Windows10_StoreKey.pfx</PackageCertificateKeyFile>
-        <DefaultLanguage>de-DE</DefaultLanguage>
-        <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
-        <AppxBundle>Always</AppxBundle>
-        <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
     </PropertyGroup>
 </Project>

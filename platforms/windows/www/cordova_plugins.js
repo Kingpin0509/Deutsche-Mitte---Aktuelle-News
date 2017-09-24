@@ -103,7 +103,7 @@ module.exports = [
     },
     {
         "id": "ionic-plugin-keyboard.KeyboardProxy",
-        "file": "plugins/ionic-plugin-keyboard/src/windows/KeyboardProxy.js",
+        "file": "plugins/ionic-plugin-keyboard/www/src/windows/KeyboardProxy.js",
         "pluginId": "ionic-plugin-keyboard",
         "clobbers": [
             "cordova.plugins.Keyboard"
