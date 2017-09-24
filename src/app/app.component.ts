@@ -31,7 +31,7 @@ import { StammtischeComponent } from "../pages/stammtische/stammtische-component
 // import { FeedCategoriesComponent } from "../pages/feeds/feed-categories/feed-categories.component";
 // import { FeedCategoryComponent } from "../pages/feeds/feed-category/feed-category.component";
 import { FacebookConnectComponent } from "../pages/facebook-connect/facebook-connect-component/facebook-connect.component";
-import { FirebaseHomeComponent } from "../pages/firebase/firebase-home/firebase-home.component";
+// import { FirebaseHomeComponent } from "../pages/firebase/firebase-home/firebase-home.component";
 // import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 // import { BarcodeScannerComponent } from '../pages/barcode-scanner/barcode-scanner-component/barcode-scanner.component';
 // import { NewsletterComponent } from '../pages/newsletter/newsletter-component/newsletter.component';
@@ -89,7 +89,7 @@ export class MyApp {
       { title: "CATEGORIES", component: WordpressCategories, icon: "bookmarks" }
     ];
     this.pageshidden = [
-      { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" },
+     // { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" },
       {title: "Facebook Connect", component: FacebookConnectComponent, icon: "logo-facebook"}
     ];
     this.pagesleftcenter = [
