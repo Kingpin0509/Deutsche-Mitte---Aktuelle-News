@@ -11,16 +11,16 @@ import { SplashScreen } from "@ionic-native/splash-screen";
 import { Storage } from "@ionic/storage";
 import { TranslateService } from "ng2-translate";
 import { Config } from "./app.config";
-import { Splash } from "../pages/splash/splash.module";
+// import { Splash } from "../pages/splash/splash.module";
 import { SlidesComponent } from "../pages/slides/slides-component/slides.component";
 import { TabsComponent } from "../pages/tabs/tabs-component/tabs.component";
 import { WordpressMenus } from "../pages/wordpress/wordpress-menus/wordpress-menus.component";
 import { WordpressPosts } from "../pages/wordpress/wordpress-posts/wordpress-posts.component";
 import { WordpressFavorites } from "../pages/wordpress/wordpress-favorites/wordpress-favorites.component";
 import { WordpressCategories } from "../pages/wordpress/wordpress-categories/wordpress-categories.component";
-// import { WordpressTags } from '../pages/wordpress/wordpress-tags/wordpress-tags.component';
-// import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';
-// import { WordpressPageDownloads } from '../pages/wordpress/wordpress-page-downloads/wordpress-page-downloads.component';
+//import { WordpressTags } from '../pages/wordpress/wordpress-tags/wordpress-tags.component';
+//import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';
+//import { WordpressPageDownloads } from '../pages/wordpress/wordpress-page-downloads/wordpress-page-downloads.component';
 import { YoutubeChannelComponent } from "../pages/youtube/youtube-channel/youtube-channel.component";
 import { AboutComponent } from "../pages/about/about-component/about.component";
 import { PlaceholderComponent } from "../pages/placeholder/placeholder-component/placeholder.component";
@@ -87,28 +87,23 @@ export class MyApp {
       { title: "HOME", component: TabsComponent, icon: "home" },
       { title: "POSTS", component: WordpressPosts, icon: "paper" },
       { title: "CATEGORIES", component: WordpressCategories, icon: "bookmarks" }
-      //{ title: 'PAGES', component: WordpressPages, icon: 'bookmarks' },
-      //{ title: 'DOWNLOADS', component: WordpressPageDownloads, icon: 'bookmarks' },
     ];
     this.pageshidden = [
       { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" },
-      {
-        title: "Facebook Connect",
-        component: FacebookConnectComponent,
-        icon: "logo-facebook"
-      }
+      {title: "Facebook Connect", component: FacebookConnectComponent, icon: "logo-facebook"}
     ];
     this.pagesleftcenter = [
       { title: "ABOUT", component: AboutComponent, icon: "information-circle" },
       { title: "PLACEHOLDER", component: PlaceholderComponent, icon: "book" },
-      { title: "DOWNLOADS", component: DownloadsComponent, icon: "download" }
+      { title: "DOWNLOADS", component: DownloadsComponent, icon: "download" },
       //      { title: "QUIZ", component: QuizComponent, icon: "help" }
-      //		  { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
+      //{ title: 'DOWNLOADS', component: WordpressPageDownloads, icon: 'bookmarks' },
+      //      { title: 'MENU', component: WordpressMenus, icon: 'bookmarks' },
+     // { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
+      //{ title: 'PAGES', component: WordpressPages, icon: 'document' }
       //		  { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
       //      { title: "FEEDS", component: FeedCategoriesComponent, icon: "logo-rss" },
       //      { title: "FEED_CATEGORY",component: FeedCategoryComponent,icon: "logo-rss"},
-
-      //		  { title: 'PAGES', component: WordpressPages, icon: 'document' },
       //		  { title: 'GRID', component: GridComponent, icon: 'grid'},
       //		  { title: 'DATETIME', component: DatetimeComponent, icon: 'clock'},
       //		  { title: 'RANGES', component: RangesComponent, icon: 'sunny'},
@@ -160,13 +155,12 @@ export class MyApp {
     this.menuController.close();
     this.nav.push(YoutubeChannelComponent);
   }
-  startSplash(page) {
-    this.menuController.close();
-    let splash = this.modalCtrl.create(Splash);
-    splash.present();
-  }
 }
-
+// startSplash(page) {
+//   this.menuController.close();
+//   let splash = this.modalCtrl.create(Splash);
+//   splash.present();
+// }
 // openPageSettings(page) {
 // 	this.menuController.close();
 // 	this.nav.push(SettingsComponent);
