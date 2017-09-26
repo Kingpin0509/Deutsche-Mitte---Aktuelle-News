@@ -20,7 +20,7 @@ import { WordpressFavorites } from "../pages/wordpress/wordpress-favorites/wordp
 import { WordpressCategories } from "../pages/wordpress/wordpress-categories/wordpress-categories.component";
 //import { WordpressTags } from '../pages/wordpress/wordpress-tags/wordpress-tags.component';
 //import { WordpressPages } from '../pages/wordpress/wordpress-pages/wordpress-pages.component';
-//import { WordpressPageDownloads } from '../pages/wordpress/wordpress-page-downloads/wordpress-page-downloads.component';
+import { WordpressPageDownloads } from "../pages/wordpress/wordpress-page-downloads/wordpress-page-downloads.component";
 import { YoutubeChannelComponent } from "../pages/youtube/youtube-channel/youtube-channel.component";
 import { AboutComponent } from "../pages/about/about-component/about.component";
 import { PlaceholderComponent } from "../pages/placeholder/placeholder-component/placeholder.component";
@@ -49,6 +49,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
   rootPage = SlidesComponent;
   menuPage = WordpressMenus;
+  page: any;
   pages: Array<{ title: string; component: any; icon: string }>;
   pageshidden: Array<{ title: string; component: any; icon: string }>;
   pagesleft: Array<{ title: string; component: any; icon: string }>;
@@ -89,17 +90,21 @@ export class MyApp {
       { title: "CATEGORIES", component: WordpressCategories, icon: "bookmarks" }
     ];
     this.pageshidden = [
-     // { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" },
-      {title: "Facebook Connect", component: FacebookConnectComponent, icon: "logo-facebook"}
+      // { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" },
+      {
+        title: "Facebook Connect",
+        component: FacebookConnectComponent,
+        icon: "logo-facebook"
+      }
     ];
     this.pagesleftcenter = [
       { title: "ABOUT", component: AboutComponent, icon: "information-circle" },
       { title: "PLACEHOLDER", component: PlaceholderComponent, icon: "book" },
-      { title: "DOWNLOADS", component: DownloadsComponent, icon: "download" },
+      { title: "DOWNLOADS", component: DownloadsComponent, icon: "download" }
       //      { title: "QUIZ", component: QuizComponent, icon: "help" }
       //{ title: 'DOWNLOADS', component: WordpressPageDownloads, icon: 'bookmarks' },
       //      { title: 'MENU', component: WordpressMenus, icon: 'bookmarks' },
-     // { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
+      // { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
       //{ title: 'PAGES', component: WordpressPages, icon: 'document' }
       //		  { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
       //      { title: "FEEDS", component: FeedCategoriesComponent, icon: "logo-rss" },
@@ -154,6 +159,12 @@ export class MyApp {
   openPageYoutube(page) {
     this.menuController.close();
     this.nav.push(YoutubeChannelComponent);
+  }
+  openPageWordpress(page) {
+    this.menuController.close();
+    this.nav.push(WordpressPageDownloads, {
+      page: page
+    });
   }
 }
 // startSplash(page) {

@@ -3815,6 +3815,101 @@ ion-icon::before {
   src: local("Noto Sans Bold"), local("Noto-Sans-Bold"), url("../assets/fonts/noto-sans-bold.woff") format("woff"), url("../assets/fonts/noto-sans-bold.ttf") format("truetype");
 }
 
+.m0 {
+  margin: 0 !important;
+}
+
+.gradient-bg, ion-app.ios {
+  background: #204f5f !important;
+  background: radial-gradient(ellipse at right, #204f5f 0%, #091b31 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#204f5f', endColorstr='#091b31',GradientType=1 ) !important;
+}
+
+.tparent, .nav-decor {
+  background-color: transparent !important;
+}
+
+.tparent .toolbar-background-ios, .nav-decor .toolbar-background-ios {
+  border-color: transparent !important;
+  background: transparent !important;
+}
+
+.imgBackground, .menu-user-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.iconBackground {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.white {
+  color: #fff !important;
+}
+
+.font18 {
+  font-size: 18px;
+  font-size: 5.625vw;
+}
+
+ion-nav {
+  -webkit-perspective: 0px;
+  perspective: 0px;
+  transition: all 0.75s cubic-bezier(0.78, 0.37, 0.62, 0.86) !important;
+}
+
+.ion-page {
+  -webkit-perspective: 0px;
+  perspective: 0px;
+  transition: all 0.4s cubic-bezier(0.78, 0.37, 0.62, 0.86) !important;
+  -webkit-transform: scale3d(1, 1, 1) rotateY(0) translateX(0) translateY(0px) translateZ(0px) !important;
+  transform: scale3d(1, 1, 1) rotateY(0) translateX(0) translateY(0px) translateZ(0px) !important;
+}
+
+.show-menu + ion-nav {
+  -webkit-perspective: 160px;
+  perspective: 160px;
+}
+
+.show-menu + ion-nav .ion-page {
+  -webkit-transform: scale3d(0.9, 0.9, 0.9) rotateY(-3deg) translateX(100px) translateY(0px) translateZ(30px) !important;
+  transform: scale3d(0.9, 0.9, 0.9) rotateY(-3deg) translateX(100px) translateY(0px) translateZ(30px) !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  overflow: hidden !important;
+}
+
+.show-menu + ion-nav .ion-page ion-content {
+  overflow: hidden !important;
+}
+
+.ios .menu-content-reveal {
+  box-shadow: 0 0 10px transparent !important;
+}
+
+.menu-user-image {
+  height: 18.75vw;
+  width: 18.75vw;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+ion-avatar {
+  position: relative;
+}
+
+ion-avatar ion-badge {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  padding: 3px 5px;
+  min-height: 22px;
+  min-width: 22px;
+  border: 2px solid #fff;
+}
+
 ion-action-sheet {
   left: 0;
   top: 0;
@@ -25664,33 +25759,6 @@ p {
 
 .page-welcome button.login.activated {
   background-color: gainsboro;
-}
-
-.logo {
-  width: 50%;
-  text-align: center;
-  margin: auto;
-}
-
-.user-logo {
-  margin: auto;
-  background-size: 100%;
-  width: 128px;
-  height: 128px;
-  border-radius: 100%;
-}
-
-.facebook-btn {
-  margin-bottom: 10px;
-}
-
-.login-btn {
-  margin: 20px 0 60px 0;
-}
-
-.action-btn {
-  margin-top: 5px;
-  text-transform: none;
 }
 
 h1.header {

@@ -27,13 +27,13 @@ export class WordpressPageDownloads {
     }
   }
 
-  getPage(page) {
+  getPage(id) {
     let loader = this.loadingController.create({
       content: "Please wait"
     });
 
     loader.present();
-    this.wordpressService.getPage(page).subscribe(
+    this.wordpressService.getPage(id).subscribe(
       result => {
         this.page = result;
       },

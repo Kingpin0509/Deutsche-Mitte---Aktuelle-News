@@ -37,9 +37,7 @@ import { FacebookConnectModule } from "../pages/facebook-connect/facebook-connec
 @NgModule({
   declarations: [MyApp],
   imports: [
-    IonicModule.forRoot(MyApp, {
-      menuType: "push"
-    }),
+    IonicModule.forRoot(MyApp, {}),
     SharedModule,
     SlidesModule,
     HomeModule,
