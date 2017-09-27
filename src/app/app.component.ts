@@ -86,26 +86,23 @@ export class MyApp {
     });
     this.pagesleft = [
       { title: "HOME", component: TabsComponent, icon: "home" },
-      { title: "POSTS", component: WordpressPosts, icon: "paper" },
-      { title: "CATEGORIES", component: WordpressCategories, icon: "bookmarks" }
+
     ];
     this.pageshidden = [
-      // { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" },
-      {
-        title: "Facebook Connect",
-        component: FacebookConnectComponent,
-        icon: "logo-facebook"
-      }
+      //     { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" },
+            { title: "POSTS", component: WordpressPosts, icon: "paper" },
+            { title: "CATEGORIES", component: WordpressCategories, icon: "bookmarks" },
+            { title: "Facebook Connect", component: FacebookConnectComponent, icon: "logo-facebook" }
     ];
     this.pagesleftcenter = [
       { title: "ABOUT", component: AboutComponent, icon: "information-circle" },
       { title: "PLACEHOLDER", component: PlaceholderComponent, icon: "book" },
       { title: "DOWNLOADS", component: DownloadsComponent, icon: "download" }
       //      { title: "QUIZ", component: QuizComponent, icon: "help" }
-      //{ title: 'DOWNLOADS', component: WordpressPageDownloads, icon: 'bookmarks' },
+      //      { title: 'DOWNLOADS', component: WordpressPageDownloads, icon: 'bookmarks' },
       //      { title: 'MENU', component: WordpressMenus, icon: 'bookmarks' },
-      // { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
-      //{ title: 'PAGES', component: WordpressPages, icon: 'document' }
+      //      { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
+      //      { title: 'PAGES', component: WordpressPages, icon: 'document' }
       //		  { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
       //      { title: "FEEDS", component: FeedCategoriesComponent, icon: "logo-rss" },
       //      { title: "FEED_CATEGORY",component: FeedCategoryComponent,icon: "logo-rss"},
@@ -133,7 +130,7 @@ export class MyApp {
       this.statusBar.overlaysWebView(false);
       this.statusBar.backgroundColorByHexString("#005397");
       this.statusBar.styleBlackTranslucent();
-      //this.statusBar.hide();
+      //      this.statusBar.hide();
       this.splashScreen.hide();
     });
   }

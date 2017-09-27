@@ -3,7 +3,7 @@
     <ion-header>
       <ion-toolbar no-margin no-padding class="dm-dark">
         <div class="animated rotateInDown">
-          <ion-title>{{'MENU' | translate}}</ion-title>
+          <ion-title>{{'APPNAME' | translate}}</ion-title>
         </div>
       </ion-toolbar>
     </ion-header>
@@ -11,49 +11,40 @@
       <ion-list>
         <ion-item-group margin-bottom>
           <div class="fade-in-left">
-            <ion-item-divider class="dmo-dark">
-              <h2>{{'CURRENT' | translate}}</h2>
+            <ion-item-divider class="dmo-dark menu-divider-bordered">
+              <h2>{{'MENU' | translate}}</h2>
             </ion-item-divider>
           </div>
           <button class="animated bounceInLeft" ion-item *ngFor="let page of pagesleft" (tap)="openPage(page)">
                         <ion-icon item-start [name]="page.icon"></ion-icon>
                         <h2 ion-text color="primary">{{page.title | translate}}</h2>
                         </button>
-          <button outline class="animated bounceInLeft" ion-item (tap)="openPageYoutube()">
+<!--          <button outline class="animated bounceInLeft" ion-item (tap)="openPageYoutube()">
                         <ion-icon name="logo-youtube" class="youtube" item-start></ion-icon>
                         <h2 ion-text color="primary">{{'YOUTUBE_CHANNEL' | translate}}</h2>
                         <ion-note item-end>DM</ion-note>
                     </button>
-                    <button outline class="animated bounceInLeft" ion-item (tap)="openPageWordpress(page)">
+                     <button outline class="animated bounceInLeft" ion-item (tap)="openPageWordpress(page)">
                       <ion-icon name="" class="" item-start></ion-icon>
                       <h2 ion-text color="primary">Downloads</h2>
                       <ion-note item-end>DM</ion-note>
                   </button>
-          <!--           <button outline class="animated bounceInLeft" ion-item (tap)="startSplash()">
+                    <button outline class="animated bounceInLeft" ion-item (tap)="startSplash()">
                       <h2 ion-text color="primary">Start</h2>
                       <ion-note item-end>Splashscreen</ion-note>
                   </button> -->
         </ion-item-group>
         <ion-item-group margin-top>
-          <div class="fade-in-left">
-            <ion-item-divider class="dmo-dark">
-              <h2>{{'THEMES' | translate}}</h2>
-            </ion-item-divider>
-          </div>
           <button class="animated bounceInLeft" ion-item *ngFor="let page of pagesleftcenter" (tap)="pushPage(page)">
                     <ion-icon item-start [name]="page.icon"></ion-icon>
                     <h2 ion-text color="primary">{{page.title | translate}}</h2>
-                </button></ion-item-group>
+                </button>
+            </ion-item-group>
       </ion-list>
     </ion-content>
     <ion-footer>
       <ion-list style="margin:auto">
         <ion-item-group>
-          <div class="fade-in-left">
-            <ion-item-divider class="dmo-dark menu-divider-bordered">
-              <h4>{{'PERSONAL' | translate}}</h4>
-            </ion-item-divider>
-          </div>
           <p style="display:flex; margin:0px">
             <button style="width:50%" class="animated rotateInUpLeft" ion-button icon-start *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)">
             <ion-icon small [name]="page.icon"></ion-icon>
@@ -77,16 +68,16 @@
     <ion-list>
       <ion-item no-margin no-padding class="animated bounceInRight">
         <ion-card no-margin (tap)="openPageStammtische()">
+          <div class="card-subtitle">Deutschlandweit </div>
           <div class="card-title">BESUCHEN SIE UNS</div>
           <img src="assets/img/menu/Banner-DM-Stammtische.gif" />
-          <div class="card-subtitle">Deutschlandweit </div>
         </ion-card>
       </ion-item>
       <ion-item-divider class="fade-in-right dmo-dark">
         <h2>Facebook Stream</h2>
       </ion-item-divider>
-      <ion-item style="max-height:1000px; max-width:100%" class="animated bounceInRight">
-        <iframe class="animated flipInYRight" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhoersteldeutschemitte%2F&tabs=timeline&width=260&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=131001554119757"
+      <ion-item no-padding style="max-height:1000px; max-width:100%" class="animated bounceInRight">
+        <iframe class="animated flipInYRight" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhoersteldeutschemitte%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=131001554119757"
           width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
       </ion-item>
     </ion-list>
