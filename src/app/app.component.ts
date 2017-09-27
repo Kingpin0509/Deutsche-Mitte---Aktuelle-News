@@ -27,10 +27,10 @@ import { PlaceholderComponent } from "../pages/placeholder/placeholder-component
 import { DownloadsComponent } from "../pages/downloads/downloads-component/downloads.component";
 import { SettingsComponent } from "../pages/settings/settings-component/settings.component";
 import { StammtischeComponent } from "../pages/stammtische/stammtische-component/stammtische.component";
+import { FacebookConnectComponent } from "../pages/facebook-connect/facebook-connect-component/facebook-connect.component";
 // import { QuizComponent } from "../pages/quiz/quiz-component/quiz";
 // import { FeedCategoriesComponent } from "../pages/feeds/feed-categories/feed-categories.component";
 // import { FeedCategoryComponent } from "../pages/feeds/feed-category/feed-category.component";
-import { FacebookConnectComponent } from "../pages/facebook-connect/facebook-connect-component/facebook-connect.component";
 // import { FirebaseHomeComponent } from "../pages/firebase/firebase-home/firebase-home.component";
 // import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 // import { BarcodeScannerComponent } from '../pages/barcode-scanner/barcode-scanner-component/barcode-scanner.component';
@@ -85,14 +85,22 @@ export class MyApp {
       }
     });
     this.pagesleft = [
-      { title: "HOME", component: TabsComponent, icon: "home" },
-
+      { title: "HOME", component: TabsComponent, icon: "home" }
     ];
     this.pageshidden = [
+      { title: "YOUTUBE", component: YoutubeChannelComponent, icon: "pin" },
       //     { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" },
-            { title: "POSTS", component: WordpressPosts, icon: "paper" },
-            { title: "CATEGORIES", component: WordpressCategories, icon: "bookmarks" },
-            { title: "Facebook Connect", component: FacebookConnectComponent, icon: "logo-facebook" }
+      { title: "POSTS", component: WordpressPosts, icon: "paper" },
+      {
+        title: "CATEGORIES",
+        component: WordpressCategories,
+        icon: "bookmarks"
+      },
+      {
+        title: "Facebook Connect",
+        component: FacebookConnectComponent,
+        icon: "logo-facebook"
+      }
     ];
     this.pagesleftcenter = [
       { title: "ABOUT", component: AboutComponent, icon: "information-circle" },
@@ -153,10 +161,7 @@ export class MyApp {
     this.menuController.close();
     this.nav.push(StammtischeComponent);
   }
-  openPageYoutube(page) {
-    this.menuController.close();
-    this.nav.push(YoutubeChannelComponent);
-  }
+
   openPageWordpress(page) {
     this.menuController.close();
     this.nav.push(WordpressPageDownloads, {
@@ -164,6 +169,10 @@ export class MyApp {
     });
   }
 }
+// openPageYoutube(page) {
+//   this.menuController.close();
+//   this.nav.push(YoutubeChannelComponent);
+// }
 // startSplash(page) {
 //   this.menuController.close();
 //   let splash = this.modalCtrl.create(Splash);

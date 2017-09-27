@@ -1,5 +1,5 @@
 ﻿{
-  "MENU": "Deutsche Mitte | Aktuell (fr)",
+  "APPNAME": "Deutsche Mitte | Aktuell (fr)",
   "STAMMTISCHE": "Stammtische (fr)",
   "HOME": "Home (fr)",
   "QUIZ": "WahlOMat(fr)",
@@ -24,6 +24,7 @@
   "CLOSE": "Close (fr)",
   "PAGE": "Page (fr)",
   "PAGES": "Pages (fr)",
+  "MENU": "Menu (fr)",
   "MENUS": "Menus (fr)",
   "FACEBOOK": "Facebook (fr)",
   "GOOGLE_MAPS": "Google Maps (fr)",
