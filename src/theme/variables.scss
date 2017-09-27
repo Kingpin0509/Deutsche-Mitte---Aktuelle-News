@@ -65,10 +65,9 @@ $list-border-color: #000 !default;
 @import "roboto";
 @import "noto-sans";
 
-
 // px to vw convter
 @function get-vw($target) {
-  $vw-context: (320*.01) * 1px;
+  $vw-context: (320*0.01) * 1px;
   @return ($target/$vw-context) * 1vw;
 }
 
@@ -78,16 +77,34 @@ $list-border-color: #000 !default;
 
 .gradient-bg {
   background: #204f5f !important;
-  background: -moz-radial-gradient(right, ellipse cover,  #204f5f 0%, #091b31 100%) !important;
-  background: -webkit-radial-gradient(right, ellipse cover,  #204f5f 0%,#091b31 100%) !important;
-  background: radial-gradient(ellipse at right,  #204f5f 0%,#091b31 100%) !important;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#204f5f', endColorstr='#091b31',GradientType=1 ) !important;
+  background: -moz-radial-gradient(
+    right,
+    ellipse cover,
+    #204f5f 0%,
+    #091b31 100%
+  ) !important;
+  background: -webkit-radial-gradient(
+    right,
+    ellipse cover,
+    #204f5f 0%,
+    #091b31 100%
+  ) !important;
+  background: radial-gradient(
+    ellipse at right,
+    #204f5f 0%,
+    #091b31 100%
+  ) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#204f5f",
+      endColorstr="#091b31",
+      GradientType=1
+    ) !important;
 }
 .tparent {
   background-color: transparent !important;
   .toolbar-background-ios {
-      border-color: transparent !important;
-      background: transparent !important;
+    border-color: transparent !important;
+    background: transparent !important;
   }
 }
 
@@ -112,38 +129,38 @@ $list-border-color: #000 !default;
   font-size: get-vw(18px);
 }
 
-
- ion-nav{
-  perspective: 0px;
-	transition: all .75s cubic-bezier(.78,.37,.62,.86)!important;
+ion-nav {
+  transition: all 0.75s cubic-bezier(0.78, 0.37, 0.62, 0.86) !important;
+  transform: scale3d(1, 1, 1) rotateY(0) translateX(0) translateY(0px)
+  translateZ(0px) !important;
 }
 
 .ion-page {
-  perspective: 0px;
-			transition: all .40s cubic-bezier(.78,.37,.62,.86) !important;
-      transform: scale3d(1, 1, 1) rotateY(0) translateX(0) translateY(0px) translateZ(0px) !important;
+  transition: all 0.4s cubic-bezier(0.78, 0.37, 0.62, 0.86) !important;
+  transform: scale3d(1, 1, 1) rotateY(0) translateX(0) translateY(0px)
+    translateZ(0px) !important;
 }
 
-
-.show-menu + ion-nav{
-    perspective: 160px;
-		.ion-page {
-    transform: scale3d(0.9, 0.9, 0.9) rotateY(-3deg) translateX(100px) translateY(0px) translateZ(30px)!important;
+.show-menu + ion-nav {
+  //perspective: 160px;
+  .ion-page {
+    transform: scale3d(0.9, 0.9, 0.9) rotateY(-3deg) translateX(50px)
+      translateY(0px) translateZ(30px) !important;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     overflow: hidden !important;
-        ion-content {
-           overflow: hidden !important;
-        }
-		}
-	}
+    ion-content {
+      overflow: hidden !important;
+    }
+  }
+}
 
- .nav-decor {
-   @extend .tparent;
+.nav-decor {
+  @extend .tparent;
 }
 
 .ios {
   .menu-content-reveal {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0) !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0) !important;
   }
 }
 // .menu-inner {
@@ -159,13 +176,13 @@ ion-app.ios {
 
 .menu-user-image {
   @extend .imgBackground;
-  height:  get-vw(60px);
-  width:  get-vw(60px);
+  height: get-vw(60px);
+  width: get-vw(60px);
   border-radius: 50%;
   margin: 0 auto;
 }
 
-ion-avatar{
+ion-avatar {
   position: relative;
   ion-badge {
     position: absolute;
@@ -175,5 +192,5 @@ ion-avatar{
     min-height: 22px;
     min-width: 22px;
     border: 2px solid #fff;
-}
+  }
 }

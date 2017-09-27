@@ -3822,7 +3822,7 @@ ion-icon::before {
 .gradient-bg, ion-app.ios {
   background: #204f5f !important;
   background: radial-gradient(ellipse at right, #204f5f 0%, #091b31 100%) !important;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#204f5f', endColorstr='#091b31',GradientType=1 ) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#204f5f", endColorstr="#091b31", GradientType=1 ) !important;
 }
 
 .tparent, .nav-decor {
@@ -3856,27 +3856,20 @@ ion-icon::before {
 }
 
 ion-nav {
-  -webkit-perspective: 0px;
-  perspective: 0px;
   transition: all 0.75s cubic-bezier(0.78, 0.37, 0.62, 0.86) !important;
+  -webkit-transform: scale3d(1, 1, 1) rotateY(0) translateX(0) translateY(0px) translateZ(0px) !important;
+  transform: scale3d(1, 1, 1) rotateY(0) translateX(0) translateY(0px) translateZ(0px) !important;
 }
 
 .ion-page {
-  -webkit-perspective: 0px;
-  perspective: 0px;
   transition: all 0.4s cubic-bezier(0.78, 0.37, 0.62, 0.86) !important;
   -webkit-transform: scale3d(1, 1, 1) rotateY(0) translateX(0) translateY(0px) translateZ(0px) !important;
   transform: scale3d(1, 1, 1) rotateY(0) translateX(0) translateY(0px) translateZ(0px) !important;
 }
 
-.show-menu + ion-nav {
-  -webkit-perspective: 160px;
-  perspective: 160px;
-}
-
 .show-menu + ion-nav .ion-page {
-  -webkit-transform: scale3d(0.9, 0.9, 0.9) rotateY(-3deg) translateX(100px) translateY(0px) translateZ(30px) !important;
-  transform: scale3d(0.9, 0.9, 0.9) rotateY(-3deg) translateX(100px) translateY(0px) translateZ(30px) !important;
+  -webkit-transform: scale3d(0.9, 0.9, 0.9) rotateY(-3deg) translateX(50px) translateY(0px) translateZ(30px) !important;
+  transform: scale3d(0.9, 0.9, 0.9) rotateY(-3deg) translateX(50px) translateY(0px) translateZ(30px) !important;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   overflow: hidden !important;
 }

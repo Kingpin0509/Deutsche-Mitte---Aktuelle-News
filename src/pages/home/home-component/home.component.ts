@@ -11,7 +11,7 @@ import { YoutubeChannelComponent } from "../../youtube/youtube-channel/youtube-c
 // import { WordpressTags } from '../../wordpress/wordpress-tags/wordpress-tags.component';
 // import { WordpressFavorites } from '../../wordpress/wordpress-favorites/wordpress-favorites.component';
 // import { WordpressPages } from '../../wordpress/wordpress-pages/wordpress-pages.component';
-// import { WordpressPage } from '../../wordpress/wordpress-page/wordpress-page.component';
+ import { WordpressPage } from '../../wordpress/wordpress-page/wordpress-page.component';
 // import { WordpressMenus } from '../../wordpress/wordpress-menus/wordpress-menus.component';
 // import { GoogleMapsComponent } from '../../google-maps/google-maps-component/google-maps.component';
 // import { SlidesComponent } from '../../slides/slides-component/slides.component';
@@ -55,7 +55,7 @@ export class HomeComponent {
         icon: "bookmarks",
         note: "DM Webseite"
       },
-      // { title: 'PAGE', component: WordpressPage, icon: 'document', note: 'Wordpress', params: { id: 369 }},
+       { title: 'PAGE', component: WordpressPage, icon: 'document', note: 'Wordpress', params: { id: 369 }},
       //   { title: 'ABOUT', component: AboutComponent, icon: 'photos', note: '' },
       //   { title: 'LOGIN', component: WordpressHome, icon: 'log-in', note: 'Wordpress' },
       //   { title: 'POSTS', component: WordpressPosts, icon: 'logo-wordpress', note: 'Wordpress' },

@@ -27,7 +27,7 @@
     <preference name="FadeSplashScreenDuration" value="1000" />
     <preference name="FadeSplashScreen" value="true" />
     <preference name="ShowSplashScreenSpinner" value="true" />
-    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="AutoHideSplashScreen" value="true" />
     <preference name="WindowsStorePublisherName" value="West Weedtze Development - Michael Humann" />
     <preference name="WindowsStoreIdentityName" value="17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino" />
     <preference name="WindowsStoreDisplayName" value="Deutsche Mitte - Aktuell (inoffiziell)" />

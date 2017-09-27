@@ -154,9 +154,10 @@ export class MyApp {
     this.nav.setRoot(page.component);
   }
   pushPage(page) {
+    this.nav.push(page.component).then(()=>{
     this.menuController.close();
-    this.nav.push(page.component);
-  }
+  });
+}
   openPageStammtische(page) {
     this.menuController.close();
     this.nav.push(StammtischeComponent);
