@@ -23,9 +23,5 @@ export class StammtischeComponent {
     });
 
     loading.present();
-
-    setTimeout(() => {
-      loading.dismiss();
-    }, 500);
   }
 }

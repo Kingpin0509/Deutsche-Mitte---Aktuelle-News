@@ -23,7 +23,7 @@ import { WordpressCategories } from "../pages/wordpress/wordpress-categories/wor
 import { WordpressPageDownloads } from "../pages/wordpress/wordpress-page-downloads/wordpress-page-downloads.component";
 import { YoutubeChannelComponent } from "../pages/youtube/youtube-channel/youtube-channel.component";
 import { AboutComponent } from "../pages/about/about-component/about.component";
-import { FuturePoliticsComponent } from "../pages/FuturePoliticsComponent/placeholder-component/placeholder.component";
+import { FuturePoliticsComponent } from "../pages/futurepolitics/futurepolitics-component/futurepolitics.component";
 import { DownloadsComponent } from "../pages/downloads/downloads-component/downloads.component";
 import { SettingsComponent } from "../pages/settings/settings-component/settings.component";
 import { StammtischeComponent } from "../pages/stammtische/stammtische-component/stammtische.component";
@@ -97,6 +97,11 @@ export class MyApp {
         icon: "bookmarks"
       },
       {
+        title: "FAVORITES",
+        component: WordpressFavorites,
+        icon: "bookmarks"
+      },
+      {
         title: "Facebook Connect",
         component: FacebookConnectComponent,
         icon: "logo-facebook"
@@ -104,7 +109,11 @@ export class MyApp {
     ];
     this.pagesleftcenter = [
       { title: "ABOUT", component: AboutComponent, icon: "information-circle" },
-      { title: "FUTUREPOLITICS", component: FuturePoliticsComponent, icon: "book" },
+      {
+        title: "FUTUREPOLITICS",
+        component: FuturePoliticsComponent,
+        icon: "book"
+      },
       { title: "DOWNLOADS", component: DownloadsComponent, icon: "download" }
       //      { title: "QUIZ", component: QuizComponent, icon: "help" }
       //      { title: 'DOWNLOADS', component: WordpressPageDownloads, icon: 'bookmarks' },
@@ -129,7 +138,9 @@ export class MyApp {
       //		  { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
     ];
     this.pagesrightfooter = [
-      { title: "FAVORITES", component: WordpressFavorites, icon: "thumbs-up" }
+      { title: "STAMMTISCHE", component: StammtischeComponent, icon: "pin" }
+
+      // { title: "FAVORITES", component: WordpressFavorites, icon: "thumbs-up" }
     ];
     this.wordpressMenusNavigation = config.wordpressMenusNavigation;
   }
@@ -147,7 +158,7 @@ export class MyApp {
       spinner: "bubbles",
       cssClass: `apphome`,
       content: `Bitte Warten...`,
-      duration: 750
+      duration: 500
     });
     loader.present();
     this.nav.setRoot(page.component).then(() => {
@@ -159,10 +170,10 @@ export class MyApp {
       this.menuController.close();
     });
   }
+
   openPageStammtische(page) {
     let loading = this.loadingCtrl.create({
-      content: "Suche Stammtische...",
-      duration: 250
+      content: "Suche Stammtische..."
     });
     loading.present().then(() =>
       this.nav.setRoot(StammtischeComponent).then(() => {

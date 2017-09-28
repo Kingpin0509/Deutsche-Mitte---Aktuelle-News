@@ -76,8 +76,8 @@
       <ion-item-divider class="fade-in-right dmo-dark">
         <h2>{{'DMVENUE' | translate}}</h2>
       </ion-item-divider>
-      <ion-item no-margin no-padding class="animated bounceInRight">
-        <ion-card no-margin (tap)="openPageStammtische()">
+      <ion-item no-margin no-padding *ngFor="let page of pagesrightfooter" (tap)="pushPage(page)" class="animated bounceInRight">
+        <ion-card no-margin >
           <div class="card-subtitle">Deutschlandweit </div>
           <div class="card-title">BESUCHEN SIE UNS</div>
           <img src="assets/img/menu/Banner-DM-Stammtische.gif" />

@@ -1,6 +1,6 @@
 ion-list-header.header {
   margin: 0px;
-padding-left: 0px;
+  padding-left: 0px;
 }
 h2.header {
   font-family: "Oswald", sans-serif;
@@ -11,7 +11,7 @@ h2.header {
 
 ion-item.content {
   font-family: "Calibri", sans-serif;
-  color: #ffa016;
+  color: #666;
   font-size: small;
   margin: -10px 5px 0px 0px;
   padding: 0px;
@@ -20,8 +20,9 @@ ion-item.content {
 ion-note.date {
   font-style: italic;
   font-size: smaller;
+  overflow: auto;
 }
 
-ion-card.bordered{
+ion-card.bordered {
   border: solid 2px rgba(121, 111, 101, 0.21);
 }

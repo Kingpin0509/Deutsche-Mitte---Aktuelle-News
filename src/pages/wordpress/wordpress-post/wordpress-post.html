@@ -5,7 +5,10 @@
       </button>
     <ion-title>{{ 'HEADLINE' | translate }}</ion-title>
     <ion-buttons end>
-      <button (tap)="sharePost()" ion-button icon-only>
+      <button ion-button color="primary" (tap)="favoritePost(post)">
+            <ion-icon name="thumbs-up"></ion-icon>
+            {{ 'FAVORITE' | translate }}
+          </button> <button (tap)="sharePost()" ion-button icon-only>
             <ion-icon name="share"></ion-icon>
           </button>
     </ion-buttons>
@@ -19,7 +22,7 @@
 </ion-header>
 <ion-content class="post">
   <div class="slide-in-bck-bottom">
-      <wordpress-feature-media *ngIf="post.featured_media" [id]="post.featured_media"></wordpress-feature-media>
+    <wordpress-feature-media *ngIf="post.featured_media" [id]="post.featured_media"></wordpress-feature-media>
     <ion-card text-wrap *ngIf="post.content.rendered">
       <p padding text-justify [innerHtml]="post.content.rendered"></p>
     </ion-card>
