@@ -14,7 +14,7 @@ import { SettingsModule } from "../pages/settings/settings.module";
 import { FeedsModule } from "../pages/feeds/feeds.module";
 import { YoutubeModule } from "../pages/youtube/youtube.module";
 import { AboutModule } from "../pages/about/about.module";
-import { PlaceholderModule } from "../pages/placeholder/placeholder.module";
+import { FuturePoliticsModule } from "../pages/futurepolitics/futurepolitics.module";
 import { DownloadsModule } from "../pages/downloads/downloads.module";
 import { NewsletterModule } from "../pages/newsletter/newsletter.module";
 import { StammtischeModule } from "../pages/stammtische/stammtische.module";
@@ -47,7 +47,7 @@ import { FacebookConnectModule } from "../pages/facebook-connect/facebook-connec
     FeedsModule,
     YoutubeModule,
     AboutModule,
-    PlaceholderModule,
+    FuturePoliticsModule,
     DownloadsModule,
     NewsletterModule,
     StammtischeModule,

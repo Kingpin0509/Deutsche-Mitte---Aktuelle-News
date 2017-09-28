@@ -23,7 +23,7 @@ import { WordpressCategories } from "../pages/wordpress/wordpress-categories/wor
 import { WordpressPageDownloads } from "../pages/wordpress/wordpress-page-downloads/wordpress-page-downloads.component";
 import { YoutubeChannelComponent } from "../pages/youtube/youtube-channel/youtube-channel.component";
 import { AboutComponent } from "../pages/about/about-component/about.component";
-import { PlaceholderComponent } from "../pages/placeholder/placeholder-component/placeholder.component";
+import { FuturePoliticsComponent } from "../pages/FuturePoliticsComponent/placeholder-component/placeholder.component";
 import { DownloadsComponent } from "../pages/downloads/downloads-component/downloads.component";
 import { SettingsComponent } from "../pages/settings/settings-component/settings.component";
 import { StammtischeComponent } from "../pages/stammtische/stammtische-component/stammtische.component";
@@ -104,7 +104,7 @@ export class MyApp {
     ];
     this.pagesleftcenter = [
       { title: "ABOUT", component: AboutComponent, icon: "information-circle" },
-      { title: "PLACEHOLDER", component: PlaceholderComponent, icon: "book" },
+      { title: "FUTUREPOLITICS", component: FuturePoliticsComponent, icon: "book" },
       { title: "DOWNLOADS", component: DownloadsComponent, icon: "download" }
       //      { title: "QUIZ", component: QuizComponent, icon: "help" }
       //      { title: 'DOWNLOADS', component: WordpressPageDownloads, icon: 'bookmarks' },
@@ -150,17 +150,25 @@ export class MyApp {
       duration: 750
     });
     loader.present();
-    this.menuController.close();
-    this.nav.setRoot(page.component);
+    this.nav.setRoot(page.component).then(() => {
+      this.menuController.close();
+    });
   }
   pushPage(page) {
-    this.nav.push(page.component).then(()=>{
-    this.menuController.close();
-  });
-}
+    this.nav.push(page.component).then(() => {
+      this.menuController.close();
+    });
+  }
   openPageStammtische(page) {
-    this.menuController.close();
-    this.nav.push(StammtischeComponent);
+    let loading = this.loadingCtrl.create({
+      content: "Suche Stammtische...",
+      duration: 250
+    });
+    loading.present().then(() =>
+      this.nav.setRoot(StammtischeComponent).then(() => {
+        this.menuController.close();
+      })
+    );
   }
 
   openPageWordpress(page) {

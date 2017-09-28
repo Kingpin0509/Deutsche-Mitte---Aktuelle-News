@@ -17,13 +17,15 @@ export class StammtischeComponent {
   }
   getStart() {
     let loading = this.loadingController.create({
-      content: "Suche Stammtische..."
+      content: "Suche Stammtische...",
+      spinner: "bubbles",
+      duration: 1000
     });
 
     loading.present();
 
     setTimeout(() => {
       loading.dismiss();
-    }, 2000);
+    }, 500);
   }
 }
