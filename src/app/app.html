@@ -17,7 +17,7 @@
           </div>
           <button class="animated bounceInLeft" ion-item *ngFor="let page of pagesleft" (tap)="openPage(page)">
                         <ion-icon item-start [name]="page.icon"></ion-icon>
-                        <h2 ion-text color="primary">{{page.title | translate}}</h2>
+                        <h2 ion-text color="{{page.color}}">{{page.title | translate}}</h2>
                         </button>
           <!--          <button outline class="animated bounceInLeft" ion-item (tap)="openPageYoutube()">
                         <ion-icon name="logo-youtube" class="youtube" item-start></ion-icon>
@@ -35,9 +35,9 @@
                   </button> -->
         </ion-item-group>
         <ion-item-group margin-top>
-          <button class="animated bounceInLeft" ion-item *ngFor="let page of pagesleftcenter" (tap)="pushPage(page)">
+          <button class="animated bounceInLeft" ion-item *ngFor="let page of pagesleftcenter" (tap)="openPage(page)">
                     <ion-icon item-start [name]="page.icon"></ion-icon>
-                    <h2 ion-text color="primary">{{page.title | translate}}</h2>
+                    <h2 ion-text color="{{page.color}}">{{page.title | translate}}</h2>
                 </button>
         </ion-item-group>
       </ion-list>
@@ -77,7 +77,7 @@
         <h2>{{'DMVENUE' | translate}}</h2>
       </ion-item-divider>
       <ion-item no-margin no-padding *ngFor="let page of pagesrightfooter" (tap)="pushPage(page)" class="animated bounceInRight">
-        <ion-card no-margin >
+        <ion-card no-margin>
           <div class="card-subtitle">Deutschlandweit </div>
           <div class="card-title">BESUCHEN SIE UNS</div>
           <img src="assets/img/menu/Banner-DM-Stammtische.gif" />

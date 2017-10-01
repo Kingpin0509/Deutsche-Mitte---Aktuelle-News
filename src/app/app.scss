@@ -35,7 +35,7 @@ audio {
 h2 {
   margin-top: 1.6rem;
   margin-bottom: 1rem;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 1.2;
 }
 ion-label.label {
@@ -49,6 +49,9 @@ ion-label.label {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+ion-menu[type="reveal"] {
+  z-index: 99;
 }
 .modal-wrapper {
   width: 100%;

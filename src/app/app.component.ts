@@ -50,10 +50,15 @@ export class MyApp {
   rootPage = SlidesComponent;
   menuPage = WordpressMenus;
   page: any;
-  pages: Array<{ title: string; component: any; icon: string }>;
+  pages: Array<{ title: string; component: any; icon: string; color: any }>;
   pageshidden: Array<{ title: string; component: any; icon: string }>;
-  pagesleft: Array<{ title: string; component: any; icon: string }>;
-  pagesleftcenter: Array<{ title: string; component: any; icon: string }>;
+  pagesleft: Array<{ title: string; component: any; icon: string; color: any }>;
+  pagesleftcenter: Array<{
+    title: string;
+    component: any;
+    icon: string;
+    color: any;
+  }>;
   pagesleftfooter: Array<{ title: string; component: any; icon: string }>;
   pagesright: Array<{ title: string; component: any; icon: string }>;
   pagesrightfooter: Array<{ title: string; component: any; icon: string }>;
@@ -69,11 +74,11 @@ export class MyApp {
     private statusBar: StatusBar,
     private modalCtrl: ModalController
   ) {
-    // platform.ready().then(() => {
+    //        platform.ready().then(() => {
     //   statusBar.styleDefault();
     //   let splash = modalCtrl.create(Splash);
     //   splash.present();
-    // });
+    //});
     this.initializeApp();
     this.translate.setDefaultLang("de");
     storage.get("language").then(value => {
@@ -85,49 +90,44 @@ export class MyApp {
       }
     });
     this.pagesleft = [
-      { title: "HOME", component: TabsComponent, icon: "home" }
-    ];
-    this.pageshidden = [
-      { title: "YOUTUBE", component: YoutubeChannelComponent, icon: "pin" },
-      //     { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" },
-      { title: "POSTS", component: WordpressPosts, icon: "paper" },
       {
-        title: "CATEGORIES",
-        component: WordpressCategories,
-        icon: "bookmarks"
-      },
-      {
-        title: "FAVORITES",
-        component: WordpressFavorites,
-        icon: "bookmarks"
-      },
-      {
-        title: "Facebook Connect",
-        component: FacebookConnectComponent,
-        icon: "logo-facebook"
+        title: "HOME",
+        component: TabsComponent,
+        icon: "home",
+        color: "primary"
       }
     ];
     this.pagesleftcenter = [
-      { title: "ABOUT", component: AboutComponent, icon: "information-circle" },
+      {
+        title: "ABOUT",
+        component: AboutComponent,
+        icon: "information-circle",
+        color: "primary"
+      },
       {
         title: "FUTUREPOLITICS",
         component: FuturePoliticsComponent,
-        icon: "book"
+        icon: "book",
+        color: "primary"
       },
-      { title: "DOWNLOADS", component: DownloadsComponent, icon: "download" }
-      //      { title: "QUIZ", component: QuizComponent, icon: "help" }
-      //      { title: 'DOWNLOADS', component: WordpressPageDownloads, icon: 'bookmarks' },
-      //      { title: 'MENU', component: WordpressMenus, icon: 'bookmarks' },
-      //      { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
-      //      { title: 'PAGES', component: WordpressPages, icon: 'document' }
-      //		  { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
-      //      { title: "FEEDS", component: FeedCategoriesComponent, icon: "logo-rss" },
-      //      { title: "FEED_CATEGORY",component: FeedCategoryComponent,icon: "logo-rss"},
-      //		  { title: 'GRID', component: GridComponent, icon: 'grid'},
-      //		  { title: 'DATETIME', component: DatetimeComponent, icon: 'clock'},
-      //		  { title: 'RANGES', component: RangesComponent, icon: 'sunny'},
-      //		  { title: 'ACTION_SHEET', component: ActionSheetComponent, icon: 'create'},
-      //		  { title: 'LOGIN', component: LoginComponent, icon: 'log-in' }
+      {
+        title: "DOWNLOADS",
+        component: DownloadsComponent,
+        icon: "download",
+        color: "primary"
+      },
+      // {
+      //           title: "FEEDS",
+      //   component: FeedCategoriesComponent,
+      //   icon: "logo-rss",
+      //   color: "primary"
+      // },
+      // {
+      //   title: "FEED_CATEGORY",
+      //   component: FeedCategoryComponent,
+      //   icon: "logo-rss",
+      //   color: "primary"
+      // }
     ];
     this.pagesleftfooter = [
       //	    { title: 'NEWSLETTER', component: NewsletterComponent, icon: 'help' },
@@ -139,8 +139,34 @@ export class MyApp {
     ];
     this.pagesrightfooter = [
       { title: "STAMMTISCHE", component: StammtischeComponent, icon: "pin" }
-
-      // { title: "FAVORITES", component: WordpressFavorites, icon: "thumbs-up" }
+    ];
+    // { title: "FAVORITES", component: WordpressFavorites, icon: "thumbs-up" }
+    this.pageshidden = [
+      //      { title: "QUIZ", component: QuizComponent, icon: "help" }
+      //      { title: 'DOWNLOADS', component: WordpressPageDownloads, icon: 'bookmarks' },
+      //      { title: 'MENU', component: WordpressMenus, icon: 'bookmarks' },
+      //      { title: 'TAGS', component: WordpressTags, icon: 'bookmark' },
+      //      { title: 'PAGES', component: WordpressPages, icon: 'document' }
+      //		  { title: 'BARCODE_SCANNER', component: BarcodeScannerComponent, icon: 'barcode' },
+      //		  { title: 'GRID', component: GridComponent, icon: 'grid'},
+      //		  { title: 'DATETIME', component: DatetimeComponent, icon: 'clock'},
+      //		  { title: 'RANGES', component: RangesComponent, icon: 'sunny'},
+      //		  { title: 'ACTION_SHEET', component: ActionSheetComponent, icon: 'create'},
+      //		  { title: 'LOGIN', component: LoginComponent, icon: 'log-in' }
+      //     { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" },
+      { title: "YOUTUBE", component: YoutubeChannelComponent, icon: "pin" },
+      { title: "POSTS", component: WordpressPosts, icon: "paper" },
+      {
+        title: "CATEGORIES",
+        component: WordpressCategories,
+        icon: "bookmarks"
+      },
+      { title: "FAVORITES", component: WordpressFavorites, icon: "bookmarks" },
+      {
+        title: "Facebook Connect",
+        component: FacebookConnectComponent,
+        icon: "logo-facebook"
+      }
     ];
     this.wordpressMenusNavigation = config.wordpressMenusNavigation;
   }
@@ -160,9 +186,19 @@ export class MyApp {
       content: `Bitte Warten...`,
       duration: 500
     });
+
     loader.present();
     this.nav.setRoot(page.component).then(() => {
       this.menuController.close();
+      /*       page.color = "danger";
+
+      for (let page of this.pages) {
+        if (page.title == page.title) {
+          page.color = "danger";
+        } else {
+          page.color = "light";
+        }
+      } */
     });
   }
   pushPage(page) {

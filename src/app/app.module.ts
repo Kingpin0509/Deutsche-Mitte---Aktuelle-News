@@ -11,7 +11,6 @@ import { HomeModule } from "../pages/home/home.module";
 import { TabsModule } from "../pages/tabs/tabs.module";
 import { WordpressModule } from "../pages/wordpress/wordpress.module";
 import { SettingsModule } from "../pages/settings/settings.module";
-import { FeedsModule } from "../pages/feeds/feeds.module";
 import { YoutubeModule } from "../pages/youtube/youtube.module";
 import { AboutModule } from "../pages/about/about.module";
 import { FuturePoliticsModule } from "../pages/futurepolitics/futurepolitics.module";
@@ -20,6 +19,7 @@ import { NewsletterModule } from "../pages/newsletter/newsletter.module";
 import { StammtischeModule } from "../pages/stammtische/stammtische.module";
 import { QuizModule } from "../pages/quiz/quiz.module";
 import { FacebookConnectModule } from "../pages/facebook-connect/facebook-connect.module";
+//import { FeedsModule } from "../pages/feeds/feeds.module";
 //import { FirebaseModule } from "../pages/firebase/firebase.module";
 //import { Splash } from "../pages/splash/splash.module";
 //import { QuizComponent } from '../pages/quiz/quiz-component/quiz';
@@ -44,7 +44,6 @@ import { FacebookConnectModule } from "../pages/facebook-connect/facebook-connec
     TabsModule,
     WordpressModule,
     SettingsModule,
-    FeedsModule,
     YoutubeModule,
     AboutModule,
     FuturePoliticsModule,
@@ -53,6 +52,7 @@ import { FacebookConnectModule } from "../pages/facebook-connect/facebook-connec
     StammtischeModule,
     QuizModule,
     FacebookConnectModule
+    //FeedsModule,
     //FirebaseModule
     //BarcodeScannerModule,
     //GoogleMapsModule,

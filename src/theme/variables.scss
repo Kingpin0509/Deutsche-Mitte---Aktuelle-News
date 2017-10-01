@@ -21,7 +21,7 @@ $colors: (
     primary: #00498a,
     secondary: #ff8b00,
     danger: #f53d3d,
-    light: #005397,
+    light: rgba(0, 83, 151, 0),
     dark: #fa7d09
   )!default;
 $link-color: color($colors, primary) !default;
