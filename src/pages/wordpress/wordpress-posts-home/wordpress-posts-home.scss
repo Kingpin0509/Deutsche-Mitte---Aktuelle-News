@@ -1,0 +1,28 @@
+ion-list-header.header {
+  margin: 0px;
+  padding-left: 0px;
+}
+h2.header {
+  font-family: "Oswald", sans-serif;
+  margin: 10px 10px 0px 1px;
+  color: #00498a;
+  max-width: 85%;
+}
+
+ion-item.content {
+  font-family: "Calibri", sans-serif;
+  color: #666;
+  font-size: small;
+  margin: -10px 5px 0px 0px;
+  padding: 0px;
+}
+
+ion-note.date {
+  font-style: italic;
+  font-size: smaller;
+  overflow: auto;
+}
+
+ion-card.bordered {
+  border: solid 2px rgba(121, 111, 101, 0.21);
+}

@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle="left" icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title class="bounce-top">{{'DM_YOUTUBE_CHANNEL' | translate}}</ion-title>
+    <ion-buttons end>
+      <button ion-button menuToggle="right" icon-only>
+        <ion-icon name='more'></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<!-- <ion-content>
+  <ion-card class="bordered slide-in-elliptic-bottom-bck">
+    <ion-list *ngFor="let video of videos" (click)="loadVideo(video)">
+      <ion-card-content>
+        <ion-item text-wrap>
+          <ion-thumbnail item-left *ngIf="video.snippet.thumbnails.default.url">
+            <img [src]="video.snippet.thumbnails.default.url">
+          </ion-thumbnail>
+          <h2 class="header">{{video.snippet.title}}</h2>
+        </ion-item>
+      </ion-card-content>
+    </ion-list>
+  </ion-card>
+</ion-content> -->
+<ion-content>
+  <ion-list class="slide-in-bck-bottom">
+    <ion-item *ngFor="let video of videos" (click)="loadVideo(video)">
+      <ion-avatar item-start *ngIf="video.snippet.thumbnails.default.url">
+        <img [src]="video.snippet.thumbnails.default.url">
+      </ion-avatar>
+      <h2 class="header">{{video.snippet.title}}</h2>
+      <p [innerHtml]="video.snippet.description"></p>
+    </ion-item>
+  </ion-list>
+</ion-content>
