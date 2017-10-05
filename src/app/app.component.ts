@@ -50,18 +50,18 @@ export class MyApp {
   rootPage = SlidesComponent;
   menuPage = WordpressMenus;
   page: any;
-  pages: Array<{ title: string; component: any; icon: string; color: any }>;
+  pages: Array<{ title: string; component: any; icon: string }>;
   pageshidden: Array<{ title: string; component: any; icon: string }>;
-  pagesleft: Array<{ title: string; component: any; icon: string; color: any }>;
+  pagesleft: Array<{ title: string; component: any; icon: string; }>;
   pagesleftcenter: Array<{
     title: string;
     component: any;
     icon: string;
-    color: any;
   }>;
   pagesleftfooter: Array<{ title: string; component: any; icon: string }>;
   pagesright: Array<{ title: string; component: any; icon: string }>;
   pagesrightfooter: Array<{ title: string; component: any; icon: string }>;
+  activePage: any;
   wordpressMenusNavigation: boolean = false;
   constructor(
     private config: Config,
@@ -79,6 +79,7 @@ export class MyApp {
     //   let splash = modalCtrl.create(Splash);
     //   splash.present();
     //});
+
     this.initializeApp();
     this.translate.setDefaultLang("de");
     storage.get("language").then(value => {
@@ -94,7 +95,6 @@ export class MyApp {
         title: "HOME",
         component: TabsComponent,
         icon: "home",
-        color: "primary"
       }
     ];
     this.pagesleftcenter = [
@@ -102,31 +102,26 @@ export class MyApp {
         title: "ABOUT",
         component: AboutComponent,
         icon: "information-circle",
-        color: "primary"
       },
       {
         title: "FUTUREPOLITICS",
         component: FuturePoliticsComponent,
         icon: "book",
-        color: "primary"
       },
       {
         title: "DOWNLOADS",
         component: DownloadsComponent,
         icon: "download",
-        color: "primary"
-      },
+      }
       // {
       //           title: "FEEDS",
       //   component: FeedCategoriesComponent,
       //   icon: "logo-rss",
-      //   color: "primary"
       // },
       // {
       //   title: "FEED_CATEGORY",
       //   component: FeedCategoryComponent,
       //   icon: "logo-rss",
-      //   color: "primary"
       // }
     ];
     this.pagesleftfooter = [
@@ -169,6 +164,11 @@ export class MyApp {
       }
     ];
     this.wordpressMenusNavigation = config.wordpressMenusNavigation;
+    (this.activePage = this.pagesleft[0],
+      this.pagesleftcenter[0],
+      this.pagesleftfooter[0],
+      this.pagesrightfooter[0]
+    );
   }
   initializeApp() {
     this.platform.ready().then(() => {
@@ -186,23 +186,18 @@ export class MyApp {
       content: `Bitte Warten...`,
       duration: 500
     });
-
+    this.activePage = page;
     loader.present();
     this.nav.setRoot(page.component).then(() => {
       this.menuController.close();
-      /*       page.color = "danger";
-
-      for (let page of this.pages) {
-        if (page.title == page.title) {
-          page.color = "danger";
-        } else {
-          page.color = "light";
-        }
-      } */
     });
+  }
+  checkActivePage(page) {
+    return page == this.activePage;
   }
   pushPage(page) {
     this.nav.push(page.component).then(() => {
+      this.activePage = page;
       this.menuController.close();
     });
   }
