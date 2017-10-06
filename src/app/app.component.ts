@@ -58,9 +58,10 @@ export class MyApp {
     component: any;
     icon: string;
   }>;
+  pagesleftbottom: Array<{ title: string; component: any; icon: string }>;
   pagesleftfooter: Array<{ title: string; component: any; icon: string }>;
   pagesright: Array<{ title: string; component: any; icon: string }>;
-  pagesrightfooter: Array<{ title: string; component: any; icon: string }>;
+  pagesrightfooter: Array<{ title: string; component: any; icon: string; }>;
   activePage: any;
   wordpressMenusNavigation: boolean = false;
   constructor(
@@ -113,6 +114,7 @@ export class MyApp {
         component: DownloadsComponent,
         icon: "download",
       }
+
       // {
       //           title: "FEEDS",
       //   component: FeedCategoriesComponent,
@@ -124,10 +126,12 @@ export class MyApp {
       //   icon: "logo-rss",
       // }
     ];
+    this.pagesleftbottom = [
+      { title: "STAMMTISCHE", component: StammtischeComponent, icon: "pin" }
+    ];
     this.pagesleftfooter = [
       //	    { title: 'NEWSLETTER', component: NewsletterComponent, icon: 'help' },
       { title: "SETTINGS", component: SettingsComponent, icon: "options" },
-      { title: "STAMMTISCHE", component: StammtischeComponent, icon: "pin" }
     ];
     this.pagesright = [
       //		  { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
@@ -179,6 +183,9 @@ export class MyApp {
       this.splashScreen.hide();
     });
   }
+  checkActivePage(page) {
+    return page == this.activePage;
+  }
   openPage(page) {
     let loader = this.loadingCtrl.create({
       spinner: "bubbles",
@@ -192,25 +199,24 @@ export class MyApp {
       this.menuController.close();
     });
   }
-  checkActivePage(page) {
-    return page == this.activePage;
-  }
   pushPage(page) {
-    this.nav.push(page.component).then(() => {
+this.menuController.close().then(() => {
+    this.nav.push(page.component)
       this.activePage = page;
-      this.menuController.close();
     });
   }
 
+
   openPageStammtische(page) {
-    let loading = this.loadingCtrl.create({
-      content: "Suche Stammtische..."
+    let loader = this.loadingCtrl.create({
+      content: "Suche Stammtische...",
+      duration: 500
     });
-    loading.present().then(() =>
-      this.nav.setRoot(StammtischeComponent).then(() => {
-        this.menuController.close();
-      })
-    );
+    this.activePage = page;
+    loader.present();
+    this.nav.setRoot(StammtischeComponent).then(() => {
+      this.menuController.close();
+    });
   }
 
   openPageWordpress(page) {

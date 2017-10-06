@@ -22,6 +22,12 @@ img {
 }
 .active{
   background-color: #ff8b00;
+  h2{  font-weight:bold; 
+}
+}
+.tab-button[aria-selected=true] {
+  span{  font-weight:bold; 
+  }
 }
 video,
 audio {
