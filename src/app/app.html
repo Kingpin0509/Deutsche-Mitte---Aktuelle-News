@@ -15,9 +15,9 @@
               <h2>{{'MENU' | translate}}</h2>
             </ion-item-divider>
           </div>
-          <button class="animated bounceInLeft" ion-item *ngFor="let page of pagesleft" (tap)="openPage(page)">
+          <button class="animated bounceInLeft" ion-item *ngFor="let page of pagesleft" (tap)="openPage(page)" [class.active]="checkActivePage(page)">
                         <ion-icon item-start [name]="page.icon"></ion-icon>
-                        <h2 ion-text color="{{page.color}}">{{page.title | translate}}</h2>
+                        <h2 ion-text>{{page.title | translate}}</h2>
                         </button>
           <!--          <button outline class="animated bounceInLeft" ion-item (tap)="openPageYoutube()">
                         <ion-icon name="logo-youtube" class="youtube" item-start></ion-icon>
@@ -35,9 +35,9 @@
                   </button> -->
         </ion-item-group>
         <ion-item-group margin-top>
-          <button class="animated bounceInLeft" ion-item *ngFor="let page of pagesleftcenter" (tap)="openPage(page)">
+          <button class="animated bounceInLeft" ion-item *ngFor="let page of pagesleftcenter" (tap)="openPage(page)" [class.active]="checkActivePage(page)">
                     <ion-icon item-start [name]="page.icon"></ion-icon>
-                    <h2 ion-text color="{{page.color}}">{{page.title | translate}}</h2>
+                    <h2 ion-text>{{page.title | translate}}</h2>
                 </button>
         </ion-item-group>
       </ion-list>
@@ -46,7 +46,7 @@
       <ion-list style="margin:auto">
         <ion-item-group>
           <p style="display:flex; margin:0px">
-            <button style="width:50%" class="animated rotateInUpLeft" ion-button icon-start *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)">
+            <button style="width:50%" class="animated rotateInUpLeft" ion-button icon-start *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">
             <ion-icon small [name]="page.icon"></ion-icon>
             <h4 style="font-size:smaller" color="primary">{{page.title | translate}}</h4>
             </button>
@@ -76,9 +76,9 @@
       <ion-item-divider class="fade-in-right dmo-dark">
         <h2>{{'DMVENUE' | translate}}</h2>
       </ion-item-divider>
-      <ion-item no-margin no-padding *ngFor="let page of pagesrightfooter" (tap)="pushPage(page)" class="animated bounceInRight">
+      <ion-item no-margin no-padding *ngFor="let page of pagesrightfooter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)" class="animated bounceInRight">
         <ion-card no-margin>
-          <div class="card-subtitle">Deutschlandweit </div>
+          <!-- <div class="card-subtitle">Deutschlandweit </div> -->
           <div class="card-title">BESUCHEN SIE UNS</div>
           <img src="assets/img/menu/Banner-DM-Stammtische.gif" />
         </ion-card>

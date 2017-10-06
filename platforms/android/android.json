@@ -130,7 +130,8 @@
                             "xml": "<provider android:authorities=\"de.dm.news.sharing.provider\" android:exported=\"false\" android:grantUriPermissions=\"true\" android:name=\"nl.xservices.plugins.FileProvider\"><meta-data android:name=\"android.support.FILE_PROVIDER_PATHS\" android:resource=\"@xml/sharing_paths\" /></provider>",
                             "count": 1
                         }
-                    ]
+                    ],
+                    "/manifest": []
                 }
             },
             "res/values/facebookconnect.xml": {

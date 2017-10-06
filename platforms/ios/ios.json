@@ -107,18 +107,23 @@
                             "count": 1
                         }
                     ],
-                    "UIBackgroundModes": [
-                        {
-                            "xml": "<array><string>remote-notification</string></array>",
-                            "count": 1
-                        }
-                    ],
+                    "UIBackgroundModes": [],
                     "ITSAppUsesNonExemptEncryption": [
                         {
                             "xml": "<false />",
                             "count": 1
                         }
                     ]
+                }
+            },
+            "*-Debug.plist": {
+                "parents": {
+                    "aps-environment": []
+                }
+            },
+            "*-Release.plist": {
+                "parents": {
+                    "aps-environment": []
                 }
             }
         }

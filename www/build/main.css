@@ -24823,6 +24823,10 @@ img {
   height: auto;
 }
 
+.active {
+  background-color: red;
+}
+
 video,
 audio {
   width: 100%;
