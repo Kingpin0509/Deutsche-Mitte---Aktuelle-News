@@ -1,14 +1,32 @@
 import { Component } from "@angular/core";
-import { NavController } from "ionic-angular";
+import { NavController,MenuController  } from "ionic-angular";
 import { TabsComponent } from "../../tabs/tabs-component/tabs.component";
+import { Storage } from "@ionic/storage";
 
 @Component({
   templateUrl: "slides.html"
 })
 export class SlidesComponent {
-  constructor(public nav: NavController
+    showSkip = true;
+  constructor(
+    public nav: NavController,
+    public menu: MenuController,
+    public storage: Storage
 ) {}
+startApp() {
+  this.nav.push(TabsComponent).then(() => {
+    this.storage.set('hasSeenTutorial', 'true');
+  })
+}
+ionViewDidEnter() {
+  // the root left menu should be disabled on the tutorial page
+  this.menu.enable(false);
+}
 
+ionViewDidLeave() {
+  // enable the root left menu when leaving the tutorial page
+  this.menu.enable(true);
+}
   slides = [
     {
       title: "Zum Kennenlernen",

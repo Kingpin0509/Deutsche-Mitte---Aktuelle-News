@@ -24828,7 +24828,7 @@ img {
 }
 
 .active h2 {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .tab-button[aria-selected=true] span {

@@ -47,7 +47,7 @@ import { FacebookConnectComponent } from "../pages/facebook-connect/facebook-con
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-  rootPage = SlidesComponent;
+  rootPage ;
   menuPage = WordpressMenus;
   page: any;
   pages: Array<{ title: string; component: any; icon: string }>;
@@ -67,7 +67,7 @@ export class MyApp {
   constructor(
     private config: Config,
     private platform: Platform,
-    private storage: Storage,
+    private  storage: Storage,
     private loadingCtrl: LoadingController,
     private splashScreen: SplashScreen,
     private translate: TranslateService,
@@ -75,6 +75,16 @@ export class MyApp {
     private statusBar: StatusBar,
     private modalCtrl: ModalController
   ) {
+    this.storage.get('hasSeenTutorial')
+    .then((hasSeenTutorial) => {
+      if (hasSeenTutorial) {
+        this.rootPage = TabsComponent;
+      } else {
+        this.rootPage = SlidesComponent;
+      }
+      this.initializeApp()
+    });
+
     //        platform.ready().then(() => {
     //   statusBar.styleDefault();
     //   let splash = modalCtrl.create(Splash);
@@ -114,7 +124,6 @@ export class MyApp {
         component: DownloadsComponent,
         icon: "download",
       }
-
       // {
       //           title: "FEEDS",
       //   component: FeedCategoriesComponent,
@@ -218,7 +227,9 @@ this.menuController.close().then(() => {
       this.menuController.close();
     });
   }
-
+  openTutorial() {
+    this.nav.setRoot(TabsComponent);
+  }
   openPageWordpress(page) {
     this.menuController.close();
     this.nav.push(WordpressPageDownloads, {
