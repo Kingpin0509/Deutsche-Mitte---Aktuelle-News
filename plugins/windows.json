@@ -1,47 +1,47 @@
 {
-    "prepare_queue": {
-        "installed": [],
-        "uninstalled": []
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
     },
-    "config_munge": {
-        "files": {}
+    "cordova-plugin-crosswalk-webview": {
+      "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
     },
-    "installed_plugins": {
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
-        },
-        "cordova-plugin-crosswalk-webview": {
-            "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
-        },
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
-        },
-        "cordova-plugin-facebook4": {
-            "APP_ID": "131001554119757",
-            "APP_NAME": "Deutsche Mitte - Aktuell",
-            "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
-        },
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
-        },
-        "cordova-plugin-ios-no-export-compliance": {
-            "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
-        },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
-        },
-        "cordova-plugin-x-socialsharing": {
-            "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
-        },
-        "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
-        }
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
     },
-    "dependent_plugins": {}
+    "cordova-plugin-facebook4": {
+      "APP_ID": "131001554119757",
+      "APP_NAME": "Deutsche Mitte - Aktuell",
+      "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
+    },
+    "cordova-plugin-ios-no-export-compliance": {
+      "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
+    }
+  },
+  "dependent_plugins": {}
 }
