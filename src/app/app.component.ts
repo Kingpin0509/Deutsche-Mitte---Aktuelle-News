@@ -46,8 +46,8 @@ import { FacebookConnectComponent } from "../pages/facebook-connect/facebook-con
   templateUrl: "./app.html"
 })
 export class MyApp {
+  rootPage;
   @ViewChild(Nav) nav: Nav;
-  rootPage = SlidesComponent;
   menuPage = WordpressMenus;
   page: any;
   pages: Array<{ title: string; component: any; icon: string }>;
@@ -82,6 +82,14 @@ export class MyApp {
     //});
 
     this.initializeApp();
+    this.storage.get('hasSeenTutorial')
+    .then((hasSeenTutorial) => {
+      if (hasSeenTutorial) {
+        this.rootPage = TabsComponent;
+      } else {
+        this.rootPage = SlidesComponent;
+      }
+    });
     this.translate.setDefaultLang("de");
     storage.get("language").then(value => {
       if (value) {
