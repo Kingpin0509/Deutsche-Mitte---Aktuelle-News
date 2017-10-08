@@ -46,8 +46,8 @@ import { FacebookConnectComponent } from "../pages/facebook-connect/facebook-con
   templateUrl: "./app.html"
 })
 export class MyApp {
+  rootPage;
   @ViewChild(Nav) nav: Nav;
-  rootPage ;
   menuPage = WordpressMenus;
   page: any;
   pages: Array<{ title: string; component: any; icon: string }>;
@@ -67,7 +67,7 @@ export class MyApp {
   constructor(
     private config: Config,
     private platform: Platform,
-    private  storage: Storage,
+    private storage: Storage,
     private loadingCtrl: LoadingController,
     private splashScreen: SplashScreen,
     private translate: TranslateService,
@@ -75,23 +75,20 @@ export class MyApp {
     private statusBar: StatusBar,
     private modalCtrl: ModalController
   ) {
-    this.storage.get('hasSeenTutorial')
-    .then((hasSeenTutorial) => {
-      if (hasSeenTutorial) {
-        this.rootPage = TabsComponent;
-      } else {
-        this.rootPage = SlidesComponent;
-      }
-      this.initializeApp()
-    });
-
     //        platform.ready().then(() => {
     //   statusBar.styleDefault();
     //   let splash = modalCtrl.create(Splash);
     //   splash.present();
     //});
-
     this.initializeApp();
+    this.storage.get('hasSeenTutorial')
+      .then((hasSeenTutorial) => {
+        if (hasSeenTutorial) {
+          this.rootPage = TabsComponent;
+        } else {
+          this.rootPage = SlidesComponent;
+        }
+      });
     this.translate.setDefaultLang("de");
     storage.get("language").then(value => {
       if (value) {
@@ -209,8 +206,8 @@ export class MyApp {
     });
   }
   pushPage(page) {
-this.menuController.close().then(() => {
-    this.nav.push(page.component)
+    this.menuController.close().then(() => {
+      this.nav.push(page.component)
       this.activePage = page;
     });
   }

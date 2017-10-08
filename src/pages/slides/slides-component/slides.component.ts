@@ -13,6 +13,11 @@ export class SlidesComponent {
     public menu: MenuController,
     public storage: Storage
 ) {}
+openPage() {
+  this.nav.setRoot(TabsComponent).then(() => {
+    this.storage.set('hasSeenTutorial', 'true');
+})
+}
 startApp() {
   this.nav.push(TabsComponent).then(() => {
     this.storage.set('hasSeenTutorial', 'true');
@@ -49,7 +54,5 @@ ionViewDidLeave() {
       image: "assets/img/ica-slidebox-img-7.png"
     }
   ];
-  openPage() {
-    this.nav.setRoot(TabsComponent);
-  }
+
 }
