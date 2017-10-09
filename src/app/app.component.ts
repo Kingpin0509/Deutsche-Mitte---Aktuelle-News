@@ -84,6 +84,13 @@ export class MyApp {
     this.storage.get('hasSeenTutorial')
       .then((hasSeenTutorial) => {
         if (hasSeenTutorial) {
+          let loader = this.loadingCtrl.create({
+            spinner: "bubbles",
+            cssClass: `apphome`,
+            content: `Willkommen`,
+            duration: 500
+          });
+          loader.present();
           this.rootPage = TabsComponent;
         } else {
           this.rootPage = SlidesComponent;
