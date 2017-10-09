@@ -110,6 +110,7 @@
             "cordova-plugin-ios-no-export-compliance": {}
         },
         "platforms": [
+            "android",
             "ios",
             "windows"
         ]

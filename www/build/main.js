@@ -2740,6 +2740,13 @@ var MyApp = (function () {
         this.storage.get('hasSeenTutorial')
             .then(function (hasSeenTutorial) {
             if (hasSeenTutorial) {
+                var loader = _this.loadingCtrl.create({
+                    spinner: "bubbles",
+                    cssClass: "apphome",
+                    content: "Willkommen",
+                    duration: 500
+                });
+                loader.present();
                 _this.rootPage = __WEBPACK_IMPORTED_MODULE_8__pages_tabs_tabs_component_tabs_component__["a" /* TabsComponent */];
             }
             else {
