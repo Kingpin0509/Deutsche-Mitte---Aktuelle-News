@@ -1,4 +1,4 @@
-cordova.define("cordova-plugin-facebook4.FacebookConnectPlugin", function(require, exports, module) {
+﻿cordova.define("cordova-plugin-facebook4.FacebookConnectPlugin", function(require, exports, module) {
 var exec = require('cordova/exec')
 
 exports.getLoginStatus = function getLoginStatus (s, f) {
