@@ -22,8 +22,8 @@
         "@angular/http": "4.4.3",
         "@angular/platform-browser": "4.4.3",
         "@angular/platform-browser-dynamic": "4.4.3",
-        "@ionic-native/barcode-scanner": "^4.2.1",
-        "@ionic-native/camera": "^4.2.1",
+        "@ionic-native/barcode-scanner": "^4.3.1",
+        "@ionic-native/camera": "^4.3.1",
         "@ionic-native/core": "4.2.1",
         "@ionic-native/email-composer": "4.2.1",
         "@ionic-native/facebook": "4.2.1",
@@ -36,7 +36,7 @@
         "angularfire2": "^5.0.0-rc.2",
         "animate.css": "^3.5.2",
         "chart.js": "^2.7.0",
-        "cordova-android": "^6.2.3",
+        "cordova-android": "^6.3.0",
         "cordova-ios": "^4.5.1",
         "cordova-ios-plugin-no-export-compliance": "0.0.5",
         "cordova-plugin-console": "1.1.0",
@@ -51,7 +51,7 @@
         "cordova-plugin-x-socialsharing": "5.2.0",
         "cordova-windows": "^5.0.0",
         "css-animator": "^2.1.1",
-        "firebase": "4.5.0",
+        "firebase": "^4.5.0",
         "io": "^0.1.10",
         "ionic-angular": "3.7.1",
         "ionic-plugin-keyboard": "~2.2.1",
@@ -66,9 +66,9 @@
     },
     "devDependencies": {
         "@ionic/app-scripts": "^3.0.0",
-        "ionic": "^3.12.0",
-        "typescript": "2.3.4",
-        "ajv": "5.0.0"
+        "ajv": "5.0.0",
+        "ionic": "^3.13.0",
+        "typescript": "2.3.4"
     },
     "cordovaPlugins": [
         "cordova-plugin-whitelist",
