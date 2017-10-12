@@ -65,7 +65,6 @@
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
     <splash src="resources/ios/splash/Default@2x~universal~anyany.png" />
-    <icon height="1024" src="resources/appstore.png" width="1024" />
     <icon height="1024" src="resources/ios/icon/icon-1024.png" width="1024" />
     <icon height="57" src="resources/ios/icon/icon.png" width="57" />
     <icon height="114" src="resources/ios/icon/icon@2x.png" width="114" />
