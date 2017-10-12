@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AppxShowAllApps>True</AppxShowAllApps>
+    <Source>C:\Deutsche Mitte - Aktuell\resources\icon.png</Source>
+    <SmallTileSource>C:\Deutsche Mitte - Aktuell\resources\icon.png</SmallTileSource>
+    <MediumTileSource>C:\Deutsche Mitte - Aktuell\resources\icon.png</MediumTileSource>
+    <WideTileSource>C:\Deutsche Mitte - Aktuell\resources\icon.png</WideTileSource>
+    <LargeTileSource>C:\Deutsche Mitte - Aktuell\resources\icon.png</LargeTileSource>
+    <AppIconSource>C:\Deutsche Mitte - Aktuell\resources\icon.png</AppIconSource>
+    <SplashScreenSource>C:\Deutsche Mitte - Aktuell\resources\icon.png</SplashScreenSource>
+  </PropertyGroup>
+</Project>
