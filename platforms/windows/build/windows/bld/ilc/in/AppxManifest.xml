@@ -7,7 +7,7 @@
 
     Weitere Informationen zu Paketmanifestdateien finden Sie unter http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino" Publisher="CN=47AF69ED-2732-47DA-B13E-0E7FFFE045CA" Version="2.7.2.0" ProcessorArchitecture="x86" />
+  <Identity Name="17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino" Publisher="CN=47AF69ED-2732-47DA-B13E-0E7FFFE045CA" Version="2.7.2.0" ProcessorArchitecture="x64" />
   <mp:PhoneIdentity PhoneProductId="ee2f0dde-e55d-417d-b45b-71b18c36be98" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Deutsche Mitte - Aktuell (inoffiziell)</DisplayName>

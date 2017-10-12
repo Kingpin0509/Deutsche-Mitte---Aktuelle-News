@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino" version="1.0" primary="true">
+		<Qualifiers>
+			<AlternateForm>UNPLATED</AlternateForm>
+			<Scale>100</Scale>
+			<TargetSize>256,16,24,32,48</TargetSize>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="config.xml" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/config.xml">
+				<Candidate type="Path">
+					<Value>config.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="images">
+				<NamedResource name="logo.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/images/logo.png">
+					<Candidate type="Path">
+						<Value>images\logo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/images/SplashScreen.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\SplashScreen.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreenPhone.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/images/SplashScreenPhone.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\SplashScreenPhone.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/images/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square150x150Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square30x30Logo.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/images/Square30x30Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square30x30Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square310x310Logo.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/images/Square310x310Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square310x310Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square44x44Logo.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/images/Square44x44Logo.png">
+					<Candidate qualifiers="TargetSize-48, AlternateForm-UNPLATED" type="Path">
+						<Value>images\Square44x44Logo.altform-unplated_targetsize-48.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-48" isDefault="true" type="Path">
+						<Value>images\Square44x44Logo.targetsize-48.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-32, AlternateForm-UNPLATED" type="Path">
+						<Value>images\Square44x44Logo.altform-unplated_targetsize-32.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-32" isDefault="true" type="Path">
+						<Value>images\Square44x44Logo.targetsize-32.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-256, AlternateForm-UNPLATED" type="Path">
+						<Value>images\Square44x44Logo.altform-unplated_targetsize-256.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-256" isDefault="true" type="Path">
+						<Value>images\Square44x44Logo.targetsize-256.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-24, AlternateForm-UNPLATED" type="Path">
+						<Value>images\Square44x44Logo.altform-unplated_targetsize-24.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-24" isDefault="true" type="Path">
+						<Value>images\Square44x44Logo.targetsize-24.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-16, AlternateForm-UNPLATED" type="Path">
+						<Value>images\Square44x44Logo.altform-unplated_targetsize-16.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-16" isDefault="true" type="Path">
+						<Value>images\Square44x44Logo.targetsize-16.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square44x44Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square70x70Logo.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/images/Square70x70Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square70x70Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square71x71Logo.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/images/Square71x71Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square71x71Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/images/StoreLogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\StoreLogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/images/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Wide310x150Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="www">
+				<NamedResource name="cordova.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/cordova.js">
+					<Candidate type="Path">
+						<Value>www\cordova.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="cordova_plugins.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/cordova_plugins.js">
+					<Candidate type="Path">
+						<Value>www\cordova_plugins.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="index.html" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/index.html">
+					<Candidate type="Path">
+						<Value>www\index.html</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="manifest.json" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/manifest.json">
+					<Candidate type="Path">
+						<Value>www\manifest.json</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="service-worker.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/service-worker.js">
+					<Candidate type="Path">
+						<Value>www\service-worker.js</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="assets">
+					<ResourceMapSubtree name="data">
+						<NamedResource name="feeds-category.json" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/data/feeds-category.json">
+							<Candidate type="Path">
+								<Value>www\assets\data\feeds-category.json</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="feeds.json" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/data/feeds.json">
+							<Candidate type="Path">
+								<Value>www\assets\data\feeds.json</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="questions.json" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/data/questions.json">
+							<Candidate type="Path">
+								<Value>www\assets\data\questions.json</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="fonts">
+						<NamedResource name="ionicons.eot" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/ionicons.eot">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\ionicons.eot</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ionicons.scss" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/ionicons.scss">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\ionicons.scss</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ionicons.svg" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/ionicons.svg">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\ionicons.svg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ionicons.ttf" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/ionicons.ttf">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\ionicons.ttf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ionicons.woff" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/ionicons.woff">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\ionicons.woff</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ionicons.woff2" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/ionicons.woff2">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\ionicons.woff2</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="noto-sans-bold.ttf" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/noto-sans-bold.ttf">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\noto-sans-bold.ttf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="noto-sans-bold.woff" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/noto-sans-bold.woff">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\noto-sans-bold.woff</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="noto-sans-regular.ttf" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/noto-sans-regular.ttf">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\noto-sans-regular.ttf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="noto-sans-regular.woff" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/noto-sans-regular.woff">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\noto-sans-regular.woff</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="noto-sans.scss" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/noto-sans.scss">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\noto-sans.scss</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="roboto-bold.ttf" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/roboto-bold.ttf">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\roboto-bold.ttf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="roboto-bold.woff" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/roboto-bold.woff">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\roboto-bold.woff</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="roboto-bold.woff2" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/roboto-bold.woff2">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\roboto-bold.woff2</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="roboto-light.ttf" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/roboto-light.ttf">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\roboto-light.ttf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="roboto-light.woff" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/roboto-light.woff">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\roboto-light.woff</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="roboto-light.woff2" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/roboto-light.woff2">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\roboto-light.woff2</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="roboto-medium.ttf" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/roboto-medium.ttf">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\roboto-medium.ttf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="roboto-medium.woff" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/roboto-medium.woff">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\roboto-medium.woff</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="roboto-medium.woff2" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/roboto-medium.woff2">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\roboto-medium.woff2</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="roboto-regular.ttf" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/roboto-regular.ttf">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\roboto-regular.ttf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="roboto-regular.woff" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/roboto-regular.woff">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\roboto-regular.woff</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="roboto-regular.woff2" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/roboto-regular.woff2">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\roboto-regular.woff2</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="roboto.scss" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/fonts/roboto.scss">
+							<Candidate type="Path">
+								<Value>www\assets\fonts\roboto.scss</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="icon">
+						<NamedResource name="favicon.ico" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/icon/favicon.ico">
+							<Candidate type="Path">
+								<Value>www\assets\icon\favicon.ico</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="img">
+						<NamedResource name="10ThesenFlyer.jpg" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/10ThesenFlyer.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\img\10ThesenFlyer.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="appicon.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/appicon.png">
+							<Candidate type="Path">
+								<Value>www\assets\img\appicon.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="appicon1024.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/appicon1024.png">
+							<Candidate type="Path">
+								<Value>www\assets\img\appicon1024.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="DMWahl201706.jpg" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/DMWahl201706.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\img\DMWahl201706.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="facebookbg.jpg" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/facebookbg.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\img\facebookbg.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="facebookicon.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/facebookicon.png">
+							<Candidate type="Path">
+								<Value>www\assets\img\facebookicon.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="firebase.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/firebase.png">
+							<Candidate type="Path">
+								<Value>www\assets\img\firebase.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ica-slidebox-img-1.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/ica-slidebox-img-1.png">
+							<Candidate type="Path">
+								<Value>www\assets\img\ica-slidebox-img-1.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ica-slidebox-img-2.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/ica-slidebox-img-2.png">
+							<Candidate type="Path">
+								<Value>www\assets\img\ica-slidebox-img-2.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ica-slidebox-img-3.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/ica-slidebox-img-3.png">
+							<Candidate type="Path">
+								<Value>www\assets\img\ica-slidebox-img-3.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ica-slidebox-img-4.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/ica-slidebox-img-4.png">
+							<Candidate type="Path">
+								<Value>www\assets\img\ica-slidebox-img-4.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ica-slidebox-img-5.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/ica-slidebox-img-5.png">
+							<Candidate type="Path">
+								<Value>www\assets\img\ica-slidebox-img-5.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ica-slidebox-img-6.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/ica-slidebox-img-6.png">
+							<Candidate type="Path">
+								<Value>www\assets\img\ica-slidebox-img-6.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ica-slidebox-img-6.psd" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/ica-slidebox-img-6.psd">
+							<Candidate type="Path">
+								<Value>www\assets\img\ica-slidebox-img-6.psd</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ica-slidebox-img-7.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/ica-slidebox-img-7.png">
+							<Candidate type="Path">
+								<Value>www\assets\img\ica-slidebox-img-7.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="slidebox-img-1o.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/slidebox-img-1o.png">
+							<Candidate type="Path">
+								<Value>www\assets\img\slidebox-img-1o.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="slidebox-img-1u.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/slidebox-img-1u.png">
+							<Candidate type="Path">
+								<Value>www\assets\img\slidebox-img-1u.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="splashbg.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/splashbg.png">
+							<Candidate type="Path">
+								<Value>www\assets\img\splashbg.png</Value>
+							</Candidate>
+						</NamedResource>
+						<ResourceMapSubtree name="downloads">
+							<NamedResource name="10-Thesen.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/downloads/10-Thesen.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\downloads\10-Thesen.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="8-seitiger-A4-Flyer-mit-MA.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/downloads/8-seitiger-A4-Flyer-mit-MA.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\downloads\8-seitiger-A4-Flyer-mit-MA.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="A5_flyer_19.4.2017_dm.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/downloads/A5_flyer_19.4.2017_dm.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\downloads\A5_flyer_19.4.2017_dm.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Aufnahmeantrag-DIN-A4-Zwei-Seiten.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/downloads/Aufnahmeantrag-DIN-A4-Zwei-Seiten.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\downloads\Aufnahmeantrag-DIN-A4-Zwei-Seiten.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="DM-Flugblatt-Thumbnail.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/downloads/DM-Flugblatt-Thumbnail.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\downloads\DM-Flugblatt-Thumbnail.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Flyer-Deutsche-Mitte-A6.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/downloads/Flyer-Deutsche-Mitte-A6.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\downloads\Flyer-Deutsche-Mitte-A6.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Merkblatt-Parteispenden.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/downloads/Merkblatt-Parteispenden.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\downloads\Merkblatt-Parteispenden.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="PDF-Thumbnail.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/downloads/PDF-Thumbnail.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\downloads\PDF-Thumbnail.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Plakate-Thumbnail.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/downloads/Plakate-Thumbnail.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\downloads\Plakate-Thumbnail.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Wahlplakate-1.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/downloads/Wahlplakate-1.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\downloads\Wahlplakate-1.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Wahlplakate-4.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/downloads/Wahlplakate-4.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\downloads\Wahlplakate-4.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Welche-Partei-passt-zu-mir.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/downloads/Welche-Partei-passt-zu-mir.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\downloads\Welche-Partei-passt-zu-mir.png</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="menu">
+							<NamedResource name="Banner-DM-Stammtische.gif" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/menu/Banner-DM-Stammtische.gif">
+								<Candidate type="Path">
+									<Value>www\assets\img\menu\Banner-DM-Stammtische.gif</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Banner-DM-Stammtische1.gif" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/menu/Banner-DM-Stammtische1.gif">
+								<Candidate type="Path">
+									<Value>www\assets\img\menu\Banner-DM-Stammtische1.gif</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="BTW-Banner.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/menu/BTW-Banner.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\menu\BTW-Banner.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="BTW-Bundeslander-2017.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/menu/BTW-Bundeslander-2017.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\menu\BTW-Bundeslander-2017.png</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="quiz">
+							<NamedResource name="Frage1.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/quiz/Frage1.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\quiz\Frage1.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Frage10.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/quiz/Frage10.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\quiz\Frage10.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Frage2.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/quiz/Frage2.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\quiz\Frage2.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Frage3.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/quiz/Frage3.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\quiz\Frage3.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Frage4.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/quiz/Frage4.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\quiz\Frage4.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Frage5.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/quiz/Frage5.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\quiz\Frage5.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Frage6.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/quiz/Frage6.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\quiz\Frage6.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Frage7.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/quiz/Frage7.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\quiz\Frage7.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Frage8.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/quiz/Frage8.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\quiz\Frage8.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Frage9.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/quiz/Frage9.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\quiz\Frage9.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="parteien.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/quiz/parteien.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\quiz\parteien.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="WahlOMat-Ergebniss.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/quiz/WahlOMat-Ergebniss.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\quiz\WahlOMat-Ergebniss.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="WahlOMat.png" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/img/quiz/WahlOMat.png">
+								<Candidate type="Path">
+									<Value>www\assets\img\quiz\WahlOMat.png</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="translations">
+						<NamedResource name="de.json" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/translations/de.json">
+							<Candidate type="Path">
+								<Value>www\assets\translations\de.json</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="en.json" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/translations/en.json">
+							<Candidate type="Path">
+								<Value>www\assets\translations\en.json</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="fr.json" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/assets/translations/fr.json">
+							<Candidate type="Path">
+								<Value>www\assets\translations\fr.json</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="build">
+					<NamedResource name="animate.css" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/build/animate.css">
+						<Candidate type="Path">
+							<Value>www\build\animate.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="main.css" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/build/main.css">
+						<Candidate type="Path">
+							<Value>www\build\main.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="main.css.map" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/build/main.css.map">
+						<Candidate type="Path">
+							<Value>www\build\main.css.map</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="main.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/build/main.js">
+						<Candidate type="Path">
+							<Value>www\build\main.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="main.js.map" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/build/main.js.map">
+						<Candidate type="Path">
+							<Value>www\build\main.js.map</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="polyfills.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/build/polyfills.js">
+						<Candidate type="Path">
+							<Value>www\build\polyfills.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="sw-toolbox.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/build/sw-toolbox.js">
+						<Candidate type="Path">
+							<Value>www\build\sw-toolbox.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="vendor.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/build/vendor.js">
+						<Candidate type="Path">
+							<Value>www\build\vendor.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="vendor.js.map" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/build/vendor.js.map">
+						<Candidate type="Path">
+							<Value>www\build\vendor.js.map</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="cordova-js-src">
+					<NamedResource name="confighelper.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/cordova-js-src/confighelper.js">
+						<Candidate type="Path">
+							<Value>www\cordova-js-src\confighelper.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="exec.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/cordova-js-src/exec.js">
+						<Candidate type="Path">
+							<Value>www\cordova-js-src\exec.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="platform.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/cordova-js-src/platform.js">
+						<Candidate type="Path">
+							<Value>www\cordova-js-src\platform.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="splashscreen.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/cordova-js-src/splashscreen.js">
+						<Candidate type="Path">
+							<Value>www\cordova-js-src\splashscreen.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="css">
+					<NamedResource name="inappbrowser.css" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/css/inappbrowser.css">
+						<Candidate type="Path">
+							<Value>www\css\inappbrowser.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="splashscreen.css" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/css/splashscreen.css">
+						<Candidate type="Path">
+							<Value>www\css\splashscreen.css</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="plugins">
+					<ResourceMapSubtree name="cordova-plugin-console">
+						<ResourceMapSubtree name="www">
+							<NamedResource name="console-via-logger.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/plugins/cordova-plugin-console/www/console-via-logger.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-console\www\console-via-logger.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="logger.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/plugins/cordova-plugin-console/www/logger.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-console\www\logger.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-device">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="DeviceProxy.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/plugins/cordova-plugin-device/src/windows/DeviceProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-device\src\windows\DeviceProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="device.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/plugins/cordova-plugin-device/www/device.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-device\www\device.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-facebook4">
+						<ResourceMapSubtree name="www">
+							<NamedResource name="facebook-native.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/plugins/cordova-plugin-facebook4/www/facebook-native.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-facebook4\www\facebook-native.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-inappbrowser">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="InAppBrowserProxy.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/plugins/cordova-plugin-inappbrowser/src/windows/InAppBrowserProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-inappbrowser\src\windows\InAppBrowserProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="inappbrowser.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/plugins/cordova-plugin-inappbrowser/www/inappbrowser.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-inappbrowser\www\inappbrowser.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-splashscreen">
+						<ResourceMapSubtree name="www">
+							<NamedResource name="splashscreen.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-splashscreen\www\splashscreen.js</Value>
+								</Candidate>
+							</NamedResource>
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="SplashScreenProxy.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/plugins/cordova-plugin-splashscreen/www/windows/SplashScreenProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-splashscreen\www\windows\SplashScreenProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-statusbar">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="StatusBarProxy.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/plugins/cordova-plugin-statusbar/src/windows/StatusBarProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-statusbar\src\windows\StatusBarProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="statusbar.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/plugins/cordova-plugin-statusbar/www/statusbar.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-statusbar\www\statusbar.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-x-socialsharing">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="SocialSharingProxy.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/plugins/cordova-plugin-x-socialsharing/src/windows/SocialSharingProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-x-socialsharing\src\windows\SocialSharingProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="SocialSharing.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-x-socialsharing\www\SocialSharing.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="WinJS">
+					<ResourceMapSubtree name="js">
+						<NamedResource name="base.js" uri="ms-resource://17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino/Files/www/WinJS/js/base.js">
+							<Candidate type="Path">
+								<Value>www\WinJS\js\base.js</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>
