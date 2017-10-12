@@ -9,5 +9,8 @@
     <LargeTileSource>C:\Deutsche Mitte - Aktuell\resources\icon.png</LargeTileSource>
     <AppIconSource>C:\Deutsche Mitte - Aktuell\resources\icon.png</AppIconSource>
     <SplashScreenSource>C:\Deutsche Mitte - Aktuell\resources\icon.png</SplashScreenSource>
+    <AppxPackageIsForStore>True</AppxPackageIsForStore>
+    <AppxBuildConfigurationSelection>x86|x64</AppxBuildConfigurationSelection>
+    <PackageOptionalProjectsInIdeBuilds>True</PackageOptionalProjectsInIdeBuilds>
   </PropertyGroup>
 </Project>

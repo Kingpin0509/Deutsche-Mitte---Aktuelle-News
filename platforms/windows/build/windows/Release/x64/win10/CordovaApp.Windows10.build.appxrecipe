@@ -337,6 +337,9 @@
     <AppxPackagedFile Include="C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x64\win10\ilc\www\assets\img\appicon.png">
       <PackagePath>www\assets\img\appicon.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x64\win10\ilc\www\assets\img\appicon1024.png">
+      <PackagePath>www\assets\img\appicon1024.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x64\win10\ilc\www\assets\img\DMWahl201706.jpg">
       <PackagePath>www\assets\img\DMWahl201706.jpg</PackagePath>
     </AppxPackagedFile>

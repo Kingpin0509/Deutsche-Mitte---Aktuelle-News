@@ -24,7 +24,7 @@
   <Applications>
     <Application Id="de.dm.news" StartPage="ms-appx-web://17701westweedtzedevelopme.deutschemitte-aktuellino/www/index.html">
       <uap:VisualElements BackgroundColor="#464646" Description="Stets alles aktuelle über die Partei &quot;Deutsche Mitte&quot;" DisplayName="Deutsche Mitte - Aktuell" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
-        <uap:SplashScreen Image="images\splashscreen.png" />
+        <uap:SplashScreen Image="images\splashscreen.png" BackgroundColor="#00498a" />
         <uap:DefaultTile ShortName="Deutsche Mitte - Aktuell" Square310x310Logo="images\Square310x310Logo.png" Square71x71Logo="images\Square71x71Logo.png" Wide310x150Logo="images\Wide310x150Logo.png"></uap:DefaultTile>
         <uap:InitialRotationPreference>
           <uap:Rotation Preference="portrait" />
