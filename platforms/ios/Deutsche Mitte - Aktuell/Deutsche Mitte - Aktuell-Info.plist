@@ -71,8 +71,6 @@
         </dict>
       </dict>
     </dict>
-    <key>UILaunchStoryboardName</key>
-    <string>CDVLaunchScreen</string>
     <key>FacebookAppID</key>
     <string>131001554119757</string>
     <key>FacebookDisplayName</key>
