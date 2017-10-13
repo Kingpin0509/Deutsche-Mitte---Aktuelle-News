@@ -97,5 +97,7 @@
     </array>
     <key>ITSAppUsesNonExemptEncryption</key>
     <false/>
+    <key>UILaunchStoryboardName</key>
+    <string>CDVLaunchScreen</string>
   </dict>
 </plist>
