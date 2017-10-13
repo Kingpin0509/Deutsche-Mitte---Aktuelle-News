@@ -358,7 +358,6 @@ C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\bld\ilc\in\config.xm
 C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\bld\ilc.CordovaApp.Windows10.rsp
 C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x64\win10\ilc\www\assets\img\appicon1024.png
 C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\bld\ilc\in\www\assets\img\appicon1024.png
-C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x86\win10\resources.pri
 C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x86\win10\AppxManifest.xml
 C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x86\win10\ilc\config.xml
 C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x86\win10\ilc\images\logo.png
@@ -531,5 +530,7 @@ C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x86\win10\il
 C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x86\win10\ilc\www\WinJS\js\base.js
 C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x86\win10\CordovaApp.Windows10.build.appxrecipe
 C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x86\win10\Upload\CordovaApp.Windows10.build.appxrecipe
-C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x64\win10\resources.pri
 C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x64\win10\Upload\CordovaApp.Windows10.build.appxrecipe
+C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x64\win10\ReverseMap\resources.pri
+C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x86\win10\resources.pri
+C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x64\win10\resources.pri

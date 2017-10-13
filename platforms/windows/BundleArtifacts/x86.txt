@@ -1,1 +1,1 @@
-MainPackage=C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x86\win10\CordovaApp.Windows10_2.7.2.0_x86.appx
+MainPackage=C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x86\win10\CordovaApp.Windows10_2.7.3.0_x86.appx

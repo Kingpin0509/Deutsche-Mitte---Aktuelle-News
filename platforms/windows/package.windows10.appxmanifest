@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino" Publisher="CN=47AF69ED-2732-47DA-B13E-0E7FFFE045CA" Version="2.7.2.0" />
+  <Identity Name="17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino" Publisher="CN=47AF69ED-2732-47DA-B13E-0E7FFFE045CA" Version="2.7.3.0" />
   <mp:PhoneIdentity PhoneProductId="ee2f0dde-e55d-417d-b45b-71b18c36be98" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Deutsche Mitte - Aktuell (inoffiziell)</DisplayName>

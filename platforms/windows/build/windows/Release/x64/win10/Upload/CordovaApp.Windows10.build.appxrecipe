@@ -579,7 +579,7 @@
     <AppxPackagedFile Include="C:\Deutsche Mitte - Aktuell\platforms\windows\config.xml">
       <PackagePath>config.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x64\win10\resources.pri">
+    <AppxPackagedFile Include="C:\Deutsche Mitte - Aktuell\platforms\windows\build\windows\Release\x64\win10\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

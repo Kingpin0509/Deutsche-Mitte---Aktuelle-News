@@ -1,1 +1,1 @@
-C:\Deutsche Mitte - Aktuell\platforms\windows\AppPackages\CordovaApp.Windows10_2.7.2.0_Test\CordovaApp.Windows10_2.7.2.0_x86_x64.appxbundle
+C:\Deutsche Mitte - Aktuell\platforms\windows\AppPackages\CordovaApp.Windows10_2.7.3.0_Test\CordovaApp.Windows10_2.7.3.0_x86_x64.appxbundle
