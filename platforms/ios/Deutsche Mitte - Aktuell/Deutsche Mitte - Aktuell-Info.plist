@@ -47,6 +47,19 @@
     </array>
     <key>UIRequiresFullScreen</key>
     <true/>
+    <key>FacebookAppID</key>
+    <string>131001554119757</string>
+    <key>FacebookDisplayName</key>
+    <string>Deutsche Mitte - Aktuell</string>
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>fb131001554119757</string>
+        </array>
+      </dict>
+    </array>
     <key>NSAppTransportSecurity</key>
     <dict>
       <key>NSAllowsArbitraryLoads</key>
@@ -71,19 +84,6 @@
         </dict>
       </dict>
     </dict>
-    <key>FacebookAppID</key>
-    <string>131001554119757</string>
-    <key>FacebookDisplayName</key>
-    <string>Deutsche Mitte - Aktuell</string>
-    <key>CFBundleURLTypes</key>
-    <array>
-      <dict>
-        <key>CFBundleURLSchemes</key>
-        <array>
-          <string>fb131001554119757</string>
-        </array>
-      </dict>
-    </array>
     <key>LSApplicationQueriesSchemes</key>
     <array>
       <string>fbapi</string>
