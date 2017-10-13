@@ -37,7 +37,7 @@
         "animate.css": "^3.5.2",
         "chart.js": "^2.7.0",
         "cordova-android": "^6.3.0",
-        "cordova-ios": "^4.5.1",
+        "cordova-ios": "^4.4.0",
         "cordova-ios-plugin-no-export-compliance": "0.0.5",
         "cordova-plugin-console": "1.1.0",
         "cordova-plugin-crosswalk-webview": "~2.3.0",
