@@ -87,11 +87,8 @@
       </ion-item-divider>
       <ion-item no-margin no-padding *ngFor="let page of pagesrightfooter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)"
         class="animated bounceInRight">
-        <ion-card no-margin>
-          <!-- <div class="card-subtitle">Deutschlandweit </div> -->
           <div class="card-title">BESUCHEN SIE UNS</div>
-          <img margin-horizontal src="assets/img/menu/Banner-DM-Stammtische.gif" />
-        </ion-card>
+          <img [height]= src="assets/img/menu/Banner-DM-Stammtische.gif" />
       </ion-item>
     </ion-list>
   </ion-content>
