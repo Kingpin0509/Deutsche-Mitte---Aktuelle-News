@@ -50,7 +50,7 @@
       </ion-list>
     </ion-content>
     <ion-footer>
-      <button class="animated rotateInUpLeft" ion-button full *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">
+      <button class="bounce-top" ion-button full *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">
         <ion-icon margin [name]="page.icon"></ion-icon>
         <h4 style="font-size:smaller" color="primary">{{page.title | translate}}</h4>
       </button>
@@ -74,6 +74,14 @@
         <iframe class="animated flipInYRight" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhoersteldeutschemitte%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=131001554119757"
           width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
       </ion-item>
+      <ion-item-divider class="bounce-top dmo-dark">
+        <h2>{{'FAVORITES' | translate}} ({{favoritePosts.length}})</h2>
+      </ion-item-divider>
+      <ion-item *ngFor="let post of favoritePosts">
+        <ion-item (tap)="loadPost(post)">
+          {{post.title.rendered}}
+        </ion-item>
+      </ion-item>
       <ion-item-divider class="fade-in-right dmo-dark">
         <h2>{{'DMVENUE' | translate}}</h2>
       </ion-item-divider>
@@ -82,7 +90,7 @@
         <ion-card no-margin>
           <!-- <div class="card-subtitle">Deutschlandweit </div> -->
           <div class="card-title">BESUCHEN SIE UNS</div>
-          <img src="assets/img/menu/Banner-DM-Stammtische.gif" />
+          <img margin-horizontal src="assets/img/menu/Banner-DM-Stammtische.gif" />
         </ion-card>
       </ion-item>
     </ion-list>

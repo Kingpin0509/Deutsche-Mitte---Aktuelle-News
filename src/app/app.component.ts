@@ -14,8 +14,10 @@ import { Config } from "./app.config";
 // import { Splash } from "../pages/splash/splash.module";
 import { SlidesComponent } from "../pages/slides/slides-component/slides.component";
 import { TabsComponent } from "../pages/tabs/tabs-component/tabs.component";
+import { WordpressPost } from "../pages/wordpress/wordpress-post/wordpress-post.component";
 import { WordpressMenus } from "../pages/wordpress/wordpress-menus/wordpress-menus.component";
 import { WordpressPosts } from "../pages/wordpress/wordpress-posts/wordpress-posts.component";
+import { WordpressService } from "../pages/wordpress/shared/services/wordpress.service";
 import { WordpressFavorites } from "../pages/wordpress/wordpress-favorites/wordpress-favorites.component";
 import { WordpressCategories } from "../pages/wordpress/wordpress-categories/wordpress-categories.component";
 //import { WordpressTags } from '../pages/wordpress/wordpress-tags/wordpress-tags.component';
@@ -49,6 +51,10 @@ export class MyApp {
   rootPage;
   @ViewChild(Nav) nav: Nav;
   menuPage = WordpressMenus;
+  favoritePosts = [];
+  posts: any;
+  pageCount: number;
+  category: any;
   page: any;
   pages: Array<{ title: string; component: any; icon: string }>;
   pageshidden: Array<{ title: string; component: any; icon: string }>;
@@ -98,6 +104,12 @@ export class MyApp {
         this.storage.set("language", "de");
       }
     });
+    storage.get("wordpress.favorite").then(data => {
+        if (data) {
+          this.favoritePosts = JSON.parse(data);
+        }
+      });
+
     this.pagesleft = [
       {
         title: "HOME",
@@ -200,8 +212,8 @@ export class MyApp {
       duration: 500
     });
     this.activePage = page;
-    loader.present();
-    this.nav.setRoot(page.component).then(() => {
+    loader.present().then(() => {
+      this.nav.setRoot(page.component);
       this.menuController.close();
     });
   }
@@ -211,8 +223,6 @@ export class MyApp {
       this.activePage = page;
     });
   }
-
-
   openPageStammtische(page) {
     let loader = this.loadingCtrl.create({
       content: "Suche Stammtische...",
@@ -231,6 +241,13 @@ export class MyApp {
     this.menuController.close();
     this.nav.push(WordpressPageDownloads, {
       page: page
+    });
+  }
+
+
+  loadPost(post) {
+    this.nav.push(WordpressPost, {
+      post: post
     });
   }
 }

@@ -20,7 +20,7 @@ export class WordpressFavorites {
     private navParams: NavParams,
     private navController: NavController,
     private storage: Storage
-  ) {}
+  ) { }
 
   ionViewWillEnter() {
     this.getPosts();
