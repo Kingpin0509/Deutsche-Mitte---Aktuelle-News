@@ -20,9 +20,9 @@
             <ion-icon item-start [name]="page.icon"></ion-icon>
             <h2 color="primary" ion-text>{{page.title | translate}}</h2>
           </button>
-          <!--          <button outline class="animated bounceInLeft" ion-item (tap)="openPageYoutube()">
-                        <ion-icon name="logo-youtube" class="youtube" item-start></ion-icon>
-                        <h2 ion-text color="primary">{{'YOUTUBE_CHANNEL' | translate}}</h2>
+          <!--<button outline class="animated bounceInLeft" ion-item (tap)="openPageYoutube()">
+<ion-icon name="logo-youtube" class="youtube" item-start></ion-icon>
+<h2 ion-text color="primary">{{'YOUTUBE_CHANNEL' | translate}}</h2>
                         <ion-note item-end>DM</ion-note>
                     </button>
                      <button outline class="animated bounceInLeft" ion-item (tap)="openPageWordpress(page)">
@@ -82,14 +82,14 @@
           {{post.title.rendered}}
         </ion-item>
       </ion-item>
-      <ion-item-divider class="fade-in-right dmo-dark">
+      <!--      <ion-item-divider class="fade-in-right dmo-dark">
         <h2>{{'DMVENUE' | translate}}</h2>
       </ion-item-divider>
-      <ion-item no-margin no-padding *ngFor="let page of pagesrightfooter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)"
+       <ion-item no-margin no-padding *ngFor="let page of pagesrightfooter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)"
         class="animated bounceInRight">
           <div class="card-title">BESUCHEN SIE UNS</div>
           <img [height]= src="assets/img/menu/Banner-DM-Stammtische.gif" />
-      </ion-item>
+      </ion-item> -->
     </ion-list>
   </ion-content>
   <!--   <ion-footer>
