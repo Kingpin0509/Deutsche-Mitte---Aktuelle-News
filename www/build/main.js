@@ -2821,7 +2821,8 @@ var MyApp = (function () {
                 _this.storage.set("language", "de");
             }
         });
-        storage.get("wordpress.favorite").then(function (data) {
+        this.storage.get('wordpress.favorite')
+            .then(function (data) {
             if (data) {
                 _this.favoritePosts = JSON.parse(data);
             }

@@ -104,7 +104,8 @@ export class MyApp {
         this.storage.set("language", "de");
       }
     });
-    storage.get("wordpress.favorite").then(data => {
+    this.storage.get('wordpress.favorite')
+      .then(data => {
         if (data) {
           this.favoritePosts = JSON.parse(data);
         }
@@ -243,8 +244,6 @@ export class MyApp {
       page: page
     });
   }
-
-
   loadPost(post) {
     this.nav.push(WordpressPost, {
       post: post
