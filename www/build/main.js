@@ -568,16 +568,16 @@ var WordpressPostsHome = (function () {
         var _this = this;
         this.pageCount = 1;
         var query = this.createQuery();
-        var loader = this.loadingController.create({
-            spinner: "bubbles",
-            cssClass: "wordpresspostshome",
-            content: "Bitte Warten...",
-            duration: 5000
-        });
-        loader.present();
+        // let loader = this.loadingController.create({
+        //   spinner: "bubbles",
+        //   cssClass: `wordpresspostshome`,
+        //   content: `Bitte Warten...`,
+        //   duration: 1000
+        // });
+        //loader.present();
         this.wordpressService.getPosts(query).subscribe(function (result) {
+            //loader.dismiss();
             _this.posts = result;
-            loader.dismiss();
         });
     };
     WordpressPostsHome.prototype.getAuthorPosts = function (author) {
@@ -1913,6 +1913,22 @@ var SettingsComponent = (function () {
         this.translate.setDefaultLang(this.language);
         this.translate.use(this.language);
     };
+    SettingsComponent.prototype.seenTutorial = function () {
+        var _this = this;
+        this.storage.get('hasSeenTutorial')
+            .then(function (hasSeenTutorial) {
+            if (hasSeenTutorial) {
+                _this.checkbox = true;
+            }
+            else {
+                _this.checkbox = false;
+            }
+        });
+    };
+    SettingsComponent.prototype.toogleSeenTutorial = function () {
+        this.storage.set('hasSeenTutorial', false);
+        this.disabled = true;
+    };
     return SettingsComponent;
 }());
 SettingsComponent = __decorate([
@@ -2913,7 +2929,7 @@ var MyApp = (function () {
             _this.statusBar.backgroundColorByHexString("#005397");
             _this.statusBar.styleBlackTranslucent();
             //      this.statusBar.hide();
-            _this.splashScreen.hide();
+            //this.splashScreen.hide();
         });
     };
     MyApp.prototype.checkActivePage = function (page) {
