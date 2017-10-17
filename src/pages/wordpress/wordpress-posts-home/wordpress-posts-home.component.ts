@@ -53,16 +53,16 @@ export class WordpressPostsHome implements OnInit {
   getPosts() {
     this.pageCount = 1;
     let query = this.createQuery();
-    let loader = this.loadingController.create({
-      spinner: "bubbles",
-      cssClass: `wordpresspostshome`,
-      content: `Bitte Warten...`,
-      duration: 5000
-    });
-    loader.present();
+    // let loader = this.loadingController.create({
+    //   spinner: "bubbles",
+    //   cssClass: `wordpresspostshome`,
+    //   content: `Bitte Warten...`,
+    //   duration: 1000
+    // });
+    //loader.present();
     this.wordpressService.getPosts(query).subscribe(result => {
+    //loader.dismiss();
       this.posts = result;
-      loader.dismiss();
     });
   }
 

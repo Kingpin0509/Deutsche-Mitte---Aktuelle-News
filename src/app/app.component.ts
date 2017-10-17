@@ -48,8 +48,8 @@ import { FacebookConnectComponent } from "../pages/facebook-connect/facebook-con
   templateUrl: "./app.html"
 })
 export class MyApp {
-  rootPage;
   @ViewChild(Nav) nav: Nav;
+  rootPage;
   menuPage = WordpressMenus;
   favoritePosts = [];
   posts: any;
@@ -72,7 +72,7 @@ export class MyApp {
   wordpressMenusNavigation: boolean = false;
   constructor(
     private config: Config,
-    private platform: Platform,
+    public platform: Platform,
     private storage: Storage,
     private loadingCtrl: LoadingController,
     private splashScreen: SplashScreen,
@@ -187,7 +187,7 @@ export class MyApp {
       }
     ];
     this.wordpressMenusNavigation = config.wordpressMenusNavigation;
-    (this.activePage = this.pagesleft[0],
+    (this.activePage = this.pagesleft[0], this.pagesleftbottom[0],
       this.pagesleftcenter[0],
       this.pagesleftfooter[0],
       this.pagesrightfooter[0]
@@ -199,7 +199,7 @@ export class MyApp {
       this.statusBar.backgroundColorByHexString("#005397");
       this.statusBar.styleBlackTranslucent();
       //      this.statusBar.hide();
-      this.splashScreen.hide();
+      //this.splashScreen.hide();
     });
   }
   checkActivePage(page) {

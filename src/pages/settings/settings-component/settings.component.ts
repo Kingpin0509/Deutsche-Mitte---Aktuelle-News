@@ -7,8 +7,9 @@ import { TranslateService } from "ng2-translate";
 })
 export class SettingsComponent implements OnInit {
   language: string;
-
-  constructor(private storage: Storage, private translate: TranslateService) {}
+  checkbox: boolean;
+  disabled: boolean;
+  constructor(private storage: Storage, private translate: TranslateService) { }
 
   ngOnInit() {
     this.storage.get("language").then(value => {
@@ -24,5 +25,20 @@ export class SettingsComponent implements OnInit {
     this.storage.set("language", this.language);
     this.translate.setDefaultLang(this.language);
     this.translate.use(this.language);
+  }
+  seenTutorial() {
+    this.storage.get('hasSeenTutorial')
+      .then((hasSeenTutorial) => {
+        if (hasSeenTutorial) {
+          this.checkbox = true;
+        }
+        else {
+          this.checkbox = false;
+        }
+      });
+  }
+  toogleSeenTutorial() {
+    this.storage.set('hasSeenTutorial', false);
+    this.disabled = true
   }
 }
