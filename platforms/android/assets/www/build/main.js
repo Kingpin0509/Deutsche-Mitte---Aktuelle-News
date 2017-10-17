@@ -2981,6 +2981,16 @@ var MyApp = (function () {
         this.nav.push(__WEBPACK_IMPORTED_MODULE_9__pages_wordpress_wordpress_post_wordpress_post_component__["a" /* WordpressPost */], {
             post: post
         });
+        // OneSignal Code start:
+        // Enable to debug issues:
+        // window["plugins"].OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
+        var notificationOpenedCallback = function (jsonData) {
+            console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+        };
+        window["plugins"].OneSignal
+            .startInit("6a5ed52b-2c28-4d8d-9926-5d559837a95d", "645777369391")
+            .handleNotificationOpened(notificationOpenedCallback)
+            .endInit();
     };
     return MyApp;
 }());
