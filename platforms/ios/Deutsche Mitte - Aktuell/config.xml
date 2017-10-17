@@ -122,4 +122,7 @@
     <preference name="WindowsStorePublisherName" value="West Weedtze Development - Michael Humann" />
     <preference name="WindowsStoreIdentityName" value="17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino" />
     <preference name="WindowsStoreDisplayName" value="Deutsche Mitte - Aktuell (inoffiziell)" />
+    <feature name="OneSignalPush">
+        <param name="ios-package" value="OneSignalPush" />
+    </feature>
 </widget>

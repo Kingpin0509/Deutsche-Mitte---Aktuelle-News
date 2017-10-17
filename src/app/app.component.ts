@@ -248,6 +248,18 @@ export class MyApp {
     this.nav.push(WordpressPost, {
       post: post
     });
+    // OneSignal Code start:
+    // Enable to debug issues:
+    // window["plugins"].OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
+
+    var notificationOpenedCallback = function (jsonData) {
+      console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+    };
+
+    window["plugins"].OneSignal
+      .startInit("6a5ed52b-2c28-4d8d-9926-5d559837a95d", "645777369391")
+      .handleNotificationOpened(notificationOpenedCallback)
+      .endInit();
   }
 }
 // openPageYoutube(page) {

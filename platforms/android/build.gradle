@@ -89,6 +89,7 @@ ext {
 
 // PLUGIN GRADLE EXTENSIONS START
 apply from: "cordova-plugin-crosswalk-webview/news-xwalk.gradle"
+apply from: "onesignal-cordova-plugin/news-build-extras-onesignal.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()
@@ -252,6 +253,7 @@ dependencies {
     releaseCompile(project(path: "CordovaLib", configuration: "release"))
     compile "com.facebook.android:facebook-android-sdk:4.8.+"
     compile "com.android.support:support-v4:24.1.1+"
+    compile "com.onesignal:OneSignal:3.6.3"
     // SUB-PROJECT DEPENDENCIES END
 }
 
