@@ -58,7 +58,7 @@ export class MyApp {
   page: any;
   pages: Array<{ title: string; component: any; icon: string }>;
   pageshidden: Array<{ title: string; component: any; icon: string }>;
-  pagesleft: Array<{ title: string; component: any; icon: string; }>;
+  pagesleft: Array<{ title: string; component: any; icon: string }>;
   pagesleftcenter: Array<{
     title: string;
     component: any;
@@ -67,7 +67,7 @@ export class MyApp {
   pagesleftbottom: Array<{ title: string; component: any; icon: string }>;
   pagesleftfooter: Array<{ title: string; component: any; icon: string }>;
   pagesright: Array<{ title: string; component: any; icon: string }>;
-  pagesrightfooter: Array<{ title: string; component: any; icon: string; }>;
+  pagesrightfooter: Array<{ title: string; component: any; icon: string }>;
   activePage: any;
   wordpressMenusNavigation: boolean = false;
   constructor(
@@ -87,14 +87,13 @@ export class MyApp {
     //   splash.present();
     //});
     this.initializeApp();
-    this.storage.get('hasSeenTutorial')
-      .then((hasSeenTutorial) => {
-        if (hasSeenTutorial) {
-          this.rootPage = TabsComponent;
-        } else {
-          this.rootPage = SlidesComponent;
-        }
-      });
+    this.storage.get("hasSeenTutorial").then(hasSeenTutorial => {
+      if (hasSeenTutorial) {
+        this.rootPage = TabsComponent;
+      } else {
+        this.rootPage = SlidesComponent;
+      }
+    });
     this.translate.setDefaultLang("de");
     storage.get("language").then(value => {
       if (value) {
@@ -104,35 +103,34 @@ export class MyApp {
         this.storage.set("language", "de");
       }
     });
-    this.storage.get('wordpress.favorite')
-      .then(data => {
-        if (data) {
-          this.favoritePosts = JSON.parse(data);
-        }
-      });
+    this.storage.get("wordpress.favorite").then(data => {
+      if (data) {
+        this.favoritePosts = JSON.parse(data);
+      }
+    });
 
     this.pagesleft = [
       {
         title: "HOME",
         component: TabsComponent,
-        icon: "home",
+        icon: "home"
       }
     ];
     this.pagesleftcenter = [
       {
         title: "ABOUT",
         component: AboutComponent,
-        icon: "information-circle",
+        icon: "information-circle"
       },
       {
         title: "FUTUREPOLITICS",
         component: FuturePoliticsComponent,
-        icon: "book",
+        icon: "book"
       },
       {
         title: "DOWNLOADS",
         component: DownloadsComponent,
-        icon: "download",
+        icon: "download"
       }
       // {
       //           title: "FEEDS",
@@ -150,7 +148,7 @@ export class MyApp {
     ];
     this.pagesleftfooter = [
       //	    { title: 'NEWSLETTER', component: NewsletterComponent, icon: 'help' },
-      { title: "SETTINGS", component: SettingsComponent, icon: "options" },
+      { title: "SETTINGS", component: SettingsComponent, icon: "options" }
     ];
     this.pagesright = [
       //		  { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
@@ -187,11 +185,11 @@ export class MyApp {
       }
     ];
     this.wordpressMenusNavigation = config.wordpressMenusNavigation;
-    (this.activePage = this.pagesleft[0], this.pagesleftbottom[0],
+    (this.activePage = this.pagesleft[0]),
+      this.pagesleftbottom[0],
       this.pagesleftcenter[0],
       this.pagesleftfooter[0],
-      this.pagesrightfooter[0]
-    );
+      this.pagesrightfooter[0];
   }
   initializeApp() {
     this.platform.ready().then(() => {
@@ -200,6 +198,18 @@ export class MyApp {
       this.statusBar.styleBlackTranslucent();
       //      this.statusBar.hide();
       //this.splashScreen.hide();
+      // OneSignal Code start:
+      // Enable to debug issues:
+      // window["plugins"].OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
+
+      // var notificationOpenedCallback = function(jsonData) {
+      //   console.log("notificationOpenedCallback: " + JSON.stringify(jsonData));
+      // };
+
+      // window["plugins"].OneSignal
+      //   .startInit("6a5ed52b-2c28-4d8d-9926-5d559837a95d", "645777369391")
+      //   .handleNotificationOpened(notificationOpenedCallback)
+      //   .endInit();
     });
   }
   checkActivePage(page) {
@@ -220,7 +230,7 @@ export class MyApp {
   }
   pushPage(page) {
     this.menuController.close().then(() => {
-      this.nav.push(page.component)
+      this.nav.push(page.component);
       this.activePage = page;
     });
   }
@@ -248,18 +258,6 @@ export class MyApp {
     this.nav.push(WordpressPost, {
       post: post
     });
-    // OneSignal Code start:
-    // Enable to debug issues:
-    // window["plugins"].OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
-
-    var notificationOpenedCallback = function (jsonData) {
-      console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
-    };
-
-    window["plugins"].OneSignal
-      .startInit("6a5ed52b-2c28-4d8d-9926-5d559837a95d", "645777369391")
-      .handleNotificationOpened(notificationOpenedCallback)
-      .endInit();
   }
 }
 // openPageYoutube(page) {
