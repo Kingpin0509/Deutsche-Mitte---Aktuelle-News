@@ -48,14 +48,6 @@ module.exports = [
         "clobbers": [
             "window.plugins.socialsharing"
         ]
-    },
-    {
-        "id": "onesignal-cordova-plugin.OneSignal",
-        "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
-        "pluginId": "onesignal-cordova-plugin",
-        "clobbers": [
-            "OneSignal"
-        ]
     }
 ];
 module.exports.metadata = 
@@ -70,8 +62,7 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "4.0.3",
     "cordova-plugin-statusbar": "2.2.1",
     "cordova-plugin-whitelist": "1.3.1",
-    "cordova-plugin-x-socialsharing": "5.1.5",
-    "onesignal-cordova-plugin": "2.2.2"
+    "cordova-plugin-x-socialsharing": "5.1.5"
 };
 // BOTTOM OF METADATA
 });

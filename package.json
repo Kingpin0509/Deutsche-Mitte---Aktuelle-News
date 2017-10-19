@@ -37,6 +37,7 @@
         "animate.css": "^3.5.2",
         "chart.js": "^2.7.0",
         "cordova-android": "^6.2.3",
+        "cordova-ios": "^4.4.0",
         "cordova-ios-plugin-no-export-compliance": "0.0.5",
         "cordova-plugin-console": "1.1.0",
         "cordova-plugin-crosswalk-webview": "~2.3.0",
@@ -57,7 +58,6 @@
         "mime": "2.0.3",
         "moment": "2.18.1",
         "ng2-translate": "5.0.0",
-        "onesignal-cordova-plugin": "^2.2.2",
         "promise-polyfill": "^6.0.2",
         "rxjs": "5.4.3",
         "sw-toolbox": "3.6.0",
@@ -104,11 +104,11 @@
             "cordova-plugin-whitelist": {},
             "cordova-plugin-x-socialsharing": {},
             "cordova-plugin-crosswalk-webview": {},
-            "cordova-plugin-ios-no-export-compliance": {},
-            "onesignal-cordova-plugin": {}
+            "cordova-plugin-ios-no-export-compliance": {}
         },
         "platforms": [
             "android",
+            "ios",
             "windows"
         ]
     }

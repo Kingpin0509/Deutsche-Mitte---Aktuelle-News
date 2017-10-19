@@ -43,9 +43,6 @@
         },
         "cordova-plugin-x-socialsharing": {
             "PACKAGE_NAME": "de.dm.news"
-        },
-        "onesignal-cordova-plugin": {
-            "PACKAGE_NAME": "de.dm.news"
         }
     },
     "dependent_plugins": {}
