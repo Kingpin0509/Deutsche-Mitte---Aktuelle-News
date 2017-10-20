@@ -19,7 +19,7 @@ import { NewsletterModule } from "../pages/newsletter/newsletter.module";
 import { StammtischeModule } from "../pages/stammtische/stammtische.module";
 import { QuizModule } from "../pages/quiz/quiz.module";
 import { FacebookConnectModule } from "../pages/facebook-connect/facebook-connect.module";
-//import { FeedsModule } from "../pages/feeds/feeds.module";
+import { FeedsModule } from "../pages/feeds/feeds.module";
 //import { FirebaseModule } from "../pages/firebase/firebase.module";
 //import { Splash } from "../pages/splash/splash.module";
 //import { QuizComponent } from '../pages/quiz/quiz-component/quiz';
@@ -51,8 +51,8 @@ import { FacebookConnectModule } from "../pages/facebook-connect/facebook-connec
     NewsletterModule,
     StammtischeModule,
     QuizModule,
-    FacebookConnectModule
-    //FeedsModule,
+    FacebookConnectModule,
+    FeedsModule
     //FirebaseModule
     //BarcodeScannerModule,
     //GoogleMapsModule,

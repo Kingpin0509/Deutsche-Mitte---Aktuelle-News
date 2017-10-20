@@ -13,26 +13,26 @@
     {
       "id": 2,
       "title": "Innenpolitik",
-      "description": "https://deutsche-mitte.de/innenpolitik/feed/",
-      "url": "https://deutsche-mitte.de/innenpolitik/feed/"
+      "description": "https://deutsche-mitte.de/category/aktuelles/",
+      "url": "https://deutsche-mitte.de/category/aktuelles/"
     },
     {
       "id": 3,
-      "title": "1Deutsche Mitte",
-      "description": "Politik geht anders",
-      "url": "https://deutsche-mitte.de/feed/"
+      "title": "aktuelles/rss",
+      "description": "https://deutsche-mitte.de/category/aktuelles/rss",
+      "url": "https://deutsche-mitte.de/category/aktuelles/rss"
     },
     {
       "id": 4,
-      "title": "Apple Hot News",
-      "description": "Apple Inc. is an American multinational corporation.",
-      "url": "https://www.apple.com/main/rss/hotnews/hotnews.rss"
+      "title": "aktuelles/rdf",
+      "description": "https://deutsche-mitte.de/category/aktuelles/rdf",
+      "url": "https://deutsche-mitte.de/category/aktuelles/rdf"
     },
     {
       "id": 5,
-      "title": "Apple Developer News",
-      "description": "Apple Inc. is an American multinational corporation.",
-      "url": "https://developer.apple.com/news/rss/news.rss"
+      "title": "aktuelles/feed",
+      "description": "https://deutsche-mitte.de/category/aktuelles/feed",
+      "url": "https://deutsche-mitte.de/category/aktuelles/feed"
     }
   ]
 }
