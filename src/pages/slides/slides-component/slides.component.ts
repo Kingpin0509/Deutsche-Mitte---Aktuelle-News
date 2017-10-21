@@ -12,38 +12,24 @@ export class SlidesComponent {
     public nav: NavController,
     public menu: MenuController,
     public storage: Storage
-  ) { }
+  ) {}
   openPage() {
     this.nav.setRoot(TabsComponent).then(() => {
-      this.storage.set('hasSeenTutorial', 'true');
-    })
-  }
-  startApp() {
-    this.nav.push(TabsComponent).then(() => {
-      this.storage.set('hasSeenTutorial', 'true');
-    })
-  }
-  ionViewDidEnter() {
-    // the root left menu should be disabled on the tutorial page
-    this.menu.enable(false);
-  }
-
-  ionViewDidLeave() {
-    // enable the root left menu when leaving the tutorial page
-    this.menu.enable(true);
+      this.storage.set("hasSeenTutorial", "true");
+    });
   }
   slides = [
     {
       title: "Zum Kennenlernen",
       description:
-      "Schauen sie gern in unseren online Stammtisch vorbei. Oder kommen sie persönlich zu unseren Stammtischtreffen in jeder größeren Stadt",
+        "Schauen sie gern in unseren online Stammtisch vorbei. Oder kommen sie persönlich zu unseren Stammtischtreffen in jeder größeren Stadt",
       description1: "www.dm-stammtisch.de",
       image: "assets/img/ica-slidebox-img-4.png"
     },
     {
       title: "SCHREIBEN SIE MIT UNS GESCHICHTE!!!",
       description:
-      "Sind Sie Zuschauer - oder Teil der notwendigen und überfälligen Veränderung?",
+        "Sind Sie Zuschauer - oder Teil der notwendigen und überfälligen Veränderung?",
       description1: "",
       image: "assets/img/ica-slidebox-img-3.png"
     },
@@ -54,5 +40,4 @@ export class SlidesComponent {
       image: "assets/img/ica-slidebox-img-7.png"
     }
   ];
-
 }

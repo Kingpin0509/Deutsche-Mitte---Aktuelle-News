@@ -53,9 +53,11 @@
         "css-animator": "^2.1.1",
         "firebase": "^4.5.0",
         "io": "^0.1.10",
-        "ionic-angular": "3.7.1",
+        "ionic": "^3.13.2",
+        "ionic-angular": "^3.7.1",
         "ionicons": "3.0.0",
         "mime": "2.0.3",
+        "minimatch": "^3.0.4",
         "moment": "2.18.1",
         "ng2-translate": "5.0.0",
         "promise-polyfill": "^6.0.2",
@@ -66,7 +68,6 @@
     "devDependencies": {
         "@ionic/app-scripts": "^3.0.0",
         "ajv": "5.0.0",
-        "ionic": "3.13.2",
         "typescript": "2.3.4"
     },
     "cordovaPlugins": [
