@@ -76,26 +76,26 @@ $list-border-color: #000 !default;
 }
 
 .gradient-bg {
-  background: #204f5f !important;
+  background: #00498a !important;
   background: -moz-radial-gradient(
     right,
     ellipse cover,
-    #204f5f 0%,
+    #005397 0%,
     #091b31 100%
   ) !important;
   background: -webkit-radial-gradient(
     right,
     ellipse cover,
-    #204f5f 0%,
+    #005397 0%,
     #091b31 100%
   ) !important;
   background: radial-gradient(
     ellipse at right,
-    #204f5f 0%,
+    #005397 0%,
     #091b31 100%
   ) !important;
   filter: progid:DXImageTransform.Microsoft.gradient(
-      startColorstr="#204f5f",
+      startColorstr="#005397",
       endColorstr="#091b31",
       GradientType=1
     ) !important;
@@ -132,7 +132,7 @@ $list-border-color: #000 !default;
 ion-nav {
   transition: all 0.75s cubic-bezier(0.78, 0.37, 0.62, 0.86) !important;
   transform: scale3d(1, 1, 1) rotateY(0) translateX(0) translateY(0px)
-  translateZ(0px) !important;
+    translateZ(0px) !important;
 }
 
 .ion-page {
@@ -146,7 +146,7 @@ ion-nav {
   .ion-page {
     transform: scale3d(0.9, 0.9, 0.9) rotateY(-3deg) translateX(50px)
       translateY(0px) translateZ(30px) !important;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.25);
     overflow: hidden !important;
     ion-content {
       overflow: hidden !important;

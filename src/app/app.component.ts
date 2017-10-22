@@ -31,9 +31,9 @@ import { SettingsComponent } from "../pages/settings/settings-component/settings
 import { StammtischeComponent } from "../pages/stammtische/stammtische-component/stammtische.component";
 import { FacebookConnectComponent } from "../pages/facebook-connect/facebook-connect-component/facebook-connect.component";
 // import { QuizComponent } from "../pages/quiz/quiz-component/quiz";
-//import { FeedCategoriesComponent } from "../pages/feeds/feed-categories/feed-categories.component";
-//import { FeedCategoryComponent } from "../pages/feeds/feed-category/feed-category.component";
- import { FirebaseHomeComponent } from "../pages/firebase/firebase-home/firebase-home.component";
+import { FeedCategoriesComponent } from "../pages/feeds/feed-categories/feed-categories.component";
+import { FeedCategoryComponent } from "../pages/feeds/feed-category/feed-category.component";
+import { FirebaseHomeComponent } from "../pages/firebase/firebase-home/firebase-home.component";
 // import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 // import { BarcodeScannerComponent } from '../pages/barcode-scanner/barcode-scanner-component/barcode-scanner.component';
 // import { NewsletterComponent } from '../pages/newsletter/newsletter-component/newsletter.component';
@@ -114,6 +114,17 @@ export class MyApp {
         title: "HOME",
         component: TabsComponent,
         icon: "home"
+      },
+      { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" },
+      {
+        title: "FEEDS",
+        component: FeedCategoriesComponent,
+        icon: "logo-rss"
+      },
+      {
+        title: "FEED_CATEGORY",
+        component: FeedCategoryComponent,
+        icon: "logo-rss"
       }
     ];
     this.pagesleftcenter = [
@@ -132,16 +143,6 @@ export class MyApp {
         component: DownloadsComponent,
         icon: "download"
       }
-      // {
-      //   title: "FEEDS",
-      //   component: FeedCategoriesComponent,
-      //   icon: "logo-rss"
-      // },
-      // {
-      //   title: "FEED_CATEGORY",
-      //   component: FeedCategoryComponent,
-      //   icon: "logo-rss"
-      // }
     ];
     this.pagesleftbottom = [
       { title: "STAMMTISCHE", component: StammtischeComponent, icon: "pin" }
@@ -169,7 +170,6 @@ export class MyApp {
       //		  { title: 'RANGES', component: RangesComponent, icon: 'sunny'},
       //		  { title: 'ACTION_SHEET', component: ActionSheetComponent, icon: 'create'},
       //		  { title: 'LOGIN', component: LoginComponent, icon: 'log-in' }
-           { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" },
       { title: "YOUTUBE", component: YoutubeChannelComponent, icon: "pin" },
       { title: "POSTS", component: WordpressPosts, icon: "paper" },
       {

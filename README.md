@@ -184,3 +184,21 @@ ionic cordova platform rm ios android windows && ionic cordova platform add ios 
 
 ionic cordova plugin add https://github.com/jeduan/cordova-plugin-facebook4 --save --variable APP_ID="131001554119757" --variable APP_NAME="Deutsche Mitte - Aktuell"
 npm uninstall --save -E ionic
+
+{
+  "id":34,
+"count":159,
+"description":"",
+"link":"https:\/\/deutsche-mitte.de\/category\/aktuelles\/",
+"name":"Aktuelles",
+"slug":"aktuelles",
+"taxonomy":"category",
+"parent":0,
+"meta":[],
+"_links":{"self":[{"href":"https:\/\/deutsche-mitte.de\/wp-json\/wp\/v2\/categories\/34"}],
+"collection":[{"href":"https:\/\/deutsche-mitte.de\/wp-json\/wp\/v2\/categories"}],
+"about":[{"href":"https:\/\/deutsche-mitte.de\/wp-json\/wp\/v2\/taxonomies\/category"}],
+"wp:post_type":[{"href":"https:\/\/deutsche-mitte.de\/wp-json\/wp\/v2\/posts?categories=34"}],
+"curies":[{"name":"wp","href":"https:\/\/api.w.org\/{rel}",
+"templated":true}]}
+}
