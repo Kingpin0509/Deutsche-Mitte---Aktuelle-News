@@ -3820,9 +3820,9 @@ ion-icon::before {
 }
 
 .gradient-bg, ion-app.ios {
-  background: #204f5f !important;
-  background: radial-gradient(ellipse at right, #204f5f 0%, #091b31 100%) !important;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#204f5f", endColorstr="#091b31", GradientType=1 ) !important;
+  background: #00498a !important;
+  background: radial-gradient(ellipse at right, #005397 0%, #091b31 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#005397", endColorstr="#091b31", GradientType=1 ) !important;
 }
 
 .tparent, .nav-decor {
@@ -3872,8 +3872,8 @@ ion-nav {
 .show-menu + ion-nav .ion-page {
   -webkit-transform: scale3d(0.9, 0.9, 0.9) rotateY(-3deg) translateX(50px) translateY(0px) translateZ(30px) !important;
   transform: scale3d(0.9, 0.9, 0.9) rotateY(-3deg) translateX(50px) translateY(0px) translateZ(30px) !important;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.25);
   overflow: hidden !important;
 }
 
@@ -25617,7 +25617,7 @@ img {
   font-weight: 500;
 }
 
-.tab-button[aria-selected=true] span {
+.tab-button[aria-selected="true"] span {
   font-weight: bold;
 }
 
@@ -25681,7 +25681,7 @@ ion-menu[type="reveal"] {
 }
 
 .footer::before,
-.tabs[tabsPlacement="bottom"] > .tabbar::before {
+.tabs[tabsplacement="bottom"] > .tabbar::before {
   height: 6px;
 }
 
@@ -26563,6 +26563,33 @@ p {
 
 .page-welcome button.login.activated {
   background-color: gainsboro;
+}
+
+.logo {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.user-logo {
+  margin: auto;
+  background-size: 100%;
+  width: 128px;
+  height: 128px;
+  border-radius: 100%;
+}
+
+.facebook-btn {
+  margin-bottom: 10px;
+}
+
+.login-btn {
+  margin: 20px 0 60px 0;
+}
+
+.action-btn {
+  margin-top: 5px;
+  text-transform: none;
 }
 
 h1.header {

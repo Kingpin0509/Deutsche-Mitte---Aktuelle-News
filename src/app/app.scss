@@ -20,13 +20,15 @@ img {
   max-width: 100%;
   height: auto;
 }
-.active{
+.active {
   background-color: #ff8b00;
-  h2{  font-weight:500;
+  h2 {
+    font-weight: 500;
+  }
 }
-}
-.tab-button[aria-selected=true] {
-  span{  font-weight:bold;
+.tab-button[aria-selected="true"] {
+  span {
+    font-weight: bold;
   }
 }
 video,
@@ -61,7 +63,9 @@ ion-label.label {
 ion-menu[type="reveal"] {
   z-index: 99;
 }
-.list-header{margin-bottom: 0px}
+.list-header {
+  margin-bottom: 0px;
+}
 
 .modal-wrapper {
   width: 100%;
@@ -79,7 +83,7 @@ ion-menu[type="reveal"] {
   background-color: transparent;
 }
 .footer::before,
-.tabs[tabsPlacement="bottom"] > .tabbar::before {
+.tabs[tabsplacement="bottom"] > .tabbar::before {
   height: 6px;
 }
 .tabs .tab-button[aria-selected="true"] {

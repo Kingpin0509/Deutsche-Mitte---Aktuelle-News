@@ -1,22 +1,24 @@
 <ion-header>
   <ion-navbar>
     <button ion-button menuToggle="left" icon-only>
-        <ion-icon name='menu'></ion-icon>
-      </button>
+      <ion-icon name='menu'></ion-icon>
+    </button>
     <ion-title>{{ 'HEADLINE' | translate }}</ion-title>
     <ion-buttons end>
       <button ion-button color="primary" (tap)="favoritePost(post)">
-            <ion-icon name="thumbs-up"></ion-icon>
-            {{ 'FAVORITE' | translate }}
-          </button> <button (tap)="sharePost()" ion-button icon-only>
-            <ion-icon name="share"></ion-icon>
-          </button>
+        <ion-icon name="thumbs-up"></ion-icon>
+        {{ 'FAVORITE' | translate }}
+      </button>
+      <button (tap)="sharePost()" ion-button icon-only>
+        <ion-icon name="share"></ion-icon>
+      </button>
     </ion-buttons>
   </ion-navbar>
   <ion-toolbar class="toolbar-header">
     <div *ngIf="post && authorData">
       <h1 class="title-h1" text-wrap [innerHTML]="post.title.rendered"></h1>
-      <h4 class="title-date"><b>{{authorData.name}},</b> {{post.date | date: 'fullDate'}}</h4>
+      <h4 class="title-date">
+        <b>{{authorData.name}},</b> {{post.date | date: 'fullDate'}}</h4>
     </div>
   </ion-toolbar>
 </ion-header>

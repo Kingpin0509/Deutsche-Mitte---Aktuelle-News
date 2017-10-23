@@ -3,9 +3,9 @@
     <ion-title>Firebase</ion-title>
     <ion-buttons *ngIf="auth" end>
       <button (click)="logout()" ion-button icon-only>
-          <ion-icon name="log-out"></ion-icon>
-          Logout
-        </button>
+        <ion-icon name="log-out"></ion-icon>
+        Logout
+      </button>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
@@ -17,7 +17,10 @@
 
   <div *ngIf="auth && !loading">
     <div *ngIf="auth.photoURL" margin-bottom class="user-logo" [ngStyle]="{'background-image': 'url(' + auth.photoURL + ')'}"></div>
-    <div padding-bottom>Willkommen <span *ngIf="auth.displayName">{{auth.displayName}}</span> <span *ngIf="auth.email">({{auth.email}})</span></div>
+    <div padding-bottom>Willkommen
+      <span *ngIf="auth.displayName">{{auth.displayName}}</span>
+      <span *ngIf="auth.email">({{auth.email}})</span>
+    </div>
     <button ion-button icon-left block color="light" (click)="logout()">
       <ion-icon name="log-out"></ion-icon>
       {{ 'LOGOUT' | translate }}

@@ -6,9 +6,10 @@
   "items": [
     {
       "id": 1,
-      "title": "Category",
-      "description": "Newsroom Deutsche Mitte",
-      "url": "http://www.presseportal.de/rss/pm_127629.rss"
+      "title": "Categories34",
+      "description":
+        "https://deutsche-mitte.de/wp-json/wp/v2/posts?categories=34",
+      "url": "https://deutsche-mitte.de/wp-json/wp/v2/posts?categories=34"
     },
     {
       "id": 2,

@@ -25,13 +25,13 @@
           <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>
           <ion-item-options side="right">
             <button ion-button color="primary" (click)="share(slidingItem)" (tap)="favoritePost(post)">
-          <ion-icon name="thumbs-up"></ion-icon>
-          {{ 'FAVORITE' | translate }}
-        </button>
+              <ion-icon name="thumbs-up"></ion-icon>
+              {{ 'FAVORITE' | translate }}
+            </button>
             <button ion-button color="secondary" (tap)="loadPost(post)">
-          <ion-icon name="book"></ion-icon>
-          {{ 'READ' | translate }}
-        </button>
+              <ion-icon name="book"></ion-icon>
+              {{ 'READ' | translate }}
+            </button>
           </ion-item-options>
         </ion-item-sliding>
         <!-- <p>

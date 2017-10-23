@@ -18,18 +18,15 @@ export class YoutubeChannelVideoComponent {
     this.video = navParams.get("video");
     this.prepareResource();
   }
-
   prepareResource() {
     let url = "http://www.youtube.com/embed/" + this.video.id.videoId;
     this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
-
   shareVideo() {
     let subject = this.video.snippet.title;
     let message = this.video.snippet.description;
     message = message.replace(/(<([^>]+)>)/gi, "");
     let url = "http://www.youtube.com/embed/" + this.video.id.videoId;
-
     setTimeout(() => this.socialSharing.share(message, subject, "", url), 0);
   }
 }

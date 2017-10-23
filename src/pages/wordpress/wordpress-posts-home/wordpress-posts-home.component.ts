@@ -61,7 +61,7 @@ export class WordpressPostsHome implements OnInit {
     // });
     //loader.present();
     this.wordpressService.getPosts(query).subscribe(result => {
-    //loader.dismiss();
+      //loader.dismiss();
       this.posts = result;
     });
   }

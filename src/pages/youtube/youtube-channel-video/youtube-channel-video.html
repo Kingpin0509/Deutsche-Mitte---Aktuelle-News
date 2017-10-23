@@ -6,8 +6,8 @@
     <ion-title>{{video.snippet.title}}</ion-title>
     <ion-buttons end>
       <button (click)="shareVideo()" ion-button icon-only>
-            <ion-icon name="share"></ion-icon>
-          </button>
+        <ion-icon name="share"></ion-icon>
+      </button>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
@@ -15,7 +15,9 @@
   <iframe *ngIf="video.id.videoId" [src]="videoUrl" frameborder="0" allowfullscreen="true"></iframe>
   <div padding>
     <h2 class="header">{{video.snippet.title}}</h2>
-    <p>Veröffentlich von <strong>{{video.snippet.channelTitle}}</strong></p>
+    <p>Veröffentlich von
+      <strong>{{video.snippet.channelTitle}}</strong>
+    </p>
     <p class="content" [innerHtml]="video.snippet.description"></p>
   </div>
 </ion-content>

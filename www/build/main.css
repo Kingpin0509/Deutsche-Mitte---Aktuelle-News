@@ -25617,7 +25617,7 @@ img {
   font-weight: 500;
 }
 
-.tab-button[aria-selected=true] span {
+.tab-button[aria-selected="true"] span {
   font-weight: bold;
 }
 
@@ -25681,7 +25681,7 @@ ion-menu[type="reveal"] {
 }
 
 .footer::before,
-.tabs[tabsPlacement="bottom"] > .tabbar::before {
+.tabs[tabsplacement="bottom"] > .tabbar::before {
   height: 6px;
 }
 

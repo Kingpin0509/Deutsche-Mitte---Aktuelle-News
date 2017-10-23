@@ -31,8 +31,8 @@ import { SettingsComponent } from "../pages/settings/settings-component/settings
 import { StammtischeComponent } from "../pages/stammtische/stammtische-component/stammtische.component";
 import { FacebookConnectComponent } from "../pages/facebook-connect/facebook-connect-component/facebook-connect.component";
 // import { QuizComponent } from "../pages/quiz/quiz-component/quiz";
-import { FeedCategoriesComponent } from "../pages/feeds/feed-categories/feed-categories.component";
-import { FeedCategoryComponent } from "../pages/feeds/feed-category/feed-category.component";
+//import { FeedCategoriesComponent } from "../pages/feeds/feed-categories/feed-categories.component";
+//import { FeedCategoryComponent } from "../pages/feeds/feed-category/feed-category.component";
 import { FirebaseHomeComponent } from "../pages/firebase/firebase-home/firebase-home.component";
 // import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 // import { BarcodeScannerComponent } from '../pages/barcode-scanner/barcode-scanner-component/barcode-scanner.component';
@@ -114,8 +114,8 @@ export class MyApp {
         title: "HOME",
         component: TabsComponent,
         icon: "home"
-      },
-      { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" },
+      }
+      /*       { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" }
       {
         title: "FEEDS",
         component: FeedCategoriesComponent,
@@ -125,7 +125,7 @@ export class MyApp {
         title: "FEED_CATEGORY",
         component: FeedCategoryComponent,
         icon: "logo-rss"
-      }
+      } */
     ];
     this.pagesleftcenter = [
       {
