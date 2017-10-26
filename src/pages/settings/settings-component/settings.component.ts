@@ -47,3 +47,5 @@ export class SettingsComponent implements OnInit {
     this.nav.push(FirebaseHomeComponent);
   }
 }
+
+

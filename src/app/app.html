@@ -1,9 +1,9 @@
 ﻿<ion-split-pane when="lg">
-  <ion-menu *ngIf="!wordpressMenusNavigation" id="menuleft" side="left" [content]="content">
+  <ion-menu *ngIf="!wordpressMenusNavigation" id="menuleft" side="left" type="overlay" [content]="content">
     <ion-header>
       <ion-toolbar no-margin no-padding class="dm-dark">
-        <div class="animated rotateInDown">
-          <ion-title>{{'APPNAME' | translate}}</ion-title>
+        <div class="bounce-animation">
+          <ion-title class="animate-in-secondary">{{'APPNAME' | translate}}</ion-title>
         </div>
       </ion-toolbar>
     </ion-header>
@@ -15,10 +15,10 @@
           </ion-item-divider>
         </div>
         <ion-item margin-top margin-bottom></ion-item> -->
-        <ion-item-group margin-vertical>
-          <button class="animated bounceInLeft" ion-item *ngFor="let page of pagesleft" (tap)="openPage(page)" [class.active]="checkActivePage(page)">
-            <ion-icon item-start [name]="page.icon"></ion-icon>
-            <h2 color="primary" ion-text>{{page.title | translate}}</h2>
+        <ion-item-group class="animate-in-primary" margin-vertical>
+          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleft" (tap)="openPage(page)" [class.active]="checkActivePage(page)">
+            <ion-icon item-start [name]="page.icon" class="item-avatar item-icon-right"></ion-icon>
+            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>
           </button>
           <!--<button outline class="animated bounceInLeft" ion-item (tap)="openPageYoutube()">
 <ion-icon name="logo-youtube" class="youtube" item-start></ion-icon>
@@ -35,24 +35,24 @@
                       <ion-note item-end>Splashscreen</ion-note>
                   </button> -->
         </ion-item-group>
-        <ion-item-group margin-top>
-          <button class="animated bounceInLeft" ion-item *ngFor="let page of pagesleftcenter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">
-            <ion-icon item-start [name]="page.icon"></ion-icon>
-            <h2 color="primary" ion-text>{{page.title | translate}}</h2>
+        <ion-item-group class="animate-in-primary" margin-top>
+          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleftcenter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">
+            <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>
+            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>
           </button>
         </ion-item-group>
-        <ion-item-group margin-top>
-          <button class="animated bounceInLeft" ion-item *ngFor="let page of pagesleftbottom" (tap)=" openPageStammtische(page)" [class.active]="checkActivePage(page)">
-            <ion-icon item-start [name]="page.icon"></ion-icon>
-            <h2 color="primary" ion-text>{{page.title | translate}}</h2>
+        <ion-item-group class="animate-in-primary" margin-top>
+          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleftbottom" (tap)=" openPageStammtische(page)" [class.active]="checkActivePage(page)">
+            <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>
+            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>
           </button>
         </ion-item-group>
       </ion-list>
     </ion-content>
-    <ion-footer>
-      <button class="bounce-top" ion-button full *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">
-        <ion-icon margin [name]="page.icon"></ion-icon>
-        <h4 style="font-size:smaller" color="primary">{{page.title | translate}}</h4>
+    <ion-footer class="animate-in-primary">
+      <button class="list-grow-animation" ion-button full *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">
+        <ion-icon class="animate-in-primary item-avatar item-icon-right" margin [name]="page.icon"></ion-icon>
+        <h4 class="animate-in-secondary" style="font-size:smaller" color="primary">{{page.title | translate}}</h4>
       </button>
     </ion-footer>
   </ion-menu>
@@ -65,7 +65,7 @@
 </ion-split-pane>
 
 <ion-menu id="menuright" side="right" swipeEnabled="true" [content]="content">
-  <ion-content scroll="false" class="card-background-menu">
+  <ion-content class="card-background-menu">
 
     <!--    <ion-list>
  <ion-list-header class="fade-in-right dmo-dark">

@@ -224,8 +224,9 @@ export class MyApp {
     });
     this.activePage = page;
     loader.present().then(() => {
-      this.nav.setRoot(page.component);
-      this.menuController.close();
+      this.nav.setRoot(page.component).then(() => {
+        this.menuController.close();
+      });
     });
   }
   pushPage(page) {
