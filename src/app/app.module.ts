@@ -53,19 +53,20 @@ import { FirebaseModule } from "../pages/firebase/firebase.module";
     QuizModule,
     FacebookConnectModule,
     FeedsModule,
-    FirebaseModule
+    FirebaseModule,
     //BarcodeScannerModule,
     //GoogleMapsModule,
     //GridModule,
     //ContactModule,
     //DatetimeModule,
     //RangesModule,
-    //ActionSheetModule,
+    //ActionSheetModule
     //LoginModule,
     //ChartsModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [MyApp],
+
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     Data,

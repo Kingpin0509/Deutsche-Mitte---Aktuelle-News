@@ -8,7 +8,7 @@
     <ion-slide>
       <ion-toolbar>
         <ion-buttons end>
-          <button ion-button (tap)=openPage()>Überspringen</button>
+          <button ion-button (tap)=openPage()><b>Überspringen</b></button>
         </ion-buttons>
       </ion-toolbar>
       <div class="slide-in-blurred-top">
@@ -17,14 +17,14 @@
       <div class="scale-up-hor-center">
         <img src="assets/img/slidebox-img-1u.png" class="slide-image" />
       </div>
-      <h2 class="slide-title tracking-in-contract">Herzlich Willkommen</h2>
-      <p class="tracking-in-contract"> Diese App stellt ihnen stets aktuelle Informationen bereit, über die Partei</p>
-      <p>-Deutsche Mitte-</p>
+      <h2 class="slide-title tracking-in-contract">Herzlich<br>Willkommen</h2>
+      <p class="tracking-in-contract"> Diese App stellt ihnen stets<br>aktuelle Informationen bereit, über die</p>
+      <h3 class="tracking-in-contract">-Deutsche Mitte-</h3>
     </ion-slide>
     <ion-slide *ngFor="let slide of slides">
       <ion-toolbar>
         <ion-buttons end>
-          <button ion-button (tap)=openPage()>Überspringen</button>
+          <button ion-button (tap)=openPage()><b>Überspringen</b></button>
         </ion-buttons>
       </ion-toolbar>
       <img [src]="slide.image" class="slide-image " />

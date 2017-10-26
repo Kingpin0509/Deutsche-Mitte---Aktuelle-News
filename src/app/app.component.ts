@@ -40,7 +40,7 @@ import { FirebaseHomeComponent } from "../pages/firebase/firebase-home/firebase-
 // import { GridComponent } from '../pages/grid/grid-component/grid.component';
 // import { DatetimeComponent } from '../pages/datetime/datetime-component/datetime.component';
 // import { RangesComponent } from '../pages/ranges/ranges-component/ranges.component';
-// import { ActionSheetComponent } from '../pages/action-sheet/action-sheet-component/action-sheet.component';
+// import { ActionSheetComponent } from "../pages/action-sheet/action-sheet-component/action-sheet.component";
 // import { GoogleMapsComponent } from '../pages/google-maps/google-maps-component/google-maps.component';
 // import { LoginComponent } from '../pages/login/login-component/login.component';
 
@@ -72,7 +72,7 @@ export class MyApp {
   wordpressMenusNavigation: boolean = false;
   constructor(
     private config: Config,
-    public platform: Platform,
+    private platform: Platform,
     private storage: Storage,
     private loadingCtrl: LoadingController,
     private splashScreen: SplashScreen,
@@ -81,11 +81,6 @@ export class MyApp {
     private statusBar: StatusBar,
     private modalCtrl: ModalController
   ) {
-    //        platform.ready().then(() => {
-    //   statusBar.styleDefault();
-    //   let splash = modalCtrl.create(Splash);
-    //   splash.present();
-    //});
     this.initializeApp();
     this.storage.get("hasSeenTutorial").then(hasSeenTutorial => {
       if (hasSeenTutorial) {
@@ -138,6 +133,7 @@ export class MyApp {
         component: FuturePoliticsComponent,
         icon: "book"
       },
+
       {
         title: "DOWNLOADS",
         component: DownloadsComponent,
@@ -169,7 +165,7 @@ export class MyApp {
       //		  { title: 'DATETIME', component: DatetimeComponent, icon: 'clock'},
       //		  { title: 'RANGES', component: RangesComponent, icon: 'sunny'},
       //		  { title: 'ACTION_SHEET', component: ActionSheetComponent, icon: 'create'},
-      //		  { title: 'LOGIN', component: LoginComponent, icon: 'log-in' }
+      //		  { title: 'LOGIN', component: LoginComponent, icon: 'log-in' },
       { title: "YOUTUBE", component: YoutubeChannelComponent, icon: "pin" },
       { title: "POSTS", component: WordpressPosts, icon: "paper" },
       {
@@ -192,6 +188,11 @@ export class MyApp {
       this.pagesrightfooter[0];
   }
   initializeApp() {
+    //        platform.ready().then(() => {
+    //   statusBar.styleDefault();
+    //   let splash = modalCtrl.create(Splash);
+    //   splash.present();
+    //});
     this.platform.ready().then(() => {
       this.statusBar.overlaysWebView(false);
       this.statusBar.backgroundColorByHexString("#005397");
