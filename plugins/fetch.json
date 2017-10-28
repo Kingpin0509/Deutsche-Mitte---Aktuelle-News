@@ -101,9 +101,9 @@
     "es6-promise-plugin": {
         "source": {
             "type": "registry",
-            "id": "es6-promise-plugin@3.0.2"
+            "id": "es6-promise-plugin@^3.0.2"
         },
-        "is_top_level": false,
+        "is_top_level": true,
         "variables": {}
     }
 }

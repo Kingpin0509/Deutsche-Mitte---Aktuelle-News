@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://branch.io"><img src="http://i.imgur.com/Y5EPQTo.png" alt="Branch for Cordova/PhoneGap/Ionic" width="600"></a>
+  <a href="https://branch.io"><img src="http://i.imgur.com/Y5EPQTo.png" alt="Branch for Cordova/PhoneGap/Ionic" width="550"></a>
 </h1>
 <p align="center">
   <a href="https://travis-ci.org/BranchMetrics/cordova-ionic-phonegap-branch-deep-linking"><img src="https://img.shields.io/travis/BranchMetrics/cordova-ionic-phonegap-branch-deep-linking/master.svg" alt="Travis"></a>
@@ -8,13 +8,11 @@
   <a href="https://www.npmjs.com/package/branch-cordova-sdk"><img src="https://img.shields.io/npm/l/branch-cordova-sdk.svg" alt="npm version"></a>
 </p>
 
-> Hyperlinks can navigate to your website, but not to your app.
+> URLs can navigate to your website, but not to your app. Branch fixes this with deep links.
 
-> Branch fixes this problem  with deep links.
+> Branch will grow your app by allowing users to install, open, and navigate to content inside your app.
 
-> Branch deep links will grow your app by allowing users to install, open, and navigate to content inside your app.
-
-> Increase discovery of your app based on the content inside, convert web users to app users, enable user-to-user sharing, personalize user experiences, track users, track referrals, track campaigns, track conversions, and increase overall engagement.
+> Increase discovery of your app by sharing its content, converting web users to app users, enabling user-to-user sharing, personalizing user experiences, tracking users, tracking referrals, tracking campaigns, tracking conversions, and increasing overall engagement.
 
 <p align="center">
   <a href="https://youtu.be/MXgLQ8QDXk8"><img src="http://i.imgur.com/NF2NEDn.gif"/></a>
@@ -39,32 +37,23 @@
   - [Track Content](#track-content)
   - [Track User](#track-user)
   - [Track Event](#track-event)
+  - [Track Commerce](#track-commerce)
   - [Handle Referrals](#handle-referrals)
 - [Troubleshooting](#troubleshooting)
   - [Testing: Key Points](#testing-key-points)
-  - [Testing: Sample Testing App](#testing-sample-testing-app)
-  - [Testing: Show Console Logs](#testing-show-console-logs)
-  - [Testing: Supported Platforms](#testing-supported-platforms)
-  - [Testing: Simulating an Install](#testing-simulating-an-install)
   - [Testing: Optional App Config](#testing-optional-app-config)
+  - [Testing: Branch Analytics](#testing-branch-analytics)
+  - [Testing: Simulating an Install](#testing-simulating-an-install)
+  - [Testing: Supported Platforms](#testing-supported-platforms)  
+  - [Testing: Sample Test App](#testing-sample-test-app)
   - [Link Data: Universal Object Properties](#link-data-universal-object-properties)
   - [Link Data: Deep Link Properties](#link-data-deep-link-properties)
-  - [Link Data: Convert to Ionic/Angular](#link-data-convert-to-ionicangular)
-  - [Link Data: Global Listener Warning](#link-data-global-listener-warning)
-  - [Compiling: Incompatible Plugins](#compiling-incompatible-plugins)
-  - [Compiling: Updating the Branch SDK](#compiling-updating-the-branch-sdk)
+  - [Link Data: Commerce Properties](#link-data-commerce-properties)
   - [Compiling: Cordova Dependencies](#compiling-cordova-dependencies)
-  - [Compiling: Visual Studio TACO](#compiling-visual-studio-taco)
-  - [Compiling: Multiple support-lib v4s](#compiling-multiple-support-lib-v4s)
-  - [Compiling: Missing Android Dependency](#compiling-missing-android-dependency)
+  - [Compiling: Show Console Logs](#compiling-show-console-logs)
+  - [Compiling: Updating the Branch SDK](#compiling-updating-the-branch-sdk)
+  - [Compiling: Incompatible Plugins](#compiling-incompatible-plugins)  
   - [Compiling: Errors](#compiling-errors)
-- [Additional](#additional)
-  - [SDK Development](#sdk-development)
-  - [Bulk Link Creation](#bulk-link-creation)
-  - [Analytical Data](#analytical-data)
-  - [Webpage Features](#webpage-features)
-  - [Premium Features](#premium-feature)
-  - [Support](#support)
 
 ## Getting Started
 
@@ -80,12 +69,12 @@
   - Cordova and Ionic
     ```xml
     <!-- sample config.xml -->
-    <widget id="com.eneff.branch.cordova_testbed" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <widget id="com.eneff.branch.cordovatestbed" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
       <!-- Branch -->
-      <plugin name="branch-cordova-sdk" />
+      <plugin name="branch-cordova-sdk" spec="^2.6.0" />
       <branch-config>
         <branch-key value="key_live_ndqptlgXNE4LHqIahH1WIpbiyFlb62J3" />
-        <uri-scheme value="cordovatestbed" />
+        <uri-scheme value="branchcordova" />
         <link-domain value="cordova.app.link" />
         <ios-team-release value="PW4Q8885U7" />
       </branch-config>
@@ -94,22 +83,23 @@
   - PhoneGap
     ```xml
     <!-- sample config.xml -->
-    <widget id="com.eneff.branch.cordova_testbed" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <widget id="com.eneff.branch.cordovatestbed" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
       <!-- Branch -->
-      <plugin name="branch-cordova-sdk" />
+      <plugin name="branch-cordova-sdk" spec="^2.6.0" />
       <branch-config>
         <branch-key value="key_live_ndqptlgXNE4LHqIahH1WIpbiyFlb62J3" />
-        <uri-scheme value="cordovatestbed" />
+        <uri-scheme value="branchcordova" />
         <link-domain value="cordova.app.link" />
-        <ios-team-prod value="PW4Q8885U7" />
+        <ios-team-release value="PW4Q8885U7" />
       </branch-config>
     ```
 
   - Change the following values to match your [Branch Dashboard](https://dashboard.branch.io/settings/link)
-    - `com.eneff.branch.cordova_testbed`
-    - `cordovatestbed`
+    - `com.eneff.branch.cordovatestbed`
+    - `key_live_ndqptlgXNE4LHqIahH1WIpbiyFlb62J3`
+    - `branchcordova`
+    - `cordova.app.link`
     - `PW4Q8885U7`
-    - `testbed.app.link`
 
 - #### Initialize Branch
 
@@ -133,8 +123,10 @@
       branchInit: function() {
         // Branch initialization
         Branch.initSession(function(data) {
-          // read deep link data on click
-          alert('Deep Link Data: ' + JSON.stringify(data));
+          if (data['+clicked_branch_link']) {
+            // read deep link data on click
+            alert('Deep Link Data: ' + JSON.stringify(data))
+          }
         });
       }
     };
@@ -169,8 +161,10 @@
         function branchInit() {
           // Branch initialization
           Branch.initSession(function(data) {
-            // read deep link data on click
-            alert('Deep Link Data: ' + JSON.stringify(data));
+            if (data['+clicked_branch_link']) {
+              // read deep link data on click
+              alert('Deep Link Data: ' + JSON.stringify(data));
+            }
           });
         }
       });
@@ -178,7 +172,7 @@
     // ...
     ```
 
-  - Ionic 2
+  - Ionic 2/3
     ```typescript
     // sample app.component.js
     import { Component } from '@angular/core';
@@ -186,9 +180,6 @@
     import { StatusBar, Splashscreen } from 'ionic-native';
 
     import { TabsPage } from '../pages/tabs/tabs';
-
-    // Branch import
-    declare var Branch;
 
     @Component({
       template: `<ion-nav [root]="rootPage"></ion-nav>`
@@ -211,9 +202,12 @@
         const branchInit = () => {
           // only on devices
           if (!platform.is('cordova')) { return }
+          const Branch = window['Branch'];
           Branch.initSession(data => {
-            // read deep link data on click
-            alert('Deep Link Data: ' + JSON.stringify(data));
+            if (data['+clicked_branch_link']) {
+              // read deep link data on click
+              alert('Deep Link Data: ' + JSON.stringify(data));
+            }
           });
         }
       }
@@ -224,9 +218,9 @@
 
   - Create a deep link from the [Branch Marketing Dashboard](https://dashboard.branch.io/marketing)
 
-  - Delete your app from the device *(resets the Apple AASA scraping)*
+  - Delete your app from the device
 
-  - Compile your app *(`cordova run ios` `phonegap run ios` `ionic run ios`)*
+  - Compile your app *(`cordova run ios` `phonegap run ios` `ionic cordova run ios`)*
 
   - Paste deep link in `Apple Notes`
 
@@ -240,7 +234,7 @@
 
   - Delete your app from the device
 
-  - Compile your app *(`cordova run android` `phonegap run android` `ionic run android`)*
+  - Compile your app *(`cordova run android` `phonegap run android` `ionic cordova run android`)*
 
   - Paste deep link in `Google Hangouts`
 
@@ -258,13 +252,18 @@
     // for development and debugging only
     Branch.setDebug(true)
 
-    // sync with Mixpanel if installed
+    // for better Android matching
+    Branch.setCookieBasedMatching('cordova.app.link')
+
+    // to sync with Mixpanel if plugin is installed
     Branch.setMixpanelToken('your_mixpanel_token')
 
     // Branch initialization
     Branch.initSession(function(data) {
-      // read deep link data on click
-      alert('Deep Link Data: ' + JSON.stringify(data))
+      if (data['+clicked_branch_link']) {
+        // read deep link data on click
+        alert('Deep Link Data: ' + JSON.stringify(data))
+      }
     }).then(function(res) {
       alert('Response: ' + JSON.stringify(res))
     }).catch(function(err) {
@@ -313,6 +312,8 @@
   - Needs a [Branch Universal Object](#create-content-reference)
 
   - Link Data: [Deep Link Properties](#link-data-deep-link-properties)
+  
+  - Verify on the [Branch Dashboard](https://dashboard.branch.io/liveview/links)
 
     ```js
     // optional fields
@@ -406,8 +407,10 @@
     ```js
     // Branch initialization within your deviceready and resume
     Branch.initSession(function(deepLinkData) {
-      // handler for deep link data on click
-      alert('Response: ' + JSON.stringify(deepLinkData))
+      if (data['+clicked_branch_link']) {
+        // handler for deep link data on click
+        alert('Response: ' + JSON.stringify(deepLinkData))
+      }
     })
     ```
 
@@ -448,6 +451,8 @@
   - Track how many times a user views a particular piece of content
 
   - Needs a [Branch Universal Object](#create-content-reference)
+  
+  - Verify on the [Branch Dashboard](https://dashboard.branch.io/liveview/content)
 
     ```js
     branchUniversalObj.registerView().then(function (res) {
@@ -460,41 +465,45 @@
 - #### Track User
 
   - Sets the identity of a user (email, ID, UUID, etc) for events, deep links, and referrals
-
-  - Must be a `string`
+  
+  - Verify on the [Branch Dashboard](https://dashboard.branch.io/liveview/identities)  
 
     ```js
     var userId = '123456'
     Branch.setIdentity(userId).then(function (res) {
       alert('Response: ' + JSON.stringify(res))
     }).catch(function (err) {
-      alert('Error: ' + JSON.stringify(err))
+      alert('Error: ' + JSON.stringify(err.message))
     })
     ```
+
+  - Removes the identity of a user
 
     ```js
     Branch.logout().then(function (res) {
       alert('Response: ' + JSON.stringify(res))
     }).catch(function (err) {
-      alert('Error: ' + JSON.stringify(err))
+      alert('Error: ' + JSON.stringify(err.message))
     })
     ```
 
 - #### Track Event
 
-  - Registers custom events
+  - Registers a custom event
+  
+  - Events named `open`, `close`, `install`, and `referred session` are Branch restricted
 
-  - Must [Track User](#track-user) before [Track Event](#track-event) to associate events with a user
-
-  - Event names `open`, `install`, and `close` are restricted by Branch
+  - Recommended to [Track User](#track-user) before [Track Event](#track-event) to associate custom events with a user
+  
+  - Verify on the [Branch Dashboard](https://dashboard.branch.io/liveview/events)
 
     ```js
     var eventName = 'clicked_on_this'
     var metadata = { 'custom_dictionary': 123, 'anything': 'everything' }
-    Branch.userCompletedAction(eventName, metaData).then(function (res) {
+    Branch.userCompletedAction(eventName, metadata).then(function (res) {
       alert('Response: ' + JSON.stringify(res))
     }).catch(function (err) {
-      alert('Error: ' + JSON.stringify(err))
+      alert('Error: ' + JSON.stringify(err.message))
     })
     ```
 
@@ -503,13 +512,67 @@
     Branch.userCompletedAction(eventName).then(function (res) {
       alert('Response: ' + JSON.stringify(res))
     }).catch(function (err) {
-      alert('Error: ' + JSON.stringify(err))
+      alert('Error: ' + JSON.stringify(err.message))
+    })
+    ```
+
+- #### Track Commerce
+
+  - Registers a custom commerce event
+
+  - Link Data: [Track commerce properties](#link-data-commerce-properties) for `Currency` and `Category` 
+  
+  - Verify on the [Branch Dashboard](https://dashboard.branch.io/liveview/commerce)
+
+    ```js
+    // only revenue is required
+    var event = {
+      'revenue': 50.29,
+      'currency': 148, // USD
+      'transactionID': 'transaction id',
+      'coupon': 'coupon',
+      'shipping': 2.22,
+      'tax': 5.11,
+      'affiliation': 'affiliation',
+      'products': [
+        {
+          'sku': 'u123',
+          'name': 'cactus',
+          'price': 4.99,
+          'quantity': 2,
+          'brand': 'brand',
+          'category': 17, // Software
+          'variant': 'variant'
+        },
+        {
+          'sku': 'u456',
+          'name': 'grass',
+          'price': 0.00,
+          'quantity': 1
+        }
+      ]
+    }
+
+    // optional fields
+    var metadata = {
+      'custom_dictionary': 123,
+      'anything': 'everything'
+    }
+
+    Branch.sendCommerceEvent(event, metadata).then(function (res) {
+      console.log(res)
+      alert('Response: ' + JSON.stringify(res))
+    }).catch(function (err) {
+      console.error(err)
+      alert('Error: ' + JSON.stringify(err.message))
     })
     ```
 
 - #### Handle Referrals
 
   - Referral points are obtained from events triggered by users from rules created on the [Branch Dashboard](https://dashboard.branch.io/referrals/rules)
+  
+  - Verify on the [Branch Dashboard](https://dashboard.branch.io/referrals/analytics)
 
   - Get credits
 
@@ -581,63 +644,69 @@
 
 - #### Testing: Key Points
 
-  - Use the Branch `key_live`
+  - Need to checkmark "app uses IDFA and GAID" when publishing your app
 
-  - Always use the `Branch.initSession(function(data) {})` to read Deep Link data
+  - Best to enable [Deepviews](https://dashboard.branch.io/settings/deepviews) ([Testing: Supported Platforms](#testing-supported-platforms))
 
-  - Always test on `device` (`simulator` `browser` `genymotion` will not work)
+- #### Testing: Optional App Config
 
-  - You must launch the app through `Xcode` for iOS
+  ```xml
+  <!-- sample config.xml -->
+  <widget id="com.eneff.branch.cordovatestbed" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <!-- Branch -->
+    <plugin name="branch-cordova-sdk" spec="~2.4.2" /> <!-- optional spec -->
+    <branch-config>
+      <branch-key value="key_live_ndqptlgXNE4LHqIahH1WIpbiyFlb62J3" />
+      <uri-scheme value="branchcordova" />
+      <link-domain value="yourcustomdomain.com" />
+      <link-domain value="cordova.app.link" />  <!-- optional previous link domain -->
+      <link-domain value="bnc.lt" />  <!-- optional previous link domain -->
+      <ios-team-release value="PW4Q8885U7" /> <!-- required if iOS app -->
+      <ios-team-debug value="FG35JLLMXX" /> <!-- optional -->
+      <android-prefix value="/WSuf" /> <!-- optional (for bnc.lt and custom domains) -->
+      <android-testmode value="true" /> <!-- optional (simulate installs) -->
+    </branch-config>
+  ```
 
-  - Other deep link plugins (e.g. `cordova-universal-links-plugin`) will interferer with Branch
+  ```xml
+  <widget ios-CFBundleIdentifier="com.eneff.branch.cordovatestbedios" android-packageName="com.eneff.branch.cordovatestbedandroid" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  ```
 
-- #### Testing: Sample Testing App
+- #### Testing: Branch Analytics
+  
+  - Whenever a user `clicks` on a deep link and opens the app, and will trigger either an `install` or an `open`
 
-  - [Branch Testing App](https://github.com/BranchMetrics/cordova-ionic-phonegap-branch-deep-linking/tree/master/testbed)
+  - `installs` represent Branch recognizing the app_id and device_id for the first time
 
-- #### Testing: Show Console Logs
+  - `installs` represent new app users and the success rate of your Branch deep links    
 
-  - iOS Simulator
+  - `installs` do **not** represent App Store downloads
 
-    - `cordova run ios;`
+  - `non-Branch installs` are installs outside of Branch deep link clicks
 
-    - Safari -> Preferences -> Advance -> Show Develop menu in menu bar
+  - `opens` are non-installs
 
-    - Safari -> Develop -> Simulator -> index.html -> Console
+  - If a user uninstalls and reinstalls the app, this will be an `open` because Branch recognizes the device
 
-    - *May need to unplug and replug device*
+  - If a user has the app and clicks a Branch deep link, this will be an `open` because the user is not new
 
-    - *May need to open Xcode and update provisioning profile*
+- #### Testing: Simulating an Install
+  
+  - Delete your app
 
-  - iOS Xcode
+  - **[iOS]** iPhone Device -> Settings -> Privacy -> Advertising -> Reset Advertising Identifier -> Reset Identifier
 
-    - `cordova plugin add cordova-plugin-console;`
+  - **[Android]** Add `<android-testmode value="true" />` to your `Config.xml` ([Testing: Optional App Config](#testing-optional-app-config))
 
-    - `cordova build ios;`
+  - Add `Branch.setDebug(true);` before `Branch.initSession();` ([Initialize Branch Features](#initialize-branch-features))   
+  
+  - Click on a deep link to navigate to your `$fallback_url` because your app is not installed
 
-    - Xcode -> APP_LOCATION/platforms/ios/APP_NAME.Xcodeproj
+  - Install your app
 
-    - Xcode -> App -> General -> Signing -> Team
+  - Open your app
 
-    - Xcode -> Product -> Run
-
-    - Xcode -> View -> Debug Area -> Activate Console
-
-  - Android Device
-
-    - Plug device in
-
-    - `cordova run android;`
-
-    - Chrome -> [chrome://inspect/#devices](chrome://inspect/#devices) -> Console
-
-  - Android Genymotion
-
-    - Genymotion -> Start
-
-    - `cordova run android;`
-
-    - Chrome -> [chrome://inspect/#devices](chrome://inspect/#devices) -> Console
+  - Read from `Branch.initSession(data)` for `+is_first_session = true` 
 
 - #### Testing: Supported Platforms
 
@@ -646,56 +715,26 @@
     | | iOS | Details | Android | Details
     | --- | :-: | --- | :-: | ---
     | Facebook NewsFeed | ✅ | Works when [DeepViews](https://dashboard.branch.io/settings/deepviews) are enabled | ✅ |
-    | Facebook Messanger | ✅ | Works when [DeepViews](https://dashboard.branch.io/settings/deepviews) are enabled | ✅ | Works except the `app.link` domain is not click-able |
+    | Facebook Messanger | ✅ | Works when [DeepViews](https://dashboard.branch.io/settings/deepviews) are enabled | ✅ | |
     | Twitter | ✅ | | ✅ |
-    | Pinterest | ✅ | Works when [DeepViews](https://dashboard.branch.io/settings/deepviews) are enabled | 🅾️ |
+    | Pinterest | ✅ | Works when [DeepViews](https://dashboard.branch.io/settings/deepviews) are enabled | ✅ |
     | Slack | ✅ | | ✅ | |
-    | Chrome address bar | ✅ | | ✅ |
+    | Chrome address bar | 🅾️ | | 🅾️ |
     | Chrome web page | ✅ | | ✅ |
-    | FireFox address bar | 🅾️ | | ✅ |
+    | FireFox address bar | 🅾️ | | 🅾️ |
     | FireFox web page | ✅ | | ✅ |
     | Safari address bar | 🅾️ | | |
     | Safari web page | ✅ | | |
-    | WeChat | 🅾️ | | 🅾️ |
-    | WhatsApp | ✅ | | ✅ |
+    | WeChat | ✅ | Works when [DeepViews](https://dashboard.branch.io/settings/deepviews) are enabled | ✅ |
+    | WhatsApp | ✅ | `app.link` requires https/http to be clickable | ✅ | `app.link` requires https/http to be clickable
     | Hangouts | ✅ | | ✅ |
     | iMessage | ✅ | | |
     | Apple Mail | ✅ | | |
     | Gmail | ✅ | | ✅ |
 
-- #### Testing: Simulating an Install
+- #### Testing: Sample Testing App
 
-  - Add `Branch.setDebug(true);` before `Branch.initSession();`
-
-  - Delete app
-
-  - `[iOS only]` iPhone -> Settings -> Privacy -> Advertising -> Reset Advertising Identifier -> Reset Identifier
-
-  - Click on deep link *(will navigate to fallback url because app is not installed)*
-
-  - Install the app
-
-  - Open the app
-
-  - Read from `Branch.initSession(data)` for `+is_first_session = true`
-
-- #### Testing: Optional App Config
-
-  ```xml
-  <!-- sample config.xml -->
-  <widget id="com.eneff.branch.example" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <!-- Branch -->
-    <plugin name="branch-cordova-sdk" spec="~2.4.2" /> <!-- optional spec -->
-    <branch-config>
-      <branch-key value="key_live_ndqptlgXNE4LHqIahH1WIpbiyFlb62J3" />
-      <uri-scheme value="cordovatestbed" />
-      <link-domain value="testbed.app.link" />
-      <ios-team-release value="PW4Q8885U7" />
-      <ios-team-debug value="FG35JLLMXX" /> <!-- optional -->
-      <android-prefix value="/WSuf" /> <!-- optional (for bnc.lt) -->
-      <android-testmode value="true" /> <!-- optional (simulate installs) -->
-    </branch-config>
-  ```
+  - [Branch Testing App](https://github.com/BranchMetrics/cordova-ionic-phonegap-branch-deep-linking/tree/master/testbed)
 
 - #### Link Data: Universal Object Properties
 
@@ -709,7 +748,7 @@
     | canonicalUrl | | The canonical URL, used for SEO purposes | `$canonical_url`
     | title | | The name for the piece of content | `$og_title`
     | contentDescription | | A description for the content | `$og_description`
-    | contentImageUrl | | The image URL for the content | `$og_image_url `
+    | contentImageUrl | | The image URL for the content. Must be an absolute path | `$og_image_url `
     | price | | The price of the item | `$amount`
     | currency | | The currency representing the price in ISO 4217 currency code | `$currency`
     | contentIndexingMode | `"public"` | Can be set to either `"public"` or `"private"`. Public indicates that you’d like this content to be discovered by other apps. | `$publicly_indexable`
@@ -820,100 +859,218 @@
       | $twitter_player_width | | Set the player’s width in pixels
       | $twitter_player_height | | Set the player’s height in pixels
 
-- #### Link Data: Convert to Ionic/Angular
+- #### Link Data: Commerce Properties
+  
+    - For [Track Commerce](#track-commerce)
+    
+    - Categories
 
-  - Convert Branch deep link data from `DeepLinkHandler` into Ionic and Angular
+      | Value | Category |
+      | --- | --- |
+      | 0 | Animals & Pet Supplies |
+      | 1 | Apparel & Accessories |
+      | 2 | Arts & Entertainment |
+      | 3 | Baby & Toddler |
+      | 4 | Business & Industrial |
+      | 5 | Camera & Optics |
+      | 6 | Electronics |
+      | 7 | Food, Beverage & Tobacco |
+      | 8 | Furniture |
+      | 9 | Hardware |
+      | 10 | Health & Beauty |
+      | 11 | Home & Garden |
+      | 12 | Luggage & Bags |
+      | 13 | Mature |
+      | 14 | Media |
+      | 15 | Office Supplies |
+      | 16 | Religious & Ceremonial |
+      | 17 | Software |
+      | 18 | Sporting Goods |
+      | 19 | Toys & Games |
+      | 20 | Vehicles & Parts |
 
-  - Listen to Branch data, and save it into an Angular `DeepLink`
+    - Currencies
 
-    ```js
-    // must be a global function
-    function DeepLinkHandler(data) {
-      if (data) {
-        // access the angular Factory('DeepLink')
-        angular.element(document.querySelector('[ng-app]')).injector().get('DeepLink').set(data);
-        console.log('Data Link handler response: ' + JSON.stringify(data));
-      }
-    }
-    ```
-
-  - Create a `DeepLink` factory
-
-    ```js
-    angular.module('starter.services', [])
-    .factory('DeepLink', function($window, $timeout) {
-      var data = {};
-
-      return {
-        get: function() {
-          return data;
-        },
-        set: function(json) {
-          // use the angular version of timeout
-          $timeout(function() {
-            // set the data
-            data = json;
-            // navigate example
-            $window.location = '#/tab/chats/3';
-          }, 0);
-        }
-      };
-    });
-    ```
-
-  - Access `DeepLink` factory
-
-    ```js
-    angular.module('starter.controllers', [])
-
-    .controller('DashCtrl', function($scope, DeepLink) {
-      $scope.content = {}
-      $scope.buttonPressed = function() {
-        // put branch data into a label that has ng-model content.data
-        $scope.content.data = JSON.stringify(DeepLink.get());
-      };
-    })
-    ```
-
-- #### Link Data: Global Listener Warning
-
-  - After Branch SDK `2.4.0`, deep link data is handled within `Branch.initSession(DeepLinkDataFunction);`
-
-    - Listener *[depreciated in 2.4.0]*
-      ```html
-      <!-- sample index.html -->
-          <script>
-            // required
-            function DeepLinkHandler(data) {
-              if (data) {
-                alert('Data Link Data Response: ' + JSON.stringify(data));
-              }
-            }
-
-            // optional
-            function NonBranchLinkHandler(data) {
-              if (data) {
-                alert('Non-Branch Link Detected: ' + JSON.stringify(data));
-              }
-            }
-          </script>
-        </body>
-      </html>
-      ```
-
-  - Use `Branch.disableGlobalListenersWarnings();` to turn off the warning errors generated from `DeepLinkHandler` and `NonBranchLinkHandler`
-
-- #### Compiling: Incompatible Plugins
-
-  - The following plugins will not work with the Branch SDK
-
-  - [PhoneGap NFC Plugin](https://github.com/chariotsolutions/phonegap-nfc)
-
-  - [Custom URL scheme](https://github.com/EddyVerbruggen/Custom-URL-scheme)
-
-  - [Cordova Universal Links Plugin](https://github.com/nordnet/cordova-universal-links-plugin)
-
-  - [Ionic Deeplinks Plugin](https://github.com/driftyco/ionic-plugin-deeplinks)
+      | Value | Currency  |
+      | --- | --- |
+      | 0 | AED | 
+      | 1 | AFN | 
+      | 2 | ALL | 
+      | 3 | AMD | 
+      | 4 | ANG | 
+      | 5 | AOA | 
+      | 6 | ARS | 
+      | 7 | AUD | 
+      | 8 | AWG | 
+      | 9 | AZN | 
+      | 10 | BAM | 
+      | 11 | BBD | 
+      | 12 | BDT | 
+      | 13 | BGN | 
+      | 14 | BHD | 
+      | 15 | BIF | 
+      | 16 | BMD | 
+      | 17 | BND | 
+      | 18 | BOB | 
+      | 19 | BOV | 
+      | 20 | BRL | 
+      | 21 | BSD | 
+      | 22 | BTN | 
+      | 23 | BWP | 
+      | 24 | BYN | 
+      | 25 | BYR | 
+      | 26 | BZD | 
+      | 27 | CAD | 
+      | 28 | CDF | 
+      | 29 | CHE | 
+      | 30 | CHF | 
+      | 31 | CHW | 
+      | 32 | CLF | 
+      | 33 | CLP | 
+      | 34 | CNY | 
+      | 35 | COP | 
+      | 36 | COU | 
+      | 37 | CRC | 
+      | 38 | CUC | 
+      | 39 | CUP | 
+      | 40 | CVE | 
+      | 41 | CZK | 
+      | 42 | DJF | 
+      | 43 | DKK | 
+      | 44 | DOP | 
+      | 45 | DZD | 
+      | 46 | EGP | 
+      | 47 | ERN | 
+      | 48 | ETB | 
+      | 49 | EUR | 
+      | 50 | FJD | 
+      | 51 | FKP | 
+      | 52 | GBP | 
+      | 53 | GEL | 
+      | 54 | GHS | 
+      | 55 | GIP | 
+      | 56 | GMD | 
+      | 57 | GNF | 
+      | 58 | GTQ | 
+      | 59 | GYD | 
+      | 60 | HKD | 
+      | 61 | HNL | 
+      | 62 | HRK | 
+      | 63 | HTG | 
+      | 64 | HUF | 
+      | 65 | IDR | 
+      | 66 | ILS | 
+      | 67 | INR | 
+      | 68 | IQD | 
+      | 69 | IRR | 
+      | 70 | ISK | 
+      | 71 | JMD | 
+      | 72 | JOD | 
+      | 73 | JPY | 
+      | 74 | KES | 
+      | 75 | KGS | 
+      | 76 | KHR | 
+      | 77 | KMF | 
+      | 78 | KPW | 
+      | 79 | KRW | 
+      | 80 | KWD | 
+      | 81 | KYD | 
+      | 82 | KZT | 
+      | 83 | LAK | 
+      | 84 | LBP | 
+      | 85 | LKR | 
+      | 86 | LRD | 
+      | 87 | LSL | 
+      | 88 | LYD | 
+      | 89 | MAD | 
+      | 90 | MDL | 
+      | 91 | MGA | 
+      | 92 | MKD | 
+      | 93 | MMK | 
+      | 94 | MNT | 
+      | 95 | MOP | 
+      | 96 | MRO | 
+      | 97 | MUR | 
+      | 98 | MVR | 
+      | 99 | MWK | 
+      | 100 | MXN | 
+      | 101 | MXV | 
+      | 102 | MYR | 
+      | 103 | MZN | 
+      | 104 | NAD | 
+      | 105 | NGN | 
+      | 106 | NIO | 
+      | 107 | NOK | 
+      | 108 | NPR | 
+      | 109 | NZD | 
+      | 110 | OMR | 
+      | 111 | PAB | 
+      | 112 | PEN | 
+      | 113 | PGK | 
+      | 114 | PHP | 
+      | 115 | PKR | 
+      | 116 | PLN | 
+      | 117 | PYG | 
+      | 118 | QAR | 
+      | 119 | RON | 
+      | 120 | RSD | 
+      | 121 | RUB | 
+      | 122 | RWF | 
+      | 123 | SAR | 
+      | 124 | SBD | 
+      | 125 | SCR | 
+      | 126 | SDG | 
+      | 127 | SEK | 
+      | 128 | SGD | 
+      | 129 | SHP | 
+      | 130 | SLL | 
+      | 131 | SOS | 
+      | 132 | SRD | 
+      | 133 | SSP | 
+      | 134 | STD | 
+      | 135 | SYP | 
+      | 136 | SZL | 
+      | 137 | THB | 
+      | 138 | TJS | 
+      | 139 | TMT | 
+      | 140 | TND | 
+      | 141 | TOP | 
+      | 142 | TRY | 
+      | 143 | TTD | 
+      | 144 | TWD | 
+      | 145 | TZS | 
+      | 146 | UAH | 
+      | 147 | UGX | 
+      | 148 | USD | 
+      | 149 | USN | 
+      | 150 | UYI | 
+      | 151 | UYU | 
+      | 152 | UZS | 
+      | 153 | VEF | 
+      | 154 | VND | 
+      | 155 | VUV | 
+      | 156 | WST | 
+      | 157 | XAF | 
+      | 158 | XAG | 
+      | 159 | XAU | 
+      | 160 | XBA | 
+      | 161 | XBB | 
+      | 162 | XBC | 
+      | 163 | XBD | 
+      | 164 | XCD | 
+      | 165 | XDR | 
+      | 166 | XFU | 
+      | 167 | XOF | 
+      | 168 | XPD | 
+      | 169 | XPF | 
+      | 170 | XPT | 
+      | 171 | XSU | 
+      | 172 | XTS | 
+      | 173 | XUA | 
+      | 174 | XXX | 
+      | 175 | YER | 
+      | 176 | ZAR | 
+      | 177 | ZMW | 
 
 - #### Compiling: Cordova Dependencies
 
@@ -961,6 +1118,13 @@
       ```
 
     - Install Android SDK build-tools 24.0.1
+    
+    - Generate Android Keystore
+    
+      ```sh
+      keytool -genkeypair -dname "cn=Full Name, ou=Business Unit, o=Company, c=US" -alias release -keypass aaa111 -keystore release.keystore -storepass aaa111 -validity 10000 
+      keytool -list -v -keystore release.keystore
+      ```
 
   - Genymotion *[optional]*
 
@@ -970,43 +1134,74 @@
 
     - Genymotion -> Add virtual device -> Google Nexus 6P - 6.0.0 - API 23 -> Next
 
-- #### Compiling: Visual Studio TACO
+- #### Compiling: Show Console Logs
 
-  - Download the latest [source code](https://github.com/BranchMetrics/cordova-ionic-phonegap-branch-deep-linking/releases) and import the Branch SDK locally
+  - iOS Simulator
 
-- #### Compiling: Multiple support-lib v4s
+    - `cordova run ios;`
 
-  - Branch does not depend on the `android-support-v4` file, but other Cordova plugins could cause an issue
+    - Safari -> Preferences -> Advance -> Show Develop menu in menu bar
 
-  - Add `multiDexEnabled true` inside defaultConfig tag in `build.gradle`
+    - Safari -> Develop -> Simulator -> index.html -> Console
 
-    ```sh
-    defaultConfig {
-      multiDexEnabled true
-    }
-    ```
+    - *May need to unplug and replug device*
 
-  - Remove the `android-support-v4.jar` in Android `libs` directory
+    - *May need to open Xcode and update provisioning profile*
 
-  - Run `./gradlew clean` in the Android directory
+  - iOS Xcode
 
-  - Run `android-support-v4` file for compiling
+    - `cordova plugin add cordova-plugin-console;`
 
-    ```sh
-    compile ("com.google.android.gms:play-services-ads:9.+") {
-      exclude module: "support-v4"
-    }
-    ```
+    - `cordova build ios;`
 
-- #### Compiling: Missing Android Dependency
+    - Xcode -> APP_LOCATION/platforms/ios/APP_NAME.Xcodeproj
 
-  - Gradle build cannot find `io.branch.sdk.android:library:2.+` dependency
+    - Xcode -> App -> General -> Signing -> Team
 
-  - Add into your `build.gradle` file
+    - Xcode -> Product -> Run
 
-    ```sh
-    compile "io.branch.sdk.android:library:2.+"
-    ```
+    - Xcode -> View -> Debug Area -> Activate Console
+
+  - Android Device
+
+    - Plug device in
+
+    - `cordova run android;`
+
+    - Chrome -> [chrome://inspect/#devices](chrome://inspect/#devices) -> Console
+
+  - Android Genymotion
+
+    - Genymotion -> Start
+
+    - `cordova run android;`
+
+    - Chrome -> [chrome://inspect/#devices](chrome://inspect/#devices) -> Console
+
+- #### Compiling: Updating the Branch SDK
+
+  ```bash
+  # terminal
+  cordova plugin remove io.branch.sdk
+  cordova plugin remove branch-cordova-sdk
+  ```
+
+  ```xml
+  <!-- config.xml -->
+  <plugin name="branch-cordova-sdk" spec="^2.6.0" />
+  ```
+
+- #### Compiling: Incompatible Plugins
+
+  - The following plugins will not work with the Branch SDK
+
+  - [PhoneGap NFC Plugin](https://github.com/chariotsolutions/phonegap-nfc)
+
+  - [Custom URL scheme](https://github.com/EddyVerbruggen/Custom-URL-scheme)
+
+  - [Cordova Universal Links Plugin](https://github.com/nordnet/cordova-universal-links-plugin)
+
+  - [Ionic Deeplinks Plugin](https://github.com/driftyco/ionic-plugin-deeplinks)
 
 - #### Compiling: Errors
 
@@ -1023,13 +1218,13 @@
     - Branch opens and installs your app. You cannot simulate Branch in the desktop browser
 
       ```js
-      // Ionic 2 - running on browser instead of device
+      // Ionic 2/3 - running on browser instead of device
       if (!platform.is('cordova')) { return }
       Branch.userCompletedAction('did_this')
       ```
 
       ```js
-      // Ionic 2 - missing Branch import
+      // Ionic 2/3 - missing Branch import
       declare var Branch
       ```
 
@@ -1041,7 +1236,7 @@
     The following build commands failed:
       Check dependencies
     (1 failure)
-    Error: Error code 65 for command: xcodebuild with args: -xcconfig,/Users/eneff/Desktop/active/branch/lib/cordova-ionic-phonegap-branch-deep-linking/testbed/platforms/ios/cordova/build-debug.xcconfig,-workspace,Branch Testing.xcworkspace,-scheme,Branch Testing,-configuration,Debug,-destination,generic/platform=iOS,-archivePath,Branch Testing.xcarchive,archive,CONFIGURATION_BUILD_DIR=/Users/eneff/Desktop/active/branch/lib/cordova-ionic-phonegap-branch-deep-linking/testbed/platforms/ios/build/device,SHARED_PRECOMPS_DIR=/Users/eneff/Desktop/active/branch/lib/cordova-ionic-phonegap-branch-deep-linking/testbed/platforms/ios/build/sharedpch
+    Error: Error code 65 for command: xcodebuild with args: -xcconfig,cordova/build-debug.xcconfig,-workspace,Branch Testing.xcworkspace,-scheme,Branch Testing,-configuration,Debug,-destination,generic/platform=iOS,-archivePath,Branch Testing.xcarchive,archive,CONFIGURATION_BUILD_DIR=build/device,SHARED_PRECOMPS_DIR=build/sharedpch
     ```
 
       - Open app in `Xcode` and launch from there (to select a `Provisioning Profile`)
@@ -1056,50 +1251,12 @@
     No profiles for 'com.eneff.branch.cordova_testbed' were found
     ```
 
-      - Don't use `cordova`, `hyphens`, or `underscores` in your bundle id (widget id)
+      - Don't use `cordova`, `hyphens` (Android), or `underscores` (iOS) in your bundle id (widget id)
 
-## Additional
+    ```sh
+    Error: Error code 1 for command: /gradlew with args: cdvBuildDebug,-b,/build.gradle,-Dorg.gradle.daemon=true,-Pandroid.useDeprecatedNdk=true
+    ```
 
-- #### SDK Development
+      - Add `<preference name="android-minSdkVersion" value="15" />` to your `config.xml`
 
-  - [Changelog](https://github.com/BranchMetrics/cordova-ionic-phonegap-branch-deep-linking/blob/master/CHANGELOG.md)
 
-  - [Contributing](https://github.com/BranchMetrics/cordova-ionic-phonegap-branch-deep-linking/blob/master/DEVELOPING.md)
-
-- #### Bulk Link Creation
-
- - [HTTP API](https://github.com/BranchMetrics/branch-deep-linking-public-api)
-
- - [Marketing Dashboard](https://dashboard.branch.io/marketing)
-
-- #### Analytical Data
-
-  - [Summary Dashboard](https://dashboard.branch.io/)
-
-  - [Export Button](https://dashboard.branch.io/liveview/links)
-
-  - [Export API](https://dev.branch.io/methods-endpoints/data-export-api/guide/)
-
-  - [Webhooks](https://dev.branch.io/getting-started/webhooks/guide/)
-
-- #### Webpage Features
-
-  - [Text Me The App](https://github.com/BranchMetrics/web-branch-deep-linking#sendsmsphone-linkdata-options-callback)
-
-  - [Smart Banner](https://github.com/BranchMetrics/web-branch-deep-linking#banneroptions-data)
-
-  - [DeepView](https://github.com/BranchMetrics/web-branch-deep-linking#deepview)
-
-- #### Premium Features
-
-  - [Journey App Banner](https://dev.branch.io/premium-solutions/)
-
-  - [Deep Link Emails](https://dev.branch.io/premium-solutions/)
-
-  - [Data Integrations](https://dev.branch.io/premium-solutions/)
-
-- #### Support
-
-  - [Documentation](https://dev.branch.io/)
-
-  - [Contact](https://support.branch.io/support/tickets/new)

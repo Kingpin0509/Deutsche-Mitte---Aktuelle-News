@@ -1,1 +1,0 @@
-C:\Deutsche Mitte - Aktuell\platforms\windows\CordovaApp.Windows10.jsproj;x64

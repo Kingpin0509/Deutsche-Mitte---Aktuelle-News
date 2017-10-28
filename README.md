@@ -180,7 +180,7 @@ ionic cordova prepare && ionic cordova resources &&
 ionic package build android --profile=prod --release --prod && ionic package build ios --profile=prod --release --prod &&
 ionic build  && ionic upload
 
-ionic cordova platform rm ios android windows && ionic cordova platform add ios android windows
+ionic cordova platform rm ios && ionic cordova platform rm android && ionic cordova platform rm windows && ionic cordova platform add ios && ionic cordova platform add android && ionic cordova platform add windows
 
 ionic cordova plugin add https://github.com/jeduan/cordova-plugin-facebook4 --save --variable APP_ID="131001554119757" --variable APP_NAME="Deutsche Mitte - Aktuell"
 npm uninstall --save -E ionic
