@@ -2,8 +2,8 @@ import { Injectable } from "@angular/core";
 
 @Injectable()
 export class Config {
-  // public wordpressApiUrl = 'http://demo.wp-api.org/wp-json'
-  public wordpressApiUrl = "https://deutsche-mitte.de/wp-json";
+  public wordpressApiUrl = 'https://deutsche-mitte.de/wp-json';
+ //  public wordpressApiUrl = "https://deutsche-mitte.de/wp-json";
   public wordpressMenusNavigation = false;
   public feedsUrl = "./assets/data/feeds.json";
   public feedsCategoryUrl = "./assets/data/feeds-category.json";

@@ -3538,6 +3538,24 @@ var MyApp = (function () {
             _this.statusBar.overlaysWebView(false);
             _this.statusBar.backgroundColorByHexString("#005397");
             _this.statusBar.styleBlackTranslucent();
+            _this.platform.resume.subscribe(function () {
+                handleBranch();
+            });
+            // Branch initialization
+            var handleBranch = function () {
+                // only on devices
+                if (!_this.platform.is("cordova")) {
+                    return;
+                }
+                var Branch = window["Branch"];
+                Branch.initSession(function (data) {
+                    if (data["+clicked_branch_link"]) {
+                        // read deep link data on click
+                        alert("Deep Link Data: " + JSON.stringify(data));
+                    }
+                });
+            };
+            handleBranch();
             //      this.statusBar.hide();
             //this.splashScreen.hide();
             // OneSignal Code start:
@@ -3607,22 +3625,15 @@ var MyApp = (function () {
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Nav */]),
-    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Nav */])
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Nav */]) === "function" && _a || Object)
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\app\app.html"*/'﻿<ion-split-pane when="lg">\n  <ion-menu *ngIf="!wordpressMenusNavigation" id="menuleft" side="left" type="overlay" [content]="content">\n    <ion-header>\n      <ion-toolbar no-margin no-padding class="dm-dark">\n        <div class="bounce-animation">\n          <ion-title class="animate-in-secondary">{{\'APPNAME\' | translate}}</ion-title>\n        </div>\n      </ion-toolbar>\n    </ion-header>\n    <ion-content>\n      <ion-list padding-top>\n        <!-- <div class="fade-in-left">\n          <ion-item-divider class="dmo-dark menu-divider-bordered">\n            <h2>{{\'MENU\' | translate}}</h2>\n          </ion-item-divider>\n        </div>\n        <ion-item margin-top margin-bottom></ion-item> -->\n        <ion-item-group class="animate-in-primary" margin-vertical>\n          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleft" (tap)="openPage(page)" [class.active]="checkActivePage(page)">\n            <ion-icon item-start [name]="page.icon" class="item-avatar item-icon-right"></ion-icon>\n            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n          </button>\n          <!--<button outline class="animated bounceInLeft" ion-item (tap)="openPageYoutube()">\n<ion-icon name="logo-youtube" class="youtube" item-start></ion-icon>\n<h2 ion-text color="primary">{{\'YOUTUBE_CHANNEL\' | translate}}</h2>\n                        <ion-note item-end>DM</ion-note>\n                    </button>\n                     <button outline class="animated bounceInLeft" ion-item (tap)="openPageWordpress(page)">\n                      <ion-icon name="" class="" item-start></ion-icon>\n                      <h2 ion-text color="primary">Downloads</h2>\n                      <ion-note item-end>DM</ion-note>\n                  </button>\n                    <button outline class="animated bounceInLeft" ion-item (tap)="startSplash()">\n                      <h2 ion-text color="primary">Start</h2>\n                      <ion-note item-end>Splashscreen</ion-note>\n                  </button> -->\n        </ion-item-group>\n        <ion-item-group class="animate-in-primary" margin-top>\n          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleftcenter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">\n            <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>\n            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n          </button>\n        </ion-item-group>\n        <ion-item-group class="animate-in-primary" margin-top>\n          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleftbottom" (tap)=" openPageStammtische(page)" [class.active]="checkActivePage(page)">\n            <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>\n            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n          </button>\n        </ion-item-group>\n      </ion-list>\n    </ion-content>\n    <ion-footer class="animate-in-primary">\n      <button class="list-grow-animation" ion-button full *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">\n        <ion-icon class="animate-in-primary item-avatar item-icon-right" margin [name]="page.icon"></ion-icon>\n        <h4 class="animate-in-secondary" style="font-size:smaller" color="primary">{{page.title | translate}}</h4>\n      </button>\n    </ion-footer>\n  </ion-menu>\n\n  <ion-menu *ngIf="wordpressMenusNavigation" [content]="content">\n    <ion-nav [root]="menuPage"></ion-nav>\n  </ion-menu>\n\n  <ion-nav [root]="rootPage" main #content></ion-nav>\n</ion-split-pane>\n\n<ion-menu id="menuright" side="right" swipeEnabled="true" [content]="content">\n  <ion-content class="card-background-menu">\n\n    <!--    <ion-list>\n <ion-list-header class="fade-in-right dmo-dark">\n        <h2 style="color: white;">Facebook Stream</h2>\n      </ion-list-header>\n      <ion-item no-padding> -->\n    <iframe class="animated flipInYRight" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhoersteldeutschemitte%2F&tabs=timeline&width=300&height=800&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=131001554119757"\n      width="300" height="800" scrolling="no" frameborder="0" allowTransparency="true"></iframe>\n    <!--      </ion-item>\n            <ion-item-divider class="bounce-top dmo-dark">\n        <h2>{{\'FAVORITES\' | translate}} ({{favoritePosts.length}})</h2>\n      </ion-item-divider>\n      <ion-item *ngFor="let post of favoritePosts">\n        <ion-item (tap)="loadPost(post)">\n          {{post.title.rendered}}\n        </ion-item>\n      </ion-item>\n      <ion-item-divider class="fade-in-right dmo-dark">\n        <h2>{{\'DMVENUE\' | translate}}</h2>\n      </ion-item-divider>\n       <ion-item no-margin no-padding *ngFor="let page of pagesrightfooter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)"\n        class="animated bounceInRight">\n          <div class="card-title">BESUCHEN SIE UNS</div>\n          <img [height]= src="assets/img/menu/Banner-DM-Stammtische.gif" />\n      </ion-item>\n    </ion-list>-->\n  </ion-content>\n  <!--   <ion-footer>\n    <ion-list>\n      <ion-item-group>\n        <div class="fade-in-right">\n          <ion-item-divider class="dmo-dark menu-divider-bordered" ion-item>\n            <h2>{{\'SETTINGS\' | translate}}</h2>\n          </ion-item-divider>\n        </div>\n        <p style="display:flex; margin:0px">\n          <button style="width:50%" class="animated rotateInUpRight" ion-item icon-start *ngFor="let page of pagesrightfooter" (tap)="pushPage(page)">\n            <ion-icon small [name]="page.icon"></ion-icon>\n              <h4 style="font-size:smaller" color="primary">{{page.title | translate}}</h4>\n          </button>\n        </p>\n      </ion-item-group>\n    </ion-list>\n  </ion-footer> -->\n</ion-menu>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\app\app.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_6__app_config__["a" /* Config */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
-        __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */],
-        __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
-        __WEBPACK_IMPORTED_MODULE_5_ng2_translate__["c" /* TranslateService */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* MenuController */],
-        __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */]])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_6__app_config__["a" /* Config */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__app_config__["a" /* Config */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_5_ng2_translate__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5_ng2_translate__["c" /* TranslateService */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* MenuController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* MenuController */]) === "function" && _h || Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _j || Object, typeof (_k = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */]) === "function" && _k || Object])
 ], MyApp);
 
+var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
 // openPageYoutube(page) {
 //   this.menuController.close();
 //   this.nav.push(YoutubeChannelComponent);
@@ -5143,8 +5154,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var Config = (function () {
     function Config() {
-        // public wordpressApiUrl = 'http://demo.wp-api.org/wp-json'
-        this.wordpressApiUrl = "https://deutsche-mitte.de/wp-json";
+        this.wordpressApiUrl = 'https://deutsche-mitte.de/wp-json';
+        //  public wordpressApiUrl = "https://deutsche-mitte.de/wp-json";
         this.wordpressMenusNavigation = false;
         this.feedsUrl = "./assets/data/feeds.json";
         this.feedsCategoryUrl = "./assets/data/feeds-category.json";

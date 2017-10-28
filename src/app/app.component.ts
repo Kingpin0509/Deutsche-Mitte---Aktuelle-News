@@ -103,7 +103,6 @@ export class MyApp {
         this.favoritePosts = JSON.parse(data);
       }
     });
-
     this.pagesleft = [
       {
         title: "HOME",
@@ -197,16 +196,32 @@ export class MyApp {
       this.statusBar.overlaysWebView(false);
       this.statusBar.backgroundColorByHexString("#005397");
       this.statusBar.styleBlackTranslucent();
+      this.platform.resume.subscribe(() => {
+        handleBranch();
+      });
+      // Branch initialization
+      const handleBranch = () => {
+        // only on devices
+        if (!this.platform.is("cordova")) {
+          return;
+        }
+        const Branch = window["Branch"];
+        Branch.initSession(data => {
+          if (data["+clicked_branch_link"]) {
+            // read deep link data on click
+            alert("Deep Link Data: " + JSON.stringify(data));
+          }
+        });
+      };
+      handleBranch();
       //      this.statusBar.hide();
       //this.splashScreen.hide();
       // OneSignal Code start:
       // Enable to debug issues:
       // window["plugins"].OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
-
       // var notificationOpenedCallback = function(jsonData) {
       //   console.log("notificationOpenedCallback: " + JSON.stringify(jsonData));
       // };
-
       // window["plugins"].OneSignal
       //   .startInit("6a5ed52b-2c28-4d8d-9926-5d559837a95d", "645777369391")
       //   .handleNotificationOpened(notificationOpenedCallback)
@@ -261,7 +276,9 @@ export class MyApp {
       post: post
     });
   }
+
 }
+
 // openPageYoutube(page) {
 //   this.menuController.close();
 //   this.nav.push(YoutubeChannelComponent);
