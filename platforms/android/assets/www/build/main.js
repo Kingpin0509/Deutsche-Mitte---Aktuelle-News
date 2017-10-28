@@ -1981,7 +1981,7 @@ var SettingsComponent = (function () {
     return SettingsComponent;
 }());
 SettingsComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\settings\settings-component\settings.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle="left" icon-only>\n      <ion-icon name=\'menu\'></ion-icon>\n    </button>\n    <ion-title>{{\'SETTINGS\' | translate}}</ion-title>\n    <ion-buttons end>\n      <button ion-button menuToggle="right" icon-only>\n        <ion-icon name=\'more\'></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content class="grid-basic-page">\n  <ion-list>\n    <ion-list-header>\n      {{\'LANGUAGE\' | translate}}\n    </ion-list-header>\n    <ion-item>\n      <ion-label>{{\'LANGUAGE\' | translate}}</ion-label>\n      <ion-select [(ngModel)]="language" (ionChange)=selectLanguage()>\n        <ion-option value="de">{{\'GERMAN\' | translate}}</ion-option>\n        <ion-option value="en">{{\'ENGLISH\' | translate}}</ion-option>\n        <ion-option value="fr">{{\'FRENCH\' | translate}}</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-checkbox (tap)=toogleSeenTutorial() [(ngModel)]="checkbox"></ion-checkbox>\n      <ion-label>Einführung erneut Aktivieren</ion-label>\n    </ion-item>\n    <button (tap)="pushPageFirebase(page)">\n      <ion-icon margin name="pin"></ion-icon>\n      <h4 color="primary">{{\'LOGIN\' | translate}}</h4>\n    </button>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\settings\settings-component\settings.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\settings\settings-component\settings.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle="left" icon-only>\n      <ion-icon name=\'menu\'></ion-icon>\n    </button>\n    <ion-title>{{\'SETTINGS\' | translate}}</ion-title>\n    <ion-buttons end>\n      <button ion-button menuToggle="right" icon-only>\n        <ion-icon name=\'more\'></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content class="grid-basic-page">\n  <ion-list>\n    <ion-list-header>\n      {{\'LANGUAGE\' | translate}}\n    </ion-list-header>\n    <ion-item>\n      <ion-label>{{\'LANGUAGE\' | translate}}</ion-label>\n      <ion-select [(ngModel)]="language" (ionChange)=selectLanguage()>\n        <ion-option value="de">{{\'GERMAN\' | translate}}</ion-option>\n        <ion-option value="en">{{\'ENGLISH\' | translate}}</ion-option>\n        <ion-option value="fr">{{\'FRENCH\' | translate}}</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-checkbox (tap)=toogleSeenTutorial() [(ngModel)]="checkbox"></ion-checkbox>\n      <ion-label>Einführung erneut Aktivieren</ion-label>\n    </ion-item>\n<!--     <button (tap)="pushPageFirebase(page)">\n      <ion-icon margin name="pin"></ion-icon>\n      <h4 color="primary">{{\'LOGIN\' | translate}}</h4>\n    </button> -->\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\settings\settings-component\settings.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_2_ng2_translate__["c" /* TranslateService */]])
 ], SettingsComponent);
@@ -3165,7 +3165,16 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_17__pages_quiz_quiz_module__["a" /* QuizModule */],
             __WEBPACK_IMPORTED_MODULE_18__pages_facebook_connect_facebook_connect_module__["a" /* FacebookConnectModule */],
             __WEBPACK_IMPORTED_MODULE_19__pages_feeds_feeds_module__["a" /* FeedsModule */],
-            __WEBPACK_IMPORTED_MODULE_20__pages_firebase_firebase_module__["a" /* FirebaseModule */],
+            __WEBPACK_IMPORTED_MODULE_20__pages_firebase_firebase_module__["a" /* FirebaseModule */]
+            //BarcodeScannerModule,
+            //GoogleMapsModule,
+            //GridModule,
+            //ContactModule,
+            //DatetimeModule,
+            //RangesModule,
+            //ActionSheetModule
+            //LoginModule,
+            //ChartsModule,
         ],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* IonicApp */]],
         entryComponents: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */]],
@@ -3538,6 +3547,24 @@ var MyApp = (function () {
             _this.statusBar.overlaysWebView(false);
             _this.statusBar.backgroundColorByHexString("#005397");
             _this.statusBar.styleBlackTranslucent();
+            _this.platform.resume.subscribe(function () {
+                handleBranch();
+            });
+            // Branch initialization
+            var handleBranch = function () {
+                // only on devices
+                if (!_this.platform.is("cordova")) {
+                    return;
+                }
+                var Branch = window["Branch"];
+                Branch.initSession(function (data) {
+                    if (data["+clicked_branch_link"]) {
+                        // read deep link data on click
+                        alert("Deep Link Data: " + JSON.stringify(data));
+                    }
+                });
+            };
+            handleBranch();
             //      this.statusBar.hide();
             //this.splashScreen.hide();
             // OneSignal Code start:
@@ -5143,8 +5170,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var Config = (function () {
     function Config() {
-        // public wordpressApiUrl = 'http://demo.wp-api.org/wp-json'
         this.wordpressApiUrl = "https://deutsche-mitte.de/wp-json";
+        //  public wordpressApiUrl = "https://deutsche-mitte.de/wp-json";
         this.wordpressMenusNavigation = false;
         this.feedsUrl = "./assets/data/feeds.json";
         this.feedsCategoryUrl = "./assets/data/feeds-category.json";

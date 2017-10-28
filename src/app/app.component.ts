@@ -276,7 +276,6 @@ export class MyApp {
       post: post
     });
   }
-
 }
 
 // openPageYoutube(page) {

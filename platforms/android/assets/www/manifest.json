@@ -8,6 +8,12 @@
       "src": "assets/img/appicon.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "assets/img/appicon1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "platform": "itunes"
     }
   ],
   "background_color": "#00498a",

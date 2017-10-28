@@ -53,7 +53,7 @@ import { FirebaseModule } from "../pages/firebase/firebase.module";
     QuizModule,
     FacebookConnectModule,
     FeedsModule,
-    FirebaseModule,
+    FirebaseModule
     //BarcodeScannerModule,
     //GoogleMapsModule,
     //GridModule,
