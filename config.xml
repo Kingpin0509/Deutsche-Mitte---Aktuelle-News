@@ -103,11 +103,11 @@
     </feature>
     <branch-config>
         <branch-key value="key_live_ogDHudC7Hg1rTOzAo0wW9ciaDAjffY0l" />
-        <uri-scheme value="dmaktuell://" />
+        <uri-scheme value="dmaktuell" />
         <link-domain value="bik3.app.link" />
         <ios-team-release value="1241722675" />
     </branch-config>
-    <engine name="android" spec="^6.2.3" />
+    <engine name="android" spec="^6.3.0" />
     <engine name="ios" spec="^4.5.2" />
     <engine name="windows" spec="^5.0.0" />
     <plugin name="branch-cordova-sdk" spec="^2.6.15" />
