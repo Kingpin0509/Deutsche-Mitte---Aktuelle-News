@@ -46,9 +46,6 @@
         },
         "cordova-plugin-x-socialsharing": {
             "PACKAGE_NAME": "de.dm.news"
-        },
-        "es6-promise-plugin": {
-            "PACKAGE_NAME": "de.dm.news"
         }
     },
     "dependent_plugins": {}

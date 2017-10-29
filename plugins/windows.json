@@ -41,9 +41,6 @@
         },
         "cordova-plugin-x-socialsharing": {
             "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
-        },
-        "es6-promise-plugin": {
-            "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
         }
     },
     "dependent_plugins": {}

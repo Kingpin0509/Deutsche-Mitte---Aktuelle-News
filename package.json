@@ -52,7 +52,6 @@
         "cordova-plugin-x-socialsharing": "5.2.1",
         "cordova-windows": "^5.0.0",
         "css-animator": "^2.1.1",
-        "es6-promise-plugin": "^4.1.1",
         "firebase": "^4.6.0",
         "io": "^0.1.10",
         "ionic-angular": "3.8.0",
@@ -108,8 +107,7 @@
             "cordova-plugin-x-socialsharing": {},
             "cordova-plugin-crosswalk-webview": {},
             "cordova-plugin-ios-no-export-compliance": {},
-            "branch-cordova-sdk": {},
-            "es6-promise-plugin": {}
+            "branch-cordova-sdk": {}
         },
         "platforms": [
             "android",
