@@ -1,0 +1,39 @@
+﻿{
+  "id": 1,
+  "title": "News",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "icon": "cloud",
+  "items": [
+    {
+      "id": 1,
+      "title": "Categories34",
+      "description":
+        "https://deutsche-mitte.de/wp-json/wp/v2/posts?categories=34",
+      "url": "https://deutsche-mitte.de/wp-json/wp/v2/posts?categories=34"
+    },
+    {
+      "id": 2,
+      "title": "Innenpolitik",
+      "description": "https://deutsche-mitte.de/category/aktuelles/",
+      "url": "https://deutsche-mitte.de/category/aktuelles/"
+    },
+    {
+      "id": 3,
+      "title": "aktuelles/rss",
+      "description": "https://deutsche-mitte.de/category/aktuelles/rss",
+      "url": "https://deutsche-mitte.de/category/aktuelles/rss"
+    },
+    {
+      "id": 4,
+      "title": "aktuelles/rdf",
+      "description": "https://deutsche-mitte.de/category/aktuelles/rdf",
+      "url": "https://deutsche-mitte.de/category/aktuelles/rdf"
+    },
+    {
+      "id": 5,
+      "title": "aktuelles/feed",
+      "description": "https://deutsche-mitte.de/category/aktuelles/feed",
+      "url": "https://deutsche-mitte.de/category/aktuelles/feed"
+    }
+  ]
+}
