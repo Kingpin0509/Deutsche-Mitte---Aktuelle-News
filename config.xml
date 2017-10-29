@@ -103,7 +103,7 @@
     </feature>
     <branch-config>
         <branch-key value="key_live_ogDHudC7Hg1rTOzAo0wW9ciaDAjffY0l" />
-        <uri-scheme value="dmaktuell" />
+        <uri-scheme value="dmaktuell://" />
         <link-domain value="bik3.app.link" />
         <ios-team-release value="1241722675" />
     </branch-config>
@@ -124,4 +124,5 @@
     <plugin name="cordova-plugin-statusbar" spec="2.2.3" />
     <plugin name="cordova-plugin-whitelist" spec="1.3.2" />
     <plugin name="cordova-plugin-x-socialsharing" spec="5.2.1" />
+    <plugin name="es6-promise-plugin" spec="^4.1.1" />
 </widget>

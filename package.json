@@ -36,8 +36,8 @@
         "angularfire2": "^5.0.0-rc.3",
         "animate.css": "^3.5.2",
         "branch-cordova-sdk": "^2.6.15",
-        "chart.js": "^2.7.0",
-        "cordova-android": "^6.2.3",
+        "chart.js": "^2.7.1",
+        "cordova-android": "^6.3.0",
         "cordova-ios": "^4.5.2",
         "cordova-ios-plugin-no-export-compliance": "0.0.5",
         "cordova-plugin-console": "1.1.0",
@@ -52,6 +52,7 @@
         "cordova-plugin-x-socialsharing": "5.2.1",
         "cordova-windows": "^5.0.0",
         "css-animator": "^2.1.1",
+        "es6-promise-plugin": "^4.1.1",
         "firebase": "^4.6.0",
         "io": "^0.1.10",
         "ionic-angular": "3.8.0",
@@ -66,7 +67,7 @@
         "zone.js": "0.8.18"
     },
     "devDependencies": {
-        "@ionic/app-scripts": "3.0.1",
+        "@ionic/app-scripts": "^3.0.1",
         "ajv": "5.0.0",
         "ionic": "3.15.2",
         "typescript": "2.3.4"
@@ -107,7 +108,8 @@
             "cordova-plugin-x-socialsharing": {},
             "cordova-plugin-crosswalk-webview": {},
             "cordova-plugin-ios-no-export-compliance": {},
-            "branch-cordova-sdk": {}
+            "branch-cordova-sdk": {},
+            "es6-promise-plugin": {}
         },
         "platforms": [
             "android",
