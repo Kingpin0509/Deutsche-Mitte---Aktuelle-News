@@ -71,8 +71,6 @@
         </dict>
       </dict>
     </dict>
-    <key>UILaunchStoryboardName</key>
-    <string>CDVLaunchScreen</string>
     <key>CFBundleURLTypes</key>
     <array>
       <dict>
@@ -111,5 +109,7 @@
     </array>
     <key>ITSAppUsesNonExemptEncryption</key>
     <false/>
+    <key>UILaunchStoryboardName</key>
+    <string>CDVLaunchScreen</string>
   </dict>
 </plist>
