@@ -9,22 +9,6 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-plugin-console.console",
-    "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
-    "pluginId": "cordova-plugin-console",
-    "clobbers": [
-      "console"
-    ]
-  },
-  {
-    "id": "cordova-plugin-console.logger",
-    "file": "plugins/cordova-plugin-console/www/logger.js",
-    "pluginId": "cordova-plugin-console",
-    "clobbers": [
-      "cordova.logger"
-    ]
-  },
-  {
     "id": "cordova-plugin-device.device",
     "file": "plugins/cordova-plugin-device/www/device.js",
     "pluginId": "cordova-plugin-device",
@@ -84,7 +68,6 @@ module.exports.metadata =
 // TOP OF METADATA
 {
   "branch-cordova-sdk": "2.6.15",
-  "cordova-plugin-console": "1.0.5",
   "cordova-plugin-crosswalk-webview": "2.3.0",
   "cordova-plugin-device": "1.1.4",
   "cordova-plugin-facebook4": "1.7.1",

@@ -10,9 +10,6 @@
         "branch-cordova-sdk": {
             "PACKAGE_NAME": "de.dm.news"
         },
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "de.dm.news"
-        },
         "cordova-plugin-crosswalk-webview": {
             "XWALK_VERSION": "23+",
             "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",

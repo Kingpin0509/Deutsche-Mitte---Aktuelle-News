@@ -68,7 +68,6 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "branch-cordova-sdk": "2.6.15",
-    "cordova-plugin-console": "1.0.5",
     "cordova-plugin-crosswalk-webview": "2.3.0",
     "cordova-plugin-device": "1.1.4",
     "cordova-plugin-facebook4": "1.7.1",

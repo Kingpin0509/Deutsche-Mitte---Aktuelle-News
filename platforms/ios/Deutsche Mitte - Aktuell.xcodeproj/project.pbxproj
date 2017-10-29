@@ -72,7 +72,6 @@
 		7D83E3E2620A4F15973767F4 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD060CE222D402C85D7DBD1 /* SafariServices.framework */; };
 		9A3CD45F72E141ED8C24AB1B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D538ADE49B684BAA9FF30A3A /* AdSupport.framework */; };
 		4145C59D57134C5FAB196FF4 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C1A06F6834427196D31A06 /* CoreSpotlight.framework */; };
-		07399E1904B8484A8799D7B7 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD8592FB9014FECB54C1289 /* CDVLogger.m */; };
 		4F14AF9383AA40F6BA1358FF /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F182C5283040A68DF307EC /* CDVDevice.m */; };
 		A31BC1035AE240CD929FED49 /* FacebookConnectPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5E5FCC41914905A32EFDC8 /* FacebookConnectPlugin.m */; };
 		45C3E410A85B41EBA8E5175C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21A01793C2942FC954EE1CE /* Bolts.framework */; };
@@ -246,8 +245,6 @@
 		1BD060CE222D402C85D7DBD1 /* SafariServices.framework */ = {isa = PBXFileReference; name = "SafariServices.framework"; path = "System/Library/Frameworks/SafariServices.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		D538ADE49B684BAA9FF30A3A /* AdSupport.framework */ = {isa = PBXFileReference; name = "AdSupport.framework"; path = "System/Library/Frameworks/AdSupport.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		13C1A06F6834427196D31A06 /* CoreSpotlight.framework */ = {isa = PBXFileReference; name = "CoreSpotlight.framework"; path = "System/Library/Frameworks/CoreSpotlight.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		2BD8592FB9014FECB54C1289 /* CDVLogger.m */ = {isa = PBXFileReference; name = "CDVLogger.m"; path = "cordova-plugin-console/CDVLogger.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		CC2686A6D5574D54B6A7D58A /* CDVLogger.h */ = {isa = PBXFileReference; name = "CDVLogger.h"; path = "cordova-plugin-console/CDVLogger.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		D2F182C5283040A68DF307EC /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		129A41D91D3B4395B39E1934 /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		FC5E5FCC41914905A32EFDC8 /* FacebookConnectPlugin.m */ = {isa = PBXFileReference; name = "FacebookConnectPlugin.m"; path = "cordova-plugin-facebook4/FacebookConnectPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
@@ -509,8 +506,6 @@
 				BC58158BDDFB4396982CE748 /* BranchShortUrlSyncRequest.h */,
 				6860906F397C40F2ACF9FAA2 /* BranchSpotlightUrlRequest.h */,
 				CC1E6ADA0CDB4A06BE8FF328 /* BranchUserCompletedActionRequest.h */,
-				2BD8592FB9014FECB54C1289 /* CDVLogger.m */,
-				CC2686A6D5574D54B6A7D58A /* CDVLogger.h */,
 				D2F182C5283040A68DF307EC /* CDVDevice.m */,
 				129A41D91D3B4395B39E1934 /* CDVDevice.h */,
 				FC5E5FCC41914905A32EFDC8 /* FacebookConnectPlugin.m */,
@@ -692,7 +687,6 @@
 				16A6463D76654AD494F4117A /* BranchShortUrlSyncRequest.m in Sources */,
 				5FE4749CF64847B283C6241A /* BranchSpotlightUrlRequest.m in Sources */,
 				B34E9F5E1C6A4F9CB0C4DF81 /* BranchUserCompletedActionRequest.m in Sources */,
-				07399E1904B8484A8799D7B7 /* CDVLogger.m in Sources */,
 				4F14AF9383AA40F6BA1358FF /* CDVDevice.m in Sources */,
 				A31BC1035AE240CD929FED49 /* FacebookConnectPlugin.m in Sources */,
 				C63115FF2103488798537F2E /* CDVInAppBrowser.m in Sources */,

@@ -10,9 +10,6 @@
         "branch-cordova-sdk": {
             "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
         },
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
-        },
         "cordova-plugin-crosswalk-webview": {
             "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
         },

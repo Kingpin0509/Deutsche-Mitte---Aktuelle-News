@@ -40,7 +40,6 @@
         "cordova-android": "^6.3.0",
         "cordova-ios": "^4.5.2",
         "cordova-ios-plugin-no-export-compliance": "0.0.5",
-        "cordova-plugin-console": "1.1.0",
         "cordova-plugin-crosswalk-webview": "~2.3.0",
         "cordova-plugin-device": "1.1.6",
         "cordova-plugin-facebook4": "1.9.1",
@@ -95,7 +94,6 @@
     "description": "Ionic Framework App",
     "cordova": {
         "plugins": {
-            "cordova-plugin-console": {},
             "cordova-plugin-device": {},
             "cordova-plugin-facebook4": {
                 "APP_ID": "131001554119757",

@@ -111,7 +111,6 @@
     <engine name="ios" spec="^4.5.2" />
     <engine name="windows" spec="^5.0.0" />
     <plugin name="branch-cordova-sdk" spec="^2.6.15" />
-    <plugin name="cordova-plugin-console" spec="1.1.0" />
     <plugin name="cordova-plugin-crosswalk-webview" spec="~2.3.0" />
     <plugin name="cordova-plugin-device" spec="1.1.6" />
     <plugin name="cordova-plugin-facebook4" spec="1.9.1">
