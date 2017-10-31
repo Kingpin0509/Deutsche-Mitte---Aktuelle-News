@@ -512,31 +512,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var SlidesComponent = (function () {
-    function SlidesComponent(nav, menu, storage) {
+    function SlidesComponent(nav, menu, alertCtrl, storage) {
         this.nav = nav;
         this.menu = menu;
+        this.alertCtrl = alertCtrl;
         this.storage = storage;
         this.showSkip = true;
-        this.slides = [
-            {
-                title: "Zum Kennenlernen",
-                description: "Schauen sie gern in unseren online Stammtisch vorbei. Oder kommen sie persönlich zu unseren Stammtischtreffen in jeder größeren Stadt",
-                description1: "www.dm-stammtisch.de",
-                image: "assets/img/ica-slidebox-img-4.png"
-            },
-            {
-                title: "SCHREIBEN SIE MIT UNS GESCHICHTE!!!",
-                description: "Sind Sie Zuschauer - oder Teil der notwendigen und überfälligen Veränderung?",
-                description1: "",
-                image: "assets/img/ica-slidebox-img-3.png"
-            },
-            {
-                title: "Wir haben nur diese eine Chance",
-                description: "Machen Sie mit !",
-                description1: "Kommen Sie in die Deutsche Mitte",
-                image: "assets/img/ica-slidebox-img-7.png"
-            }
-        ];
     }
     SlidesComponent.prototype.openPage = function () {
         var _this = this;
@@ -544,13 +525,40 @@ var SlidesComponent = (function () {
             _this.storage.set("hasSeenTutorial", "true");
         });
     };
+    SlidesComponent.prototype.showConfirm = function () {
+        var _this = this;
+        var confirm = this.alertCtrl.create({
+            title: "Intro ausblenden?",
+            message: "Kann unter Einstellungen erneut aktiviert werden.",
+            buttons: [
+                {
+                    text: "Erneut anzeigen",
+                    handler: function () {
+                        _this.nav.setRoot(__WEBPACK_IMPORTED_MODULE_2__tabs_tabs_component_tabs_component__["a" /* TabsComponent */]);
+                        console.log("Disagree clicked");
+                    }
+                },
+                {
+                    text: "Weiter",
+                    handler: function () {
+                        _this.nav.setRoot(__WEBPACK_IMPORTED_MODULE_2__tabs_tabs_component_tabs_component__["a" /* TabsComponent */]).then(function () {
+                            _this.storage.set("hasSeenTutorial", "true");
+                            console.log("Agree clicked");
+                        });
+                    }
+                }
+            ]
+        });
+        confirm.present();
+    };
     return SlidesComponent;
 }());
 SlidesComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\slides\slides-component\slides.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="bounce-top">Wilkommen</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content class="tutorial-page">\n  <ion-slides pager>\n    <ion-slide>\n      <ion-toolbar>\n        <ion-buttons end>\n          <button ion-button (tap)=openPage()><b>Überspringen</b></button>\n        </ion-buttons>\n      </ion-toolbar>\n      <div class="slide-in-blurred-top">\n        <img src="assets/img/slidebox-img-1o.png" class="slide-image" />\n      </div>\n      <div class="scale-up-hor-center">\n        <img src="assets/img/slidebox-img-1u.png" class="slide-image" />\n      </div>\n      <h2 class="slide-title tracking-in-contract">Herzlich<br>Willkommen</h2>\n      <p class="tracking-in-contract"> Diese App stellt ihnen stets<br>aktuelle Informationen bereit, über die</p>\n      <h3 class="tracking-in-contract">-Deutsche Mitte-</h3>\n    </ion-slide>\n    <ion-slide *ngFor="let slide of slides">\n      <ion-toolbar>\n        <ion-buttons end>\n          <button ion-button (tap)=openPage()><b>Überspringen</b></button>\n        </ion-buttons>\n      </ion-toolbar>\n      <img [src]="slide.image" class="slide-image " />\n      <h2 class="slide-title" [innerHTML]="slide.title"></h2>\n      <p [innerHTML]="slide.description"></p>\n      <p [innerHTML]="slide.description1"></p>\n    </ion-slide>\n    <ion-slide>\n      <img src="assets/img/ica-slidebox-img-5.png" class="slide-image" />\n      <h2 class="slide-title">Alles klar?</h2>\n      <p>Wir haben nur diese eine Chance! Nutzen wir sie!</p>\n      <button ion-button large clear icon-right (tap)=openPage()>Start\n        <ion-icon name="arrow-forward"></ion-icon>\n      </button>\n    </ion-slide>\n  </ion-slides>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\slides\slides-component\slides.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\slides\slides-component\slides.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="bounce-top">Wilkommen</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content class="tutorial-page">\n  <ion-slides pager="true" zoom="true" paginationType="progress" effect="slide">\n\n    <ion-slide>\n      <ion-toolbar>\n        <ion-buttons end>\n          <button ion-button block color="dark" (click)="showConfirm()">Überspringen</button>\n        </ion-buttons>\n      </ion-toolbar>\n      <div class="slide-in-blurred-top">\n        <img src="assets/img/slidebox-img-1o.png" class="slide-image" />\n      </div>\n      <div class="scale-up-hor-center">\n        <img src="assets/img/slidebox-img-1u.png" class="slide-image" />\n      </div>\n      <h2 class="slide-title tracking-in-contract">Herzlich Willkommen</h2>\n      <p class="tracking-in-contract">Die Deutsche Mitte und deren Ziele sind mehr als eine politische Partei. Es ist eine Bewegung von Menschen für Menschen,\n        die Missstände beseitigen und die Welt zu einer besseren machen wollen. Ethik wird hier als oberstes Gebot gefordert.</p>\n      <h3 class="tracking-in-contract">-DEUTSCHE MITTE-</h3>\n    </ion-slide>\n\n    <ion-slide>\n      <ion-toolbar>\n        <ion-buttons end>\n          <button ion-button block color="dark" (click)="showConfirm()">Überspringen</button>\n        </ion-buttons>\n      </ion-toolbar>\n      <div class="slide-in-blurred-top">\n        <img src="assets/img/ica-slidebox-img-3.png" class="slide-image" />\n      </div>\n      <h2 class="slide-title tracking-in-contract">Das Mäuseloch ist ein sehr beliebter Ort.</h2>\n      <p class="tracking-in-contract">Dort tummelt sich gut und gern die breite Masse.</p>\n      <h3 class="tracking-in-contract">Kommt raus aus dem Mauseloch, selbstbewusst, und bezieht Stellung!</h3>\n    </ion-slide>\n\n    <ion-slide>\n      <ion-toolbar>\n        <ion-buttons end>\n          <button ion-button block color="dark" (click)="showConfirm()">Überspringen</button>\n        </ion-buttons>\n      </ion-toolbar>\n      <div class="slide-in-blurred-top">\n        <img src="assets/img/slidebox-img-4u.png" class="slide-image" />\n      </div>\n      <!-- <div class="scale-up-hor-center">\n        <img src="assets/img/slidebox-img-4o.png" class="slide-image" />\n      </div> -->\n      <h2 class="slide-title tracking-in-contract">Zum kennenlernen</h2>\n      <p class="tracking-in-contract">Lernen sie uns persönlich bei unseren deutschlandweiten Stammtischtreffen kennen. Oder besuchen sie unseren Online-Stammtisch\n        unter:</p>\n      <h3 class="tracking-in-contract">http://dm-stammtisch.de</h3>\n    </ion-slide>\n\n    <ion-slide>\n      <ion-toolbar>\n        <ion-buttons end>\n          <button ion-button block color="dark" (click)="showConfirm()">Überspringen</button>\n        </ion-buttons>\n      </ion-toolbar>\n      <div class="slide-in-blurred-top">\n        <img src="assets/img/ica-slidebox-img-3.png" class="slide-image" />\n      </div>\n      <h2 class="slide-title tracking-in-contract">Wir haben nur diese eine Chance</h2>\n      <p class="tracking-in-contract">Machen Sie mit !</p>\n      <h3 class="tracking-in-contract">Kommen Sie in die Deutsche Mitte</h3>\n    </ion-slide>\n    <ion-slide>\n      <img src="assets/img/ica-slidebox-img-5.png" class="slide-image" />\n      <h2 class="slide-title">Alles klar?</h2>\n      <p>Dann lassen sie uns gemeinsam starten. Wir haben nur noch diese eine Chance! Nutzen wir sie, jetzt!</p>\n      <button ion-button large clear icon-right (click)="showConfirm()"><h3 class="tracking-in-contract">Start\n        <ion-icon name="arrow-forward"></ion-icon></h3>\n      </button>\n    </ion-slide>\n  </ion-slides>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\slides\slides-component\slides.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* MenuController */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
         __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */]])
 ], SlidesComponent);
 

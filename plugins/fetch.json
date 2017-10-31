@@ -7,14 +7,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-statusbar": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-statusbar@2.2.3"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-device": {
         "source": {
             "type": "registry",
@@ -26,7 +18,7 @@
     "cordova-plugin-splashscreen": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-splashscreen@~4.0.3"
+            "id": "https://github.com/apache/cordova-plugin-splashscreen.git"
         },
         "is_top_level": true,
         "variables": {}
@@ -94,6 +86,14 @@
         "source": {
             "type": "registry",
             "id": "es6-promise-plugin@^4.1.1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-statusbar": {
+        "source": {
+            "type": "registry",
+            "id": "https://github.com/apache/cordova-plugin-statusbar.git"
         },
         "is_top_level": true,
         "variables": {}

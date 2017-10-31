@@ -27185,6 +27185,18 @@ i {
   font-weight: 500;
 }
 
+.tutorial-page h2 {
+  margin: auto;
+  max-width: 90%;
+  padding: 5px 5px;
+}
+
+.tutorial-page h3 {
+  margin: auto;
+  max-width: 90%;
+  padding: 5px 5px;
+}
+
 .tutorial-page p {
   margin: auto;
   max-width: 80%;

@@ -35,9 +35,6 @@
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "de.dm.news"
         },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "de.dm.news"
-        },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "de.dm.news"
         },
@@ -45,6 +42,9 @@
             "PACKAGE_NAME": "de.dm.news"
         },
         "es6-promise-plugin": {
+            "PACKAGE_NAME": "de.dm.news"
+        },
+        "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "de.dm.news"
         }
     },

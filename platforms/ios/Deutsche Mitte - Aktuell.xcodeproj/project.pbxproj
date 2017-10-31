@@ -81,12 +81,12 @@
 		C63115FF2103488798537F2E /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE9DABEF4C048B1A30EFAE3 /* CDVInAppBrowser.m */; };
 		BE7109041743400B86B56EC3 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8BDE86A1454841B0F4DE2D /* CDVSplashScreen.m */; };
 		593D2F82CCE041A7BAAE3B35 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 3297C0A593814A62B773C51A /* CDVViewController+SplashScreen.m */; };
-		B723A29D3895482FB6247E51 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A2EBD421644E54A4A4A3CE /* CDVStatusBar.m */; };
 		29DE0AB55C0D493EBAF32F8C /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE27F5DF4E47FB86A60C12 /* NSString+URLEncoding.m */; };
 		08777DCE77304FDD8BFB92F1 /* SocialSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D2B499BEE0456EA2EE57C3 /* SocialSharing.m */; };
 		325E2E36EE144A598B6BF46F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14AA27060F24E49A7B00A8F /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9D7BDB5693534C4A8AF63DA2 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35C5D9CCA45464683A83606 /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		42A9C5155F354AE38691980F /* Deutsche Mitte - Aktuell.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 440A5653AC7B43D8B9E86770 /* Deutsche Mitte - Aktuell.entitlements */; };
+		27B44CD0C9564D4499C62996 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 494D5B91C4584817845CF900 /* CDVStatusBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -259,8 +259,6 @@
 		3297C0A593814A62B773C51A /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		304947AF0FA54FDEBE71DEE2 /* CDVSplashScreen.h */ = {isa = PBXFileReference; name = "CDVSplashScreen.h"; path = "cordova-plugin-splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		9EFB8A4BF10540A081F341A8 /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		E5A2EBD421644E54A4A4A3CE /* CDVStatusBar.m */ = {isa = PBXFileReference; name = "CDVStatusBar.m"; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		A482B802737F460991796114 /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		41FE27F5DF4E47FB86A60C12 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; name = "NSString+URLEncoding.m"; path = "cordova-plugin-x-socialsharing/NSString+URLEncoding.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		F4D2B499BEE0456EA2EE57C3 /* SocialSharing.m */ = {isa = PBXFileReference; name = "SocialSharing.m"; path = "cordova-plugin-x-socialsharing/SocialSharing.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		E2B9640968BB483D96EBBCC4 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; name = "NSString+URLEncoding.h"; path = "cordova-plugin-x-socialsharing/NSString+URLEncoding.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
@@ -268,6 +266,8 @@
 		E14AA27060F24E49A7B00A8F /* Social.framework */ = {isa = PBXFileReference; name = "Social.framework"; path = "System/Library/Frameworks/Social.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		A35C5D9CCA45464683A83606 /* MessageUI.framework */ = {isa = PBXFileReference; name = "MessageUI.framework"; path = "System/Library/Frameworks/MessageUI.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		440A5653AC7B43D8B9E86770 /* Deutsche Mitte - Aktuell.entitlements */ = {isa = PBXFileReference; name = "Deutsche Mitte - Aktuell.entitlements"; path = "Deutsche Mitte - Aktuell.entitlements"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		494D5B91C4584817845CF900 /* CDVStatusBar.m */ = {isa = PBXFileReference; name = "CDVStatusBar.m"; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		0CC4D14F4B064661AB79D692 /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -516,12 +516,12 @@
 				3297C0A593814A62B773C51A /* CDVViewController+SplashScreen.m */,
 				304947AF0FA54FDEBE71DEE2 /* CDVSplashScreen.h */,
 				9EFB8A4BF10540A081F341A8 /* CDVViewController+SplashScreen.h */,
-				E5A2EBD421644E54A4A4A3CE /* CDVStatusBar.m */,
-				A482B802737F460991796114 /* CDVStatusBar.h */,
 				41FE27F5DF4E47FB86A60C12 /* NSString+URLEncoding.m */,
 				F4D2B499BEE0456EA2EE57C3 /* SocialSharing.m */,
 				E2B9640968BB483D96EBBCC4 /* NSString+URLEncoding.h */,
 				77FA58C8F260426F81A62C12 /* SocialSharing.h */,
+				494D5B91C4584817845CF900 /* CDVStatusBar.m */,
+				0CC4D14F4B064661AB79D692 /* CDVStatusBar.h */,
 			);
 			name = Plugins;
 			path = "Deutsche Mitte - Aktuell/Plugins";
@@ -692,9 +692,9 @@
 				C63115FF2103488798537F2E /* CDVInAppBrowser.m in Sources */,
 				BE7109041743400B86B56EC3 /* CDVSplashScreen.m in Sources */,
 				593D2F82CCE041A7BAAE3B35 /* CDVViewController+SplashScreen.m in Sources */,
-				B723A29D3895482FB6247E51 /* CDVStatusBar.m in Sources */,
 				29DE0AB55C0D493EBAF32F8C /* NSString+URLEncoding.m in Sources */,
 				08777DCE77304FDD8BFB92F1 /* SocialSharing.m in Sources */,
+				27B44CD0C9564D4499C62996 /* CDVStatusBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

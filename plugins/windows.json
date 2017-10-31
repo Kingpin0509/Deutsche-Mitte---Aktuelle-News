@@ -30,9 +30,6 @@
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
         },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
-        },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
         },
@@ -40,6 +37,9 @@
             "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
         },
         "es6-promise-plugin": {
+            "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
+        },
+        "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
         }
     },

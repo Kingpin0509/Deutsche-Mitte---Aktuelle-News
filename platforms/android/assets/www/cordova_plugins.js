@@ -42,14 +42,6 @@ module.exports = [
         ]
     },
     {
-        "id": "cordova-plugin-statusbar.statusbar",
-        "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
-        "pluginId": "cordova-plugin-statusbar",
-        "clobbers": [
-            "window.StatusBar"
-        ]
-    },
-    {
         "id": "cordova-plugin-x-socialsharing.SocialSharing",
         "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
         "pluginId": "cordova-plugin-x-socialsharing",
@@ -62,6 +54,14 @@ module.exports = [
         "file": "plugins/es6-promise-plugin/www/promise.js",
         "pluginId": "es6-promise-plugin",
         "runs": true
+    },
+    {
+        "id": "cordova-plugin-statusbar.statusbar",
+        "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+        "pluginId": "cordova-plugin-statusbar",
+        "clobbers": [
+            "window.StatusBar"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -74,10 +74,10 @@ module.exports.metadata =
     "cordova-plugin-inappbrowser": "1.6.1",
     "cordova-plugin-ios-no-export-compliance": "0.0.2",
     "cordova-plugin-splashscreen": "4.0.3",
-    "cordova-plugin-statusbar": "2.2.1",
     "cordova-plugin-whitelist": "1.3.1",
     "cordova-plugin-x-socialsharing": "5.1.5",
-    "es6-promise-plugin": "4.1.0"
+    "es6-promise-plugin": "4.1.0",
+    "cordova-plugin-statusbar": "2.2.4-dev"
 };
 // BOTTOM OF METADATA
 });
