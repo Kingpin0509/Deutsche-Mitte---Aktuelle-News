@@ -21,16 +21,9 @@ export class SlidesComponent {
   }
   showConfirm() {
     let confirm = this.alertCtrl.create({
-      title: "Intro ausblenden?",
-      message: "Kann unter Einstellungen erneut aktiviert werden.",
+      title: "Intro erneut anzeigen",
+      message: "Das Intro wird beim nächsten Start ausgeblendet. Unter Einstellungen kann es erneut aktiviert werden.",
       buttons: [
-        {
-          text: "Erneut anzeigen",
-          handler: () => {
-            this.nav.setRoot(TabsComponent);
-            console.log("Disagree clicked");
-          }
-        },
         {
           text: "Weiter",
           handler: () => {
