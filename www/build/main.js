@@ -528,16 +528,9 @@ var SlidesComponent = (function () {
     SlidesComponent.prototype.showConfirm = function () {
         var _this = this;
         var confirm = this.alertCtrl.create({
-            title: "Intro ausblenden?",
-            message: "Kann unter Einstellungen erneut aktiviert werden.",
+            title: "Intro erneut anzeigen",
+            message: "Das Intro wird beim nächsten Start ausgeblendet. Unter Einstellungen kann es erneut aktiviert werden.",
             buttons: [
-                {
-                    text: "Erneut anzeigen",
-                    handler: function () {
-                        _this.nav.setRoot(__WEBPACK_IMPORTED_MODULE_2__tabs_tabs_component_tabs_component__["a" /* TabsComponent */]);
-                        console.log("Disagree clicked");
-                    }
-                },
                 {
                     text: "Weiter",
                     handler: function () {
@@ -3553,8 +3546,8 @@ var MyApp = (function () {
         //});
         this.platform.ready().then(function () {
             _this.statusBar.overlaysWebView(false);
-            _this.statusBar.backgroundColorByHexString("#005397");
             _this.statusBar.styleBlackTranslucent();
+            _this.statusBar.backgroundColorByHexString("#005397");
             _this.platform.resume.subscribe(function () {
                 handleBranch();
             });
