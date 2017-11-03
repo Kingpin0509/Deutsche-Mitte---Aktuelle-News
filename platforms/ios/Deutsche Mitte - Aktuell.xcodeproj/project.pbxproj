@@ -87,6 +87,7 @@
 		9D7BDB5693534C4A8AF63DA2 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35C5D9CCA45464683A83606 /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		42A9C5155F354AE38691980F /* Deutsche Mitte - Aktuell.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 440A5653AC7B43D8B9E86770 /* Deutsche Mitte - Aktuell.entitlements */; };
 		27B44CD0C9564D4499C62996 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 494D5B91C4584817845CF900 /* CDVStatusBar.m */; };
+		6283512C1B964667B56220BF /* AppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD511E945C0466AAE2697BD /* AppVersion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -268,6 +269,8 @@
 		440A5653AC7B43D8B9E86770 /* Deutsche Mitte - Aktuell.entitlements */ = {isa = PBXFileReference; name = "Deutsche Mitte - Aktuell.entitlements"; path = "Deutsche Mitte - Aktuell.entitlements"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		494D5B91C4584817845CF900 /* CDVStatusBar.m */ = {isa = PBXFileReference; name = "CDVStatusBar.m"; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		0CC4D14F4B064661AB79D692 /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6FD511E945C0466AAE2697BD /* AppVersion.m */ = {isa = PBXFileReference; name = "AppVersion.m"; path = "cordova-plugin-app-version/AppVersion.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		A9CB9980F25D4AB5888BFD04 /* AppVersion.h */ = {isa = PBXFileReference; name = "AppVersion.h"; path = "cordova-plugin-app-version/AppVersion.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -522,6 +525,8 @@
 				77FA58C8F260426F81A62C12 /* SocialSharing.h */,
 				494D5B91C4584817845CF900 /* CDVStatusBar.m */,
 				0CC4D14F4B064661AB79D692 /* CDVStatusBar.h */,
+				6FD511E945C0466AAE2697BD /* AppVersion.m */,
+				A9CB9980F25D4AB5888BFD04 /* AppVersion.h */,
 			);
 			name = Plugins;
 			path = "Deutsche Mitte - Aktuell/Plugins";
@@ -695,6 +700,7 @@
 				29DE0AB55C0D493EBAF32F8C /* NSString+URLEncoding.m in Sources */,
 				08777DCE77304FDD8BFB92F1 /* SocialSharing.m in Sources */,
 				27B44CD0C9564D4499C62996 /* CDVStatusBar.m in Sources */,
+				6283512C1B964667B56220BF /* AppVersion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

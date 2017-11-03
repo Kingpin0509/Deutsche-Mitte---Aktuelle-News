@@ -28,7 +28,11 @@
       <ion-checkbox (tap)=toogleSeenTutorial() [(ngModel)]="checkbox"></ion-checkbox>
       <ion-label>Einführung erneut Aktivieren</ion-label>
     </ion-item>
-<!--     <button (tap)="pushPageFirebase(page)">
+    <button ion-button (click)="getVersionNumber()">
+      Get Version Number{{versionNumber}}
+    </button>
+    <ion-note></ion-note>
+    <!--     <button (tap)="pushPageFirebase(page)">
       <ion-icon margin name="pin"></ion-icon>
       <h4 color="primary">{{'LOGIN' | translate}}</h4>
     </button> -->

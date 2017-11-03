@@ -4,7 +4,6 @@ import { AnimationService } from "css-animator";
 import { MyApp } from "./app.component";
 import { SharedModule } from "./shared/shared.module";
 import { Data } from "../providers/data";
-
 // Module Example: App Module
 import { SlidesModule } from "../pages/slides/slides.module";
 import { HomeModule } from "../pages/home/home.module";
@@ -66,7 +65,6 @@ import { FirebaseModule } from "../pages/firebase/firebase.module";
   ],
   bootstrap: [IonicApp],
   entryComponents: [MyApp],
-
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     Data,

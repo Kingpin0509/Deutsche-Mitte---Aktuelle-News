@@ -98,6 +98,22 @@ module.exports = [
         "file": "plugins/cordova-plugin-statusbar/src/windows/StatusBarProxy.js",
         "pluginId": "cordova-plugin-statusbar",
         "runs": true
+    },
+    {
+        "id": "cordova-plugin-app-version.AppVersionPlugin",
+        "file": "plugins/cordova-plugin-app-version/www/AppVersionPlugin.js",
+        "pluginId": "cordova-plugin-app-version",
+        "clobbers": [
+            "cordova.getAppVersion"
+        ]
+    },
+    {
+        "id": "cordova-plugin-app-version.AppVersionProxy",
+        "file": "plugins/cordova-plugin-app-version/src/windows/AppVersionProxy.js",
+        "pluginId": "cordova-plugin-app-version",
+        "merges": [
+            ""
+        ]
     }
 ];
 module.exports.metadata = 
@@ -113,7 +129,8 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.3.1",
     "cordova-plugin-x-socialsharing": "5.1.5",
     "es6-promise-plugin": "4.1.0",
-    "cordova-plugin-statusbar": "2.2.4-dev"
+    "cordova-plugin-statusbar": "2.2.4-dev",
+    "cordova-plugin-app-version": "0.1.9"
 };
 // BOTTOM OF METADATA
 });
