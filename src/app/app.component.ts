@@ -194,8 +194,8 @@ export class MyApp {
     //});
     this.platform.ready().then(() => {
       this.statusBar.overlaysWebView(false);
-      this.statusBar.backgroundColorByHexString("#005397");
       this.statusBar.styleBlackTranslucent();
+      this.statusBar.backgroundColorByHexString("#005397");
       this.platform.resume.subscribe(() => {
         handleBranch();
       });
