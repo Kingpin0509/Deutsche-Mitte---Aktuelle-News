@@ -104,7 +104,7 @@
     <branch-config>
         <branch-key value="key_live_ogDHudC7Hg1rTOzAo0wW9ciaDAjffY0l" />
         <uri-scheme value="dmaktuell" />
-        <link-domain value="bik3.app.link" />
+        <link-domain value="dmaktuell.app.link" />
         <ios-team-release value="1241722675" />
     </branch-config>
     <engine name="android" spec="^6.3.0" />
@@ -121,7 +121,7 @@
     <plugin name="cordova-plugin-x-socialsharing" spec="5.2.1" />
     <plugin name="cordova-plugin-crosswalk-webview" spec="~2.3.0" />
     <plugin name="cordova-plugin-ios-no-export-compliance" spec="0.0.1-security" />
-    <plugin name="branch-cordova-sdk" spec="^2.6.15" />
+    <plugin name="branch-cordova-sdk" spec="2.6.16" />
     <plugin name="es6-promise-plugin" spec="^4.1.1" />
     <plugin name="cordova-plugin-statusbar" spec="git+https://github.com/apache/cordova-plugin-statusbar.git" />
     <plugin name="cordova-plugin-app-version" spec="^0.1.9" />

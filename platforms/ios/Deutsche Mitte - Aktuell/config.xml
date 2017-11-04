@@ -72,7 +72,7 @@
     <branch-config>
         <branch-key value="key_live_ogDHudC7Hg1rTOzAo0wW9ciaDAjffY0l" />
         <uri-scheme value="dmaktuell" />
-        <link-domain value="bik3.app.link" />
+        <link-domain value="dmaktuell.app.link" />
         <ios-team-release value="1241722675" />
     </branch-config>
     <allow-intent href="itms:*" />
