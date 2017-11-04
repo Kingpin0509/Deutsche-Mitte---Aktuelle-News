@@ -754,7 +754,7 @@
 					"\"Deutsche Mitte - Aktuell/Plugins/cordova-plugin-facebook4\"",
 				);
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_ENTITLEMENTS = "C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\platforms\ios\Deutsche Mitte - Aktuell\Resources\Deutsche Mitte - Aktuell.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Deutsche Mitte - Aktuell\Resources\Deutsche Mitte - Aktuell.entitlements";
 			};
 			name = Debug;
 		};
@@ -785,7 +785,7 @@
 					"\"Deutsche Mitte - Aktuell/Plugins/cordova-plugin-facebook4\"",
 				);
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_ENTITLEMENTS = "C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\platforms\ios\Deutsche Mitte - Aktuell\Resources\Deutsche Mitte - Aktuell.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Deutsche Mitte - Aktuell\Resources\Deutsche Mitte - Aktuell.entitlements";
 			};
 			name = Release;
 		};
@@ -813,7 +813,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_ENTITLEMENTS = "C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\platforms\ios\Deutsche Mitte - Aktuell\Resources\Deutsche Mitte - Aktuell.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Deutsche Mitte - Aktuell\Resources\Deutsche Mitte - Aktuell.entitlements";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
@@ -841,7 +841,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_ENTITLEMENTS = "C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\platforms\ios\Deutsche Mitte - Aktuell\Resources\Deutsche Mitte - Aktuell.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Deutsche Mitte - Aktuell\Resources\Deutsche Mitte - Aktuell.entitlements";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;

@@ -26442,28 +26442,28 @@ ion-card-content {
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
-  65% {
+  45% {
     -webkit-transform: translate3d(0, -12px, 0);
     transform: translate3d(0, -12px, 0);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
-  82% {
+  62% {
     -webkit-transform: translate3d(0, -6px, 0);
     transform: translate3d(0, -6px, 0);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
-  93% {
+  90% {
     -webkit-transform: translate3d(0, -4px, 0);
     transform: translate3d(0, -4px, 0);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
-  25%,
+  35%,
   55%,
-  75%,
-  87% {
+  70%,
+  88% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     -webkit-animation-timing-function: ease-out;
@@ -26507,16 +26507,16 @@ ion-card-content {
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
-  93% {
+  90% {
     -webkit-transform: translate3d(0, -4px, 0);
     transform: translate3d(0, -4px, 0);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
-  25%,
-  55%,
+  35%,
+  65%,
   75%,
-  87% {
+  88% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     -webkit-animation-timing-function: ease-out;

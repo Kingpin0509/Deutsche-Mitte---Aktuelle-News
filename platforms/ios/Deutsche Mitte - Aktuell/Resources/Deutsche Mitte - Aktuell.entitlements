@@ -4,8 +4,7 @@
   <dict>
     <key>com.apple.developer.associated-domains</key>
     <array>
-      <string>applinks:bik3.app.link</string>
-      <string>applinks:bik3-alternate.app.link</string>
+      <string>applinks:deutsche-mitte.de</string>
     </array>
   </dict>
 </plist>

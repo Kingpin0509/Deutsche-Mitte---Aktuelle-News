@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-    <Identity Name="17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino" Publisher="CN=$username$" Version="2.7.5.0" />
+    <Identity Name="17701WestWeedtzeDevelopme.DeutscheMitte-Aktuellino" Publisher="CN=$username$" Version="2.8.0.0" />
     <Properties>
         <DisplayName>Deutsche Mitte - Aktuell (inoffiziell)</DisplayName>
         <PublisherDisplayName>West Weedtze Development - Michael Humann</PublisherDisplayName>
