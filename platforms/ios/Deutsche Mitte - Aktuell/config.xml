@@ -136,4 +136,7 @@
     <feature name="AppVersion">
         <param name="ios-package" value="AppVersion" />
     </feature>
+    <feature name="IonicDeeplinkPlugin">
+        <param name="ios-package" onload="true" value="IonicDeeplinkPlugin" />
+    </feature>
 </widget>

@@ -103,7 +103,7 @@ export class WordpressPostsHome implements OnInit {
 
   loadPost(post) {
     this.navController.push(WordpressPost, {
-      post: post
+      'post': post
     });
   }
 

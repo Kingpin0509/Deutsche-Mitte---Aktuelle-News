@@ -8,6 +8,7 @@ import { StatusBar } from "@ionic-native/status-bar";
 import { SplashScreen } from "@ionic-native/splash-screen";
 import { InAppBrowser } from "@ionic-native/in-app-browser";
 import { SocialSharing } from "@ionic-native/social-sharing";
+import { Deeplinks } from "@ionic-native/deeplinks";
 import { Facebook } from "@ionic-native/facebook";
 //import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 //import { EmailComposer } from '@ionic-native/email-composer';
@@ -50,6 +51,7 @@ export function createTranslateLoader(http: Http) {
     InAppBrowser,
     SocialSharing,
     Facebook,
+    Deeplinks,
     // BarcodeScanner,
     // EmailComposer,
     Config

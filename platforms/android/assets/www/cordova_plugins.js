@@ -70,6 +70,15 @@ module.exports = [
         "clobbers": [
             "cordova.getAppVersion"
         ]
+    },
+    {
+        "id": "ionic-plugin-deeplinks.deeplink",
+        "file": "plugins/ionic-plugin-deeplinks/www/deeplink.js",
+        "pluginId": "ionic-plugin-deeplinks",
+        "clobbers": [
+            "IonicDeeplink"
+        ],
+        "runs": true
     }
 ];
 module.exports.metadata = 
@@ -86,7 +95,8 @@ module.exports.metadata =
     "cordova-plugin-x-socialsharing": "5.1.5",
     "es6-promise-plugin": "4.1.0",
     "cordova-plugin-statusbar": "2.2.4-dev",
-    "cordova-plugin-app-version": "0.1.9"
+    "cordova-plugin-app-version": "0.1.9",
+    "ionic-plugin-deeplinks": "1.0.15"
 };
 // BOTTOM OF METADATA
 });

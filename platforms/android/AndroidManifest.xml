@@ -11,6 +11,22 @@
         <action android:name="android.intent.action.MAIN"/>
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="dmaktuell"/>
+      </intent-filter>
+      <intent-filter android:autoVerify="true">
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:host="deutsche-mitte.de" android:pathPrefix="/" android:scheme="https"/>
+        <data android:host=" " android:pathPrefix="/" android:scheme=" "/>
+        <data android:host=" " android:pathPrefix="/" android:scheme=" "/>
+        <data android:host=" " android:pathPrefix="/" android:scheme=" "/>
+        <data android:host=" " android:pathPrefix="/" android:scheme=" "/>
+      </intent-filter>
       <intent-filter android:name="io.branch.sdk.UriScheme">
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>

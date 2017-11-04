@@ -71,6 +71,10 @@
             {
               "xml": "<feature name=\"AppVersion\"><param name=\"ios-package\" value=\"AppVersion\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"IonicDeeplinkPlugin\"><param name=\"ios-package\" onload=\"true\" value=\"IonicDeeplinkPlugin\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -92,6 +96,10 @@
           "CFBundleURLTypes": [
             {
               "xml": "<array><dict><key>CFBundleURLSchemes</key><array><string>fb131001554119757</string></array></dict></array>",
+              "count": 1
+            },
+            {
+              "xml": "<array><dict><key>CFBundleURLSchemes</key><array><string>dmaktuell</string></array></dict></array>",
               "count": 1
             }
           ],
@@ -160,6 +168,12 @@
       "PACKAGE_NAME": "de.dm.news"
     },
     "cordova-plugin-app-version": {
+      "PACKAGE_NAME": "de.dm.news"
+    },
+    "ionic-plugin-deeplinks": {
+      "URL_SCHEME": "dmaktuell",
+      "DEEPLINK_SCHEME": "https",
+      "DEEPLINK_HOST": "deutsche-mitte.de",
       "PACKAGE_NAME": "de.dm.news"
     }
   },
@@ -235,6 +249,15 @@
       "clobbers": [
         "cordova.getAppVersion"
       ]
+    },
+    {
+      "id": "ionic-plugin-deeplinks.deeplink",
+      "file": "plugins/ionic-plugin-deeplinks/www/deeplink.js",
+      "pluginId": "ionic-plugin-deeplinks",
+      "clobbers": [
+        "IonicDeeplink"
+      ],
+      "runs": true
     }
   ],
   "plugin_metadata": {
@@ -249,6 +272,7 @@
     "cordova-plugin-x-socialsharing": "5.1.5",
     "es6-promise-plugin": "4.1.0",
     "cordova-plugin-statusbar": "2.2.4-dev",
-    "cordova-plugin-app-version": "0.1.9"
+    "cordova-plugin-app-version": "0.1.9",
+    "ionic-plugin-deeplinks": "1.0.15"
   }
 }

@@ -88,6 +88,8 @@
 		42A9C5155F354AE38691980F /* Deutsche Mitte - Aktuell.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 440A5653AC7B43D8B9E86770 /* Deutsche Mitte - Aktuell.entitlements */; };
 		27B44CD0C9564D4499C62996 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 494D5B91C4584817845CF900 /* CDVStatusBar.m */; };
 		6283512C1B964667B56220BF /* AppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD511E945C0466AAE2697BD /* AppVersion.m */; };
+		4ECE4E13820D4D7CA1582CA9 /* AppDelegate+IonicDeeplink.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5A17FC2E2E496AB949677F /* AppDelegate+IonicDeeplink.m */; };
+		54129ED48F16458F9019BF20 /* IonicDeeplinkPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 12167D0AA04B43B88F20662A /* IonicDeeplinkPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -271,6 +273,9 @@
 		0CC4D14F4B064661AB79D692 /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		6FD511E945C0466AAE2697BD /* AppVersion.m */ = {isa = PBXFileReference; name = "AppVersion.m"; path = "cordova-plugin-app-version/AppVersion.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		A9CB9980F25D4AB5888BFD04 /* AppVersion.h */ = {isa = PBXFileReference; name = "AppVersion.h"; path = "cordova-plugin-app-version/AppVersion.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		EA5A17FC2E2E496AB949677F /* AppDelegate+IonicDeeplink.m */ = {isa = PBXFileReference; name = "AppDelegate+IonicDeeplink.m"; path = "ionic-plugin-deeplinks/AppDelegate+IonicDeeplink.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		12167D0AA04B43B88F20662A /* IonicDeeplinkPlugin.m */ = {isa = PBXFileReference; name = "IonicDeeplinkPlugin.m"; path = "ionic-plugin-deeplinks/IonicDeeplinkPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		1F0A080072C745AF9F1A8EE1 /* IonicDeeplinkPlugin.h */ = {isa = PBXFileReference; name = "IonicDeeplinkPlugin.h"; path = "ionic-plugin-deeplinks/IonicDeeplinkPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -527,6 +532,9 @@
 				0CC4D14F4B064661AB79D692 /* CDVStatusBar.h */,
 				6FD511E945C0466AAE2697BD /* AppVersion.m */,
 				A9CB9980F25D4AB5888BFD04 /* AppVersion.h */,
+				EA5A17FC2E2E496AB949677F /* AppDelegate+IonicDeeplink.m */,
+				12167D0AA04B43B88F20662A /* IonicDeeplinkPlugin.m */,
+				1F0A080072C745AF9F1A8EE1 /* IonicDeeplinkPlugin.h */,
 			);
 			name = Plugins;
 			path = "Deutsche Mitte - Aktuell/Plugins";
@@ -701,6 +709,8 @@
 				08777DCE77304FDD8BFB92F1 /* SocialSharing.m in Sources */,
 				27B44CD0C9564D4499C62996 /* CDVStatusBar.m in Sources */,
 				6283512C1B964667B56220BF /* AppVersion.m in Sources */,
+				4ECE4E13820D4D7CA1582CA9 /* AppDelegate+IonicDeeplink.m in Sources */,
+				54129ED48F16458F9019BF20 /* IonicDeeplinkPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -202,3 +202,5 @@ npm uninstall --save -E ionic
 "curies":[{"name":"wp","href":"https:\/\/api.w.org\/{rel}",
 "templated":true}]}
 }
+
+ionic cordova plugin add ionic-plugin-deeplinks --variable URL_SCHEME=dmaktuell --variable DEEPLINK_SCHEME=https --variable DEEPLINK_HOST=deutsche-mitte.de
