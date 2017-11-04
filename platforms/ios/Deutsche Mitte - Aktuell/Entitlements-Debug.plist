@@ -4,8 +4,8 @@
   <dict>
     <key>com.apple.developer.associated-domains</key>
     <array>
-      <string>applinks:bik3.app.link</string>
-      <string>applinks:bik3-alternate.app.link</string>
+      <string>applinks:dmaktuell.app.link</string>
+      <string>applinks:dmaktuell-alternate.app.link</string>
     </array>
   </dict>
 </plist>

@@ -37,8 +37,8 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:host="bik3.app.link" android:scheme="https" />
-                <data android:host="bik3-alternate.link" android:scheme="https" />
+                <data android:host="dmaktuell.app.link" android:scheme="https" />
+                <data android:host="dmaktuell-alternate.link" android:scheme="https" />
             </intent-filter>
         </activity>
         <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:label="@string/fb_app_name" android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
