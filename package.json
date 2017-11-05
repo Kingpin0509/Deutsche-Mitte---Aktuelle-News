@@ -73,8 +73,8 @@
   "devDependencies": {
     "@ionic/app-scripts": "^3.0.1",
     "ajv": "5.0.0",
-    "ionic": "3.16.0",
-    "typescript": "2.3.4"
+    "ionic": "^3.16.0",
+    "typescript": "^2.3.4"
   },
   "cordovaPlugins": [
     "cordova-plugin-whitelist",
