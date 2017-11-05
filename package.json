@@ -22,7 +22,6 @@
     "@angular/http": "4.4.4",
     "@angular/platform-browser": "4.4.4",
     "@angular/platform-browser-dynamic": "4.4.4",
-    "@angular/tsc-wrapped": "4.4.6",
     "@ionic-native/app-version": "4.3.3",
     "@ionic-native/barcode-scanner": "4.3.3",
     "@ionic-native/camera": "4.3.3",
