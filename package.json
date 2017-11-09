@@ -40,6 +40,7 @@
     "branch-cordova-sdk": "^2.6.17",
     "chart.js": "2.7.1",
     "cordova-android": "^6.4.0",
+    "cordova-ios": "4.5.3",
     "cordova-ios-plugin-no-export-compliance": "0.0.5",
     "cordova-plugin-app-version": "0.1.9",
     "cordova-plugin-crosswalk-webview": "2.3.0",
@@ -133,7 +134,8 @@
     },
     "platforms": [
       "android",
-      "windows"
+      "windows",
+      "ios"
     ]
   }
 }
