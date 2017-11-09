@@ -40,7 +40,6 @@
     "branch-cordova-sdk": "^2.6.17",
     "chart.js": "2.7.1",
     "cordova-android": "^6.4.0",
-    "cordova-ios": "4.5.3",
     "cordova-ios-plugin-no-export-compliance": "0.0.5",
     "cordova-plugin-app-version": "0.1.9",
     "cordova-plugin-crosswalk-webview": "2.3.0",
@@ -72,7 +71,7 @@
   "devDependencies": {
     "@ionic/app-scripts": "^3.1.0",
     "ajv": "^5.3.0",
-    "ionic": "^3.17.0",
+    "ionic": "3.18.0",
     "typescript": "2.3.4"
   },
   "cordovaPlugins": [
@@ -134,7 +133,6 @@
     },
     "platforms": [
       "android",
-      "ios",
       "windows"
     ]
   }

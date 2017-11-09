@@ -3987,8 +3987,6 @@ ion-action-sheet {
   border-radius: 13px;
   margin-bottom: 8px;
   background: #f9f9f9;
-  -webkit-overflow-scrolling: touch;
-  -webkit-mask-image: -webkit-radial-gradient(circle, #fff, #000);
 }
 
 .action-sheet-ios .action-sheet-group:first-child {
@@ -4100,11 +4098,6 @@ ion-action-sheet {
   font-weight: bold;
 }
 
-.action-sheet-wp .action-sheet-wrapper {
-  -webkit-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-}
-
 .action-sheet-wp .action-sheet-title {
   text-align: left;
   text-align: start;
@@ -4142,6 +4135,8 @@ ion-action-sheet {
 
 .action-sheet-wp .action-sheet-group:first-child {
   padding-top: 0.8rem;
+  -webkit-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
 }
 
 .action-sheet-wp .action-sheet-group:last-child {
@@ -25603,7 +25598,7 @@ ion-navbar.toolbar {
   }
 }
 
-.ios .tabs .tabbar {
+.ios .tabs:not(.tabs-ios[tabsPlacement=top]) .tabbar {
   padding-bottom: constant(safe-area-inset-bottom);
   padding-bottom: env(safe-area-inset-bottom);
 }
@@ -25683,7 +25678,7 @@ ion-navbar.toolbar {
   }
 }
 
-.md .tabs .tabbar {
+.md .tabs:not(.tabs-ios[tabsPlacement=top]) .tabbar {
   padding-bottom: constant(safe-area-inset-bottom);
   padding-bottom: env(safe-area-inset-bottom);
 }
@@ -25763,7 +25758,7 @@ ion-navbar.toolbar {
   }
 }
 
-.wp .tabs .tabbar {
+.wp .tabs:not(.tabs-ios[tabsPlacement=top]) .tabbar {
   padding-bottom: constant(safe-area-inset-bottom);
   padding-bottom: env(safe-area-inset-bottom);
 }
