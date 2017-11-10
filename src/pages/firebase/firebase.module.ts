@@ -10,7 +10,7 @@ import { FirebaseSignUpComponent } from "./firebase-sign-up/firebase-sign-up.com
 import { FirebaseResetPasswordComponent } from "./firebase-reset-password/firebase-reset-password.component";
 
 var config = {
-  apiKey: "AIzaSyAWCp9T5itKF--J1F09hOdKX0bZPNVz6Gw",
+  apiKey: "AAAAlltUqS8:APA91bFMWKvjP12e-pJZ0uLGQqAINktBvUk1RyzooyQAg6dsMRRwFZMEzK-wBDyEp0-uSo-xQMv_J0OPmyl14gCQ_TPwdSjAHgL2cMBeWKVbqhVXWNmV0-n4c2T-9-jyyps_kG757KjM",
   authDomain: "ionicframeworkapp-bc20a.firebaseapp.com",
   databaseURL: "https://ionicframeworkapp-bc20a.firebaseio.com",
   projectId: "ionicframeworkapp-bc20a",
