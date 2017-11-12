@@ -196,24 +196,24 @@ export class MyApp {
       this.statusBar.overlaysWebView(false);
       this.statusBar.styleBlackTranslucent();
       this.statusBar.backgroundColorByHexString("#005397");
-      this.platform.resume.subscribe(() => {
-        handleBranch();
-      });
-      // Branch initialization
-      const handleBranch = () => {
-        // only on devices
-        if (!this.platform.is("cordova")) {
-          return;
-        }
-        const Branch = window["Branch"];
-        Branch.initSession(data => {
-          if (data["+clicked_branch_link"]) {
-            // read deep link data on click
-            alert("Deep Link Data: " + JSON.stringify(data));
-          }
-        });
-      };
-      handleBranch();
+      // this.platform.resume.subscribe(() => {
+      //   handleBranch();
+      // });
+      // // Branch initialization
+      // const handleBranch = () => {
+      //   // only on devices
+      //   if (!this.platform.is("cordova")) {
+      //     return;
+      //   }
+      //   const Branch = window["Branch"];
+      //   Branch.initSession(data => {
+      //     if (data["+clicked_branch_link"]) {
+      //       // read deep link data on click
+      //       alert("Deep Link Data: " + JSON.stringify(data));
+      //     }
+      //   });
+      // };
+      // handleBranch();
       //      this.statusBar.hide();
       //this.splashScreen.hide();
       // OneSignal Code start:

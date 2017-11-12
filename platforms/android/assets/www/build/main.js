@@ -3558,24 +3558,24 @@ var MyApp = (function () {
             _this.statusBar.overlaysWebView(false);
             _this.statusBar.styleBlackTranslucent();
             _this.statusBar.backgroundColorByHexString("#005397");
-            _this.platform.resume.subscribe(function () {
-                handleBranch();
-            });
-            // Branch initialization
-            var handleBranch = function () {
-                // only on devices
-                if (!_this.platform.is("cordova")) {
-                    return;
-                }
-                var Branch = window["Branch"];
-                Branch.initSession(function (data) {
-                    if (data["+clicked_branch_link"]) {
-                        // read deep link data on click
-                        alert("Deep Link Data: " + JSON.stringify(data));
-                    }
-                });
-            };
-            handleBranch();
+            // this.platform.resume.subscribe(() => {
+            //   handleBranch();
+            // });
+            // // Branch initialization
+            // const handleBranch = () => {
+            //   // only on devices
+            //   if (!this.platform.is("cordova")) {
+            //     return;
+            //   }
+            //   const Branch = window["Branch"];
+            //   Branch.initSession(data => {
+            //     if (data["+clicked_branch_link"]) {
+            //       // read deep link data on click
+            //       alert("Deep Link Data: " + JSON.stringify(data));
+            //     }
+            //   });
+            // };
+            // handleBranch();
             //      this.statusBar.hide();
             //this.splashScreen.hide();
             // OneSignal Code start:
