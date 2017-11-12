@@ -8,7 +8,6 @@ import {
 } from "ionic-angular";
 import { StatusBar } from "@ionic-native/status-bar";
 import { SplashScreen } from "@ionic-native/splash-screen";
-import { Deeplinks } from '@ionic-native/deeplinks';
 import { Storage } from "@ionic/storage";
 import { TranslateService } from "ng2-translate";
 import { Config } from "./app.config";
@@ -80,8 +79,7 @@ export class MyApp {
     private translate: TranslateService,
     private menuController: MenuController,
     private statusBar: StatusBar,
-    private modalCtrl: ModalController,
-    public deeplinks: Deeplinks
+    private modalCtrl: ModalController
   ) {
     this.initializeApp();
     this.storage.get("hasSeenTutorial").then(hasSeenTutorial => {
@@ -200,15 +198,6 @@ export class MyApp {
       this.statusBar.backgroundColorByHexString("#005397");
       this.platform.resume.subscribe(() => {
         handleBranch();
-      });
-      this.deeplinks.routeWithNavController(this.nav, {
-        '/wp-content/uploads/2017/06/DM-10-Thesen-Flyer_A4_2017-06_web.pdf': FuturePoliticsComponent,
-        '/programm': AboutComponent,
-        '/category/aktuelles/:post': WordpressPost
-      }).subscribe((match) => {
-        console.log('Successfully routed', match);
-      }, (nomatch) => {
-        console.log('Unmatched Route', nomatch);
       });
       // Branch initialization
       const handleBranch = () => {

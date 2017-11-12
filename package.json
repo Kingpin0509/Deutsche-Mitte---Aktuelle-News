@@ -26,7 +26,6 @@
     "@ionic-native/barcode-scanner": "4.4.0",
     "@ionic-native/camera": "4.4.0",
     "@ionic-native/core": "4.4.0",
-    "@ionic-native/deeplinks": "4.4.0",
     "@ionic-native/email-composer": "4.4.0",
     "@ionic-native/facebook": "4.4.0",
     "@ionic-native/in-app-browser": "4.4.0",
