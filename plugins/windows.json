@@ -7,9 +7,6 @@
     "files": {}
   },
   "installed_plugins": {
-    "branch-cordova-sdk": {
-      "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
-    },
     "cordova-plugin-crosswalk-webview": {
       "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
     },

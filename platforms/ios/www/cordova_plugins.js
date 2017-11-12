@@ -1,14 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
   {
-    "id": "branch-cordova-sdk.Branch",
-    "file": "plugins/branch-cordova-sdk/src/branch.js",
-    "pluginId": "branch-cordova-sdk",
-    "clobbers": [
-      "Branch"
-    ]
-  },
-  {
     "id": "cordova-plugin-app-version.AppVersionPlugin",
     "file": "plugins/cordova-plugin-app-version/www/AppVersionPlugin.js",
     "pluginId": "cordova-plugin-app-version",
@@ -75,7 +67,6 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-  "branch-cordova-sdk": "2.6.15",
   "cordova-plugin-app-version": "0.1.9",
   "cordova-plugin-crosswalk-webview": "2.3.0",
   "cordova-plugin-device": "1.1.4",

@@ -74,14 +74,6 @@
     "is_top_level": true,
     "variables": {}
   },
-  "branch-cordova-sdk": {
-    "source": {
-      "type": "registry",
-      "id": "branch-cordova-sdk@2.6.15"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "es6-promise-plugin": {
     "source": {
       "type": "registry",

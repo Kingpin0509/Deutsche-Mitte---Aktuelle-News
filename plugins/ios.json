@@ -7,9 +7,6 @@
     "files": {}
   },
   "installed_plugins": {
-    "branch-cordova-sdk": {
-      "PACKAGE_NAME": "de.dm.news"
-    },
     "cordova-plugin-app-version": {
       "PACKAGE_NAME": "de.dm.news"
     },
