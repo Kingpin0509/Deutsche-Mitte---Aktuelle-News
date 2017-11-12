@@ -105,17 +105,5 @@
     },
     "is_top_level": true,
     "variables": {}
-  },
-  "ionic-plugin-deeplinks": {
-    "source": {
-      "type": "registry",
-      "id": "ionic-plugin-deeplinks"
-    },
-    "is_top_level": true,
-    "variables": {
-      "URL_SCHEME": "dmaktuell",
-      "DEEPLINK_SCHEME": "https",
-      "DEEPLINK_HOST": "deutsche-mitte.de"
-    }
   }
 }

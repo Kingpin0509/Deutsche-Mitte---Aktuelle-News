@@ -87,8 +87,6 @@
 		185A5DCCE1A748C18C755A61 /* SocialSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FB1F4C9321482498BBA9D2 /* SocialSharing.m */; };
 		7F407187CB5E4D8092C974E1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C87709B65654C199F5BF468 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D3B34122234B4198B81848AC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B4661D365D4F0FB9E28DBA /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		A2214FD8BF464C09BC5DD931 /* AppDelegate+IonicDeeplink.m in Sources */ = {isa = PBXBuildFile; fileRef = 4650E3FA9CFB4F2987A64B84 /* AppDelegate+IonicDeeplink.m */; };
-		0D9C21EFC96A42CB98C1B2BB /* IonicDeeplinkPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C03B7E555AC041AC90B9EB10 /* IonicDeeplinkPlugin.m */; };
 		D02268FE44164BF28F3543C3 /* Deutsche Mitte - Aktuell.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 86CDD820F7584E6B89B82B0D /* Deutsche Mitte - Aktuell.entitlements */; };
 /* End PBXBuildFile section */
 
@@ -272,9 +270,6 @@
 		34B43C4C4B994D6ABEDD6475 /* SocialSharing.h */ = {isa = PBXFileReference; name = "SocialSharing.h"; path = "cordova-plugin-x-socialsharing/SocialSharing.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		5C87709B65654C199F5BF468 /* Social.framework */ = {isa = PBXFileReference; name = "Social.framework"; path = "System/Library/Frameworks/Social.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		D4B4661D365D4F0FB9E28DBA /* MessageUI.framework */ = {isa = PBXFileReference; name = "MessageUI.framework"; path = "System/Library/Frameworks/MessageUI.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		4650E3FA9CFB4F2987A64B84 /* AppDelegate+IonicDeeplink.m */ = {isa = PBXFileReference; name = "AppDelegate+IonicDeeplink.m"; path = "ionic-plugin-deeplinks/AppDelegate+IonicDeeplink.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		C03B7E555AC041AC90B9EB10 /* IonicDeeplinkPlugin.m */ = {isa = PBXFileReference; name = "IonicDeeplinkPlugin.m"; path = "ionic-plugin-deeplinks/IonicDeeplinkPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		3DC53BD7C8E446A28D3FD1B9 /* IonicDeeplinkPlugin.h */ = {isa = PBXFileReference; name = "IonicDeeplinkPlugin.h"; path = "ionic-plugin-deeplinks/IonicDeeplinkPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		86CDD820F7584E6B89B82B0D /* Deutsche Mitte - Aktuell.entitlements */ = {isa = PBXFileReference; name = "Deutsche Mitte - Aktuell.entitlements"; path = "Deutsche Mitte - Aktuell.entitlements"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
@@ -532,9 +527,6 @@
 				35FB1F4C9321482498BBA9D2 /* SocialSharing.m */,
 				94A13E77BD2A4653B21B32F8 /* NSString+URLEncoding.h */,
 				34B43C4C4B994D6ABEDD6475 /* SocialSharing.h */,
-				4650E3FA9CFB4F2987A64B84 /* AppDelegate+IonicDeeplink.m */,
-				C03B7E555AC041AC90B9EB10 /* IonicDeeplinkPlugin.m */,
-				3DC53BD7C8E446A28D3FD1B9 /* IonicDeeplinkPlugin.h */,
 			);
 			name = Plugins;
 			path = "Deutsche Mitte - Aktuell/Plugins";
@@ -709,8 +701,6 @@
 				EE3E88F3FA16415B967C9A2C /* CDVStatusBar.m in Sources */,
 				D19E6571E2E04D97885E2F48 /* NSString+URLEncoding.m in Sources */,
 				185A5DCCE1A748C18C755A61 /* SocialSharing.m in Sources */,
-				A2214FD8BF464C09BC5DD931 /* AppDelegate+IonicDeeplink.m in Sources */,
-				0D9C21EFC96A42CB98C1B2BB /* IonicDeeplinkPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

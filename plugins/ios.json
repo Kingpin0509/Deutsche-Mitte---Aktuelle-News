@@ -44,12 +44,6 @@
     },
     "es6-promise-plugin": {
       "PACKAGE_NAME": "de.dm.news"
-    },
-    "ionic-plugin-deeplinks": {
-      "URL_SCHEME": "dmaktuell",
-      "DEEPLINK_SCHEME": "https",
-      "DEEPLINK_HOST": "deutsche-mitte.de",
-      "PACKAGE_NAME": "de.dm.news"
     }
   },
   "dependent_plugins": {}

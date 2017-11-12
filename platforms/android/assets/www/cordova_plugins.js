@@ -70,15 +70,6 @@ module.exports = [
     "file": "plugins/es6-promise-plugin/www/promise.js",
     "pluginId": "es6-promise-plugin",
     "runs": true
-  },
-  {
-    "id": "ionic-plugin-deeplinks.deeplink",
-    "file": "plugins/ionic-plugin-deeplinks/www/deeplink.js",
-    "pluginId": "ionic-plugin-deeplinks",
-    "clobbers": [
-      "IonicDeeplink"
-    ],
-    "runs": true
   }
 ];
 module.exports.metadata = 
@@ -95,8 +86,7 @@ module.exports.metadata =
   "cordova-plugin-statusbar": "2.2.4-dev",
   "cordova-plugin-whitelist": "1.3.1",
   "cordova-plugin-x-socialsharing": "5.1.5",
-  "es6-promise-plugin": "4.1.0",
-  "ionic-plugin-deeplinks": "1.0.15"
+  "es6-promise-plugin": "4.1.0"
 };
 // BOTTOM OF METADATA
 });

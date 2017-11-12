@@ -44,12 +44,6 @@
     },
     "cordova-plugin-app-version": {
       "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
-    },
-    "ionic-plugin-deeplinks": {
-      "URL_SCHEME": "dmaktuell",
-      "DEEPLINK_SCHEME": "https",
-      "DEEPLINK_HOST": "deutsche-mitte.de",
-      "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
     }
   },
   "dependent_plugins": {}
