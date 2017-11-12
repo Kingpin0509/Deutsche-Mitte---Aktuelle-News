@@ -6,7 +6,7 @@ import {
   Nav,
   Platform
 } from "ionic-angular";
-import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { InAppBrowser } from "@ionic-native/in-app-browser";
 import { StatusBar } from "@ionic-native/status-bar";
 import { SplashScreen } from "@ionic-native/splash-screen";
 import { Storage } from "@ionic/storage";
@@ -32,8 +32,8 @@ import { SettingsComponent } from "../pages/settings/settings-component/settings
 import { StammtischeComponent } from "../pages/stammtische/stammtische-component/stammtische.component";
 import { FacebookConnectComponent } from "../pages/facebook-connect/facebook-connect-component/facebook-connect.component";
 // import { QuizComponent } from "../pages/quiz/quiz-component/quiz";
-//import { FeedCategoriesComponent } from "../pages/feeds/feed-categories/feed-categories.component";
-//import { FeedCategoryComponent } from "../pages/feeds/feed-category/feed-category.component";
+import { FeedCategoriesComponent } from "../pages/feeds/feed-categories/feed-categories.component";
+import { FeedCategoryComponent } from "../pages/feeds/feed-category/feed-category.component";
 import { FirebaseHomeComponent } from "../pages/firebase/firebase-home/firebase-home.component";
 // import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 // import { BarcodeScannerComponent } from '../pages/barcode-scanner/barcode-scanner-component/barcode-scanner.component';
@@ -111,17 +111,7 @@ export class MyApp {
         component: TabsComponent,
         icon: "home"
       }
-      /*       { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" }
-      {
-        title: "FEEDS",
-        component: FeedCategoriesComponent,
-        icon: "logo-rss"
-      },
-      {
-        title: "FEED_CATEGORY",
-        component: FeedCategoryComponent,
-        icon: "logo-rss"
-      } */
+      /*       { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" }*/
     ];
     this.pagesleftcenter = [
       {
@@ -134,7 +124,6 @@ export class MyApp {
         component: FuturePoliticsComponent,
         icon: "book"
       },
-
       {
         title: "DOWNLOADS",
         component: DownloadsComponent,
@@ -149,6 +138,16 @@ export class MyApp {
       { title: "SETTINGS", component: SettingsComponent, icon: "options" }
     ];
     this.pagesright = [
+      {
+        title: "FEEDS",
+        component: FeedCategoriesComponent,
+        icon: "logo-rss"
+      },
+      {
+        title: "FEED_CATEGORY",
+        component: FeedCategoryComponent,
+        icon: "logo-rss"
+      }
       //		  { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
     ];
     this.pagesrightfooter = [
@@ -186,6 +185,7 @@ export class MyApp {
       this.pagesleftbottom[0],
       this.pagesleftcenter[0],
       this.pagesleftfooter[0],
+      this.pagesright[0],
       this.pagesrightfooter[0];
   }
   initializeApp() {
@@ -263,10 +263,6 @@ export class MyApp {
     this.nav.setRoot(StammtischeComponent).then(() => {
       this.menuController.close();
     });
-  }
-  open10112017() {
-    let myModal = this.modalCtrl.create('<iframe width="760px" height="500px" src="https://sway.com/s/Yq5Rnbn0h0iGWDyM/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen />');
-    myModal.present();
   }
   openTutorial() {
     this.nav.setRoot(TabsComponent);

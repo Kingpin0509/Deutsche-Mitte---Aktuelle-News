@@ -66,9 +66,14 @@
 
 <ion-menu id="menuright" side="right" swipeEnabled="true" [content]="content">
   <ion-content class="card-background-menu">
-<button (tap)="open10112017(page)">Newsletter</button>
-    <!--    <ion-list>
- <ion-list-header class="fade-in-right dmo-dark">
+    <ion-list>
+        <ion-item-group class="animate-in-primary" margin-top>
+            <button class="animate-in-secondary" ion-item *ngFor="let page of pagesright" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">
+              <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>
+              <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>
+            </button>
+          </ion-item-group>
+      <!--     <ion-list-header class="fade-in-right dmo-dark">
         <h2 style="color: white;">Facebook Stream</h2>
       </ion-list-header>
       <ion-item no-padding>
@@ -86,12 +91,8 @@
       <ion-item-divider class="fade-in-right dmo-dark">
         <h2>{{'DMVENUE' | translate}}</h2>
       </ion-item-divider>
-       <ion-item no-margin no-padding *ngFor="let page of pagesrightfooter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)"
-        class="animated bounceInRight">
-          <div class="card-title">BESUCHEN SIE UNS</div>
-          <img [height]= src="assets/img/menu/Banner-DM-Stammtische.gif" />
-      </ion-item>
-    </ion-list>-->
+-->
+    </ion-list>
   </ion-content>
   <!--   <ion-footer>
     <ion-list>
