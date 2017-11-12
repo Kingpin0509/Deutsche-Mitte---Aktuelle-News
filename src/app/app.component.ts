@@ -106,48 +106,32 @@ export class MyApp {
       }
     });
     this.pagesleft = [
-      {
-        title: "HOME",
-        component: TabsComponent,
-        icon: "home"
-      }
+      { title: "HOME", component: TabsComponent, icon: "home" }
       /*       { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" }*/
     ];
     this.pagesleftcenter = [
-      {
-        title: "ABOUT",
-        component: AboutComponent,
-        icon: "information-circle"
-      },
+      { title: "ABOUT", component: AboutComponent, icon: "information-circle" },
       {
         title: "FUTUREPOLITICS",
         component: FuturePoliticsComponent,
         icon: "book"
       },
-      {
-        title: "DOWNLOADS",
-        component: DownloadsComponent,
-        icon: "download"
-      }
+      { title: "DOWNLOADS", component: DownloadsComponent, icon: "download" }
     ];
     this.pagesleftbottom = [
       { title: "STAMMTISCHE", component: StammtischeComponent, icon: "pin" }
     ];
     this.pagesleftfooter = [
-      //	    { title: 'NEWSLETTER', component: NewsletterComponent, icon: 'help' },
+      //{ title: 'NEWSLETTER', component: NewsletterComponent, icon: 'help' },
       { title: "SETTINGS", component: SettingsComponent, icon: "options" }
     ];
     this.pagesright = [
       {
-        title: "FEEDS",
-        component: FeedCategoriesComponent,
-        icon: "logo-rss"
-      },
-      {
         title: "FEED_CATEGORY",
         component: FeedCategoryComponent,
         icon: "logo-rss"
-      }
+      },
+      { title: "FEEDS", component: FeedCategoriesComponent, icon: "logo-rss" }
       //		  { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
     ];
     this.pagesrightfooter = [

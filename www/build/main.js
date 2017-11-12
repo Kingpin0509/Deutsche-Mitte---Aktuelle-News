@@ -224,7 +224,7 @@ var FeedCategoryComponent = (function () {
     FeedCategoryComponent.prototype.getCategory = function () {
         var _this = this;
         var loader = this.loadingController.create({
-            content: "Please wait"
+            content: "Bitte warten"
         });
         loader.present();
         this.feedService.getCategory().subscribe(function (result) {
@@ -3538,48 +3538,32 @@ var MyApp = (function () {
             }
         });
         this.pagesleft = [
-            {
-                title: "HOME",
-                component: __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs_component_tabs_component__["a" /* TabsComponent */],
-                icon: "home"
-            }
+            { title: "HOME", component: __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs_component_tabs_component__["a" /* TabsComponent */], icon: "home" }
             /*       { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" }*/
         ];
         this.pagesleftcenter = [
-            {
-                title: "ABOUT",
-                component: __WEBPACK_IMPORTED_MODULE_17__pages_about_about_component_about_component__["a" /* AboutComponent */],
-                icon: "information-circle"
-            },
+            { title: "ABOUT", component: __WEBPACK_IMPORTED_MODULE_17__pages_about_about_component_about_component__["a" /* AboutComponent */], icon: "information-circle" },
             {
                 title: "FUTUREPOLITICS",
                 component: __WEBPACK_IMPORTED_MODULE_18__pages_futurepolitics_futurepolitics_component_futurepolitics_component__["a" /* FuturePoliticsComponent */],
                 icon: "book"
             },
-            {
-                title: "DOWNLOADS",
-                component: __WEBPACK_IMPORTED_MODULE_19__pages_downloads_downloads_component_downloads_component__["a" /* DownloadsComponent */],
-                icon: "download"
-            }
+            { title: "DOWNLOADS", component: __WEBPACK_IMPORTED_MODULE_19__pages_downloads_downloads_component_downloads_component__["a" /* DownloadsComponent */], icon: "download" }
         ];
         this.pagesleftbottom = [
             { title: "STAMMTISCHE", component: __WEBPACK_IMPORTED_MODULE_21__pages_stammtische_stammtische_component_stammtische_component__["a" /* StammtischeComponent */], icon: "pin" }
         ];
         this.pagesleftfooter = [
-            //	    { title: 'NEWSLETTER', component: NewsletterComponent, icon: 'help' },
+            //{ title: 'NEWSLETTER', component: NewsletterComponent, icon: 'help' },
             { title: "SETTINGS", component: __WEBPACK_IMPORTED_MODULE_20__pages_settings_settings_component_settings_component__["a" /* SettingsComponent */], icon: "options" }
         ];
         this.pagesright = [
             {
-                title: "FEEDS",
-                component: __WEBPACK_IMPORTED_MODULE_23__pages_feeds_feed_categories_feed_categories_component__["a" /* FeedCategoriesComponent */],
-                icon: "logo-rss"
-            },
-            {
                 title: "FEED_CATEGORY",
                 component: __WEBPACK_IMPORTED_MODULE_24__pages_feeds_feed_category_feed_category_component__["a" /* FeedCategoryComponent */],
                 icon: "logo-rss"
-            }
+            },
+            { title: "FEEDS", component: __WEBPACK_IMPORTED_MODULE_23__pages_feeds_feed_categories_feed_categories_component__["a" /* FeedCategoriesComponent */], icon: "logo-rss" }
             //		  { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
         ];
         this.pagesrightfooter = [
