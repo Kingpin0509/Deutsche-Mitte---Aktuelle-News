@@ -2028,6 +2028,7 @@ var SettingsComponent = (function () {
         var versionCode = this.appVersion.getVersionCode();
         var versionNumber = this.appVersion.getVersionNumber();
     };
+    ;
     SettingsComponent.prototype.getVersionNumber = function () {
         var versionNumber = this.appVersion.getVersionNumber();
         this.appVersion.getVersionNumber();
