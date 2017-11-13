@@ -25,13 +25,17 @@
       </ion-select>
     </ion-item>
     <ion-item>
-      <ion-checkbox (tap)=toogleSeenTutorial() [(ngModel)]="checkbox"></ion-checkbox>
+      <button (tap)=toogleSeenTutorial() [(ngModel)]="checkbox"></button>
       <ion-label>Einführung erneut Aktivieren</ion-label>
     </ion-item>
-    <button ion-button (click)="getVersionNumber()">
-      Get Version Number{{versionNumber}}
-    </button>
-    <ion-note></ion-note>
+    <ion-item>{{appName}}
+    </ion-item>
+    <ion-note>{{packageName}}
+    </ion-note>
+    <ion-item>{{versionCode}}
+    </ion-item>
+    <ion-note>{{versionNumber}}
+    </ion-note>
     <!--     <button (tap)="pushPageFirebase(page)">
       <ion-icon margin name="pin"></ion-icon>
       <h4 color="primary">{{'LOGIN' | translate}}</h4>

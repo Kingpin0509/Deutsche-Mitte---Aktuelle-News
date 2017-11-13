@@ -10,6 +10,9 @@ import { FirebaseHomeComponent } from "../../firebase/firebase-home/firebase-hom
 export class SettingsComponent implements OnInit {
   nav: Nav;
   page: any;
+  appName: any;
+  packageName: any;
+  versionCode: any;
   versionNumber: any;
   language: string;
   checkbox: boolean;
@@ -27,7 +30,12 @@ export class SettingsComponent implements OnInit {
         this.language = "de";
       }
     });
+    const appName = this.appVersion.getAppName();
+    const packageName = this.appVersion.getPackageName();
+    const versionCode = this.appVersion.getVersionCode();
+    const versionNumber = this.appVersion.getVersionNumber();
   }
+
   getVersionNumber() {
     const versionNumber = this.appVersion.getVersionNumber();
     this.appVersion.getVersionNumber();
