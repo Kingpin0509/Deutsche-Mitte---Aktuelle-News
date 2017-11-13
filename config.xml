@@ -109,7 +109,7 @@
     </branch-config>
     <engine name="windows" spec="5.0.0" />
     <engine name="ios" spec="4.5.3" />
-    <engine name="android" spec="6.4.0" />
+    <engine name="android" spec="^6.4.0" />
     <plugin name="cordova-plugin-device" spec="1.1.7" />
     <plugin name="cordova-plugin-facebook4" spec="1.9.1">
         <variable name="APP_ID" value="131001554119757" />
