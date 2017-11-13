@@ -70,7 +70,7 @@
     "@ionic/app-scripts": "3.1.0",
     "ajv": "5.3.0",
     "ionic": "3.18.0",
-    "typescript": "2.3.4"
+    "typescript": "2.4.0"
   },
   "cordovaPlugins": [
     "cordova-plugin-whitelist",
