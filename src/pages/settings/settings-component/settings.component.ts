@@ -29,12 +29,12 @@ export class SettingsComponent implements OnInit {
       } else {
         this.language = "de";
       }
-    });
+    })
     const appName = this.appVersion.getAppName();
     const packageName = this.appVersion.getPackageName();
     const versionCode = this.appVersion.getVersionCode();
     const versionNumber = this.appVersion.getVersionNumber();
-  }
+  };
 
   getVersionNumber() {
     const versionNumber = this.appVersion.getVersionNumber();
