@@ -1080,13 +1080,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var WordpressMenuItem = (function () {
-    var WordpressMenuItem = WordpressMenuItem_1 = function WordpressMenuItem(navParams, navController, loadingController, events, iab) {
+    function WordpressMenuItem(navParams, navController, loadingController, events, iab) {
         this.navParams = navParams;
         this.navController = navController;
         this.loadingController = loadingController;
         this.events = events;
         this.iab = iab;
-    };
+    }
+    WordpressMenuItem_1 = WordpressMenuItem;
     WordpressMenuItem.prototype.ngOnInit = function () {
         this.title = this.navParams.get("title");
         this.menu = this.navParams.get("item");
