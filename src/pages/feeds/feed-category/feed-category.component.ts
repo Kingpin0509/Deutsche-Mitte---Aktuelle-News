@@ -1,6 +1,5 @@
 import { Component } from "@angular/core";
 import { NavParams, NavController, LoadingController } from "ionic-angular";
-
 import { FeedsComponent } from "../feeds/feeds.component";
 import { FeedService } from "../shared/services/feed.service";
 
@@ -27,14 +26,12 @@ export class FeedCategoryComponent {
     let loader = this.loadingController.create({
       content: "Bitte warten"
     });
-
     loader.present();
     this.feedService.getCategory().subscribe(result => {
       this.category = result;
       loader.dismiss();
     });
   }
-
   loadFeeds(feedUrl) {
     this.navController.push(FeedsComponent, {
       feedUrl: feedUrl

@@ -195,7 +195,7 @@ WordpressFavorites = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedCategoryComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feeds_feeds_component__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feeds_feeds_component__ = __webpack_require__(347);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__ = __webpack_require__(158);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -240,7 +240,7 @@ var FeedCategoryComponent = (function () {
     return FeedCategoryComponent;
 }());
 FeedCategoryComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feed-category\feed-category.html"*/'<ion-header>\n  <ion-navbar>\n    <button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title *ngIf="category">{{category.title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content *ngIf="category">\n  <section padding>\n    <h2>{{category.title}}</h2>\n    <p>{{category.description}}</p>\n  </section>\n  <ion-list>\n    <ion-item *ngFor="let item of category.items" (click)="loadFeeds(item.url)">\n      <h2>{{item.title}}</h2>\n      <p>{{item.description}}</p>\n      <button ion-button item-right outline>Read</button>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feed-category\feed-category.html"*/,
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feed-category\feed-category.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle="left" icon-only>\n      <ion-icon name=\'menu\'></ion-icon>\n    </button>\n    <ion-title *ngIf="category">{{category.title}}</ion-title>\n    <ion-buttons end>\n      <button ion-button menuToggle="right" icon-only>\n        <ion-icon name=\'more\'></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content *ngIf="category">\n  <section padding>\n    <h2>{{category.title}}</h2>\n    <p>{{category.description}}</p>\n  </section>\n  <ion-list>\n    <ion-item *ngFor="let item of category.items" (click)="loadFeeds(item.url)">\n      <h2>{{item.title}}</h2>\n      <p>{{item.description}}</p>\n      <button ion-button item-right outline>Öffnen</button>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feed-category\feed-category.html"*/,
         providers: [__WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__["a" /* FeedService */]]
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__["a" /* FeedService */],
@@ -330,8 +330,8 @@ FeedService = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_social_sharing__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_facebook__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ng2_translate__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pipes_truncate_pipe__ = __webpack_require__(531);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pipes_trim_html_pipe__ = __webpack_require__(532);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pipes_truncate_pipe__ = __webpack_require__(530);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pipes_trim_html_pipe__ = __webpack_require__(531);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__app_config__ = __webpack_require__(64);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1356,7 +1356,7 @@ var AboutComponent = (function () {
 }());
 AboutComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: "page-about",template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\about\about-component\about.html"*/'<ion-header>\n  <ion-toolbar>\n    <button ion-button menuToggle="left" icon-only>\n      <ion-icon name=\'menu\'></ion-icon>\n    </button>\n    <ion-title>{{\'ABOUT\' | translate}}</ion-title>\n    <ion-buttons end>\n      <button ion-button menuToggle="right" icon-only>\n        <ion-icon name=\'more\'></ion-icon>\n        </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n<ion-content padding>\n  <h1 class="header" text-wrap text-center>Die Deutsche Mitte steht für ethische Politik im Sinne der Bewahrung der Schöpfung: mit Herz, Augenmaß und Vernunft</h1>\n  <p padding-horizontal text-justify><i padding-horizontal>Politik soll fragen: Was ist gut für alle? Für Deutschland, für Europa, für die Welt. Für Mensch und Natur. Für ein glückliches und erfolgreiches Miteinander aller in Frieden, Gerechtigkeit und fairem Interessenausgleich. Wir sind alle miteinander verbunden!</i></p>\n  <h2 class="header" text-center>Aufrichtige Wahlversprechen: Regieren heißt dienen – nicht herrschen</h2>\n  <ion-card>\n    <ion-card-content>\n      <p text-justify>Wir halten was wir sagen – auch nach der Wahl. Deshalb ordnen wir als einzige Partei unser Programm direkt nach Ministerien.\n        So gilt: <b>Parteiprogramm = Wahlprogramm = Regierungsprogramm</b>. Und für mögliche Koalitionen wird darüber nicht\n        verhandelt: Allenfalls führen wir „Ressortabgrenzungsgespräche“ – denn in „unseren“ Ministerien werden wir unser\n        Programm exakt umsetzen. Wir machen Politik für die große Mehrheit der Bevölkerung, die in allen Bereichen mit Recht\n        die Regierungspolitik kritisiert. Wir fordern freie Meinungsäußerung und Berichterstattung!</p>\n      <p text-justify>Wir drängen das globale Finanzkartell zurück – fahren schrittweise, voraussichtlich binnen vier Jahren, Zinsen herunter\n        und bringen die Geldschöpfung unter öffentliche Kontrolle. Spekulationsblasen dulden wir nicht, Nahrungsmittel und\n        Wasser sind Menschenrecht. Wir beenden jede deutsche Beteiligung an BundeswehrKampfeinsätzen außerhalb des Nato-Verteidigungsgebietes.</p>\n      <p text-justify>Deutschland verdient einen Friedensvertrag, endlich volle Souveränität und eine umfassende Verfassungsreform, vor allem\n        für mehr Bürgerrechte, die Selbstbestimmung und Selbstverantwortung des Menschen auf allen Ebenen ermöglichen – und\n        den Überwachungsstaat beenden.</p>\n      <p text-justify>Deutschland ist ein christlich geprägtes Land – die Deutsche Mitte eine säkulare Partei; wir fordern die strikte Trennung\n        von Staat und Kirche.</p>\n    </ion-card-content>\n  </ion-card>\n  <h3 class="header">Kurzprogramm der Deutschen Mitte 2017:</h3>\n  <ion-card padding>\n    <ion-card-content margin-horizontal>\n      <button ion-button block color="dark" (click)="openAussenpolitik()">\n          <h2 class="button">\n            <ion-icon padding-horizontal name="expand"></ion-icon>\n            Außenpolitik\n          </h2>\n        </button>\n    </ion-card-content>\n    <ion-note text-justify><b><i>Mit Augenmaß, gut abgestimmt mit Partnern und Freunden und ohne großen Wirbel verlässt Deutschland die Euro-Gruppe – nicht als erstes Land, um Missstimmung zu vermeiden, jedoch als zweites...</i></b></ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content margin-horizontal>\n      <button ion-button full color="dark" (click)="openInnenpolitik()">\n      <h2 class="button">\n        <ion-icon padding-horizontal name="download"></ion-icon>\n        Innenpolitik\n      </h2>\n      </button>\n    </ion-card-content>\n    <ion-note text-justify><b><i>Wir wollen mehr und besser bezahlte Polizisten, die wir persönlich kennen: als „Revierbeamte“ mit erhöhter Straßenpräsenz. Geheimdienste sollen besser und ehrlicher zum Wohl der Bevölkerung arbeiten...</i></b></ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="dark" (click)="openFinanzen()">\n      <h2 class="button"><ion-icon padding-horizontal name="cash"></ion-icon>Finanzen</h2></button>\n    </ion-card-content>\n    <ion-note text-justify><b><i>Banken werden ehrliche Dienstleister, Zockerei wird verboten, Zins und Zinseszins werden abgeschafft. Marode Banken werden vorübergehend verstaatlicht und teilweise in kontrollierten Konkurs gehen. Manager haften für Fehlverhalten...</i></b></ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="dark" (click)="openWirtschaft()">\n      <h2 class="button"><ion-icon padding-horizontal name="construct"></ion-icon>Wirtschaft und Technologie</h2></button>\n    </ion-card-content>\n    <ion-note text-justify><b><i>Wirtschaft dient allen Menschen, dies ist ebenfalls Aufgabe der Politik: Unternehmen, die sozial, ökologisch, menschenfreundlich und flexibel arbeiten (Gemeinwohlökonomie) erhalten finanzielle Erleichterungen...</i></b></ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="dark" (click)="openArbeit()">\n      <h2 class="button"><ion-icon padding-horizontal name="man"></ion-icon>Arbeit und Soziales</h2></button>\n    </ion-card-content>\n    <ion-note text-justify><b><i>Jeder arbeitsfähige Mensch geht einer Beschäftigung nach. In einer Vorphase vor Einführung des Bedingungslosen Grundeinkommens (BGE) steht das Solidarische Grundeinkommen (SGE)...</i></b></ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="dark" (click)="openVerteidigung()">\n      <h2 class="button"><ion-icon padding-horizontal name="jet"></ion-icon>Verteidigung</h2></button>\n    </ion-card-content>\n    <ion-note text-justify><b><i>Die neue Verteidigungsstrategie lautet: „Full Spectrum Defense“ – und stellt sicher, dass Deutschland auf jedem Gebiet – entweder eigenständig oder im Verbund mit anderen Nationen – abschreckend verteidigungsfähig wird...</i></b></ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="dark" (click)="openBildung()">\n      <h2 class="button"><ion-icon padding-horizontal name="flask"></ion-icon>Bildung und Forschung:</h2></button>\n    </ion-card-content>\n    <ion-note text-justify><b><i>Große Investitionen in Bildung und Forschung machen Deutschland wieder zur führenden Nation in diesem Bereich. Die elterliche Kindererziehung bis zum Erreichen des dritten Lebensjahres wird finanziell kräftig gefördert...</i></b></ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="dark" (click)="openFamilie()">\n      <h2 class="button"><ion-icon padding-horizontal name="contacts"></ion-icon>Familie, Senioren, Frauen und Jugend</h2></button>\n    </ion-card-content>\n    <ion-note text-justify><b><i>Großzügige Förderung von Familien mit Kindern, auch durch kostenlose Paar-, Eltern- und Familienberatung. 50% mehr Kindergeld, zusätzlich erhalten Eltern nach aktuellen Maßstäben 5.000 € für das erste Kind, je 10.000 € für jedes weitere Kind...</i></b></ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="dark" (click)="openUmwelt()">\n      <h2 class="button"><ion-icon padding-horizontal name="flash"></ion-icon>Umwelt, Naturschutz und Reaktorsicherheit</h2></button>\n    </ion-card-content>\n    <ion-note text-justify><b><i>Die Deutsche Mitte sieht den Menschen in der hohen Verantwortung, die natürlichen Grundlagen für alle Lebensformen zu bewahren. Darum erhalten Umwelt- und Naturschutz bedeutenden Vorrang...</i></b></ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="dark" (click)="openNahrung()">\n      <h2 class="button"><ion-icon padding-horizontal name="leaf"></ion-icon>Ernährung, Landwirtschaft und Verbraucherschutz</h2></button>\n    </ion-card-content>\n    <ion-note text-justify><b><i>Die Deutsche Mitte fordert das Recht auf natürlich gesunde Lebensmittel. Schrittweise Umstellung auf ökologische, pestizid- und gentechnikfreie Landwirtschaft (Mindeststandard: Bioland)...</i></b></ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="dark" (click)="openGesundheit()">\n      <h2 class="button"><ion-icon padding-horizontal name="medkit"></ion-icon>Gesundheit</h2></button>\n    </ion-card-content>\n    <ion-note text-justify><b><i>Die Deutsche Mitte strebt schrittweise eine kostenlose medizinische Grundversorgung für alle an. Wir stehen für ursachenbezogene ganzheitliche Heilkunde und natürliche Medizin, die sich am Menschen orientiert...</i></b></ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="dark" (click)="openVerkehr()">\n      <h2 class="button"><ion-icon padding-horizontal name="hammer"></ion-icon>Verkehr, Bau und Stadtentwicklung:</h2></button>\n    </ion-card-content>\n    <ion-note text-justify><b><i>Voll-Ausbau der Bahn zum großen LogistikDienstleister, keine Privatisierung, stattdessen Zusammenarbeit mit Privatfirmen, deutlich weniger und kleinere LKW auf den Straßen. Großprojekte mit enger Einbindung der Bevölkerung...</i></b></ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="dark" (click)="openEntwicklung()">\n      <h2 class="button"><ion-icon padding-horizontal name="open"></ion-icon>Wirtschaftliche Zusammenarbeit und Entwicklung</h2></button>\n    </ion-card-content>\n    <ion-note text-justify><b><i>Fairer Handel ohne Diktate aus IWF und Weltbank. Internationale Unterstützungsleistungen werden künftig neben bisherigen Verfahren zusätzlich in verantwortlichen Patenschaften organisiert...</i></b></ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="dark" (click)="openJustiz()">\n      <h2 class="button"><ion-icon padding-horizontal name="archive"></ion-icon>Justiz</h2></button>\n    </ion-card-content>\n    <ion-note text-justify><b><i>Recht darf kein Privileg der Wohlhabenden oder Mächtigen sein. Gerechtigkeit soll vor Gericht siegen. Ausbau des Justizwesens, weniger machtpolitischer Einfluss, mehr richterliche Unabhängigkeit...</i></b></ion-note>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\about\about-component\about.html"*/
+        selector: "page-about",template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\about\about-component\about.html"*/'<ion-header>\n  <ion-toolbar>\n    <button ion-button menuToggle="left" icon-only>\n      <ion-icon name=\'menu\'></ion-icon>\n    </button>\n    <ion-title>{{\'ABOUT\' | translate}}</ion-title>\n    <ion-buttons end>\n      <button ion-button menuToggle="right" icon-only>\n        <ion-icon name=\'more\'></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n<ion-content padding>\n  <h1 class="header" text-wrap text-center>Die Deutsche Mitte steht für ethische Politik im Sinne der Bewahrung der Schöpfung: mit Herz, Augenmaß und Vernunft</h1>\n  <p padding-horizontal text-justify>\n    <i padding-horizontal>Politik soll fragen: Was ist gut für alle? Für Deutschland, für Europa, für die Welt. Für Mensch und Natur. Für ein glückliches\n      und erfolgreiches Miteinander aller in Frieden, Gerechtigkeit und fairem Interessenausgleich. Wir sind alle miteinander\n      verbunden!</i>\n  </p>\n  <h2 class="header" text-center>Aufrichtige Wahlversprechen: Regieren heißt dienen – nicht herrschen</h2>\n  <ion-card>\n    <ion-card-content>\n      <p text-justify>Wir halten was wir sagen – auch nach der Wahl. Deshalb ordnen wir als einzige Partei unser Programm direkt nach Ministerien.\n        So gilt:\n        <b>Parteiprogramm = Wahlprogramm = Regierungsprogramm</b>. Und für mögliche Koalitionen wird darüber nicht verhandelt:\n        Allenfalls führen wir „Ressortabgrenzungsgespräche“ – denn in „unseren“ Ministerien werden wir unser Programm exakt\n        umsetzen. Wir machen Politik für die große Mehrheit der Bevölkerung, die in allen Bereichen mit Recht die Regierungspolitik\n        kritisiert. Wir fordern freie Meinungsäußerung und Berichterstattung!</p>\n      <p text-justify>Wir drängen das globale Finanzkartell zurück – fahren schrittweise, voraussichtlich binnen vier Jahren, Zinsen herunter\n        und bringen die Geldschöpfung unter öffentliche Kontrolle. Spekulationsblasen dulden wir nicht, Nahrungsmittel und\n        Wasser sind Menschenrecht. Wir beenden jede deutsche Beteiligung an BundeswehrKampfeinsätzen außerhalb des Nato-Verteidigungsgebietes.</p>\n      <p text-justify>Deutschland verdient einen Friedensvertrag, endlich volle Souveränität und eine umfassende Verfassungsreform, vor allem\n        für mehr Bürgerrechte, die Selbstbestimmung und Selbstverantwortung des Menschen auf allen Ebenen ermöglichen – und\n        den Überwachungsstaat beenden.</p>\n      <p text-justify>Deutschland ist ein christlich geprägtes Land – die Deutsche Mitte eine säkulare Partei; wir fordern die strikte Trennung\n        von Staat und Kirche.</p>\n    </ion-card-content>\n  </ion-card>\n  <h3 class="header">Kurzprogramm der Deutschen Mitte 2017:</h3>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="primary" (click)="openAussenpolitik()">\n        <h2 class="button">\n          <ion-icon padding-horizontal name="download"></ion-icon>Außenpolitik</h2>\n      </button>\n    </ion-card-content>\n    <ion-note text-justify>\n      <b>\n        <i>Mit Augenmaß, gut abgestimmt mit Partnern und Freunden und ohne großen Wirbel verlässt Deutschland die Euro-Gruppe\n          – nicht als erstes Land, um Missstimmung zu vermeiden, jedoch als zweites...</i>\n      </b>\n    </ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="primary" (click)="openInnenpolitik()">\n        <h2 class="button">\n          <ion-icon padding-horizontal name="download"></ion-icon>Innenpolitik</h2>\n      </button>\n    </ion-card-content>\n    <ion-note text-justify>\n      <b>\n        <i>Wir wollen mehr und besser bezahlte Polizisten, die wir persönlich kennen: als „Revierbeamte“ mit erhöhter Straßenpräsenz.\n          Geheimdienste sollen besser und ehrlicher zum Wohl der Bevölkerung arbeiten...</i>\n      </b>\n    </ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="primary" (click)="openFinanzen()">\n        <h2 class="button">\n          <ion-icon padding-horizontal name="cash"></ion-icon>Finanzen</h2>\n      </button>\n    </ion-card-content>\n    <ion-note text-justify>\n      <b>\n        <i>Banken werden ehrliche Dienstleister, Zockerei wird verboten, Zins und Zinseszins werden abgeschafft. Marode Banken\n          werden vorübergehend verstaatlicht und teilweise in kontrollierten Konkurs gehen. Manager haften für Fehlverhalten...</i>\n      </b>\n    </ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="primary" (click)="openWirtschaft()">\n        <h2 class="button">\n          <ion-icon padding-horizontal name="construct"></ion-icon>Wirtschaft und Technologie</h2>\n      </button>\n    </ion-card-content>\n    <ion-note text-justify>\n      <b>\n        <i>Wirtschaft dient allen Menschen, dies ist ebenfalls Aufgabe der Politik: Unternehmen, die sozial, ökologisch, menschenfreundlich\n          und flexibel arbeiten (Gemeinwohlökonomie) erhalten finanzielle Erleichterungen...</i>\n      </b>\n    </ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="primary" (click)="openArbeit()">\n        <h2 class="button">\n          <ion-icon padding-horizontal name="man"></ion-icon>Arbeit und Soziales</h2>\n      </button>\n    </ion-card-content>\n    <ion-note text-justify>\n      <b>\n        <i>Jeder arbeitsfähige Mensch geht einer Beschäftigung nach. In einer Vorphase vor Einführung des Bedingungslosen Grundeinkommens\n          (BGE) steht das Solidarische Grundeinkommen (SGE)...</i>\n      </b>\n    </ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="primary" (click)="openVerteidigung()">\n        <h2 class="button">\n          <ion-icon padding-horizontal name="jet"></ion-icon>Verteidigung</h2>\n      </button>\n    </ion-card-content>\n    <ion-note text-justify>\n      <b>\n        <i>Die neue Verteidigungsstrategie lautet: „Full Spectrum Defense“ – und stellt sicher, dass Deutschland auf jedem Gebiet\n          – entweder eigenständig oder im Verbund mit anderen Nationen – abschreckend verteidigungsfähig wird...</i>\n      </b>\n    </ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="primary" (click)="openBildung()">\n        <h2 class="button">\n          <ion-icon padding-horizontal name="flask"></ion-icon>Bildung und Forschung:</h2>\n      </button>\n    </ion-card-content>\n    <ion-note text-justify>\n      <b>\n        <i>Große Investitionen in Bildung und Forschung machen Deutschland wieder zur führenden Nation in diesem Bereich. Die\n          elterliche Kindererziehung bis zum Erreichen des dritten Lebensjahres wird finanziell kräftig gefördert...</i>\n      </b>\n    </ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="primary" (click)="openFamilie()">\n        <h2 class="button">\n          <ion-icon padding-horizontal name="contacts"></ion-icon>Familie, Senioren, Frauen und Jugend</h2>\n      </button>\n    </ion-card-content>\n    <ion-note text-justify>\n      <b>\n        <i>Großzügige Förderung von Familien mit Kindern, auch durch kostenlose Paar-, Eltern- und Familienberatung. 50% mehr\n          Kindergeld, zusätzlich erhalten Eltern nach aktuellen Maßstäben 5.000 € für das erste Kind, je 10.000 € für jedes\n          weitere Kind...</i>\n      </b>\n    </ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="primary" (click)="openUmwelt()">\n        <h2 class="button">\n          <ion-icon padding-horizontal name="flash"></ion-icon>Umwelt, Naturschutz und Reaktorsicherheit</h2>\n      </button>\n    </ion-card-content>\n    <ion-note text-justify>\n      <b>\n        <i>Die Deutsche Mitte sieht den Menschen in der hohen Verantwortung, die natürlichen Grundlagen für alle Lebensformen\n          zu bewahren. Darum erhalten Umwelt- und Naturschutz bedeutenden Vorrang...</i>\n      </b>\n    </ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="primary" (click)="openNahrung()">\n        <h2 class="button">\n          <ion-icon padding-horizontal name="leaf"></ion-icon>Ernährung, Landwirtschaft und Verbraucherschutz</h2>\n      </button>\n    </ion-card-content>\n    <ion-note text-justify>\n      <b>\n        <i>Die Deutsche Mitte fordert das Recht auf natürlich gesunde Lebensmittel. Schrittweise Umstellung auf ökologische,\n          pestizid- und gentechnikfreie Landwirtschaft (Mindeststandard: Bioland)...</i>\n      </b>\n    </ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="primary" (click)="openGesundheit()">\n        <h2 class="button">\n          <ion-icon padding-horizontal name="medkit"></ion-icon>Gesundheit</h2>\n      </button>\n    </ion-card-content>\n    <ion-note text-justify>\n      <b>\n        <i>Die Deutsche Mitte strebt schrittweise eine kostenlose medizinische Grundversorgung für alle an. Wir stehen für ursachenbezogene\n          ganzheitliche Heilkunde und natürliche Medizin, die sich am Menschen orientiert...</i>\n      </b>\n    </ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="primary" (click)="openVerkehr()">\n        <h2 class="button">\n          <ion-icon padding-horizontal name="hammer"></ion-icon>Verkehr, Bau und Stadtentwicklung:</h2>\n      </button>\n    </ion-card-content>\n    <ion-note text-justify>\n      <b>\n        <i>Voll-Ausbau der Bahn zum großen LogistikDienstleister, keine Privatisierung, stattdessen Zusammenarbeit mit Privatfirmen,\n          deutlich weniger und kleinere LKW auf den Straßen. Großprojekte mit enger Einbindung der Bevölkerung...</i>\n      </b>\n    </ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="primary" (click)="openEntwicklung()">\n        <h2 class="button">\n          <ion-icon padding-horizontal name="open"></ion-icon>Wirtschaftliche Zusammenarbeit und Entwicklung</h2>\n      </button>\n    </ion-card-content>\n    <ion-note text-justify>\n      <b>\n        <i>Fairer Handel ohne Diktate aus IWF und Weltbank. Internationale Unterstützungsleistungen werden künftig neben bisherigen\n          Verfahren zusätzlich in verantwortlichen Patenschaften organisiert...</i>\n      </b>\n    </ion-note>\n  </ion-card>\n  <ion-card padding>\n    <ion-card-content>\n      <button ion-button full color="primary" (click)="openJustiz()">\n        <h2 class="button">\n          <ion-icon padding-horizontal name="archive"></ion-icon>Justiz</h2>\n      </button>\n    </ion-card-content>\n    <ion-note text-justify>\n      <b>\n        <i>Recht darf kein Privileg der Wohlhabenden oder Mächtigen sein. Gerechtigkeit soll vor Gericht siegen. Ausbau des\n          Justizwesens, weniger machtpolitischer Einfluss, mehr richterliche Unabhängigkeit...</i>\n      </b>\n    </ion-note>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\about\about-component\about.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
@@ -2588,72 +2588,10 @@ FacebookConnectComponent = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedCategoriesComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed_category_feed_category_component__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__ = __webpack_require__(158);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var FeedCategoriesComponent = (function () {
-    function FeedCategoriesComponent(feedService, navController, loadingController) {
-        this.feedService = feedService;
-        this.navController = navController;
-        this.loadingController = loadingController;
-    }
-    FeedCategoriesComponent.prototype.ngOnInit = function () {
-        this.getCategories();
-    };
-    FeedCategoriesComponent.prototype.getCategories = function () {
-        var _this = this;
-        var loader = this.loadingController.create({
-            content: "Please wait"
-        });
-        loader.present();
-        this.feedService.getCategories().subscribe(function (result) {
-            _this.categories = result.categories;
-            loader.dismiss();
-        });
-    };
-    FeedCategoriesComponent.prototype.loadCategory = function (category) {
-        this.navController.push(__WEBPACK_IMPORTED_MODULE_2__feed_category_feed_category_component__["a" /* FeedCategoryComponent */], {
-            category: category
-        });
-    };
-    return FeedCategoriesComponent;
-}());
-FeedCategoriesComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feed-categories\feed-categories.html"*/'<ion-header>\n  <ion-navbar>\n    <button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>{{\'CATEGORIES\' | translate}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-item *ngFor="let category of categories" (click)="loadCategory(category)">\n      <ion-icon [name]="category.icon" item-left></ion-icon>\n      <h2>{{category.title}}</h2>\n      <p>{{category.description}}</p>\n      <button ion-button item-right outline>Read</button>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feed-categories\feed-categories.html"*/,
-        providers: [__WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__["a" /* FeedService */]]
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__["a" /* FeedService */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]])
-], FeedCategoriesComponent);
-
-//# sourceMappingURL=feed-categories.component.js.map
-
-/***/ }),
-
-/***/ 348:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed_feed_component__ = __webpack_require__(349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed_feed_component__ = __webpack_require__(348);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__ = __webpack_require__(158);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2682,7 +2620,7 @@ var FeedsComponent = (function () {
     FeedsComponent.prototype.getFeeds = function () {
         var _this = this;
         var loader = this.loadingController.create({
-            content: "Please wait"
+            content: "Bitte Warten..."
         });
         loader.present();
         this.feedService.getFeeds(this.feedUrl).subscribe(function (result) {
@@ -2704,7 +2642,7 @@ var FeedsComponent = (function () {
     return FeedsComponent;
 }());
 FeedsComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feeds\feeds.html"*/'<ion-header>\n  <ion-navbar>\n    <button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <section padding>\n    <h2>{{title}}</h2>\n    <p>{{description}}</p>\n    <div center text-center>\n      <img [src]="image" *ngIf="image" />\n    </div>\n  </section>\n  <ion-list>\n    <ion-item *ngFor="let feed of feeds" (click)="loadFeed(feed)">\n      <h2>{{feed.title}}</h2>\n      <p>{{feed.summary}}</p>\n      <button ion-button item-right outline>Read</button>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feeds\feeds.html"*/,
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feeds\feeds.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle="left" icon-only>\n      <ion-icon name=\'menu\'></ion-icon>\n    </button>\n    <ion-title>{{title}}</ion-title>\n    <ion-buttons end>\n      <button ion-button menuToggle="right" icon-only>\n        <ion-icon name=\'more\'></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content>\n  <section padding>\n    <h2>{{title}}</h2>\n    <p>{{description}}</p>\n    <div center text-center>\n      <img [src]="image" *ngIf="image" />\n    </div>\n  </section>\n  <ion-list>\n    <ion-item *ngFor="let feed of feeds" (click)="loadFeed(feed)">\n      <h2>{{feed.title}}</h2>\n      <p>{{feed.summary}}</p>\n      <button ion-button item-right outline>Lesen</button>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feeds\feeds.html"*/,
         providers: [__WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__["a" /* FeedService */]]
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__["a" /* FeedService */],
@@ -2717,7 +2655,7 @@ FeedsComponent = __decorate([
 
 /***/ }),
 
-/***/ 349:
+/***/ 348:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2761,7 +2699,7 @@ var FeedComponent = (function () {
     return FeedComponent;
 }());
 FeedComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feed\feed.html"*/'<ion-header>\n  <ion-navbar>\n    <button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>{{feed.title}}</ion-title>\n    <ion-buttons end>\n      <button (tap)="shareFeed()" ion-button icon-only>\n        <ion-icon name="share"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <section padding>\n    <h1 [innerHtml]=feed.title></h1>\n    <!--<div>{{feed.pubDate | date}}</div>-->\n  </section>\n\n  <video id="video" [src]="feed.enclosure.url" controls autoplay *ngIf="feed.enclosure && feed.enclosure.type === \'video/mp4\' "></video>\n  <audio id="audio" [src]="feed.enclosure.url" controls autoplay *ngIf="feed.enclosure && feed.enclosure.type === \'audio/mpeg\' "></audio>\n  <img [src]="feed.enclosure.url" *ngIf="feed.enclosure && feed.enclosure.type === \'image/jpeg\' " />\n\n  <section padding [innerHtml]="feed.description"></section>\n\n  <button ion-button full (click)=previewFeed()>Preview</button>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feed\feed.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feed\feed.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle="left" icon-only>\n      <ion-icon name=\'menu\'></ion-icon>\n    </button>\n    <ion-title>{{feed.title}}</ion-title>\n    <ion-buttons end>\n      <button (tap)="shareFeed()" ion-button icon-only>\n        <ion-icon name="share"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content>\n  <section padding>\n    <h1 [innerHtml]=feed.title></h1>\n    <div>{{feed.pubDate | date}}</div>\n  </section>\n\n  <video id="video" [src]="feed.enclosure.url" controls autoplay *ngIf="feed.enclosure && feed.enclosure.type === \'video/mp4\' "></video>\n  <audio id="audio" [src]="feed.enclosure.url" controls autoplay *ngIf="feed.enclosure && feed.enclosure.type === \'audio/mpeg\' "></audio>\n  <img [src]="feed.enclosure.url" *ngIf="feed.enclosure && feed.enclosure.type === \'image/jpeg\' " />\n\n  <section padding [innerHtml]="feed.description"></section>\n\n  <button ion-button full (click)=previewFeed()>Preview</button>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feed\feed.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */],
@@ -2773,7 +2711,7 @@ FeedComponent = __decorate([
 
 /***/ }),
 
-/***/ 350:
+/***/ 349:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2833,7 +2771,7 @@ Data = __decorate([
 
 /***/ }),
 
-/***/ 351:
+/***/ 350:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2841,11 +2779,11 @@ Data = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__wordpress_login_wordpress_login_component__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__wordpress_login_wordpress_login_component__ = __webpack_require__(351);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wordpress_posts_wordpress_posts_component__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__wordpress_categories_wordpress_categories_component__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__wordpress_favorites_wordpress_favorites_component__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wordpress_pages_wordpress_pages_component__ = __webpack_require__(353);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wordpress_pages_wordpress_pages_component__ = __webpack_require__(352);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__wordpress_menus_wordpress_menus_component__ = __webpack_require__(146);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2939,7 +2877,7 @@ WordpressHome = __decorate([
 
 /***/ }),
 
-/***/ 352:
+/***/ 351:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2948,7 +2886,7 @@ WordpressHome = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_wordpress_service__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wordpress_home_wordpress_home_component__ = __webpack_require__(351);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wordpress_home_wordpress_home_component__ = __webpack_require__(350);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3018,7 +2956,7 @@ WordpressLogin = __decorate([
 
 /***/ }),
 
-/***/ 353:
+/***/ 352:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3079,7 +3017,7 @@ WordpressPages = __decorate([
 
 /***/ }),
 
-/***/ 354:
+/***/ 353:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3135,13 +3073,13 @@ YoutubeVideoComponent = __decorate([
 
 /***/ }),
 
-/***/ 355:
+/***/ 354:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(356);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(355);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(373);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -3149,32 +3087,32 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 374:
+/***/ 373:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_css_animator__ = __webpack_require__(415);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_css_animator__ = __webpack_require__(414);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_css_animator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_css_animator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(419);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(418);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_shared_module__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_data__ = __webpack_require__(350);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_slides_slides_module__ = __webpack_require__(533);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home_module__ = __webpack_require__(534);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_tabs_tabs_module__ = __webpack_require__(536);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_wordpress_wordpress_module__ = __webpack_require__(537);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_settings_settings_module__ = __webpack_require__(540);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_youtube_youtube_module__ = __webpack_require__(541);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_about_about_module__ = __webpack_require__(543);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_futurepolitics_futurepolitics_module__ = __webpack_require__(544);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_downloads_downloads_module__ = __webpack_require__(545);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_newsletter_newsletter_module__ = __webpack_require__(546);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_stammtische_stammtische_module__ = __webpack_require__(548);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_quiz_quiz_module__ = __webpack_require__(549);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_facebook_connect_facebook_connect_module__ = __webpack_require__(552);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_feeds_feeds_module__ = __webpack_require__(553);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_data__ = __webpack_require__(349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_slides_slides_module__ = __webpack_require__(532);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home_module__ = __webpack_require__(533);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_tabs_tabs_module__ = __webpack_require__(535);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_wordpress_wordpress_module__ = __webpack_require__(536);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_settings_settings_module__ = __webpack_require__(539);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_youtube_youtube_module__ = __webpack_require__(540);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_about_about_module__ = __webpack_require__(542);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_futurepolitics_futurepolitics_module__ = __webpack_require__(543);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_downloads_downloads_module__ = __webpack_require__(544);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_newsletter_newsletter_module__ = __webpack_require__(545);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_stammtische_stammtische_module__ = __webpack_require__(547);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_quiz_quiz_module__ = __webpack_require__(548);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_facebook_connect_facebook_connect_module__ = __webpack_require__(551);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_feeds_feeds_module__ = __webpack_require__(552);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_firebase_firebase_module__ = __webpack_require__(554);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3425,7 +3363,7 @@ WordpressPosts = __decorate([
 
 /***/ }),
 
-/***/ 419:
+/***/ 418:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3453,8 +3391,7 @@ WordpressPosts = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_settings_settings_component_settings_component__ = __webpack_require__(288);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_stammtische_stammtische_component_stammtische_component__ = __webpack_require__(345);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_facebook_connect_facebook_connect_component_facebook_connect_component__ = __webpack_require__(346);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_feeds_feed_categories_feed_categories_component__ = __webpack_require__(347);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_feeds_feed_category_feed_category_component__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_feeds_feed_category_feed_category_component__ = __webpack_require__(157);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3489,8 +3426,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-// import { QuizComponent } from "../pages/quiz/quiz-component/quiz";
 
 
 // import { BarcodeScanner } from '@ionic-native/barcode-scanner';
@@ -3544,7 +3479,7 @@ var MyApp = (function () {
         });
         this.pagesleft = [
             { title: "HOME", component: __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs_component_tabs_component__["a" /* TabsComponent */], icon: "home" }
-            /*       { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" }*/
+            //       { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" }
         ];
         this.pagesleftcenter = [
             { title: "ABOUT", component: __WEBPACK_IMPORTED_MODULE_17__pages_about_about_component_about_component__["a" /* AboutComponent */], icon: "information-circle" },
@@ -3559,22 +3494,22 @@ var MyApp = (function () {
             { title: "STAMMTISCHE", component: __WEBPACK_IMPORTED_MODULE_21__pages_stammtische_stammtische_component_stammtische_component__["a" /* StammtischeComponent */], icon: "pin" }
         ];
         this.pagesleftfooter = [
-            //{ title: 'NEWSLETTER', component: NewsletterComponent, icon: 'help' },
+            //        { title: 'NEWSLETTER', component: NewsletterComponent, icon: 'help' },
             { title: "SETTINGS", component: __WEBPACK_IMPORTED_MODULE_20__pages_settings_settings_component_settings_component__["a" /* SettingsComponent */], icon: "options" }
         ];
         this.pagesright = [
             {
                 title: "FEED_CATEGORY",
-                component: __WEBPACK_IMPORTED_MODULE_24__pages_feeds_feed_category_feed_category_component__["a" /* FeedCategoryComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_23__pages_feeds_feed_category_feed_category_component__["a" /* FeedCategoryComponent */],
                 icon: "logo-rss"
-            },
-            { title: "FEEDS", component: __WEBPACK_IMPORTED_MODULE_23__pages_feeds_feed_categories_feed_categories_component__["a" /* FeedCategoriesComponent */], icon: "logo-rss" }
+            }
+            //      { title: "FEEDS", component: FeedCategoriesComponent, icon: "logo-rss" }
             //		  { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
         ];
         this.pagesrightfooter = [
             { title: "STAMMTISCHE", component: __WEBPACK_IMPORTED_MODULE_21__pages_stammtische_stammtische_component_stammtische_component__["a" /* StammtischeComponent */], icon: "pin" }
         ];
-        // { title: "FAVORITES", component: WordpressFavorites, icon: "thumbs-up" }
+        //      { title: "FAVORITES", component: WordpressFavorites, icon: "thumbs-up" }
         this.pageshidden = [
             //      { title: "QUIZ", component: QuizComponent, icon: "help" }
             //      { title: 'DOWNLOADS', component: WordpressPageDownloads, icon: 'bookmarks' },
@@ -3710,7 +3645,7 @@ __decorate([
     __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Nav */])
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\app\app.html"*/'﻿<ion-split-pane when="lg">\n  <ion-menu *ngIf="!wordpressMenusNavigation" id="menuleft" side="left" type="overlay" [content]="content">\n    <ion-header>\n      <ion-toolbar no-margin no-padding class="dm-dark">\n        <div class="bounce-animation">\n          <ion-title class="animate-in-secondary">{{\'APPNAME\' | translate}}</ion-title>\n        </div>\n      </ion-toolbar>\n    </ion-header>\n    <ion-content>\n      <ion-list padding-top>\n        <!-- <div class="fade-in-left">\n          <ion-item-divider class="dmo-dark menu-divider-bordered">\n            <h2>{{\'MENU\' | translate}}</h2>\n          </ion-item-divider>\n        </div>\n        <ion-item margin-top margin-bottom></ion-item> -->\n        <ion-item-group class="animate-in-primary" margin-vertical>\n          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleft" (tap)="openPage(page)" [class.active]="checkActivePage(page)">\n            <ion-icon item-start [name]="page.icon" class="item-avatar item-icon-right"></ion-icon>\n            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n          </button>\n          <!--<button outline class="animated bounceInLeft" ion-item (tap)="openPageYoutube()">\n<ion-icon name="logo-youtube" class="youtube" item-start></ion-icon>\n<h2 ion-text color="primary">{{\'YOUTUBE_CHANNEL\' | translate}}</h2>\n                        <ion-note item-end>DM</ion-note>\n                    </button>\n                     <button outline class="animated bounceInLeft" ion-item (tap)="openPageWordpress(page)">\n                      <ion-icon name="" class="" item-start></ion-icon>\n                      <h2 ion-text color="primary">Downloads</h2>\n                      <ion-note item-end>DM</ion-note>\n                  </button>\n                    <button outline class="animated bounceInLeft" ion-item (tap)="startSplash()">\n                      <h2 ion-text color="primary">Start</h2>\n                      <ion-note item-end>Splashscreen</ion-note>\n                  </button> -->\n        </ion-item-group>\n        <ion-item-group class="animate-in-primary" margin-top>\n          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleftcenter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">\n            <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>\n            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n          </button>\n        </ion-item-group>\n        <ion-item-group class="animate-in-primary" margin-top>\n          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleftbottom" (tap)=" openPageStammtische(page)" [class.active]="checkActivePage(page)">\n            <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>\n            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n          </button>\n        </ion-item-group>\n      </ion-list>\n    </ion-content>\n    <ion-footer class="animate-in-primary">\n      <button class="list-grow-animation" ion-button full *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">\n        <ion-icon class="animate-in-primary item-avatar item-icon-right" margin [name]="page.icon"></ion-icon>\n        <h4 class="animate-in-secondary" style="font-size:smaller" color="primary">{{page.title | translate}}</h4>\n      </button>\n    </ion-footer>\n  </ion-menu>\n\n  <ion-menu *ngIf="wordpressMenusNavigation" [content]="content">\n    <ion-nav [root]="menuPage"></ion-nav>\n  </ion-menu>\n\n  <ion-nav [root]="rootPage" main #content></ion-nav>\n</ion-split-pane>\n\n<ion-menu id="menuright" side="right" swipeEnabled="true" [content]="content">\n  <ion-content class="card-background-menu">\n    <ion-list>\n        <ion-item-group class="animate-in-primary" margin-top>\n            <button class="animate-in-secondary" ion-item *ngFor="let page of pagesright" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">\n              <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>\n              <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n            </button>\n          </ion-item-group>\n      <!--     <ion-list-header class="fade-in-right dmo-dark">\n        <h2 style="color: white;">Facebook Stream</h2>\n      </ion-list-header>\n      <ion-item no-padding>\n    <iframe class="animated flipInYRight" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhoersteldeutschemitte%2F&tabs=timeline&width=300&height=800&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=131001554119757"\n      width="300" height="800" scrolling="no" frameborder="0" allowTransparency="true"></iframe>\n    </ion-item>\n            <ion-item-divider class="bounce-top dmo-dark">\n        <h2>{{\'FAVORITES\' | translate}} ({{favoritePosts.length}})</h2>\n      </ion-item-divider>\n      <ion-item *ngFor="let post of favoritePosts">\n        <ion-item (tap)="loadPost(post)">\n          {{post.title.rendered}}\n        </ion-item>\n      </ion-item>\n      <ion-item-divider class="fade-in-right dmo-dark">\n        <h2>{{\'DMVENUE\' | translate}}</h2>\n      </ion-item-divider>\n-->\n    </ion-list>\n  </ion-content>\n  <!--   <ion-footer>\n    <ion-list>\n      <ion-item-group>\n        <div class="fade-in-right">\n          <ion-item-divider class="dmo-dark menu-divider-bordered" ion-item>\n            <h2>{{\'SETTINGS\' | translate}}</h2>\n          </ion-item-divider>\n        </div>\n        <p style="display:flex; margin:0px">\n          <button style="width:50%" class="animated rotateInUpRight" ion-item icon-start *ngFor="let page of pagesrightfooter" (tap)="pushPage(page)">\n            <ion-icon small [name]="page.icon"></ion-icon>\n              <h4 style="font-size:smaller" color="primary">{{page.title | translate}}</h4>\n          </button>\n        </p>\n      </ion-item-group>\n    </ion-list>\n  </ion-footer> -->\n</ion-menu>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\app\app.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\app\app.html"*/'﻿<ion-split-pane when="lg">\n  <ion-menu *ngIf="!wordpressMenusNavigation" id="menuleft" side="left" type="overlay" [content]="content">\n    <ion-header>\n      <ion-toolbar no-margin no-padding class="dm-dark">\n        <div class="bounce-animation">\n          <ion-title class="animate-in-secondary">{{\'APPNAME\' | translate}}</ion-title>\n        </div>\n      </ion-toolbar>\n    </ion-header>\n    <ion-content>\n      <ion-list padding-top>\n        <!-- <div class="fade-in-left">\n          <ion-item-divider class="dmo-dark menu-divider-bordered">\n            <h2>{{\'MENU\' | translate}}</h2>\n          </ion-item-divider>\n        </div>\n        <ion-item margin-top margin-bottom></ion-item> -->\n        <ion-item-group class="animate-in-primary" margin-vertical>\n          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleft" (tap)="openPage(page)" [class.active]="checkActivePage(page)">\n            <ion-icon item-start [name]="page.icon" class="item-avatar item-icon-right"></ion-icon>\n            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n          </button>\n          <!--<button outline class="animated bounceInLeft" ion-item (tap)="openPageYoutube()">\n<ion-icon name="logo-youtube" class="youtube" item-start></ion-icon>\n<h2 ion-text color="primary">{{\'YOUTUBE_CHANNEL\' | translate}}</h2>\n                        <ion-note item-end>DM</ion-note>\n                    </button>\n                     <button outline class="animated bounceInLeft" ion-item (tap)="openPageWordpress(page)">\n                      <ion-icon name="" class="" item-start></ion-icon>\n                      <h2 ion-text color="primary">Downloads</h2>\n                      <ion-note item-end>DM</ion-note>\n                  </button>\n                    <button outline class="animated bounceInLeft" ion-item (tap)="startSplash()">\n                      <h2 ion-text color="primary">Start</h2>\n                      <ion-note item-end>Splashscreen</ion-note>\n                  </button> -->\n        </ion-item-group>\n        <ion-item-group class="animate-in-primary" margin-top>\n          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleftcenter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">\n            <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>\n            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n          </button>\n        </ion-item-group>\n        <ion-item-group class="animate-in-primary" margin-top>\n          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleftbottom" (tap)=" openPageStammtische(page)" [class.active]="checkActivePage(page)">\n            <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>\n            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n          </button>\n        </ion-item-group>\n      </ion-list>\n    </ion-content>\n    <ion-footer class="animate-in-primary">\n      <button class="list-grow-animation" ion-button full *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">\n        <ion-icon class="animate-in-primary item-avatar item-icon-right" margin [name]="page.icon"></ion-icon>\n        <h4 class="animate-in-secondary" style="font-size:smaller" color="primary">{{page.title | translate}}</h4>\n      </button>\n    </ion-footer>\n  </ion-menu>\n  <ion-menu *ngIf="wordpressMenusNavigation" [content]="content">\n    <ion-nav [root]="menuPage"></ion-nav>\n  </ion-menu>\n  <ion-nav [root]="rootPage" main #content></ion-nav>\n</ion-split-pane>\n\n<ion-menu id="menuright" side="right" swipeEnabled="true" [content]="content">\n  <ion-header>\n    <ion-toolbar no-margin no-padding class="dm-dark">\n      <div class="bounce-animation">\n        <ion-title class="animate-in-secondary">Nachrichten</ion-title>\n      </div>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content class="card-background-menu">\n    <ion-list>\n      <ion-item-group class="animate-in-primary" margin-top>\n        <button class="animate-in-secondary" ion-item *ngFor="let page of pagesright" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">\n          <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>\n          <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n        </button>\n      </ion-item-group>\n      <!--     <ion-list-header class="fade-in-right dmo-dark">\n        <h2 style="color: white;">Facebook Stream</h2>\n      </ion-list-header>\n      <ion-item no-padding>\n    <iframe class="animated flipInYRight" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhoersteldeutschemitte%2F&tabs=timeline&width=300&height=800&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=131001554119757"\n      width="300" height="800" scrolling="no" frameborder="0" allowTransparency="true"></iframe>\n    </ion-item>\n            <ion-item-divider class="bounce-top dmo-dark">\n        <h2>{{\'FAVORITES\' | translate}} ({{favoritePosts.length}})</h2>\n      </ion-item-divider>\n      <ion-item *ngFor="let post of favoritePosts">\n        <ion-item (tap)="loadPost(post)">\n          {{post.title.rendered}}\n        </ion-item>\n      </ion-item>\n      <ion-item-divider class="fade-in-right dmo-dark">\n        <h2>{{\'DMVENUE\' | translate}}</h2>\n      </ion-item-divider>\n-->\n    </ion-list>\n  </ion-content>\n  <!--   <ion-footer>\n    <ion-list>\n      <ion-item-group>\n        <div class="fade-in-right">\n          <ion-item-divider class="dmo-dark menu-divider-bordered" ion-item>\n            <h2>{{\'SETTINGS\' | translate}}</h2>\n          </ion-item-divider>\n        </div>\n        <p style="display:flex; margin:0px">\n          <button style="width:50%" class="animated rotateInUpRight" ion-item icon-start *ngFor="let page of pagesrightfooter" (tap)="pushPage(page)">\n            <ion-icon small [name]="page.icon"></ion-icon>\n              <h4 style="font-size:smaller" color="primary">{{page.title | translate}}</h4>\n          </button>\n        </p>\n      </ion-item-group>\n    </ion-list>\n  </ion-footer> -->\n</ion-menu>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\app\app.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_7__app_config__["a" /* Config */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
@@ -3883,7 +3818,7 @@ WordpressPost = __decorate([
 
 /***/ }),
 
-/***/ 531:
+/***/ 530:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3916,7 +3851,7 @@ TruncatePipe = __decorate([
 
 /***/ }),
 
-/***/ 532:
+/***/ 531:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3950,7 +3885,7 @@ TrimHtmlPipe = __decorate([
 
 /***/ }),
 
-/***/ 533:
+/***/ 532:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3987,7 +3922,7 @@ SlidesModule = __decorate([
 
 /***/ }),
 
-/***/ 534:
+/***/ 533:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3995,7 +3930,7 @@ SlidesModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_shared_shared_module__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_component_home_component__ = __webpack_require__(535);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_component_home_component__ = __webpack_require__(534);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4024,7 +3959,7 @@ HomeModule = __decorate([
 
 /***/ }),
 
-/***/ 535:
+/***/ 534:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4141,7 +4076,7 @@ HomeComponent = __decorate([
 
 /***/ }),
 
-/***/ 536:
+/***/ 535:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4178,7 +4113,7 @@ TabsModule = __decorate([
 
 /***/ }),
 
-/***/ 537:
+/***/ 536:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4186,15 +4121,15 @@ TabsModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_shared_shared_module__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__wordpress_home_wordpress_home_component__ = __webpack_require__(351);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wordpress_login_wordpress_login_component__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__wordpress_home_wordpress_home_component__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wordpress_login_wordpress_login_component__ = __webpack_require__(351);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__wordpress_posts_wordpress_posts_component__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__wordpress_post_wordpress_post_component__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wordpress_feature_media_wordpress_feature_media_component__ = __webpack_require__(538);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wordpress_feature_media_wordpress_feature_media_component__ = __webpack_require__(537);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__wordpress_categories_wordpress_categories_component__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__wordpress_tags_wordpress_tags_component__ = __webpack_require__(539);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__wordpress_tags_wordpress_tags_component__ = __webpack_require__(538);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__wordpress_favorites_wordpress_favorites_component__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__wordpress_pages_wordpress_pages_component__ = __webpack_require__(353);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__wordpress_pages_wordpress_pages_component__ = __webpack_require__(352);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__wordpress_page_wordpress_page_component__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__wordpress_menus_wordpress_menus_component__ = __webpack_require__(146);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__wordpress_menu_wordpress_menu_component__ = __webpack_require__(268);
@@ -4291,7 +4226,7 @@ WordpressModule = __decorate([
 
 /***/ }),
 
-/***/ 538:
+/***/ 537:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4342,7 +4277,7 @@ WordpressFeatureMedia = __decorate([
 
 /***/ }),
 
-/***/ 539:
+/***/ 538:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4403,7 +4338,7 @@ WordpressTags = __decorate([
 
 /***/ }),
 
-/***/ 540:
+/***/ 539:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4443,7 +4378,7 @@ SettingsModule = __decorate([
 
 /***/ }),
 
-/***/ 541:
+/***/ 540:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4451,8 +4386,8 @@ SettingsModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_shared_shared_module__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__youtube_videos_youtube_videos_component__ = __webpack_require__(542);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__youtube_video_youtube_video_component__ = __webpack_require__(354);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__youtube_videos_youtube_videos_component__ = __webpack_require__(541);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__youtube_video_youtube_video_component__ = __webpack_require__(353);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__youtube_channel_youtube_channel_component__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__youtube_channel_video_youtube_channel_video_component__ = __webpack_require__(267);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -4501,7 +4436,7 @@ YoutubeModule = __decorate([
 
 /***/ }),
 
-/***/ 542:
+/***/ 541:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4509,7 +4444,7 @@ YoutubeModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_youtube_service__ = __webpack_require__(266);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__youtube_video_youtube_video_component__ = __webpack_require__(354);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__youtube_video_youtube_video_component__ = __webpack_require__(353);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4582,7 +4517,7 @@ YoutubeVideosComponent = __decorate([
 
 /***/ }),
 
-/***/ 543:
+/***/ 542:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4647,7 +4582,7 @@ AboutModule = __decorate([
 
 /***/ }),
 
-/***/ 544:
+/***/ 543:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4684,7 +4619,7 @@ FuturePoliticsModule = __decorate([
 
 /***/ }),
 
-/***/ 545:
+/***/ 544:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4721,7 +4656,7 @@ DownloadsModule = __decorate([
 
 /***/ }),
 
-/***/ 546:
+/***/ 545:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4729,7 +4664,7 @@ DownloadsModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_shared_shared_module__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__newsletter_component_newsletter_component__ = __webpack_require__(547);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__newsletter_component_newsletter_component__ = __webpack_require__(546);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4758,7 +4693,7 @@ NewsletterModule = __decorate([
 
 /***/ }),
 
-/***/ 547:
+/***/ 546:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4793,7 +4728,7 @@ NewsletterComponent = __decorate([
 
 /***/ }),
 
-/***/ 548:
+/***/ 547:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4830,7 +4765,7 @@ StammtischeModule = __decorate([
 
 /***/ }),
 
-/***/ 549:
+/***/ 548:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4838,8 +4773,8 @@ StammtischeModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_shared_shared_module__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__flash_card_flash_card__ = __webpack_require__(550);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__quiz_component_quiz__ = __webpack_require__(551);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__flash_card_flash_card__ = __webpack_require__(549);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__quiz_component_quiz__ = __webpack_require__(550);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4869,7 +4804,7 @@ QuizModule = __decorate([
 
 /***/ }),
 
-/***/ 550:
+/***/ 549:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4906,14 +4841,14 @@ FlashCardComponent = __decorate([
 
 /***/ }),
 
-/***/ 551:
+/***/ 550:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QuizComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_data__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_data__ = __webpack_require__(349);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4997,7 +4932,7 @@ QuizComponent = __decorate([
 
 /***/ }),
 
-/***/ 552:
+/***/ 551:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5034,7 +4969,7 @@ FacebookConnectModule = __decorate([
 
 /***/ }),
 
-/***/ 553:
+/***/ 552:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5042,10 +4977,10 @@ FacebookConnectModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_shared_shared_module__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__feed_categories_feed_categories_component__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__feed_categories_feed_categories_component__ = __webpack_require__(553);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__feed_category_feed_category_component__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__feeds_feeds_component__ = __webpack_require__(348);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__feed_feed_component__ = __webpack_require__(349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__feeds_feeds_component__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__feed_feed_component__ = __webpack_require__(348);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5089,6 +5024,68 @@ FeedsModule = __decorate([
 ], FeedsModule);
 
 //# sourceMappingURL=feeds.module.js.map
+
+/***/ }),
+
+/***/ 553:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedCategoriesComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed_category_feed_category_component__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__ = __webpack_require__(158);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var FeedCategoriesComponent = (function () {
+    function FeedCategoriesComponent(feedService, navController, loadingController) {
+        this.feedService = feedService;
+        this.navController = navController;
+        this.loadingController = loadingController;
+    }
+    FeedCategoriesComponent.prototype.ngOnInit = function () {
+        this.getCategories();
+    };
+    FeedCategoriesComponent.prototype.getCategories = function () {
+        var _this = this;
+        var loader = this.loadingController.create({
+            content: "Bitte Warten..."
+        });
+        loader.present();
+        this.feedService.getCategories().subscribe(function (result) {
+            _this.categories = result.categories;
+            loader.dismiss();
+        });
+    };
+    FeedCategoriesComponent.prototype.loadCategory = function (category) {
+        this.navController.push(__WEBPACK_IMPORTED_MODULE_2__feed_category_feed_category_component__["a" /* FeedCategoryComponent */], {
+            category: category
+        });
+    };
+    return FeedCategoriesComponent;
+}());
+FeedCategoriesComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feed-categories\feed-categories.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle="left" icon-only>\n      <ion-icon name=\'menu\'></ion-icon>\n    </button>\n    <ion-title>{{\'CATEGORIES\' | translate}}</ion-title>\n    <ion-buttons end>\n      <button ion-button menuToggle="right" icon-only>\n        <ion-icon name=\'more\'></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content>\n  <ion-list>\n    <ion-item *ngFor="let category of categories" (click)="loadCategory(category)">\n      <ion-icon [name]="category.icon" item-left></ion-icon>\n      <h2>{{category.title}}</h2>\n      <p>{{category.description}}</p>\n      <button ion-button item-right outline>Read</button>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feed-categories\feed-categories.html"*/,
+        providers: [__WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__["a" /* FeedService */]]
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__["a" /* FeedService */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]])
+], FeedCategoriesComponent);
+
+//# sourceMappingURL=feed-categories.component.js.map
 
 /***/ }),
 
@@ -5412,5 +5409,5 @@ WordpressCategories = __decorate([
 
 /***/ })
 
-},[355]);
+},[354]);
 //# sourceMappingURL=main.js.map

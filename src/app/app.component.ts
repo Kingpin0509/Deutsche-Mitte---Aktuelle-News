@@ -107,7 +107,7 @@ export class MyApp {
     });
     this.pagesleft = [
       { title: "HOME", component: TabsComponent, icon: "home" }
-      /*       { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" }*/
+      //       { title: "FIREBASE", component: FirebaseHomeComponent, icon: "pin" }
     ];
     this.pagesleftcenter = [
       { title: "ABOUT", component: AboutComponent, icon: "information-circle" },
@@ -122,7 +122,7 @@ export class MyApp {
       { title: "STAMMTISCHE", component: StammtischeComponent, icon: "pin" }
     ];
     this.pagesleftfooter = [
-      //{ title: 'NEWSLETTER', component: NewsletterComponent, icon: 'help' },
+      //        { title: 'NEWSLETTER', component: NewsletterComponent, icon: 'help' },
       { title: "SETTINGS", component: SettingsComponent, icon: "options" }
     ];
     this.pagesright = [
@@ -130,14 +130,14 @@ export class MyApp {
         title: "FEED_CATEGORY",
         component: FeedCategoryComponent,
         icon: "logo-rss"
-      },
-      { title: "FEEDS", component: FeedCategoriesComponent, icon: "logo-rss" }
+      }
+      //      { title: "FEEDS", component: FeedCategoriesComponent, icon: "logo-rss" }
       //		  { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
     ];
     this.pagesrightfooter = [
       { title: "STAMMTISCHE", component: StammtischeComponent, icon: "pin" }
     ];
-    // { title: "FAVORITES", component: WordpressFavorites, icon: "thumbs-up" }
+    //      { title: "FAVORITES", component: WordpressFavorites, icon: "thumbs-up" }
     this.pageshidden = [
       //      { title: "QUIZ", component: QuizComponent, icon: "help" }
       //      { title: 'DOWNLOADS', component: WordpressPageDownloads, icon: 'bookmarks' },

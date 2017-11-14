@@ -1,8 +1,5 @@
-import { Component } from "@angular/core";
-
-import { OnInit } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { NavParams, NavController, LoadingController } from "ionic-angular";
-
 import { FeedComponent } from "../feed/feed.component";
 import { FeedService } from "../shared/services/feed.service";
 
@@ -30,12 +27,10 @@ export class FeedsComponent implements OnInit {
   ngOnInit() {
     this.getFeeds();
   }
-
   getFeeds() {
     let loader = this.loadingController.create({
-      content: "Please wait"
+      content: "Bitte Warten..."
     });
-
     loader.present();
     this.feedService.getFeeds(this.feedUrl).subscribe(result => {
       this.title = result.query.results.rss.channel.title;
@@ -48,7 +43,6 @@ export class FeedsComponent implements OnInit {
       loader.dismiss();
     });
   }
-
   loadFeed(feed) {
     this.navController.push(FeedComponent, {
       feed: feed

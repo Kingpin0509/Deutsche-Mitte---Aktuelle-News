@@ -1,12 +1,16 @@
 <ion-header>
   <ion-navbar>
-    <button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+    <button ion-button menuToggle="left" icon-only>
+      <ion-icon name='menu'></ion-icon>
     </button>
     <ion-title>{{title}}</ion-title>
+    <ion-buttons end>
+      <button ion-button menuToggle="right" icon-only>
+        <ion-icon name='more'></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
-
 <ion-content>
   <section padding>
     <h2>{{title}}</h2>
@@ -19,7 +23,7 @@
     <ion-item *ngFor="let feed of feeds" (click)="loadFeed(feed)">
       <h2>{{feed.title}}</h2>
       <p>{{feed.summary}}</p>
-      <button ion-button item-right outline>Read</button>
+      <button ion-button item-right outline>Lesen</button>
     </ion-item>
   </ion-list>
 </ion-content>

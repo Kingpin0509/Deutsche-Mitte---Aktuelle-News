@@ -1,8 +1,5 @@
-import { Component } from "@angular/core";
-
-import { OnInit } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { NavController, LoadingController } from "ionic-angular";
-
 import { FeedCategoryComponent } from "../feed-category/feed-category.component";
 import { FeedService } from "../shared/services/feed.service";
 
@@ -22,19 +19,16 @@ export class FeedCategoriesComponent implements OnInit {
   ngOnInit() {
     this.getCategories();
   }
-
   getCategories() {
     let loader = this.loadingController.create({
-      content: "Please wait"
+      content: "Bitte Warten..."
     });
-
     loader.present();
     this.feedService.getCategories().subscribe(result => {
       this.categories = result.categories;
       loader.dismiss();
     });
   }
-
   loadCategory(category) {
     this.navController.push(FeedCategoryComponent, {
       category: category

@@ -1,12 +1,16 @@
 <ion-header>
   <ion-navbar>
-    <button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+    <button ion-button menuToggle="left" icon-only>
+      <ion-icon name='menu'></ion-icon>
     </button>
     <ion-title *ngIf="category">{{category.title}}</ion-title>
+    <ion-buttons end>
+      <button ion-button menuToggle="right" icon-only>
+        <ion-icon name='more'></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
-
 <ion-content *ngIf="category">
   <section padding>
     <h2>{{category.title}}</h2>
@@ -16,7 +20,7 @@
     <ion-item *ngFor="let item of category.items" (click)="loadFeeds(item.url)">
       <h2>{{item.title}}</h2>
       <p>{{item.description}}</p>
-      <button ion-button item-right outline>Read</button>
+      <button ion-button item-right outline>Öffnen</button>
     </ion-item>
   </ion-list>
 </ion-content>

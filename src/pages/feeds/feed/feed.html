@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
-    <button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+    <button ion-button menuToggle="left" icon-only>
+      <ion-icon name='menu'></ion-icon>
     </button>
     <ion-title>{{feed.title}}</ion-title>
     <ion-buttons end>
@@ -11,11 +11,10 @@
     </ion-buttons>
   </ion-navbar>
 </ion-header>
-
 <ion-content>
   <section padding>
     <h1 [innerHtml]=feed.title></h1>
-    <!--<div>{{feed.pubDate | date}}</div>-->
+    <div>{{feed.pubDate | date}}</div>
   </section>
 
   <video id="video" [src]="feed.enclosure.url" controls autoplay *ngIf="feed.enclosure && feed.enclosure.type === 'video/mp4' "></video>

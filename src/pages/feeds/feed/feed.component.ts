@@ -22,7 +22,6 @@ export class FeedComponent {
     const browser = this.iab.create(this.feed.link, "_blank");
     browser.show();
   }
-
   shareFeed() {
     let subject = this.feed.title;
     let message = this.feed.description;
