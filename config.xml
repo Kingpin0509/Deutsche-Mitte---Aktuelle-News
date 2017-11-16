@@ -107,9 +107,6 @@
         <link-domain value="dmaktuell.app.link" />
         <ios-team-release value="1241722675" />
     </branch-config>
-    <engine name="windows" spec="5.0.0" />
-    <engine name="ios" spec="4.5.3" />
-    <engine name="android" spec="^6.4.0" />
     <plugin name="cordova-plugin-device" spec="1.1.7" />
     <plugin name="cordova-plugin-facebook4" spec="1.9.1">
         <variable name="APP_ID" value="131001554119757" />
@@ -124,4 +121,8 @@
     <plugin name="es6-promise-plugin" spec="4.1.1" />
     <plugin name="cordova-plugin-statusbar" spec="git+https://github.com/apache/cordova-plugin-statusbar.git" />
     <plugin name="cordova-plugin-app-version" spec="0.1.9" />
+    <engine name="windows" spec="5.0.0" />
+    <engine name="ios" spec="4.5.3" />
+    <engine name="android" spec="^6.4.0" />
+    <engine name="browser" spec="^5.0.1" />
 </widget>
