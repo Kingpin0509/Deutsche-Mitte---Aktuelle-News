@@ -1,5 +1,5 @@
-{
-  "name": "dmaktuell",
+﻿{
+  "name": "dmaktuellwww",
   "author": "Michael Humann",
   "version": "2.8.5",
   "homepage": "http://news.westweedtzerecords.biz",
@@ -38,6 +38,7 @@
     "animate.css": "3.5.2",
     "chart.js": "2.7.1",
     "cordova-android": "^6.4.0",
+    "cordova-browser": "^5.0.1",
     "cordova-ios": "4.5.3",
     "cordova-ios-plugin-no-export-compliance": "0.0.5",
     "cordova-plugin-app-version": "0.1.9",
@@ -113,7 +114,8 @@
     "platforms": [
       "windows",
       "ios",
-      "android"
+      "android",
+      "browser"
     ]
   }
 }
