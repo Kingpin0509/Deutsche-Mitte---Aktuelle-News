@@ -32,8 +32,11 @@ import { SettingsComponent } from "../pages/settings/settings-component/settings
 import { StammtischeComponent } from "../pages/stammtische/stammtische-component/stammtische.component";
 import { FacebookConnectComponent } from "../pages/facebook-connect/facebook-connect-component/facebook-connect.component";
 // import { QuizComponent } from "../pages/quiz/quiz-component/quiz";
+import { FeedService } from "../pages/feeds/shared/services/feed.service";
 import { FeedCategoriesComponent } from "../pages/feeds/feed-categories/feed-categories.component";
 import { FeedCategoryComponent } from "../pages/feeds/feed-category/feed-category.component";
+import { FeedsComponent } from "../pages/feeds/feeds/feeds.component";
+import { FeedComponent } from "../pages/feeds/feed/feed.component";
 import { FirebaseHomeComponent } from "../pages/firebase/firebase-home/firebase-home.component";
 // import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 // import { BarcodeScannerComponent } from '../pages/barcode-scanner/barcode-scanner-component/barcode-scanner.component';
@@ -46,16 +49,26 @@ import { FirebaseHomeComponent } from "../pages/firebase/firebase-home/firebase-
 // import { LoginComponent } from '../pages/login/login-component/login.component';
 
 @Component({
-  templateUrl: "./app.html"
+  templateUrl: "./app.html",
+  providers: [FeedService]
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
   rootPage;
   menuPage = WordpressMenus;
+  menurightPage;
+  feedUrl: any;
+  feeds: any;
+  title: string;
+  description: string;
+  link: string;
+  image: string;
+  category: any;
+  categories: any;
+  feed: any;
   favoritePosts = [];
   posts: any;
   pageCount: number;
-  category: any;
   page: any;
   pages: Array<{ title: string; component: any; icon: string }>;
   pageshidden: Array<{ title: string; component: any; icon: string }>;
@@ -73,6 +86,7 @@ export class MyApp {
   wordpressMenusNavigation: boolean = false;
   constructor(
     private config: Config,
+    private feedService: FeedService,
     private platform: Platform,
     private storage: Storage,
     private iab: InAppBrowser,
@@ -135,7 +149,7 @@ export class MyApp {
       //		  { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
     ];
     this.pagesrightfooter = [
-      { title: "STAMMTISCHE", component: StammtischeComponent, icon: "pin" }
+      { title: "STAMMTISCHE", component: StammtischeComponent, icon: "compass" }
     ];
     //      { title: "FAVORITES", component: WordpressFavorites, icon: "thumbs-up" }
     this.pageshidden = [
@@ -172,16 +186,21 @@ export class MyApp {
       this.pagesright[0],
       this.pagesrightfooter[0];
   }
+
   initializeApp() {
     //        platform.ready().then(() => {
     //   statusBar.styleDefault();
     //   let splash = modalCtrl.create(Splash);
     //   splash.present();
     //});
+    this.menurightPage = FeedCategoryComponent;
     this.platform.ready().then(() => {
       this.statusBar.overlaysWebView(false);
       this.statusBar.styleBlackTranslucent();
       this.statusBar.backgroundColorByHexString("#005397");
+      //this.getFeeds();
+      this.getCategories();
+
       // this.platform.resume.subscribe(() => {
       //   handleBranch();
       // });
@@ -260,6 +279,58 @@ export class MyApp {
   loadPost(post) {
     this.nav.push(WordpressPost, {
       post: post
+    });
+  }
+
+  getFeeds() {
+    let loader = this.loadingCtrl.create({
+      content: "Bitte Warten..."
+    });
+    loader.present();
+    this.feedService.getFeeds(this.feedUrl).subscribe(result => {
+      this.title = result.query.results.rss.channel.title;
+      this.description = result.query.results.rss.channel.description;
+      this.link = result.query.results.rss.channel.link;
+      if (result.query.results.rss.channel.image) {
+        this.image = result.query.results.rss.channel.image.url;
+      }
+      this.feeds = result.query.results.rss.channel.item;
+      loader.dismiss();
+    });
+  }
+  loadFeed(feed) {
+    this.nav.push(FeedComponent, {
+      feed: feed
+    });
+  }
+  getCategories() {
+    let loader = this.loadingCtrl.create({
+      content: "Bitte Warten..."
+    });
+    loader.present();
+    this.feedService.getCategories().subscribe(result => {
+      this.categories = result.categories;
+      loader.dismiss();
+    });
+  }
+  loadCategory(category) {
+    this.nav.push(FeedCategoryComponent, {
+      category: category
+    });
+  }
+  getCategory() {
+    let loader = this.loadingCtrl.create({
+      content: "Bitte warten"
+    });
+    loader.present();
+    this.feedService.getCategory().subscribe(result => {
+      this.category = result;
+      loader.dismiss();
+    });
+  }
+  loadFeeds(feedUrl) {
+    this.nav.push(FeedsComponent, {
+      feedUrl: feedUrl
     });
   }
 }

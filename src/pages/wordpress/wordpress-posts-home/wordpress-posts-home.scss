@@ -1,12 +1,13 @@
 ion-list-header.header {
   margin: 0px;
   padding-left: 0px;
+  border-top: 0px;
 }
-h2.header {
+h4.header {
   font-family: "Oswald", sans-serif;
   margin: 10px 10px 0px 1px;
   color: #00498a;
-  max-width: 85%;
+  max-width: 90%;
 }
 
 ion-item.content {
@@ -18,11 +19,8 @@ ion-item.content {
 }
 
 ion-note.date {
+  border: 0px;
   font-style: italic;
-  font-size: smaller;
+  font-size: x-small;
   overflow: auto;
-}
-
-ion-card.bordered {
-  border: solid 2px rgba(121, 111, 101, 0.21);
 }

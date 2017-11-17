@@ -70,6 +70,39 @@
       </div>
     </ion-toolbar>
   </ion-header>
+  <ion-nav [root]="menurightPage"></ion-nav>
+
+      <!--  <ion-content>
+      <section padding>
+        <h2>{{title}}</h2>
+        <p>{{description}}</p>
+        <div center text-center>
+          <img [src]="image" *ngIf="image" />
+        </div>
+      </section>
+      <ion-list>
+        <ion-item *ngFor="let feed of feeds" (click)="loadFeed(feed)">
+          <h2>{{feed.title}}</h2>
+          <p>{{feed.summary}}</p>
+          <button ion-button item-right outline>Lesen</button>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+      <ion-content *ngIf="category">
+    <section padding>
+      <h2>{{category.title}}</h2>
+      <p>{{category.description}}</p>
+    </section>
+    <ion-list>
+      <ion-item *ngFor="let item of category.items" (click)="loadFeeds(item.url)">
+        <h2>{{item.title}}</h2>
+        <p>{{item.description}}</p>
+        <button ion-button item-right outline>Öffnen</button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+   <ion-nav [root]="tabRoot" #contentright></ion-nav>
   <ion-content class="card-background-menu">
     <ion-list>
       <ion-item-group class="animate-in-primary" margin-top>
@@ -78,7 +111,7 @@
           <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>
         </button>
       </ion-item-group>
-      <!--     <ion-list-header class="fade-in-right dmo-dark">
+    <ion-list-header class="fade-in-right dmo-dark">
         <h2 style="color: white;">Facebook Stream</h2>
       </ion-list-header>
       <ion-item no-padding>
@@ -96,9 +129,9 @@
       <ion-item-divider class="fade-in-right dmo-dark">
         <h2>{{'DMVENUE' | translate}}</h2>
       </ion-item-divider>
--->
+
     </ion-list>
-  </ion-content>
+  </ion-content>-->
   <!--   <ion-footer>
     <ion-list>
       <ion-item-group>

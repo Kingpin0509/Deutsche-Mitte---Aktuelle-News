@@ -1,5 +1,9 @@
 import { NgModule, ErrorHandler } from "@angular/core";
-import { IonicApp, IonicErrorHandler, IonicModule } from "ionic-angular";
+import {
+  IonicApp,
+  IonicErrorHandler,
+  IonicModule
+} from "ionic-angular";
 import { AnimationService } from "css-animator";
 import { MyApp } from "./app.component";
 import { SharedModule } from "./shared/shared.module";
@@ -20,6 +24,7 @@ import { QuizModule } from "../pages/quiz/quiz.module";
 import { FacebookConnectModule } from "../pages/facebook-connect/facebook-connect.module";
 import { FeedsModule } from "../pages/feeds/feeds.module";
 import { FirebaseModule } from "../pages/firebase/firebase.module";
+import { FeedService } from "../pages/feeds/shared/services/feed.service";
 //import { Splash } from "../pages/splash/splash.module";
 //import { QuizComponent } from '../pages/quiz/quiz-component/quiz';
 //import { FlashCardComponent } from '../pages/quiz/flash-card/flash-card';
@@ -68,6 +73,7 @@ import { FirebaseModule } from "../pages/firebase/firebase.module";
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     Data,
+    FeedService,
     AnimationService
   ]
 })

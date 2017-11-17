@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { NavParams, NavController } from "ionic-angular";
+import { NavParams, NavController, ViewController  } from "ionic-angular";
 import { InAppBrowser } from "@ionic-native/in-app-browser";
 import { SocialSharing } from "@ionic-native/social-sharing";
 
@@ -13,6 +13,7 @@ export class FeedComponent {
     private navParams: NavParams,
     private navController: NavController,
     private iab: InAppBrowser,
+    private viewCtrl: ViewController,
     private socialSharing: SocialSharing
   ) {
     this.feed = navParams.get("feed");
@@ -28,5 +29,8 @@ export class FeedComponent {
     message = message.replace(/(<([^>]+)>)/gi, "");
     let url = this.feed.link;
     this.socialSharing.share(message, subject, "", url);
+  }
+  dismiss() {
+    this.viewCtrl.dismiss();
   }
 }

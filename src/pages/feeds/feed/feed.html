@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle="left" icon-only>
-      <ion-icon name='menu'></ion-icon>
+    <button ion-button (click)="dismiss()" icon-only>
+      <ion-icon name='undo'></ion-icon>
     </button>
     <ion-title>{{feed.title}}</ion-title>
     <ion-buttons end>
@@ -23,5 +23,7 @@
 
   <section padding [innerHtml]="feed.description"></section>
 
-  <button ion-button full (click)=previewFeed()>Preview</button>
+  <button ion-button full (click)=previewFeed()>Öffnen</button>
+  <button ion-button full (click)=dismiss()>Schließen</button>
+
 </ion-content>

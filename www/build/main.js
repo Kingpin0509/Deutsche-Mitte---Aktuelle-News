@@ -771,7 +771,7 @@ var WordpressPostsHome = (function () {
     return WordpressPostsHome;
 }());
 WordpressPostsHome = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\wordpress\wordpress-posts-home\wordpress-posts-home.html"*/'<ion-header>\n  <ion-toolbar>\n    <button ion-button menuToggle="left" icon-only>\n      <ion-icon name=\'menu\'></ion-icon>\n    </button>\n    <ion-title class="bounce-top">{{\'POSTS\' | translate}}</ion-title>\n    <ion-buttons end>\n      <button ion-button menuToggle="right" icon-only>\n        <ion-icon name=\'more\'></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <ion-card *ngFor="let post of posts" class="bordered slide-in-bck-bottom">\n    <ion-list>\n      <ion-card-content>\n        <ion-list-header (tap)="loadPost(post)" class="header">\n          <ion-item>\n            <h2 class="header" item-start text-wrap [innerHTML]="post.title.rendered"></h2>\n            <ion-note class="date" text-wrap item-end>{{post.date | date:\'dd/MM\'}}</ion-note>\n          </ion-item>\n        </ion-list-header>\n        <ion-item-sliding #slidingItem>\n          <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>\n          <ion-item-options side="right">\n            <button ion-button color="primary" (click)="share(slidingItem)" (tap)="favoritePost(post)">\n              <ion-icon name="thumbs-up"></ion-icon>\n              {{ \'FAVORITE\' | translate }}\n            </button>\n            <button ion-button color="secondary" (tap)="loadPost(post)">\n              <ion-icon name="book"></ion-icon>\n              {{ \'READ\' | translate }}\n            </button>\n          </ion-item-options>\n        </ion-item-sliding>\n        <!-- <p>\n          <button ion-button small margin outline color="primary" (tap)="favoritePost(post)" icon-start>\n              <ion-icon name=\'thumbs-up\'></ion-icon>\n              {{ \'FAVORITE\' | translate }}\n            </button>\n          <button ion-button small margin outline color="secondary" (tap)="loadPost(post)" icon-end>\n                {{ \'READ\' | translate }}\n                <ion-icon name=\'book\'></ion-icon>\n              </button>\n        </p> -->\n      </ion-card-content>\n    </ion-list>\n  </ion-card>\n  <ion-infinite-scroll (ionInfinite)="loadMore($event)">\n    <ion-infinite-scroll-content></ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\wordpress\wordpress-posts-home\wordpress-posts-home.html"*/,
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\wordpress\wordpress-posts-home\wordpress-posts-home.html"*/'<ion-header>\n  <ion-toolbar>\n    <button ion-button menuToggle="left" icon-only>\n      <ion-icon name=\'menu\'></ion-icon>\n    </button>\n    <ion-title class="bounce-top">{{\'POSTS\' | translate}}</ion-title>\n    <ion-buttons end>\n      <button ion-button menuToggle="right" icon-only>\n        <ion-icon name=\'more\'></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n    <ion-list>\n      <ion-item *ngFor="let post of posts" class="slide-in-bck-bottom">\n        <ion-list-header (tap)="loadPost(post)" class="header">\n            <h4 class="header" text-wrap item-start [innerHTML]="post.title.rendered"></h4>\n            <ion-note class="date" item-end>{{post.date | date:\'dd/MM\'}}</ion-note>\n        </ion-list-header>\n        <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>\n\n        <!--         <ion-item-sliding #slidingItem>\n          <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>\n          <ion-item-options side="right">\n            <button ion-button color="primary" (click)="share(slidingItem)" (tap)="favoritePost(post)">\n              <ion-icon name="thumbs-up"></ion-icon>\n              {{ \'FAVORITE\' | translate }}\n            </button>\n            <button ion-button color="secondary" (tap)="loadPost(post)">\n              <ion-icon name="book"></ion-icon>\n              {{ \'READ\' | translate }}\n            </button>\n          </ion-item-options>\n        </ion-item-sliding>\n<p>\n          <button ion-button small margin outline color="primary" (tap)="favoritePost(post)" icon-start>\n              <ion-icon name=\'thumbs-up\'></ion-icon>\n              {{ \'FAVORITE\' | translate }}\n            </button>\n          <button ion-button small margin outline color="secondary" (tap)="loadPost(post)" icon-end>\n                {{ \'READ\' | translate }}\n                <ion-icon name=\'book\'></ion-icon>\n              </button>\n        </p> -->\n      </ion-item>\n    </ion-list>\n  <ion-infinite-scroll (ionInfinite)="loadMore($event)">\n    <ion-infinite-scroll-content></ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\wordpress\wordpress-posts-home\wordpress-posts-home.html"*/,
         providers: [__WEBPACK_IMPORTED_MODULE_3__shared_services_wordpress_service__["a" /* WordpressService */]]
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
@@ -2607,10 +2607,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var FeedsComponent = (function () {
-    function FeedsComponent(feedService, navParams, navController, loadingController) {
+    function FeedsComponent(feedService, navParams, navController, modalCtrl, loadingController) {
         this.feedService = feedService;
         this.navParams = navParams;
         this.navController = navController;
+        this.modalCtrl = modalCtrl;
         this.loadingController = loadingController;
         this.feedUrl = navParams.get("feedUrl");
     }
@@ -2634,10 +2635,16 @@ var FeedsComponent = (function () {
             loader.dismiss();
         });
     };
+    // loadFeed(feed) {
+    //   this.navController.push(FeedComponent, {
+    //     feed: feed
+    //   });
+    // }
     FeedsComponent.prototype.loadFeed = function (feed) {
-        this.navController.push(__WEBPACK_IMPORTED_MODULE_2__feed_feed_component__["a" /* FeedComponent */], {
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_2__feed_feed_component__["a" /* FeedComponent */], {
             feed: feed
         });
+        modal.present();
     };
     return FeedsComponent;
 }());
@@ -2645,12 +2652,10 @@ FeedsComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feeds\feeds.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle="left" icon-only>\n      <ion-icon name=\'menu\'></ion-icon>\n    </button>\n    <ion-title>{{title}}</ion-title>\n    <ion-buttons end>\n      <button ion-button menuToggle="right" icon-only>\n        <ion-icon name=\'more\'></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content>\n  <section padding>\n    <h2>{{title}}</h2>\n    <p>{{description}}</p>\n    <div center text-center>\n      <img [src]="image" *ngIf="image" />\n    </div>\n  </section>\n  <ion-list>\n    <ion-item *ngFor="let feed of feeds" (click)="loadFeed(feed)">\n      <h2>{{feed.title}}</h2>\n      <p>{{feed.summary}}</p>\n      <button ion-button item-right outline>Lesen</button>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feeds\feeds.html"*/,
         providers: [__WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__["a" /* FeedService */]]
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__["a" /* FeedService */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__["a" /* FeedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__["a" /* FeedService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]) === "function" && _e || Object])
 ], FeedsComponent);
 
+var _a, _b, _c, _d, _e;
 //# sourceMappingURL=feeds.component.js.map
 
 /***/ }),
@@ -2699,7 +2704,7 @@ var FeedComponent = (function () {
     return FeedComponent;
 }());
 FeedComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feed\feed.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle="left" icon-only>\n      <ion-icon name=\'menu\'></ion-icon>\n    </button>\n    <ion-title>{{feed.title}}</ion-title>\n    <ion-buttons end>\n      <button (tap)="shareFeed()" ion-button icon-only>\n        <ion-icon name="share"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content>\n  <section padding>\n    <h1 [innerHtml]=feed.title></h1>\n    <div>{{feed.pubDate | date}}</div>\n  </section>\n\n  <video id="video" [src]="feed.enclosure.url" controls autoplay *ngIf="feed.enclosure && feed.enclosure.type === \'video/mp4\' "></video>\n  <audio id="audio" [src]="feed.enclosure.url" controls autoplay *ngIf="feed.enclosure && feed.enclosure.type === \'audio/mpeg\' "></audio>\n  <img [src]="feed.enclosure.url" *ngIf="feed.enclosure && feed.enclosure.type === \'image/jpeg\' " />\n\n  <section padding [innerHtml]="feed.description"></section>\n\n  <button ion-button full (click)=previewFeed()>Preview</button>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feed\feed.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feed\feed.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button (click)="dismiss()" icon-only>\n      <ion-icon name=\'undo\'></ion-icon>\n    </button>\n    <ion-title>{{feed.title}}</ion-title>\n    <ion-buttons end>\n      <button (tap)="shareFeed()" ion-button icon-only>\n        <ion-icon name="share"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content>\n  <section padding>\n    <h1 [innerHtml]=feed.title></h1>\n    <div>{{feed.pubDate | date}}</div>\n  </section>\n\n  <video id="video" [src]="feed.enclosure.url" controls autoplay *ngIf="feed.enclosure && feed.enclosure.type === \'video/mp4\' "></video>\n  <audio id="audio" [src]="feed.enclosure.url" controls autoplay *ngIf="feed.enclosure && feed.enclosure.type === \'audio/mpeg\' "></audio>\n  <img [src]="feed.enclosure.url" *ngIf="feed.enclosure && feed.enclosure.type === \'image/jpeg\' " />\n\n  <section padding [innerHtml]="feed.description"></section>\n\n  <button ion-button full (click)=previewFeed()>Öffnen</button>\n  <button ion-button full (click)=dismiss()>Schließen</button>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feed\feed.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */],
@@ -3391,7 +3396,10 @@ WordpressPosts = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_settings_settings_component_settings_component__ = __webpack_require__(288);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_stammtische_stammtische_component_stammtische_component__ = __webpack_require__(345);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_facebook_connect_facebook_connect_component_facebook_connect_component__ = __webpack_require__(346);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_feeds_feed_category_feed_category_component__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_feeds_shared_services_feed_service__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_feeds_feed_category_feed_category_component__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_feeds_feeds_feeds_component__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_feeds_feed_feed_component__ = __webpack_require__(348);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3427,6 +3435,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+// import { QuizComponent } from "../pages/quiz/quiz-component/quiz";
+
+
+
 
 // import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 // import { BarcodeScannerComponent } from '../pages/barcode-scanner/barcode-scanner-component/barcode-scanner.component';
@@ -3438,9 +3450,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 // import { GoogleMapsComponent } from '../pages/google-maps/google-maps-component/google-maps.component';
 // import { LoginComponent } from '../pages/login/login-component/login.component';
 var MyApp = (function () {
-    function MyApp(config, platform, storage, iab, loadingCtrl, splashScreen, translate, menuController, statusBar, modalCtrl) {
+    function MyApp(config, feedService, platform, storage, iab, loadingCtrl, splashScreen, translate, menuController, statusBar, modalCtrl) {
         var _this = this;
         this.config = config;
+        this.feedService = feedService;
         this.platform = platform;
         this.storage = storage;
         this.iab = iab;
@@ -3500,14 +3513,14 @@ var MyApp = (function () {
         this.pagesright = [
             {
                 title: "FEED_CATEGORY",
-                component: __WEBPACK_IMPORTED_MODULE_23__pages_feeds_feed_category_feed_category_component__["a" /* FeedCategoryComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_24__pages_feeds_feed_category_feed_category_component__["a" /* FeedCategoryComponent */],
                 icon: "logo-rss"
             }
             //      { title: "FEEDS", component: FeedCategoriesComponent, icon: "logo-rss" }
             //		  { title: 'STAMMTISCHE', component: StammtischeComponent, icon: 'pin' }
         ];
         this.pagesrightfooter = [
-            { title: "STAMMTISCHE", component: __WEBPACK_IMPORTED_MODULE_21__pages_stammtische_stammtische_component_stammtische_component__["a" /* StammtischeComponent */], icon: "pin" }
+            { title: "STAMMTISCHE", component: __WEBPACK_IMPORTED_MODULE_21__pages_stammtische_stammtische_component_stammtische_component__["a" /* StammtischeComponent */], icon: "compass" }
         ];
         //      { title: "FAVORITES", component: WordpressFavorites, icon: "thumbs-up" }
         this.pageshidden = [
@@ -3551,10 +3564,13 @@ var MyApp = (function () {
         //   let splash = modalCtrl.create(Splash);
         //   splash.present();
         //});
+        this.menurightPage = __WEBPACK_IMPORTED_MODULE_24__pages_feeds_feed_category_feed_category_component__["a" /* FeedCategoryComponent */];
         this.platform.ready().then(function () {
             _this.statusBar.overlaysWebView(false);
             _this.statusBar.styleBlackTranslucent();
             _this.statusBar.backgroundColorByHexString("#005397");
+            //this.getFeeds();
+            _this.getCategories();
             // this.platform.resume.subscribe(() => {
             //   handleBranch();
             // });
@@ -3638,27 +3654,74 @@ var MyApp = (function () {
             post: post
         });
     };
+    MyApp.prototype.getFeeds = function () {
+        var _this = this;
+        var loader = this.loadingCtrl.create({
+            content: "Bitte Warten..."
+        });
+        loader.present();
+        this.feedService.getFeeds(this.feedUrl).subscribe(function (result) {
+            _this.title = result.query.results.rss.channel.title;
+            _this.description = result.query.results.rss.channel.description;
+            _this.link = result.query.results.rss.channel.link;
+            if (result.query.results.rss.channel.image) {
+                _this.image = result.query.results.rss.channel.image.url;
+            }
+            _this.feeds = result.query.results.rss.channel.item;
+            loader.dismiss();
+        });
+    };
+    MyApp.prototype.loadFeed = function (feed) {
+        this.nav.push(__WEBPACK_IMPORTED_MODULE_26__pages_feeds_feed_feed_component__["a" /* FeedComponent */], {
+            feed: feed
+        });
+    };
+    MyApp.prototype.getCategories = function () {
+        var _this = this;
+        var loader = this.loadingCtrl.create({
+            content: "Bitte Warten..."
+        });
+        loader.present();
+        this.feedService.getCategories().subscribe(function (result) {
+            _this.categories = result.categories;
+            loader.dismiss();
+        });
+    };
+    MyApp.prototype.loadCategory = function (category) {
+        this.nav.push(__WEBPACK_IMPORTED_MODULE_24__pages_feeds_feed_category_feed_category_component__["a" /* FeedCategoryComponent */], {
+            category: category
+        });
+    };
+    MyApp.prototype.getCategory = function () {
+        var _this = this;
+        var loader = this.loadingCtrl.create({
+            content: "Bitte warten"
+        });
+        loader.present();
+        this.feedService.getCategory().subscribe(function (result) {
+            _this.category = result;
+            loader.dismiss();
+        });
+    };
+    MyApp.prototype.loadFeeds = function (feedUrl) {
+        this.nav.push(__WEBPACK_IMPORTED_MODULE_25__pages_feeds_feeds_feeds_component__["a" /* FeedsComponent */], {
+            feedUrl: feedUrl
+        });
+    };
     return MyApp;
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Nav */]),
-    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Nav */])
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Nav */]) === "function" && _a || Object)
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\app\app.html"*/'﻿<ion-split-pane when="lg">\n  <ion-menu *ngIf="!wordpressMenusNavigation" id="menuleft" side="left" type="overlay" [content]="content">\n    <ion-header>\n      <ion-toolbar no-margin no-padding class="dm-dark">\n        <div class="bounce-animation">\n          <ion-title class="animate-in-secondary">{{\'APPNAME\' | translate}}</ion-title>\n        </div>\n      </ion-toolbar>\n    </ion-header>\n    <ion-content>\n      <ion-list padding-top>\n        <!-- <div class="fade-in-left">\n          <ion-item-divider class="dmo-dark menu-divider-bordered">\n            <h2>{{\'MENU\' | translate}}</h2>\n          </ion-item-divider>\n        </div>\n        <ion-item margin-top margin-bottom></ion-item> -->\n        <ion-item-group class="animate-in-primary" margin-vertical>\n          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleft" (tap)="openPage(page)" [class.active]="checkActivePage(page)">\n            <ion-icon item-start [name]="page.icon" class="item-avatar item-icon-right"></ion-icon>\n            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n          </button>\n          <!--<button outline class="animated bounceInLeft" ion-item (tap)="openPageYoutube()">\n<ion-icon name="logo-youtube" class="youtube" item-start></ion-icon>\n<h2 ion-text color="primary">{{\'YOUTUBE_CHANNEL\' | translate}}</h2>\n                        <ion-note item-end>DM</ion-note>\n                    </button>\n                     <button outline class="animated bounceInLeft" ion-item (tap)="openPageWordpress(page)">\n                      <ion-icon name="" class="" item-start></ion-icon>\n                      <h2 ion-text color="primary">Downloads</h2>\n                      <ion-note item-end>DM</ion-note>\n                  </button>\n                    <button outline class="animated bounceInLeft" ion-item (tap)="startSplash()">\n                      <h2 ion-text color="primary">Start</h2>\n                      <ion-note item-end>Splashscreen</ion-note>\n                  </button> -->\n        </ion-item-group>\n        <ion-item-group class="animate-in-primary" margin-top>\n          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleftcenter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">\n            <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>\n            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n          </button>\n        </ion-item-group>\n        <ion-item-group class="animate-in-primary" margin-top>\n          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleftbottom" (tap)=" openPageStammtische(page)" [class.active]="checkActivePage(page)">\n            <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>\n            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n          </button>\n        </ion-item-group>\n      </ion-list>\n    </ion-content>\n    <ion-footer class="animate-in-primary">\n      <button class="list-grow-animation" ion-button full *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">\n        <ion-icon class="animate-in-primary item-avatar item-icon-right" margin [name]="page.icon"></ion-icon>\n        <h4 class="animate-in-secondary" style="font-size:smaller" color="primary">{{page.title | translate}}</h4>\n      </button>\n    </ion-footer>\n  </ion-menu>\n  <ion-menu *ngIf="wordpressMenusNavigation" [content]="content">\n    <ion-nav [root]="menuPage"></ion-nav>\n  </ion-menu>\n  <ion-nav [root]="rootPage" main #content></ion-nav>\n</ion-split-pane>\n\n<ion-menu id="menuright" side="right" swipeEnabled="true" [content]="content">\n  <ion-header>\n    <ion-toolbar no-margin no-padding class="dm-dark">\n      <div class="bounce-animation">\n        <ion-title class="animate-in-secondary">Nachrichten</ion-title>\n      </div>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content class="card-background-menu">\n    <ion-list>\n      <ion-item-group class="animate-in-primary" margin-top>\n        <button class="animate-in-secondary" ion-item *ngFor="let page of pagesright" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">\n          <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>\n          <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n        </button>\n      </ion-item-group>\n      <!--     <ion-list-header class="fade-in-right dmo-dark">\n        <h2 style="color: white;">Facebook Stream</h2>\n      </ion-list-header>\n      <ion-item no-padding>\n    <iframe class="animated flipInYRight" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhoersteldeutschemitte%2F&tabs=timeline&width=300&height=800&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=131001554119757"\n      width="300" height="800" scrolling="no" frameborder="0" allowTransparency="true"></iframe>\n    </ion-item>\n            <ion-item-divider class="bounce-top dmo-dark">\n        <h2>{{\'FAVORITES\' | translate}} ({{favoritePosts.length}})</h2>\n      </ion-item-divider>\n      <ion-item *ngFor="let post of favoritePosts">\n        <ion-item (tap)="loadPost(post)">\n          {{post.title.rendered}}\n        </ion-item>\n      </ion-item>\n      <ion-item-divider class="fade-in-right dmo-dark">\n        <h2>{{\'DMVENUE\' | translate}}</h2>\n      </ion-item-divider>\n-->\n    </ion-list>\n  </ion-content>\n  <!--   <ion-footer>\n    <ion-list>\n      <ion-item-group>\n        <div class="fade-in-right">\n          <ion-item-divider class="dmo-dark menu-divider-bordered" ion-item>\n            <h2>{{\'SETTINGS\' | translate}}</h2>\n          </ion-item-divider>\n        </div>\n        <p style="display:flex; margin:0px">\n          <button style="width:50%" class="animated rotateInUpRight" ion-item icon-start *ngFor="let page of pagesrightfooter" (tap)="pushPage(page)">\n            <ion-icon small [name]="page.icon"></ion-icon>\n              <h4 style="font-size:smaller" color="primary">{{page.title | translate}}</h4>\n          </button>\n        </p>\n      </ion-item-group>\n    </ion-list>\n  </ion-footer> -->\n</ion-menu>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\app\app.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\app\app.html"*/'﻿<ion-split-pane when="lg">\n  <ion-menu *ngIf="!wordpressMenusNavigation" id="menuleft" side="left" type="overlay" [content]="content">\n    <ion-header>\n      <ion-toolbar no-margin no-padding class="dm-dark">\n        <div class="bounce-animation">\n          <ion-title class="animate-in-secondary">{{\'APPNAME\' | translate}}</ion-title>\n        </div>\n      </ion-toolbar>\n    </ion-header>\n    <ion-content>\n      <ion-list padding-top>\n        <!-- <div class="fade-in-left">\n          <ion-item-divider class="dmo-dark menu-divider-bordered">\n            <h2>{{\'MENU\' | translate}}</h2>\n          </ion-item-divider>\n        </div>\n        <ion-item margin-top margin-bottom></ion-item> -->\n        <ion-item-group class="animate-in-primary" margin-vertical>\n          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleft" (tap)="openPage(page)" [class.active]="checkActivePage(page)">\n            <ion-icon item-start [name]="page.icon" class="item-avatar item-icon-right"></ion-icon>\n            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n          </button>\n          <!--<button outline class="animated bounceInLeft" ion-item (tap)="openPageYoutube()">\n<ion-icon name="logo-youtube" class="youtube" item-start></ion-icon>\n<h2 ion-text color="primary">{{\'YOUTUBE_CHANNEL\' | translate}}</h2>\n                        <ion-note item-end>DM</ion-note>\n                    </button>\n                     <button outline class="animated bounceInLeft" ion-item (tap)="openPageWordpress(page)">\n                      <ion-icon name="" class="" item-start></ion-icon>\n                      <h2 ion-text color="primary">Downloads</h2>\n                      <ion-note item-end>DM</ion-note>\n                  </button>\n                    <button outline class="animated bounceInLeft" ion-item (tap)="startSplash()">\n                      <h2 ion-text color="primary">Start</h2>\n                      <ion-note item-end>Splashscreen</ion-note>\n                  </button> -->\n        </ion-item-group>\n        <ion-item-group class="animate-in-primary" margin-top>\n          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleftcenter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">\n            <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>\n            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n          </button>\n        </ion-item-group>\n        <ion-item-group class="animate-in-primary" margin-top>\n          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleftbottom" (tap)=" openPageStammtische(page)" [class.active]="checkActivePage(page)">\n            <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>\n            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n          </button>\n        </ion-item-group>\n      </ion-list>\n    </ion-content>\n    <ion-footer class="animate-in-primary">\n      <button class="list-grow-animation" ion-button full *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">\n        <ion-icon class="animate-in-primary item-avatar item-icon-right" margin [name]="page.icon"></ion-icon>\n        <h4 class="animate-in-secondary" style="font-size:smaller" color="primary">{{page.title | translate}}</h4>\n      </button>\n    </ion-footer>\n  </ion-menu>\n  <ion-menu *ngIf="wordpressMenusNavigation" [content]="content">\n    <ion-nav [root]="menuPage"></ion-nav>\n  </ion-menu>\n  <ion-nav [root]="rootPage" main #content></ion-nav>\n</ion-split-pane>\n\n<ion-menu id="menuright" side="right" swipeEnabled="true" [content]="content">\n  <ion-header>\n    <ion-toolbar no-margin no-padding class="dm-dark">\n      <div class="bounce-animation">\n        <ion-title class="animate-in-secondary">Nachrichten</ion-title>\n      </div>\n    </ion-toolbar>\n  </ion-header>\n  <ion-nav [root]="menurightPage"></ion-nav>\n\n      <!--  <ion-content>\n      <section padding>\n        <h2>{{title}}</h2>\n        <p>{{description}}</p>\n        <div center text-center>\n          <img [src]="image" *ngIf="image" />\n        </div>\n      </section>\n      <ion-list>\n        <ion-item *ngFor="let feed of feeds" (click)="loadFeed(feed)">\n          <h2>{{feed.title}}</h2>\n          <p>{{feed.summary}}</p>\n          <button ion-button item-right outline>Lesen</button>\n        </ion-item>\n      </ion-list>\n    </ion-content>\n      <ion-content *ngIf="category">\n    <section padding>\n      <h2>{{category.title}}</h2>\n      <p>{{category.description}}</p>\n    </section>\n    <ion-list>\n      <ion-item *ngFor="let item of category.items" (click)="loadFeeds(item.url)">\n        <h2>{{item.title}}</h2>\n        <p>{{item.description}}</p>\n        <button ion-button item-right outline>Öffnen</button>\n      </ion-item>\n    </ion-list>\n  </ion-content>\n\n   <ion-nav [root]="tabRoot" #contentright></ion-nav>\n  <ion-content class="card-background-menu">\n    <ion-list>\n      <ion-item-group class="animate-in-primary" margin-top>\n        <button class="animate-in-secondary" ion-item *ngFor="let page of pagesright" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">\n          <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>\n          <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n        </button>\n      </ion-item-group>\n    <ion-list-header class="fade-in-right dmo-dark">\n        <h2 style="color: white;">Facebook Stream</h2>\n      </ion-list-header>\n      <ion-item no-padding>\n    <iframe class="animated flipInYRight" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhoersteldeutschemitte%2F&tabs=timeline&width=300&height=800&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=131001554119757"\n      width="300" height="800" scrolling="no" frameborder="0" allowTransparency="true"></iframe>\n    </ion-item>\n            <ion-item-divider class="bounce-top dmo-dark">\n        <h2>{{\'FAVORITES\' | translate}} ({{favoritePosts.length}})</h2>\n      </ion-item-divider>\n      <ion-item *ngFor="let post of favoritePosts">\n        <ion-item (tap)="loadPost(post)">\n          {{post.title.rendered}}\n        </ion-item>\n      </ion-item>\n      <ion-item-divider class="fade-in-right dmo-dark">\n        <h2>{{\'DMVENUE\' | translate}}</h2>\n      </ion-item-divider>\n\n    </ion-list>\n  </ion-content>-->\n  <!--   <ion-footer>\n    <ion-list>\n      <ion-item-group>\n        <div class="fade-in-right">\n          <ion-item-divider class="dmo-dark menu-divider-bordered" ion-item>\n            <h2>{{\'SETTINGS\' | translate}}</h2>\n          </ion-item-divider>\n        </div>\n        <p style="display:flex; margin:0px">\n          <button style="width:50%" class="animated rotateInUpRight" ion-item icon-start *ngFor="let page of pagesrightfooter" (tap)="pushPage(page)">\n            <ion-icon small [name]="page.icon"></ion-icon>\n              <h4 style="font-size:smaller" color="primary">{{page.title | translate}}</h4>\n          </button>\n        </p>\n      </ion-item-group>\n    </ion-list>\n  </ion-footer> -->\n</ion-menu>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\app\app.html"*/,
+        providers: [__WEBPACK_IMPORTED_MODULE_23__pages_feeds_shared_services_feed_service__["a" /* FeedService */]]
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_7__app_config__["a" /* Config */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
-        __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["b" /* Storage */],
-        __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__["a" /* InAppBrowser */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */],
-        __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__["a" /* SplashScreen */],
-        __WEBPACK_IMPORTED_MODULE_6_ng2_translate__["c" /* TranslateService */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* MenuController */],
-        __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__["a" /* StatusBar */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */]])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_7__app_config__["a" /* Config */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__app_config__["a" /* Config */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_23__pages_feeds_shared_services_feed_service__["a" /* FeedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_23__pages_feeds_shared_services_feed_service__["a" /* FeedService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["b" /* Storage */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__["a" /* InAppBrowser */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__["a" /* InAppBrowser */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _h || Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_6_ng2_translate__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6_ng2_translate__["c" /* TranslateService */]) === "function" && _j || Object, typeof (_k = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* MenuController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* MenuController */]) === "function" && _k || Object, typeof (_l = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _l || Object, typeof (_m = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */]) === "function" && _m || Object])
 ], MyApp);
 
+var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m;
 // openPageYoutube(page) {
 //   this.menuController.close();
 //   this.nav.push(YoutubeChannelComponent);

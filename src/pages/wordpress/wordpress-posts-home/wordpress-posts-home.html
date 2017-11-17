@@ -12,16 +12,15 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <ion-card *ngFor="let post of posts" class="bordered slide-in-bck-bottom">
     <ion-list>
-      <ion-card-content>
+      <ion-item *ngFor="let post of posts" class="slide-in-bck-bottom">
         <ion-list-header (tap)="loadPost(post)" class="header">
-          <ion-item>
-            <h2 class="header" item-start text-wrap [innerHTML]="post.title.rendered"></h2>
-            <ion-note class="date" text-wrap item-end>{{post.date | date:'dd/MM'}}</ion-note>
-          </ion-item>
+            <h4 class="header" text-wrap item-start [innerHTML]="post.title.rendered"></h4>
+            <ion-note class="date" item-end>{{post.date | date:'dd/MM'}}</ion-note>
         </ion-list-header>
-        <ion-item-sliding #slidingItem>
+        <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>
+
+        <!--         <ion-item-sliding #slidingItem>
           <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>
           <ion-item-options side="right">
             <button ion-button color="primary" (click)="share(slidingItem)" (tap)="favoritePost(post)">
@@ -34,7 +33,7 @@
             </button>
           </ion-item-options>
         </ion-item-sliding>
-        <!-- <p>
+<p>
           <button ion-button small margin outline color="primary" (tap)="favoritePost(post)" icon-start>
               <ion-icon name='thumbs-up'></ion-icon>
               {{ 'FAVORITE' | translate }}
@@ -44,9 +43,8 @@
                 <ion-icon name='book'></ion-icon>
               </button>
         </p> -->
-      </ion-card-content>
+      </ion-item>
     </ion-list>
-  </ion-card>
   <ion-infinite-scroll (ionInfinite)="loadMore($event)">
     <ion-infinite-scroll-content></ion-infinite-scroll-content>
   </ion-infinite-scroll>

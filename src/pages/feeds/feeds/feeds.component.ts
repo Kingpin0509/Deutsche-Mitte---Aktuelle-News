@@ -1,5 +1,10 @@
 import { Component, OnInit } from "@angular/core";
-import { NavParams, NavController, LoadingController } from "ionic-angular";
+import {
+  NavParams,
+  NavController,
+  LoadingController,
+  ModalController
+} from "ionic-angular";
 import { FeedComponent } from "../feed/feed.component";
 import { FeedService } from "../shared/services/feed.service";
 
@@ -19,6 +24,7 @@ export class FeedsComponent implements OnInit {
     private feedService: FeedService,
     private navParams: NavParams,
     private navController: NavController,
+    private modalCtrl: ModalController,
     private loadingController: LoadingController
   ) {
     this.feedUrl = navParams.get("feedUrl");
@@ -43,9 +49,15 @@ export class FeedsComponent implements OnInit {
       loader.dismiss();
     });
   }
+  // loadFeed(feed) {
+  //   this.navController.push(FeedComponent, {
+  //     feed: feed
+  //   });
+  // }
   loadFeed(feed) {
-    this.navController.push(FeedComponent, {
+    let modal = this.modalCtrl.create(FeedComponent, {
       feed: feed
     });
+    modal.present();
   }
 }
