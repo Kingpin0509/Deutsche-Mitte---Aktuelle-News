@@ -1,15 +1,15 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button (click)="dismiss()" icon-only>
+  <ion-toolbar>
+    <button ion-button (tap)="dismiss()" icon-only>
       <ion-icon name='undo'></ion-icon>
     </button>
     <ion-title>{{feed.title}}</ion-title>
     <ion-buttons end>
-      <button (tap)="shareFeed()" ion-button icon-only>
+      <button ion-button (tap)="shareFeed()" icon-only>
         <ion-icon name="share"></ion-icon>
       </button>
     </ion-buttons>
-  </ion-navbar>
+  </ion-toolbar>
 </ion-header>
 <ion-content>
   <section padding>

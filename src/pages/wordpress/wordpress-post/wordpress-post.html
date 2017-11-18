@@ -1,11 +1,11 @@
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle="left" icon-only>
+    <button menuToggle="left" ion-button icon-only>
       <ion-icon name='menu'></ion-icon>
     </button>
     <ion-title>{{ 'HEADLINE' | translate }}</ion-title>
     <ion-buttons end>
-      <button ion-button color="primary" (tap)="favoritePost(post)">
+      <button ion-button icon-only (tap)="favoritePost(post)">
         <ion-icon name="thumbs-up"></ion-icon>
         {{ 'FAVORITE' | translate }}
       </button>

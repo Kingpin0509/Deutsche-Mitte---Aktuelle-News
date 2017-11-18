@@ -12,15 +12,15 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-    <ion-list>
-      <ion-item *ngFor="let post of posts" class="slide-in-bck-bottom">
-        <ion-list-header (tap)="loadPost(post)" class="header">
-            <h4 class="header" text-wrap item-start [innerHTML]="post.title.rendered"></h4>
-            <ion-note class="date" item-end>{{post.date | date:'dd/MM'}}</ion-note>
-        </ion-list-header>
-        <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>
+  <ion-list class="list-grow-animation">
+    <ion-item *ngFor="let post of posts" class="slide-in-bck-bottom">
+      <ion-list-header (tap)="loadPost(post)" class="menuheader-grow-animation header">
+        <h4 class="header" text-wrap item-start [innerHTML]="post.title.rendered"></h4>
+        <ion-note class="date" item-end>{{post.date | date:'dd/MM'}}</ion-note>
+      </ion-list-header>
+      <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>
 
-        <!--         <ion-item-sliding #slidingItem>
+      <!--         <ion-item-sliding #slidingItem>
           <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>
           <ion-item-options side="right">
             <button ion-button color="primary" (click)="share(slidingItem)" (tap)="favoritePost(post)">
@@ -43,8 +43,8 @@
                 <ion-icon name='book'></ion-icon>
               </button>
         </p> -->
-      </ion-item>
-    </ion-list>
+    </ion-item>
+  </ion-list>
   <ion-infinite-scroll (ionInfinite)="loadMore($event)">
     <ion-infinite-scroll-content></ion-infinite-scroll-content>
   </ion-infinite-scroll>

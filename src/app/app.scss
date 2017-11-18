@@ -23,7 +23,7 @@ img {
 .active {
   background-color: #ff8b00;
   h2 {
-    font-weight: 500;
+    font-weight: 600;
   }
 }
 .tab-button[aria-selected="true"] {
@@ -45,6 +45,7 @@ audio {
 h2 {
   margin-top: 1.6rem;
   margin-bottom: 1rem;
+  font-family: verdana, sans-serif;
   font-weight: bold;
   line-height: 1.2;
 }
@@ -711,7 +712,7 @@ ion-card-content {
     animation-timing-function: ease-in;
   }
   35%,
- 65%,
+  65%,
   75%,
   88% {
     -webkit-transform: translate3d(0, 0, 0);

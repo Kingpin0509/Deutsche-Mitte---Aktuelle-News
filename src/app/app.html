@@ -49,12 +49,12 @@
         </ion-item-group>
       </ion-list>
     </ion-content>
-    <ion-footer class="animate-in-primary">
+<!--     <ion-footer class="animate-in-primary">
       <button class="list-grow-animation" ion-button full *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">
         <ion-icon class="animate-in-primary item-avatar item-icon-right" margin [name]="page.icon"></ion-icon>
         <h4 class="animate-in-secondary" style="font-size:smaller" color="primary">{{page.title | translate}}</h4>
       </button>
-    </ion-footer>
+    </ion-footer> -->
   </ion-menu>
   <ion-menu *ngIf="wordpressMenusNavigation" [content]="content">
     <ion-nav [root]="menuPage"></ion-nav>
@@ -62,7 +62,7 @@
   <ion-nav [root]="rootPage" main #content></ion-nav>
 </ion-split-pane>
 
-<ion-menu id="menuright" side="right" swipeEnabled="true" [content]="content">
+<ion-menu id="menuright" side="right" swipeEnabled="true" type="overlay" [content]="content">
   <ion-header>
     <ion-toolbar no-margin no-padding class="dm-dark">
       <div class="bounce-animation">
@@ -71,8 +71,7 @@
     </ion-toolbar>
   </ion-header>
   <ion-nav [root]="menurightPage"></ion-nav>
-
-      <!--  <ion-content>
+  <!--  <ion-content>
       <section padding>
         <h2>{{title}}</h2>
         <p>{{description}}</p>

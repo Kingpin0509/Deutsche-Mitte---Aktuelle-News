@@ -1,9 +1,5 @@
 import { NgModule, ErrorHandler } from "@angular/core";
-import {
-  IonicApp,
-  IonicErrorHandler,
-  IonicModule
-} from "ionic-angular";
+import { IonicApp, IonicErrorHandler, IonicModule } from "ionic-angular";
 import { AnimationService } from "css-animator";
 import { MyApp } from "./app.component";
 import { SharedModule } from "./shared/shared.module";

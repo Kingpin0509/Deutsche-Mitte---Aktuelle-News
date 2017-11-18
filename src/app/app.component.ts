@@ -199,7 +199,7 @@ export class MyApp {
       this.statusBar.styleBlackTranslucent();
       this.statusBar.backgroundColorByHexString("#005397");
       //this.getFeeds();
-      this.getCategories();
+      //this.getCategories();
 
       // this.platform.resume.subscribe(() => {
       //   handleBranch();
@@ -279,58 +279,6 @@ export class MyApp {
   loadPost(post) {
     this.nav.push(WordpressPost, {
       post: post
-    });
-  }
-
-  getFeeds() {
-    let loader = this.loadingCtrl.create({
-      content: "Bitte Warten..."
-    });
-    loader.present();
-    this.feedService.getFeeds(this.feedUrl).subscribe(result => {
-      this.title = result.query.results.rss.channel.title;
-      this.description = result.query.results.rss.channel.description;
-      this.link = result.query.results.rss.channel.link;
-      if (result.query.results.rss.channel.image) {
-        this.image = result.query.results.rss.channel.image.url;
-      }
-      this.feeds = result.query.results.rss.channel.item;
-      loader.dismiss();
-    });
-  }
-  loadFeed(feed) {
-    this.nav.push(FeedComponent, {
-      feed: feed
-    });
-  }
-  getCategories() {
-    let loader = this.loadingCtrl.create({
-      content: "Bitte Warten..."
-    });
-    loader.present();
-    this.feedService.getCategories().subscribe(result => {
-      this.categories = result.categories;
-      loader.dismiss();
-    });
-  }
-  loadCategory(category) {
-    this.nav.push(FeedCategoryComponent, {
-      category: category
-    });
-  }
-  getCategory() {
-    let loader = this.loadingCtrl.create({
-      content: "Bitte warten"
-    });
-    loader.present();
-    this.feedService.getCategory().subscribe(result => {
-      this.category = result;
-      loader.dismiss();
-    });
-  }
-  loadFeeds(feedUrl) {
-    this.nav.push(FeedsComponent, {
-      feedUrl: feedUrl
     });
   }
 }
