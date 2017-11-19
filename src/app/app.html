@@ -49,12 +49,12 @@
         </ion-item-group>
       </ion-list>
     </ion-content>
-<!--     <ion-footer class="animate-in-primary">
+    <ion-footer class="animate-in-primary">
       <button class="list-grow-animation" ion-button full *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">
         <ion-icon class="animate-in-primary item-avatar item-icon-right" margin [name]="page.icon"></ion-icon>
         <h4 class="animate-in-secondary" style="font-size:smaller" color="primary">{{page.title | translate}}</h4>
       </button>
-    </ion-footer> -->
+    </ion-footer>
   </ion-menu>
   <ion-menu *ngIf="wordpressMenusNavigation" [content]="content">
     <ion-nav [root]="menuPage"></ion-nav>
