@@ -14,7 +14,7 @@ i {
   font-family: "verdana", sans-serif;
   font-style: italic;
   font-size: small;
-  color: #ffa016;
+  color: #222;
 }
 p {
   font-family: "Calibri", sans-serif;
@@ -51,13 +51,16 @@ p {
   max-width: 80%;
   max-height: 60%;
 }
-ion-modal {
-  left: 5%;
-  top: 5%;
-  position: absolute;
-  display: block;
-  width: 90%;
-  height: 100%;
-  contain: strict;
-  box-shadow: 0px 4px 14px 16px rgba(0, 0, 0, 0.4);
+about-page {
+  ion-modal {
+    left: 5%;
+    top: 5%;
+    position: absolute;
+    display: block;
+    width: 90%;
+    height: 100%;
+    contain: strict;
+    -webkit-box-shadow: 0px 4px 14px 16px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 14px 16px rgba(0, 0, 0, 0.4);
+  }
 }

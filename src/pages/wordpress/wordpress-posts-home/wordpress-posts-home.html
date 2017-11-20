@@ -19,7 +19,6 @@
         <ion-note class="date" item-end>{{post.date | date:'dd/MM'}}</ion-note>
       </ion-list-header>
       <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>
-
       <!--         <ion-item-sliding #slidingItem>
           <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>
           <ion-item-options side="right">
