@@ -26852,7 +26852,7 @@ i {
   font-family: "verdana", sans-serif;
   font-style: italic;
   font-size: small;
-  color: #ffa016;
+  color: #222;
 }
 
 p {
@@ -26893,7 +26893,7 @@ p {
   max-height: 60%;
 }
 
-ion-modal {
+about-page ion-modal {
   left: 5%;
   top: 5%;
   position: absolute;
@@ -26983,6 +26983,27 @@ p {
 
 .page-welcome button.login.activated {
   background-color: gainsboro;
+}
+
+h2.header {
+  font-family: "Oswald", sans-serif;
+  color: #00498a;
+}
+
+button {
+  font-family: "verdana", sans-serif;
+}
+
+ion-modal {
+  left: 12.5%;
+  top: 25%;
+  position: absolute;
+  display: block;
+  width: 75%;
+  height: 75%;
+  contain: strict;
+  -webkit-box-shadow: 0px 4px 14px 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4px 14px 16px rgba(0, 0, 0, 0.4);
 }
 
 .logo {
