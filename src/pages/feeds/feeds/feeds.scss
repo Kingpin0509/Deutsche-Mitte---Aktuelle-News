@@ -1,19 +1,21 @@
-h2.header {
-  font-family: "Oswald", sans-serif;
-  color: #00498a;
-}
-button {
-  font-family: "verdana", sans-serif;
-}
+.page-feeds {
+  h2.header {
+    font-family: "Oswald", sans-serif;
+    color: #00498a;
+  }
+  button {
+    font-family: "verdana", sans-serif;
+  }
 
-ion-modal {
-  left: 12.5%;
-  top: 25%;
-  position: absolute;
-  display: block;
-  width: 75%;
-  height: 75%;
-  contain: strict;
-  -webkit-box-shadow: 0px 4px 14px 16px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 4px 14px 16px rgba(0, 0, 0, 0.4);
+  ion-modal {
+    left: 12.5%;
+    top: 25%;
+    position: absolute;
+    display: block;
+    width: 75%;
+    height: 75%;
+    contain: strict;
+    -webkit-box-shadow: 0px 4px 14px 16px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 14px 16px rgba(0, 0, 0, 0.4);
+  }
 }

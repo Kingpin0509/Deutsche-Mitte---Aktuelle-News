@@ -26985,16 +26985,16 @@ p {
   background-color: gainsboro;
 }
 
-h2.header {
+.page-feeds h2.header {
   font-family: "Oswald", sans-serif;
   color: #00498a;
 }
 
-button {
+.page-feeds button {
   font-family: "verdana", sans-serif;
 }
 
-ion-modal {
+.page-feeds ion-modal {
   left: 12.5%;
   top: 25%;
   position: absolute;
