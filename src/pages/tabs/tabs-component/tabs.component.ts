@@ -1,7 +1,6 @@
 import { Component } from "@angular/core";
 import { Storage } from "@ionic/storage";
 import { WordpressPostsHome } from "../../wordpress/wordpress-posts-home/wordpress-posts-home.component";
-// import { WordpressFavorites } from "../../wordpress/wordpress-favorites/wordpress-favorites.component";
 import { YoutubeChannelComponent } from "../../youtube/youtube-channel/youtube-channel.component";
 
 @Component({
@@ -12,17 +11,4 @@ export class TabsComponent {
   // should be each tab's root Page
   tab1Root: any = WordpressPostsHome;
   tab2Root: any = YoutubeChannelComponent;
-/*   tab3Root: any = WordpressFavorites;
-  favoritePosts = [];
-  constructor(private storage: Storage) {}
-  ionViewWillEnter() {
-    this.getPosts();
-  }
-  getPosts() {
-    this.storage.get("wordpress.favorite").then(data => {
-      if (data) {
-        this.favoritePosts = JSON.parse(data);
-      }
-    });
-  } */
 }

@@ -27565,6 +27565,24 @@ ion-note.date {
   overflow: auto;
 }
 
+.col-header {
+  border-left: ridge 0.4px #222;
+  border-right: ridge 0.4px #222;
+}
+
+.row-header {
+  height: 200px;
+  border-bottom: ridge 2px #222;
+}
+
+#left-top-header .fixed-content {
+  margin-bottom: 0px !important;
+}
+
+#left-top-header .scroll-content {
+  margin-bottom: 0px !important;
+}
+
 h2.header {
   font-family: "Oswald", sans-serif;
   color: #00498a;

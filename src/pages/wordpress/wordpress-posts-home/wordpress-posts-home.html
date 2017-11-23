@@ -13,6 +13,25 @@
 </ion-header>
 <ion-content>
   <ion-list class="list-grow-animation">
+    <ion-item>
+      <ion-row class="row-header">
+        <ion-col>
+          <ion-content id="left-top-header">
+            <ion-list class="slide-in-bck-bottom">
+              <ion-item *ngFor="let video of videos" (click)="loadVideo(video)">
+                <ion-avatar item-start *ngIf="video.snippet.thumbnails.default.url">
+                  <img [src]="video.snippet.thumbnails.default.url">
+                </ion-avatar>
+                <h2 class="header">{{video.snippet.title}}</h2>
+                <p [innerHtml]="video.snippet.description"></p>
+              </ion-item>
+            </ion-list>
+          </ion-content>
+        </ion-col>
+        <ion-col class="col-header">2</ion-col>
+        <ion-col>3</ion-col>
+      </ion-row>
+    </ion-item>
     <ion-item *ngFor="let post of posts" class="slide-in-bck-bottom">
       <ion-list-header (tap)="loadPost(post)" class="menuheader-grow-animation header">
         <h4 class="header" text-wrap item-start [innerHTML]="post.title.rendered"></h4>

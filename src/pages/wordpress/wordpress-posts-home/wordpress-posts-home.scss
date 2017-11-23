@@ -24,3 +24,19 @@ ion-note.date {
   font-size: x-small;
   overflow: auto;
 }
+.col-header {
+  border-left: ridge 0.4px #222;
+  border-right: ridge 0.4px #222;
+}
+.row-header {
+  height: 200px;
+  border-bottom: ridge 2px #222;
+}
+#left-top-header {
+  .fixed-content {
+    margin-bottom: 0px!important;
+  }
+  .scroll-content {
+    margin-bottom: 0px!important;
+  }
+}

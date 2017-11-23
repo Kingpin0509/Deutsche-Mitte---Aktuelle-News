@@ -7,13 +7,18 @@ import {
 } from "ionic-angular";
 import { ItemSliding } from "ionic-angular";
 import { Storage } from "@ionic/storage";
+import { YoutubeChannelComponent } from "../../youtube/youtube-channel/youtube-channel.component";
+import { YoutubeChannelVideoComponent } from "../../youtube/youtube-channel-video/youtube-channel-video.component";
+import { YoutubeService } from "../../youtube/shared/services/youtube.service";
 import { WordpressService } from "../shared/services/wordpress.service";
 import { WordpressPost } from "../wordpress-post/wordpress-post.component";
 @Component({
   templateUrl: "./wordpress-posts-home.html",
-  providers: [WordpressService]
+  providers: [WordpressService, YoutubeService]
 })
 export class WordpressPostsHome implements OnInit {
+  videos: any;
+  loader: any;
   posts: any;
   pageCount: number;
   category: any;
@@ -25,6 +30,7 @@ export class WordpressPostsHome implements OnInit {
   constructor(
     private navParams: NavParams,
     private wordpressService: WordpressService,
+    private youtubeService: YoutubeService,
     private navController: NavController,
     private loadingController: LoadingController,
     private toastController: ToastController,
@@ -36,6 +42,9 @@ export class WordpressPostsHome implements OnInit {
   }
 
   ngOnInit() {
+    this.loader = this.loadingController.create({
+      content: "Bitte Warten!"
+    });
     this.category = this.navParams.get("category");
     this.tag = this.navParams.get("tag");
     this.author = this.navParams.get("author");
@@ -48,6 +57,24 @@ export class WordpressPostsHome implements OnInit {
       }
     });
     this.getPosts();
+    this.getChannel();
+  }
+
+  getChannel() {
+    this.youtubeService.getChannel().subscribe(
+      result => {
+        this.videos = result.items;
+        this.loader.dismiss();
+      },
+      error => {
+        this.loader.dismiss();
+      }
+    );
+  }
+  loadVideo(video) {
+    this.navController.push(YoutubeChannelVideoComponent, {
+      video: video
+    });
   }
 
   getPosts() {
@@ -103,7 +130,7 @@ export class WordpressPostsHome implements OnInit {
 
   loadPost(post) {
     this.navController.push(WordpressPost, {
-      'post': post
+      post: post
     });
   }
 
