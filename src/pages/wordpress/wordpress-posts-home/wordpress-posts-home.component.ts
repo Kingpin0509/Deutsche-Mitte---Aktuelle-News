@@ -3,10 +3,13 @@ import {
   NavController,
   NavParams,
   LoadingController,
+  ModalController,
   ToastController
 } from "ionic-angular";
 import { ItemSliding } from "ionic-angular";
 import { Storage } from "@ionic/storage";
+import { FeedService } from "../../../pages/feeds/shared/services/feed.service";
+import { FeedComponent } from "../../../pages/feeds/feed/feed.component";
 import { YoutubeChannelComponent } from "../../youtube/youtube-channel/youtube-channel.component";
 import { YoutubeChannelVideoComponent } from "../../youtube/youtube-channel-video/youtube-channel-video.component";
 import { YoutubeService } from "../../youtube/shared/services/youtube.service";
@@ -14,9 +17,15 @@ import { WordpressService } from "../shared/services/wordpress.service";
 import { WordpressPost } from "../wordpress-post/wordpress-post.component";
 @Component({
   templateUrl: "./wordpress-posts-home.html",
-  providers: [WordpressService, YoutubeService]
+  providers: [WordpressService, YoutubeService, FeedService]
 })
 export class WordpressPostsHome implements OnInit {
+  feedUrl: any;
+  feeds: any;
+  title: string;
+  description: string;
+  link: string;
+  image: string;
   videos: any;
   loader: any;
   posts: any;
@@ -28,12 +37,14 @@ export class WordpressPostsHome implements OnInit {
   hideSearchbar: boolean;
   favoritePosts: any;
   constructor(
+    private feedService: FeedService,
     private navParams: NavParams,
     private wordpressService: WordpressService,
     private youtubeService: YoutubeService,
     private navController: NavController,
     private loadingController: LoadingController,
     private toastController: ToastController,
+    private modalCtrl: ModalController,
     private storage: Storage
   ) {}
 
@@ -45,6 +56,7 @@ export class WordpressPostsHome implements OnInit {
     this.loader = this.loadingController.create({
       content: "Bitte Warten!"
     });
+    this.feedUrl = "https://valued-crow-812.firebaseapp.com/newsletter.rss";
     this.category = this.navParams.get("category");
     this.tag = this.navParams.get("tag");
     this.author = this.navParams.get("author");
@@ -57,6 +69,7 @@ export class WordpressPostsHome implements OnInit {
       }
     });
     this.getPosts();
+    this.getFeeds();
     this.getChannel();
   }
 
@@ -179,5 +192,27 @@ export class WordpressPostsHome implements OnInit {
       query["author"] = this.author;
     }
     return query;
+  }
+  getFeeds() {
+    let loader = this.loadingController.create({
+      content: "Bitte Warten..."
+    });
+    loader.present();
+    this.feedService.getFeeds(this.feedUrl).subscribe(result => {
+      this.title = result.query.results.rss.channel.title;
+      this.description = result.query.results.rss.channel.description;
+      this.link = result.query.results.rss.channel.link;
+      if (result.query.results.rss.channel.image) {
+        this.image = result.query.results.rss.channel.image.url;
+      }
+      this.feeds = result.query.results.rss.channel.item;
+      loader.dismiss();
+    });
+  }
+  loadFeed(feed) {
+    let modal = this.modalCtrl.create(FeedComponent, {
+      feed: feed
+    });
+    modal.present();
   }
 }

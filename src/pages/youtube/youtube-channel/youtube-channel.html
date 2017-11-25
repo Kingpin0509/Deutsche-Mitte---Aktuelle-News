@@ -25,7 +25,7 @@
     </ion-list>
   </ion-card>
 </ion-content> -->
-<ion-content>
+<ion-content class="page-youtube-channel">
   <ion-list class="slide-in-bck-bottom">
     <ion-item *ngFor="let video of videos" (click)="loadVideo(video)">
       <ion-avatar item-start *ngIf="video.snippet.thumbnails.default.url">

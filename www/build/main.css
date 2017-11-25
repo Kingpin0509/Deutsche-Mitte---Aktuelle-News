@@ -25853,7 +25853,7 @@ ion-menu[type="reveal"] {
 }
 
 .tabs .tab-button[aria-selected="true"] {
-  color: #00498a;
+  color: #2d508c;
   padding: 0;
   background-color: rgba(121, 111, 101, 0.21);
 }
@@ -26833,44 +26833,44 @@ ion-card-content {
   animation-duration: 400ms;
 }
 
-h1.header {
+ion-content.page-about h1.header {
   font-family: "Oswald", sans-serif;
   color: #00498a;
 }
 
-h2.header {
+ion-content.page-about h2.header {
   font-family: "Oswald", sans-serif;
   color: #00498a;
 }
 
-h2.button {
+ion-content.page-about h2.button {
   font-family: "Oswald", sans-serif;
   color: #f0f0f0;
 }
 
-i {
+ion-content.page-about i {
   font-family: "verdana", sans-serif;
   font-style: italic;
   font-size: small;
   color: #222;
 }
 
-p {
+ion-content.page-about p {
   font-family: "Calibri", sans-serif;
   color: #222;
 }
 
-.alert {
+ion-content.page-about .alert {
   max-width: 80%;
   max-height: 60%;
 }
 
-.alert .alert-message {
+ion-content.page-about .alert .alert-message {
   max-height: 60%;
   font-size: 15px;
 }
 
-.alert .alert-wrapper {
+ion-content.page-about .alert .alert-wrapper {
   border-radius: 2px;
   max-width: 80%;
   background-color: #fafafa;
@@ -26878,22 +26878,22 @@ p {
   box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
 }
 
-.about {
+ion-content.page-about .about {
   max-width: 80%;
   max-height: 60%;
 }
 
-.about.alert {
+ion-content.page-about .about.alert {
   max-width: 80%;
   max-height: 60%;
 }
 
-.about.alert-wrapper {
+ion-content.page-about .about.alert-wrapper {
   max-width: 80%;
   max-height: 60%;
 }
 
-about-page ion-modal {
+ion-content.page-about ion-modal {
   left: 5%;
   top: 5%;
   position: absolute;
@@ -26905,27 +26905,27 @@ about-page ion-modal {
   box-shadow: 0px 4px 14px 16px rgba(0, 0, 0, 0.4);
 }
 
-h1.header {
+ion-content.page-downloads h1.header {
   font-family: "Oswald", sans-serif;
   color: #00498a;
 }
 
-h2.header {
+ion-content.page-downloads h2.header {
   font-family: "Oswald", sans-serif;
   color: #00498a;
 }
 
-h2.button {
+ion-content.page-downloads h2.button {
   font-family: "Oswald", sans-serif;
 }
 
-i {
-  color: #ffa016;
+ion-content.page-downloads i {
+  color: #222;
   font-style: italic;
   font-size: small;
 }
 
-p {
+ion-content.page-downloads p {
   font-family: "Calibri", sans-serif;
 }
 
@@ -26985,16 +26985,16 @@ p {
   background-color: gainsboro;
 }
 
-.page-feeds h2.header {
+ion-content.page-feeds h2.header {
   font-family: "Oswald", sans-serif;
   color: #00498a;
 }
 
-.page-feeds button {
+ion-content.page-feeds button {
   font-family: "verdana", sans-serif;
 }
 
-.page-feeds ion-modal {
+ion-content.page-feeds ion-modal {
   left: 12.5%;
   top: 25%;
   position: absolute;
@@ -27033,32 +27033,32 @@ p {
   text-transform: none;
 }
 
-h1.header {
+ion-content.page-futurepolitics h1.header {
   font-family: "Oswald", sans-serif;
   color: #00498a;
 }
 
-h2.header {
+ion-content.page-futurepolitics h2.header {
   font-family: "Oswald", sans-serif;
   color: #00498a;
 }
 
-h2.footer {
+ion-content.page-futurepolitics h2.footer {
   font-family: "Oswald", sans-serif;
   color: #00498a;
 }
 
-h3 {
+ion-content.page-futurepolitics h3 {
   font-family: "Oswald", sans-serif;
   color: #00498a;
 }
 
-p {
+ion-content.page-futurepolitics p {
   font-family: "Calibri", sans-serif;
-  color: #ffa016;
+  color: #222;
 }
 
-i {
+ion-content.page-futurepolitics i {
   font-style: italic;
   font-size: small;
 }
@@ -27197,43 +27197,58 @@ i {
   font-weight: bold;
 }
 
-.tutorial-page .toolbar-background {
+ion-content.page-slides {
+  /* ----------------------------------------
+* animation slide-in-blurred-top
+* ----------------------------------------*/
+  /*----------------------------------------
+* animation scale-up-hor-center
+*----------------------------------------*/
+  /*----------------------------------------
+* animation tracking-in-contract
+*----------------------------------------*/
+  /*----------------------------------------
+* animation  h3.tracking-in-contract
+*----------------------------------------*/
+}
+
+ion-content.page-slides .toolbar-background {
   background: rgba(255, 255, 255, 0);
   border-color: transparent;
 }
 
-.tutorial-page .slide-zoom {
+ion-content.page-slides .slide-zoom {
   height: 100%;
 }
 
-.tutorial-page .slide-title {
+ion-content.page-slides .slide-title {
   margin-top: 2.8rem;
   margin-bottom: 2.8rem;
 }
 
-.tutorial-page .slide-image {
+ion-content.page-slides .slide-image {
   max-height: 50%;
   max-width: 60%;
   margin: 18px 0;
 }
 
-.tutorial-page b {
+ion-content.page-slides b {
   font-weight: 500;
 }
 
-.tutorial-page h2 {
+ion-content.page-slides h2 {
   margin: auto;
   max-width: 90%;
   padding: 5px 5px;
 }
 
-.tutorial-page h3 {
+ion-content.page-slides h3 {
   margin: auto;
   max-width: 90%;
   padding: 5px 5px;
 }
 
-.tutorial-page p {
+ion-content.page-slides p {
   margin: auto;
   max-width: 80%;
   padding: 5px 5px;
@@ -27242,14 +27257,11 @@ i {
   color: #60646b;
 }
 
-.tutorial-page p b {
+ion-content.page-slides p b {
   color: #000000;
 }
 
-/* ----------------------------------------
-* animation slide-in-blurred-top
-* ----------------------------------------*/
-.slide-in-blurred-top {
+ion-content.page-slides .slide-in-blurred-top {
   -webkit-animation: slide-in-blurred-top 0.9s cubic-bezier(0.23, 1, 0.32, 1) 100ms both;
   animation: slide-in-blurred-top 0.9s cubic-bezier(0.23, 1, 0.32, 1) 100ms both;
 }
@@ -27296,10 +27308,7 @@ i {
   }
 }
 
-/*----------------------------------------
-* animation scale-up-hor-center
-*----------------------------------------*/
-.scale-up-hor-center {
+ion-content.page-slides .scale-up-hor-center {
   -webkit-animation: scale-up-hor-center 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 150ms both;
   animation: scale-up-hor-center 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 150ms both;
 }
@@ -27326,10 +27335,7 @@ i {
   }
 }
 
-/*----------------------------------------
-* animation tracking-in-contract
-*----------------------------------------*/
-.tracking-in-contract {
+ion-content.page-slides .tracking-in-contract {
   -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0ms both;
   animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0ms both;
 }
@@ -27362,10 +27368,7 @@ i {
   }
 }
 
-/*----------------------------------------
-* animation  h3.tracking-in-contract
-*----------------------------------------*/
-h3.tracking-in-contract {
+ion-content.page-slides h3.tracking-in-contract {
   -webkit-animation: h3tracking-in-contract 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0ms both;
   animation: h3tracking-in-contract 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0ms both;
 }
@@ -27527,30 +27530,31 @@ wordpress-feature-media img {
   width: 100%;
 }
 
-h1.header {
+ion-content.page-wordpress-posts h1.header {
   font-family: "Oswald", sans-serif;
   color: #00498a;
 }
 
-p.content {
+ion-content.page-wordpress-posts p.content {
   font-family: "Calibri", sans-serif;
-  color: #ffa016;
+  color: #222;
 }
 
-ion-list-header.header {
+ion-content.page-wordpress-posts-home ion-list-header.header {
   margin: 0px;
   padding-left: 0px;
   border-top: 0px;
 }
 
-h4.header {
+ion-content.page-wordpress-posts-home h4.header {
   font-family: "Oswald", sans-serif;
   margin: 10px 10px 0px 1px;
+  padding-bottom: 1px !important;
   color: #00498a;
   max-width: 90%;
 }
 
-ion-item.content {
+ion-content.page-wordpress-posts-home ion-item.content {
   font-family: "Calibri", sans-serif;
   color: #666;
   font-size: small;
@@ -27558,21 +27562,28 @@ ion-item.content {
   padding: 0px;
 }
 
-ion-note.date {
+ion-content.page-wordpress-posts-home ion-note.date {
   border: 0px;
   font-style: italic;
   font-size: x-small;
   overflow: auto;
 }
 
-.col-header {
-  border-left: ridge 0.4px #222;
-  border-right: ridge 0.4px #222;
+ion-header.header-wordpress-posts-home .col-header {
+  margin: 0px;
+  padding: 0px;
 }
 
-.row-header {
+ion-header.header-wordpress-posts-home .row-header {
   height: 200px;
-  border-bottom: ridge 2px #222;
+  margin: 0px;
+  padding: 0px;
+}
+
+#left-top-header h5.header {
+  font-family: "Oswald", sans-serif;
+  margin: 0px;
+  color: #00498a;
 }
 
 #left-top-header .fixed-content {
@@ -27583,21 +27594,39 @@ ion-note.date {
   margin-bottom: 0px !important;
 }
 
-h2.header {
+#right-top-header h5.header {
+  font-family: "Oswald", sans-serif;
+  margin: 0px;
+  color: #00498a;
+}
+
+#right-top-header .fixed-content {
+  margin-bottom: 0px !important;
+}
+
+#right-top-header .scroll-content {
+  margin-bottom: 0px !important;
+}
+
+ion-toolbar.toolbar-wordpress-posts-home {
+  background-color: #2f538d;
+}
+
+ion-content.page-youtube-channel h2.header {
   font-family: "Oswald", sans-serif;
   color: #00498a;
 }
 
-p.content {
+ion-content.page-youtube-channel p.content {
   font-family: "Calibri", sans-serif;
-  color: #ffa016;
+  color: #222;
 }
 
-ion-card.bordered {
+ion-content.page-youtube-channel ion-card.bordered {
   border: solid 2px rgba(121, 111, 101, 0.21);
 }
 
-.card-background-page {
+ion-content.page-youtube-channel .card-background-page {
   max-width: 40%;
   position: relative;
   text-align: center;
@@ -27608,7 +27637,7 @@ ion-card.bordered {
   float: left;
 }
 
-.card-title {
+ion-content.page-youtube-channel .card-title {
   position: absolute;
   top: 3%;
   font-size: 1.4em;
@@ -27617,7 +27646,7 @@ ion-card.bordered {
   color: #fff;
 }
 
-.card-subtitle {
+ion-content.page-youtube-channel .card-subtitle {
   font-size: 0.9em;
   position: absolute;
   top: 83%;
@@ -27625,22 +27654,22 @@ ion-card.bordered {
   color: #fff;
 }
 
-.youtube-video iframe {
+ion-content.page-youtube-video .youtube-video iframe {
   height: 75%;
   width: 100%;
 }
 
-h2.header {
+ion-content.page-youtube-video h2.header {
   font-family: "Oswald", sans-serif;
   color: #00498a;
 }
 
-p.content {
+ion-content.page-youtube-video p.content {
   font-family: "Calibri", sans-serif;
-  color: #ffa016;
+  color: #222;
 }
 
-.youtube-video iframe {
+ion-content.page-youtube-video .youtube-video iframe {
   height: 75%;
   width: 100%;
 }

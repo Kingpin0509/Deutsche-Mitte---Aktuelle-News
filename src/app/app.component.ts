@@ -33,10 +33,10 @@ import { StammtischeComponent } from "../pages/stammtische/stammtische-component
 import { FacebookConnectComponent } from "../pages/facebook-connect/facebook-connect-component/facebook-connect.component";
 // import { QuizComponent } from "../pages/quiz/quiz-component/quiz";
 import { FeedService } from "../pages/feeds/shared/services/feed.service";
+import { FeedComponent } from "../pages/feeds/feed/feed.component";
 import { FeedCategoriesComponent } from "../pages/feeds/feed-categories/feed-categories.component";
 import { FeedCategoryComponent } from "../pages/feeds/feed-category/feed-category.component";
 import { FeedsComponent } from "../pages/feeds/feeds/feeds.component";
-import { FeedComponent } from "../pages/feeds/feed/feed.component";
 import { FirebaseHomeComponent } from "../pages/firebase/firebase-home/firebase-home.component";
 // import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 // import { BarcodeScannerComponent } from '../pages/barcode-scanner/barcode-scanner-component/barcode-scanner.component';
@@ -50,19 +50,13 @@ import { FirebaseHomeComponent } from "../pages/firebase/firebase-home/firebase-
 
 @Component({
   templateUrl: "./app.html",
-  providers: [FeedService]
+  providers: []
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
   rootPage;
   menuPage = WordpressMenus;
   menurightPage;
-  feedUrl: any;
-  feeds: any;
-  title: string;
-  description: string;
-  link: string;
-  image: string;
   category: any;
   categories: any;
   feed: any;

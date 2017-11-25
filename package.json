@@ -60,14 +60,14 @@
     "minimatch": "3.0.4",
     "moment": "^2.19.2",
     "ng2-translate": "5.0.0",
-    "promise-polyfill": "6.0.2",
+    "promise-polyfill": "^6.1.0",
     "rxjs": "5.5.2",
     "sw-toolbox": "3.6.0",
     "zone.js": "0.8.18"
   },
   "devDependencies": {
     "@ionic/app-scripts": "^3.1.2",
-    "ajv": "5.4.0",
+    "ajv": "5.5.0",
     "ionic": "3.19.0",
     "typescript": "2.4.2"
   },
