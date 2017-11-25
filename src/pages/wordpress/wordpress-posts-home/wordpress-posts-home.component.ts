@@ -7,6 +7,7 @@ import {
   ToastController
 } from "ionic-angular";
 import { ItemSliding } from "ionic-angular";
+import { Config } from "../../../app/app.config";
 import { Storage } from "@ionic/storage";
 import { FeedService } from "../../../pages/feeds/shared/services/feed.service";
 import { FeedComponent } from "../../../pages/feeds/feed/feed.component";
@@ -46,7 +47,9 @@ export class WordpressPostsHome implements OnInit {
     private toastController: ToastController,
     private modalCtrl: ModalController,
     private storage: Storage
-  ) {}
+  ) {
+    this.feedUrl = navParams.get("feedUrl");
+  }
 
   share(slidingItem: ItemSliding) {
     slidingItem.close();
@@ -56,23 +59,29 @@ export class WordpressPostsHome implements OnInit {
     this.loader = this.loadingController.create({
       content: "Bitte Warten!"
     });
-    this.feedUrl = "https://valued-crow-812.firebaseapp.com/newsletter.rss";
     this.category = this.navParams.get("category");
     this.tag = this.navParams.get("tag");
     this.author = this.navParams.get("author");
     this.hideSearchbar = true;
     this.search = "";
     this.favoritePosts = [];
+    this.feedUrl = "https://valued-crow-812.firebaseapp.com/newsletter.rss";
     this.storage.get("wordpress.favorite").then(data => {
       if (data) {
         this.favoritePosts = JSON.parse(data);
       }
     });
-    this.getPosts();
     this.getFeeds();
+    this.getPosts();
     this.getChannel();
   }
-
+  getFeeds() {
+    this.feedService.getFeeds(this.feedUrl).subscribe(result => {
+      this.title = result.query.results.rss.channel.title;
+      this.link = result.query.results.rss.channel.link;
+      this.feeds = result.query.results.rss.channel.item;
+    });
+  }
   getChannel() {
     this.youtubeService.getChannel().subscribe(
       result => {
@@ -193,7 +202,7 @@ export class WordpressPostsHome implements OnInit {
     }
     return query;
   }
-  getFeeds() {
+/*   getFeeds() {
     let loader = this.loadingController.create({
       content: "Bitte Warten..."
     });
@@ -208,7 +217,7 @@ export class WordpressPostsHome implements OnInit {
       this.feeds = result.query.results.rss.channel.item;
       loader.dismiss();
     });
-  }
+  } */
   loadFeed(feed) {
     let modal = this.modalCtrl.create(FeedComponent, {
       feed: feed

@@ -6,7 +6,7 @@ webpackJsonp([0],{
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__wordpress_wordpress_posts_home_wordpress_posts_home_component__ = __webpack_require__(267);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__wordpress_wordpress_posts_home_wordpress_posts_home_component__ = __webpack_require__(268);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__youtube_youtube_channel_youtube_channel_component__ = __webpack_require__(87);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -36,6 +36,67 @@ var TabsComponent = (function () {
 /***/ }),
 
 /***/ 147:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_social_sharing__ = __webpack_require__(44);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var FeedComponent = (function () {
+    function FeedComponent(navParams, navController, iab, viewCtrl, socialSharing) {
+        this.navParams = navParams;
+        this.navController = navController;
+        this.iab = iab;
+        this.viewCtrl = viewCtrl;
+        this.socialSharing = socialSharing;
+        this.feed = navParams.get("feed");
+    }
+    FeedComponent.prototype.previewFeed = function () {
+        var browser = this.iab.create(this.feed.link, "_blank");
+        browser.show();
+    };
+    FeedComponent.prototype.shareFeed = function () {
+        var subject = this.feed.title;
+        var message = this.feed.description;
+        message = message.replace(/(<([^>]+)>)/gi, "");
+        var url = this.feed.link;
+        this.socialSharing.share(message, subject, "", url);
+    };
+    FeedComponent.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    FeedComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feed\feed.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-buttons start>\n      <button ion-button (tap)="dismiss()" icon-only>\n        <ion-icon name=\'undo\'></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{feed.title}}</ion-title>\n    <ion-buttons end>\n      <button ion-button (tap)="shareFeed()" icon-only>\n        <ion-icon name="share"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content class="page-feeds">\n  <section padding>\n    <h2 class="header" text-center [innerHtml]=feed.title></h2>\n    <div text-center>{{feed.pubDate | date}}</div>\n  </section>\n\n  <video id="video" [src]="feed.enclosure.url" controls autoplay *ngIf="feed.enclosure && feed.enclosure.type === \'video/mp4\' "></video>\n  <audio id="audio" [src]="feed.enclosure.url" controls autoplay *ngIf="feed.enclosure && feed.enclosure.type === \'audio/mpeg\' "></audio>\n  <img [src]="feed.enclosure.url" *ngIf="feed.enclosure && feed.enclosure.type === \'image/jpeg\' " />\n\n  <!-- <section padding [innerHtml]="feed.description"></section> -->\n  <section text-center padding>\n    <button margin ion-button (click)="previewFeed()">{{\'OPEN\' | translate}}</button>\n    <button margin ion-button (click)="dismiss()" color="danger">{{\'CLOSE\' | translate}}</button>\n  </section>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feed\feed.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__["a" /* InAppBrowser */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_native_social_sharing__["a" /* SocialSharing */]])
+    ], FeedComponent);
+    return FeedComponent;
+}());
+
+//# sourceMappingURL=feed.component.js.map
+
+/***/ }),
+
+/***/ 148:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -91,14 +152,14 @@ var YoutubeChannelVideoComponent = (function () {
 
 /***/ }),
 
-/***/ 148:
+/***/ 149:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return YoutubeService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_config__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_config__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -169,7 +230,7 @@ var YoutubeService = (function () {
 
 /***/ }),
 
-/***/ 149:
+/***/ 150:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -178,7 +239,7 @@ var YoutubeService = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_wordpress_service__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wordpress_menu_wordpress_menu_component__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wordpress_menu_wordpress_menu_component__ = __webpack_require__(269);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -238,7 +299,7 @@ var WordpressMenus = (function () {
 
 /***/ }),
 
-/***/ 150:
+/***/ 151:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -308,15 +369,15 @@ var WordpressFavorites = (function () {
 
 /***/ }),
 
-/***/ 152:
+/***/ 153:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedCategoryComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feeds_feeds_component__ = __webpack_require__(291);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feeds_feeds_component__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__ = __webpack_require__(52);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -385,15 +446,15 @@ var FeedCategoryComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__ = __webpack_require__(259);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_splash_screen__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_splash_screen__ = __webpack_require__(261);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_in_app_browser__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_social_sharing__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_facebook__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_facebook__ = __webpack_require__(152);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ng2_translate__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pipes_truncate_pipe__ = __webpack_require__(439);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pipes_trim_html_pipe__ = __webpack_require__(440);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__app_config__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__app_config__ = __webpack_require__(65);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -465,7 +526,7 @@ var SharedModule = (function () {
 
 /***/ }),
 
-/***/ 173:
+/***/ 174:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -478,11 +539,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 173;
+webpackEmptyAsyncContext.id = 174;
 
 /***/ }),
 
-/***/ 216:
+/***/ 217:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -495,7 +556,7 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 216;
+webpackEmptyAsyncContext.id = 217;
 
 /***/ }),
 
@@ -506,7 +567,7 @@ webpackEmptyAsyncContext.id = 216;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WordpressService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_config__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_config__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -615,7 +676,7 @@ var WordpressService = (function () {
 
 /***/ }),
 
-/***/ 266:
+/***/ 267:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -685,7 +746,7 @@ var SlidesComponent = (function () {
 
 /***/ }),
 
-/***/ 267:
+/***/ 268:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -693,10 +754,12 @@ var SlidesComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__youtube_youtube_channel_video_youtube_channel_video_component__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__youtube_shared_services_youtube_service__ = __webpack_require__(148);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_services_wordpress_service__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__wordpress_post_wordpress_post_component__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_feeds_shared_services_feed_service__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_feeds_feed_feed_component__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__youtube_youtube_channel_video_youtube_channel_video_component__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__youtube_shared_services_youtube_service__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_services_wordpress_service__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__wordpress_post_wordpress_post_component__ = __webpack_require__(45);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -713,15 +776,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
 var WordpressPostsHome = (function () {
-    function WordpressPostsHome(navParams, wordpressService, youtubeService, navController, loadingController, toastController, storage) {
+    function WordpressPostsHome(feedService, navParams, wordpressService, youtubeService, navController, loadingController, toastController, modalCtrl, storage) {
+        this.feedService = feedService;
         this.navParams = navParams;
         this.wordpressService = wordpressService;
         this.youtubeService = youtubeService;
         this.navController = navController;
         this.loadingController = loadingController;
         this.toastController = toastController;
+        this.modalCtrl = modalCtrl;
         this.storage = storage;
+        this.feedUrl = navParams.get("feedUrl");
     }
     WordpressPostsHome.prototype.share = function (slidingItem) {
         slidingItem.close();
@@ -737,13 +805,23 @@ var WordpressPostsHome = (function () {
         this.hideSearchbar = true;
         this.search = "";
         this.favoritePosts = [];
+        this.feedUrl = "https://valued-crow-812.firebaseapp.com/newsletter.rss";
         this.storage.get("wordpress.favorite").then(function (data) {
             if (data) {
                 _this.favoritePosts = JSON.parse(data);
             }
         });
+        this.getFeeds();
         this.getPosts();
         this.getChannel();
+    };
+    WordpressPostsHome.prototype.getFeeds = function () {
+        var _this = this;
+        this.feedService.getFeeds(this.feedUrl).subscribe(function (result) {
+            _this.title = result.query.results.rss.channel.title;
+            _this.link = result.query.results.rss.channel.link;
+            _this.feeds = result.query.results.rss.channel.item;
+        });
     };
     WordpressPostsHome.prototype.getChannel = function () {
         var _this = this;
@@ -755,7 +833,7 @@ var WordpressPostsHome = (function () {
         });
     };
     WordpressPostsHome.prototype.loadVideo = function (video) {
-        this.navController.push(__WEBPACK_IMPORTED_MODULE_3__youtube_youtube_channel_video_youtube_channel_video_component__["a" /* YoutubeChannelVideoComponent */], {
+        this.navController.push(__WEBPACK_IMPORTED_MODULE_5__youtube_youtube_channel_video_youtube_channel_video_component__["a" /* YoutubeChannelVideoComponent */], {
             video: video
         });
     };
@@ -806,7 +884,7 @@ var WordpressPostsHome = (function () {
         }, function (error) { return console.log(error); }, function () { return loader.dismiss(); });
     };
     WordpressPostsHome.prototype.loadPost = function (post) {
-        this.navController.push(__WEBPACK_IMPORTED_MODULE_6__wordpress_post_wordpress_post_component__["a" /* WordpressPost */], {
+        this.navController.push(__WEBPACK_IMPORTED_MODULE_8__wordpress_post_wordpress_post_component__["a" /* WordpressPost */], {
             post: post
         });
     };
@@ -852,26 +930,43 @@ var WordpressPostsHome = (function () {
         }
         return query;
     };
+    /*   getFeeds() {
+        let loader = this.loadingController.create({
+          content: "Bitte Warten..."
+        });
+        loader.present();
+        this.feedService.getFeeds(this.feedUrl).subscribe(result => {
+          this.title = result.query.results.rss.channel.title;
+          this.description = result.query.results.rss.channel.description;
+          this.link = result.query.results.rss.channel.link;
+          if (result.query.results.rss.channel.image) {
+            this.image = result.query.results.rss.channel.image.url;
+          }
+          this.feeds = result.query.results.rss.channel.item;
+          loader.dismiss();
+        });
+      } */
+    WordpressPostsHome.prototype.loadFeed = function (feed) {
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_4__pages_feeds_feed_feed_component__["a" /* FeedComponent */], {
+            feed: feed
+        });
+        modal.present();
+    };
     WordpressPostsHome = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\wordpress\wordpress-posts-home\wordpress-posts-home.html"*/'<ion-header class="header-wordpress-posts-home">\n  <ion-navbar>\n    <button ion-button menuToggle="left" icon-only>\n      <ion-icon name=\'menu\'></ion-icon>\n    </button>\n    <ion-title class="bounce-top">{{\'POSTS\' | translate}}</ion-title>\n    <ion-buttons end>\n      <button ion-button menuToggle="right" icon-only>\n        <ion-icon name=\'more\'></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n  <ion-toolbar class="toolbar-wordpress-posts-home">\n    <ion-row class="row-header">\n      <ion-col class="col-header">\n        <ion-content id="left-top-header">\n          <ion-list class="slide-in-bck-bottom">\n            <ion-item *ngFor="let video of videos" (click)="loadVideo(video)">\n              <ion-avatar item-start *ngIf="video.snippet.thumbnails.default.url">\n                <img [src]="video.snippet.thumbnails.default.url">\n              </ion-avatar>\n              <h5 text-wrap class="header">{{video.snippet.title}}</h5>\n              <!-- <p [innerHtml]="video.snippet.description"></p> -->\n            </ion-item>\n          </ion-list>\n        </ion-content>\n      </ion-col>\n      <ion-col class="col-header" text-center>LOGO</ion-col>\n      <ion-col class="col-header">\n        <ion-content id="right-top-header">\n          <ion-list class="slide-in-bck-bottom">\n            <ion-item *ngFor="let feed of feeds" (click)="loadFeed(feed)">\n              <h5 text-wrap class="header">{{feed.title}}</h5>\n            </ion-item>\n          </ion-list>\n        </ion-content>\n      </ion-col>\n    </ion-row>\n  </ion-toolbar>\n</ion-header>\n<ion-content class="page-wordpress-posts-home">\n  <ion-list class="list-grow-animation">\n    <ion-item *ngFor="let post of posts" class="slide-in-bck-bottom">\n      <ion-list-header (tap)="loadPost(post)" class="menuheader-grow-animation header">\n        <h4 class="header" text-wrap item-start [innerHTML]="post.title.rendered"></h4>\n        <ion-note class="date" item-end>{{post.date | date:\'dd/MM\'}}</ion-note>\n      </ion-list-header>\n      <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>\n      <!--         <ion-item-sliding #slidingItem>\n          <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>\n          <ion-item-options side="right">\n            <button ion-button color="primary" (click)="share(slidingItem)" (tap)="favoritePost(post)">\n              <ion-icon name="thumbs-up"></ion-icon>\n              {{ \'FAVORITE\' | translate }}\n            </button>\n            <button ion-button color="secondary" (tap)="loadPost(post)">\n              <ion-icon name="book"></ion-icon>\n              {{ \'READ\' | translate }}\n            </button>\n          </ion-item-options>\n        </ion-item-sliding>\n<p>\n          <button ion-button small margin outline color="primary" (tap)="favoritePost(post)" icon-start>\n              <ion-icon name=\'thumbs-up\'></ion-icon>\n              {{ \'FAVORITE\' | translate }}\n            </button>\n          <button ion-button small margin outline color="secondary" (tap)="loadPost(post)" icon-end>\n                {{ \'READ\' | translate }}\n                <ion-icon name=\'book\'></ion-icon>\n              </button>\n        </p> -->\n    </ion-item>\n  </ion-list>\n  <ion-infinite-scroll (ionInfinite)="loadMore($event)">\n    <ion-infinite-scroll-content></ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\wordpress\wordpress-posts-home\wordpress-posts-home.html"*/,
-            providers: [__WEBPACK_IMPORTED_MODULE_5__shared_services_wordpress_service__["a" /* WordpressService */], __WEBPACK_IMPORTED_MODULE_4__youtube_shared_services_youtube_service__["a" /* YoutubeService */]]
+            providers: [__WEBPACK_IMPORTED_MODULE_7__shared_services_wordpress_service__["a" /* WordpressService */], __WEBPACK_IMPORTED_MODULE_6__youtube_shared_services_youtube_service__["a" /* YoutubeService */], __WEBPACK_IMPORTED_MODULE_3__pages_feeds_shared_services_feed_service__["a" /* FeedService */]]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_5__shared_services_wordpress_service__["a" /* WordpressService */],
-            __WEBPACK_IMPORTED_MODULE_4__youtube_shared_services_youtube_service__["a" /* YoutubeService */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__pages_feeds_shared_services_feed_service__["a" /* FeedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__pages_feeds_shared_services_feed_service__["a" /* FeedService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_7__shared_services_wordpress_service__["a" /* WordpressService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__shared_services_wordpress_service__["a" /* WordpressService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_6__youtube_shared_services_youtube_service__["a" /* YoutubeService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__youtube_shared_services_youtube_service__["a" /* YoutubeService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */]) === "function" && _h || Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]) === "function" && _j || Object])
     ], WordpressPostsHome);
     return WordpressPostsHome;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j;
 }());
 
 //# sourceMappingURL=wordpress-posts-home.component.js.map
 
 /***/ }),
 
-/***/ 268:
+/***/ 269:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -880,10 +975,10 @@ var WordpressPostsHome = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_wordpress_service__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wordpress_menu_item_wordpress_menu_item_component__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wordpress_menu_item_wordpress_menu_item_component__ = __webpack_require__(270);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__wordpress_posts_wordpress_posts_component__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__wordpress_post_wordpress_post_component__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wordpress_page_wordpress_page_component__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wordpress_page_wordpress_page_component__ = __webpack_require__(66);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1004,7 +1099,7 @@ var WordpressMenu = (function () {
 
 /***/ }),
 
-/***/ 269:
+/***/ 270:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1014,7 +1109,7 @@ var WordpressMenu = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__wordpress_posts_wordpress_posts_component__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wordpress_post_wordpress_post_component__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__wordpress_page_wordpress_page_component__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__wordpress_page_wordpress_page_component__ = __webpack_require__(66);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1120,7 +1215,7 @@ var WordpressMenuItem = (function () {
 
 /***/ }),
 
-/***/ 270:
+/***/ 271:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1196,27 +1291,27 @@ var WordpressPageDownloads = (function () {
 
 /***/ }),
 
-/***/ 271:
+/***/ 272:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__aussenpolitik_component_aussenpolitik_component__ = __webpack_require__(272);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__innenpolitik_component_innenpolitik_component__ = __webpack_require__(273);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__finanzen_component_finanzen_component__ = __webpack_require__(274);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__wirtschaft_component_wirtschaft_component__ = __webpack_require__(275);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__arbeit_component_arbeit_component__ = __webpack_require__(276);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__verteidigung_component_verteidigung_component__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__bildung_component_bildung_component__ = __webpack_require__(278);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__familie_component_familie_component__ = __webpack_require__(279);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__umwelt_component_umwelt_component__ = __webpack_require__(280);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__nahrung_component_nahrung_component__ = __webpack_require__(281);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__gesundheit_component_gesundheit_component__ = __webpack_require__(282);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__verkehr_component_verkehr_component__ = __webpack_require__(283);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__entwicklung_component_entwicklung_component__ = __webpack_require__(284);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__justiz_component_justiz_component__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__aussenpolitik_component_aussenpolitik_component__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__innenpolitik_component_innenpolitik_component__ = __webpack_require__(274);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__finanzen_component_finanzen_component__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__wirtschaft_component_wirtschaft_component__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__arbeit_component_arbeit_component__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__verteidigung_component_verteidigung_component__ = __webpack_require__(278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__bildung_component_bildung_component__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__familie_component_familie_component__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__umwelt_component_umwelt_component__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__nahrung_component_nahrung_component__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__gesundheit_component_gesundheit_component__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__verkehr_component_verkehr_component__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__entwicklung_component_entwicklung_component__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__justiz_component_justiz_component__ = __webpack_require__(286);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1319,7 +1414,7 @@ var AboutComponent = (function () {
 
 /***/ }),
 
-/***/ 272:
+/***/ 273:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1358,7 +1453,7 @@ var AussenpolitikComponent = (function () {
 
 /***/ }),
 
-/***/ 273:
+/***/ 274:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1397,7 +1492,7 @@ var InnenpolitikComponent = (function () {
 
 /***/ }),
 
-/***/ 274:
+/***/ 275:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1436,7 +1531,7 @@ var FinanzenComponent = (function () {
 
 /***/ }),
 
-/***/ 275:
+/***/ 276:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1475,7 +1570,7 @@ var WirtschaftComponent = (function () {
 
 /***/ }),
 
-/***/ 276:
+/***/ 277:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1514,7 +1609,7 @@ var ArbeitComponent = (function () {
 
 /***/ }),
 
-/***/ 277:
+/***/ 278:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1553,7 +1648,7 @@ var VerteidigungComponent = (function () {
 
 /***/ }),
 
-/***/ 278:
+/***/ 279:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1592,7 +1687,7 @@ var BildungComponent = (function () {
 
 /***/ }),
 
-/***/ 279:
+/***/ 280:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1631,7 +1726,7 @@ var FamilieComponent = (function () {
 
 /***/ }),
 
-/***/ 280:
+/***/ 281:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1670,7 +1765,7 @@ var UmweltComponent = (function () {
 
 /***/ }),
 
-/***/ 281:
+/***/ 282:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1709,7 +1804,7 @@ var NahrungComponent = (function () {
 
 /***/ }),
 
-/***/ 282:
+/***/ 283:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1748,7 +1843,7 @@ var GesundheitComponent = (function () {
 
 /***/ }),
 
-/***/ 283:
+/***/ 284:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1787,7 +1882,7 @@ var VerkehrComponent = (function () {
 
 /***/ }),
 
-/***/ 284:
+/***/ 285:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1826,7 +1921,7 @@ var EntwicklungComponent = (function () {
 
 /***/ }),
 
-/***/ 285:
+/***/ 286:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1865,7 +1960,7 @@ var JustizComponent = (function () {
 
 /***/ }),
 
-/***/ 286:
+/***/ 287:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1900,7 +1995,7 @@ var FuturePoliticsComponent = (function () {
 
 /***/ }),
 
-/***/ 287:
+/***/ 288:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1935,7 +2030,7 @@ var DownloadsComponent = (function () {
 
 /***/ }),
 
-/***/ 288:
+/***/ 289:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2007,7 +2102,7 @@ var SettingsComponent = (function () {
 
 /***/ }),
 
-/***/ 289:
+/***/ 290:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2056,7 +2151,7 @@ var StammtischeComponent = (function () {
 
 /***/ }),
 
-/***/ 290:
+/***/ 291:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2064,7 +2159,7 @@ var StammtischeComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_facebook__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_facebook__ = __webpack_require__(152);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2139,15 +2234,15 @@ var FacebookConnectComponent = (function () {
 
 /***/ }),
 
-/***/ 291:
+/***/ 292:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed_feed_component__ = __webpack_require__(292);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed_feed_component__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__ = __webpack_require__(52);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2215,67 +2310,6 @@ var FeedsComponent = (function () {
 }());
 
 //# sourceMappingURL=feeds.component.js.map
-
-/***/ }),
-
-/***/ 292:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_social_sharing__ = __webpack_require__(44);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var FeedComponent = (function () {
-    function FeedComponent(navParams, navController, iab, viewCtrl, socialSharing) {
-        this.navParams = navParams;
-        this.navController = navController;
-        this.iab = iab;
-        this.viewCtrl = viewCtrl;
-        this.socialSharing = socialSharing;
-        this.feed = navParams.get("feed");
-    }
-    FeedComponent.prototype.previewFeed = function () {
-        var browser = this.iab.create(this.feed.link, "_blank");
-        browser.show();
-    };
-    FeedComponent.prototype.shareFeed = function () {
-        var subject = this.feed.title;
-        var message = this.feed.description;
-        message = message.replace(/(<([^>]+)>)/gi, "");
-        var url = this.feed.link;
-        this.socialSharing.share(message, subject, "", url);
-    };
-    FeedComponent.prototype.dismiss = function () {
-        this.viewCtrl.dismiss();
-    };
-    FeedComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feed\feed.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-buttons start>\n      <button ion-button (tap)="dismiss()" icon-only>\n        <ion-icon name=\'undo\'></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{feed.title}}</ion-title>\n    <ion-buttons end>\n      <button ion-button (tap)="shareFeed()" icon-only>\n        <ion-icon name="share"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content class="page-feeds">\n  <section padding>\n    <h2 class="header" text-center [innerHtml]=feed.title></h2>\n    <div text-center>{{feed.pubDate | date}}</div>\n  </section>\n\n  <video id="video" [src]="feed.enclosure.url" controls autoplay *ngIf="feed.enclosure && feed.enclosure.type === \'video/mp4\' "></video>\n  <audio id="audio" [src]="feed.enclosure.url" controls autoplay *ngIf="feed.enclosure && feed.enclosure.type === \'audio/mpeg\' "></audio>\n  <img [src]="feed.enclosure.url" *ngIf="feed.enclosure && feed.enclosure.type === \'image/jpeg\' " />\n\n  <!-- <section padding [innerHtml]="feed.description"></section> -->\n  <section text-center padding>\n    <button margin ion-button (click)="previewFeed()">{{\'OPEN\' | translate}}</button>\n    <button margin ion-button (click)="dismiss()" color="danger">{{\'CLOSE\' | translate}}</button>\n  </section>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\pages\feeds\feed\feed.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__["a" /* InAppBrowser */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_3__ionic_native_social_sharing__["a" /* SocialSharing */]])
-    ], FeedComponent);
-    return FeedComponent;
-}());
-
-//# sourceMappingURL=feed.component.js.map
 
 /***/ }),
 
@@ -2350,9 +2384,9 @@ var Data = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__wordpress_login_wordpress_login_component__ = __webpack_require__(295);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wordpress_posts_wordpress_posts_component__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__wordpress_categories_wordpress_categories_component__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__wordpress_favorites_wordpress_favorites_component__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__wordpress_favorites_wordpress_favorites_component__ = __webpack_require__(151);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wordpress_pages_wordpress_pages_component__ = __webpack_require__(296);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__wordpress_menus_wordpress_menus_component__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__wordpress_menus_wordpress_menus_component__ = __webpack_require__(150);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2532,7 +2566,7 @@ var WordpressLogin = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_wordpress_service__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__wordpress_page_wordpress_page_component__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__wordpress_page_wordpress_page_component__ = __webpack_require__(66);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2935,7 +2969,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_facebook_connect_facebook_connect_module__ = __webpack_require__(460);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_feeds_feeds_module__ = __webpack_require__(461);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_firebase_firebase_module__ = __webpack_require__(463);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_feeds_shared_services_feed_service__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_feeds_shared_services_feed_service__ = __webpack_require__(52);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3195,28 +3229,28 @@ var WordpressPosts = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__ = __webpack_require__(259);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(261);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ng2_translate__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_config__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_slides_slides_component_slides_component__ = __webpack_require__(266);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_config__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_slides_slides_component_slides_component__ = __webpack_require__(267);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs_component_tabs_component__ = __webpack_require__(146);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_wordpress_wordpress_post_wordpress_post_component__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_wordpress_wordpress_menus_wordpress_menus_component__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_wordpress_wordpress_menus_wordpress_menus_component__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_wordpress_wordpress_posts_wordpress_posts_component__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_wordpress_wordpress_favorites_wordpress_favorites_component__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_wordpress_wordpress_favorites_wordpress_favorites_component__ = __webpack_require__(151);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_wordpress_wordpress_categories_wordpress_categories_component__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_wordpress_wordpress_page_downloads_wordpress_page_downloads_component__ = __webpack_require__(270);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_wordpress_wordpress_page_downloads_wordpress_page_downloads_component__ = __webpack_require__(271);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_youtube_youtube_channel_youtube_channel_component__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_about_about_component_about_component__ = __webpack_require__(271);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_futurepolitics_futurepolitics_component_futurepolitics_component__ = __webpack_require__(286);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_downloads_downloads_component_downloads_component__ = __webpack_require__(287);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_settings_settings_component_settings_component__ = __webpack_require__(288);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_stammtische_stammtische_component_stammtische_component__ = __webpack_require__(289);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_facebook_connect_facebook_connect_component_facebook_connect_component__ = __webpack_require__(290);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_feeds_shared_services_feed_service__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_feeds_feed_category_feed_category_component__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_about_about_component_about_component__ = __webpack_require__(272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_futurepolitics_futurepolitics_component_futurepolitics_component__ = __webpack_require__(287);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_downloads_downloads_component_downloads_component__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_settings_settings_component_settings_component__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_stammtische_stammtische_component_stammtische_component__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_facebook_connect_facebook_connect_component_facebook_connect_component__ = __webpack_require__(291);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_feeds_shared_services_feed_service__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_feeds_feed_category_feed_category_component__ = __webpack_require__(153);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3475,7 +3509,7 @@ var MyApp = (function () {
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\app\app.html"*/'﻿<ion-split-pane when="lg">\n  <ion-menu *ngIf="!wordpressMenusNavigation" id="menuleft" side="left" type="overlay" [content]="content">\n    <ion-header>\n      <ion-toolbar no-margin no-padding class="dm-dark">\n        <div class="bounce-animation">\n          <ion-title class="animate-in-secondary">{{\'APPNAME\' | translate}}</ion-title>\n        </div>\n      </ion-toolbar>\n    </ion-header>\n    <ion-content>\n      <ion-list padding-top>\n        <!-- <div class="fade-in-left">\n          <ion-item-divider class="dmo-dark menu-divider-bordered">\n            <h2>{{\'MENU\' | translate}}</h2>\n          </ion-item-divider>\n        </div>\n        <ion-item margin-top margin-bottom></ion-item> -->\n        <ion-item-group class="animate-in-primary" margin-vertical>\n          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleft" (tap)="openPage(page)" [class.active]="checkActivePage(page)">\n            <ion-icon item-start [name]="page.icon" class="item-avatar item-icon-right"></ion-icon>\n            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n          </button>\n          <!--<button outline class="animated bounceInLeft" ion-item (tap)="openPageYoutube()">\n<ion-icon name="logo-youtube" class="youtube" item-start></ion-icon>\n<h2 ion-text color="primary">{{\'YOUTUBE_CHANNEL\' | translate}}</h2>\n                        <ion-note item-end>DM</ion-note>\n                    </button>\n                     <button outline class="animated bounceInLeft" ion-item (tap)="openPageWordpress(page)">\n                      <ion-icon name="" class="" item-start></ion-icon>\n                      <h2 ion-text color="primary">Downloads</h2>\n                      <ion-note item-end>DM</ion-note>\n                  </button>\n                    <button outline class="animated bounceInLeft" ion-item (tap)="startSplash()">\n                      <h2 ion-text color="primary">Start</h2>\n                      <ion-note item-end>Splashscreen</ion-note>\n                  </button> -->\n        </ion-item-group>\n        <ion-item-group class="animate-in-primary" margin-top>\n          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleftcenter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">\n            <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>\n            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n          </button>\n        </ion-item-group>\n        <ion-item-group class="animate-in-primary" margin-top>\n          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleftbottom" (tap)=" openPageStammtische(page)" [class.active]="checkActivePage(page)">\n            <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>\n            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n          </button>\n        </ion-item-group>\n      </ion-list>\n    </ion-content>\n    <ion-footer class="animate-in-primary">\n      <button class="list-grow-animation" ion-button full *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">\n        <ion-icon class="animate-in-primary item-avatar item-icon-right" margin [name]="page.icon"></ion-icon>\n        <h4 class="animate-in-secondary" style="font-size:smaller" color="primary">{{page.title | translate}}</h4>\n      </button>\n    </ion-footer>\n  </ion-menu>\n  <ion-menu *ngIf="wordpressMenusNavigation" [content]="content">\n    <ion-nav [root]="menuPage"></ion-nav>\n  </ion-menu>\n  <ion-nav [root]="rootPage" main #content></ion-nav>\n</ion-split-pane>\n\n<ion-menu id="menuright" side="right" swipeEnabled="true" type="overlay" [content]="content">\n  <ion-header>\n    <ion-toolbar no-margin no-padding class="dm-dark">\n      <div class="bounce-animation">\n        <ion-title class="animate-in-secondary">Nachrichten</ion-title>\n      </div>\n    </ion-toolbar>\n  </ion-header>\n  <ion-nav [root]="menurightPage"></ion-nav>\n  <!--  <ion-content>\n      <section padding>\n        <h2>{{title}}</h2>\n        <p>{{description}}</p>\n        <div center text-center>\n          <img [src]="image" *ngIf="image" />\n        </div>\n      </section>\n      <ion-list>\n        <ion-item *ngFor="let feed of feeds" (click)="loadFeed(feed)">\n          <h2>{{feed.title}}</h2>\n          <p>{{feed.summary}}</p>\n          <button ion-button item-right outline>Lesen</button>\n        </ion-item>\n      </ion-list>\n    </ion-content>\n      <ion-content *ngIf="category">\n    <section padding>\n      <h2>{{category.title}}</h2>\n      <p>{{category.description}}</p>\n    </section>\n    <ion-list>\n      <ion-item *ngFor="let item of category.items" (click)="loadFeeds(item.url)">\n        <h2>{{item.title}}</h2>\n        <p>{{item.description}}</p>\n        <button ion-button item-right outline>Öffnen</button>\n      </ion-item>\n    </ion-list>\n  </ion-content>\n\n   <ion-nav [root]="tabRoot" #contentright></ion-nav>\n  <ion-content class="card-background-menu">\n    <ion-list>\n      <ion-item-group class="animate-in-primary" margin-top>\n        <button class="animate-in-secondary" ion-item *ngFor="let page of pagesright" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">\n          <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>\n          <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>\n        </button>\n      </ion-item-group>\n    <ion-list-header class="fade-in-right dmo-dark">\n        <h2 style="color: white;">Facebook Stream</h2>\n      </ion-list-header>\n      <ion-item no-padding>\n    <iframe class="animated flipInYRight" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%DMDeutscheMitte%2F&tabs=timeline&width=300&height=800&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=131001554119757"\n      width="300" height="800" scrolling="no" frameborder="0" allowTransparency="true"></iframe>\n    </ion-item>\n            <ion-item-divider class="bounce-top dmo-dark">\n        <h2>{{\'FAVORITES\' | translate}} ({{favoritePosts.length}})</h2>\n      </ion-item-divider>\n      <ion-item *ngFor="let post of favoritePosts">\n        <ion-item (tap)="loadPost(post)">\n          {{post.title.rendered}}\n        </ion-item>\n      </ion-item>\n      <ion-item-divider class="fade-in-right dmo-dark">\n        <h2>{{\'DMVENUE\' | translate}}</h2>\n      </ion-item-divider>\n\n    </ion-list>\n  </ion-content>-->\n  <!--   <ion-footer>\n    <ion-list>\n      <ion-item-group>\n        <div class="fade-in-right">\n          <ion-item-divider class="dmo-dark menu-divider-bordered" ion-item>\n            <h2>{{\'SETTINGS\' | translate}}</h2>\n          </ion-item-divider>\n        </div>\n        <p style="display:flex; margin:0px">\n          <button style="width:50%" class="animated rotateInUpRight" ion-item icon-start *ngFor="let page of pagesrightfooter" (tap)="pushPage(page)">\n            <ion-icon small [name]="page.icon"></ion-icon>\n              <h4 style="font-size:smaller" color="primary">{{page.title | translate}}</h4>\n          </button>\n        </p>\n      </ion-item-group>\n    </ion-list>\n  </ion-footer> -->\n</ion-menu>\n'/*ion-inline-end:"C:\Users\Kingp\Downloads\D\Deutsche-Mitte-Aktuell\src\app\app.html"*/,
-            providers: [__WEBPACK_IMPORTED_MODULE_23__pages_feeds_shared_services_feed_service__["a" /* FeedService */]]
+            providers: []
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_7__app_config__["a" /* Config */],
             __WEBPACK_IMPORTED_MODULE_23__pages_feeds_shared_services_feed_service__["a" /* FeedService */],
@@ -3604,7 +3638,7 @@ var TrimHtmlPipe = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_shared_shared_module__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__slides_component_slides_component__ = __webpack_require__(266);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__slides_component_slides_component__ = __webpack_require__(267);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3680,7 +3714,7 @@ var HomeModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wordpress_wordpress_posts_wordpress_posts_component__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__wordpress_wordpress_categories_wordpress_categories_component__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__youtube_youtube_channel_youtube_channel_component__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__wordpress_wordpress_page_wordpress_page_component__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__wordpress_wordpress_page_wordpress_page_component__ = __webpack_require__(66);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3839,14 +3873,14 @@ var TabsModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wordpress_feature_media_wordpress_feature_media_component__ = __webpack_require__(446);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__wordpress_categories_wordpress_categories_component__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__wordpress_tags_wordpress_tags_component__ = __webpack_require__(447);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__wordpress_favorites_wordpress_favorites_component__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__wordpress_favorites_wordpress_favorites_component__ = __webpack_require__(151);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__wordpress_pages_wordpress_pages_component__ = __webpack_require__(296);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__wordpress_page_wordpress_page_component__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__wordpress_menus_wordpress_menus_component__ = __webpack_require__(149);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__wordpress_menu_wordpress_menu_component__ = __webpack_require__(268);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__wordpress_menu_item_wordpress_menu_item_component__ = __webpack_require__(269);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__wordpress_posts_home_wordpress_posts_home_component__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__wordpress_page_downloads_wordpress_page_downloads_component__ = __webpack_require__(270);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__wordpress_page_wordpress_page_component__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__wordpress_menus_wordpress_menus_component__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__wordpress_menu_wordpress_menu_component__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__wordpress_menu_item_wordpress_menu_item_component__ = __webpack_require__(270);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__wordpress_posts_home_wordpress_posts_home_component__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__wordpress_page_downloads_wordpress_page_downloads_component__ = __webpack_require__(271);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4058,7 +4092,7 @@ var WordpressTags = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_shared_shared_module__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__settings_component_settings_component__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__settings_component_settings_component__ = __webpack_require__(289);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4100,7 +4134,7 @@ var SettingsModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__youtube_videos_youtube_videos_component__ = __webpack_require__(450);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__youtube_video_youtube_video_component__ = __webpack_require__(297);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__youtube_channel_youtube_channel_component__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__youtube_channel_video_youtube_channel_video_component__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__youtube_channel_video_youtube_channel_video_component__ = __webpack_require__(148);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4276,7 +4310,7 @@ var WordpressPost = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return YoutubeVideosComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_youtube_service__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_youtube_service__ = __webpack_require__(149);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__youtube_video_youtube_video_component__ = __webpack_require__(297);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -4358,21 +4392,21 @@ var YoutubeVideosComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_shared_shared_module__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__about_component_about_component__ = __webpack_require__(271);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__aussenpolitik_component_aussenpolitik_component__ = __webpack_require__(272);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__innenpolitik_component_innenpolitik_component__ = __webpack_require__(273);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__finanzen_component_finanzen_component__ = __webpack_require__(274);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wirtschaft_component_wirtschaft_component__ = __webpack_require__(275);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__arbeit_component_arbeit_component__ = __webpack_require__(276);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__verteidigung_component_verteidigung_component__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__bildung_component_bildung_component__ = __webpack_require__(278);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__familie_component_familie_component__ = __webpack_require__(279);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__umwelt_component_umwelt_component__ = __webpack_require__(280);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__nahrung_component_nahrung_component__ = __webpack_require__(281);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__gesundheit_component_gesundheit_component__ = __webpack_require__(282);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__verkehr_component_verkehr_component__ = __webpack_require__(283);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__entwicklung_component_entwicklung_component__ = __webpack_require__(284);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__justiz_component_justiz_component__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__about_component_about_component__ = __webpack_require__(272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__aussenpolitik_component_aussenpolitik_component__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__innenpolitik_component_innenpolitik_component__ = __webpack_require__(274);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__finanzen_component_finanzen_component__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wirtschaft_component_wirtschaft_component__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__arbeit_component_arbeit_component__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__verteidigung_component_verteidigung_component__ = __webpack_require__(278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__bildung_component_bildung_component__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__familie_component_familie_component__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__umwelt_component_umwelt_component__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__nahrung_component_nahrung_component__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__gesundheit_component_gesundheit_component__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__verkehr_component_verkehr_component__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__entwicklung_component_entwicklung_component__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__justiz_component_justiz_component__ = __webpack_require__(286);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4423,7 +4457,7 @@ var AboutModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_shared_shared_module__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__futurepolitics_component_futurepolitics_component__ = __webpack_require__(286);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__futurepolitics_component_futurepolitics_component__ = __webpack_require__(287);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4460,7 +4494,7 @@ var FuturePoliticsModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_shared_shared_module__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__downloads_component_downloads_component__ = __webpack_require__(287);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__downloads_component_downloads_component__ = __webpack_require__(288);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4569,7 +4603,7 @@ var NewsletterComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_shared_shared_module__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__stammtische_component_stammtische_component__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__stammtische_component_stammtische_component__ = __webpack_require__(290);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4773,7 +4807,7 @@ var QuizComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_shared_shared_module__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facebook_connect_component_facebook_connect_component__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facebook_connect_component_facebook_connect_component__ = __webpack_require__(291);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4811,9 +4845,9 @@ var FacebookConnectModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_shared_shared_module__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__feed_categories_feed_categories_component__ = __webpack_require__(462);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__feed_category_feed_category_component__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__feeds_feeds_component__ = __webpack_require__(291);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__feed_feed_component__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__feed_category_feed_category_component__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__feeds_feeds_component__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__feed_feed_component__ = __webpack_require__(147);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4867,8 +4901,8 @@ var FeedsModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedCategoriesComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed_category_feed_category_component__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed_category_feed_category_component__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_feed_service__ = __webpack_require__(52);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4930,7 +4964,7 @@ var FeedCategoriesComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_shared_shared_module__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angularfire2_auth__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2_database__ = __webpack_require__(312);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__firebase_home_firebase_home_component__ = __webpack_require__(553);
@@ -5000,6 +5034,65 @@ var FirebaseModule = (function () {
 
 /***/ }),
 
+/***/ 52:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_config__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var FeedService = (function () {
+    function FeedService(http, config) {
+        this.http = http;
+        this.config = config;
+    }
+    FeedService.prototype.getCategories = function () {
+        var url = this.config.feedsUrl;
+        return this.http.get(url).map(function (result) {
+            return result.json();
+        });
+    };
+    FeedService.prototype.getCategory = function () {
+        var url = this.config.feedsCategoryUrl;
+        return this.http.get(url).map(function (result) {
+            return result.json();
+        });
+    };
+    FeedService.prototype.getFeeds = function (source) {
+        var url = 'https://query.yahooapis.com/v1/public/yql?q=select * from xml where url ="' +
+            encodeURIComponent(source) +
+            '"&format=json';
+        return this.http.get(url).map(function (result) {
+            return result.json();
+        });
+    };
+    FeedService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */], __WEBPACK_IMPORTED_MODULE_2__app_app_config__["a" /* Config */]])
+    ], FeedService);
+    return FeedService;
+}());
+
+//# sourceMappingURL=feed.service.js.map
+
+/***/ }),
+
 /***/ 553:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5009,7 +5102,7 @@ var FirebaseModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_database__ = __webpack_require__(312);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_facebook__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_facebook__ = __webpack_require__(152);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__firebase_login_firebase_login_component__ = __webpack_require__(349);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__firebase_sign_up_firebase_sign_up_component__ = __webpack_require__(350);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__firebase_reset_password_firebase_reset_password_component__ = __webpack_require__(351);
@@ -5128,7 +5221,7 @@ var FirebaseHomeComponent = (function () {
 
 /***/ }),
 
-/***/ 64:
+/***/ 65:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5165,7 +5258,7 @@ var Config = (function () {
 
 /***/ }),
 
-/***/ 65:
+/***/ 66:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5241,65 +5334,6 @@ var WordpressPage = (function () {
 
 /***/ }),
 
-/***/ 66:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_config__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var FeedService = (function () {
-    function FeedService(http, config) {
-        this.http = http;
-        this.config = config;
-    }
-    FeedService.prototype.getCategories = function () {
-        var url = this.config.feedsUrl;
-        return this.http.get(url).map(function (result) {
-            return result.json();
-        });
-    };
-    FeedService.prototype.getCategory = function () {
-        var url = this.config.feedsCategoryUrl;
-        return this.http.get(url).map(function (result) {
-            return result.json();
-        });
-    };
-    FeedService.prototype.getFeeds = function (source) {
-        var url = 'https://query.yahooapis.com/v1/public/yql?q=select * from xml where url ="' +
-            encodeURIComponent(source) +
-            '"&format=json';
-        return this.http.get(url).map(function (result) {
-            return result.json();
-        });
-    };
-    FeedService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */], __WEBPACK_IMPORTED_MODULE_2__app_app_config__["a" /* Config */]])
-    ], FeedService);
-    return FeedService;
-}());
-
-//# sourceMappingURL=feed.service.js.map
-
-/***/ }),
-
 /***/ 87:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5307,8 +5341,8 @@ var FeedService = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return YoutubeChannelComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_youtube_service__ = __webpack_require__(148);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__youtube_channel_video_youtube_channel_video_component__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_youtube_service__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__youtube_channel_video_youtube_channel_video_component__ = __webpack_require__(148);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
