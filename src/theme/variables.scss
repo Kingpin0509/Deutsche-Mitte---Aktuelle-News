@@ -37,6 +37,12 @@ $tabs-background: #dddddd !default;
 $tabs-border-color: #222 !default;
 $tabs-tab-color-inactive: #8c8c8c !default;
 $tabs-tab-color-active: $link-color !default;
+// Menu
+// --------------------------------------------------
+/// @prop - Width of the menu
+$menu-width: 340px !default;
+/// @prop - Width of the menu on small devices (under 340px)
+$menu-small-width: $menu-width - 65px !default;
 // $list-background-color : #242424 !default;
 $list-border-color: #000 !default;
 // App iOS Variables
@@ -100,6 +106,30 @@ $list-border-color: #000 !default;
       GradientType=1
     ) !important;
 }
+.lineargradient-bg {
+  background: -moz-linear-gradient(
+    right,
+    ellipse cover,
+    #005397 0%,
+    #091b31 100%
+  ) !important;
+  background: -webkit-linear-gradient(
+    right,
+    ellipse cover,
+    #005397 0%,
+    #091b31 100%
+  ) !important;
+  background: linear-gradient(
+    ellipse at right,
+    #005397 0%,
+    #091b31 100%
+  ) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#005397",
+      endColorstr="#091b31",
+      GradientType=1
+    ) !important;
+}
 .tparent {
   background-color: transparent !important;
   .toolbar-background-ios {
@@ -140,10 +170,14 @@ ion-nav {
   transform: scale3d(1, 1, 1) rotateY(0) translateX(0) translateY(0px)
     translateZ(0px) !important;
 }
-
+  ion-tabs {
+  transition: all 0.4s cubic-bezier(0.78, 0.37, 0.62, 0.86) !important;
+  transform: scale3d(1, 1, 1) rotateY(0) translateX(0) translateY(0px)
+    translateZ(0px) !important;
+}
 .show-menu + ion-nav {
-  //perspective: 160px;
-  .ion-page {
+  ion-tabs {
+    perspective: 160px;
     transform: scale3d(0.9, 0.9, 0.9) rotateY(-3deg) translateX(50px)
       translateY(0px) translateZ(30px) !important;
     box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.25);
@@ -153,6 +187,17 @@ ion-nav {
     }
   }
 }
+/* ion-nav.menu-content-open {
+  .ion-page {
+
+    perspective: 160px;
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.35) inset;
+    overflow: hidden !important;
+    ion-content {
+      overflow: hidden !important;
+    }
+  }
+} */
 
 .nav-decor {
   @extend .tparent;

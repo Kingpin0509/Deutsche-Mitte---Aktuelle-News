@@ -37,14 +37,14 @@
         </ion-item-group>
         <ion-item-group class="animate-in-primary" margin-top>
           <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleftcenter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">
-            <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>
-            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>
+            <ion-icon item-start class="item-avatar item-icon-right" [name]="page.icon"></ion-icon>
+            <h2 color="primary" class="list-grow-animation" text-wrap ion-text>{{page.title | translate}}</h2>
           </button>
         </ion-item-group>
         <ion-item-group class="animate-in-primary" margin-top>
           <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleftbottom" (tap)=" openPageStammtische(page)" [class.active]="checkActivePage(page)">
             <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>
-            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>
+            <h2 color="primary" class="list-grow-animation" text-wrap ion-text>{{page.title | translate}}</h2>
           </button>
         </ion-item-group>
       </ion-list>
@@ -70,8 +70,12 @@
       </div>
     </ion-toolbar>
   </ion-header>
-  <ion-nav [root]="menurightPage"></ion-nav>
-  <!--  <ion-content>
+  <ion-content>
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDMDeutscheMitte%2F&tabs=timeline&width=340&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=131001554119757"
+      width="340" style="border:none;height: 100%;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+  </ion-content>
+  <!--   <ion-nav [root]="menurightPage"></ion-nav>
+
       <section padding>
         <h2>{{title}}</h2>
         <p>{{description}}</p>

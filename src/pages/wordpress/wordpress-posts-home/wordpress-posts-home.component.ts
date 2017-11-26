@@ -75,13 +75,6 @@ export class WordpressPostsHome implements OnInit {
     this.getPosts();
     this.getChannel();
   }
-  getFeeds() {
-    this.feedService.getFeeds(this.feedUrl).subscribe(result => {
-      this.title = result.query.results.rss.channel.title;
-      this.link = result.query.results.rss.channel.link;
-      this.feeds = result.query.results.rss.channel.item;
-    });
-  }
   getChannel() {
     this.youtubeService.getChannel().subscribe(
       result => {
@@ -202,7 +195,7 @@ export class WordpressPostsHome implements OnInit {
     }
     return query;
   }
-/*   getFeeds() {
+   getFeeds() {
     let loader = this.loadingController.create({
       content: "Bitte Warten..."
     });
@@ -217,7 +210,7 @@ export class WordpressPostsHome implements OnInit {
       this.feeds = result.query.results.rss.channel.item;
       loader.dismiss();
     });
-  } */
+  }
   loadFeed(feed) {
     let modal = this.modalCtrl.create(FeedComponent, {
       feed: feed

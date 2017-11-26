@@ -3825,6 +3825,12 @@ ion-icon::before {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#005397", endColorstr="#091b31", GradientType=1 ) !important;
 }
 
+.lineargradient-bg {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(at, ellipse), color-stop(0%, #005397), to(#091b31)) !important;
+  background: linear-gradient(ellipse at right, #005397 0%, #091b31 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#005397", endColorstr="#091b31", GradientType=1 ) !important;
+}
+
 .tparent, .nav-decor {
   background-color: transparent !important;
 }
@@ -3869,7 +3875,16 @@ ion-nav {
   transform: scale3d(1, 1, 1) rotateY(0) translateX(0) translateY(0px) translateZ(0px) !important;
 }
 
-.show-menu + ion-nav .ion-page {
+ion-tabs {
+  -webkit-transition: all 0.4s cubic-bezier(0.78, 0.37, 0.62, 0.86) !important;
+  transition: all 0.4s cubic-bezier(0.78, 0.37, 0.62, 0.86) !important;
+  -webkit-transform: scale3d(1, 1, 1) rotateY(0) translateX(0) translateY(0px) translateZ(0px) !important;
+  transform: scale3d(1, 1, 1) rotateY(0) translateX(0) translateY(0px) translateZ(0px) !important;
+}
+
+.show-menu + ion-nav ion-tabs {
+  -webkit-perspective: 160px;
+  perspective: 160px;
   -webkit-transform: scale3d(0.9, 0.9, 0.9) rotateY(-3deg) translateX(50px) translateY(0px) translateZ(30px) !important;
   transform: scale3d(0.9, 0.9, 0.9) rotateY(-3deg) translateX(50px) translateY(0px) translateZ(30px) !important;
   -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.25);
@@ -3877,10 +3892,21 @@ ion-nav {
   overflow: hidden !important;
 }
 
-.show-menu + ion-nav .ion-page ion-content {
+.show-menu + ion-nav ion-tabs ion-content {
   overflow: hidden !important;
 }
 
+/* ion-nav.menu-content-open {
+  .ion-page {
+
+    perspective: 160px;
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.35) inset;
+    overflow: hidden !important;
+    ion-content {
+      overflow: hidden !important;
+    }
+  }
+} */
 .ios .menu-content-reveal {
   -webkit-box-shadow: 0 0 10px transparent !important;
   box-shadow: 0 0 10px transparent !important;
@@ -15486,7 +15512,7 @@ ion-menu.show-menu {
   transform: translate3d(-9999px,  0,  0);
   position: absolute;
   display: block;
-  width: 304px;
+  width: 340px;
   height: 100%;
   contain: strict;
 }
@@ -15537,7 +15563,7 @@ ion-menu ion-backdrop {
 
 @media (max-width: 340px) {
   .menu-inner {
-    width: 264px;
+    width: 275px;
   }
 }
 
@@ -27608,10 +27634,9 @@ ion-header.header-wordpress-posts-home .row-header {
   margin-bottom: 0px !important;
 }
 
-ion-toolbar.toolbar-wordpress-posts-home {
+/* ion-toolbar.toolbar-wordpress-posts-home {
   background-color: #2f538d;
-}
-
+} */
 ion-content.page-youtube-channel h2.header {
   font-family: "Oswald", sans-serif;
   color: #00498a;
