@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{'CONTACT' | translate}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>Entwickler der App</ion-list-header>
+    <ion-item>
+      <ion-icon name="person" item-left></ion-icon>
+      Michael Humann
+    </ion-item>
+    <ion-item>
+      <ion-icon name="logo-twitter" item-left></ion-icon>
+      @Kingpin0509
+    </ion-item>
+    <ion-item>
+      <ion-icon name="mail" item-left></ion-icon>
+      Kingpin0509@live.com
+    </ion-item>
+    <ion-item>
+      <ion-icon name="leaf" item-left></ion-icon>
+      goo.gl/XvKvtf
+    </ion-item>
+  </ion-list>
+
+  <form (submit)="sendEmail()">
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Überschrift</ion-label>
+        <ion-input type="text" [(ngModel)]="email.subject" name="subject"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Nachricht</ion-label>
+        <ion-textarea rows="3" [(ngModel)]="email.body" name="body"></ion-textarea>
+      </ion-item>
+
+      <div padding>
+        <button ion-button color="primary" block>Nachricht senden</button>
+      </div>
+
+    </ion-list>
+  </form>
+</ion-content>

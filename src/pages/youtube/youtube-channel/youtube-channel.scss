@@ -1,0 +1,40 @@
+ion-content.page-youtube-channel {
+  h2.header {
+    font-family: "Oswald", sans-serif;
+    color: #00498a;
+  }
+
+  p.content {
+    font-family: "Calibri", sans-serif;
+    color: #222;
+  }
+
+  ion-card.bordered {
+    border: solid 2px rgba(121, 111, 101, 0.21);
+  }
+
+  .card-background-page {
+    max-width: 40%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    float: left;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 3%;
+    font-size: 1.4em;
+    width: 94%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .card-subtitle {
+    font-size: 0.9em;
+    position: absolute;
+    top: 83%;
+    width: 98%;
+    color: #fff;
+  }
+}

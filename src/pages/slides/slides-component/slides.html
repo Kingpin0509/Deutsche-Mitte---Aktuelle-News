@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="bounce-top">Wilkommen</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="page-slides">
+  <ion-slides pager="true" zoom="true" paginationType="progress" effect="slide">
+
+    <ion-slide>
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button block color="dark" (click)="showConfirm()">Überspringen</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <div class="slide-in-blurred-top">
+        <img src="assets/img/slidebox-img-1o.png" class="slide-image" />
+      </div>
+      <div class="scale-up-hor-center">
+        <img src="assets/img/slidebox-img-1u.png" class="slide-image" />
+      </div>
+      <h2 class="slide-title tracking-in-contract">Herzlich Willkommen</h2>
+      <p class="tracking-in-contract">Die Deutsche Mitte und deren Ziele sind mehr als eine politische Partei. Es ist eine Bewegung von Menschen für Menschen,
+        die Missstände beseitigen und die Welt zu einer besseren machen wollen. Ethik wird hier als oberstes Gebot gefordert.</p>
+      <h3 class="tracking-in-contract">-DEUTSCHE MITTE-</h3>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button block color="dark" (click)="showConfirm()">Überspringen</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <div class="slide-in-blurred-top">
+        <img src="assets/img/ica-slidebox-img-3.png" class="slide-image" />
+      </div>
+      <h2 class="slide-title tracking-in-contract">Das Mäuseloch ist ein sehr beliebter Ort.</h2>
+      <p class="tracking-in-contract">Dort tummelt sich gut und gern die breite Masse.</p>
+      <h3 class="tracking-in-contract">Kommt raus aus dem Mauseloch, selbstbewusst, und bezieht Stellung!</h3>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button block color="dark" (click)="showConfirm()">Überspringen</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <div class="slide-in-blurred-top">
+        <img src="assets/img/slidebox-img-4u.png" class="slide-image" />
+      </div>
+      <!-- <div class="scale-up-hor-center">
+        <img src="assets/img/slidebox-img-4o.png" class="slide-image" />
+      </div> -->
+      <h2 class="slide-title tracking-in-contract">Zum kennenlernen</h2>
+      <p class="tracking-in-contract">Lernen sie uns persönlich bei unseren deutschlandweiten Stammtischtreffen kennen. Oder besuchen sie unseren Online-Stammtisch
+        unter:</p>
+      <h3 class="tracking-in-contract">http://dm-stammtisch.de</h3>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button block color="dark" (click)="showConfirm()">Überspringen</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <div class="slide-in-blurred-top">
+        <img src="assets/img/ica-slidebox-img-3.png" class="slide-image" />
+      </div>
+      <h2 class="slide-title tracking-in-contract">Wir haben nur diese eine Chance</h2>
+      <p class="tracking-in-contract">Machen Sie mit !</p>
+      <h3 class="tracking-in-contract">Kommen Sie in die Deutsche Mitte</h3>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-5.png" class="slide-image" />
+      <h2 class="slide-title">Alles klar?</h2>
+      <p>Dann lassen sie uns gemeinsam starten. Wir haben nur noch diese eine Chance! Nutzen wir sie, jetzt!</p>
+      <button ion-button large clear icon-right (click)="showConfirm()"><h3 class="tracking-in-contract">Start
+        <ion-icon name="arrow-forward"></ion-icon></h3>
+      </button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

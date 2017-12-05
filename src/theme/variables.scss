@@ -1,0 +1,241 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/v2/theming/
+$font-path: "../assets/fonts";
+@import "ionic.globals";
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
+// $text-color: #00498a;
+// $background-color: #fff;
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+$colors: (
+    primary: #00498a,
+    secondary: #ff8b00,
+    danger: #f53d3d,
+    light: rgba(0, 83, 151, 0),
+    dark: #fa7d09
+  )!default;
+$link-color: color($colors, primary) !default;
+$subdued-text-color: #666 !default;
+$font-family-base: -apple-system, "Helvetica Neue", "Roboto",
+  sans-serif !default;
+$font-size-base: 1.4rem !default; // 1.4rem == 14px
+$toolbar-background: #151515 !default;
+$toolbar-border-color: #222 !default;
+$toolbar-active-color: $link-color !default;
+$toolbar-inactive-color: #8c8c8c !default;
+$tabs-background: #dddddd !default;
+$tabs-border-color: #222 !default;
+$tabs-tab-color-inactive: #8c8c8c !default;
+$tabs-tab-color-active: $link-color !default;
+// Menu
+// --------------------------------------------------
+/// @prop - Width of the menu
+$menu-width: 340px !default;
+/// @prop - Width of the menu on small devices (under 340px)
+$menu-small-width: $menu-width - 65px !default;
+// $list-background-color : #242424 !default;
+$list-border-color: #000 !default;
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+@import "ionic.theme.default";
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/v2/ionicons/
+@import "ionic.ionicons";
+// Fonts
+// --------------------------------------------------
+@import "roboto";
+@import "noto-sans";
+
+// px to vw convter
+@function get-vw($target) {
+  $vw-context: (320*0.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+
+.m0 {
+  margin: 0 !important;
+}
+
+.gradient-bg {
+  background: #00498a !important;
+  background: -moz-radial-gradient(
+    right,
+    ellipse cover,
+    #005397 0%,
+    #091b31 100%
+  ) !important;
+  background: -webkit-radial-gradient(
+    right,
+    ellipse cover,
+    #005397 0%,
+    #091b31 100%
+  ) !important;
+  background: radial-gradient(
+    ellipse at right,
+    #005397 0%,
+    #091b31 100%
+  ) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#005397",
+      endColorstr="#091b31",
+      GradientType=1
+    ) !important;
+}
+.lineargradient-bg {
+  background: -moz-linear-gradient(
+    right,
+    ellipse cover,
+    #005397 0%,
+    #091b31 100%
+  ) !important;
+  background: -webkit-linear-gradient(
+    right,
+    ellipse cover,
+    #005397 0%,
+    #091b31 100%
+  ) !important;
+  background: linear-gradient(
+    ellipse at right,
+    #005397 0%,
+    #091b31 100%
+  ) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#005397",
+      endColorstr="#091b31",
+      GradientType=1
+    ) !important;
+}
+.tparent {
+  background-color: transparent !important;
+  .toolbar-background-ios {
+    border-color: transparent !important;
+    background: transparent !important;
+  }
+}
+
+.imgBackground {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.iconBackground {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+// colors
+.white {
+  color: #fff !important;
+}
+
+.font18 {
+  font-size: 18px;
+  font-size: get-vw(18px);
+}
+
+ion-nav {
+  transition: all 0.75s cubic-bezier(0.78, 0.37, 0.62, 0.86) !important;
+  transform: scale3d(1, 1, 1) rotateY(0) translateX(0) translateY(0px)
+    translateZ(0px) !important;
+}
+
+.ion-page {
+  transition: all 0.4s cubic-bezier(0.78, 0.37, 0.62, 0.86) !important;
+  transform: scale3d(1, 1, 1) rotateY(0) translateX(0) translateY(0px)
+    translateZ(0px) !important;
+}
+  ion-tabs {
+  transition: all 0.4s cubic-bezier(0.78, 0.37, 0.62, 0.86) !important;
+  transform: scale3d(1, 1, 1) rotateY(0) translateX(0) translateY(0px)
+    translateZ(0px) !important;
+}
+.show-menu + ion-nav {
+  ion-tabs {
+    perspective: 160px;
+    transform: scale3d(0.9, 0.9, 0.9) rotateY(-3deg) translateX(50px)
+      translateY(0px) translateZ(30px) !important;
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.25);
+    overflow: hidden !important;
+    ion-content {
+      overflow: hidden !important;
+    }
+  }
+}
+/* ion-nav.menu-content-open {
+  .ion-page {
+
+    perspective: 160px;
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.35) inset;
+    overflow: hidden !important;
+    ion-content {
+      overflow: hidden !important;
+    }
+  }
+} */
+
+.nav-decor {
+  @extend .tparent;
+}
+
+.ios {
+  .menu-content-reveal {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0) !important;
+  }
+}
+// .menu-inner {
+//   @extend .tparent;
+//   ion-content {
+//      @extend .tparent;
+//   }
+// }
+
+ion-app.ios {
+  @extend .gradient-bg;
+}
+
+.menu-user-image {
+  @extend .imgBackground;
+  height: get-vw(60px);
+  width: get-vw(60px);
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+ion-avatar {
+  position: relative;
+  ion-badge {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    padding: 3px 5px;
+    min-height: 22px;
+    min-width: 22px;
+    border: 2px solid #fff;
+  }
+}

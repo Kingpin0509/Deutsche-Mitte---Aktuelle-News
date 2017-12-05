@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button (tap)="dismiss()" icon-only>
+        <ion-icon name='undo'></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>{{feed.title}}</ion-title>
+    <ion-buttons end>
+      <button ion-button (tap)="shareFeed()" icon-only>
+        <ion-icon name="share"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content class="page-feeds">
+  <section padding>
+    <h2 class="header" text-center [innerHtml]=feed.title></h2>
+    <div text-center>{{feed.pubDate | date}}</div>
+  </section>
+
+  <video id="video" [src]="feed.enclosure.url" controls autoplay *ngIf="feed.enclosure && feed.enclosure.type === 'video/mp4' "></video>
+  <audio id="audio" [src]="feed.enclosure.url" controls autoplay *ngIf="feed.enclosure && feed.enclosure.type === 'audio/mpeg' "></audio>
+  <img [src]="feed.enclosure.url" *ngIf="feed.enclosure && feed.enclosure.type === 'image/jpeg' " />
+
+  <!-- <section padding [innerHtml]="feed.description"></section> -->
+  <section text-center padding>
+    <button margin ion-button (click)="previewFeed()">{{'OPEN' | translate}}</button>
+    <button margin ion-button (click)="dismiss()" color="danger">{{'CLOSE' | translate}}</button>
+  </section>
+
+</ion-content>

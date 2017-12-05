@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <button ion-button icon-only menuToggle="left">
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title class="bounce-top">{{'FAVORITES' | translate}} ({{favoritePosts.length}})</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (tap)="removeAllFavoritePosts()">
+        <ion-icon name="trash"></ion-icon>
+      </button>
+    </ion-buttons>
+    <button ion-button right icon-only menuToggle="right">
+      <ion-icon name="more"></ion-icon>
+    </button>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item-sliding *ngFor="let post of favoritePosts">
+      <ion-item (tap)="loadPost(post)">
+        {{post.title.rendered}}
+        <button ion-button item-right outline>{{'READ' | translate}}</button>
+      </ion-item>
+      <ion-item-options>
+        <button primary (tap)="removeFavoritePost(post)">{{'REMOVE' | translate}}</button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,155 @@
+﻿<ion-split-pane when="lg">
+  <ion-menu *ngIf="!wordpressMenusNavigation" id="menuleft" side="left" type="overlay" [content]="content">
+    <ion-header>
+      <ion-toolbar no-margin no-padding class="dm-dark">
+        <div class="bounce-animation">
+          <ion-title class="animate-in-secondary">{{'APPNAME' | translate}}</ion-title>
+        </div>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list padding-top>
+        <!-- <div class="fade-in-left">
+          <ion-item-divider class="dmo-dark menu-divider-bordered">
+            <h2>{{'MENU' | translate}}</h2>
+          </ion-item-divider>
+        </div>
+        <ion-item margin-top margin-bottom></ion-item> -->
+        <ion-item-group class="animate-in-primary" margin-vertical>
+          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleft" (tap)="openPage(page)" [class.active]="checkActivePage(page)">
+            <ion-icon item-start [name]="page.icon" class="item-avatar item-icon-right"></ion-icon>
+            <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>
+          </button>
+          <!--<button outline class="animated bounceInLeft" ion-item (tap)="openPageYoutube()">
+<ion-icon name="logo-youtube" class="youtube" item-start></ion-icon>
+<h2 ion-text color="primary">{{'YOUTUBE_CHANNEL' | translate}}</h2>
+                        <ion-note item-end>DM</ion-note>
+                    </button>
+                     <button outline class="animated bounceInLeft" ion-item (tap)="openPageWordpress(page)">
+                      <ion-icon name="" class="" item-start></ion-icon>
+                      <h2 ion-text color="primary">Downloads</h2>
+                      <ion-note item-end>DM</ion-note>
+                  </button>
+                    <button outline class="animated bounceInLeft" ion-item (tap)="startSplash()">
+                      <h2 ion-text color="primary">Start</h2>
+                      <ion-note item-end>Splashscreen</ion-note>
+                  </button> -->
+        </ion-item-group>
+        <ion-item-group class="animate-in-primary" margin-top>
+          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleftcenter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">
+            <ion-icon item-start class="item-avatar item-icon-right" [name]="page.icon"></ion-icon>
+            <h2 color="primary" class="list-grow-animation" text-wrap ion-text>{{page.title | translate}}</h2>
+          </button>
+        </ion-item-group>
+        <ion-item-group class="animate-in-primary" margin-top>
+          <button class="animate-in-secondary" ion-item *ngFor="let page of pagesleftbottom" (tap)=" openPageStammtische(page)" [class.active]="checkActivePage(page)">
+            <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>
+            <h2 color="primary" class="list-grow-animation" text-wrap ion-text>{{page.title | translate}}</h2>
+          </button>
+        </ion-item-group>
+      </ion-list>
+    </ion-content>
+    <ion-footer class="animate-in-primary">
+      <button class="list-grow-animation" ion-button full *ngFor="let page of pagesleftfooter" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">
+        <ion-icon class="animate-in-primary item-avatar item-icon-right" margin [name]="page.icon"></ion-icon>
+        <h4 class="animate-in-secondary" style="font-size:smaller" color="primary">{{page.title | translate}}</h4>
+      </button>
+    </ion-footer>
+  </ion-menu>
+  <ion-menu *ngIf="wordpressMenusNavigation" [content]="content">
+    <ion-nav [root]="menuPage"></ion-nav>
+  </ion-menu>
+  <ion-nav [root]="rootPage" main #content></ion-nav>
+</ion-split-pane>
+
+<ion-menu id="menuright" side="right" swipeEnabled="true" type="overlay" [content]="content">
+  <ion-header>
+    <ion-toolbar no-margin no-padding class="dm-dark">
+      <div class="bounce-animation">
+        <ion-title class="animate-in-secondary">Nachrichten</ion-title>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDMDeutscheMitte%2F&tabs=timeline&width=340&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=131001554119757"
+      width="340" style="border:none;height: 100%;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+  </ion-content>
+  <!--   <ion-nav [root]="menurightPage"></ion-nav>
+
+      <section padding>
+        <h2>{{title}}</h2>
+        <p>{{description}}</p>
+        <div center text-center>
+          <img [src]="image" *ngIf="image" />
+        </div>
+      </section>
+      <ion-list>
+        <ion-item *ngFor="let feed of feeds" (click)="loadFeed(feed)">
+          <h2>{{feed.title}}</h2>
+          <p>{{feed.summary}}</p>
+          <button ion-button item-right outline>Lesen</button>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+      <ion-content *ngIf="category">
+    <section padding>
+      <h2>{{category.title}}</h2>
+      <p>{{category.description}}</p>
+    </section>
+    <ion-list>
+      <ion-item *ngFor="let item of category.items" (click)="loadFeeds(item.url)">
+        <h2>{{item.title}}</h2>
+        <p>{{item.description}}</p>
+        <button ion-button item-right outline>Öffnen</button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+   <ion-nav [root]="tabRoot" #contentright></ion-nav>
+  <ion-content class="card-background-menu">
+    <ion-list>
+      <ion-item-group class="animate-in-primary" margin-top>
+        <button class="animate-in-secondary" ion-item *ngFor="let page of pagesright" (tap)="pushPage(page)" [class.active]="checkActivePage(page)">
+          <ion-icon item-start class="item-avatar item-icon-right " [name]="page.icon"></ion-icon>
+          <h2 color="primary" class="list-grow-animation" ion-text>{{page.title | translate}}</h2>
+        </button>
+      </ion-item-group>
+    <ion-list-header class="fade-in-right dmo-dark">
+        <h2 style="color: white;">Facebook Stream</h2>
+      </ion-list-header>
+      <ion-item no-padding>
+    <iframe class="animated flipInYRight" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%DMDeutscheMitte%2F&tabs=timeline&width=300&height=800&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=131001554119757"
+      width="300" height="800" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+    </ion-item>
+            <ion-item-divider class="bounce-top dmo-dark">
+        <h2>{{'FAVORITES' | translate}} ({{favoritePosts.length}})</h2>
+      </ion-item-divider>
+      <ion-item *ngFor="let post of favoritePosts">
+        <ion-item (tap)="loadPost(post)">
+          {{post.title.rendered}}
+        </ion-item>
+      </ion-item>
+      <ion-item-divider class="fade-in-right dmo-dark">
+        <h2>{{'DMVENUE' | translate}}</h2>
+      </ion-item-divider>
+
+    </ion-list>
+  </ion-content>-->
+  <!--   <ion-footer>
+    <ion-list>
+      <ion-item-group>
+        <div class="fade-in-right">
+          <ion-item-divider class="dmo-dark menu-divider-bordered" ion-item>
+            <h2>{{'SETTINGS' | translate}}</h2>
+          </ion-item-divider>
+        </div>
+        <p style="display:flex; margin:0px">
+          <button style="width:50%" class="animated rotateInUpRight" ion-item icon-start *ngFor="let page of pagesrightfooter" (tap)="pushPage(page)">
+            <ion-icon small [name]="page.icon"></ion-icon>
+              <h4 style="font-size:smaller" color="primary">{{page.title | translate}}</h4>
+          </button>
+        </p>
+      </ion-item-group>
+    </ion-list>
+  </ion-footer> -->
+</ion-menu>

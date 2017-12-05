@@ -1,0 +1,218 @@
+{
+  "questions": [
+    {
+      "flashCardFront": "Demokratie",
+      "flashCardBack":
+        "<img src='assets/img/quiz/parteien.png' /><img src='assets/img/quiz/Frage1.png' />",
+      "flashCardFlipped": false,
+      "questionText":
+        "Mehr direkte Demokratie; Volksentscheide auf Bundesebene?",
+      "answers": [
+        { "answer": "Ja", "correct": true, "selected": false },
+        { "answer": "Nein", "correct": false, "selected": false }
+      ]
+    },
+    {
+      "flashCardFront": "Finanzen",
+      "flashCardBack":
+        "<img src='assets/img/quiz/parteien.png' /><img src='assets/img/quiz/Frage2.png' />",
+      "flashCardFlipped": false,
+      "questionText":
+        "Finanzkartell entmachten; Zinsen und Schuldgeld abschaffen?",
+      "answers": [
+        { "answer": "Ja", "correct": true, "selected": false },
+        { "answer": "Nein", "correct": false, "selected": false }
+      ]
+    },
+    {
+      "flashCardFront": "Souveränität",
+      "flashCardBack":
+        "<img src='assets/img/quiz/parteien.png' /><img src='assets/img/quiz/Frage3.png' />",
+      "flashCardFlipped": false,
+      "questionText":
+        "Unbeschränkte Souveränität; Friedensvertrag, Neue Verfassung?",
+      "answers": [
+        { "answer": "Ja", "correct": true, "selected": false },
+        { "answer": "Nein", "correct": false, "selected": false }
+      ]
+    },
+    {
+      "flashCardFront": "Aussenpolitik",
+      "flashCardBack":
+        "<img src='assets/img/quiz/parteien.png' /><img src='assets/img/quiz/Frage4.png' />",
+      "flashCardFlipped": false,
+      "questionText":
+        "Aggressive Einmischung stoppen; Sanktionen gegen Russland beenden?",
+      "answers": [
+        { "answer": "Ja", "correct": true, "selected": false },
+        { "answer": "Nein", "correct": false, "selected": false }
+      ]
+    },
+    {
+      "flashCardFront": "Gesundheit",
+      "flashCardBack":
+        "<img src='assets/img/quiz/parteien.png' /><img src='assets/img/quiz/Frage5.png' />",
+      "flashCardFlipped": false,
+      "questionText":
+        "Pharmakartell entmachten; Förderung alternativer Heilmethoden?",
+      "answers": [
+        { "answer": "Ja", "correct": true, "selected": false },
+        { "answer": "Nein", "correct": false, "selected": false }
+      ]
+    },
+    {
+      "flashCardFront": "Arbeit & Soziales",
+      "flashCardBack":
+        "<img src='assets/img/quiz/parteien.png' /><img src='assets/img/quiz/Frage6.png' />",
+      "flashCardFlipped": false,
+      "questionText":
+        "Solidarisches Grundeinkommen bei sozialer und ehrenamtlicher Arbeit?",
+      "answers": [
+        { "answer": "Ja", "correct": true, "selected": false },
+        { "answer": "Nein", "correct": false, "selected": false }
+      ]
+    },
+    {
+      "flashCardFront": "Zwangsgebühren",
+      "flashCardBack":
+        "<img src='assets/img/quiz/parteien.png' /><img src='assets/img/quiz/Frage7.png' />",
+      "flashCardFlipped": false,
+      "questionText": "GEZ abschaffen; Keine Zwangsgebühr mehr?",
+      "answers": [
+        { "answer": "Ja", "correct": true, "selected": false },
+        { "answer": "Nein", "correct": false, "selected": false }
+      ]
+    },
+    {
+      "flashCardFront": "Wahlversprechen",
+      "flashCardBack":
+        "<img src='assets/img/quiz/parteien.png' /><img src='assets/img/quiz/Frage8.png' />",
+      "flashCardFlipped": false,
+      "questionText": "Parteiprogramm = Wahlprogramm = Regierungsprogramm?",
+      "answers": [
+        { "answer": "Ja", "correct": true, "selected": false },
+        { "answer": "Nein", "correct": false, "selected": false }
+      ]
+    },
+    {
+      "flashCardFront": "Energieversorgung",
+      "flashCardBack":
+        "<img src='assets/img/quiz/parteien.png' /><img src='assets/img/quiz/Frage9.png' />",
+      "flashCardFlipped": false,
+      "questionText": "Dezentrale Versorgung mit neuen alternativen Energien?",
+      "answers": [
+        { "answer": "Ja", "correct": true, "selected": false },
+        { "answer": "Nein", "correct": false, "selected": false }
+      ]
+    },
+    {
+      "flashCardFront": "Privatisierung",
+      "flashCardBack":
+        "<img src='assets/img/quiz/parteien.png' /><img src='assets/img/quiz/Frage10.png' />",
+      "flashCardFlipped": false,
+      "questionText":
+        "EU-Privatisierungsplan stoppen; Wasser und Saatgut schützen?",
+      "answers": [
+        { "answer": "Ja", "correct": true, "selected": false },
+        { "answer": "Nein", "correct": false, "selected": false }
+      ]
+    }
+  ]
+}
+    /*         {
+          "id": 2,
+          "title": "Deutsche Mitte",
+          "description": "Politik geht anders<",
+          "url": "https://deutsche-mitte.de/feed/"
+        },
+        {
+          "id": 3,
+          "title": "BBC News",
+          "description":
+            "BBC News is an operational business division[1] of the British Broadcasting Corporation (BBC) responsible for the gathering and broadcasting of news and current affairs.",
+          "url":
+            "https://deutsche-mitte.de/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdeutsche-mitte.de%2Faktuelles%2F"
+        },
+        {
+          "id": 4,
+          "title": "Apple Hot News",
+          "description": "Apple Inc. is an American multinational corporation.",
+          "url": "https://www.apple.com/main/rss/hotnews/hotnews.rss"
+        },
+        {
+          "id": 5,
+          "title": "Apple Developer News",
+          "description": "Apple Inc. is an American multinational corporation.",
+          "url": "https://developer.apple.com/news/rss/news.rss"
+        } */
+
+    /* {
+      "id": 2,
+      "title": "Sports",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "icon": "basketball",
+      "items": [
+        {
+          "id": 1,
+          "title": "BBC Sport - Front Page",
+          "description":
+            "This is an RSS feed from the BBC Sport - Sport website.",
+          "url": "http://feeds.bbci.co.uk/sport/0/rss.xml?edition=uk"
+        },
+        {
+          "id": 2,
+          "title": "BBC Sport - Football",
+          "description":
+            "This is an RSS feed from the BBC Sport - Football website.",
+          "url": "http://feeds.bbci.co.uk/sport/0/football/rss.xml?edition=uk"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Economy",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "icon": "card",
+      "items": [
+        {
+          "id": 1,
+          "title": "The Economist",
+          "description":
+            "The Economist is an English-language weekly newspaper owned by The Economist Newspaper Ltd and edited in offices in London.",
+          "url": "http://www.economist.com/topics/economics/index.xml"
+        },
+        {
+          "id": 2,
+          "title": "The Economic Times",
+          "description":
+            "The Economic Times: Latest business, finance, markets, stocks, company news from India.",
+          "url": "http://economictimes.indiatimes.com/rssfeedsdefault.cms"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Media",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "icon": "videocam",
+      "items": [
+        {
+          "id": 1,
+          "title": "TEDTalks",
+          "description":
+            "TED (Technology, Entertainment, Design) is a global set of conferences owned by the private non-profit Sapling Foundation, under the slogan: Ideas Worth Spreading.",
+          "url": "http://feeds.feedburner.com/tedtalks_video"
+        },
+        {
+          "id": 1,
+          "title": "Channel 9",
+          "description":
+            "Channel 9 keeps you up to date with the latest news and behind the scenes info from Microsoft that developers love to keep up with.",
+          "url": "http://channel9.msdn.com/Feeds/RSS/ipod"
+        }
+      ]
+    } */
+

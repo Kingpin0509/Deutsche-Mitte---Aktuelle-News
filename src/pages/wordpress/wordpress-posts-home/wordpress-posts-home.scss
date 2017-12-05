@@ -1,0 +1,69 @@
+ion-content.page-wordpress-posts-home {
+  ion-list-header.header {
+    margin: 0px;
+    padding-left: 0px;
+    border-top: 0px;
+  }
+  h4.header {
+    font-family: "Oswald", sans-serif;
+    margin: 10px 10px 0px 1px;
+    padding-bottom: 1px !important;
+    color: #00498a;
+    max-width: 90%;
+  }
+
+  ion-item.content {
+    font-family: "Calibri", sans-serif;
+    color: #666;
+    font-size: small;
+    margin: -10px 5px 0px 0px;
+    padding: 0px;
+  }
+
+  ion-note.date {
+    border: 0px;
+    font-style: italic;
+    font-size: x-small;
+    overflow: auto;
+  }
+}
+ion-header.header-wordpress-posts-home {
+  .col-header {
+    margin: 0px;
+    padding: 0px;
+  }
+  .row-header {
+    height: 200px;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+#left-top-header {
+  h5.header {
+    font-family: "Oswald", sans-serif;
+    margin: 0px;
+    color: #00498a;
+  }
+  .fixed-content {
+    margin-bottom: 0px !important;
+  }
+  .scroll-content {
+    margin-bottom: 0px !important;
+  }
+}
+#right-top-header {
+  h5.header {
+    font-family: "Oswald", sans-serif;
+    margin: 0px;
+    color: #00498a;
+  }
+  .fixed-content {
+    margin-bottom: 0px !important;
+  }
+  .scroll-content {
+    margin-bottom: 0px !important;
+  }
+}
+/* ion-toolbar.toolbar-wordpress-posts-home {
+  background-color: #2f538d;
+} */
