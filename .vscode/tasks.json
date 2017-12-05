@@ -5,7 +5,7 @@
     "tasks": [{
             "type": "npm",
             "script": "build",
-            "path": "u:\\OneDrive\\DeutscheMitte\\Deutsche-Mitte---Aktuelle-News",
+            "path": "C:\\Users\\Kingp\\Downloads\\D\\Deutsche-Mitte-Aktuell",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -14,13 +14,13 @@
         {
             "type": "npm",
             "script": "ionic:serve",
-            "path": "u:\\OneDrive\\DeutscheMitte\\Deutsche-Mitte---Aktuelle-News",
+            "path": "C:\\Users\\Kingp\\Downloads\\D\\Deutsche-Mitte-Aktuell",
             "problemMatcher": []
         },
         {
             "type": "npm",
             "script": "ionic:serve",
-            "path": "u:\\OneDrive\\DeutscheMitte\\Deutsche-Mitte---Aktuelle-News",
+            "path": "C:\\Users\\Kingp\\Downloads\\D\\Deutsche-Mitte-Aktuell",
             "problemMatcher": []
         }
     ]
