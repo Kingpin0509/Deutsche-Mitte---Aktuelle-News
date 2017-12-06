@@ -1,4 +1,4 @@
-import { Component, ViewChild } from "@angular/core";
+import { Component, ViewChild,OnInit, ElementRef } from "@angular/core";
 import {
   LoadingController,
   MenuController,
@@ -6,6 +6,7 @@ import {
   Nav,
   Platform
 } from "ionic-angular";
+import { AnimationService, AnimationBuilder } from 'css-animator';
 import { InAppBrowser } from "@ionic-native/in-app-browser";
 import { StatusBar } from "@ionic-native/status-bar";
 import { SplashScreen } from "@ionic-native/splash-screen";
@@ -78,6 +79,7 @@ export class MyApp {
   pagesrightfooter: Array<{ title: string; component: any; icon: string }>;
   activePage: any;
   wordpressMenusNavigation: boolean = false;
+  private animator: AnimationBuilder;
   constructor(
     private config: Config,
     private feedService: FeedService,
@@ -89,9 +91,12 @@ export class MyApp {
     private translate: TranslateService,
     private menuController: MenuController,
     private statusBar: StatusBar,
-    private modalCtrl: ModalController
+    private modalCtrl: ModalController,
+    animationService: AnimationService,
+     private elementRef: ElementRef
   ) {
     this.initializeApp();
+    this.animator = animationService.builder();
     this.storage.get("hasSeenTutorial").then(hasSeenTutorial => {
       if (hasSeenTutorial) {
         this.rootPage = TabsComponent;
@@ -179,6 +184,10 @@ export class MyApp {
       this.pagesleftfooter[0],
       this.pagesright[0],
       this.pagesrightfooter[0];
+  }
+
+  ngOnInit() {
+    this.animator.setType('fadeInUp').show(this.elementRef.nativeElement);
   }
 
   initializeApp() {

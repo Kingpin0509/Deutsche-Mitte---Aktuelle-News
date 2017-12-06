@@ -51,6 +51,9 @@ ion-header.header-wordpress-posts-home {
     margin-bottom: 0px !important;
   }
 }
+#center-top-header {
+  background-color: #fff;
+}
 #right-top-header {
   h5.header {
     font-family: "Oswald", sans-serif;
@@ -64,6 +67,6 @@ ion-header.header-wordpress-posts-home {
     margin-bottom: 0px !important;
   }
 }
-/* ion-toolbar.toolbar-wordpress-posts-home {
-  background-color: #2f538d;
-} */
+ ion-toolbar.toolbar-wordpress-posts-home {
+  background-color: #fff;
+}
