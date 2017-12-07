@@ -1,3 +1,92 @@
+ion-header.header-wordpress-posts-home {
+  .col-header {
+    margin: -1px;
+    padding: 1px;
+  }
+  .row-header {
+    height: 200px;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+ion-toolbar.toolbar-wordpress-posts-home .toolbar-background {
+  background: url(/assets/img/header-logo-transparent.png) center no-repeat;
+}
+#left-top-header {
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+  h5.header {
+    font-family: "Oswald", sans-serif;
+    margin: 0px;
+    color: #00498a;
+  }
+  .fixed-content {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .scroll-content {
+    border-top: 1px inset black;
+    margin-top: 22px !important;
+    margin-bottom: 2px !important;
+  }
+}
+#center-top-header {
+  background-color: rgba(255, 255, 255, 0);
+}
+#right-top-header {
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+  h5.header {
+    font-family: "Oswald", sans-serif;
+    margin: 0px;
+    color: #00498a;
+  }
+  .fixed-content {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .scroll-content {
+    border-top: 1px inset black;
+    margin-top: 22px !important;
+    margin-bottom: 2px !important;
+  }
+}
+ion-header.bar-subheader {
+  background-color: rgba(255, 255, 255, 0) !important;
+  h6.header {
+    margin-top: 1px;
+    margin-bottom: 2px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    font-size: large;
+    color: rgb(255, 255, 255);
+  }
+  h6.header.left {
+    margin-left: 50px;
+  }
+  h6.header.right {
+    margin-right: 10px;
+  }
+}
+ion-header.bar-subheader.left {
+  padding-top:0px;
+  margin-left: -10px;
+  background: linear-gradient(to right, #ff8b00 100%, rgba(0, 0, 0, 0.2) 110%);
+  box-shadow: 0px -1px 1px 0px #000000;
+}
+ion-header.bar-subheader.left.header::after {
+  margin-left: 10px;
+}
+ion-header.bar-subheader.right {
+  padding-top: 0px;
+  margin-left: 5px;
+  background: linear-gradient(to right, transparent -10%, #ff8b00 0%);
+  box-shadow: 0px -1px 1px 0px #000000;
+}
+ion-header.bar-subheader.right.header::after {
+  margin-left: -10px;
+}
 ion-content.page-wordpress-posts-home {
   ion-list-header.header {
     margin: 0px;
@@ -26,47 +115,4 @@ ion-content.page-wordpress-posts-home {
     font-size: x-small;
     overflow: auto;
   }
-}
-ion-header.header-wordpress-posts-home {
-  .col-header {
-    margin: 0px;
-    padding: 0px;
-  }
-  .row-header {
-    height: 200px;
-    margin: 0px;
-    padding: 0px;
-  }
-}
-#left-top-header {
-  h5.header {
-    font-family: "Oswald", sans-serif;
-    margin: 0px;
-    color: #00498a;
-  }
-  .fixed-content {
-    margin-bottom: 0px !important;
-  }
-  .scroll-content {
-    margin-bottom: 0px !important;
-  }
-}
-#center-top-header {
-  background-color: #fff;
-}
-#right-top-header {
-  h5.header {
-    font-family: "Oswald", sans-serif;
-    margin: 0px;
-    color: #00498a;
-  }
-  .fixed-content {
-    margin-bottom: 0px !important;
-  }
-  .scroll-content {
-    margin-bottom: 0px !important;
-  }
-}
- ion-toolbar.toolbar-wordpress-posts-home {
-  background-color: #fff;
 }

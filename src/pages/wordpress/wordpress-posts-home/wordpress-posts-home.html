@@ -10,10 +10,12 @@
       </button>
     </ion-buttons>
   </ion-navbar>
-  <ion-toolbar class="toolbar-wordpress-posts-home lineargradient-bg">
+  <ion-toolbar class="toolbar-wordpress-posts-home">
     <ion-row class="row-header">
       <ion-col class="col-header">
-        <ion-header class="bar-subheader">Videos</ion-header>
+        <ion-header class="bar-subheader left" text-left>
+          <h6 class="header left">Videos</h6>
+        </ion-header>
         <ion-content id="left-top-header">
           <ion-list class="slide-in-bck-bottom">
             <ion-item *ngFor="let video of videos" (click)="loadVideo(video)">
@@ -26,11 +28,13 @@
           </ion-list>
         </ion-content>
       </ion-col>
-      <ion-col id="center-top-header" class="col-header" text-center>
-          <img src="/assets/img/header-logo-transparent.png" />
+      <ion-col col-1 id="center-top-header" class="col-header" text-center>
+        <!--           <img src="/assets/img/header-logo-transparent.png" /> -->
       </ion-col>
       <ion-col class="col-header">
-        <ion-header class="bar-subheader">Rundschreiben</ion-header>
+        <ion-header class="bar-subheader right" text-right>
+          <h6 class="header right">Rundschreiben</h6>
+        </ion-header>
         <ion-content id="right-top-header">
           <ion-list class="slide-in-bck-bottom">
             <ion-item *ngFor="let feed of feeds" (click)="loadFeed(feed)">
