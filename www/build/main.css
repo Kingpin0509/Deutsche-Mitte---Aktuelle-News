@@ -27478,6 +27478,10 @@ h1.header {
   color: #00498a;
 }
 
+ion-tabs.footer {
+  border-top: 3px solid rgba(255, 255, 255, 0.3);
+}
+
 .page-welcome .splash-bg {
   position: relative;
   background: url("../../../assets/img/splashbg.png") no-repeat transparent;
