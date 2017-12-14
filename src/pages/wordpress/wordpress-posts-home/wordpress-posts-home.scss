@@ -12,47 +12,40 @@ ion-header.header-wordpress-posts-home {
 ion-toolbar.toolbar-wordpress-posts-home .toolbar-background {
   background: url(/assets/img/header-logo-transparent.png) center no-repeat;
 }
-#left-top-header {
-  margin: 0px;
-  padding: 0px;
-  background-color: transparent;
-  h5.header {
-    font-family: "Oswald", sans-serif;
-    margin: 0px;
-    color: #00498a;
+ion-toolbar.toolbar-wordpress-posts-home {
+  border-bottom: 1px groove #161616;
+  box-shadow: 0px 1px 5px 0px #ff88002a;
+  .col-header.left {
+    animation: slideInLeft 0ms ease-in 0ms 1;
+    animation-duration: 500ms;
   }
-  .fixed-content {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
+  @keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(-200%, 0, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+    }
   }
-  .scroll-content {
-    border-top: 1px inset black;
-    margin-top: 22px !important;
-    margin-bottom: 2px !important;
+  .col-header.right {
+    animation: slideInRight 0ms ease-in 0ms 1;
+    animation-duration: 500ms;
   }
-}
-#center-top-header {
-  background-color: rgba(255, 255, 255, 0);
-}
-#right-top-header {
-  margin: 0px;
-  padding: 0px;
-  background-color: transparent;
-  h5.header {
-    font-family: "Oswald", sans-serif;
-    margin: 0px;
-    color: #00498a;
-  }
-  .fixed-content {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-  }
-  .scroll-content {
-    border-top: 1px inset black;
-    margin-top: 22px !important;
-    margin-bottom: 2px !important;
+  @keyframes slideInRight {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(200%, 0, 0);
+    }
+    100% {
+      opacity: 1;
+
+      -webkit-transform: translate3d(0, 0, 0);
+    }
   }
 }
+
 ion-header.bar-subheader {
   background-color: rgba(255, 255, 255, 0) !important;
   h6.header {
@@ -63,17 +56,17 @@ ion-header.bar-subheader {
     color: rgb(255, 255, 255);
   }
   h6.header.left {
-    margin-left: 50px;
+    margin-left: 25px;
   }
   h6.header.right {
-    margin-right: 10px;
+    margin-right: 25px;
   }
 }
 ion-header.bar-subheader.left {
-  padding-top:0px;
+  padding-top: 0px;
   margin-left: -10px;
   background: linear-gradient(to right, #ff8b00 100%, rgba(0, 0, 0, 0.2) 110%);
-  box-shadow: 0px -1px 1px 0px #000000;
+  border: 1px solid #ff8b00;
 }
 ion-header.bar-subheader.left.header::after {
   margin-left: 10px;
@@ -82,7 +75,7 @@ ion-header.bar-subheader.right {
   padding-top: 0px;
   margin-left: 5px;
   background: linear-gradient(to right, transparent -10%, #ff8b00 0%);
-  box-shadow: 0px -1px 1px 0px #000000;
+  border: 1px solid #ff8b00;
 }
 ion-header.bar-subheader.right.header::after {
   margin-left: -10px;
@@ -114,5 +107,53 @@ ion-content.page-wordpress-posts-home {
     font-style: italic;
     font-size: x-small;
     overflow: auto;
+  }
+}
+
+#left-top-header {
+  border: 1px groove #161616;
+  margin-top: 22px !important;
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+  h5.header {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    color: #00498a;
+  }
+  .fixed-content {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .scroll-content {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+}
+
+
+#center-top-header {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#right-top-header {
+  border: 1px ridge #161616;
+  margin-top: 22px !important;
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+  h5.header {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    color: #00498a;
+  }
+  .fixed-content {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    border: groove 1px inset #161616;
+  }
+  .scroll-content {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
   }
 }

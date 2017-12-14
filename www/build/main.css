@@ -27478,8 +27478,8 @@ h1.header {
   color: #00498a;
 }
 
-ion-tabs.footer {
-  border-top: 3px solid rgba(255, 255, 255, 0.3);
+ion-tabs.footer .tabbar {
+  border-top: 1px groove rgba(0, 0, 0, 0.2);
 }
 
 .page-welcome .splash-bg {
@@ -27585,54 +27585,68 @@ ion-toolbar.toolbar-wordpress-posts-home .toolbar-background {
   background: url(/assets/img/header-logo-transparent.png) center no-repeat;
 }
 
-#left-top-header {
-  margin: 0px;
-  padding: 0px;
-  background-color: transparent;
+ion-toolbar.toolbar-wordpress-posts-home {
+  border-bottom: 1px groove #161616;
+  -webkit-box-shadow: 0px 1px 5px 0px #ff88002a;
+  box-shadow: 0px 1px 5px 0px #ff88002a;
 }
 
-#left-top-header h5.header {
-  font-family: "Oswald", sans-serif;
-  margin: 0px;
-  color: #00498a;
+ion-toolbar.toolbar-wordpress-posts-home .col-header.left {
+  -webkit-animation: slideInLeft 0ms ease-in 0ms 1;
+  animation: slideInLeft 0ms ease-in 0ms 1;
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
 }
 
-#left-top-header .fixed-content {
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
+@-webkit-keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-200%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
 }
 
-#left-top-header .scroll-content {
-  border-top: 1px inset black;
-  margin-top: 22px !important;
-  margin-bottom: 2px !important;
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-200%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
 }
 
-#center-top-header {
-  background-color: rgba(255, 255, 255, 0);
+ion-toolbar.toolbar-wordpress-posts-home .col-header.right {
+  -webkit-animation: slideInRight 0ms ease-in 0ms 1;
+  animation: slideInRight 0ms ease-in 0ms 1;
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
 }
 
-#right-top-header {
-  margin: 0px;
-  padding: 0px;
-  background-color: transparent;
+@-webkit-keyframes slideInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(200%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
 }
 
-#right-top-header h5.header {
-  font-family: "Oswald", sans-serif;
-  margin: 0px;
-  color: #00498a;
-}
-
-#right-top-header .fixed-content {
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
-}
-
-#right-top-header .scroll-content {
-  border-top: 1px inset black;
-  margin-top: 22px !important;
-  margin-bottom: 2px !important;
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(200%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
 }
 
 ion-header.bar-subheader {
@@ -27648,11 +27662,11 @@ ion-header.bar-subheader h6.header {
 }
 
 ion-header.bar-subheader h6.header.left {
-  margin-left: 50px;
+  margin-left: 25px;
 }
 
 ion-header.bar-subheader h6.header.right {
-  margin-right: 10px;
+  margin-right: 25px;
 }
 
 ion-header.bar-subheader.left {
@@ -27660,8 +27674,7 @@ ion-header.bar-subheader.left {
   margin-left: -10px;
   background: -webkit-gradient(linear, left top, right top, color-stop(100%, #ff8b00), color-stop(110%, rgba(0, 0, 0, 0.2)));
   background: linear-gradient(to right, #ff8b00 100%, rgba(0, 0, 0, 0.2) 110%);
-  -webkit-box-shadow: 0px -1px 1px 0px #000000;
-  box-shadow: 0px -1px 1px 0px #000000;
+  border: 1px solid #ff8b00;
 }
 
 ion-header.bar-subheader.left.header::after {
@@ -27673,8 +27686,7 @@ ion-header.bar-subheader.right {
   margin-left: 5px;
   background: -webkit-gradient(linear, left top, right top, color-stop(-10%, transparent), color-stop(0%, #ff8b00));
   background: linear-gradient(to right, transparent -10%, #ff8b00 0%);
-  -webkit-box-shadow: 0px -1px 1px 0px #000000;
-  box-shadow: 0px -1px 1px 0px #000000;
+  border: 1px solid #ff8b00;
 }
 
 ion-header.bar-subheader.right.header::after {
@@ -27708,6 +27720,131 @@ ion-content.page-wordpress-posts-home ion-note.date {
   font-style: italic;
   font-size: x-small;
   overflow: auto;
+}
+
+#left-top-header {
+  border: 1px groove #161616;
+  margin-top: 22px !important;
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+}
+
+#left-top-header h5.header {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  color: #00498a;
+}
+
+#left-top-header .fixed-content {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+#left-top-header .scroll-content {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+#left-top-header .animate-in-avatar {
+  -webkit-animation: animateInAvatar 0ms ease-in 0ms 1;
+  animation: animateInAvatar 0ms ease-in 0ms 1;
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+}
+
+@-webkit-keyframes animateInAvatar {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-200%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes animateInAvatar {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-200%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+#left-top-header .animate-in-text {
+  -webkit-animation: animateInText 0ms ease-in 0ms 1;
+  animation: animateInText 0ms ease-in 0ms 1;
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+}
+
+@-webkit-keyframes animateInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animateInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#center-top-header {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#right-top-header {
+  border: 1px ridge #161616;
+  margin-top: 22px !important;
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+}
+
+#right-top-header h5.header {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  color: #00498a;
+}
+
+#right-top-header .fixed-content {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  border: groove 1px inset #161616;
+}
+
+#right-top-header .scroll-content {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+#right-top-header.animate-in-primary {
+  -webkit-animation: animateInPrimary 0ms ease-in 0ms 1;
+  animation: animateInPrimary 0ms ease-in 0ms 1;
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+}
+
+@keyframes animateInPrimary {
+  60% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
 }
 
 ion-content.page-youtube-channel h2.header {

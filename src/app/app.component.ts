@@ -1,4 +1,4 @@
-import { Component, ViewChild,OnInit, ElementRef } from "@angular/core";
+import { Component, ViewChild, OnInit, ElementRef } from "@angular/core";
 import {
   LoadingController,
   MenuController,
@@ -6,7 +6,7 @@ import {
   Nav,
   Platform
 } from "ionic-angular";
-import { AnimationService, AnimationBuilder } from 'css-animator';
+import { AnimationService, AnimationBuilder } from "css-animator";
 import { InAppBrowser } from "@ionic-native/in-app-browser";
 import { StatusBar } from "@ionic-native/status-bar";
 import { SplashScreen } from "@ionic-native/splash-screen";
@@ -93,7 +93,7 @@ export class MyApp {
     private statusBar: StatusBar,
     private modalCtrl: ModalController,
     animationService: AnimationService,
-     private elementRef: ElementRef
+    private elementRef: ElementRef
   ) {
     this.initializeApp();
     this.animator = animationService.builder();
@@ -187,7 +187,7 @@ export class MyApp {
   }
 
   ngOnInit() {
-    this.animator.setType('fadeInUp').show(this.elementRef.nativeElement);
+    this.animator.setType("fadeInUp").show(this.elementRef.nativeElement);
   }
 
   initializeApp() {
@@ -240,17 +240,9 @@ export class MyApp {
     return page == this.activePage;
   }
   openPage(page) {
-    let loader = this.loadingCtrl.create({
-      spinner: "bubbles",
-      cssClass: `apphome`,
-      content: `Bitte Warten...`,
-      duration: 500
-    });
     this.activePage = page;
-    loader.present().then(() => {
-      this.nav.setRoot(page.component).then(() => {
-        this.menuController.close();
-      });
+    this.menuController.close().then(() => {
+      this.nav.setRoot(page.component);
     });
   }
   pushPage(page) {
@@ -260,12 +252,7 @@ export class MyApp {
     });
   }
   openPageStammtische(page) {
-    let loader = this.loadingCtrl.create({
-      content: "Suche Stammtische...",
-      duration: 500
-    });
     this.activePage = page;
-    loader.present();
     this.nav.setRoot(StammtischeComponent).then(() => {
       this.menuController.close();
     });

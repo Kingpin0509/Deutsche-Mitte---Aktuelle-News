@@ -12,31 +12,31 @@
   </ion-navbar>
   <ion-toolbar class="toolbar-wordpress-posts-home">
     <ion-row class="row-header">
-      <ion-col class="col-header">
+      <ion-col class="col-header left">
         <ion-header class="bar-subheader left" text-left>
           <h6 class="header left">Videos</h6>
         </ion-header>
         <ion-content id="left-top-header">
-          <ion-list class="slide-in-bck-bottom">
-            <ion-item *ngFor="let video of videos" (click)="loadVideo(video)">
+          <ion-list class="list-left-grow-animation">
+            <ion-item class="menuheader-left-grow-animation" *ngFor="let video of videos" (click)="loadVideo(video)">
               <ion-avatar item-start *ngIf="video.snippet.thumbnails.default.url">
                 <img [src]="video.snippet.thumbnails.default.url">
               </ion-avatar>
-              <h5 text-wrap class="header">{{video.snippet.title}}</h5>
+              <h5 class="header" text-wrap>{{video.snippet.title}}</h5>
               <!-- <p [innerHtml]="video.snippet.description"></p> -->
             </ion-item>
           </ion-list>
         </ion-content>
       </ion-col>
       <ion-col col-1 id="center-top-header" class="col-header" text-center>
-        <!--           <img src="/assets/img/header-logo-transparent.png" /> -->
+        <!-- <img src="/assets/img/header-logo-transparent.png" /> -->
       </ion-col>
-      <ion-col class="col-header">
+      <ion-col class="col-header right">
         <ion-header class="bar-subheader right" text-right>
           <h6 class="header right">Rundschreiben</h6>
         </ion-header>
-        <ion-content id="right-top-header">
-          <ion-list class="slide-in-bck-bottom">
+        <ion-content class="animate-in-primary" id="right-top-header">
+          <ion-list>
             <ion-item *ngFor="let feed of feeds" (click)="loadFeed(feed)">
               <h5 text-wrap class="header">{{feed.title}}</h5>
             </ion-item>
@@ -54,29 +54,29 @@
         <ion-note class="date" item-end>{{post.date | date:'dd/MM'}}</ion-note>
       </ion-list-header>
       <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>
-      <!--         <ion-item-sliding #slidingItem>
-          <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>
-          <ion-item-options side="right">
-            <button ion-button color="primary" (click)="share(slidingItem)" (tap)="favoritePost(post)">
-              <ion-icon name="thumbs-up"></ion-icon>
-              {{ 'FAVORITE' | translate }}
-            </button>
-            <button ion-button color="secondary" (tap)="loadPost(post)">
-              <ion-icon name="book"></ion-icon>
-              {{ 'READ' | translate }}
-            </button>
-          </ion-item-options>
-        </ion-item-sliding>
-<p>
-          <button ion-button small margin outline color="primary" (tap)="favoritePost(post)" icon-start>
-              <ion-icon name='thumbs-up'></ion-icon>
-              {{ 'FAVORITE' | translate }}
-            </button>
-          <button ion-button small margin outline color="secondary" (tap)="loadPost(post)" icon-end>
-                {{ 'READ' | translate }}
-                <ion-icon name='book'></ion-icon>
-              </button>
-        </p> -->
+      <!--<ion-item-sliding #slidingItem>
+        <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>
+        <ion-item-options side="right">
+          <button ion-button color="primary" (click)="share(slidingItem)" (tap)="favoritePost(post)">
+            <ion-icon name="thumbs-up"></ion-icon>
+            {{ 'FAVORITE' | translate }}
+          </button>
+          <button ion-button color="secondary" (tap)="loadPost(post)">
+            <ion-icon name="book"></ion-icon>
+            {{ 'READ' | translate }}
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+      <p>
+        <button ion-button small margin outline color="primary" (tap)="favoritePost(post)" icon-start>
+          <ion-icon name='thumbs-up'></ion-icon>
+          {{ 'FAVORITE' | translate }}
+        </button>
+        <button ion-button small margin outline color="secondary" (tap)="loadPost(post)" icon-end>
+          {{ 'READ' | translate }}
+          <ion-icon name='book'></ion-icon>
+        </button>
+      </p> -->
     </ion-item>
   </ion-list>
   <ion-infinite-scroll (ionInfinite)="loadMore($event)">
