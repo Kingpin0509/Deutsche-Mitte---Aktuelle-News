@@ -2,6 +2,7 @@ import { Injectable } from "@angular/core";
 
 @Injectable()
 export class Config {
+  public activator = "ripple";
   public wordpressApiUrl = "https://deutsche-mitte.de/wp-json";
   //  public wordpressApiUrl = "https://deutsche-mitte.de/wp-json";
   public wordpressMenusNavigation = false;

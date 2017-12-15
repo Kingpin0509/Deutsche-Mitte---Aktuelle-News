@@ -17,19 +17,19 @@
           <h6 class="header left">Videos</h6>
         </ion-header>
         <ion-content id="left-top-header">
-          <ion-list class="list-left-grow-animation">
-            <ion-item class="menuheader-left-grow-animation" *ngFor="let video of videos" (click)="loadVideo(video)">
+          <ion-list>
+            <button ion-item class="item-header-background" *ngFor="let video of videos" (tap)="loadVideo(video)">
               <ion-avatar item-start *ngIf="video.snippet.thumbnails.default.url">
                 <img [src]="video.snippet.thumbnails.default.url">
               </ion-avatar>
               <h5 class="header" text-wrap>{{video.snippet.title}}</h5>
               <!-- <p [innerHtml]="video.snippet.description"></p> -->
-            </ion-item>
+            </button>
           </ion-list>
         </ion-content>
       </ion-col>
-      <ion-col col-1 id="center-top-header" class="col-header" text-center>
-        <!-- <img src="/assets/img/header-logo-transparent.png" /> -->
+      <ion-col col-1 id="center-top-header" class="col-header">
+        <!-- <img showWhen="landscape" src="/assets/img/header-logo-transparent.png" /> -->
       </ion-col>
       <ion-col class="col-header right">
         <ion-header class="bar-subheader right" text-right>
@@ -37,24 +37,27 @@
         </ion-header>
         <ion-content class="animate-in-primary" id="right-top-header">
           <ion-list>
-            <ion-item *ngFor="let feed of feeds" (click)="loadFeed(feed)">
-              <h5 text-wrap class="header">{{feed.title}}</h5>
-            </ion-item>
+            <button ion-item *ngFor="let feed of feeds" (tap)="loadFeed(feed)">
+              <h5 class="header" text-wrap>{{feed.title}}</h5>
+            </button>
           </ion-list>
         </ion-content>
       </ion-col>
     </ion-row>
   </ion-toolbar>
 </ion-header>
-<ion-content class="page-wordpress-posts-home">
-  <ion-list class="list-grow-animation">
-    <ion-item *ngFor="let post of posts" class="slide-in-bck-bottom">
-      <ion-list-header (tap)="loadPost(post)" class="menuheader-grow-animation header">
-        <h4 class="header" text-wrap item-start [innerHTML]="post.title.rendered"></h4>
-        <ion-note class="date" item-end>{{post.date | date:'dd/MM'}}</ion-note>
-      </ion-list-header>
-      <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>
-      <!--<ion-item-sliding #slidingItem>
+<ion-content class="page-wordpress-posts-home list-grow-animation">
+  <ion-list text-wrap class="slide-in-bck-bottom">
+    <button ion-item detail-none clear *ngFor="let post of posts" (tap)="loadPost(post)">
+      <ion-item-group>
+        <ion-item-divider>
+          <h3 item-start tappable class="menuheader-grow-animation header">{{post.title.rendered}}</h3>
+          <ion-note item-end class="date">{{post.date | date:'dd/MM'}}</ion-note>
+        </ion-item-divider>
+        <p class="content">{{post.content.rendered | trimHTML | truncate: 200 }}</p>
+      </ion-item-group>
+    </button>
+    <!--<ion-item-sliding #slidingItem>
         <ion-item class="content" (tap)="loadPost(post)" text-wrap>{{post.content.rendered | trimHTML | truncate: 200 }}</ion-item>
         <ion-item-options side="right">
           <button ion-button color="primary" (click)="share(slidingItem)" (tap)="favoritePost(post)">
@@ -77,7 +80,6 @@
           <ion-icon name='book'></ion-icon>
         </button>
       </p> -->
-    </ion-item>
   </ion-list>
   <ion-infinite-scroll (ionInfinite)="loadMore($event)">
     <ion-infinite-scroll-content></ion-infinite-scroll-content>

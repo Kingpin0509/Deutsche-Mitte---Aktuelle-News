@@ -71,9 +71,17 @@ export class WordpressPostsHome implements OnInit {
         this.favoritePosts = JSON.parse(data);
       }
     });
+    this.youtubeService.getChannel().subscribe(
+      result => {
+        this.videos = result.items;
+        this.loader.dismiss();
+      },
+      error => {
+        this.loader.dismiss();
+      }
+    );
     this.getFeeds();
     this.getPosts();
-    this.getChannel();
   }
   getChannel() {
     this.youtubeService.getChannel().subscribe(
@@ -195,7 +203,7 @@ export class WordpressPostsHome implements OnInit {
     }
     return query;
   }
-   getFeeds() {
+  getFeeds() {
     let loader = this.loadingController.create({
       content: "Bitte Warten..."
     });

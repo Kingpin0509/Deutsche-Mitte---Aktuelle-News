@@ -4,7 +4,7 @@
   </ion-navbar>
 </ion-header>
 <ion-content class="page-slides">
-  <ion-slides pager="true" zoom="true" paginationType="progress" effect="slide">
+  <ion-slides pager="true" zoom="true" parallax="true" roundLengths="true" paginationType="bullets" effect="slide">
 
     <ion-slide>
       <ion-toolbar>
@@ -19,8 +19,8 @@
         <img src="assets/img/slidebox-img-1u.png" class="slide-image" />
       </div>
       <h2 class="slide-title tracking-in-contract">Herzlich Willkommen</h2>
-      <p class="tracking-in-contract">Die Deutsche Mitte und deren Ziele sind mehr als eine politische Partei. Es ist eine Bewegung von Menschen für Menschen,
-        die Missstände beseitigen und die Welt zu einer besseren machen wollen. Ethik wird hier als oberstes Gebot gefordert.</p>
+      <p class="tracking-in-contract">Die Deutsche Mitte und deren Ziele sind mehr als eine politische Partei. Es ist eine Bewegung von Menschen für Menschen, die Missstände beseitigen und die
+        Welt zu einer besseren machen wollen. Ethik wird hier als oberstes Gebot gefordert.</p>
       <h3 class="tracking-in-contract">-DEUTSCHE MITTE-</h3>
     </ion-slide>
 
@@ -51,8 +51,8 @@
         <img src="assets/img/slidebox-img-4o.png" class="slide-image" />
       </div> -->
       <h2 class="slide-title tracking-in-contract">Zum kennenlernen</h2>
-      <p class="tracking-in-contract">Lernen sie uns persönlich bei unseren deutschlandweiten Stammtischtreffen kennen. Oder besuchen sie unseren Online-Stammtisch
-        unter:</p>
+      <p class="tracking-in-contract">Lernen sie uns persönlich bei unseren deutschlandweiten Stammtischtreffen kennen. Oder besuchen sie unseren Online-Stammtisch unter:
+      </p>
       <h3 class="tracking-in-contract">http://dm-stammtisch.de</h3>
     </ion-slide>
 
@@ -73,8 +73,10 @@
       <img src="assets/img/ica-slidebox-img-5.png" class="slide-image" />
       <h2 class="slide-title">Alles klar?</h2>
       <p>Dann lassen sie uns gemeinsam starten. Wir haben nur noch diese eine Chance! Nutzen wir sie, jetzt!</p>
-      <button ion-button large clear icon-right (click)="showConfirm()"><h3 class="tracking-in-contract">Start
-        <ion-icon name="arrow-forward"></ion-icon></h3>
+      <button ion-button large clear icon-right (click)="showConfirm()">
+        <h3 class="tracking-in-contract">Start
+          <ion-icon name="arrow-forward"></ion-icon>
+        </h3>
       </button>
     </ion-slide>
   </ion-slides>
