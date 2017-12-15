@@ -1,6 +1,6 @@
 import { NgModule, ErrorHandler } from "@angular/core";
 import { IonicApp, IonicErrorHandler, IonicModule } from "ionic-angular";
-import { AnimationService, AnimatorModule} from "css-animator";
+import { AnimationService, AnimatorModule } from "css-animator";
 import { MyApp } from "./app.component";
 import { SharedModule } from "./shared/shared.module";
 import { Data } from "../providers/data";
@@ -71,6 +71,7 @@ import { FeedService } from "../pages/feeds/shared/services/feed.service";
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     Data,
     FeedService,
+    Push,
     AnimationService
   ]
 })

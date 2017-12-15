@@ -4,13 +4,15 @@ import {
   MenuController,
   ModalController,
   Nav,
-  Platform
+  Platform,
+  AlertController
 } from "ionic-angular";
-import { AnimationService, AnimationBuilder } from "css-animator";
 import { InAppBrowser } from "@ionic-native/in-app-browser";
 import { StatusBar } from "@ionic-native/status-bar";
 import { SplashScreen } from "@ionic-native/splash-screen";
+import { Push, PushObject, PushOptions } from "@ionic-native/push";
 import { Storage } from "@ionic/storage";
+import { AnimationService, AnimationBuilder } from "css-animator";
 import { TranslateService } from "ng2-translate";
 import { Config } from "./app.config";
 // import { Splash } from "../pages/splash/splash.module";
@@ -93,7 +95,9 @@ export class MyApp {
     private statusBar: StatusBar,
     private modalCtrl: ModalController,
     animationService: AnimationService,
-    private elementRef: ElementRef
+    private elementRef: ElementRef,
+    public push: Push,
+    public alertCtrl: AlertController
   ) {
     this.initializeApp();
     this.animator = animationService.builder();
@@ -201,9 +205,9 @@ export class MyApp {
       this.statusBar.overlaysWebView(false);
       this.statusBar.styleBlackTranslucent();
       this.statusBar.backgroundColorByHexString("#005397");
+      this.initPushNotification();
       //this.getFeeds();
       //this.getCategories();
-
       // this.platform.resume.subscribe(() => {
       //   handleBranch();
       // });
@@ -271,8 +275,59 @@ export class MyApp {
       post: post
     });
   }
-}
 
+  initPushNotification() {
+    const options: PushOptions = {
+      android: {
+        senderID: "645777369391"
+      }
+    };
+    const pushObject: PushObject = this.push.init(options);
+    pushObject.on("registration").subscribe((data: any) => {
+      console.log("device token:", data.registrationId);
+
+      let alert = this.alertCtrl.create({
+        title: "device token",
+        subTitle: data.registrationId,
+        buttons: ["OK"]
+      });
+      alert.present();
+    });
+    pushObject.on("notification").subscribe((data: any) => {
+      console.log("message", data.message);
+      if (data.additionalData.foreground) {
+        let confirmAlert = this.alertCtrl.create({
+          title: "New Notification",
+          message: data.message,
+          buttons: [
+            {
+              text: "Ignore",
+              role: "cancel"
+            },
+            {
+              text: "View",
+              handler: () => {
+                //TODO: Your logic here
+              }
+            }
+          ]
+        });
+        confirmAlert.present();
+      } else {
+        let alert = this.alertCtrl.create({
+          title: "clicked on",
+          subTitle: "you clicked on the notification!",
+          buttons: ["OK"]
+        });
+        alert.present();
+        console.log("Push notification clicked");
+      }
+    });
+    pushObject
+      .on("error")
+      .subscribe(error => console.error("Error with Push plugin", error));
+  }
+}
 // openPageYoutube(page) {
 //   this.menuController.close();
 //   this.nav.push(YoutubeChannelComponent);
