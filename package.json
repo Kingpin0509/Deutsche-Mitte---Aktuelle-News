@@ -112,7 +112,7 @@
       "cordova-plugin-app-version": {},
       "phonegap-plugin-push": {
         "FCM_VERSION": "11.0.1",
-        "SENDER_ID": "1:645777369391:android:ce3ea0289abbf73b"
+        "SENDER_ID": "645777369391"
       }
     },
     "platforms": [

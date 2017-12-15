@@ -52,7 +52,7 @@ import { FirebaseHomeComponent } from "../pages/firebase/firebase-home/firebase-
 // import { LoginComponent } from '../pages/login/login-component/login.component';
 
 @Component({
-  templateUrl: "./app.html",
+  templateUrl: "./app.html"
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
