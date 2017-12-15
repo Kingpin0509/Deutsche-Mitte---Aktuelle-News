@@ -21,6 +21,7 @@ import { FacebookConnectModule } from "../pages/facebook-connect/facebook-connec
 import { FeedsModule } from "../pages/feeds/feeds.module";
 import { FirebaseModule } from "../pages/firebase/firebase.module";
 import { FeedService } from "../pages/feeds/shared/services/feed.service";
+import { Push } from "@ionic-native/push";
 //import { Splash } from "../pages/splash/splash.module";
 //import { QuizComponent } from '../pages/quiz/quiz-component/quiz';
 //import { FlashCardComponent } from '../pages/quiz/flash-card/flash-card';
