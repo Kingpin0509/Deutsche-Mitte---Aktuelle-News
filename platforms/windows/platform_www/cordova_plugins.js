@@ -106,6 +106,20 @@ module.exports = [
         "merges": [
             ""
         ]
+    },
+    {
+        "id": "phonegap-plugin-push.PushNotification",
+        "file": "plugins/phonegap-plugin-push/www/push.js",
+        "pluginId": "phonegap-plugin-push",
+        "clobbers": [
+            "PushNotification"
+        ]
+    },
+    {
+        "id": "phonegap-plugin-push.PushPlugin",
+        "file": "plugins/phonegap-plugin-push/src/windows/PushPluginProxy.js",
+        "pluginId": "phonegap-plugin-push",
+        "runs": true
     }
 ];
 module.exports.metadata = 
@@ -121,7 +135,8 @@ module.exports.metadata =
     "cordova-plugin-x-socialsharing": "5.1.5",
     "es6-promise-plugin": "4.1.0",
     "cordova-plugin-statusbar": "2.2.4-dev",
-    "cordova-plugin-app-version": "0.1.9"
+    "cordova-plugin-app-version": "0.1.9",
+    "phonegap-plugin-push": "2.1.2"
 };
 // BOTTOM OF METADATA
 });

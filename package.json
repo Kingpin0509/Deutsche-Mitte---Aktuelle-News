@@ -61,6 +61,7 @@
     "minimatch": "3.0.4",
     "moment": "^2.19.4",
     "ng2-translate": "5.0.0",
+    "phonegap-plugin-push": "^2.1.2",
     "promise-polyfill": "^6.1.0",
     "rxjs": "^5.5.5",
     "sw-toolbox": "3.6.0",
@@ -108,7 +109,11 @@
       "cordova-plugin-ios-no-export-compliance": {},
       "es6-promise-plugin": {},
       "cordova-plugin-statusbar": {},
-      "cordova-plugin-app-version": {}
+      "cordova-plugin-app-version": {},
+      "phonegap-plugin-push": {
+        "FCM_VERSION": "11.0.1",
+        "SENDER_ID": "1:645777369391:android:ce3ea0289abbf73b"
+      }
     },
     "platforms": [
       "windows",

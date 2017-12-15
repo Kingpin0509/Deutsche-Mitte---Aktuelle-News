@@ -50,6 +50,9 @@
         <param name="ios-package" value="SocialSharing" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="PushNotification">
+        <param name="ios-package" value="PushPlugin" />
+    </feature>
     <name>Deutsche Mitte - Aktuell</name>
     <description>Stets alles aktuelle über die Partei "Deutsche Mitte"</description>
     <author email="kingpin0509@gmail.com" href="http://westweedtzerecords.biz">Michael Humann</author>

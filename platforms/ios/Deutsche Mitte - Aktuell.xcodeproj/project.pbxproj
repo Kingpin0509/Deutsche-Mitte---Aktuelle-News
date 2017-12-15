@@ -31,6 +31,8 @@
 		61848360412148A4AF099B2D /* SocialSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = BF307CD8269C4EB9976EDA3A /* SocialSharing.m */; };
 		409FFD1BA8A541AB82D0A4FF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B41063C0EA44FEAFB33569 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		0CE7EB2318F14BE4AA449FAE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F00C73B1F64425B8B289642 /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		BDB44AB1417D4932987EB20E /* AppDelegate+notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 456B46D276CF4357A328BCFF /* AppDelegate+notification.m */; };
+		32508DE69C16443D9EB9F2BB /* PushPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 05358E85F82F4F8592B56026 /* PushPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,10 @@
 		A1D589D872B841A5A9D3AFC8 /* SocialSharing.h */ = {isa = PBXFileReference; name = "SocialSharing.h"; path = "cordova-plugin-x-socialsharing/SocialSharing.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		A5B41063C0EA44FEAFB33569 /* Social.framework */ = {isa = PBXFileReference; name = "Social.framework"; path = "System/Library/Frameworks/Social.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		0F00C73B1F64425B8B289642 /* MessageUI.framework */ = {isa = PBXFileReference; name = "MessageUI.framework"; path = "System/Library/Frameworks/MessageUI.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		456B46D276CF4357A328BCFF /* AppDelegate+notification.m */ = {isa = PBXFileReference; name = "AppDelegate+notification.m"; path = "phonegap-plugin-push/AppDelegate+notification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		05358E85F82F4F8592B56026 /* PushPlugin.m */ = {isa = PBXFileReference; name = "PushPlugin.m"; path = "phonegap-plugin-push/PushPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		1A1B178FF51C4DA49A55ABFF /* AppDelegate+notification.h */ = {isa = PBXFileReference; name = "AppDelegate+notification.h"; path = "phonegap-plugin-push/AppDelegate+notification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		68C9656034594726A80DC2AF /* PushPlugin.h */ = {isa = PBXFileReference; name = "PushPlugin.h"; path = "phonegap-plugin-push/PushPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +234,10 @@
 				BF307CD8269C4EB9976EDA3A /* SocialSharing.m */,
 				67E2FD862F654B9EA41B3356 /* NSString+URLEncoding.h */,
 				A1D589D872B841A5A9D3AFC8 /* SocialSharing.h */,
+				456B46D276CF4357A328BCFF /* AppDelegate+notification.m */,
+				05358E85F82F4F8592B56026 /* PushPlugin.m */,
+				1A1B178FF51C4DA49A55ABFF /* AppDelegate+notification.h */,
+				68C9656034594726A80DC2AF /* PushPlugin.h */,
 			);
 			name = Plugins;
 			path = "Deutsche Mitte - Aktuell/Plugins";
@@ -349,6 +359,8 @@
 				B49416C8C35F437A9365E288 /* CDVStatusBar.m in Sources */,
 				EBA7939588354466BE8731D4 /* NSString+URLEncoding.m in Sources */,
 				61848360412148A4AF099B2D /* SocialSharing.m in Sources */,
+				BDB44AB1417D4932987EB20E /* AppDelegate+notification.m in Sources */,
+				32508DE69C16443D9EB9F2BB /* PushPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

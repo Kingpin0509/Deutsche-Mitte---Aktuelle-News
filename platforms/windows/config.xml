@@ -20,6 +20,7 @@
     </branch-config>
     <splash src="resources/windows/SplashScreen.png" target="SplashScreen" />
     <splash src="resources/windows/SplashScreenPhone.png" target="SplashScreenPhone" />
+    <preference name="WindowsToastCapable" value="true" />
     <preference name="windows-target-version" value="10.0" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />

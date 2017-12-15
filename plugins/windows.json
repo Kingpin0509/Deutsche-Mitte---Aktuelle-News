@@ -41,6 +41,9 @@
     },
     "cordova-plugin-app-version": {
       "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
+    },
+    "phonegap-plugin-push": {
+      "PACKAGE_NAME": "Deutsche Mitte - Aktuell (inoffiziell)"
     }
   },
   "dependent_plugins": {}

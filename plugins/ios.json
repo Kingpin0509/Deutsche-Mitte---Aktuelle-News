@@ -41,6 +41,9 @@
     },
     "es6-promise-plugin": {
       "PACKAGE_NAME": "de.dm.news"
+    },
+    "phonegap-plugin-push": {
+      "PACKAGE_NAME": "de.dm.news"
     }
   },
   "dependent_plugins": {}

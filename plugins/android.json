@@ -46,6 +46,10 @@
     },
     "es6-promise-plugin": {
       "PACKAGE_NAME": "de.dm.news"
+    },
+    "phonegap-plugin-push": {
+      "FCM_VERSION": "11.0.1",
+      "PACKAGE_NAME": "de.dm.news"
     }
   },
   "dependent_plugins": {}

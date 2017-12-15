@@ -53,7 +53,6 @@ import { FirebaseHomeComponent } from "../pages/firebase/firebase-home/firebase-
 
 @Component({
   templateUrl: "./app.html",
-  providers: []
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
